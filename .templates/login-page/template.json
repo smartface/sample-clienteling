@@ -1,0 +1,11 @@
+{
+  "name": "loginPage",
+  "title": "Login Page",
+  "description": "Login Page",
+  "tags": [],
+  "resources": {
+    "fonts": ["Nunito"],
+    "images": ["user_profile"]
+  },
+  "version": "1.0.0"
+}
