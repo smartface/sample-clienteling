@@ -27,6 +27,10 @@
 				"Small": ".activityIndicator-small",
 				"Medium": ".activityIndicator-medium",
 				"Large": ".activityIndicator-large"
+			},
+			"Color": {
+				"Default": ".activityIndicator",
+				"White": ".activityIndicator-white"
 			}
 		},
 		"Button": {
@@ -106,7 +110,8 @@
 		},
 		"Page": {
 			"Page": {
-				"Default": ".page"
+				"Default": ".page",
+				"Blue": ".page-blue"
 			}
 		},
 		"SearchView": {

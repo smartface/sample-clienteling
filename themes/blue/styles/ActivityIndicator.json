@@ -3,9 +3,9 @@
     "touchEnabled": true,
     "width": 42,
     "height": 42,
-    "color": "#ADADAD",
+    "color": "#4990E2",
     "visible": true,
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "rgba(0,0,0,0)",
     "alpha": 1,
     "borderColor": "rgba(0,0,0,1)",
     "borderWidth": 0,
@@ -24,6 +24,9 @@
     },
     "&-large": {
       "width": 350
+    },
+    "&-white": {
+      "color": "#FFFFFF"
     }
   }
 }

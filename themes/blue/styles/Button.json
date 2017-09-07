@@ -5,7 +5,7 @@
     "touchEnabled": true,
     "text": "Button",
     "visible": true,
-    "backgroundColor": "#00A1F1",
+    "backgroundColor": "#4A90E2",
     "alpha": 1,
     "borderColor": "rgba(0,0,0,1)",
     "borderWidth": 0,

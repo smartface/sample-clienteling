@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name": "Smartface Empty Workspace",
+		"name": "Smartface eCommerce",
 		"company": "Smartface User",
 		"webSite": "https://www.smartface.io",
 		"version": "1.0.0",
@@ -94,11 +94,11 @@
 		"output": {
 			"ios": {
 				"outputFolder": "output/iOS",
-				"bundleIdentifier": "io.smartface.demo"
+				"bundleIdentifier": "io.smartface.ecommerce"
 			},
 			"android": {
 				"outputFolder": "output/Android",
-				"packageName": "io.smartface.demo"
+				"packageName": "io.smartface.ecommerce"
 			}
 		},
 		"tempFolder": "output/.tmp"
