@@ -17,12 +17,15 @@
     "minHeight": 21,
     "minWidth": 21,
     "&-small": {
+      "height": 100,
       "width": 100
     },
     "&-medium": {
+      "height": 250,
       "width": 250
     },
     "&-large": {
+      "height": 350,
       "width": 350
     },
     "&-white": {

@@ -1,0 +1,75 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "331a-4b22-9c1f-cb73",
+			"initialized": true,
+			"themeProps": {
+				"Page": "Default"
+			},
+			"userProps": {
+				"orientation": "AUTO"
+			},
+			"className": ".page",
+			"version": "6.4.6",
+			"props": {
+				"backgroundColor": "#FFFFFF",
+				"orientation": "AUTO",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
+				"name": "pgLogin",
+				"parent": null,
+				"children": [
+					"fad7-1eff-4a8c-6bc7",
+					"97e5-b995-2a29-cf7f"
+				],
+				"width": 172.5,
+				"height": 277.38
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "fad7-1eff-4a8c-6bc7",
+			"themeProps": {
+				"StatusBar": "Default"
+			},
+			"userProps": {},
+			"className": ".statusBar",
+			"props": {
+				"color": "#4990E2",
+				"visible": true,
+				"name": "statusBar",
+				"parent": "331a-4b22-9c1f-cb73",
+				"children": [],
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "97e5-b995-2a29-cf7f",
+			"themeProps": {
+				"HeaderBar": "Default"
+			},
+			"userProps": {
+				"title": "Login"
+			},
+			"className": ".headerBar",
+			"props": {
+				"title": "Login",
+				"titleColor": "#000000",
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"name": "headerBar",
+				"parent": "331a-4b22-9c1f-cb73",
+				"children": [],
+				"isRemovable": false
+			}
+		}
+	]
+}

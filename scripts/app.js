@@ -12,14 +12,12 @@ Application.onUnhandledError = function(e) {
     });
 };
 
-
 const Router = require("sf-core/ui/router");
-const stylerBuilder = require("library/styler-builder");
-const settings = require("./settings.json");
-stylerBuilder.registerThemes(settings.config.theme.themes || "blue");
-stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
 
-// Define routes and go to initial page of application
-Router.add("page1", require("./pages/page1"));
-Router.add("page2", require("./pages/page2"));
-Router.go("page1");
+
+
+Router.add("pgLanding", require("./pages/pgLanding"), true);
+Router.add("pgLogin", require("./pages/pgLogin"), true);
+
+
+Router.go("pgLanding", { appStart: true }, false);

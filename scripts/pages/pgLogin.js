@@ -2,9 +2,9 @@
 		You can modify its contents.
 */
 const extend = require('js-base/core/extend');
-const NewPage001Design = require('ui/ui_newPage001');
+const PgLoginDesign = require('ui/ui_pgLogin');
 
-const NewPage001 = extend(NewPage001Design)(
+const PgLogin = extend(PgLoginDesign)(
   // Constructor
   function(_super) {
     // Initalizes super class for this page scope
@@ -24,6 +24,9 @@ const NewPage001 = extend(NewPage001Design)(
  */
 function onShow(superOnShow) {
   superOnShow();
+  const page = this;
+  
+  page.headerBar.leftItemEnabled = false;
 }
 
 /**
@@ -35,4 +38,4 @@ function onLoad(superOnLoad) {
   superOnLoad();
 }
 
-module && (module.exports = NewPage001);
+module && (module.exports = PgLogin);
