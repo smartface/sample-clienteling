@@ -48,11 +48,9 @@
 			}
 		},
 		"FlexLayout": {
-			"Sizes": {
-				"Default": ".flexLayout",
-				"Small": ".flexLayout-small",
-				"Medium": ".flexLayout-medium",
-				"Large": ".flexLayout-large"
+			"Implementation": {
+				"Default": ".flexLayout-default",
+				"Line": ".flexLayout-line"
 			}
 		},
 		"ScrollView": {
@@ -70,10 +68,8 @@
 		},
 		"ImageView": {
 			"Sizes": {
-				"Default": ".imageView",
-				"Small": ".imageView-small",
-				"Medium": ".imageView-medium",
-				"Large": ".imageView-large"
+				"Default": ".imageView-default",
+				"Auto Size": ".imageView"
 			}
 		},
 		"Label": {

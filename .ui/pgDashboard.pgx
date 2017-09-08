@@ -1,0 +1,78 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "cf18-afa3-65ee-c058",
+			"initialized": true,
+			"themeProps": {
+				"Page": "Default"
+			},
+			"userProps": {
+				"orientation": "AUTO"
+			},
+			"className": ".page",
+			"version": "6.4.6",
+			"props": {
+				"backgroundColor": "#FFFFFF",
+				"orientation": "AUTO",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
+				"name": "pgDashboard",
+				"parent": null,
+				"children": [
+					"c7b1-37c2-7e09-33aa",
+					"01c7-3573-291f-cbd3"
+				],
+				"width": 247.5,
+				"height": 397.98
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "c7b1-37c2-7e09-33aa",
+			"themeProps": {
+				"StatusBar": "Default"
+			},
+			"userProps": {
+				"style": "LIGHTCONTENT"
+			},
+			"className": ".statusBar",
+			"props": {
+				"color": "#202020",
+				"visible": true,
+				"name": "statusBar",
+				"parent": "cf18-afa3-65ee-c058",
+				"children": [],
+				"isRemovable": false,
+				"style": "LIGHTCONTENT"
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "01c7-3573-291f-cbd3",
+			"themeProps": {
+				"HeaderBar": "Default"
+			},
+			"userProps": {
+				"title": "Dashboard"
+			},
+			"className": ".headerBar",
+			"props": {
+				"title": "Dashboard",
+				"titleColor": "#FFFFFF",
+				"visible": true,
+				"backgroundColor": "#202020",
+				"name": "headerBar",
+				"parent": "cf18-afa3-65ee-c058",
+				"children": [],
+				"isRemovable": false
+			}
+		}
+	]
+}

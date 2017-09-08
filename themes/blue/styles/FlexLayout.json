@@ -1,10 +1,9 @@
 {
 	".flexLayout": {
-		"height": 200,
-		"width": 200,
+
 		"touchEnabled": true,
 		"visible": true,
-		"backgroundColor": "#FFFFFF",
+		"backgroundColor": "rgba(255,255,255,0)",
 		"alpha": 1,
 		"borderColor": "rgba(0,0,0,1)",
 		"borderWidth": 0,
@@ -19,14 +18,14 @@
 			"flexDirection": "COLUMN",
 			"positionType": "RELATIVE"
 		},
-		"&-small": {
-			"width": 100
+		"&-default": {
+			"height": 200,
+			"width": 200
 		},
-		"&-medium": {
-			"width": 250
-		},
-		"&-large": {
-			"width": 350
+		"&-line": {
+			"height": 1,
+			"alpha": 0.1,
+			"backgroundColor": "#1D1D26"
 		}
 	}
 }

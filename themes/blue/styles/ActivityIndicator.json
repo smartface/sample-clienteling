@@ -5,7 +5,7 @@
     "height": 42,
     "color": "#4990E2",
     "visible": true,
-    "backgroundColor": "rgba(0,0,0,0)",
+    "backgroundColor": "rgba(255,255,255,0)",
     "alpha": 1,
     "borderColor": "rgba(0,0,0,1)",
     "borderWidth": 0,

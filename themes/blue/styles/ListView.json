@@ -7,7 +7,7 @@
     "rowHeight": 60,
     "itemCount": 3,
     "visible": true,
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "rgba(255,255,255,0)",
     "alpha": 1,
     "borderColor": "rgba(0,0,0,1)",
     "borderWidth": 0,

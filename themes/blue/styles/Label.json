@@ -6,17 +6,17 @@
     "text": "Label",
     "visible": true,
     "multiline": false,
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "rgba(255,255,255,0)",
     "alpha": 1,
     "borderColor": "rgba(0,0,0,1)",
     "borderWidth": 0,
-    "textColor": "#000000",
+    "textColor": "#1D1D26",
     "textAlignment": "MIDLEFT",
     "font": {
-      "size": 16,
+      "size": 10,
       "bold": false,
       "italic": false,
-      "family": "Arial"
+      "family": "Lato"
     },
     "flexProps": {
       "alignSelf": "AUTO",
