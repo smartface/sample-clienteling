@@ -2,7 +2,7 @@ const extend = require('js-base/core/extend');
 const PgDashboardDesign = require('ui/ui_pgDashboard');
 const System = require('sf-core/device/system');
 const Router = require("sf-core/ui/router");
-
+const Screen = require('sf-core/device/screen');
 
 const PgDashboard = extend(PgDashboardDesign)(
   // Constructor
@@ -45,6 +45,9 @@ function onLoad(superOnLoad) {
   page.imgSignOut.onTouchEnded = function() {
     Router.goBack("pgLogin");
   };
+  page.svInfo.scrollBarEnabled = false;
+  page.svInfo.layout.height = 90;
+  page.svInfo.layout.minWidth  = 768;
 }
 
 module && (module.exports = PgDashboard);
