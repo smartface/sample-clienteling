@@ -36,6 +36,10 @@ function onLoad(superOnLoad) {
     if (System.OS === "Android") {
         page.tbPassword.keyboardType = KeyboardType.TEXTNOSUGGESTIONS;
     }
+
+    page.btnSignIn.onPress = function() {
+        startLogin.call(page);
+    };
 }
 
 

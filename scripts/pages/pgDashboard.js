@@ -1,8 +1,8 @@
-/* 
-		You can modify its contents.
-*/
 const extend = require('js-base/core/extend');
 const PgDashboardDesign = require('ui/ui_pgDashboard');
+const System = require('sf-core/device/system');
+const Router = require("sf-core/ui/router");
+
 
 const PgDashboard = extend(PgDashboardDesign)(
   // Constructor
@@ -24,6 +24,14 @@ const PgDashboard = extend(PgDashboardDesign)(
  */
 function onShow(superOnShow) {
   superOnShow();
+  const page = this;
+
+  if (System.OS === "iOS") {
+    page.flStatusBarBg.height = page.statusBar.height;
+  }
+  else {
+    page.layout.removeChild(page.flStatusBarBg);
+  }
 }
 
 /**
@@ -33,6 +41,10 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+  const page = this;
+  page.imgSignOut.onTouchEnded = function() {
+    Router.goBack("pgLogin");
+  };
 }
 
 module && (module.exports = PgDashboard);
