@@ -32,8 +32,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 1177.6,
-				"height": 883.2
+				"width": 471.03999999999996,
+				"height": 353.28000000000003
 			}
 		},
 		{
@@ -386,7 +386,7 @@
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.8061033113796257"
 			}
 		},
 		{
@@ -423,7 +423,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.04214048607892318"
 			}
 		},
 		{
@@ -565,7 +565,7 @@
 				"name": "imgLogo",
 				"parent": "c5ff-0dbc-27f3-ff4d",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/smartface_logo.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/smartface_logo.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.47198453719359557"
 			}
 		},
 		{
@@ -683,9 +683,10 @@
 				"width": null,
 				"height": null,
 				"marginLeft": 14,
-				"marginRight": 12,
+				"marginRight": -3.68,
 				"backgroundColor": "rgba( 248, 231, 28, 0 )",
 				"minHeight": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW",
@@ -703,8 +704,9 @@
 				"height": null,
 				"width": null,
 				"marginLeft": 14,
-				"marginRight": 12,
+				"marginRight": -3.68,
 				"minHeight": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -740,7 +742,7 @@
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true,
 				"font": {
-					"size": 12
+					"size": 16
 				}
 			},
 			"className": ".label",
@@ -759,7 +761,7 @@
 				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
 				"font": {
-					"size": 12,
+					"size": 16,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -805,7 +807,7 @@
 				"name": "imgNearbyCustomersExpand",
 				"parent": "33c3-95b9-18c3-7d3f",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/expand.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/expand.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.2504974832438587"
 			}
 		},
 		{
@@ -821,7 +823,11 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320
+				"minWidth": 320,
+				"maxWidth": 600,
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-default",
 			"props": {
@@ -837,6 +843,7 @@
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
 				"minWidth": 320,
+				"maxWidth": 600,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -845,7 +852,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
 				"name": "flReservations",
 				"parent": "295e-648c-2b89-5438",
@@ -991,7 +999,7 @@
 				"name": "imgExpand",
 				"parent": "4652-11da-c001-7ac7",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.9118009075400071"
 			}
 		},
 		{
@@ -1856,7 +1864,7 @@
 				"name": "imgUser",
 				"parent": "d4d2-a0ac-600d-cddd",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.6704852495516205"
 			}
 		},
 		{
@@ -1869,7 +1877,7 @@
 				"textColor": "rgba( 32, 32, 32, 1 )",
 				"usePageVariable": true,
 				"text": "LISA TOWN",
-				"width": 130,
+				"width": 135,
 				"height": 22,
 				"marginBottom": 8,
 				"font": {
@@ -1881,7 +1889,7 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": 130,
+				"width": 135,
 				"height": 22,
 				"touchEnabled": true,
 				"text": "LISA TOWN",
@@ -2981,7 +2989,11 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320
+				"minWidth": 320,
+				"maxWidth": 600,
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-default",
 			"props": {
@@ -2997,6 +3009,7 @@
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
 				"minWidth": 320,
+				"maxWidth": 600,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -3005,7 +3018,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
 				"name": "flTodo",
 				"parent": "295e-648c-2b89-5438",
@@ -3151,7 +3165,7 @@
 				"name": "imgExpand",
 				"parent": "47e9-f191-7cfd-668e",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.9118009075400071"
 			}
 		},
 		{
@@ -3865,7 +3879,7 @@
 				"name": "imgExclamation",
 				"parent": "4b39-63d4-b0ca-3108",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204?random=0.6056515464285646"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.016523751404306397"
 			}
 		},
 		{
@@ -3881,7 +3895,11 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320
+				"minWidth": 320,
+				"maxWidth": 600,
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-default",
 			"props": {
@@ -3897,6 +3915,7 @@
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
 				"minWidth": 320,
+				"maxWidth": 600,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -3905,7 +3924,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
 				"name": "flOpenIncidents",
 				"parent": "295e-648c-2b89-5438",
@@ -4051,7 +4071,7 @@
 				"name": "imgExpand",
 				"parent": "913e-88e1-4b90-5572",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.9118009075400071"
 			}
 		},
 		{
@@ -4734,7 +4754,11 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320
+				"minWidth": 320,
+				"maxWidth": 600,
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-default",
 			"props": {
@@ -4750,6 +4774,7 @@
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
 				"minWidth": 320,
+				"maxWidth": 600,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -4758,7 +4783,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
 				"name": "flNews",
 				"parent": "295e-648c-2b89-5438",
@@ -4904,7 +4930,7 @@
 				"name": "imgExpand",
 				"parent": "023c-e6d6-34a5-99a7",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.9118009075400071"
 			}
 		},
 		{
@@ -5251,7 +5277,11 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320
+				"minWidth": 320,
+				"maxWidth": 600,
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-default",
 			"props": {
@@ -5267,6 +5297,7 @@
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
 				"minWidth": 320,
+				"maxWidth": 600,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5275,7 +5306,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
 				"name": "flShipments",
 				"parent": "295e-648c-2b89-5438",
@@ -5421,7 +5453,7 @@
 				"name": "imgExpand",
 				"parent": "a438-6060-10f1-4e50",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.9118009075400071"
 			}
 		},
 		{
@@ -5769,7 +5801,11 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320
+				"minWidth": 320,
+				"maxWidth": 600,
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-default",
 			"props": {
@@ -5785,6 +5821,7 @@
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
 				"minWidth": 320,
+				"maxWidth": 600,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5793,7 +5830,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
 				"name": "flSocialActivity",
 				"parent": "295e-648c-2b89-5438",
@@ -5939,7 +5977,7 @@
 				"name": "imgExpand",
 				"parent": "0979-6354-1dd4-7a8b",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204?random=0.9118009075400071"
 			}
 		},
 		{
