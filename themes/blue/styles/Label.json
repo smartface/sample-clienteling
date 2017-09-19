@@ -30,6 +30,14 @@
     },
     "&-large": {
       "width": 350
+    },
+    "&-header": {
+      "textColor": "rgba(162,162,162,1)",
+      "font": {
+        "size": 14
+      },
+      "width": null,
+      "height": 20
     }
   }
 }

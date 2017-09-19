@@ -45,12 +45,18 @@
 				"Warning": ".button-warning",
 				"Error": ".button-error",
 				"Success": ".button-success"
+			},
+			"Implementation": {
+				"Signup": ".button-signup",
+				"LoginFB": ".button-signup-fb",
+				"Anonymous": ".button-signup-anonymous"
 			}
 		},
 		"FlexLayout": {
 			"Implementation": {
 				"Default": ".flexLayout-default",
-				"Line": ".flexLayout-line"
+				"Line": ".flexLayout-line",
+				"Margin": ".flexLayout-margin"
 			}
 		},
 		"ScrollView": {
@@ -78,6 +84,9 @@
 				"Small": ".label-small",
 				"Medium": ".label-medium",
 				"Large": ".label-large"
+			},
+			"Implementation": {
+				"Header": ".label-header"
 			}
 		},
 		"ListView": {

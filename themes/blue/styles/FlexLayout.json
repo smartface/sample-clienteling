@@ -1,6 +1,5 @@
 {
 	".flexLayout": {
-
 		"touchEnabled": true,
 		"visible": true,
 		"backgroundColor": "rgba(255,255,255,0)",
@@ -26,6 +25,10 @@
 			"height": 1,
 			"alpha": 0.1,
 			"backgroundColor": "#1D1D26"
+		},
+		"&-margin": {
+			"marginLeft": 20,
+			"marginRight": 20
 		}
 	}
 }

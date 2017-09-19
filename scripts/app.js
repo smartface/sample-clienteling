@@ -15,9 +15,20 @@ Application.onUnhandledError = function(e) {
 const Router = require("sf-core/ui/router");
 require("sf-extension-utils");
 
-Router.add("pgLanding", require("./pages/pgLanding"), true);
-Router.add("pgLogin", require("./pages/pgLogin"), true);
-Router.add("pgDashboard", require("./pages/pgDashboard"), true);
+//Router.add("pgLanding", require("./pages/pgLanding"), true);
+//Router.add("pgLogin", require("./pages/pgLogin"), true);
+//Router.add("pgDashboard", require("./pages/pgDashboard"), true);
+//
+//
+//Router.go("pgLanding", { appStart: true }, false);
 
 
-Router.go("pgLanding", { appStart: true }, false);
+
+var settings = require("./settings.json");
+var themeSettings = settings.config.theme;
+var stylerBuilder = require("library/styler-builder");
+stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
+stylerBuilder.setActiveTheme(themeSettings.currentTheme);
+
+Router.add("pgSignup", require("./pages/pgSignup"), true);
+Router.go("pgSignup");

@@ -38,6 +38,21 @@
     },
     "&-success": {
       "backgroundColor": "#4F8A10"
+    },
+    "&-signup": {
+      "backgroundColor": "rgba(210,49,132,1)",
+      "width": null,
+      "height": null,
+      "flexGrow": 1,
+      "marginTop":10,
+      "marginRight":10,
+      "marginLeft":10,
+      "&-fb": {
+        "backgroundColor": "rgba(71,94,174,1)"
+      },
+      "&-anonymous": {
+        "backgroundColor": "rgba(103,164,231,1)"
+      }
     }
   }
 }
