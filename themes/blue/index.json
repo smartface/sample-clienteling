@@ -47,9 +47,9 @@
 				"Success": ".button-success"
 			},
 			"Implementation": {
-				"Signup": ".button-signup",
-				"LoginFB": ".button-signup-fb",
-				"Anonymous": ".button-signup-anonymous"
+				"Signup": ".button.signup",
+				"LoginFB": ".button.signup.fb",
+				"Anonymous": ".button.signup.anonymous"
 			}
 		},
 		"FlexLayout": {
@@ -180,5 +180,6 @@
 				"Large": ".webView-large"
 			}
 		}
-	}
+	},
+	"childTheme": true
 }
