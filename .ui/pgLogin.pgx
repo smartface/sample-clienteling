@@ -20,7 +20,7 @@
 				}
 			},
 			"className": ".page .page-blue",
-			"version": "6.4.6",
+			"version": "6.4.8",
 			"props": {
 				"backgroundColor": "#4990E2",
 				"orientation": "AUTO",
