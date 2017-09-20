@@ -8,13 +8,13 @@
 				"Page": "Default"
 			},
 			"userProps": {
-				"orientation": "PORTRAIT"
+				"orientation": "AUTO"
 			},
 			"className": ".page",
 			"version": "6.4.8-rc.13",
 			"props": {
 				"backgroundColor": "#FFFFFF",
-				"orientation": "PORTRAIT",
+				"orientation": "AUTO",
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -30,8 +30,8 @@
 					"cc61-eef4-6cd0-8cd4",
 					"a5dc-686b-32a5-43cf"
 				],
-				"width": 313.6,
-				"height": 493.91999999999996
+				"width": 322.5,
+				"height": 518.5799999999999
 			}
 		},
 		{
@@ -543,6 +543,7 @@
 				"marginLeft": 20,
 				"left": 0,
 				"top": 0,
+				"usePageVariable": true,
 				"font": {
 					"size": 10,
 					"bold": false,
@@ -555,8 +556,7 @@
 				},
 				"name": "lblMaterial",
 				"parent": "3dd1-5203-397e-e624",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -592,6 +592,7 @@
 				"marginLeft": 20,
 				"left": 0,
 				"top": 0,
+				"usePageVariable": true,
 				"font": {
 					"size": 10,
 					"bold": false,
@@ -604,8 +605,7 @@
 				},
 				"name": "lblSize",
 				"parent": "3dd1-5203-397e-e624",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -641,6 +641,7 @@
 				"marginLeft": 20,
 				"left": 0,
 				"top": 0,
+				"usePageVariable": true,
 				"font": {
 					"size": 10,
 					"bold": false,
@@ -653,8 +654,7 @@
 				},
 				"name": "lblColor",
 				"parent": "3dd1-5203-397e-e624",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -685,6 +685,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"marginLeft": 15,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -702,8 +703,7 @@
 					"4800-9c77-491c-d3cf",
 					"7574-1e86-8c06-e265",
 					"6cc1-75ed-8c4d-b46c"
-				],
-				"usePageVariable": true
+				]
 			}
 		},
 		{
@@ -1293,6 +1293,9 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 20,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
 				"font": {
 					"size": 13,
 					"bold": false,
@@ -1305,10 +1308,7 @@
 				},
 				"name": "lblProductName",
 				"parent": "41c2-57fa-546b-4468",
-				"children": [],
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -1343,6 +1343,9 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "TOPLEFT",
 				"marginLeft": 20,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
 				"font": {
 					"size": 10,
 					"bold": false,
@@ -1355,10 +1358,7 @@
 				},
 				"name": "lblProductDetail",
 				"parent": "41c2-57fa-546b-4468",
-				"children": [],
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -1395,6 +1395,9 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 20,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
 				"font": {
 					"size": 10,
 					"bold": true,
@@ -1407,10 +1410,7 @@
 				},
 				"name": "lblProductPrice",
 				"parent": "41c2-57fa-546b-4468",
-				"children": [],
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true
+				"children": []
 			}
 		}
 	]

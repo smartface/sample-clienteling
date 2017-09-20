@@ -8,13 +8,13 @@
 				"Page": "Default"
 			},
 			"userProps": {
-				"orientation": "PORTRAIT"
+				"orientation": "AUTO"
 			},
 			"className": ".page",
 			"version": "6.4.8-rc.12",
 			"props": {
 				"backgroundColor": "#FFFFFF",
-				"orientation": "PORTRAIT",
+				"orientation": "AUTO",
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -30,8 +30,8 @@
 					"3aac-ed2b-6f28-f93e",
 					"85f3-4d55-de4a-fe98"
 				],
-				"width": 345,
-				"height": 554.76
+				"width": 60,
+				"height": 96.47999999999999
 			}
 		},
 		{
@@ -207,7 +207,7 @@
 				"name": "ivBanner",
 				"parent": "25f8-b6c1-967d-a7e3",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.12171432221286627"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.16&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -352,7 +352,7 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 40,
+				"height": 30,
 				"text": "smartface@smartface.io",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 197, 197, 197, 1 )",
@@ -363,7 +363,7 @@
 			},
 			"className": ".textBox",
 			"props": {
-				"height": 40,
+				"height": 30,
 				"width": null,
 				"touchEnabled": true,
 				"text": "smartface@smartface.io",
@@ -519,7 +519,7 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 40,
+				"height": 30,
 				"text": "",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 197, 197, 197, 1 )",
@@ -531,7 +531,7 @@
 			},
 			"className": ".textBox",
 			"props": {
-				"height": 40,
+				"height": 30,
 				"width": null,
 				"touchEnabled": true,
 				"text": "",
@@ -761,7 +761,7 @@
 			"className": ".button .button.signup",
 			"props": {
 				"width": null,
-				"height": null,
+				"height": 60,
 				"touchEnabled": true,
 				"text": "Sign Up",
 				"visible": true,
@@ -849,7 +849,7 @@
 			"className": ".button .button.signup.fb",
 			"props": {
 				"width": null,
-				"height": null,
+				"height": 60,
 				"touchEnabled": true,
 				"text": "Login with Facebook",
 				"visible": true,
@@ -893,7 +893,7 @@
 			"className": ".button .button.signup.anonymous",
 			"props": {
 				"width": null,
-				"height": null,
+				"height": 60,
 				"touchEnabled": true,
 				"text": "Anonymous Login",
 				"visible": true,

@@ -13,7 +13,7 @@ const PgSignup = extend(PgSignupDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-
+    this.onOrientationChange = onOrientationChange.bind(this);
   });
 
 /**
@@ -33,6 +33,10 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+}
+
+function onOrientationChange(e) {
+  console.log("onOrientationChange" + this.orientation);
 }
 
 module && (module.exports = PgSignup);
