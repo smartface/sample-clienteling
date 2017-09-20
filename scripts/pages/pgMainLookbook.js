@@ -2,9 +2,9 @@
 		You can modify its contents.
 */
 const extend = require('js-base/core/extend');
-const LoginPage001Design = require('ui/ui_loginPage001');
+const PgMainLookbookDesign = require('ui/ui_pgMainLookbook');
 
-const LoginPage001 = extend(LoginPage001Design)(
+const PgMainLookbook = extend(PgMainLookbookDesign)(
   // Constructor
   function(_super) {
     // Initalizes super class for this page scope
@@ -35,4 +35,4 @@ function onLoad(superOnLoad) {
   superOnLoad();
 }
 
-module && (module.exports = LoginPage001);
+module && (module.exports = PgMainLookbook);

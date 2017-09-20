@@ -42,7 +42,7 @@
     ".signup": {
       "backgroundColor": "rgba(210,49,132,1)",
       "width": null,
-      "height": null,
+      "height": 60,
       "flexProps": {
         "flexGrow": 1
       },

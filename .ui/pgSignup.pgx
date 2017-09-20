@@ -30,8 +30,8 @@
 					"3aac-ed2b-6f28-f93e",
 					"85f3-4d55-de4a-fe98"
 				],
-				"width": 127.50000000000001,
-				"height": 205.02
+				"width": 345,
+				"height": 554.76
 			}
 		},
 		{
@@ -207,7 +207,7 @@
 				"name": "ivBanner",
 				"parent": "25f8-b6c1-967d-a7e3",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.34&brandModel=iPhone%207?random=0.9896645898937395"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.12171432221286627"
 			}
 		},
 		{
@@ -756,13 +756,12 @@
 				"Implementation": "Signup"
 			},
 			"userProps": {
-				"text": "Sign Up",
-				"width": null
+				"text": "Sign Up"
 			},
 			"className": ".button .button.signup",
 			"props": {
 				"width": null,
-				"height": 70,
+				"height": null,
 				"touchEnabled": true,
 				"text": "Sign Up",
 				"visible": true,
@@ -845,13 +844,12 @@
 				"Implementation": "LoginFB"
 			},
 			"userProps": {
-				"text": "Login with Facebook",
-				"width": null
+				"text": "Login with Facebook"
 			},
 			"className": ".button .button.signup.fb",
 			"props": {
 				"width": null,
-				"height": 70,
+				"height": null,
 				"touchEnabled": true,
 				"text": "Login with Facebook",
 				"visible": true,
@@ -890,13 +888,12 @@
 				"Implementation": "Anonymous"
 			},
 			"userProps": {
-				"text": "Anonymous Login",
-				"width": null
+				"text": "Anonymous Login"
 			},
 			"className": ".button .button.signup.anonymous",
 			"props": {
 				"width": null,
-				"height": 70,
+				"height": null,
 				"touchEnabled": true,
 				"text": "Anonymous Login",
 				"visible": true,
