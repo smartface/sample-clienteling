@@ -6,6 +6,9 @@ const System = require('sf-core/device/system');
 const ActionKeyType = require('sf-core/ui/actionkeytype');
 const KeyboardType = require('sf-core/ui/keyboardtype');
 const Router = require("sf-core/ui/router");
+const pageContext = require("../context/pageContext");
+const orientationLib = require("sf-extension-utils").orientation;
+const isTablet = require("../lib/isTablet");
 
 var gapV;
 var gapH = 2 * 26;
@@ -16,10 +19,16 @@ const PgLogin = extend(PgLoginDesign)(
     // Constructor
     function(_super) {
         _super(this);
-        const page = this;
-        page.onShow = onShow.bind(page, page.onShow.bind(page));
-        page.onLoad = onLoad.bind(page, page.onLoad.bind(page));
-        page.onOrientationChange = onOrientationChange.bind(page);
+        this.onShow = onShow.bind(this, this.onShow.bind(this));
+        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+        this.onOrientationChange = onOrientationChange.bind(this);
+        
+        Object.assign(this, {
+            dispose,
+            setContextDispatcher
+        });
+
+        this.styleContext = pageContext.createContext(this);
     });
 
 function onLoad(superOnLoad) {
@@ -43,16 +52,16 @@ function onLoad(superOnLoad) {
 }
 
 
-function onShow(superOnShow) {
+/*function onShow(superOnShow) {
     superOnShow();
     const page = this;
     gapV = page.headerBar.height + page.statusBar.height;
     shortEdge = Math.min(Screen.width, Screen.height);
     longEdge = Math.max(Screen.width, Screen.height);
 
-    page.flInfo.maxHeight = Math.max((shortEdge * 0.7) - gapV,
-        300
-    );
+    // page.flInfo.maxHeight = Math.max((shortEdge * 0.7) - gapV,
+    //     300
+    // );
 
     page.headerBar.leftItemEnabled = false;
     var orientation = orientationLib.getOrientation();
@@ -64,19 +73,19 @@ function onShow(superOnShow) {
 
 
 
-    console.log(`shortEdge = ${shortEdge}`);
-    console.log(`longEdge = ${longEdge}`);
-    console.log(`gapV = ${gapV}`);
-}
+    // console.log(`shortEdge = ${shortEdge}`);
+    // console.log(`longEdge = ${longEdge}`);
+    // console.log(`gapV = ${gapV}`);
+}*/
 
 
-function onOrientationChange() {
+/*function onOrientationChange() {
     const page = this;
     var orientation = orientationLib.getOrientationOnchage();
     arrangeLayout(page, orientation);
 }
-
-function arrangeLayout(page, orientation) {
+*/
+/*function arrangeLayout(page, orientation) {
 
     if (orientation === orientationLib.LANDSCAPE) {
 
@@ -108,13 +117,53 @@ function arrangeLayout(page, orientation) {
 
 
     page.svMain.layout.applyLayout();
-}
+}*/
 
 function startLogin() {
     const page = this;
     Router.go("pgDashboard")
 }
 
+/**
+ * @event onShow
+ * This event is called when a page appears on the screen (everytime).
+ * @param {function} superOnShow super onShow function
+ * @param {Object} parameters passed from Router.go function
+ */
+function onShow(superOnShow) {
+    superOnShow();
+    const page = this;
+    var orientation = orientationLib.getOrientation();
+    arrangeLayout(page, orientation);
+}
 
+function onOrientationChange() {
+    const page = this;
+    const orientation = orientationLib.getOrientationOnchage();
+    arrangeLayout(page, orientation);
+}
+
+function arrangeLayout(page, orientation) {
+
+    console.log(`is tablet? ${isTablet}`);
+
+    page.dispatch({
+        type: "applyLayout",
+        orientation,
+        deviceType: isTablet ? "tablet" : "phone"
+    });
+    page.layout.applyLayout();
+
+}
+
+function setContextDispatcher(dispatcher) {
+    this.dispatch = dispatcher;
+}
+
+function dispose() {
+    this.styleContext(null);
+    this.dispatch = null;
+    this.styleContext = null;
+}
 
 module && (module.exports = PgLogin);
