@@ -30,8 +30,8 @@
 					"cc61-eef4-6cd0-8cd4",
 					"a5dc-686b-32a5-43cf"
 				],
-				"width": 322.5,
-				"height": 518.5799999999999
+				"width": 236.25,
+				"height": 379.89
 			}
 		},
 		{
@@ -375,7 +375,7 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
-				"name": "button1",
+				"name": "btnAddToCard",
 				"parent": "4eac-adc3-51a0-ec5a",
 				"children": []
 			}
@@ -419,7 +419,7 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
-				"name": "button2",
+				"name": "btnQuickOrder",
 				"parent": "4eac-adc3-51a0-ec5a",
 				"children": []
 			}
