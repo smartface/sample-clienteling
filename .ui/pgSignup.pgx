@@ -30,8 +30,8 @@
 					"3aac-ed2b-6f28-f93e",
 					"85f3-4d55-de4a-fe98"
 				],
-				"width": 60,
-				"height": 96.47999999999999
+				"width": 353.28000000000003,
+				"height": 445.43999999999994
 			}
 		},
 		{
@@ -207,7 +207,7 @@
 				"name": "ivBanner",
 				"parent": "25f8-b6c1-967d-a7e3",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.16&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204"
 			}
 		},
 		{

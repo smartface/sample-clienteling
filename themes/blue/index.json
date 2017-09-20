@@ -89,7 +89,8 @@
 				"Large": ".label-large"
 			},
 			"Implementation": {
-				"Header": ".label-header"
+				"Header": ".label-header",
+				"ShoppingBagHeader": ".label-header.shopping"
 			}
 		},
 		"ListView": {

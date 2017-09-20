@@ -2,10 +2,9 @@
 		You can modify its contents.
 */
 const extend = require('js-base/core/extend');
-const PgSignupDesign = require('ui/ui_pgSignup');
-const Screen = require('sf-core/device/screen');
+const PgShoppingBagDesign = require('ui/ui_pgShoppingBag');
 
-const PgSignup = extend(PgSignupDesign)(
+const PgShoppingBag = extend(PgShoppingBagDesign)(
   // Constructor
   function(_super) {
     // Initalizes super class for this page scope
@@ -14,7 +13,7 @@ const PgSignup = extend(PgSignupDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    this.onOrientationChange = onOrientationChange.bind(this);
+
   });
 
 /**
@@ -36,8 +35,4 @@ function onLoad(superOnLoad) {
   superOnLoad();
 }
 
-function onOrientationChange(e) {
-  console.log("Device.Screen.orientation: " + Screen.orientation);
-}
-
-module && (module.exports = PgSignup);
+module && (module.exports = PgShoppingBag);

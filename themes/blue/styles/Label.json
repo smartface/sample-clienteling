@@ -37,7 +37,18 @@
         "size": 14
       },
       "width": null,
-      "height": 20
+      "height": 20,
+      ".shopping": {
+        "height": null,
+        "textAlignment": "BOTTOMCENTER",
+        "marginBottom": 5,
+        "flexProps": {
+          "flexGrow": 1
+        },
+        "font": {
+          "size": 20
+        }
+      }
     }
   }
 }
