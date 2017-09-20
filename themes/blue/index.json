@@ -49,7 +49,10 @@
 			"Implementation": {
 				"Signup": ".button.signup",
 				"LoginFB": ".button.signup.fb",
-				"Anonymous": ".button.signup.anonymous"
+				"Anonymous": ".button.signup.anonymous",
+				"AddToCard": ".button.women.add-to-card",
+				"QuickOrder": ".button.women.quick-order",
+				"Color": ".button.women.color"
 			}
 		},
 		"FlexLayout": {

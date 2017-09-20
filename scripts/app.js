@@ -30,5 +30,5 @@ var stylerBuilder = require("library/styler-builder");
 stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
 stylerBuilder.setActiveTheme(themeSettings.currentTheme);
 
-Router.add("page", require("./pages/pgLookbook"), true);
+Router.add("page", require("./pages/pgWomen"), true);
 Router.go("page");

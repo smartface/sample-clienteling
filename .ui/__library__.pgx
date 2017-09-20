@@ -81,21 +81,23 @@
 				"Sizes": "Default"
 			},
 			"userProps": {
-				"width": 296.7391304347826,
-				"height": 396.73913043478257,
-				"left": 14.130434782608695,
-				"top": 27.173913043478258
+				"width": 142.3913043478261,
+				"height": 240.2173913043478,
+				"left": 8.695652173913043,
+				"top": 7.608695652173913
 			},
 			"className": ".listViewItem",
 			"props": {
-				"height": 396.73913043478257,
-				"width": 296.7391304347826,
+				"height": 240.2173913043478,
+				"width": 142.3913043478261,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"left": 8.695652173913043,
+				"top": 7.608695652173913,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -111,9 +113,7 @@
 				"children": [
 					"6f29-5ea0-6987-8dab",
 					"fc33-df7a-68a8-cf3c"
-				],
-				"left": 14.130434782608695,
-				"top": 27.173913043478258
+				]
 			}
 		},
 		{
@@ -272,6 +272,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"bottom": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -288,8 +289,7 @@
 				"children": [
 					"ad64-9553-69b0-73ce",
 					"b486-5810-c212-1f9c"
-				],
-				"bottom": null
+				]
 			}
 		},
 		{
@@ -371,6 +371,7 @@
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
 				"textAlignment": "BOTTOMCENTER",
+				"marginBottom": 5,
 				"font": {
 					"size": 10,
 					"bold": false,
@@ -384,8 +385,7 @@
 				},
 				"name": "lblName",
 				"parent": "550f-3e5a-5bf7-19f8",
-				"children": [],
-				"marginBottom": 5
+				"children": []
 			}
 		},
 		{
