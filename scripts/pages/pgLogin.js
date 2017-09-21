@@ -7,7 +7,7 @@ const ActionKeyType = require('sf-core/ui/actionkeytype');
 const KeyboardType = require('sf-core/ui/keyboardtype');
 const Router = require("sf-core/ui/router");
 const pageContext = require("../context/pageContext");
-const orientationLib = require("sf-extension-utils").orientation;
+// const orientationLib = require("sf-extension-utils").orientation;
 const isTablet = require("../lib/isTablet");
 
 var gapV;
@@ -144,16 +144,13 @@ function onOrientationChange() {
 }
 
 function arrangeLayout(page, orientation) {
-
-    console.log(`is tablet? ${isTablet}`);
-
+    // console.log(`is tablet? ${isTablet}`);
     page.dispatch({
-        type: "applyLayout",
+        type: "changeOrientation",
         orientation,
         deviceType: isTablet ? "tablet" : "phone"
     });
     page.layout.applyLayout();
-
 }
 
 function setContextDispatcher(dispatcher) {

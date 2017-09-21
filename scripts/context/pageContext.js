@@ -116,7 +116,9 @@ function reducer(state, actors, action, target) {
 					orientation = action.orientation;
 
 					actor.resetClassNames();
-					actor.pushClassName(`${actor.initialClassName}-${action.deviceType}-${action.orientation}`);
+					actor.pushClassName(`#${actor.name}-${action.deviceType}-${action.orientation}`);
+					
+				// 	console.log();
 					
 				// 	actor.pushClassName(actor.initialClassName);
 				// 	var className2Add = `${actor.initialClassName}.${action.deviceType}.${action.orientation}`;
