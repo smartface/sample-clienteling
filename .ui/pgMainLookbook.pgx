@@ -29,8 +29,8 @@
 					"c457-e6cb-6b46-b023",
 					"6051-46a5-778b-d772"
 				],
-				"width": 277.5,
-				"height": 446.21999999999997
+				"width": 562.5,
+				"height": 904.5
 			}
 		},
 		{
@@ -173,7 +173,8 @@
 				"height": null,
 				"backgroundColor": "rgba( 126, 173, 225, 1 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 1,
+					"flexDirection": "ROW"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -193,13 +194,16 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
 				"name": "flBagTrends",
 				"parent": "c457-e6cb-6b46-b023",
-				"children": []
+				"children": [
+					"3379-1c53-ba61-9775",
+					"171a-9f20-120a-7188"
+				]
 			}
 		},
 		{
@@ -240,7 +244,10 @@
 				},
 				"name": "flSunGlasses",
 				"parent": "c457-e6cb-6b46-b023",
-				"children": []
+				"children": [
+					"2afe-6844-a421-00c5",
+					"5726-cbb7-f702-4812"
+				]
 			}
 		},
 		{
@@ -364,6 +371,202 @@
 				"name": "flWomen",
 				"parent": "6051-46a5-778b-d772",
 				"children": []
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "3379-1c53-ba61-9775",
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".imageView .imageView-default",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "NORMAL",
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "imgBagTrends",
+				"parent": "2a84-1b42-a1a7-b7c8",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "171a-9f20-120a-7188",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "flInfo",
+				"parent": "2a84-1b42-a1a7-b7c8",
+				"children": []
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "2afe-6844-a421-00c5",
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".imageView .imageView-default",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "NORMAL",
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "imgSunGlasses",
+				"parent": "842d-3186-5326-4b81",
+				"children": [],
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "7e01-c936-ddc4-5bda",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "flInfo",
+				"parent": "842d-3186-5326-4b81",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "5726-cbb7-f702-4812",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "flInfo",
+				"parent": "842d-3186-5326-4b81",
+				"children": [],
+				"left": 0,
+				"top": 0
 			}
 		}
 	]
