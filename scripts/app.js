@@ -30,9 +30,5 @@ var stylerBuilder = require("library/styler-builder");
 stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
 stylerBuilder.setActiveTheme(themeSettings.currentTheme);
 
-<<<<<<< HEAD
-Router.add("page", require("./pages/pgLogin"));
-=======
-Router.add("page", require("./pages/pgWomen"), true);
->>>>>>> In progress
+Router.add("page", require("./pages/pgShoppingBag"), true);
 Router.go("page");

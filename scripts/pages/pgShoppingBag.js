@@ -1,6 +1,3 @@
-/* 
-		You can modify its contents.
-*/
 const extend = require('js-base/core/extend');
 const PgShoppingBagDesign = require('ui/ui_pgShoppingBag');
 
@@ -13,7 +10,6 @@ const PgShoppingBag = extend(PgShoppingBagDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-
   });
 
 /**

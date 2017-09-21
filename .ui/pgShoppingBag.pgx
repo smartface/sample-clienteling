@@ -12,6 +12,7 @@
 			"version": "6.4.8-rc.13",
 			"props": {
 				"backgroundColor": "#FFFFFF",
+				"font": {},
 				"orientation": "PORTRAIT",
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -45,6 +46,8 @@
 			"props": {
 				"color": "#202020",
 				"visible": true,
+				"font": {},
+				"flexProps": {},
 				"style": "LIGHTCONTENT",
 				"name": "statusBar",
 				"parent": "d125-d864-c390-0484",
@@ -67,6 +70,8 @@
 				"titleColor": "#FFFFFF",
 				"visible": true,
 				"backgroundColor": "#202020",
+				"font": {},
+				"flexProps": {},
 				"name": "headerBar",
 				"parent": "d125-d864-c390-0484",
 				"children": [],
@@ -90,14 +95,15 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
+				"height": null,
+				"width": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -135,14 +141,15 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
+				"height": null,
+				"width": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -177,14 +184,15 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
+				"height": null,
+				"width": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -219,14 +227,15 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
+				"height": null,
+				"width": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -261,14 +270,15 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
+				"height": null,
+				"width": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -351,14 +361,17 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"height": 1,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
 				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
+				"height": 1,
+				"width": null,
+				"marginLeft": 20,
+				"marginRight": 20,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -371,9 +384,7 @@
 				},
 				"name": "flLine",
 				"parent": "d125-d864-c390-0484",
-				"children": [],
-				"marginLeft": 20,
-				"marginRight": 20
+				"children": []
 			}
 		},
 		{
@@ -444,6 +455,8 @@
 				"textColor": "rgba(162,162,162,1)",
 				"textAlignment": "BOTTOMCENTER",
 				"marginBottom": 5,
+				"left": 0,
+				"top": 0,
 				"font": {
 					"size": 20,
 					"bold": false,
@@ -457,9 +470,7 @@
 				},
 				"name": "lblPrice",
 				"parent": "48a5-31f9-7829-a7d4",
-				"children": [],
-				"left": 0,
-				"top": 0
+				"children": []
 			}
 		},
 		{
@@ -489,6 +500,8 @@
 				"textColor": "rgba(162,162,162,1)",
 				"textAlignment": "BOTTOMCENTER",
 				"marginBottom": 5,
+				"left": 0,
+				"top": 0,
 				"font": {
 					"size": 20,
 					"bold": false,
@@ -502,9 +515,7 @@
 				},
 				"name": "lblTotal",
 				"parent": "775d-2230-7c2f-6324",
-				"children": [],
-				"left": 0,
-				"top": 0
+				"children": []
 			}
 		},
 		{
@@ -516,6 +527,8 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"rowHeight": 400,
+				"itemCount": 5,
 				"flexProps": {
 					"flexGrow": 100
 				}
@@ -526,13 +539,14 @@
 				"width": null,
 				"touchEnabled": true,
 				"multiline": false,
-				"rowHeight": 60,
-				"itemCount": 3,
+				"rowHeight": 400,
+				"itemCount": 5,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
@@ -540,6 +554,59 @@
 				},
 				"name": "lvShoppingBag",
 				"parent": "d125-d864-c390-0484",
+				"children": [
+					"903c-a182-ea6c-da4b"
+				]
+			}
+		},
+		{
+			"type": "ListViewItem",
+			"id": "903c-a182-ea6c-da4b",
+			"hiddenComponent": false,
+			"source": {
+				"page": "__library__",
+				"id": "e30a-e6af-e075-a2b5"
+			},
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": 400,
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".listViewItem",
+			"props": {
+				"height": 400,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"left": 0,
+				"top": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"name": "lviShoppingBagItem",
+				"parent": "0956-1b61-5add-487e",
 				"children": []
 			}
 		}
