@@ -31,8 +31,8 @@
 					"49a6-bd3e-b201-a73b",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 333.5,
-				"height": 155.5
+				"width": 281.25,
+				"height": 452.25
 			}
 		},
 		{
@@ -102,7 +102,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -635,6 +635,7 @@
 				"height": null,
 				"marginBottom": null,
 				"paddingBottom": 10,
+				"paddingTop": 10,
 				"flexProps": {
 					"flexGrow": 2,
 					"flexDirection": "COLUMN",
@@ -668,6 +669,7 @@
 				"width": null,
 				"marginBottom": null,
 				"paddingBottom": 10,
+				"paddingTop": 10,
 				"name": "flButtons",
 				"parent": "8fe2-7f47-5fa4-e965",
 				"children": [
@@ -685,7 +687,9 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 20,
+				"height": null,
+				"paddingBottom": null,
+				"marginBottom": 10,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -711,8 +715,10 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": 20,
+				"height": null,
 				"width": null,
+				"paddingBottom": null,
+				"marginBottom": 10,
 				"name": "flSignup",
 				"parent": "85cb-ef9b-d868-698e",
 				"children": [
@@ -730,7 +736,7 @@
 			},
 			"userProps": {
 				"text": "Sign Up",
-				"height": 60,
+				"height": 50,
 				"font": {
 					"size": 16
 				}
@@ -738,7 +744,7 @@
 			"className": ".button .button.signup",
 			"props": {
 				"width": null,
-				"height": 60,
+				"height": 50,
 				"touchEnabled": true,
 				"text": "Sign Up",
 				"visible": true,
@@ -822,6 +828,7 @@
 			},
 			"userProps": {
 				"text": "Login with Facebook",
+				"height": 50,
 				"font": {
 					"size": 16
 				}
@@ -829,7 +836,7 @@
 			"className": ".button .button.signup.fb",
 			"props": {
 				"width": null,
-				"height": 70,
+				"height": 50,
 				"touchEnabled": true,
 				"text": "Login with Facebook",
 				"visible": true,
@@ -868,6 +875,7 @@
 			},
 			"userProps": {
 				"text": "Anonymous Login",
+				"height": 50,
 				"font": {
 					"size": 16
 				}
@@ -875,7 +883,7 @@
 			"className": ".button .button.signup.anonymous",
 			"props": {
 				"width": null,
-				"height": 70,
+				"height": 50,
 				"touchEnabled": true,
 				"text": "Anonymous Login",
 				"visible": true,
@@ -940,7 +948,7 @@
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
 			}
 		},
 		{

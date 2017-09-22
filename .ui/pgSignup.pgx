@@ -31,8 +31,8 @@
 					"3aac-ed2b-6f28-f93e",
 					"85f3-4d55-de4a-fe98"
 				],
-				"width": 141.312,
-				"height": 178.17600000000002
+				"width": 588.8,
+				"height": 409.6
 			}
 		},
 		{
@@ -102,7 +102,7 @@
 					"alignItems": "AUTO",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -209,7 +209,7 @@
 				"name": "ivBanner",
 				"parent": "25f8-b6c1-967d-a7e3",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.16&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.5&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -244,6 +244,7 @@
 				"width": null,
 				"left": 0,
 				"top": 0,
+				"paddingBottom": 100,
 				"name": "flInfo",
 				"parent": "85f3-4d55-de4a-fe98",
 				"children": [
@@ -821,7 +822,7 @@
 					"alignItems": "AUTO",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -871,8 +872,9 @@
 					"flexGrow": 1
 				},
 				"marginLeft": 20,
-				"marginRight": 10,
-				"marginBottom": null,
+				"marginRight": 20,
+				"marginBottom": 10,
+				"marginTop": 10,
 				"name": "btnFacebook",
 				"parent": "b2a4-af8f-ab1e-15e6",
 				"children": []
@@ -913,9 +915,10 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
-				"marginLeft": 10,
+				"marginLeft": 20,
 				"marginRight": 20,
-				"marginBottom": null,
+				"marginBottom": 10,
+				"marginTop": 10,
 				"name": "btnAnonymous",
 				"parent": "b2a4-af8f-ab1e-15e6",
 				"children": []
