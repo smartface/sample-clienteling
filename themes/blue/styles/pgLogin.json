@@ -1,0 +1,39 @@
+{
+	"#pgLogin": {
+		".flexLayout": {
+			"&-tablet": {
+				"&-portrait": {},
+				"&-landscape": {}
+			},
+			"&-phone": {
+				"&-portrait": {},
+				"&-landscape": {}
+			}
+		},
+		"&_svMain": {
+		  "&_flInfo": {
+  			"&-tablet": {
+  				"&-portrait": {
+  				  
+  				},
+  				"&-landscape": {
+  				  
+  				}
+  			},
+  			"&-phone": {
+  				"&-portrait": {
+  				  
+  				},
+  				"&-landscape": {
+  				  
+  				}
+  			}
+		  }
+		},
+		"&_flexLayout": {
+			"@extend*": "#pgLogin.flexLayout",
+			"&_svMain": {
+			}
+		}
+	}
+}

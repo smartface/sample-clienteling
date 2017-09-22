@@ -105,6 +105,9 @@
           "flexGrow": null
         }
       }
+    },
+    "+page:'ss'": {
+      "width": 300
     }
   }
 }

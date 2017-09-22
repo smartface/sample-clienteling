@@ -1,12 +1,27 @@
 const StyleContext = require("../lib/StyleContext");
 const styler = require("@smartface/styler/lib/styler");
+const commands = require("@smartface/styler/lib/commandsManager");
 const getOneProp = require("library/styler-builder")
 	.getOneProp;
+	
+const Screen = require('sf-core/device/screen');
 const INIT_CONTEXT_ACTION_TYPE = require("../lib/Context")
 	.INIT_CONTEXT_ACTION_TYPE;
 
 const styles = require("../themes/blue");
 var styling = styler(styles);
+
+commands.addRuntimeComponent(function(type){
+  switch (type) {
+    case '+page':
+      return function pageCommand(opts){
+				return function(Screen) { return eval(opts.args); }(Screen) ? opts.value : {};
+      }
+      
+      break;
+  }
+})
+
 var deviceType = "";
 var orientation = "";
 
