@@ -5,6 +5,7 @@ const extend = require('js-base/core/extend');
 const PgSignupDesign = require('ui/ui_pgSignup');
 const Page = require('sf-core/ui/page');
 const Screen = require('sf-core/device/screen');
+const pageContext = require("../context/pageContext");
 
 const PgSignup = extend(PgSignupDesign)(
   // Constructor
@@ -16,6 +17,7 @@ const PgSignup = extend(PgSignupDesign)(
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     this.onOrientationChange = onOrientationChange.bind(this);
+    this.styleContext = pageContext.createContext(this);
   });
 
 /**
@@ -38,7 +40,14 @@ function onLoad(superOnLoad) {
 }
 
 function onOrientationChange() {
-  console.log("a" + Screen.width);
+  // console.log("a" + Screen.width);
+  this.dispatch({
+    type: "invalidate"
+  })
+}
+
+function setContextDispatcher(dispatcher) {
+  this.dispatch = dispatcher;
 }
 
 module && (module.exports = PgSignup);

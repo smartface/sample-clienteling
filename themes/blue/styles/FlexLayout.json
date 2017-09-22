@@ -66,7 +66,8 @@
 					"width": null,
 					"height": null,
 					"flexProps": {
-						"flexGrow": 1
+						"flexGrow": 1,
+						"flexDirection": "COLUMN"
 					},
 					"+page:Screen.width > 375": {
 						"flexProps": {

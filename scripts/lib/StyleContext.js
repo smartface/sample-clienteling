@@ -112,6 +112,7 @@
         var _this = this;
 
         var reduceDiffStyleHook = hooks("reduceDiffStyleHook");
+        
         var diffReducer = reduceDiffStyleHook ? reduceDiffStyleHook(this.styles, styles) : function (acc, key) {
           if (_this.styles[key] !== undefined) {
             if (_this.styles[key] !== styles[key]) {
@@ -131,8 +132,14 @@
 
         var beforeHook = hooks("beforeStyleDiffAssign");
         beforeHook && (diff = beforeHook(diff));
-
-        Object.keys(diff).length && Object.assign(this.component, diff);
+        
+        try{
+          Object.keys(diff).length && Object.assign(this.component, diff);
+        } catch(e){
+          throw new Error(JSON.stringify(diff)+" is invalid")
+        }
+        
+        console.log(this.name+":::"+JSON.stringify(this.component.flexProps));
 
         var afterHook = hooks("afterStyleDiffAssign");
         afterHook && (styles = afterHook(styles));
@@ -151,6 +158,10 @@
 
       Stylable.prototype.getStyles = function getStyles() {
         return Object.assign({}, this.styles);
+      };
+      
+      Stylable.prototype.setUgly = function getStyles(value) {
+        return this.isUgly = value;
       };
 
       Stylable.prototype.getInitialClassName = function getInitialClassName() {
@@ -242,12 +253,12 @@
           var comp = context.actors[name];
 
           if (comp.isUgly === true || action.type === _Context.INIT_CONTEXT_ACTION_TYPE) {
-
+            
             var className = context.actors[name].getClassName();
             var beforeHook = hooks("beforeAssignComponentStyles");
             beforeHook && (className = beforeHook(name, className));
 
-            var styles = styler(className + " #" + name)();
+            var styles = styler(className)();
             context.actors[name].setStyles(styles);
             comp.isUgly = false;
           }

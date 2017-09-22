@@ -3,7 +3,6 @@
     "width": 250,
     "height": 70,
     "touchEnabled": true,
-    "text": "Button",
     "visible": true,
     "backgroundColor": "#4A90E2",
     "alpha": 1,
@@ -105,9 +104,6 @@
           "flexGrow": null
         }
       }
-    },
-    "+page:'ss'": {
-      "width": 300
     }
   }
 }

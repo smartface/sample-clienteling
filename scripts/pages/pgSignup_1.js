@@ -3,6 +3,7 @@
 */
 const extend = require('js-base/core/extend');
 const PgSignup_1Design = require('ui/ui_pgSignup_1');
+const pageContext = require("../context/pageContext");
 
 const PgSignup_1 = extend(PgSignup_1Design)(
   // Constructor
@@ -13,7 +14,20 @@ const PgSignup_1 = extend(PgSignup_1Design)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-
+    this.onOrientationChange = onOrientationChange.bind(this);
+    
+    this.classMap = {
+      "pgSignup1_flMain": ".flexLayout .flexLayout-default .flexLayout.signup.main-phone",
+      "pgSignup1_flMain_flInfo_flUserID": ".flexLayout .flexLayout-default .flexLayout-margin",
+      "pgSignup1_flMain_flInfo_flUserID_lblUserID": ".label .label-header",
+      "pgSignup1_flMain_flInfo_flUserID_flLine": ".flexLayout .flexLayout-default .flexLayout-line",
+      "pgSignup1_flMain_flInfo_flPassword": ".flexLayout .flexLayout-default .flexLayout-margin",
+      "pgSignup1_flMain_flInfo_flPassword_lblPassword": ".label .label-header",
+      "pgSignup1_flMain_flInfo_flPassword_flLine": ".flexLayout .flexLayout-default .flexLayout-line",
+      "pgSignup1_flMain_flInfo_flButtons_flSignup_btnSignup": ".button .button.signup",
+      "pgSignup1_flMain_flInfo_flButtons_flOther_btnFacebook": ".button .button.signup.fb",
+      "pgSignup1_flMain_flInfo_flButtons_flOther_btnAnonymous": ".button .button.signup.anonymous"
+   }
   });
 
 /**
@@ -33,6 +47,33 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+  
+    this.setContextDispatcher = setContextDispatcher.bind(this);
+    this.styleContext = pageContext.createContext(
+      this,
+      "pgSignup1",
+      function initialClassNames(name){
+        console.log(name)
+        return this.classMap[name] || ""
+      }.bind(this),
+      function reducers(state, actors, action, target){
+        return state;
+      });
 }
+
+function onOrientationChange() {
+  setTimeout(function(){
+    this.dispatch({
+      type: "invalidate"
+    });
+    
+    this.layout.applyLayout();
+  }.bind(this), 50);
+}
+
+function setContextDispatcher(dispatcher) {
+    this.dispatch = dispatcher;
+}
+
 
 module && (module.exports = PgSignup_1);

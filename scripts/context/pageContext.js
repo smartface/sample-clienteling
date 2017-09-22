@@ -1,6 +1,7 @@
 const StyleContext = require("../lib/StyleContext");
 const styler = require("@smartface/styler/lib/styler");
 const commands = require("@smartface/styler/lib/commandsManager");
+const merge = require("@smartface/styler/lib/utils/merge");
 const getOneProp = require("library/styler-builder")
 	.getOneProp;
 	
@@ -11,16 +12,19 @@ const INIT_CONTEXT_ACTION_TYPE = require("../lib/Context")
 const styles = require("../themes/blue");
 var styling = styler(styles);
 
-commands.addRuntimeComponent(function(type){
+commands.addRuntimeCommandFactory(function(type){
+  console.log(type);
   switch (type) {
     case '+page':
       return function pageCommand(opts){
-				return function(Screen) { return eval(opts.args); }(Screen) ? opts.value : {};
+        var isOK = (function(Screen) { return eval(opts.args); }({width: Screen.width, height: Screen.height}))
+        // console.log("isOK"+isOK.toString()+" "+opts.args+" "+Screen.width)
+				return  isOK ? opts.value : {};
       }
       
       break;
   }
-})
+});
 
 var deviceType = "";
 var orientation = "";
@@ -29,13 +33,14 @@ module.exports = {
 	createContext
 };
 
-function createContext(component) {
+function createContext(component, name, classMap=null, reducers=null) {
 	var styleContext = StyleContext.fromSFComponent(
 		component,
-		"pgLogin",
+		name,
 		//initial classNames
 		function(name){
-		  return "#"+name;
+		  const id = "#"+name
+		  return classMap ? id+" "+classMap(name) : id;
 		},
 		//context hooks
 		function(hook) {
@@ -75,12 +80,17 @@ function createContext(component) {
 						}
 
 						return function diffStylingReducer(acc, key) {
-							if(typeof newStyles[key] === "object") {
+							if(newStyles[key] !== null && typeof newStyles[key] === "object") {
 								if(!isEqual(oldStyles[key], newStyles[key])) {
-									acc[key] = newStyles[key];
+								  if(key == "flexProps")
+									  Object.assign(acc, newStyles[key]);
+									 else
+  									 acc[key] = newStyles[key];
 								}
-							} else if(oldStyles[key] !== newStyles[key]) {
+							} else if(newStyles[key] !== null && oldStyles[key] !== newStyles[key]) {
 								acc[key] = newStyles[key];
+							} else if(newStyles[key] === null) {
+							  acc[key] = NaN;
 							}
 
 							return acc;
@@ -89,6 +99,12 @@ function createContext(component) {
 			}
 		}
 	);
+	
+	const _contextReducer = reducers 
+	  ? function(state, actors, action, target){
+  	    reducers(contextReducer(state, actors, action, target), actors, action, target)
+	    }
+	  : contextReducer
 
 	// creates an initial styling for the context
 	styleContext(
@@ -99,30 +115,31 @@ function createContext(component) {
 			}
 		}*/
 		,
-		reducer
+		_contextReducer
 	);
 
 	return function setStyle(newStyles) {
 		try {
 			const styling = styler(styles, newStyles);
 			// injects a new styling to the context
-			styleContext(styling
-				/*function(className) {
-								return function getStyle() {
-									return getPropsFromStyle(styling, className);
-								}
-							}*/
-				, reducer);
+			styleContext(styling, _contextReducer);
 		} catch(e) {
 			alert(e.message);
 		}
 	};
 }
 
-function reducer(state, actors, action, target) {
+function contextReducer(state, actors, action, target) {
 	const newState = Object.assign({}, state);
-	
+	console.log(action.type);
 	switch(action.type) {
+	  case "invalidate" :
+	    Object.keys(actors).forEach(function(name){
+	      var actor = actors[name];
+	      actor.setUgly(true);
+	    });
+	    
+	    return newState;
 		case "changeOrientation":
 			for(var actorName in actors) {
 				var actor = actors[actorName];
