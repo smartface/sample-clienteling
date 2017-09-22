@@ -59,7 +59,10 @@
 			"Implementation": {
 				"Default": ".flexLayout-default",
 				"Line": ".flexLayout-line",
-				"Margin": ".flexLayout-margin"
+				"Margin": ".flexLayout-margin",
+				"SignupOther":".flexLayout.signup.other",
+				"SignupSignup":".flexLayout.signup",
+				"SignupMain":".flexLayout.signup.main"
 			}
 		},
 		"ScrollView": {

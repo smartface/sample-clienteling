@@ -13,8 +13,6 @@
 			"className": ".page",
 			"version": "6.4.8-rc.12",
 			"props": {
-				"backgroundColor": "#FFFFFF",
-				"orientation": "AUTO",
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -23,6 +21,9 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
+				"backgroundColor": "#FFFFFF",
+				"font": {},
+				"orientation": "AUTO",
 				"name": "pgSignup",
 				"parent": null,
 				"children": [
@@ -30,8 +31,8 @@
 					"3aac-ed2b-6f28-f93e",
 					"85f3-4d55-de4a-fe98"
 				],
-				"width": 353.28000000000003,
-				"height": 445.43999999999994
+				"width": 441.6,
+				"height": 556.8
 			}
 		},
 		{
@@ -45,6 +46,8 @@
 			"props": {
 				"color": "#202020",
 				"visible": true,
+				"font": {},
+				"flexProps": {},
 				"style": "LIGHTCONTENT",
 				"name": "statusBar",
 				"parent": "eddf-f4fa-fca3-67f4",
@@ -67,6 +70,8 @@
 				"titleColor": "#FFFFFF",
 				"visible": true,
 				"backgroundColor": "#202020",
+				"font": {},
+				"flexProps": {},
 				"name": "headerBar",
 				"parent": "eddf-f4fa-fca3-67f4",
 				"children": [],
@@ -78,36 +83,31 @@
 			"id": "85f3-4d55-de4a-fe98",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "SignupMain"
 			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default .flexLayout.signup.main",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
+					"alignItems": "AUTO",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"height": null,
+				"width": null,
 				"name": "flMain",
 				"parent": "eddf-f4fa-fca3-67f4",
 				"children": [
@@ -135,17 +135,13 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"marginLeft": null,
-				"left": 0,
-				"top": 0,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -157,6 +153,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"height": null,
+				"width": null,
+				"marginLeft": null,
+				"left": 0,
+				"top": 0,
 				"name": "flBanner",
 				"parent": "85f3-4d55-de4a-fe98",
 				"children": [
@@ -185,8 +186,6 @@
 			},
 			"className": ".imageView .imageView-default",
 			"props": {
-				"width": null,
-				"height": null,
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
@@ -194,20 +193,23 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"image": "signup_banner.png",
-				"marginLeft": 20,
-				"marginRight": 20,
-				"marginTop": 20,
-				"marginBottom": 20,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"width": null,
+				"height": null,
+				"image": "signup_banner.png",
+				"marginLeft": 20,
+				"marginRight": 20,
+				"marginTop": 20,
+				"marginBottom": 20,
 				"name": "ivBanner",
 				"parent": "25f8-b6c1-967d-a7e3",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.4&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.5&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -228,16 +230,13 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"left": 0,
-				"top": 0,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -249,6 +248,10 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"height": null,
+				"width": null,
+				"left": 0,
+				"top": 0,
 				"name": "flInfo",
 				"parent": "85f3-4d55-de4a-fe98",
 				"children": [
@@ -268,33 +271,37 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"marginBottom": 20,
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 1,
+					"justifyContent": "FLEX_END"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-margin",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"marginLeft": 20,
-				"marginRight": 20,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
+					"justifyContent": "FLEX_END",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"height": null,
+				"width": null,
+				"marginLeft": 20,
+				"marginRight": 20,
+				"marginBottom": 20,
 				"children": [
 					"07e6-9c6b-a5d4-5847",
 					"3488-de72-281e-0f84",
@@ -313,12 +320,16 @@
 			},
 			"userProps": {
 				"text": "User ID",
-				"width": null
+				"width": null,
+				"height": 40,
+				"font": {
+					"size": 28
+				}
 			},
 			"className": ".label .label-header",
 			"props": {
 				"width": null,
-				"height": 20,
+				"height": 40,
 				"touchEnabled": true,
 				"text": "User ID",
 				"visible": true,
@@ -330,7 +341,7 @@
 				"textColor": "rgba(162,162,162,1)",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 14,
+					"size": 28,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -352,18 +363,19 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 30,
+				"height": 40,
 				"text": "smartface@smartface.io",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 197, 197, 197, 1 )",
 				"textColor": "rgba( 63, 63, 63, 1 )",
 				"font": {
-					"family": "Nunito"
+					"family": "Nunito",
+					"size": 28
 				}
 			},
 			"className": ".textBox",
 			"props": {
-				"height": 30,
+				"height": 40,
 				"width": null,
 				"touchEnabled": true,
 				"text": "smartface@smartface.io",
@@ -375,7 +387,7 @@
 				"textColor": "rgba( 63, 63, 63, 1 )",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 14,
+					"size": 28,
 					"bold": false,
 					"italic": false,
 					"family": "Nunito"
@@ -401,14 +413,13 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"height": 1,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
 				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -419,6 +430,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"height": 1,
+				"width": null,
 				"children": [],
 				"parent": "b980-8891-42c7-67ca",
 				"name": "flLine"
@@ -440,16 +453,13 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-margin",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"marginLeft": 20,
-				"marginRight": 20,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -461,6 +471,10 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"height": null,
+				"width": null,
+				"marginLeft": 20,
+				"marginRight": 20,
 				"children": [
 					"d28c-0fe9-21f7-bb46",
 					"80e1-e2f5-878f-5953",
@@ -480,12 +494,16 @@
 			},
 			"userProps": {
 				"text": "Password",
-				"width": null
+				"width": null,
+				"height": 40,
+				"font": {
+					"size": 28
+				}
 			},
 			"className": ".label .label-header",
 			"props": {
 				"width": null,
-				"height": 20,
+				"height": 40,
 				"touchEnabled": true,
 				"text": "Password",
 				"visible": true,
@@ -497,7 +515,7 @@
 				"textColor": "rgba(162,162,162,1)",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 14,
+					"size": 28,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -519,19 +537,20 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 30,
+				"height": 40,
 				"text": "",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 197, 197, 197, 1 )",
 				"textColor": "rgba( 63, 63, 63, 1 )",
 				"isPassword": true,
 				"font": {
-					"family": "Nunito"
+					"family": "Nunito",
+					"size": 28
 				}
 			},
 			"className": ".textBox",
 			"props": {
-				"height": 30,
+				"height": 40,
 				"width": null,
 				"touchEnabled": true,
 				"text": "",
@@ -542,9 +561,8 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 63, 63, 63, 1 )",
 				"textAlignment": "MIDLEFT",
-				"isPassword": true,
 				"font": {
-					"size": 14,
+					"size": 28,
 					"bold": false,
 					"italic": false,
 					"family": "Nunito"
@@ -553,6 +571,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"isPassword": true,
 				"children": [],
 				"parent": "8fe8-6348-112c-7fea",
 				"name": "taPassword"
@@ -570,14 +589,13 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"height": 1,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
 				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -588,6 +606,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"height": 1,
+				"width": null,
 				"children": [],
 				"parent": "8fe8-6348-112c-7fea",
 				"name": "flLine"
@@ -603,28 +623,28 @@
 			},
 			"userProps": {
 				"top": 0,
-				"width": 120,
+				"width": 250,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"height": 30,
+				"height": 40,
 				"text": "Forgot Password",
 				"textColor": "rgba( 153, 153, 153, 1 )",
 				"textAlignment": "TOPLEFT",
+				"layout": {},
+				"flex": {},
+				"defaults": {},
+				"left": 0,
 				"flexProps": {
 					"alignSelf": "FLEX_END"
 				},
 				"font": {
-					"size": 14,
+					"size": 28,
 					"family": "Nunito"
-				},
-				"layout": {},
-				"flex": {},
-				"defaults": {},
-				"left": 0
+				}
 			},
 			"className": ".label",
 			"props": {
-				"width": 120,
-				"height": 30,
+				"width": 250,
+				"height": 40,
 				"touchEnabled": true,
 				"text": "Forgot Password",
 				"visible": true,
@@ -635,10 +655,8 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 153, 153, 153, 1 )",
 				"textAlignment": "TOPLEFT",
-				"top": 0,
-				"left": 0,
 				"font": {
-					"size": 14,
+					"size": 28,
 					"bold": false,
 					"italic": false,
 					"family": "Nunito"
@@ -647,6 +665,8 @@
 					"alignSelf": "FLEX_END",
 					"positionType": "RELATIVE"
 				},
+				"top": 0,
+				"left": 0,
 				"children": [],
 				"parent": "8fe8-6348-112c-7fea",
 				"name": "lblForgotPassword"
@@ -675,16 +695,13 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"marginBottom": null,
-				"paddingBottom": 10,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -696,6 +713,10 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"height": null,
+				"width": null,
+				"marginBottom": null,
+				"paddingBottom": 10,
 				"name": "flButtons",
 				"parent": "1b2d-3bcc-ca93-6e3c",
 				"children": [
@@ -709,37 +730,31 @@
 			"id": "4309-0f0c-2018-4d90",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "SignupSignup"
 			},
-			"userProps": {
-				"width": null,
-				"height": 20,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default .flexLayout.signup",
 			"props": {
-				"height": 20,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
+					"alignItems": "FLEX_END",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"height": null,
+				"width": null,
 				"name": "flSignup",
 				"parent": "a560-fcae-9e93-0a16",
 				"children": [
@@ -761,7 +776,7 @@
 			"className": ".button .button.signup",
 			"props": {
 				"width": null,
-				"height": 60,
+				"height": 70,
 				"touchEnabled": true,
 				"text": "Sign Up",
 				"visible": true,
@@ -771,12 +786,8 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
-				"marginTop": 5,
-				"marginBottom": 5,
-				"marginRight": 10,
-				"marginLeft": 10,
 				"font": {
-					"size": 16,
+					"size": 28,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -786,6 +797,9 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
+				"marginLeft": 20,
+				"marginRight": 20,
+				"marginBottom": 20,
 				"name": "btnSignup",
 				"parent": "4309-0f0c-2018-4d90",
 				"children": []
@@ -796,37 +810,31 @@
 			"id": "b2a4-af8f-ab1e-15e6",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "SignupOther"
 			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default .flexLayout.signup.other",
 			"props": {
-				"height": null,
-				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
+					"alignItems": "AUTO",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"height": null,
+				"width": null,
 				"name": "flOther",
 				"parent": "a560-fcae-9e93-0a16",
 				"children": [
@@ -849,7 +857,7 @@
 			"className": ".button .button.signup.fb",
 			"props": {
 				"width": null,
-				"height": 60,
+				"height": 70,
 				"touchEnabled": true,
 				"text": "Login with Facebook",
 				"visible": true,
@@ -859,12 +867,8 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
-				"marginTop": 5,
-				"marginBottom": 5,
-				"marginRight": 5,
-				"marginLeft": 10,
 				"font": {
-					"size": 16,
+					"size": 28,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -874,6 +878,9 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
+				"marginLeft": 20,
+				"marginRight": 10,
+				"marginBottom": null,
 				"name": "btnFacebook",
 				"parent": "b2a4-af8f-ab1e-15e6",
 				"children": []
@@ -893,7 +900,7 @@
 			"className": ".button .button.signup.anonymous",
 			"props": {
 				"width": null,
-				"height": 60,
+				"height": 70,
 				"touchEnabled": true,
 				"text": "Anonymous Login",
 				"visible": true,
@@ -903,12 +910,8 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
-				"marginTop": 5,
-				"marginBottom": 5,
-				"marginRight": 10,
-				"marginLeft": 5,
 				"font": {
-					"size": 16,
+					"size": 28,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -918,6 +921,9 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
+				"marginLeft": 10,
+				"marginRight": 20,
+				"marginBottom": null,
 				"name": "btnAnonymous",
 				"parent": "b2a4-af8f-ab1e-15e6",
 				"children": []

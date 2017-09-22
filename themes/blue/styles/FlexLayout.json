@@ -29,6 +29,40 @@
 		"&-margin": {
 			"marginLeft": 20,
 			"marginRight": 20
+		},
+		".signup": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1,
+				"flexDirection": "ROW",
+				"alignItems": "FLEX_END"
+			},
+			".other": {
+				"width": null,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW",
+					"alignItems": "AUTO"
+				},
+				"+page:Screen.width > 2000": {
+					"flexProps": {
+						"flexDirection": "COLUMN"
+					}
+				}
+			},
+			".main": {
+				"flexProps": {
+					"flexDirection": "COLUMN",
+					"alignItems": "AUTO"
+				},
+				"+page:Screen.width > 2000": {
+					"flexProps": {
+						"flexDirection": "ROW"
+					}
+				}
+			}
 		}
 	}
 }
