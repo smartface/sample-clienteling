@@ -46,7 +46,7 @@
 					"flexDirection": "ROW",
 					"alignItems": "AUTO"
 				},
-				"+page:Screen.width > 2000": {
+				"+page:Screen.width > 1000": {
 					"flexProps": {
 						"flexDirection": "COLUMN"
 					}
@@ -57,9 +57,21 @@
 					"flexDirection": "COLUMN",
 					"alignItems": "AUTO"
 				},
-				"+page:Screen.width > 2000": {
+				"+page:Screen.width > 1000": {
 					"flexProps": {
 						"flexDirection": "ROW"
+					}
+				},
+				"&-phone": {
+					"width": null,
+					"height": null,
+					"flexProps": {
+						"flexGrow": 1
+					},
+					"+page:Screen.width > 375": {
+						"flexProps": {
+							"flexDirection": "ROW"
+						}
 					}
 				}
 			},
@@ -73,7 +85,7 @@
 					"flexDirection": "COLUMN",
 					"alignItems": "AUTO"
 				},
-				"+page:Screen.width > 2000": {
+				"+page:Screen.width > 1000": {
 					"paddingBottom": 100
 				}
 			}

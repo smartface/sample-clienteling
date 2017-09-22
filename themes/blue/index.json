@@ -63,6 +63,7 @@
 				"SignupOther":".flexLayout.signup.other",
 				"SignupSignup":".flexLayout.signup",
 				"SignupMain":".flexLayout.signup.main",
+				"SignupMainPhone":".flexLayout.signup.main-phone",
 				"SignupInfo":".flexLayout.signup.info"
 			}
 		},
