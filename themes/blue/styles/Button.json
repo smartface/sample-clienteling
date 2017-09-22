@@ -59,8 +59,8 @@
         "+page:Screen.width > 2000": {
           "marginRight": 20,
           "marginLeft": 20,
-          "marginTop": 20,
-          "marginBottom": 20
+          "marginTop": 10,
+          "marginBottom": 10
         }
       },
       ".anonymous": {
@@ -70,9 +70,13 @@
         "+page:Screen.width > 2000": {
           "marginRight": 20,
           "marginLeft": 20,
-          "marginTop": 20,
-          "marginBottom": 20
+          "marginTop": 10,
+          "marginBottom": 10
         }
+      },
+      "+page:Screen.width > 2000": {
+        "marginTop": 10,
+        "marginBottom": 10
       }
     },
     ".women": {

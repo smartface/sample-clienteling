@@ -62,6 +62,20 @@
 						"flexDirection": "ROW"
 					}
 				}
+			},
+			".info": {
+				"width": null,
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "COLUMN",
+					"alignItems": "AUTO"
+				},
+				"+page:Screen.width > 2000": {
+					"paddingBottom": 100
+				}
 			}
 		}
 	}

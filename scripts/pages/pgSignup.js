@@ -4,6 +4,7 @@
 const extend = require('js-base/core/extend');
 const PgSignupDesign = require('ui/ui_pgSignup');
 const Page = require('sf-core/ui/page');
+const Screen = require('sf-core/device/screen');
 
 const PgSignup = extend(PgSignupDesign)(
   // Constructor
@@ -37,7 +38,7 @@ function onLoad(superOnLoad) {
 }
 
 function onOrientationChange() {
-
+  console.log("a" + Screen.width);
 }
 
 module && (module.exports = PgSignup);
