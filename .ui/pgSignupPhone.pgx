@@ -1,6 +1,5 @@
 {
-	"components": [
-		{
+	"components": [{
 			"type": "Page",
 			"id": "da7d-a011-d4fb-9c5b",
 			"initialized": true,
@@ -24,7 +23,7 @@
 				"backgroundColor": "#FFFFFF",
 				"font": {},
 				"orientation": "AUTO",
-				"name": "pgSignup_1",
+				"name": "pgSignupPhone",
 				"parent": null,
 				"children": [
 					"a431-6426-27d6-3884",

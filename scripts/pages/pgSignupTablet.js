@@ -2,12 +2,12 @@
 		You can modify its contents.
 */
 const extend = require('js-base/core/extend');
-const PgSignupDesign = require('ui/ui_pgSignup');
+const PgSignupTabletDesign = require('ui/ui_pgSignupTablet');
 const Page = require('sf-core/ui/page');
 const Screen = require('sf-core/device/screen');
 const pageContext = require("../context/pageContext");
 
-const PgSignup = extend(PgSignupDesign)(
+const PgSignupTablet = extend(PgSignupTabletDesign)(
   // Constructor
   function(_super) {
     // Initalizes super class for this page scope
@@ -50,4 +50,4 @@ function setContextDispatcher(dispatcher) {
   this.dispatch = dispatcher;
 }
 
-module && (module.exports = PgSignup);
+module && (module.exports = PgSignupTablet);

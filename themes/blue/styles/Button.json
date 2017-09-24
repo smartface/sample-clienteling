@@ -38,46 +38,6 @@
     "&-success": {
       "backgroundColor": "#4F8A10"
     },
-    ".signup": {
-      "backgroundColor": "rgba(210,49,132,1)",
-      "width": null,
-      "height": 70,
-      "marginLeft": 20,
-      "marginRight": 20,
-      "marginBottom": 20,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "font": {
-        "size": 28
-      },
-      ".fb": {
-        "backgroundColor": "rgba(71,94,174,1)",
-        "marginRight": 10,
-        "marginBottom": null,
-        "+page:Screen.width > 1000": {
-          "marginRight": 20,
-          "marginLeft": 20,
-          "marginTop": 10,
-          "marginBottom": 10
-        }
-      },
-      ".anonymous": {
-        "backgroundColor": "rgba(103,164,231,1)",
-        "marginLeft": 10,
-        "marginBottom": null,
-        "+page:Screen.width > 1000": {
-          "marginRight": 20,
-          "marginLeft": 20,
-          "marginTop": 10,
-          "marginBottom": 10
-        }
-      },
-      "+page:Screen.width > 1000": {
-        "marginTop": 10,
-        "marginBottom": 10
-      }
-    },
     ".women": {
       "width": null,
       "height": 50,
@@ -99,7 +59,6 @@
       ".color": {
         "width": 20,
         "height": 20,
-        "text": "",
         "flexProps": {
           "flexGrow": null
         }

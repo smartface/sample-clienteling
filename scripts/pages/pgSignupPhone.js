@@ -2,10 +2,10 @@
 		You can modify its contents.
 */
 const extend = require('js-base/core/extend');
-const PgSignup_1Design = require('ui/ui_pgSignup_1');
+const PgSignupPhoneDesign = require('ui/ui_pgSignupPhone');
 const pageContext = require("../context/pageContext");
 
-const PgSignup_1 = extend(PgSignup_1Design)(
+const PgSignupPhone = extend(PgSignupPhoneDesign)(
   // Constructor
   function(_super) {
     // Initalizes super class for this page scope
@@ -15,7 +15,7 @@ const PgSignup_1 = extend(PgSignup_1Design)(
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     this.onOrientationChange = onOrientationChange.bind(this);
-    
+
     this.classMap = {
       "pgSignup1_flMain": ".flexLayout .flexLayout-default .flexLayout.signup.main-phone",
       "pgSignup1_flMain_flInfo_flUserID": ".flexLayout .flexLayout-default .flexLayout-margin",
@@ -27,7 +27,7 @@ const PgSignup_1 = extend(PgSignup_1Design)(
       "pgSignup1_flMain_flInfo_flButtons_flSignup_btnSignup": ".button .button.signup",
       "pgSignup1_flMain_flInfo_flButtons_flOther_btnFacebook": ".button .button.signup.fb",
       "pgSignup1_flMain_flInfo_flButtons_flOther_btnAnonymous": ".button .button.signup.anonymous"
-   }
+    };
   });
 
 /**
@@ -47,33 +47,32 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
-  
-    this.setContextDispatcher = setContextDispatcher.bind(this);
-    this.styleContext = pageContext.createContext(
-      this,
-      "pgSignup1",
-      function initialClassNames(name){
-        console.log(name)
-        return this.classMap[name] || ""
-      }.bind(this),
-      function reducers(state, actors, action, target){
-        return state;
-      });
+
+  this.setContextDispatcher = setContextDispatcher.bind(this);
+  this.styleContext = pageContext.createContext(
+    this,
+    "pgSignup1",
+    function initialClassNames(name) {
+      console.log(name);
+      return this.classMap[name] || "";
+    }.bind(this),
+    function reducers(state, actors, action, target) {
+      return state;
+    });
 }
 
 function onOrientationChange() {
-  setTimeout(function(){
+  setTimeout(function() {
     this.dispatch({
       type: "invalidate"
     });
-    
+
     this.layout.applyLayout();
   }.bind(this), 50);
 }
 
 function setContextDispatcher(dispatcher) {
-    this.dispatch = dispatcher;
+  this.dispatch = dispatcher;
 }
 
-
-module && (module.exports = PgSignup_1);
+module && (module.exports = PgSignupPhone);
