@@ -1,0 +1,54 @@
+{
+  ".button": {
+    ".pgSignupPhone": {
+      "height": null,
+      "width": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "font": {
+        "size": 14,
+        "family": "Lato"
+      },
+      ".signup": {
+        "backgroundColor": "rgba(210,49,132,1)",
+        "+page:Screen.width > 450": {
+
+        }
+      },
+      ".fb": {
+        "backgroundColor": "rgba(71,94,174,1)",
+        "marginRight": 5,
+        "+page:Screen.width > 450": {
+
+        }
+      },
+      ".anonymous": {
+        "backgroundColor": "rgba(103,164,231,1)",
+        "marginLeft": 5,
+        "+page:Screen.width > 450": {
+
+        }
+      }
+    }
+  },
+  ".flexLayout": {
+    ".pgSignupPhone": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      ".main": {
+        "flexProps": {
+          "flexDirection": "COLUMN"
+        },
+        "+page:Screen.width > 450": {
+          "flexProps": {
+            "flexDirection": "ROW"
+          }
+        }
+      }
+    }
+  }
+}

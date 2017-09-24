@@ -1,5 +1,6 @@
 {
-	"components": [{
+	"components": [
+		{
 			"type": "Page",
 			"id": "da7d-a011-d4fb-9c5b",
 			"initialized": true,
@@ -30,8 +31,8 @@
 					"49a6-bd3e-b201-a73b",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 281.25,
-				"height": 452.25
+				"width": 176.25,
+				"height": 283.41
 			}
 		},
 		{
@@ -82,10 +83,10 @@
 			"id": "c868-c144-5c0f-6155",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "SignupMainPhone"
+				"Implementation": "pgSignupPhone-Main"
 			},
 			"userProps": {},
-			"className": ".flexLayout .flexLayout-default .flexLayout.signup.main-phone",
+			"className": ".flexLayout .flexLayout-default .flexLayout.pgSignupPhone.main",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -189,8 +190,8 @@
 				"paddingTop": 20,
 				"paddingBottom": 20,
 				"visible": true,
-				"paddingLeft": null,
-				"paddingRight": null,
+				"paddingLeft": 20,
+				"paddingRight": 20,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -221,8 +222,8 @@
 				"top": null,
 				"paddingTop": 20,
 				"paddingBottom": 20,
-				"paddingLeft": null,
-				"paddingRight": null,
+				"paddingLeft": 20,
+				"paddingRight": 20,
 				"name": "flInfo",
 				"parent": "c868-c144-5c0f-6155",
 				"children": [
@@ -300,7 +301,6 @@
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
-				"text": "User ID",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -319,6 +319,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"text": "User ID",
 				"children": [],
 				"parent": "076e-47c9-12e8-938b",
 				"name": "lblUserID"
@@ -346,7 +347,6 @@
 				"height": 30,
 				"width": null,
 				"touchEnabled": true,
-				"text": "smartface@smartface.io",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -364,6 +364,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"text": "smartface@smartface.io",
 				"children": [],
 				"parent": "076e-47c9-12e8-938b",
 				"name": "taUserID"
@@ -472,7 +473,6 @@
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
-				"text": "Password",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -491,6 +491,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"text": "Password",
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
 				"name": "lblPassword"
@@ -519,7 +520,6 @@
 				"height": 30,
 				"width": null,
 				"touchEnabled": true,
-				"text": "",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -537,6 +537,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"text": "",
 				"isPassword": true,
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
@@ -589,30 +590,29 @@
 			},
 			"userProps": {
 				"top": 0,
-				"width": 120,
+				"width": 110,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"height": 30,
 				"text": "Forgot Password",
 				"textColor": "rgba( 153, 153, 153, 1 )",
 				"textAlignment": "TOPLEFT",
+				"layout": {},
+				"flex": {},
+				"defaults": {},
+				"left": 0,
 				"flexProps": {
 					"alignSelf": "FLEX_END"
 				},
 				"font": {
 					"size": 14,
 					"family": "Nunito"
-				},
-				"layout": {},
-				"flex": {},
-				"defaults": {},
-				"left": 0
+				}
 			},
 			"className": ".label",
 			"props": {
-				"width": 120,
+				"width": 110,
 				"height": 30,
 				"touchEnabled": true,
-				"text": "Forgot Password",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -632,6 +632,7 @@
 					"positionType": "RELATIVE"
 				},
 				"top": 0,
+				"text": "Forgot Password",
 				"left": 0,
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
@@ -749,23 +750,12 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "Signup"
+				"Implementation": "pgSignupPhone-Signup"
 			},
 			"userProps": {
-				"text": "Sign Up",
-				"height": null,
-				"marginBottom": null,
-				"marginLeft": null,
-				"marginRight": null,
-				"font": {
-					"size": 14,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO"
-				}
+				"text": "Sign Up"
 			},
-			"className": ".button .button.signup",
+			"className": ".button .button.pgSignupPhone.signup",
 			"props": {
 				"width": null,
 				"height": null,
@@ -788,9 +778,6 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
-				"marginLeft": null,
-				"marginRight": null,
-				"marginBottom": null,
 				"text": "Sign Up",
 				"name": "btnSignup",
 				"parent": "ec72-6d93-7723-3f20",
@@ -849,17 +836,12 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "LoginFB"
+				"Implementation": "pgSignupPhone-Facebook"
 			},
 			"userProps": {
-				"text": "Login with Facebook",
-				"height": null,
-				"marginLeft": null,
-				"font": {
-					"size": 16
-				}
+				"text": "Login with Facebook"
 			},
-			"className": ".button .button.signup.fb",
+			"className": ".button .button.pgSignupPhone.fb",
 			"props": {
 				"width": null,
 				"height": null,
@@ -872,7 +854,7 @@
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
 				"font": {
-					"size": 16,
+					"size": 14,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -882,9 +864,7 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
-				"marginLeft": null,
-				"marginRight": 10,
-				"marginBottom": null,
+				"marginRight": 5,
 				"text": "Login with Facebook",
 				"name": "btnFacebook",
 				"parent": "3eca-e67b-d6e2-e8bf",
@@ -897,17 +877,12 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "Anonymous"
+				"Implementation": "pgSignupPhone-Anonymous"
 			},
 			"userProps": {
-				"text": "Anonymous Login",
-				"height": null,
-				"marginRight": null,
-				"font": {
-					"size": 16
-				}
+				"text": "Anonymous Login"
 			},
-			"className": ".button .button.signup.anonymous",
+			"className": ".button .button.pgSignupPhone.anonymous",
 			"props": {
 				"width": null,
 				"height": null,
@@ -920,7 +895,7 @@
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
 				"font": {
-					"size": 16,
+					"size": 14,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -930,9 +905,7 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
-				"marginLeft": 10,
-				"marginRight": null,
-				"marginBottom": null,
+				"marginLeft": 5,
 				"text": "Anonymous Login",
 				"name": "btnAnonymous",
 				"parent": "3eca-e67b-d6e2-e8bf",
@@ -983,7 +956,7 @@
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.47&brandModel=iPhone%207?random=0.9578367086026611"
 			}
 		},
 		{
@@ -1013,7 +986,6 @@
 				"width": null,
 				"height": 50,
 				"touchEnabled": true,
-				"text": "CLIENTELING",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 0, 255, 50, 0 )",
@@ -1033,6 +1005,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 0
 				},
+				"text": "CLIENTELING",
 				"minHeight": 50,
 				"minWidth": 250,
 				"maxHeight": 50,

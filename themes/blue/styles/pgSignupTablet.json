@@ -1,6 +1,6 @@
 {
   ".button": {
-    ".signup": {
+    ".pgSignupTablet": {
       "backgroundColor": "rgba(210,49,132,1)",
       "width": null,
       "height": 70,
@@ -11,7 +11,8 @@
         "flexGrow": 1
       },
       "font": {
-        "size": 28
+        "size": 28,
+        "family": "Lato"
       },
       ".fb": {
         "backgroundColor": "rgba(71,94,174,1)",
@@ -38,6 +39,56 @@
       "+page:Screen.width > 1000": {
         "marginTop": 10,
         "marginBottom": 10
+      }
+    }
+  },
+  ".flexLayout": {
+    ".pgSignupTablet": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "ROW",
+        "alignItems": "FLEX_END"
+      },
+      ".other": {
+        "width": null,
+        "height": null,
+        "flexProps": {
+          "flexGrow": 1,
+          "flexDirection": "ROW",
+          "alignItems": "AUTO"
+        },
+        "+page:Screen.width > 1000": {
+          "flexProps": {
+            "flexDirection": "COLUMN"
+          }
+        }
+      },
+      ".main": {
+        "flexProps": {
+          "flexDirection": "COLUMN",
+          "alignItems": "AUTO"
+        },
+        "+page:Screen.width > 1000": {
+          "flexProps": {
+            "flexDirection": "ROW"
+          }
+        }
+      },
+      ".info": {
+        "width": null,
+        "height": null,
+        "left": 0,
+        "top": 0,
+        "flexProps": {
+          "flexGrow": 1,
+          "flexDirection": "COLUMN",
+          "alignItems": "AUTO"
+        },
+        "+page:Screen.width > 1000": {
+          "paddingBottom": 100
+        }
       }
     }
   }

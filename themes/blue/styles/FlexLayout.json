@@ -29,67 +29,6 @@
 		"&-margin": {
 			"marginLeft": 20,
 			"marginRight": 20
-		},
-		".signup": {
-			"width": null,
-			"height": null,
-			"flexProps": {
-				"flexGrow": 1,
-				"flexDirection": "ROW",
-				"alignItems": "FLEX_END"
-			},
-			".other": {
-				"width": null,
-				"height": null,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW",
-					"alignItems": "AUTO"
-				},
-				"+page:Screen.width > 1000": {
-					"flexProps": {
-						"flexDirection": "COLUMN"
-					}
-				}
-			},
-			".main": {
-				"flexProps": {
-					"flexDirection": "COLUMN",
-					"alignItems": "AUTO"
-				},
-				"+page:Screen.width > 1000": {
-					"flexProps": {
-						"flexDirection": "ROW"
-					}
-				},
-				"&-phone": {
-					"width": null,
-					"height": null,
-					"flexProps": {
-						"flexGrow": 1,
-						"flexDirection": "COLUMN"
-					},
-					"+page:Screen.width > 375": {
-						"flexProps": {
-							"flexDirection": "ROW"
-						}
-					}
-				}
-			},
-			".info": {
-				"width": null,
-				"height": null,
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "COLUMN",
-					"alignItems": "AUTO"
-				},
-				"+page:Screen.width > 1000": {
-					"paddingBottom": 100
-				}
-			}
 		}
 	}
 }

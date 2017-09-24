@@ -47,12 +47,15 @@
 				"Success": ".button-success"
 			},
 			"Implementation": {
-				"Signup": ".button.signup",
-				"LoginFB": ".button.signup.fb",
-				"Anonymous": ".button.signup.anonymous",
+				"pgSignupTablet-Signup": ".button.pgSignupTablet",
+				"pgSignupTablet-Facebook": ".button.pgSignupTablet.fb",
+				"pgSignupTablet-Anonymous": ".button.pgSignupTablet.anonymous",
 				"AddToCard": ".button.women.add-to-card",
 				"QuickOrder": ".button.women.quick-order",
-				"Color": ".button.women.color"
+				"Color": ".button.women.color",
+				"pgSignupPhone-Signup": ".button.pgSignupPhone.signup",
+				"pgSignupPhone-Facebook": ".button.pgSignupPhone.fb",
+				"pgSignupPhone-Anonymous": ".button.pgSignupPhone.anonymous"
 			}
 		},
 		"FlexLayout": {
@@ -60,11 +63,11 @@
 				"Default": ".flexLayout-default",
 				"Line": ".flexLayout-line",
 				"Margin": ".flexLayout-margin",
-				"SignupOther":".flexLayout.signup.other",
-				"SignupSignup":".flexLayout.signup",
-				"SignupMain":".flexLayout.signup.main",
-				"SignupMainPhone":".flexLayout.signup.main-phone",
-				"SignupInfo":".flexLayout.signup.info"
+				"pgSignupTablet-Other": ".flexLayout.pgSignupTablet.other",
+				"pgSignupTablet-Signup": ".flexLayout.pgSignupTablet",
+				"pgSignupTablet-Main": ".flexLayout.pgSignupTablet.main",
+				"pgSignupTablet-Info": ".flexLayout.pgSignupTablet.info",
+				"pgSignupPhone-Main": ".flexLayout.pgSignupPhone.main"
 			}
 		},
 		"ScrollView": {
