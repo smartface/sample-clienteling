@@ -1,6 +1,6 @@
 {
-  ".button": {
-    ".pgSignupTablet": {
+  "#pgSignupTablet": {
+    ".btnFacebook": {
       "backgroundColor": "rgba(210,49,132,1)",
       "width": null,
       "height": 70,
@@ -14,81 +14,108 @@
         "size": 28,
         "family": "Lato"
       },
-      ".fb": {
-        "backgroundColor": "rgba(71,94,174,1)",
-        "marginRight": 10,
-        "marginBottom": null,
-        "+page:Screen.width > 1000": {
-          "marginRight": 20,
-          "marginLeft": 20,
-          "marginTop": 10,
-          "marginBottom": 10
-        }
+      "backgroundColor": "rgba(71,94,174,1)",
+      "marginRight": 10,
+      "marginBottom": null,
+      "+page:Screen.width > 1000": {
+        "marginRight": 20,
+        "marginLeft": 20,
+        "marginTop": 10,
+        "marginBottom": 10
+      }
+    },
+    ".btnAnonymous": {
+      "backgroundColor": "rgba(210,49,132,1)",
+      "width": null,
+      "height": 70,
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginBottom": 20,
+      "flexProps": {
+        "flexGrow": 1
       },
-      ".anonymous": {
-        "backgroundColor": "rgba(103,164,231,1)",
-        "marginLeft": 10,
-        "marginBottom": null,
-        "+page:Screen.width > 1000": {
-          "marginRight": 20,
-          "marginLeft": 20,
-          "marginTop": 10,
-          "marginBottom": 10
-        }
+      "font": {
+        "size": 28,
+        "family": "Lato"
+      },
+      "backgroundColor": "rgba(103,164,231,1)",
+      "marginLeft": 10,
+      "marginBottom": null,
+      "+page:Screen.width > 1000": {
+        "marginRight": 20,
+        "marginLeft": 20,
+        "marginTop": 10,
+        "marginBottom": 10
+      }
+    },
+    ".btnSignup": {
+      "backgroundColor": "rgba(210,49,132,1)",
+      "width": null,
+      "height": 70,
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginBottom": 20,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "font": {
+        "size": 28,
+        "family": "Lato"
       },
       "+page:Screen.width > 1000": {
         "marginTop": 10,
         "marginBottom": 10
       }
-    }
-  },
-  ".flexLayout": {
-    ".pgSignupTablet": {
+    },
+    ".flOther": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "ROW",
+        "alignItems": "AUTO"
+      },
+      "+page:Screen.width > 1000": {
+        "flexProps": {
+          "flexDirection": "COLUMN"
+        }
+      }
+    },
+    ".flMain": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "COLUMN",
+        "alignItems": "AUTO"
+      },
+      "+page:Screen.width > 1000": {
+        "flexProps": {
+          "flexDirection": "ROW"
+        }
+      }
+    },
+    ".flInfo": {
+      "width": null,
+      "height": null,
+      "left": 0,
+      "top": 0,
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "COLUMN",
+        "alignItems": "AUTO"
+      },
+      "+page:Screen.width > 1000": {
+        "paddingBottom": 100
+      }
+    },
+    ".flSignup": {
       "width": null,
       "height": null,
       "flexProps": {
         "flexGrow": 1,
         "flexDirection": "ROW",
         "alignItems": "FLEX_END"
-      },
-      ".other": {
-        "width": null,
-        "height": null,
-        "flexProps": {
-          "flexGrow": 1,
-          "flexDirection": "ROW",
-          "alignItems": "AUTO"
-        },
-        "+page:Screen.width > 1000": {
-          "flexProps": {
-            "flexDirection": "COLUMN"
-          }
-        }
-      },
-      ".main": {
-        "flexProps": {
-          "flexDirection": "COLUMN",
-          "alignItems": "AUTO"
-        },
-        "+page:Screen.width > 1000": {
-          "flexProps": {
-            "flexDirection": "ROW"
-          }
-        }
-      },
-      ".info": {
-        "width": null,
-        "height": null,
-        "left": 0,
-        "top": 0,
-        "flexProps": {
-          "flexGrow": 1,
-          "flexDirection": "COLUMN",
-          "alignItems": "AUTO"
-        },
-        "+page:Screen.width > 1000": {
-          "paddingBottom": 100
-        }
       }
     }
   }
