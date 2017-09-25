@@ -21,7 +21,8 @@
         "+page:Screen.width > 450": {
           "marginRight": 40,
           "marginTop": 5,
-          "marginBottom": 10
+          "marginBottom": 10,
+          "marginLeft": null
         }
       },
       ".color": {
