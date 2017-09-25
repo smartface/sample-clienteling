@@ -31,8 +31,8 @@
 					"49a6-bd3e-b201-a73b",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 176.25,
-				"height": 283.41
+				"width": 236.25,
+				"height": 379.89
 			}
 		},
 		{
@@ -88,6 +88,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default .flexLayout.pgSignupPhone.main",
 			"props": {
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -106,8 +108,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
 				"name": "flMain",
 				"parent": "da7d-a011-d4fb-9c5b",
 				"children": [
@@ -142,6 +142,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 0, 1, 6, 0 )",
@@ -160,8 +162,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
 				"marginLeft": null,
 				"left": null,
 				"top": null,
@@ -198,6 +198,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -216,8 +218,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
 				"left": null,
 				"top": null,
 				"paddingTop": 20,
@@ -253,6 +253,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-margin",
 			"props": {
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -272,8 +274,6 @@
 					"flexGrow": 1,
 					"flexShrink": 6
 				},
-				"height": null,
-				"width": null,
 				"marginLeft": null,
 				"marginRight": null,
 				"children": [
@@ -301,6 +301,7 @@
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
+				"text": "User ID",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -319,7 +320,6 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"text": "User ID",
 				"children": [],
 				"parent": "076e-47c9-12e8-938b",
 				"name": "lblUserID"
@@ -347,6 +347,7 @@
 				"height": 30,
 				"width": null,
 				"touchEnabled": true,
+				"text": "smartface@smartface.io",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -364,7 +365,6 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"text": "smartface@smartface.io",
 				"children": [],
 				"parent": "076e-47c9-12e8-938b",
 				"name": "taUserID"
@@ -382,6 +382,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
+				"height": 1,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -399,8 +401,6 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
 				"children": [],
 				"parent": "076e-47c9-12e8-938b",
 				"name": "flLine"
@@ -425,6 +425,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-margin",
 			"props": {
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -443,8 +445,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
 				"marginLeft": null,
 				"marginRight": null,
 				"children": [
@@ -473,6 +473,7 @@
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
+				"text": "Password",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -491,7 +492,6 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"text": "Password",
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
 				"name": "lblPassword"
@@ -520,6 +520,7 @@
 				"height": 30,
 				"width": null,
 				"touchEnabled": true,
+				"text": "",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -537,7 +538,6 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"text": "",
 				"isPassword": true,
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
@@ -556,6 +556,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
+				"height": 1,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -573,8 +575,6 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
 				"name": "flLine"
@@ -613,6 +613,7 @@
 				"width": 110,
 				"height": 30,
 				"touchEnabled": true,
+				"text": "Forgot Password",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -632,7 +633,6 @@
 					"positionType": "RELATIVE"
 				},
 				"top": 0,
-				"text": "Forgot Password",
 				"left": 0,
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
@@ -664,6 +664,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -682,8 +684,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
-				"height": null,
-				"width": null,
 				"marginBottom": null,
 				"paddingBottom": 10,
 				"paddingTop": 10,
@@ -715,6 +715,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -733,8 +735,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
 				"paddingBottom": null,
 				"marginBottom": 10,
 				"name": "flSignup",
@@ -755,13 +755,13 @@
 			"userProps": {
 				"text": "Sign Up"
 			},
-			"className": ".button .button.pgSignupPhone.signup",
+			"className": ".button #pgSignupPhone.btnSignup",
 			"props": {
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(210,49,132,1)",
+				"backgroundColor": "#4A90E2",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -802,6 +802,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -820,8 +822,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
 				"name": "flOther",
 				"parent": "85cb-ef9b-d868-698e",
 				"children": [
@@ -841,13 +841,13 @@
 			"userProps": {
 				"text": "Login with Facebook"
 			},
-			"className": ".button .button.pgSignupPhone.fb",
+			"className": ".button #pgSignupPhone.btnFacebook",
 			"props": {
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(71,94,174,1)",
+				"backgroundColor": "#4A90E2",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -882,13 +882,13 @@
 			"userProps": {
 				"text": "Anonymous Login"
 			},
-			"className": ".button .button.pgSignupPhone.anonymous",
+			"className": ".button #pgSignupPhone.btnAnonymous",
 			"props": {
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(103,164,231,1)",
+				"backgroundColor": "#4A90E2",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -933,6 +933,8 @@
 			},
 			"className": ".imageView .imageView-default",
 			"props": {
+				"width": 150,
+				"height": 50,
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
@@ -946,8 +948,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 0
 				},
-				"width": 150,
-				"height": 50,
 				"image": "smartface.png",
 				"minHeight": 50,
 				"minWidth": null,
@@ -956,7 +956,7 @@
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.47&brandModel=iPhone%207?random=0.9578367086026611"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -986,6 +986,7 @@
 				"width": null,
 				"height": 50,
 				"touchEnabled": true,
+				"text": "CLIENTELING",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 0, 255, 50, 0 )",
@@ -1005,7 +1006,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 0
 				},
-				"text": "CLIENTELING",
 				"minHeight": 50,
 				"minWidth": 250,
 				"maxHeight": 50,

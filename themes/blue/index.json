@@ -53,9 +53,9 @@
 				"pgWomen-AddToCard": ".button.pgWomen.add-to-card",
 				"pgWomen-QuickOrder": ".button.pgWomen.quick-order",
 				"pgWomen-Color": ".button.pgWomen.color",
-				"pgSignupPhone-Signup": ".button.pgSignupPhone.signup",
-				"pgSignupPhone-Facebook": ".button.pgSignupPhone.fb",
-				"pgSignupPhone-Anonymous": ".button.pgSignupPhone.anonymous"
+				"pgSignupPhone-Signup": "#pgSignupPhone.btn.btnSignup",
+				"pgSignupPhone-Facebook": "#pgSignupPhone.btn.btnFacebook",
+				"pgSignupPhone-Anonymous": "#pgSignupPhone.btn.btnAnonymous"
 			}
 		},
 		"FlexLayout": {
@@ -67,7 +67,7 @@
 				"pgSignupTablet-Signup": ".flexLayout.pgSignupTablet",
 				"pgSignupTablet-Main": ".flexLayout.pgSignupTablet.main",
 				"pgSignupTablet-Info": ".flexLayout.pgSignupTablet.info",
-				"pgSignupPhone-Main": ".flexLayout.pgSignupPhone.main",
+				"pgSignupPhone-Main": "#pgSignupPhone.flMain",
 				"pgWomen-Buttons": ".flexLayout.pgWomen.buttons",
 				"pgWomen-Info": ".flexLayout.pgWomen.info",
 				"pgWomen-Part2": ".flexLayout.pgWomen.part2"

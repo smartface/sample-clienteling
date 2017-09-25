@@ -1,6 +1,7 @@
 {
-  ".button": {
-    ".pgSignupPhone": {
+  "#pgSignupPhone": {
+    ".btn": {
+      "@extend": ".button",
       "height": null,
       "width": null,
       "flexProps": {
@@ -10,43 +11,29 @@
         "size": 14,
         "family": "Lato"
       },
-      ".signup": {
-        "backgroundColor": "rgba(210,49,132,1)",
-        "+page:Screen.width > 450": {
-
-        }
+      ".btnSignup": {
+        "backgroundColor": "rgba(210,49,132,1)"
       },
-      ".fb": {
+      ".btnFacebook": {
         "backgroundColor": "rgba(71,94,174,1)",
-        "marginRight": 5,
-        "+page:Screen.width > 450": {
-
-        }
+        "marginRight": 5
       },
-      ".anonymous": {
+      ".btnAnonymous": {
         "backgroundColor": "rgba(103,164,231,1)",
-        "marginLeft": 5,
-        "+page:Screen.width > 450": {
-
-        }
+        "marginLeft": 5
       }
-    }
-  },
-  ".flexLayout": {
-    ".pgSignupPhone": {
+    },
+    ".flMain": {
+      "@extend": ".flexLayout",
       "width": null,
       "height": null,
       "flexProps": {
-        "flexGrow": 1
+        "flexGrow": 1,
+        "flexDirection": "COLUMN"
       },
-      ".main": {
+      "+page:Screen.width > 450": {
         "flexProps": {
-          "flexDirection": "COLUMN"
-        },
-        "+page:Screen.width > 450": {
-          "flexProps": {
-            "flexDirection": "ROW"
-          }
+          "flexDirection": "ROW"
         }
       }
     }
