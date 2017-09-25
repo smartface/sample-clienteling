@@ -50,9 +50,9 @@
 				"pgSignupTablet-Signup": ".button.pgSignupTablet",
 				"pgSignupTablet-Facebook": ".button.pgSignupTablet.fb",
 				"pgSignupTablet-Anonymous": ".button.pgSignupTablet.anonymous",
-				"pgWomen-AddToCard": ".button.pgWomen.add-to-card",
-				"pgWomen-QuickOrder": ".button.pgWomen.quick-order",
-				"pgWomen-Color": ".button.pgWomen.color",
+				"pgWomen-AddToCard": "#pgWomen.btnAddToCard",
+				"pgWomen-QuickOrder": "#pgWomen.btnQuickOrder",
+				"pgWomen-Color": "#pgWomen.btnColor",
 				"pgSignupPhone-Signup": "#pgSignupPhone.btn.btnSignup",
 				"pgSignupPhone-Facebook": "#pgSignupPhone.btn.btnFacebook",
 				"pgSignupPhone-Anonymous": "#pgSignupPhone.btn.btnAnonymous"
@@ -68,9 +68,9 @@
 				"pgSignupTablet-Main": ".flexLayout.pgSignupTablet.main",
 				"pgSignupTablet-Info": ".flexLayout.pgSignupTablet.info",
 				"pgSignupPhone-Main": "#pgSignupPhone.flMain",
-				"pgWomen-Buttons": ".flexLayout.pgWomen.buttons",
-				"pgWomen-Info": ".flexLayout.pgWomen.info",
-				"pgWomen-Part2": ".flexLayout.pgWomen.part2"
+				"pgWomen-Buttons": "#pgWomen.flButtons",
+				"pgWomen-Info": "#pgWomen.flInfo",
+				"pgWomen-Part2": "#pgWomen.flPart2"
 			}
 		},
 		"ScrollView": {
@@ -132,7 +132,7 @@
 			"Page": {
 				"Default": ".page",
 				"Blue": ".page-blue",
-				"pgWomen": ".page.pgWomen"
+				"pgWomen": "#pgWomen.page"
 			}
 		},
 		"SearchView": {

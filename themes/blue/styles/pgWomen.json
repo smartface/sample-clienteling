@@ -1,88 +1,85 @@
 {
-  ".button": {
-    ".pgWomen": {
+  "#pgWomen": {
+    ".flButtons": {
+      "@extend": ".flexLayout",
       "width": null,
-      "height": 50,
+      "height": null,
       "flexProps": {
-        "flexGrow": 1
+        "flexGrow": 1,
+        "flexDirection": "ROW"
       },
-      ".add-to-card": {
-        "backgroundColor": "rgba(210,49,132,1)",
-        "marginRight": 5,
-        "+page:Screen.width > 450": {
-          "marginRight": 40,
-          "marginTop": 10,
-          "marginBottom": 5
-        }
-      },
-      ".quick-order": {
-        "backgroundColor": "rgba(103,164,231,1)",
-        "marginLeft": 5,
-        "+page:Screen.width > 450": {
-          "marginRight": 40,
-          "marginTop": 5,
-          "marginBottom": 10,
-          "marginLeft": null
-        }
-      },
-      ".color": {
-        "width": 20,
-        "height": 20,
-        "flexProps": {
-          "flexGrow": null
-        }
-      }
-    }
-  },
-  ".flexLayout": {
-    ".pgWomen": {
-      ".buttons": {
-        "width": null,
-        "height": null,
-        "flexProps": {
-          "flexGrow": 1,
-          "flexDirection": "ROW"
-        },
-        "paddingLeft": 20,
-        "paddingRight": 20,
-        "+page:Screen.width > 450": {
-          "flexProps": {
-            "flexGrow": 2,
-            "flexDirection": "COLUMN"
-          }
-        }
-      },
-      ".info": {
-        "width": null,
-        "height": null,
+      "paddingLeft": 20,
+      "paddingRight": 20,
+      "+page:Screen.width > 450": {
         "flexProps": {
           "flexGrow": 2,
           "flexDirection": "COLUMN"
         }
+      }
+    },
+    ".flInfo": {
+      "@extend": ".flexLayout",
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 2,
+        "flexDirection": "COLUMN"
+      }
+    },
+    ".flPart2": {
+      "@extend": ".flexLayout",
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 2,
+        "flexDirection": "COLUMN"
       },
-      ".part2": {
-        "width": null,
-        "height": null,
+      "+page:Screen.width > 450": {
         "flexProps": {
-          "flexGrow": 2,
-          "flexDirection": "COLUMN"
-        },
-        "+page:Screen.width > 450": {
-          "flexProps": {
-            "flexGrow": 4,
-            "flexDirection": "COLUMN_REVERSE"
-          }
+          "flexGrow": 4,
+          "flexDirection": "COLUMN_REVERSE"
         }
       }
-    }
-  },
-  ".page": {
-    ".pgWomen": {
+    },
+    ".page": {
       "+page:Screen.width > 450": {
         "flexProps": {
           "flexDirection": "ROW"
         }
       }
+    },
+    ".btnAddToCard": {
+      "width": null,
+      "height": 50,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "backgroundColor": "rgba(210,49,132,1)",
+      "marginRight": 5,
+      "+page:Screen.width > 450": {
+        "marginRight": 40,
+        "marginTop": 10,
+        "marginBottom": 5
+      }
+    },
+    ".btnQuickOrder": {
+      "width": null,
+      "height": 50,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "backgroundColor": "rgba(103,164,231,1)",
+      "marginLeft": 5,
+      "+page:Screen.width > 450": {
+        "marginRight": 40,
+        "marginTop": 5,
+        "marginBottom": 10,
+        "marginLeft": null
+      }
+    },
+    ".btnColor": {
+      "width": 20,
+      "height": 20
     }
   }
 }
