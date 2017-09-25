@@ -7,10 +7,22 @@
         "flexGrow": 1
       },
       ".add-to-card": {
-        "backgroundColor": "rgba(210,49,132,1)"
+        "backgroundColor": "rgba(210,49,132,1)",
+        "marginRight": 5,
+        "+page:Screen.width > 450": {
+          "marginRight": 40,
+          "marginTop": 10,
+          "marginBottom": 5
+        }
       },
       ".quick-order": {
-        "backgroundColor": "rgba(103,164,231,1)"
+        "backgroundColor": "rgba(103,164,231,1)",
+        "marginLeft": 5,
+        "+page:Screen.width > 450": {
+          "marginRight": 40,
+          "marginTop": 5,
+          "marginBottom": 10
+        }
       },
       ".color": {
         "width": 20,
@@ -30,9 +42,8 @@
           "flexGrow": 1,
           "flexDirection": "ROW"
         },
-        "paddingLeft":20,
-        "paddingRight":20,
-        
+        "paddingLeft": 20,
+        "paddingRight": 20,
         "+page:Screen.width > 450": {
           "flexProps": {
             "flexGrow": 2,
