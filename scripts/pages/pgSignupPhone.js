@@ -16,18 +16,7 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     this.onOrientationChange = onOrientationChange.bind(this);
 
-    this.classMap = {
-      "pgSignup1_flMain": ".flexLayout .flexLayout-default .flexLayout.signup.main-phone",
-      "pgSignup1_flMain_flInfo_flUserID": ".flexLayout .flexLayout-default .flexLayout-margin",
-      "pgSignup1_flMain_flInfo_flUserID_lblUserID": ".label .label-header",
-      "pgSignup1_flMain_flInfo_flUserID_flLine": ".flexLayout .flexLayout-default .flexLayout-line",
-      "pgSignup1_flMain_flInfo_flPassword": ".flexLayout .flexLayout-default .flexLayout-margin",
-      "pgSignup1_flMain_flInfo_flPassword_lblPassword": ".label .label-header",
-      "pgSignup1_flMain_flInfo_flPassword_flLine": ".flexLayout .flexLayout-default .flexLayout-line",
-      "pgSignup1_flMain_flInfo_flButtons_flSignup_btnSignup": ".button .button.signup",
-      "pgSignup1_flMain_flInfo_flButtons_flOther_btnFacebook": ".button .button.signup.fb",
-      "pgSignup1_flMain_flInfo_flButtons_flOther_btnAnonymous": ".button .button.signup.anonymous"
-    };
+    this.classMap = {};
   });
 
 /**

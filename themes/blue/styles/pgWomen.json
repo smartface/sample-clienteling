@@ -3,26 +3,72 @@
     ".pgWomen": {
       "width": null,
       "height": 50,
-      "marginTop": 5,
-      "marginBottom": 5,
-      "marginRight": 5,
-      "marginLeft": 5,
       "flexProps": {
         "flexGrow": 1
       },
       ".add-to-card": {
-        "backgroundColor": "rgba(210,49,132,1)",
-        "marginLeft": 10
+        "backgroundColor": "rgba(210,49,132,1)"
       },
       ".quick-order": {
-        "backgroundColor": "rgba(103,164,231,1)",
-        "marginRight": 10
+        "backgroundColor": "rgba(103,164,231,1)"
       },
       ".color": {
         "width": 20,
         "height": 20,
         "flexProps": {
           "flexGrow": null
+        }
+      }
+    }
+  },
+  ".flexLayout": {
+    ".pgWomen": {
+      ".buttons": {
+        "width": null,
+        "height": null,
+        "flexProps": {
+          "flexGrow": 1,
+          "flexDirection": "ROW"
+        },
+        "paddingLeft":20,
+        "paddingRight":20,
+        
+        "+page:Screen.width > 450": {
+          "flexProps": {
+            "flexGrow": 2,
+            "flexDirection": "COLUMN"
+          }
+        }
+      },
+      ".info": {
+        "width": null,
+        "height": null,
+        "flexProps": {
+          "flexGrow": 2,
+          "flexDirection": "COLUMN"
+        }
+      },
+      ".part2": {
+        "width": null,
+        "height": null,
+        "flexProps": {
+          "flexGrow": 2,
+          "flexDirection": "COLUMN"
+        },
+        "+page:Screen.width > 450": {
+          "flexProps": {
+            "flexGrow": 4,
+            "flexDirection": "COLUMN_REVERSE"
+          }
+        }
+      }
+    }
+  },
+  ".page": {
+    ".pgWomen": {
+      "+page:Screen.width > 450": {
+        "flexProps": {
+          "flexDirection": "ROW"
         }
       }
     }

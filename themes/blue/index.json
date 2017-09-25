@@ -67,7 +67,10 @@
 				"pgSignupTablet-Signup": ".flexLayout.pgSignupTablet",
 				"pgSignupTablet-Main": ".flexLayout.pgSignupTablet.main",
 				"pgSignupTablet-Info": ".flexLayout.pgSignupTablet.info",
-				"pgSignupPhone-Main": ".flexLayout.pgSignupPhone.main"
+				"pgSignupPhone-Main": ".flexLayout.pgSignupPhone.main",
+				"pgWomen-Buttons": ".flexLayout.pgWomen.buttons",
+				"pgWomen-Info": ".flexLayout.pgWomen.info",
+				"pgWomen-Part2": ".flexLayout.pgWomen.part2"
 			}
 		},
 		"ScrollView": {
@@ -128,7 +131,8 @@
 		"Page": {
 			"Page": {
 				"Default": ".page",
-				"Blue": ".page-blue"
+				"Blue": ".page-blue",
+				"pgWomen": ".page.pgWomen"
 			}
 		},
 		"SearchView": {
