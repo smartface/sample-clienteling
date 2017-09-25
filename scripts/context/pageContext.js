@@ -13,11 +13,10 @@ const styles = require("../themes/blue");
 var styling = styler(styles);
 
 commands.addRuntimeCommandFactory(function(type){
-  console.log(type);
   switch (type) {
     case '+page':
       return function pageCommand(opts){
-        var isOK = (function(Screen) { return eval(opts.args); }({width: Screen.width, height: Screen.height}))
+        var isOK = (function(Screen) { return eval(opts.args); }({width: Screen.width, height: Screen.height}));
         // console.log("isOK"+isOK.toString()+" "+opts.args+" "+Screen.width)
 				return  isOK ? opts.value : {};
       }
@@ -39,7 +38,7 @@ function createContext(component, name, classMap=null, reducers=null) {
 		name,
 		//initial classNames
 		function(name){
-		  const id = "#"+name
+		  const id = "#"+name;
 		  return classMap ? id+" "+classMap(name) : id;
 		},
 		//context hooks

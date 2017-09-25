@@ -41,10 +41,11 @@
 				"children": [
 					"fad7-1eff-4a8c-6bc7",
 					"97e5-b995-2a29-cf7f",
-					"1025-40f5-f545-091f"
+					"1025-40f5-f545-091f",
+					"7a18-5fe4-e110-add1"
 				],
-				"width": 750,
-				"height": 1206
+				"width": 217.49999999999997,
+				"height": 349.73999999999995
 			}
 		},
 		{
@@ -173,7 +174,7 @@
 					"flexGrow": 1
 				}
 			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-default",
+			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -217,7 +218,8 @@
 			"type": "Label",
 			"id": "1f97-6da2-4ddf-ab84",
 			"themeProps": {
-				"Sizes": "Default"
+				"Sizes": "Default",
+				"Implementation": "Default"
 			},
 			"userProps": {
 				"textColor": "rgba( 255, 255, 255, 1 )",
@@ -274,7 +276,7 @@
 					"flexGrow": 1
 				}
 			},
-			"className": ".imageView .imageView-default .imageView",
+			"className": ".imageView .imageView-default",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -295,7 +297,7 @@
 				"name": "imgBanner",
 				"parent": "b5d8-2cb4-9ef8-416f",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/ecomerce/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=2&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.58&brandModel=iPhone%207?random=0.5137382326123483"
 			}
 		},
 		{
@@ -326,7 +328,7 @@
 					"flexGrow": null
 				}
 			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-default",
+			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -381,7 +383,7 @@
 				"width": null,
 				"height": 52.5
 			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-default",
+			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -414,7 +416,8 @@
 			"type": "Label",
 			"id": "7a79-3a76-0361-2051",
 			"themeProps": {
-				"Sizes": "Default"
+				"Sizes": "Default",
+				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -544,7 +547,7 @@
 				"height": 52.5,
 				"marginTop": 20.5
 			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-default",
+			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -554,6 +557,7 @@
 				"borderWidth": 0,
 				"height": 52.5,
 				"width": null,
+				"marginTop": 20.5,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -570,15 +574,15 @@
 					"eae7-a83a-071b-0a0e",
 					"ec52-a0bd-b1d2-10b7",
 					"a4e6-a9a6-676e-c7d4"
-				],
-				"marginTop": 20.5
+				]
 			}
 		},
 		{
 			"type": "Label",
 			"id": "eae7-a83a-071b-0a0e",
 			"themeProps": {
-				"Sizes": "Default"
+				"Sizes": "Default",
+				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -646,6 +650,7 @@
 				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
 				"hint": "Password",
+				"isPassword": true,
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -659,8 +664,7 @@
 				},
 				"name": "tbPassword",
 				"parent": "8c73-a9b0-5220-20b8",
-				"children": [],
-				"isPassword": true
+				"children": []
 			}
 		},
 		{
@@ -703,7 +707,8 @@
 			"id": "dfe9-ef1a-f927-b481",
 			"themeProps": {
 				"Sizes": "Default",
-				"Highlights": "Default"
+				"Highlights": "Default",
+				"Implementation": "Default"
 			},
 			"userProps": {
 				"text": "Sign In",
@@ -724,6 +729,7 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -736,15 +742,15 @@
 				},
 				"name": "btnSignIn",
 				"parent": "9bd2-044c-645a-f8a1",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "1d1a-b829-7871-eb08",
 			"themeProps": {
-				"Implementation": "Default"
+				"Implementation": "Default",
+				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -755,7 +761,7 @@
 					"alignItems": "CENTER"
 				}
 			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-default",
+			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -786,7 +792,8 @@
 			"type": "Label",
 			"id": "1063-cbc7-f879-af4e",
 			"themeProps": {
-				"Sizes": "Default"
+				"Sizes": "Default",
+				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": 100,
@@ -812,6 +819,7 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 29, 29, 38, 0.5 )",
 				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
 				"font": {
 					"size": 13,
 					"bold": false,
@@ -824,8 +832,44 @@
 				},
 				"name": "lblForgotPassword",
 				"parent": "1d1a-b829-7871-eb08",
-				"children": [],
-				"usePageVariable": true
+				"children": []
+			}
+		},
+		{
+			"type": "Button",
+			"id": "7a18-5fe4-e110-add1",
+			"themeProps": {
+				"Sizes": "Default",
+				"Highlights": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {},
+			"className": ".button",
+			"props": {
+				"width": 250,
+				"height": 70,
+				"touchEnabled": true,
+				"text": "Button",
+				"visible": true,
+				"backgroundColor": "#4A90E2",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO"
+				},
+				"name": "button1",
+				"parent": "331a-4b22-9c1f-cb73",
+				"children": []
 			}
 		}
 	]

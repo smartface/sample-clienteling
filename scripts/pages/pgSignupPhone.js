@@ -40,11 +40,8 @@ function onLoad(superOnLoad) {
   this.setContextDispatcher = setContextDispatcher.bind(this);
   this.styleContext = pageContext.createContext(
     this,
-    "pgSignup1",
-    function initialClassNames(name) {
-      console.log(name);
-      return this.classMap[name] || "";
-    }.bind(this),
+    "pgSignupPhone",
+    null,
     function reducers(state, actors, action, target) {
       return state;
     });
