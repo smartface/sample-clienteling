@@ -1,68 +1,8 @@
 {
   ".button": {
-    "width": 250,
-    "height": 70,
-    "touchEnabled": true,
-    "visible": true,
     "backgroundColor": "#4A90E2",
-    "alpha": 1,
-    "borderColor": "rgba(0,0,0,1)",
-    "borderWidth": 0,
-    "textColor": "#FFFFFF",
-    "textAlignment": "MIDCENTER",
     "font": {
-      "size": 16,
-      "bold": false,
-      "italic": false,
       "family": "Lato"
-    },
-    "flexProps": {
-      "positionType": "RELATIVE",
-      "alignSelf": "AUTO"
-    },
-    "&-small": {
-      "width": 100
-    },
-    "&-medium": {
-      "width": 250
-    },
-    "&-large": {
-      "width": 350
-    },
-    "&-warning": {
-      "backgroundColor": "#9F6000"
-    },
-    "&-error": {
-      "backgroundColor": "#D8000C"
-    },
-    "&-success": {
-      "backgroundColor": "#4F8A10"
-    },
-    ".women": {
-      "width": null,
-      "height": 50,
-      "marginTop": 5,
-      "marginBottom": 5,
-      "marginRight": 5,
-      "marginLeft": 5,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      ".add-to-card": {
-        "backgroundColor": "rgba(210,49,132,1)",
-        "marginLeft": 10
-      },
-      ".quick-order": {
-        "backgroundColor": "rgba(103,164,231,1)",
-        "marginRight": 10
-      },
-      ".color": {
-        "width": 20,
-        "height": 20,
-        "flexProps": {
-          "flexGrow": null
-        }
-      }
     }
   }
 }

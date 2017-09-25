@@ -50,9 +50,9 @@
 				"pgSignupTablet-Signup": ".button.pgSignupTablet",
 				"pgSignupTablet-Facebook": ".button.pgSignupTablet.fb",
 				"pgSignupTablet-Anonymous": ".button.pgSignupTablet.anonymous",
-				"AddToCard": ".button.women.add-to-card",
-				"QuickOrder": ".button.women.quick-order",
-				"Color": ".button.women.color",
+				"pgWomen-AddToCard": ".button.pgWomen.add-to-card",
+				"pgWomen-QuickOrder": ".button.pgWomen.quick-order",
+				"pgWomen-Color": ".button.pgWomen.color",
 				"pgSignupPhone-Signup": ".button.pgSignupPhone.signup",
 				"pgSignupPhone-Facebook": ".button.pgSignupPhone.fb",
 				"pgSignupPhone-Anonymous": ".button.pgSignupPhone.anonymous"
@@ -192,5 +192,6 @@
 				"Large": ".webView-large"
 			}
 		}
-	}
+	},
+	"childTheme": true
 }

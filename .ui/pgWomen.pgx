@@ -1024,7 +1024,7 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "Color"
+				"Implementation": "pgWomen-Color"
 			},
 			"userProps": {
 				"backgroundColor": "rgba( 173, 251, 253, 1 )",
@@ -1072,7 +1072,7 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "Color"
+				"Implementation": "pgWomen-Color"
 			},
 			"userProps": {
 				"backgroundColor": "rgba( 250, 189, 226, 1 )",
@@ -1117,7 +1117,7 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "Color"
+				"Implementation": "pgWomen-Color"
 			},
 			"userProps": {
 				"backgroundColor": "rgba( 248, 247, 226, 1 )",
@@ -1253,7 +1253,7 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "AddToCard"
+				"Implementation": "pgWomen-AddToCard"
 			},
 			"userProps": {
 				"text": "ADD TO CART"
@@ -1297,7 +1297,7 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "QuickOrder"
+				"Implementation": "pgWomen-QuickOrder"
 			},
 			"userProps": {
 				"text": "QUICK ORDER"
