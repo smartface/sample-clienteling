@@ -95,7 +95,9 @@
 		"ImageView": {
 			"Sizes": {
 				"Default": ".imageView-default",
-				"Auto Size": ".imageView"
+				"Auto Size": ".imageView",
+				"pgMainLookbook-Women": "#pgMainLookbook.imgWomen",
+				"pgMainLookbook-Men": "#pgMainLookbook.imgMen"
 			}
 		},
 		"Label": {

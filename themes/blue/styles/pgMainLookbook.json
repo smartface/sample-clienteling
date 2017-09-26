@@ -163,6 +163,22 @@
         "textAlignment": "MIDCENTER",
         "marginRight": null
       }
+    },
+    ".imgWomen": {
+      "@extend": ".grow",
+      "imageFillType": "STRETCH",
+      "image": "pgMainLookbook_women_vertical.png",
+      "+page:Screen.width > 450": {
+        "image": "pgMainLookbook_women_horizontal.png"
+      }
+    },
+    ".imgMen": {
+      "@extend": ".grow",
+      "imageFillType": "STRETCH",
+      "image": "pgMainLookbook_men_vertical.png",
+      "+page:Screen.width > 450": {
+        "image": "pgMainLookbook_men_horizontal.png"
+      }
     }
   }
 }

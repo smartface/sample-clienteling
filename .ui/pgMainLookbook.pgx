@@ -33,8 +33,8 @@
 					"b740-f675-4f52-5243",
 					"6051-46a5-778b-d772"
 				],
-				"width": 345,
-				"height": 554.76
+				"width": 336,
+				"height": 529.1999999999999
 			}
 		},
 		{
@@ -415,7 +415,7 @@
 				"name": "imgBagTrends",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.7061516137203214"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE"
 			}
 		},
 		{
@@ -510,7 +510,7 @@
 				"name": "imgSunGlasses",
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.48706937054544985"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE"
 			}
 		},
 		{
@@ -1052,24 +1052,16 @@
 			"type": "ImageView",
 			"id": "5114-d220-b1ed-6b58",
 			"themeProps": {
-				"Sizes": "Default"
+				"Sizes": "pgMainLookbook-Women"
 			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"image": "Onsale-2014-Summer-Cute-Girl-Lace-Dress-Black-Slim-Sexy-Perspective-Office-Lady-Fashion-One-Piece.png",
-				"imageFillType": "STRETCH",
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".imageView .imageView-default",
+			"userProps": {},
+			"className": ".imageView .imageView-default #pgMainLookbookimgWomen",
 			"props": {
-				"width": null,
-				"height": null,
+				"width": 200,
+				"height": 200,
 				"touchEnabled": true,
 				"visible": true,
-				"imageFillType": "STRETCH",
+				"imageFillType": "NORMAL",
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -1077,38 +1069,27 @@
 				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"positionType": "RELATIVE"
 				},
-				"image": "Onsale-2014-Summer-Cute-Girl-Lace-Dress-Black-Slim-Sexy-Perspective-Office-Lady-Fashion-One-Piece.png",
 				"name": "imgWomen",
 				"parent": "47f2-f138-9dd8-617a",
-				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/Onsale-2014-Summer-Cute-Girl-Lace-Dress-Black-Slim-Sexy-Perspective-Office-Lady-Fashion-One-Piece.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.8869831434188695"
+				"children": []
 			}
 		},
 		{
 			"type": "ImageView",
 			"id": "3d2b-ea2c-6528-3f6e",
 			"themeProps": {
-				"Sizes": "Default"
+				"Sizes": "pgMainLookbook-Men"
 			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"image": "ca520656917a4fefe818b5f2d240b0a4--simplicity-casual-wear@1x.png",
-				"imageFillType": "STRETCH",
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".imageView .imageView-default",
+			"userProps": {},
+			"className": ".imageView .imageView-default #pgMainLookbook.imgMen",
 			"props": {
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"imageFillType": "STRETCH",
+				"imageFillType": "NORMAL",
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -1119,11 +1100,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "ca520656917a4fefe818b5f2d240b0a4--simplicity-casual-wear@1x.png",
+				"image": "pgMainLookbook-men-vertical.png",
 				"name": "imgMen",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/ca520656917a4fefe818b5f2d240b0a4--simplicity-casual-wear%401x.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.29467491447590866"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook-men-vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE?random=0.8475869870715678"
 			}
 		},
 		{
