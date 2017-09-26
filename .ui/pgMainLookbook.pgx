@@ -33,8 +33,8 @@
 					"b740-f675-4f52-5243",
 					"6051-46a5-778b-d772"
 				],
-				"width": 336,
-				"height": 529.1999999999999
+				"width": 320,
+				"height": 504
 			}
 		},
 		{
@@ -415,7 +415,7 @@
 				"name": "imgBagTrends",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%20SE"
 			}
 		},
 		{
@@ -479,7 +479,7 @@
 				"imageFillType": "ASPECTFIT",
 				"marginLeft": 40,
 				"marginRight": 40,
-				"marginTop": 20,
+				"marginTop": null,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -506,11 +506,11 @@
 				"image": "sunglasses.png",
 				"marginLeft": 40,
 				"marginRight": 40,
-				"marginTop": 20,
+				"marginTop": null,
 				"name": "imgSunGlasses",
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%20SE"
 			}
 		},
 		{
@@ -1055,13 +1055,13 @@
 				"Sizes": "pgMainLookbook-Women"
 			},
 			"userProps": {},
-			"className": ".imageView .imageView-default #pgMainLookbookimgWomen",
+			"className": ".imageView .imageView-default #pgMainLookbook.imgWomen",
 			"props": {
-				"width": 200,
-				"height": 200,
+				"width": null,
+				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"imageFillType": "NORMAL",
+				"imageFillType": "STRETCH",
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -1069,11 +1069,14 @@
 				"font": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
+				"image": "pgMainLookbook_women_vertical.png",
 				"name": "imgWomen",
 				"parent": "47f2-f138-9dd8-617a",
-				"children": []
+				"children": [],
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook_women_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%20SE"
 			}
 		},
 		{
@@ -1089,7 +1092,7 @@
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"imageFillType": "NORMAL",
+				"imageFillType": "STRETCH",
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -1100,11 +1103,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "pgMainLookbook-men-vertical.png",
+				"image": "pgMainLookbook_men_vertical.png",
 				"name": "imgMen",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook-men-vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE?random=0.8475869870715678"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook_men_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%20SE"
 			}
 		},
 		{
