@@ -55,7 +55,8 @@
 				"pgWomen-Color": "#pgWomen.btnColor",
 				"pgSignupPhone-Signup": "#pgSignupPhone.btn.btnSignup",
 				"pgSignupPhone-Facebook": "#pgSignupPhone.btn.btnFacebook",
-				"pgSignupPhone-Anonymous": "#pgSignupPhone.btn.btnAnonymous"
+				"pgSignupPhone-Anonymous": "#pgSignupPhone.btn.btnAnonymous",
+				"pgMainLookbook-ShopNow": "#pgMainLookbook.btnShopNow"
 			}
 		},
 		"FlexLayout": {
@@ -70,7 +71,12 @@
 				"pgSignupPhone-Main": "#pgSignupPhone.flMain",
 				"pgWomen-Buttons": "#pgWomen.flButtons",
 				"pgWomen-Info": "#pgWomen.flInfo",
-				"pgWomen-Part2": "#pgWomen.flPart2"
+				"pgWomen-Part2": "#pgWomen.flPart2",
+				"pgMainLookbook-ShopNow": "#pgMainLookbook.flShopNow",
+				"pgMainLookbook-FirstLine": "#pgMainLookbook.flFirstLine",
+				"pgMainLookbook-SecondLine": "#pgMainLookbook.flSecondLine",
+				"pgMainLookbook-ThirdLine": "#pgMainLookbook.flThirdLine",
+				"pgMainLookbook-Sale": "#pgMainLookbook.flSale"
 			}
 		},
 		"ScrollView": {
@@ -101,7 +107,14 @@
 			},
 			"Implementation": {
 				"Header": ".label-header",
-				"ShoppingBagHeader": ".label-header.shopping"
+				"ShoppingBagHeader": ".label-header.shopping",
+				"pgMainLookbook-Sale": "#pgMainLookbook.lblSale",
+				"pgMainLookbook-50Off": "#pgMainLookbook.lbl50Off",
+				"pgMainLookbook-SaleBackground": "#pgMainLookbook.lblSaleBackground",
+				"pgMainLookbook-Shop-Women": "#pgMainLookbook.lblShop",
+				"pgMainLookbook-Gender-Women": "#pgMainLookbook.lblGender",
+				"pgMainLookbook-Shop-Men": "#pgMainLookbook.lblShop.men",
+				"pgMainLookbook-Gender-Men": "#pgMainLookbook.lblGender.men"
 			}
 		},
 		"ListView": {

@@ -1,0 +1,133 @@
+{
+  "#pgMainLookbook": {
+    ".lblSale": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "font": {
+        "size": 15
+      },
+      "textAlignment": "MIDCENTER"
+    },
+    ".lbl50Off": {
+      "width": null,
+      "height": null,
+      "textColor": "#D52682",
+      "multiline": true,
+      "textAlignment": "MIDCENTER",
+      "font": {
+        "size": 25
+      },
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "+page:Screen.width > 450": {
+        "multiline": false
+      }
+    },
+    ".btnShopNow": {
+      "width": 100,
+      "height": 30,
+      "borderColor": "#000000",
+      "borderWidth": 2,
+      "backgroundColor": "rgba(0,0,0,0)",
+      "textColor": "#000000"
+    },
+    ".flShopNow": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1,
+        "alignItems": "CENTER",
+        "justifyContent": "CENTER"
+      }
+    },
+    ".flFirstLine": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 39,
+        "flexDirection": "ROW"
+      }
+    },
+    ".flSecondLine": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 27
+      },
+      "+page:Screen.width > 450": {
+        "flexProps": {
+          "flexGrow": 0
+        }
+      }
+    },
+    ".flThirdLine": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 65,
+        "flexDirection": "ROW"
+      }
+    },
+    ".flSale": {
+      "width": null,
+      "height": null,
+      "+page:Screen.width > 450": {
+        "flexProps": {
+          "flexGrow": 2.8,
+          "flexDirection": "COLUMN"
+        }
+      }
+    },
+    ".lblSaleBackground": {
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0,
+      "width": null,
+      "height": null,
+      "textAlignment": "MIDCENTER",
+      "textColor": "rgba(29,29,38,0.1)",
+      "flexProps": {
+        "positionType": "ABSOLUTE"
+      },
+      "font": {
+        "size": 100,
+        "bold": true
+      },
+      "+page:Screen.width > 450": {
+        "font": {
+          "size": 70
+        },
+        "textAlignment": "TOPCENTER"
+      }
+    },
+    ".lblGender": {
+      "width": null,
+      "height": 40,
+      "textAlignment": "MIDRIGHT",
+      "textColor": "#FFFFFF",
+      "font": {
+        "size": 30
+      },
+      "marginRight": 10,
+      ".men": {
+        "textAlignment": "MIDLEFT",
+        "marginLeft": 10
+      }
+    },
+    ".lblShop": {
+      "width": null,
+      "height": 20,
+      "textAlignment": "MIDRIGHT",
+      "marginRight": 10,
+      ".men": {
+        "textAlignment": "MIDLEFT",
+        "marginLeft": 10
+      }
+    }
+  }
+}
