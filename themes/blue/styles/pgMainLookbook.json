@@ -128,6 +128,51 @@
         "textAlignment": "MIDLEFT",
         "marginLeft": 10
       }
+    },
+    ".lblSummer": {
+      "width": null,
+      "height": 30,
+      "textAlignment": "MIDLEFT",
+      "multiline": true,
+      "marginLeft": 20,
+      "+page:Screen.width > 450": {
+        "multiline": false,
+        "textAlignment": "MIDRIGHT",
+        "marginRight": 30
+      }
+    },
+    ".lblBag": {
+      "width": null,
+      "height": 60,
+      "textAlignment": "MIDCENTER",
+      "multiline": true,
+      "textColor": "#FFFFFF",
+      "font": {
+        "size": 20
+      },
+      "+page:Screen.width > 450": {
+        "textAlignment": "MIDRIGHT",
+        "marginRight": 30
+      }
+    },
+    ".lblAccessories": {
+      "@extend": "#pgMainLookbook.lblSummer",
+      "textAlignment": "MIDCENTER",
+      "marginLeft": null,
+      "+page:Screen.width > 450": {
+        "height": 20,
+        "textAlignment": "MIDCENTER",
+        "marginRight": null
+      }
+    },
+    ".lblGlasses": {
+      "@extend": "#pgMainLookbook.lblBag",
+      "height": 40,
+      "+page:Screen.width > 450": {
+        "height": 20,
+        "textAlignment": "MIDCENTER",
+        "marginRight": null
+      }
     }
   }
 }

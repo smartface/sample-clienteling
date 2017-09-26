@@ -114,7 +114,11 @@
 				"pgMainLookbook-Shop-Women": "#pgMainLookbook.lblShop",
 				"pgMainLookbook-Gender-Women": "#pgMainLookbook.lblGender",
 				"pgMainLookbook-Shop-Men": "#pgMainLookbook.lblShop.men",
-				"pgMainLookbook-Gender-Men": "#pgMainLookbook.lblGender.men"
+				"pgMainLookbook-Gender-Men": "#pgMainLookbook.lblGender.men",
+				"pgMainLookbook-Summer": "#pgMainLookbook.lblSummer",
+				"pgMainLookbook-Bag": "#pgMainLookbook.lblBag",
+				"pgMainLookbook-Accessories": "#pgMainLookbook.lblAccessories",
+				"pgMainLookbook-Glasses": "#pgMainLookbook.lblGlasses"
 			}
 		},
 		"ListView": {
