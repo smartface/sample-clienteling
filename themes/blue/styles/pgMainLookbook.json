@@ -1,14 +1,22 @@
 {
   "#pgMainLookbook": {
     ".lblSale": {
-      "@extend": ".grow",
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
       "font": {
         "size": 15
       },
       "textAlignment": "MIDCENTER"
     },
     ".lbl50Off": {
-      "@extend": ".grow",
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
       "textColor": "#D52682",
       "multiline": true,
       "textAlignment": "MIDCENTER",
@@ -28,8 +36,10 @@
       "textColor": "#000000"
     },
     ".flShopNow": {
-      "@extend": ".grow",
+      "width": null,
+      "height": null,
       "flexProps": {
+        "flexGrow": 1,
         "alignItems": "CENTER",
         "justifyContent": "CENTER"
       }
@@ -45,10 +55,16 @@
     ".flSecondLine": {
       "width": null,
       "height": null,
+      "maxHeight": null,
+      "maxWidth": null,
       "flexProps": {
         "flexGrow": 27
       },
       "+page:Screen.width > 450": {
+        "width": 0,
+        "height": 0,
+        "maxHeight": 0,
+        "maxWidth": 0,
         "flexProps": {
           "flexGrow": 0
         }
@@ -63,9 +79,18 @@
       }
     },
     ".flSale": {
-      "width": null,
-      "height": null,
+      "width": 0,
+      "height": 0,
+      "maxHeight": 0,
+      "maxWidth": 0,
+      "flexProps": {
+        "flexGrow": 0
+      },
       "+page:Screen.width > 450": {
+        "width": null,
+        "height": null,
+        "maxHeight": null,
+        "maxWidth": null,
         "flexProps": {
           "flexGrow": 2.8,
           "flexDirection": "COLUMN"
@@ -104,6 +129,7 @@
         "size": 30
       },
       "marginRight": 10,
+      "marginLeft": null,
       ".men": {
         "textAlignment": "MIDLEFT",
         "marginLeft": 10
@@ -114,6 +140,7 @@
       "height": 20,
       "textAlignment": "MIDRIGHT",
       "marginRight": 10,
+      "marginLeft": null,
       ".men": {
         "textAlignment": "MIDLEFT",
         "marginLeft": 10
@@ -125,6 +152,7 @@
       "textAlignment": "MIDLEFT",
       "multiline": true,
       "marginLeft": 20,
+      "marginRight": null,
       "+page:Screen.width > 450": {
         "multiline": false,
         "textAlignment": "MIDRIGHT",
@@ -140,6 +168,7 @@
       "font": {
         "size": 20
       },
+      "marginRight": null,
       "+page:Screen.width > 450": {
         "textAlignment": "MIDRIGHT",
         "marginRight": 30
@@ -152,7 +181,8 @@
       "+page:Screen.width > 450": {
         "height": 20,
         "textAlignment": "MIDCENTER",
-        "marginRight": null
+        "marginRight": null,
+        "marginLeft": null
       }
     },
     ".lblGlasses": {
@@ -165,7 +195,11 @@
       }
     },
     ".imgWomen": {
-      "@extend": ".grow",
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
       "imageFillType": "STRETCH",
       "image": "pgMainLookbook_women_vertical.png",
       "+page:Screen.width > 450": {
@@ -173,7 +207,11 @@
       }
     },
     ".imgMen": {
-      "@extend": ".grow",
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
       "imageFillType": "STRETCH",
       "image": "pgMainLookbook_men_vertical.png",
       "+page:Screen.width > 450": {

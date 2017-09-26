@@ -94,7 +94,7 @@
 		},
 		"ImageView": {
 			"Sizes": {
-				"Default": ".imageView-default",
+				"Default": ".imageView",
 				"Auto Size": ".imageView",
 				"pgMainLookbook-Women": "#pgMainLookbook.imgWomen",
 				"pgMainLookbook-Men": "#pgMainLookbook.imgMen"

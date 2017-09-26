@@ -33,8 +33,8 @@
 					"b740-f675-4f52-5243",
 					"6051-46a5-778b-d772"
 				],
-				"width": 320,
-				"height": 504
+				"width": 586.96,
+				"height": 273.67999999999995
 			}
 		},
 		{
@@ -322,8 +322,11 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 2.8
 				},
+				"maxHeight": null,
+				"maxWidth": null,
 				"name": "flSale",
 				"parent": "6051-46a5-778b-d772",
 				"children": [
@@ -391,10 +394,10 @@
 				"image": "bag.png",
 				"imageFillType": "ASPECTFIT",
 				"flexProps": {
-					"flexGrow": 1.3
+					"flexGrow": 1
 				}
 			},
-			"className": ".imageView .imageView-default",
+			"className": ".imageView",
 			"props": {
 				"width": null,
 				"height": null,
@@ -409,13 +412,13 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.3
+					"flexGrow": 1
 				},
 				"image": "bag.png",
 				"name": "imgBagTrends",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.88&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -484,7 +487,7 @@
 					"flexGrow": 1
 				}
 			},
-			"className": ".imageView .imageView-default",
+			"className": ".imageView",
 			"props": {
 				"width": null,
 				"height": null,
@@ -510,7 +513,7 @@
 				"name": "imgSunGlasses",
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.88&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -617,7 +620,6 @@
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
-				"text": "SALE",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -637,6 +639,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"text": "SALE",
 				"name": "lblSale",
 				"parent": "5bae-54e6-f533-71cd",
 				"children": []
@@ -657,9 +660,8 @@
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
-				"text": "50% OFF",
 				"visible": true,
-				"multiline": true,
+				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -677,6 +679,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"text": "50% OFF",
 				"name": "lbl50Off",
 				"parent": "5bae-54e6-f533-71cd",
 				"children": []
@@ -709,8 +712,7 @@
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"positionType": "RELATIVE"
 				},
 				"name": "flShopNow",
 				"parent": "5bae-54e6-f533-71cd",
@@ -772,8 +774,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flSecondLine",
 			"props": {
-				"height": null,
-				"width": null,
+				"height": 0,
+				"width": 0,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -790,8 +792,10 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 27
+					"flexGrow": 0
 				},
+				"maxHeight": 0,
+				"maxWidth": 0,
 				"name": "flSecondLine",
 				"parent": "06bb-a00e-c029-0539",
 				"children": [
@@ -817,7 +821,6 @@
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
-				"text": "SALE",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -837,6 +840,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"text": "SALE",
 				"name": "lblSale",
 				"parent": "b740-f675-4f52-5243",
 				"children": []
@@ -857,9 +861,8 @@
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
-				"text": "50% OFF",
 				"visible": true,
-				"multiline": true,
+				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -877,6 +880,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"text": "50% OFF",
 				"name": "lbl50Off",
 				"parent": "b740-f675-4f52-5243",
 				"children": []
@@ -889,7 +893,11 @@
 				"Sizes": "Default",
 				"Implementation": "pgMainLookbook-ShopNow"
 			},
-			"userProps": {},
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flShopNow",
 			"props": {
 				"height": null,
@@ -928,9 +936,7 @@
 				"Implementation": "pgMainLookbook-ShopNow"
 			},
 			"userProps": {
-				"text": "SHOP NOW",
-				"left": 0,
-				"top": 0
+				"text": "SHOP NOW"
 			},
 			"className": ".button #pgMainLookbook.btnShopNow",
 			"props": {
@@ -955,8 +961,6 @@
 					"alignSelf": "AUTO"
 				},
 				"text": "SHOP NOW",
-				"left": 0,
-				"top": 0,
 				"name": "btnShopNow",
 				"parent": "0b77-0e2d-97eb-edd1",
 				"children": []
@@ -977,7 +981,6 @@
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
-				"text": "S A L E",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -985,9 +988,9 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba(29,29,38,0.1)",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"font": {
-					"size": 100,
+					"size": 70,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1000,6 +1003,7 @@
 				"right": 0,
 				"top": 0,
 				"bottom": 0,
+				"text": "S A L E",
 				"name": "lblSaleBackground",
 				"parent": "b740-f675-4f52-5243",
 				"children": []
@@ -1020,7 +1024,6 @@
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
-				"text": "SALE",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -1028,9 +1031,9 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba(29,29,38,0.1)",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"font": {
-					"size": 100,
+					"size": 70,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1043,6 +1046,7 @@
 				"right": 0,
 				"top": 0,
 				"bottom": 0,
+				"text": "SALE",
 				"name": "lblSaleBackground",
 				"parent": "5bae-54e6-f533-71cd",
 				"children": []
@@ -1055,7 +1059,7 @@
 				"Sizes": "pgMainLookbook-Women"
 			},
 			"userProps": {},
-			"className": ".imageView .imageView-default #pgMainLookbook.imgWomen",
+			"className": ".imageView #pgMainLookbook.imgWomen",
 			"props": {
 				"width": null,
 				"height": null,
@@ -1072,11 +1076,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "pgMainLookbook_women_vertical.png",
+				"image": "pgMainLookbook_women_horizontal.png",
 				"name": "imgWomen",
 				"parent": "47f2-f138-9dd8-617a",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook_women_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook_women_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.88&brandModel=iPhone%207?random=0.20077562985231756"
 			}
 		},
 		{
@@ -1086,7 +1090,7 @@
 				"Sizes": "pgMainLookbook-Men"
 			},
 			"userProps": {},
-			"className": ".imageView .imageView-default #pgMainLookbook.imgMen",
+			"className": ".imageView #pgMainLookbook.imgMen",
 			"props": {
 				"width": null,
 				"height": null,
@@ -1103,11 +1107,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "pgMainLookbook_men_vertical.png",
+				"image": "pgMainLookbook_men_horizontal.png",
 				"name": "imgMen",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook_men_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook_men_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.88&brandModel=iPhone%207?random=0.551825911099634"
 			}
 		},
 		{
@@ -1120,10 +1124,10 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"left": 0,
+				"left": 2.3255813953488373,
 				"right": 0,
 				"bottom": 0,
-				"top": 0,
+				"top": -1.1627906976744187,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"justifyContent": "CENTER",
@@ -1152,10 +1156,10 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 0,
+				"left": 2.3255813953488373,
 				"right": 0,
 				"bottom": 0,
-				"top": 0,
+				"top": -1.1627906976744187,
 				"name": "flWrapper",
 				"parent": "47f2-f138-9dd8-617a",
 				"children": [
@@ -1179,7 +1183,6 @@
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
-				"text": "SHOP",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -1199,6 +1202,7 @@
 					"positionType": "RELATIVE"
 				},
 				"marginRight": 10,
+				"text": "SHOP",
 				"name": "lblShop",
 				"parent": "6f1c-1a10-c120-fe7d",
 				"children": []
@@ -1219,7 +1223,6 @@
 				"width": null,
 				"height": 40,
 				"touchEnabled": true,
-				"text": "WOMEN",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -1239,6 +1242,7 @@
 					"positionType": "RELATIVE"
 				},
 				"marginRight": 10,
+				"text": "WOMEN",
 				"name": "lblGender",
 				"parent": "6f1c-1a10-c120-fe7d",
 				"children": []
@@ -1313,7 +1317,6 @@
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
-				"text": "SHOP",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -1334,6 +1337,7 @@
 				},
 				"marginRight": 10,
 				"marginLeft": 10,
+				"text": "SHOP",
 				"name": "lblShop",
 				"parent": "be6f-d58b-d42a-e94c",
 				"children": []
@@ -1354,7 +1358,6 @@
 				"width": null,
 				"height": 40,
 				"touchEnabled": true,
-				"text": "MEN",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -1375,6 +1378,7 @@
 				},
 				"marginRight": 10,
 				"marginLeft": 10,
+				"text": "MEN",
 				"name": "lblGender",
 				"parent": "be6f-d58b-d42a-e94c",
 				"children": []
@@ -1395,15 +1399,14 @@
 				"width": null,
 				"height": 30,
 				"touchEnabled": true,
-				"text": "SUMMER 2017",
 				"visible": true,
-				"multiline": true,
+				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDLEFT",
+				"textAlignment": "MIDRIGHT",
 				"font": {
 					"size": 10,
 					"bold": false,
@@ -1415,6 +1418,8 @@
 					"positionType": "RELATIVE"
 				},
 				"marginLeft": 20,
+				"marginRight": 30,
+				"text": "SUMMER 2017",
 				"name": "lblBag",
 				"parent": "171a-9f20-120a-7188",
 				"children": []
@@ -1435,7 +1440,6 @@
 				"width": null,
 				"height": 60,
 				"touchEnabled": true,
-				"text": "BAG\nTRENDS",
 				"visible": true,
 				"multiline": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -1443,7 +1447,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDRIGHT",
 				"font": {
 					"size": 20,
 					"bold": false,
@@ -1454,6 +1458,8 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"marginRight": 30,
+				"text": "BAG\nTRENDS",
 				"name": "lblSummer",
 				"parent": "171a-9f20-120a-7188",
 				"children": []
@@ -1472,11 +1478,10 @@
 			"className": ".label #pgMainLookbook.lblAccessories",
 			"props": {
 				"width": null,
-				"height": 30,
+				"height": 20,
 				"touchEnabled": true,
-				"text": "ACCESSORIES",
 				"visible": true,
-				"multiline": true,
+				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -1494,6 +1499,8 @@
 					"positionType": "RELATIVE"
 				},
 				"marginLeft": null,
+				"marginRight": null,
+				"text": "ACCESSORIES",
 				"name": "label1",
 				"parent": "5726-cbb7-f702-4812",
 				"children": []
@@ -1512,9 +1519,8 @@
 			"className": ".label #pgMainLookbook.lblGlasses",
 			"props": {
 				"width": null,
-				"height": 40,
+				"height": 20,
 				"touchEnabled": true,
-				"text": "SUN GLASSES",
 				"visible": true,
 				"multiline": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -1533,6 +1539,8 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"marginRight": null,
+				"text": "SUN GLASSES",
 				"name": "label2",
 				"parent": "5726-cbb7-f702-4812",
 				"children": []
