@@ -6,6 +6,7 @@ const PgSignupTabletDesign = require('ui/ui_pgSignupTablet');
 const Page = require('sf-core/ui/page');
 const Screen = require('sf-core/device/screen');
 const pageContext = require("../context/pageContext");
+const pageContextPatch = require("../context/pageContextPatch");
 
 const PgSignupTablet = extend(PgSignupTabletDesign)(
   // Constructor

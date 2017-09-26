@@ -4,6 +4,7 @@
 const extend = require('js-base/core/extend');
 const PgSignupPhoneDesign = require('ui/ui_pgSignupPhone');
 const pageContext = require("../context/pageContext");
+const pageContextPatch = require("../context/pageContextPatch");
 
 const PgSignupPhone = extend(PgSignupPhoneDesign)(
   // Constructor
@@ -12,11 +13,7 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     _super(this);
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    // overrides super.onLoad method
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    this.onOrientationChange = onOrientationChange.bind(this);
-
-    this.classMap = {};
+    pageContextPatch(this, "pgSignupPhone")
   });
 
 /**
@@ -27,38 +24,6 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
  */
 function onShow(superOnShow) {
   superOnShow();
-}
-
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
-function onLoad(superOnLoad) {
-  superOnLoad();
-
-  this.setContextDispatcher = setContextDispatcher.bind(this);
-  this.styleContext = pageContext.createContext(
-    this,
-    "pgSignupPhone",
-    null,
-    function reducers(state, actors, action, target) {
-      return state;
-    });
-}
-
-function onOrientationChange() {
-  setTimeout(function() {
-    this.dispatch({
-      type: "invalidate"
-    });
-
-    this.layout.applyLayout();
-  }.bind(this), 50);
-}
-
-function setContextDispatcher(dispatcher) {
-  this.dispatch = dispatcher;
 }
 
 module && (module.exports = PgSignupPhone);
