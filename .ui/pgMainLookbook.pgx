@@ -33,8 +33,8 @@
 					"b740-f675-4f52-5243",
 					"6051-46a5-778b-d772"
 				],
-				"width": 613.64,
-				"height": 286.12
+				"width": 345,
+				"height": 554.76
 			}
 		},
 		{
@@ -322,8 +322,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 2.8
+					"positionType": "RELATIVE"
 				},
 				"name": "flSale",
 				"parent": "6051-46a5-778b-d772",
@@ -416,7 +415,7 @@
 				"name": "imgBagTrends",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.5603094772615302"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.7061516137203214"
 			}
 		},
 		{
@@ -511,7 +510,7 @@
 				"name": "imgSunGlasses",
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.8622939002493897"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.48706937054544985"
 			}
 		},
 		{
@@ -597,7 +596,10 @@
 				"top": 0,
 				"name": "flInfo",
 				"parent": "842d-3186-5326-4b81",
-				"children": []
+				"children": [
+					"f0dd-30e9-ff1a-b192",
+					"a103-df65-e44a-9b9f"
+				]
 			}
 		},
 		{
@@ -657,7 +659,7 @@
 				"touchEnabled": true,
 				"text": "50% OFF",
 				"visible": true,
-				"multiline": false,
+				"multiline": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -788,7 +790,7 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 27
 				},
 				"name": "flSecondLine",
 				"parent": "06bb-a00e-c029-0539",
@@ -857,7 +859,7 @@
 				"touchEnabled": true,
 				"text": "50% OFF",
 				"visible": true,
-				"multiline": false,
+				"multiline": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -983,9 +985,9 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba(29,29,38,0.1)",
-				"textAlignment": "TOPCENTER",
+				"textAlignment": "MIDCENTER",
 				"font": {
-					"size": 70,
+					"size": 100,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1026,9 +1028,9 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba(29,29,38,0.1)",
-				"textAlignment": "TOPCENTER",
+				"textAlignment": "MIDCENTER",
 				"font": {
-					"size": 70,
+					"size": 100,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1082,7 +1084,7 @@
 				"name": "imgWomen",
 				"parent": "47f2-f138-9dd8-617a",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/Onsale-2014-Summer-Cute-Girl-Lace-Dress-Black-Slim-Sexy-Perspective-Office-Lady-Fashion-One-Piece.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.08236264686238237"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/Onsale-2014-Summer-Cute-Girl-Lace-Dress-Black-Slim-Sexy-Perspective-Office-Lady-Fashion-One-Piece.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.8869831434188695"
 			}
 		},
 		{
@@ -1121,7 +1123,7 @@
 				"name": "imgMen",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/ca520656917a4fefe818b5f2d240b0a4--simplicity-casual-wear%401x.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.671340895668421"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/ca520656917a4fefe818b5f2d240b0a4--simplicity-casual-wear%401x.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.29467491447590866"
 			}
 		},
 		{
@@ -1411,13 +1413,13 @@
 				"touchEnabled": true,
 				"text": "SUMMER 2017",
 				"visible": true,
-				"multiline": false,
+				"multiline": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDRIGHT",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 10,
 					"bold": false,
@@ -1429,7 +1431,6 @@
 					"positionType": "RELATIVE"
 				},
 				"marginLeft": 20,
-				"marginRight": 30,
 				"name": "lblBag",
 				"parent": "171a-9f20-120a-7188",
 				"children": []
@@ -1458,7 +1459,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
-				"textAlignment": "MIDRIGHT",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 20,
 					"bold": false,
@@ -1469,9 +1470,87 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"marginRight": 30,
 				"name": "lblSummer",
 				"parent": "171a-9f20-120a-7188",
+				"children": []
+			}
+		},
+		{
+			"type": "Label",
+			"id": "f0dd-30e9-ff1a-b192",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgMainLookbook-Accessories"
+			},
+			"userProps": {
+				"text": "ACCESSORIES"
+			},
+			"className": ".label #pgMainLookbook.lblAccessories",
+			"props": {
+				"width": null,
+				"height": 30,
+				"touchEnabled": true,
+				"text": "ACCESSORIES",
+				"visible": true,
+				"multiline": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#1D1D26",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 10,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"marginLeft": null,
+				"name": "label1",
+				"parent": "5726-cbb7-f702-4812",
+				"children": []
+			}
+		},
+		{
+			"type": "Label",
+			"id": "a103-df65-e44a-9b9f",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgMainLookbook-Glasses"
+			},
+			"userProps": {
+				"text": "SUN GLASSES"
+			},
+			"className": ".label #pgMainLookbook.lblGlasses",
+			"props": {
+				"width": null,
+				"height": 40,
+				"touchEnabled": true,
+				"text": "SUN GLASSES",
+				"visible": true,
+				"multiline": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 20,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "label2",
+				"parent": "5726-cbb7-f702-4812",
 				"children": []
 			}
 		}

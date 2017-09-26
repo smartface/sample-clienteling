@@ -1,27 +1,19 @@
 {
   "#pgMainLookbook": {
     ".lblSale": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
+      "@extend": ".grow",
       "font": {
         "size": 15
       },
       "textAlignment": "MIDCENTER"
     },
     ".lbl50Off": {
-      "width": null,
-      "height": null,
+      "@extend": ".grow",
       "textColor": "#D52682",
       "multiline": true,
       "textAlignment": "MIDCENTER",
       "font": {
         "size": 25
-      },
-      "flexProps": {
-        "flexGrow": 1
       },
       "+page:Screen.width > 450": {
         "multiline": false
@@ -36,10 +28,8 @@
       "textColor": "#000000"
     },
     ".flShopNow": {
-      "width": null,
-      "height": null,
+      "@extend": ".grow",
       "flexProps": {
-        "flexGrow": 1,
         "alignItems": "CENTER",
         "justifyContent": "CENTER"
       }
