@@ -31,7 +31,8 @@
 					"5be9-8547-09ac-6568",
 					"e30a-e6af-e075-a2b5",
 					"1041-55d5-cb0c-fd5f",
-					"f3c9-f72b-84ed-36d3"
+					"f3c9-f72b-84ed-36d3",
+					"dd1a-e185-7560-5370"
 				],
 				"width": 375,
 				"height": 667
@@ -2106,6 +2107,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "f3c9-f72b-84ed-36d3",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -2281,6 +2283,136 @@
 				"text": "03.12.2007",
 				"name": "lblDate",
 				"parent": "f3c9-f72b-84ed-36d3",
+				"children": []
+			}
+		},
+		{
+			"type": "ListViewItem",
+			"id": "dd1a-e185-7560-5370",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"flexProps": {},
+				"left": 10,
+				"top": 9,
+				"width": 290,
+				"height": 48
+			},
+			"className": ".listViewItem",
+			"props": {
+				"height": 48,
+				"width": 290,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "ABSOLUTE"
+				},
+				"left": 10,
+				"top": 9,
+				"name": "lvCustomerProfileRecentItem",
+				"parent": "fb96-1dcf-3bb9-cd95",
+				"children": [
+					"2320-e192-3806-6aba",
+					"7267-01db-ae85-c9a5"
+				]
+			}
+		},
+		{
+			"type": "Label",
+			"id": "2320-e192-3806-6aba",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgCustomerProfile-Recent"
+			},
+			"userProps": {
+				"text": "03.12.17 Email Sent: Invite to try wishlist"
+			},
+			"className": ".label #pgCustomerProfile.lblRecent",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#6A6A6A",
+				"textAlignment": "MIDLEFT",
+				"font": {
+					"size": 12,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"marginLeft": 10,
+				"name": "label5",
+				"parent": "dd1a-e185-7560-5370",
+				"children": [],
+				"text": "03.12.17 Email Sent: Invite to try wishlist"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "7267-01db-ae85-c9a5",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Line"
+			},
+			"userProps": {
+				"width": null
+			},
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"props": {
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"name": "flexLayout1",
+				"parent": "dd1a-e185-7560-5370",
 				"children": []
 			}
 		}

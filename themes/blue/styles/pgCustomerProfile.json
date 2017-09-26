@@ -81,6 +81,20 @@
       "textAlignment": "MIDLEFT",
       "marginLeft": 10,
       "textColor": "#6A6A6A"
+    },
+    ".lblRecent": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "font": {
+        "family": "Lato",
+        "size": 12
+      },
+      "textAlignment": "MIDLEFT",
+      "marginLeft": 10,
+      "textColor": "#6A6A6A"
     }
   }
 }

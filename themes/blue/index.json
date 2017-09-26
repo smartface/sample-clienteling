@@ -126,7 +126,8 @@
 				"pgCustomerProfile-Wishlist-Price": "#pgCustomerProfile.lblWishlistItemPrice",
 				"pgCustomerProfile-Reservation-Status": "#pgCustomerProfile.lblReservationStatus",
 				"pgCustomerProfile-Reservation-Info": "#pgCustomerProfile.lblReservationInfo",
-				"pgCustomerProfile-Reservation-Date": "#pgCustomerProfile.lblReservationDate"
+				"pgCustomerProfile-Reservation-Date": "#pgCustomerProfile.lblReservationDate",
+				"pgCustomerProfile-Recent": "#pgCustomerProfile.lblRecent"
 			}
 		},
 		"ListView": {
