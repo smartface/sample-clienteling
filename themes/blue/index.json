@@ -120,7 +120,13 @@
 				"pgMainLookbook-Summer": "#pgMainLookbook.lblSummer",
 				"pgMainLookbook-Bag": "#pgMainLookbook.lblBag",
 				"pgMainLookbook-Accessories": "#pgMainLookbook.lblAccessories",
-				"pgMainLookbook-Glasses": "#pgMainLookbook.lblGlasses"
+				"pgMainLookbook-Glasses": "#pgMainLookbook.lblGlasses",
+				"pgCustomerProfile-Wishlist-Name": "#pgCustomerProfile.lblWishlistItemName",
+				"pgCustomerProfile-Wishlist-ID": "#pgCustomerProfile.lblWishlistItemID",
+				"pgCustomerProfile-Wishlist-Price": "#pgCustomerProfile.lblWishlistItemPrice",
+				"pgCustomerProfile-Reservation-Status": "#pgCustomerProfile.lblReservationStatus",
+				"pgCustomerProfile-Reservation-Info": "#pgCustomerProfile.lblReservationInfo",
+				"pgCustomerProfile-Reservation-Date": "#pgCustomerProfile.lblReservationDate"
 			}
 		},
 		"ListView": {

@@ -1,0 +1,86 @@
+{
+  "#pgCustomerProfile": {
+    ".lblWishlistItemName": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "textColor": "#868686",
+      "textAlignment": "MIDCENTER",
+      "font": {
+        "family": "Lato",
+        "size": 20
+      }
+    },
+    ".lblWishlistItemID": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "textColor": "#868686",
+      "textAlignment": "MIDCENTER",
+      "font": {
+        "family": "Lato",
+        "size": 20
+      }
+    },
+    ".lblWishlistItemPrice": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "textColor": "#2D2D2D",
+      "textAlignment": "MIDCENTER",
+      "font": {
+        "family": "Lato",
+        "size": 20,
+        "bold": true
+      }
+    },
+    ".lblReservationStatus": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "font": {
+        "family": "Lato",
+        "size": 12
+      },
+      "textAlignment": "MIDLEFT",
+      "marginLeft": 10,
+      "textColor": "#B9367B"
+    },
+    ".lblReservationInfo": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "font": {
+        "family": "Lato",
+        "size": 12
+      },
+      "textAlignment": "MIDLEFT",
+      "marginLeft": 10,
+      "textColor": "#2A2A2A"
+    },
+    ".lblReservationDate": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "font": {
+        "family": "Lato",
+        "size": 12
+      },
+      "textAlignment": "MIDLEFT",
+      "marginLeft": 10,
+      "textColor": "#6A6A6A"
+    }
+  }
+}
