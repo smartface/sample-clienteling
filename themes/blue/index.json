@@ -50,9 +50,9 @@
 				"pgSignupTablet-Signup": "#pgSignupTablet.btnSignup",
 				"pgSignupTablet-Facebook": "#pgSignupTablet.btnFacebook",
 				"pgSignupTablet-Anonymous": "#pgSignupTablet.btnAnonymous",
-				"pgWomen-AddToCard": "#pgWomen.btnAddToCard",
-				"pgWomen-QuickOrder": "#pgWomen.btnQuickOrder",
-				"pgWomen-Color": "#pgWomen.btnColor",
+				"pgWomen-AddToCard": "#pgWomenPhone.btnAddToCard",
+				"pgWomen-QuickOrder": "#pgWomenPhone.btnQuickOrder",
+				"pgWomen-Color": "#pgWomenPhone.btnColor",
 				"pgSignupPhone-Signup": "#pgSignupPhone.btn.btnSignup",
 				"pgSignupPhone-Facebook": "#pgSignupPhone.btn.btnFacebook",
 				"pgSignupPhone-Anonymous": "#pgSignupPhone.btn.btnAnonymous",
@@ -69,9 +69,9 @@
 				"pgSignupTablet-Main": "#pgSignupTablet.flMain",
 				"pgSignupTablet-Info": "#pgSignupTablet.flInfo",
 				"pgSignupPhone-Main": "#pgSignupPhone.flMain",
-				"pgWomen-Buttons": "#pgWomen.flButtons",
-				"pgWomen-Info": "#pgWomen.flInfo",
-				"pgWomen-Part2": "#pgWomen.flPart2",
+				"pgWomen-Buttons": "#pgWomenPhone.flButtons",
+				"pgWomen-Info": "#pgWomenPhone.flInfo",
+				"pgWomen-Part2": "#pgWomenPhone.flPart2",
 				"pgMainLookbook-ShopNow": "#pgMainLookbook.flShopNow",
 				"pgMainLookbook-FirstLine": "#pgMainLookbook.flFirstLine",
 				"pgMainLookbook-SecondLine": "#pgMainLookbook.flSecondLine",
@@ -158,7 +158,7 @@
 			"Page": {
 				"Default": ".page",
 				"Blue": ".page-blue",
-				"pgWomen": "#pgWomen.page"
+				"pgWomen": "#pgWomenPhone.page"
 			}
 		},
 		"SearchView": {

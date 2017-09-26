@@ -1,5 +1,5 @@
 {
-  "#pgWomen": {
+  "#pgWomenPhone": {
     ".flButtons": {
       "@extend": ".flexLayout",
       "width": null,
@@ -42,6 +42,9 @@
       }
     },
     ".page": {
+      "flexProps": {
+        "flexDirection": "COLUMN"
+      },
       "+page:Screen.width > 450": {
         "flexProps": {
           "flexDirection": "ROW"
