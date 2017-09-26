@@ -1,8 +1,6 @@
-/* 
-		You can modify its contents.
-*/
 const extend = require('js-base/core/extend');
 const PgMainLookbookDesign = require('ui/ui_pgMainLookbook');
+const pageContext = require("../context/pageContext");
 
 const PgMainLookbook = extend(PgMainLookbookDesign)(
   // Constructor
@@ -13,7 +11,7 @@ const PgMainLookbook = extend(PgMainLookbookDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-
+    this.onOrientationChange = onOrientationChange.bind(this);
   });
 
 /**
@@ -33,6 +31,29 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+
+  this.setContextDispatcher = setContextDispatcher.bind(this);
+  this.styleContext = pageContext.createContext(
+    this,
+    "pgMainLookbook",
+    null,
+    function reducers(state, actors, action, target) {
+      return state;
+    });
+}
+
+function onOrientationChange() {
+  setTimeout(function() {
+    this.dispatch({
+      type: "invalidate"
+    });
+
+    this.layout.applyLayout();
+  }.bind(this), 50);
+}
+
+function setContextDispatcher(dispatcher) {
+  this.dispatch = dispatcher;
 }
 
 module && (module.exports = PgMainLookbook);
