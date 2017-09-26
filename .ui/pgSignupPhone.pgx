@@ -31,8 +31,8 @@
 					"49a6-bd3e-b201-a73b",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 236.25,
-				"height": 379.89
+				"width": 345,
+				"height": 554.76
 			}
 		},
 		{
@@ -86,7 +86,7 @@
 				"Implementation": "pgSignupPhone-Main"
 			},
 			"userProps": {},
-			"className": ".flexLayout .flexLayout-default .flexLayout.pgSignupPhone.main",
+			"className": ".flexLayout .flexLayout-default #pgSignupPhone.flMain",
 			"props": {
 				"height": null,
 				"width": null,
@@ -755,13 +755,13 @@
 			"userProps": {
 				"text": "Sign Up"
 			},
-			"className": ".button #pgSignupPhone.btnSignup",
+			"className": ".button #pgSignupPhone.btn.btnSignup",
 			"props": {
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#4A90E2",
+				"backgroundColor": "rgba(210,49,132,1)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -841,13 +841,13 @@
 			"userProps": {
 				"text": "Login with Facebook"
 			},
-			"className": ".button #pgSignupPhone.btnFacebook",
+			"className": ".button #pgSignupPhone.btn.btnFacebook",
 			"props": {
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#4A90E2",
+				"backgroundColor": "rgba(71,94,174,1)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -882,13 +882,13 @@
 			"userProps": {
 				"text": "Anonymous Login"
 			},
-			"className": ".button #pgSignupPhone.btnAnonymous",
+			"className": ".button #pgSignupPhone.btn.btnAnonymous",
 			"props": {
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#4A90E2",
+				"backgroundColor": "rgba(103,164,231,1)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -956,7 +956,7 @@
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.8462582109273544"
 			}
 		},
 		{
