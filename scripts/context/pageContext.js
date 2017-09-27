@@ -12,6 +12,31 @@ const INIT_CONTEXT_ACTION_TYPE = require("../lib/Context")
 const styles = require("../themes/blue");
 var styling = styler(styles);
 
+console.log("style : "+JSON.stringify(styling("#pgSignupPhone_flMain_flBanner_imgBanner")()))
+
+/*{
+	"width": 150,
+	"height": null,
+	"touchEnabled": true,
+	"visible": true,
+	"imageFillType": "ASPECTFIT",
+	"backgroundColor": "rgba(255,255,255,0)",
+	"alpha": 1,
+	"borderColor": "rgba(0,0,0,1)",
+	"borderWidth": 0,
+	"font": {},
+	"flexProps": {
+		"alignSelf": "AUTO",
+		"positionType": "RELATIVE",
+		"flexGrow": 0
+	},
+	"image": "smartface.png",
+	"minHeight": 50,
+	"minWidth": null,
+	"maxHeight": 50,
+	"maxWidth": null
+}*/
+
 commands.addRuntimeCommandFactory(function(type){
   switch (type) {
     case '+page':
@@ -19,7 +44,7 @@ commands.addRuntimeCommandFactory(function(type){
         var isOK = (function(Screen) { return eval(opts.args); }({width: Screen.width, height: Screen.height}));
         // console.log("isOK"+isOK.toString()+" "+opts.args+" "+Screen.width)
 				return  isOK ? opts.value : {};
-      }
+      };
       
       break;
   }
@@ -79,14 +104,20 @@ function createContext(component, name, classMap=null, reducers=null) {
 						}
 
 						return function diffStylingReducer(acc, key) {
+						  //align is readolnly issue
 						  if(key === 'align'){
 						    delete acc[key]
 						  } else if(newStyles[key] !== null && typeof newStyles[key] === "object") {
 								if(!isEqual(oldStyles[key], newStyles[key])) {
+								  
 								  if(key == "flexProps")
 									  Object.assign(acc, newStyles[key]);
 									 else
   									 acc[key] = newStyles[key];
+  									 
+								 if(acc["flexGrow"] !== undefined && !acc["flexGrow"] && acc["flexGrow"] !== 0){
+    						    acc["flexGrow"] = 0;
+    						  } 
 								}
 							} else if(newStyles[key] !== null && oldStyles[key] !== newStyles[key]) {
 								acc[key] = newStyles[key];

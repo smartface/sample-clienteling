@@ -3,7 +3,6 @@ const PgDashboardDesign = require('ui/ui_pgDashboard');
 const System = require('sf-core/device/system');
 const Router = require("sf-core/ui/router");
 const pageContextPatch = require("../context/pageContextPatch");
-const Screen = require('sf-core/device/screen');
 
 const PgDashboard = extend(PgDashboardDesign)(
   // Constructor
@@ -44,14 +43,9 @@ function onLoad(superOnLoad) {
   superOnLoad();
   const page = this;
   page.imgSignOut.onTouchEnded = function() {
-    // TODO: To be fixed
-    if (Screen.width < 450) {
-      Router.go("pgSignupPhone");
-    }
-    else {
-      Router.go("pgSignupTablet");
-    }
+    Router.goBack("pgSignupPhone");
   };
+  page.svInfo.scrollBarEnabled = false;
   page.svInfo.layout.height = 90;
   page.svInfo.layout.minWidth = 768;
 }
