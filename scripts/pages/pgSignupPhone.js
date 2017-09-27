@@ -9,7 +9,8 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     _super(this);
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.btnSignup.onTouch = onTouch;
+    this.btnSignup.onTouch = onTouchSignup;
+    this.btnAnonymous.onTouch = onTouchAnonymous;
     pageContextPatch(this, "pgSignupPhone");
   });
 
@@ -23,8 +24,12 @@ function onShow(superOnShow) {
   superOnShow();
 }
 
-function onTouch() {
+function onTouchSignup() {
   Router.go("pgDashboard");
+}
+
+function onTouchAnonymous() {
+  Router.go("pgMainLookbook");
 }
 
 module && (module.exports = PgSignupPhone);

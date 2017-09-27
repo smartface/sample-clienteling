@@ -31,8 +31,8 @@
 					"49a6-bd3e-b201-a73b",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 236.25,
-				"height": 379.89
+				"width": 213.74999999999997,
+				"height": 343.71
 			}
 		},
 		{
@@ -882,7 +882,8 @@
 				"Implementation": "pgSignupPhone-Anonymous"
 			},
 			"userProps": {
-				"text": "Anonymous Login"
+				"text": "Anonymous Login",
+				"usePageVariable": true
 			},
 			"className": ".button #pgSignupPhone.btn.btnAnonymous",
 			"props": {
@@ -911,7 +912,8 @@
 				"text": "Anonymous Login",
 				"name": "btnAnonymous",
 				"parent": "3eca-e67b-d6e2-e8bf",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -958,7 +960,7 @@
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.57&brandModel=iPhone%207?random=0.2834695348069516"
 			}
 		},
 		{

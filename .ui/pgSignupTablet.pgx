@@ -31,8 +31,8 @@
 					"3aac-ed2b-6f28-f93e",
 					"85f3-4d55-de4a-fe98"
 				],
-				"width": 441.6,
-				"height": 556.8
+				"width": 213.74999999999997,
+				"height": 343.71
 			}
 		},
 		{
@@ -209,7 +209,7 @@
 				"name": "ivBanner",
 				"parent": "25f8-b6c1-967d-a7e3",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.5&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.57&brandModel=iPhone%207?random=0.6816497061325677"
 			}
 		},
 		{
@@ -242,6 +242,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"marginBottom": null,
 				"name": "flInfo",
 				"parent": "85f3-4d55-de4a-fe98",
 				"children": [
@@ -733,7 +734,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#AABBCC",
+				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -814,7 +815,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#112233",
+				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -823,8 +824,8 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "AUTO",
-					"justifyContent": "FLEX_END",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -890,7 +891,8 @@
 				"Implementation": "pgSignupTablet-Anonymous"
 			},
 			"userProps": {
-				"text": "Anonymous Login"
+				"text": "Anonymous Login",
+				"usePageVariable": true
 			},
 			"className": ".button #pgSignupTablet.btnAnonymous",
 			"props": {
@@ -917,11 +919,12 @@
 				},
 				"marginLeft": 10,
 				"marginRight": 20,
-				"marginBottom": null,
+				"marginTop": null,
 				"text": "Anonymous Login",
 				"name": "btnAnonymous",
 				"parent": "b2a4-af8f-ab1e-15e6",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		}
 	]
