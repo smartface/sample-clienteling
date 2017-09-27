@@ -1,7 +1,7 @@
 const extend = require('js-base/core/extend');
 const PgSignupPhoneDesign = require('ui/ui_pgSignupPhone');
 const pageContextPatch = require("../context/pageContextPatch");
-
+const Router = require("sf-core/ui/router");
 const PgSignupPhone = extend(PgSignupPhoneDesign)(
   // Constructor
   function(_super) {
@@ -9,6 +9,7 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     _super(this);
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
+    this.btnSignup.onTouch = onTouch;
     pageContextPatch(this, "pgSignupPhone");
   });
 
@@ -20,6 +21,10 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
  */
 function onShow(superOnShow) {
   superOnShow();
+}
+
+function onTouch() {
+  Router.go("pgDashboard");
 }
 
 module && (module.exports = PgSignupPhone);

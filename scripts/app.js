@@ -12,6 +12,8 @@ Application.onUnhandledError = function(e) {
     });
 };
 
+const Screen = require('sf-core/device/screen');
+
 const Router = require("sf-core/ui/router");
 require("sf-extension-utils");
 
@@ -30,5 +32,14 @@ var stylerBuilder = require("library/styler-builder");
 stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
 stylerBuilder.setActiveTheme(themeSettings.currentTheme);
 
-Router.add("page", require("./pages/pgDashboard"), true);
-Router.go("page");
+Router.add("pgDashboard", require("./pages/pgDashboard"), true);
+Router.add("pgSignupPhone", require("./pages/pgSignupPhone"), true);
+Router.add("pgSignupTablet", require("./pages/pgSignupTablet"), true);
+Router.add("pgMainLookbook", require("./pages/pgMainLookbook"), true);
+
+if (Screen.width < 450) {
+    Router.go("pgSignupPhone");
+}
+else {
+    Router.go("pgSignupTablet");
+}

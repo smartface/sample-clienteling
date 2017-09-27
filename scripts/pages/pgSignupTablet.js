@@ -1,7 +1,7 @@
 const extend = require('js-base/core/extend');
 const PgSignupTabletDesign = require('ui/ui_pgSignupTablet');
 const pageContextPatch = require("../context/pageContextPatch");
-
+const Router = require("sf-core/ui/router");
 const PgSignupTablet = extend(PgSignupTabletDesign)(
   // Constructor
   function(_super) {
@@ -9,6 +9,7 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
     _super(this);
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
+    this.btnSignup.onTouch = onTouch;
     pageContextPatch(this, "pgSignupTablet");
   });
 
@@ -20,6 +21,10 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
  */
 function onShow(superOnShow) {
   superOnShow();
+}
+
+function onTouch() {
+  Router.go("pgDashboard");
 }
 
 module && (module.exports = PgSignupTablet);
