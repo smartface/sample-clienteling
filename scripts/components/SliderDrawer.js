@@ -36,14 +36,14 @@ const SliderDrawer = extend(SliderDrawerDesign)(
 );
 
 function onTouchOption(id) {
-  this.flButtons.findChildById(id).backgroundColor = activeOptionColor
-  this.flButtons.findChildById(this._activeOption).backgroundColor = Color.TRANSPARENT;
+  this.flButtons.findChildById(id).backgroundColor = activeOptionColor;
+  (this._activeOption !== id) && (this.flButtons.findChildById(this._activeOption).backgroundColor = Color.TRANSPARENT);
   this._activeOption = id;
 }
 
 function onTouchCategory(id) {
-  this.flIcons.findChildById(id).icon.backgroundColor = activeCategoryColor
-  this.flIcons.findChildById(this._activeCategory).icon.backgroundColor = Color.TRANSPARENT;
+  this.flIcons.findChildById(id).icon.backgroundColor = activeCategoryColor;
+  (this._activeCategory !== id) && (this.flIcons.findChildById(this._activeCategory).icon.backgroundColor = Color.TRANSPARENT);
   this._activeCategory = id;
 }
 
