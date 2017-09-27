@@ -1,8 +1,10 @@
-var mcs = require("../lib/mcs");
-var http = require("http");
+const mcs = require("../lib/mcs");
+const serviceCall = require("./ServiceCall");
+const request = require("./request");
+exports.login = login;
 
-function login(user, pass){
-  var opt = mcs.createRequestOptions({apiName:"eCommerce",  endpointName: "login"});
+function login(user, pass) {
+  var opt = mcs.createRequestOptions({ apiName: "eCommerce", endpointName: "login" });
   Object.assign(opt, {
     method: "POST",
     body: JSON.stringify({
@@ -10,20 +12,17 @@ function login(user, pass){
       "password": "password"
     })
   });
-  
-  return new Promise(function(resolve, reject){
-    http.request(opt, 
-      function(response){
-          // Handling image request response 
-          // myImageView.image = Image.createFromBlob(response.body);
-          // Handling text request response
-          // myLabel.text = response.body.toString();
-          resolve(JSON.parse(response.body.toString()));
-      },
-      function(e){
-        reject("Server responsed with: " + e.statusCode + ". Message is: " + e.message);
-      });
+
+  return new Promise((resolve, reject)=> {
+    request(opt, (err, result) => {
+      if (err) {
+        reject(err);
+      }
+      else {
+        mcs.sessionId = String(Math.floor(Date.now() / 1000));
+        serviceCall.registerUserToken(result.token);
+        resolve(result);
+      }
+    });
   });
-};
-
-
+}

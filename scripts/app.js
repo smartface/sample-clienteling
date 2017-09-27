@@ -31,4 +31,11 @@ stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
 stylerBuilder.setActiveTheme(themeSettings.currentTheme);
 
 Router.add("page", require("./pages/pgDashboard"), true);
-Router.go("page");
+
+var mcs = require("./lib/mcs");
+//TODO: launch mcs on login page. Disable login button. Enable it when it is successful.
+mcs.launch.then(() => {
+    Router.go("page");
+}).catch((err) => {
+    throw err;
+});
