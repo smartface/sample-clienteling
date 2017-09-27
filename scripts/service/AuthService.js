@@ -8,8 +8,8 @@ function login(user, pass) {
   Object.assign(opt, {
     method: "POST",
     body: JSON.stringify({
-      "username": "employee",
-      "password": "password"
+      "username": "employee", //TODO: use user
+      "password": "password" //TODO: use pass
     })
   });
 

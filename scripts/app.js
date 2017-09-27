@@ -34,8 +34,39 @@ Router.add("page", require("./pages/pgDashboard"), true);
 
 var mcs = require("./lib/mcs");
 //TODO: launch mcs on login page. Disable login button. Enable it when it is successful.
-mcs.launch.then(() => {
+mcs.launch().then(startApp).catch(startApp);
+
+
+function startApp() {
     Router.go("page");
-}).catch((err) => {
-    throw err;
-});
+    var authService = require("./service/AuthService");
+    var userService = require("./service/User");
+    var dashBoard = require("./service/Dashboard");
+    authService.login().then(function() {
+        console.log("auth service success");
+        callUser();
+    }).catch(function(err) {
+        console.log(`auth service error: ${JSON.stringify(err)}`);
+    });
+
+    function callUser() {
+        userService.getUserData().then(function(userData) {
+            console.log(`user data service success: ${JSON.stringify(userData)}`);
+            getDashboardData();
+        }).catch(function(err) {
+            console.log(`user data service error: ${JSON.stringify(err)}`);
+        });
+    }
+
+    function getDashboardData() {
+        dashBoard.getDashboardData().then(function(userData) {
+            console.log(`dashboard data service success: ${JSON.stringify(userData)}`);
+        }).catch(function(err) {
+            console.log(`dashboard data service error: ${JSON.stringify(err)}`);
+        });
+    }
+
+}
+
+// added for debug purpose
+global.require = require;
