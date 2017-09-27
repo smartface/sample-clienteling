@@ -52,7 +52,6 @@ else {
     Router.go("pgSignupTablet");
 }
 
-
 if (System.OS === "Android") {
     sliderDrawer = require("./sliderDrawer");
     Router.sliderDrawer = sliderDrawer;
