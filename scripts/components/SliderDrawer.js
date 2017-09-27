@@ -20,11 +20,35 @@ const SliderDrawer = extend(SliderDrawerDesign)(
     this.pageName = pageName;
     this._activeOption = 1;
     this._activeCategory = 1;
-    this.flIcons.addChild(new FlIcon({ id: 1, image: "profile.png", onTouch: onTouchCategory.bind(this, 1) }));
-    this.flIcons.addChild(new FlIcon({ id: 2, image: "hr_icon.png", onTouch: onTouchCategory.bind(this, 2) }));
-    this.flIcons.addChild(new FlIcon({ id: 3, image: "approvals.png", onTouch: onTouchCategory.bind(this, 3) }));
-    this.flIcons.addChild(new FlIcon({ id: 4, image: "home.png", onTouch: onTouchCategory.bind(this, 4) }));
-    this.flIcons.addChild(new FlIcon({ id: 5, image: "settings.png", divider: false, onTouch: onTouchCategory.bind(this, 5) }));
+    this.flIcons.addChild(new FlIcon({
+      id: 1,
+      image: "profile.png",
+      onTouch: onTouchCategory.bind(this, 1)
+    }, {
+      activeColor: activeCategoryColor
+    }));
+    this.flIcons.addChild(new FlIcon({
+      id: 2,
+      image: "hr_icon.png",
+      onTouch: onTouchCategory.bind(this, 2)
+    }));
+    this.flIcons.addChild(new FlIcon({
+      id: 3,
+      image: "approvals.png",
+      onTouch: onTouchCategory.bind(this, 3)
+    }));
+    this.flIcons.addChild(new FlIcon({
+      id: 4,
+      image: "home.png",
+      onTouch: onTouchCategory.bind(this, 4)
+    }));
+    this.flIcons.addChild(new FlIcon({
+      id: 5,
+      image: "settings.png",
+      onTouch: onTouchCategory.bind(this, 5)
+    }, {
+      divider: false
+    }));
 
     this.flButtons.addChild(new Option({ id: 1, name: "    Profile", backgroundColor: activeOptionColor, onTouch: onTouchOption.bind(this, 1) }));
     this.flButtons.addChild(new Option({ id: 2, name: "    Overview", onTouch: onTouchOption.bind(this, 2) }));

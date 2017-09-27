@@ -11,7 +11,8 @@ var sliderDrawer = new SliderDrawer({
     onLoad: function() {
         var uiSliderDrawer = new UISliderDrawer({
             width: sliderDrawerWidth,
-            height: NaN
+            height: NaN,
+            flexGrow: 1
         });
         this.moveHighlight = uiSliderDrawer.moveHighlight;
         sliderDrawer.layout.addChild(uiSliderDrawer);

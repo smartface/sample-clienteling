@@ -9,15 +9,19 @@ const Image = require('sf-core/ui/image');
 
 const FlIcon = extend(FlIconDesign)(
   //constructor
-  function(_super, props, pageName) {
+  function(_super, props, _opt) {
     // initalizes super class for this scope
+    var opt = _opt || {};
     _super(this, Object.assign({}, FlIconDesign.defaults, props));
     props.image && (this.image.image = Image.createFromFile("images://" + props.image));
-    if(props.divider === false){
+    if(opt.divider === false){
       this.children.divider.visible = false;
       this.children.divider1.visible = false;
     }
-    this.pageName = pageName;
+    if(opt.activeColor){
+      this.icon.backgroundColor = opt.activeColor;
+    }
+    this.pageName = opt.pageName;
   }
 
 );
