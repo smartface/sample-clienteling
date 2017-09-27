@@ -101,9 +101,9 @@ function createContext(component, name, classMap=null, reducers=null) {
 	
 	const _contextReducer = reducers 
 	  ? function(state, actors, action, target){
-  	    reducers(contextReducer(state, actors, action, target), actors, action, target)
+  	    reducers(contextReducer(state, actors, action, target), actors, action, target);
 	    }
-	  : contextReducer
+	  : contextReducer;
 
 	// creates an initial styling for the context
 	styleContext(
@@ -130,7 +130,6 @@ function createContext(component, name, classMap=null, reducers=null) {
 
 function contextReducer(state, actors, action, target) {
 	const newState = Object.assign({}, state);
-	console.log(action.type);
 	switch(action.type) {
 	  case "invalidate" :
 	    Object.keys(actors).forEach(function(name){

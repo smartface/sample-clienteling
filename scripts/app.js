@@ -18,6 +18,7 @@ const Router = require("sf-core/ui/router");
 const System = require("sf-core/device/system");
 
 require("sf-extension-utils");
+const mcsService = require("./service/MCSServive")();
 
 //Router.add("pgLanding", require("./pages/pgLanding"), true);
 //Router.add("pgLogin", require("./pages/pgLogin"), true);
@@ -25,8 +26,6 @@ require("sf-extension-utils");
 //
 //
 //Router.go("pgLanding", { appStart: true }, false);
-
-
 
 var settings = require("./settings.json");
 var themeSettings = settings.config.theme;
