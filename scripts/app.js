@@ -15,6 +15,8 @@ Application.onUnhandledError = function(e) {
 const Screen = require('sf-core/device/screen');
 
 const Router = require("sf-core/ui/router");
+const System = require("sf-core/device/system");
+
 require("sf-extension-utils");
 
 //Router.add("pgLanding", require("./pages/pgLanding"), true);
@@ -32,6 +34,13 @@ var stylerBuilder = require("library/styler-builder");
 stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
 stylerBuilder.setActiveTheme(themeSettings.currentTheme);
 
+var sliderDrawer;
+
+if (System.OS === "iOS") {
+    sliderDrawer = require("./sliderDrawer");
+    Router.sliderDrawer = sliderDrawer;
+}
+
 Router.add("pgDashboard", require("./pages/pgDashboard"), true);
 Router.add("pgSignupPhone", require("./pages/pgSignupPhone"), true);
 Router.add("pgSignupTablet", require("./pages/pgSignupTablet"), true);
@@ -42,4 +51,10 @@ if (Screen.width < 450) {
 }
 else {
     Router.go("pgSignupTablet");
+}
+
+
+if (System.OS === "Android") {
+    sliderDrawer = require("./sliderDrawer");
+    Router.sliderDrawer = sliderDrawer;
 }
