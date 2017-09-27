@@ -1,9 +1,5 @@
-/* 
-		You can modify its contents.
-*/
 const extend = require('js-base/core/extend');
 const PgSignupPhoneDesign = require('ui/ui_pgSignupPhone');
-const pageContext = require("../context/pageContext");
 const pageContextPatch = require("../context/pageContextPatch");
 
 const PgSignupPhone = extend(PgSignupPhoneDesign)(
@@ -13,7 +9,7 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     _super(this);
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    pageContextPatch(this, "pgSignupPhone")
+    pageContextPatch(this, "pgSignupPhone");
   });
 
 /**

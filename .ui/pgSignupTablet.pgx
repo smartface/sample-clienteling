@@ -62,11 +62,11 @@
 				"HeaderBar": "Default"
 			},
 			"userProps": {
-				"title": "NEW CUSTOMER SETUP"
+				"title": "SIGN IN"
 			},
 			"className": ".headerBar",
 			"props": {
-				"title": "NEW CUSTOMER SETUP",
+				"title": "SIGN IN",
 				"titleColor": "#FFFFFF",
 				"visible": true,
 				"backgroundColor": "#202020",
@@ -184,7 +184,7 @@
 					"flexGrow": 1
 				}
 			},
-			"className": ".imageView .imageView-default",
+			"className": ".imageView",
 			"props": {
 				"width": null,
 				"height": null,
@@ -323,7 +323,6 @@
 				"width": null,
 				"height": 40,
 				"touchEnabled": true,
-				"text": "User ID",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -342,6 +341,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"text": "User ID",
 				"children": [],
 				"parent": "b980-8891-42c7-67ca",
 				"name": "lblUserID"
@@ -370,7 +370,6 @@
 				"height": 40,
 				"width": null,
 				"touchEnabled": true,
-				"text": "smartface@smartface.io",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -388,6 +387,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"text": "smartface@smartface.io",
 				"children": [],
 				"parent": "b980-8891-42c7-67ca",
 				"name": "taUserID"
@@ -497,7 +497,6 @@
 				"width": null,
 				"height": 40,
 				"touchEnabled": true,
-				"text": "Password",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -516,6 +515,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"text": "Password",
 				"children": [],
 				"parent": "8fe8-6348-112c-7fea",
 				"name": "lblPassword"
@@ -545,7 +545,6 @@
 				"height": 40,
 				"width": null,
 				"touchEnabled": true,
-				"text": "",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -563,6 +562,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"text": "",
 				"isPassword": true,
 				"children": [],
 				"parent": "8fe8-6348-112c-7fea",
@@ -640,7 +640,6 @@
 				"width": 230,
 				"height": 40,
 				"touchEnabled": true,
-				"text": "Forgot Password",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -661,6 +660,7 @@
 					"flexGrow": null
 				},
 				"top": null,
+				"text": "Forgot Password",
 				"left": null,
 				"right": 0,
 				"children": [],
@@ -767,7 +767,8 @@
 				"Implementation": "pgSignupTablet-Signup"
 			},
 			"userProps": {
-				"text": "Sign Up"
+				"text": "Sign In",
+				"usePageVariable": true
 			},
 			"className": ".button #pgSignupTablet.btnSignup",
 			"props": {
@@ -795,10 +796,11 @@
 				"marginLeft": 20,
 				"marginRight": 20,
 				"marginBottom": 20,
-				"text": "Sign Up",
+				"text": "Sign In",
 				"name": "btnSignup",
 				"parent": "4309-0f0c-2018-4d90",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{

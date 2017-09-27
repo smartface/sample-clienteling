@@ -1,11 +1,5 @@
-/* 
-		You can modify its contents.
-*/
 const extend = require('js-base/core/extend');
 const PgSignupTabletDesign = require('ui/ui_pgSignupTablet');
-const Page = require('sf-core/ui/page');
-const Screen = require('sf-core/device/screen');
-const pageContext = require("../context/pageContext");
 const pageContextPatch = require("../context/pageContextPatch");
 
 const PgSignupTablet = extend(PgSignupTabletDesign)(
@@ -15,10 +9,7 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
     _super(this);
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    // overrides super.onLoad method
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    this.onOrientationChange = onOrientationChange.bind(this);
-    this.styleContext = pageContext.createContext(this);
+    pageContextPatch(this, "pgSignupTablet");
   });
 
 /**
@@ -29,26 +20,6 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
  */
 function onShow(superOnShow) {
   superOnShow();
-}
-
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
-function onLoad(superOnLoad) {
-  superOnLoad();
-}
-
-function onOrientationChange() {
-  // console.log("a" + Screen.width);
-  this.dispatch({
-    type: "invalidate"
-  })
-}
-
-function setContextDispatcher(dispatcher) {
-  this.dispatch = dispatcher;
 }
 
 module && (module.exports = PgSignupTablet);
