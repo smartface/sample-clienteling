@@ -21,7 +21,6 @@
       }
     },
     ".btnAnonymous": {
-      "backgroundColor": "rgba(210,49,132,1)",
       "width": null,
       "height": 70,
       "marginLeft": 10,
@@ -35,9 +34,15 @@
         "family": "Lato"
       },
       "backgroundColor": "rgba(103,164,231,1)",
+      "textColor": "#FFFFFF",
+      "borderWidth": 0,
       "+page:Screen.width > 1000": {
         "marginLeft": 20,
-        "marginTop": 10
+        "marginTop": 10,
+        "backgroundColor": "#FFFFFF",
+        "textColor": "rgba(103,164,231,1)",
+        "borderColor": "#979393",
+        "borderWidth": 1
       }
     },
     ".btnSignup": {
@@ -98,7 +103,7 @@
     ".flInfo": {
       "height": null,
       "width": null,
-      "paddingBottom": null,
+      "marginBottom": null,
       "flexProps": {
         "alignSelf": "AUTO",
         "direction": "INHERIT",
@@ -111,7 +116,7 @@
         "flexGrow": 1
       },
       "+page:Screen.width > 1000": {
-
+        "marginBottom": 80
       }
     },
     ".flSignup": {
