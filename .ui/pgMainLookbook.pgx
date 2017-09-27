@@ -1278,11 +1278,11 @@
 				"left": 0,
 				"right": 0,
 				"bottom": 0,
-				"top": 0,
+				"top": 1.6666666666666667,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"justifyContent": "CENTER",
-					"alignItems": "AUTO",
+					"alignItems": "STRETCH",
 					"alignContent": "STRETCH"
 				}
 			},
@@ -1301,7 +1301,7 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "AUTO",
+					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
@@ -1310,7 +1310,7 @@
 				"left": 0,
 				"right": 0,
 				"bottom": 0,
-				"top": 0,
+				"top": 1.6666666666666667,
 				"name": "flWrapper",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [
