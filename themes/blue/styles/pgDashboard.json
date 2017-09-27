@@ -3,29 +3,14 @@
     ".svEmployeeInfo": {
       "height": 90,
       "width": null,
-      "touchEnabled": true,
-      "visible": true,
-      "backgroundColor": "rgba( 139, 87, 42, 0 )",
-      "alpha": 1,
-      "borderColor": "rgba(0,0,0,1)",
-      "borderWidth": 0,
-      "align": "VERTICAL",
       "scrollBarEnabled": true,
-      "usePageVariable": true,
+      "align": "HORIZONTAL",
       "flexProps": {
-        "alignSelf": "AUTO",
-        "direction": "INHERIT",
-        "alignContent": "STRETCH",
-        "alignItems": "STRETCH",
-        "justifyContent": "FLEX_START",
-        "flexWrap": "NOWRAP",
-        "flexDirection": "ROW",
+        "flexWrap": "WRAP",
         "positionType": "RELATIVE"
       },
       "+page:Screen.width < 450": {
-        "flexProps": {
-          "flexGrow": 0.3
-        }
+
       }
     }
   }

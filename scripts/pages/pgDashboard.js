@@ -45,7 +45,6 @@ function onLoad(superOnLoad) {
   page.imgSignOut.onTouchEnded = function() {
     Router.goBack("pgLogin");
   };
-  page.svInfo.scrollBarEnabled = false;
   page.svInfo.layout.height = 90;
   page.svInfo.layout.minWidth = 768;
 }
