@@ -85,6 +85,9 @@
 				"Small": ".scrollView-small",
 				"Medium": ".scrollView-medium",
 				"Large": ".scrollView-large"
+			},
+			"Implementation": {
+				"pgDashboard-EmployeeInfo": "#pgDashboard.svEmployeeInfo"
 			}
 		},
 		"HeaderBar": {

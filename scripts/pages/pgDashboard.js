@@ -2,7 +2,7 @@ const extend = require('js-base/core/extend');
 const PgDashboardDesign = require('ui/ui_pgDashboard');
 const System = require('sf-core/device/system');
 const Router = require("sf-core/ui/router");
-const Screen = require('sf-core/device/screen');
+const pageContextPatch = require("../context/pageContextPatch");
 
 const PgDashboard = extend(PgDashboardDesign)(
   // Constructor
@@ -13,7 +13,7 @@ const PgDashboard = extend(PgDashboardDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-
+    pageContextPatch(this, "pgDashboard");
   });
 
 /**
@@ -47,7 +47,7 @@ function onLoad(superOnLoad) {
   };
   page.svInfo.scrollBarEnabled = false;
   page.svInfo.layout.height = 90;
-  page.svInfo.layout.minWidth  = 768;
+  page.svInfo.layout.minWidth = 768;
 }
 
 module && (module.exports = PgDashboard);
