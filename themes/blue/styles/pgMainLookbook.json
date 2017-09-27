@@ -60,7 +60,7 @@
       "flexProps": {
         "flexGrow": 27
       },
-      "+page:Screen.width > 450": {
+      "+page:Screen.width > 450 && Screen.width > Screen.height": {
         "width": 0,
         "height": 0,
         "maxHeight": 0,
@@ -86,7 +86,7 @@
       "flexProps": {
         "flexGrow": 0
       },
-      "+page:Screen.width > 450": {
+      "+page:Screen.width > 450 && Screen.width > Screen.height": {
         "width": null,
         "height": null,
         "maxHeight": null,
