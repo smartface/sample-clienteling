@@ -23,7 +23,7 @@ module.exports = function pageContextPatch(page, name){
       });
   
       this.layout.applyLayout();
-    }.bind(this), 1);
+    }.bind(this), 10);
   };
   
   page.setContextDispatcher = function(dispatcher) {

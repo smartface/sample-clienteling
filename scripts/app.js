@@ -12,13 +12,13 @@ Application.onUnhandledError = function(e) {
     });
 };
 
+// require("sf-extension-utils");
 const Screen = require('sf-core/device/screen');
 
 const Router = require("sf-core/ui/router");
 const System = require("sf-core/device/system");
 
-require("sf-extension-utils");
-const mcsService = require("./service/MCSServive")();
+// const mcsService = require("./service/MCSServive")();
 
 //Router.add("pgLanding", require("./pages/pgLanding"), true);
 //Router.add("pgLogin", require("./pages/pgLogin"), true);
@@ -46,7 +46,7 @@ Router.add("pgSignupTablet", require("./pages/pgSignupTablet"), true);
 Router.add("pgMainLookbook", require("./pages/pgMainLookbook"), true);
 
 if (Screen.width < 450) {
-    Router.go("pgSignupPhone");
+    Router.go("pgMainLookbook");
 }
 else {
     Router.go("pgSignupTablet");

@@ -136,7 +136,7 @@
         try{
           Object.keys(diff).length && Object.assign(this.component, diff);
         } catch(e){
-          throw new Error(JSON.stringify(diff)+" is invalid")
+          throw new Error(JSON.stringify(diff)+" is invalid. "+e.message);
         }
         
         console.log(this.name+":::"+JSON.stringify(this.component.flexProps));

@@ -79,7 +79,9 @@ function createContext(component, name, classMap=null, reducers=null) {
 						}
 
 						return function diffStylingReducer(acc, key) {
-							if(newStyles[key] !== null && typeof newStyles[key] === "object") {
+						  if(key === 'align'){
+						    delete acc[key]
+						  } else if(newStyles[key] !== null && typeof newStyles[key] === "object") {
 								if(!isEqual(oldStyles[key], newStyles[key])) {
 								  if(key == "flexProps")
 									  Object.assign(acc, newStyles[key]);
