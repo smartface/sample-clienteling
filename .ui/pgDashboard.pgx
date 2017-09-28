@@ -33,8 +33,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 512.256,
-				"height": 683.0079999999999
+				"width": 662.4000000000001,
+				"height": 883.1999999999999
 			}
 		},
 		{
@@ -396,7 +396,7 @@
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.58&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.75&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -434,7 +434,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.58&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.75&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -479,8 +479,7 @@
 				"name": "flHeaderLeft",
 				"parent": "14c7-05e3-2ddc-6adc",
 				"children": [
-					"b38c-af4c-858a-dd0c",
-					"019a-d740-c5ef-d0bb"
+					"9626-2b4b-bac8-387e"
 				]
 			}
 		},
@@ -2363,7 +2362,7 @@
 				"name": "imgExclamation",
 				"parent": "4b39-63d4-b0ca-3108",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.58&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.75&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -4677,109 +4676,6 @@
 			}
 		},
 		{
-			"type": "ImageView",
-			"id": "b38c-af4c-858a-dd0c",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"height": 20,
-				"image": "smartface_logo.png",
-				"imageFillType": "NORMAL",
-				"width": 90,
-				"marginRight": 8,
-				"backgroundColor": "rgba( 248, 231, 28, 0 )",
-				"left": 8.8,
-				"top": 14.4,
-				"flexProps": {
-					"flexGrow": null,
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE"
-				}
-			},
-			"className": ".imageView",
-			"props": {
-				"width": 90,
-				"height": 20,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba( 248, 231, 28, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE",
-					"flexGrow": null
-				},
-				"image": "smartface_logo.png",
-				"marginRight": 8,
-				"left": 8.8,
-				"top": 14.4,
-				"name": "imgLogo",
-				"parent": "a153-0d0e-1142-3610",
-				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface_logo.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.58&brandModel=iPad%20Mini%204"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "019a-d740-c5ef-d0bb",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"text": "CLIENTELING",
-				"textColor": "rgba( 255, 255, 255, 0.5 )",
-				"height": 20,
-				"width": 116.2,
-				"left": 121.6,
-				"top": 13.6,
-				"marginLeft": null,
-				"backgroundColor": "rgba( 189, 16, 224, 0 )",
-				"flexProps": {
-					"positionType": "ABSOLUTE"
-				},
-				"font": {
-					"size": 18
-				}
-			},
-			"className": ".label",
-			"props": {
-				"width": 116.2,
-				"height": 20,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba( 189, 16, 224, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 255, 255, 255, 0.5 )",
-				"textAlignment": "MIDLEFT",
-				"font": {
-					"size": 18,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE"
-				},
-				"text": "CLIENTELING",
-				"left": 121.6,
-				"top": 13.6,
-				"marginLeft": null,
-				"name": "lblSomething",
-				"parent": "a153-0d0e-1142-3610",
-				"children": []
-			}
-		},
-		{
 			"type": "FlexLayout",
 			"id": "5913-9585-aabb-b711",
 			"themeProps": {
@@ -4998,7 +4894,7 @@
 				"name": "imgUser",
 				"parent": "9522-993a-3d8a-dcb5",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.58&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.75&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -5017,6 +4913,7 @@
 				"minWidth": null,
 				"left": null,
 				"top": null,
+				"paddingTop": 10,
 				"flexProps": {
 					"flexWrap": "WRAP",
 					"flexGrow": 1,
@@ -5051,6 +4948,7 @@
 				"minWidth": null,
 				"left": null,
 				"top": null,
+				"paddingTop": 10,
 				"name": "flTasks",
 				"parent": "0fad-9a69-0380-e2b0",
 				"children": [
@@ -6043,6 +5941,51 @@
 				"name": "lblUserName",
 				"parent": "3610-3e20-79aa-8be7",
 				"children": []
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "9626-2b4b-bac8-387e",
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"image": "hamburger.png",
+				"imageFillType": "ASPECTFIT",
+				"width": 20,
+				"height": 20,
+				"left": 20,
+				"top": 14,
+				"bottom": null,
+				"flexProps": {
+					"flexGrow": null
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 20,
+				"height": 20,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"image": "hamburger.png",
+				"left": 20,
+				"top": 14,
+				"bottom": null,
+				"name": "imgHamburger",
+				"parent": "a153-0d0e-1142-3610",
+				"children": [],
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.75&brandModel=iPad%20Mini%204"
 			}
 		}
 	]
