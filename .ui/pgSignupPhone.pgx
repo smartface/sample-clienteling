@@ -872,7 +872,8 @@
 				"usePageVariable": true,
 				"name": "btnFacebook",
 				"parent": "3eca-e67b-d6e2-e8bf",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{

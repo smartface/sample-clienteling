@@ -149,6 +149,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 106,
 				"flexProps": {
 					"flexGrow": 5
 				}
@@ -175,6 +176,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 5
 				},
+				"id": 106,
 				"name": "flPreview",
 				"parent": "4a13-68fd-e0c7-dcfd",
 				"children": [
@@ -195,6 +197,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 100,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -221,6 +224,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"id": 100,
 				"name": "flInfo",
 				"parent": "4a13-68fd-e0c7-dcfd",
 				"children": [
@@ -241,6 +245,8 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 107,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -262,9 +268,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 107,
 				"name": "imgPreview",
 				"parent": "6f29-5ea0-6987-8dab",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -281,6 +289,7 @@
 				"width": null,
 				"height": null,
 				"bottom": null,
+				"id": 103,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -308,6 +317,7 @@
 					"flexGrow": 2
 				},
 				"bottom": null,
+				"id": 103,
 				"name": "flName",
 				"parent": "fc33-df7a-68a8-cf3c",
 				"children": [
@@ -329,6 +339,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 101,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -355,6 +366,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 101,
 				"name": "flPrice",
 				"parent": "fc33-df7a-68a8-cf3c",
 				"children": [
@@ -378,6 +390,8 @@
 				"textAlignment": "BOTTOMCENTER",
 				"marginBottom": 5,
 				"text": "NAME",
+				"id": 105,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -408,9 +422,11 @@
 				},
 				"marginBottom": 5,
 				"text": "NAME",
+				"id": 105,
 				"name": "lblName",
 				"parent": "550f-3e5a-5bf7-19f8",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -424,6 +440,7 @@
 				"Implementation": "Line"
 			},
 			"userProps": {
+				"id": 104,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				}
@@ -449,6 +466,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"id": 104,
 				"name": "flLine",
 				"parent": "550f-3e5a-5bf7-19f8",
 				"children": []
@@ -469,6 +487,8 @@
 				"height": null,
 				"textAlignment": "MIDCENTER",
 				"text": "$10.00",
+				"id": 102,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -501,9 +521,11 @@
 					"flexGrow": 1
 				},
 				"text": "$10.00",
-				"name": "label2",
+				"id": 102,
+				"name": "lblPrice",
 				"parent": "0fc5-59b6-389a-1f19",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{

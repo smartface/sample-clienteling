@@ -11,12 +11,7 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     this.btnSignup.onTouch = onTouchSignup;
     this.btnAnonymous.onTouch = onTouchAnonymous;
-    this.btnFacebook.onTouch = function(){
-      Router.go("pgWomen");
-    };
-    this.imgBanner.onTouch = function(){
-      Router.go("pgCustomerProfile");
-    }
+    this.btnFacebook.onTouch = onTouchFacebook;
     //pageContextPatch(this, "pgSignupPhone");
   });
 
@@ -36,6 +31,10 @@ function onTouchSignup() {
 
 function onTouchAnonymous() {
   Router.go("pgMainLookbook");
+}
+
+function onTouchFacebook() {
+  Router.go("pgLookbook");
 }
 
 module && (module.exports = PgSignupPhone);
