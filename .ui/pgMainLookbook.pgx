@@ -33,8 +33,8 @@
 					"b740-f675-4f52-5243",
 					"6051-46a5-778b-d772"
 				],
-				"width": 373.52000000000004,
-				"height": 174.16000000000003
+				"width": 345,
+				"height": 554.76
 			}
 		},
 		{
@@ -305,8 +305,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flSale",
 			"props": {
-				"height": null,
-				"width": null,
+				"height": 0,
+				"width": 0,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -323,10 +323,10 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 2.8
+					"flexGrow": 0
 				},
-				"maxHeight": null,
-				"maxWidth": null,
+				"maxHeight": 0,
+				"maxWidth": 0,
 				"name": "flSale",
 				"parent": "6051-46a5-778b-d772",
 				"children": [
@@ -418,7 +418,7 @@
 				"name": "imgBagTrends",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.9572642747612912"
 			}
 		},
 		{
@@ -513,7 +513,7 @@
 				"name": "imgSunGlasses",
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.7155433316294617"
 			}
 		},
 		{
@@ -661,7 +661,7 @@
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"multiline": false,
+				"multiline": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -775,8 +775,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flSecondLine",
 			"props": {
-				"height": 0,
-				"width": 0,
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -793,10 +793,10 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 27
 				},
-				"maxHeight": 0,
-				"maxWidth": 0,
+				"maxHeight": null,
+				"maxWidth": null,
 				"name": "flSecondLine",
 				"parent": "06bb-a00e-c029-0539",
 				"children": [
@@ -863,7 +863,7 @@
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"multiline": false,
+				"multiline": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -989,9 +989,9 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba(29,29,38,0.1)",
-				"textAlignment": "TOPCENTER",
+				"textAlignment": "MIDCENTER",
 				"font": {
-					"size": 70,
+					"size": 100,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1032,9 +1032,9 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba(29,29,38,0.1)",
-				"textAlignment": "TOPCENTER",
+				"textAlignment": "MIDCENTER",
 				"font": {
-					"size": 70,
+					"size": 100,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1061,6 +1061,7 @@
 			},
 			"userProps": {
 				"height": null,
+				"image": "pgmainlookbook_women_vertical.png",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1082,11 +1083,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "pgMainLookbook_women_horizontal.png",
+				"image": "pgmainlookbook_women_vertical.png",
 				"name": "imgWomen",
 				"parent": "47f2-f138-9dd8-617a",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/pgMainLookbook_women_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/pgmainlookbook_women_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.9349006096992247"
 			}
 		},
 		{
@@ -1097,6 +1098,7 @@
 			},
 			"userProps": {
 				"height": null,
+				"image": "pgmainlookbook_men_vertical.png",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1118,11 +1120,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "pgMainLookbook_men_horizontal.png",
+				"image": "pgmainlookbook_men_vertical.png",
 				"name": "imgMen",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/pgMainLookbook_men_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/pgmainlookbook_men_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.6680738123651602"
 			}
 		},
 		{
@@ -1135,7 +1137,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"left": 0,
+				"left": -1.0869565217391304,
 				"right": 0,
 				"bottom": 0,
 				"top": 0,
@@ -1167,7 +1169,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 0,
+				"left": -1.0869565217391304,
 				"right": 0,
 				"bottom": 0,
 				"top": 0,
@@ -1425,13 +1427,13 @@
 				"height": 30,
 				"touchEnabled": true,
 				"visible": true,
-				"multiline": false,
+				"multiline": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDRIGHT",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 10,
 					"bold": false,
@@ -1443,7 +1445,7 @@
 					"positionType": "RELATIVE"
 				},
 				"marginLeft": 20,
-				"marginRight": 30,
+				"marginRight": null,
 				"text": "SUMMER 2017",
 				"name": "lblBag",
 				"parent": "171a-9f20-120a-7188",
@@ -1472,7 +1474,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
-				"textAlignment": "MIDRIGHT",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 20,
 					"bold": false,
@@ -1483,7 +1485,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"marginRight": 30,
+				"marginRight": null,
 				"text": "BAG\nTRENDS",
 				"name": "lblSummer",
 				"parent": "171a-9f20-120a-7188",
@@ -1503,7 +1505,7 @@
 			"className": ".label #pgMainLookbook.lblAccessories",
 			"props": {
 				"width": null,
-				"height": 20,
+				"height": 30,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": true,
@@ -1523,7 +1525,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"marginLeft": null,
+				"marginLeft": 20,
 				"marginRight": null,
 				"text": "ACCESSORIES",
 				"name": "label1",
@@ -1544,7 +1546,7 @@
 			"className": ".label #pgMainLookbook.lblGlasses",
 			"props": {
 				"width": null,
-				"height": 20,
+				"height": 40,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
