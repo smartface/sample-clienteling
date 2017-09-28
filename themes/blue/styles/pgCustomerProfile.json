@@ -149,7 +149,10 @@
           "justifyContent": "SPACE_BETWEEN"
         },
         "+page:Screen.width > 450": {
-          "maxHeight": null
+          "maxHeight": null,
+          "flexProps": {
+          "flexGrow": 1.5
+          }
         },
         "&_scoreItem": {
           "left": null,
@@ -181,7 +184,7 @@
           "positionType": "RELATIVE",
           "flexDirection": "ROW",
           "alignItems": "CENTER",
-          "alignContent": "CENTER",
+          "alignContent": "STRETCH",
           "alignSelf": "STRETCH",
           "justifyContent": "SPACE_BETWEEN",
           "flexGrow": 1
@@ -192,6 +195,8 @@
           }
         },
         "&_btn": {
+          "width": null,
+          "height": null,
           "maxHeight": 41,
           "maxWidth": 150,
           "font": {
@@ -199,7 +204,8 @@
             "size": 15
           },
           "flexProps": {
-            "alignSelf": "CENTER"
+            "flexGrow":1,
+            "alignSelf": "STRETCH"
           }
         }
       }

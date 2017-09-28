@@ -36,8 +36,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 493.58,
-				"height": 230.14
+				"width": 277.5,
+				"height": 446.21999999999997
 			}
 		},
 		{
@@ -111,11 +111,11 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0.4
+					"flexGrow": 1
 				},
-				"maxHeight": 110,
+				"maxHeight": 170,
 				"name": "flFirst",
 				"parent": "c92e-4a8f-06cb-26ff",
 				"children": [
@@ -139,7 +139,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 216, 216, 216, 0 )",
+				"backgroundColor": "rgba( 216, 216, 216, 0.55 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -198,7 +198,7 @@
 				"marginBottom": null,
 				"marginLeft": 5,
 				"marginRight": 5,
-				"maxHeight": null,
+				"maxHeight": 55,
 				"name": "flScores",
 				"parent": "3166-df70-5cd8-82e8",
 				"children": [
@@ -337,10 +337,9 @@
 					"alignItems": "CENTER",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.5,
-					"maxWidth": null
+					"flexGrow": 1
 				},
 				"left": null,
 				"top": null,
@@ -384,10 +383,9 @@
 					"alignItems": "CENTER",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.5,
-					"maxWidth": null
+					"flexGrow": 1
 				},
 				"left": null,
 				"top": null,
@@ -1376,7 +1374,11 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flFirst-flButtons"
 			},
-			"userProps": {},
+			"userProps": {
+				"flexProps": {
+					"alignItems": "CENTER"
+				}
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flButtons",
 			"props": {
 				"height": null,
@@ -1391,11 +1393,11 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
-					"alignContent": "CENTER",
+					"alignContent": "STRETCH",
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -1421,8 +1423,8 @@
 			},
 			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
 			"props": {
-				"width": 250,
-				"height": 70,
+				"width": null,
+				"height": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 213, 38, 130, 1 )",
@@ -1439,7 +1441,8 @@
 				},
 				"flexProps": {
 					"positionType": "RELATIVE",
-					"alignSelf": "CENTER"
+					"alignSelf": "CENTER",
+					"flexGrow": 1
 				},
 				"maxHeight": 41,
 				"maxWidth": 150,
@@ -1461,13 +1464,13 @@
 				"text": "Look Book",
 				"backgroundColor": "rgba( 74, 163, 240, 1 )",
 				"flexProps": {
-					"alignSelf": "CENTER"
+					"alignSelf": "STRETCH"
 				}
 			},
 			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
 			"props": {
-				"width": 250,
-				"height": 70,
+				"width": null,
+				"height": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 74, 163, 240, 1 )",
@@ -1484,7 +1487,8 @@
 				},
 				"flexProps": {
 					"positionType": "RELATIVE",
-					"alignSelf": "CENTER"
+					"alignSelf": "STRETCH",
+					"flexGrow": 1
 				},
 				"maxHeight": 41,
 				"maxWidth": 150,
