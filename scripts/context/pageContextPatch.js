@@ -23,7 +23,8 @@ module.exports = function pageContextPatch(page, name){
     this.onOrientationChange = function(){};
   }
   
-  function onShow(superOnHide) {
+  function onShow(superOnShow) {
+    superOnShow();
     this.dispatch({
       type: "invalidate"
     });
