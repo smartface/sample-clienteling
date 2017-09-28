@@ -32,8 +32,8 @@
 					"ea77-2fe7-11f8-e93a",
 					"ecbb-8e1d-1438-6d78"
 				],
-				"width": 375,
-				"height": 603
+				"width": 345,
+				"height": 554.76
 			}
 		},
 		{
@@ -552,19 +552,19 @@
 			"userProps": {
 				"text": "JAQEX ESTEREL",
 				"width": null,
-				"height": 20,
+				"height": 25,
 				"marginLeft": 20,
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
 				"font": {
-					"size": 13
+					"size": 18
 				}
 			},
 			"className": ".label",
 			"props": {
 				"width": null,
-				"height": 20,
+				"height": 25,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
@@ -575,7 +575,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 13,
+					"size": 18,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -604,17 +604,20 @@
 			"userProps": {
 				"text": "Farlap Dress Sleve Top",
 				"width": null,
-				"height": 20,
+				"height": 15,
 				"marginLeft": 20,
 				"left": 0,
 				"top": 0,
 				"textAlignment": "TOPLEFT",
-				"usePageVariable": true
+				"usePageVariable": true,
+				"font": {
+					"size": 12
+				}
 			},
 			"className": ".label",
 			"props": {
 				"width": null,
-				"height": 20,
+				"height": 15,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
@@ -625,7 +628,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "TOPLEFT",
 				"font": {
-					"size": 10,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -654,19 +657,20 @@
 			"userProps": {
 				"text": "$ 400",
 				"width": null,
-				"height": 20,
+				"height": 40,
 				"marginLeft": 20,
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
 				"font": {
-					"bold": true
+					"bold": true,
+					"size": 18
 				}
 			},
 			"className": ".label",
 			"props": {
 				"width": null,
-				"height": 20,
+				"height": 40,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
@@ -677,7 +681,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 10,
+					"size": 18,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -828,13 +832,16 @@
 			"userProps": {
 				"text": "ABOUT ITEM",
 				"width": null,
-				"height": 20,
-				"marginLeft": 20
+				"height": 30,
+				"marginLeft": 20,
+				"font": {
+					"size": 12
+				}
 			},
 			"className": ".label",
 			"props": {
 				"width": null,
-				"height": 20,
+				"height": 30,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
@@ -845,7 +852,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 10,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
