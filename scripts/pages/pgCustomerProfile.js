@@ -3,6 +3,7 @@
 */
 const extend = require('js-base/core/extend');
 const PgCustomerProfileDesign = require('ui/ui_pgCustomerProfile');
+const pageContextPatch = require("../context/pageContextPatch");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
   // Constructor
@@ -13,6 +14,8 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    
+    pageContextPatch(this, "pgCustomerProfile");
 
   });
 
