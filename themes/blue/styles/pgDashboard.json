@@ -89,7 +89,9 @@
         "flexGrow": 1
       },
       "+page:Screen.width > 450": {
-        "flexDirection": "COLUMN"
+        "flexProps": {
+          "flexDirection": "COLUMN"
+        }
       }
     },
     ".infoPart2": {
@@ -108,7 +110,9 @@
         "flexGrow": 1
       },
       "+page:Screen.width > 450": {
-        "flexDirection": "COLUMN"
+        "flexProps": {
+          "flexDirection": "COLUMN"
+        }
       }
     }
   }

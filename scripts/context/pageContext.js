@@ -17,8 +17,8 @@ commands.addRuntimeCommandFactory(function(type){
     case '+page':
       return function pageCommand(opts){
         var isOK = (function(Screen) { return eval(opts.args); }({width: Screen.width, height: Screen.height}));
-        // console.log("isOK"+isOK.toString()+" "+opts.args+" "+Screen.width)
-				return  isOK ? opts.value : {};
+        console.log("RunstimeCommand :: isOK"+isOK.toString()+" "+opts.args+" "+JSON.stringify(opts.value))
+		return  isOK ? opts.value : {};
       };
       
       break;
