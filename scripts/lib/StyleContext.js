@@ -132,15 +132,18 @@
 
         var beforeHook = hooks("beforeStyleDiffAssign");
         beforeHook && (diff = beforeHook(diff));
-        
+
+        console.log(JSON.stringify(diff));
+
         try{
-          Object.keys(diff).length && Object.assign(this.component, diff);
+          this.component.subscribeContext
+            ? Object.keys(diff).length && this.component.subscribeContext({type:"new styles", data: diff})
+            : Object.keys(diff).length && Object.assign(this.component, diff);
         } catch(e){
-          throw new Error(JSON.stringify(diff)+" is invalid. "+e.message);
+          console.log(e.message);
+          // throw new Error(JSON.stringify(diff)+" is invalid. "+e.message);
         }
         
-        console.log(this.name+":::"+JSON.stringify(this.component.flexProps));
-
         var afterHook = hooks("afterStyleDiffAssign");
         afterHook && (styles = afterHook(styles));
 
@@ -257,8 +260,14 @@
             var className = context.actors[name].getClassName();
             var beforeHook = hooks("beforeAssignComponentStyles");
             beforeHook && (className = beforeHook(name, className));
-
-            var styles = styler(className)();
+            var styles;
+            
+            try {
+              styles = styler(className)();
+            } catch (e) {
+              console.log(e.message);
+            }
+            
             context.actors[name].setStyles(styles);
             comp.isUgly = false;
           }

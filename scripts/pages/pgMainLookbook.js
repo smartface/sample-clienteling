@@ -10,8 +10,8 @@ const PgMainLookbook = extend(PgMainLookbookDesign)(
     
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.onHide = onHide.bind(this);
-    
+    console.log("PgMainLookbook")
+
     pageContextPatch(this, "pgMainLookbook");
   });
   
@@ -24,11 +24,5 @@ const PgMainLookbook = extend(PgMainLookbookDesign)(
 function onShow(superOnShow, routeData) {
   superOnShow();
 }
-
-function onHide(superOnHide) {
-  superOnHide();
-}
-
-PgMainLookbook.$subcribe = ["employee.dahsboard", "mcs.login", "page"];
 
 module && (module.exports = PgMainLookbook);

@@ -33,8 +33,8 @@
 					"b740-f675-4f52-5243",
 					"6051-46a5-778b-d772"
 				],
-				"width": 353.51,
-				"height": 164.83
+				"width": 373.52000000000004,
+				"height": 174.16000000000003
 			}
 		},
 		{
@@ -418,7 +418,7 @@
 				"name": "imgBagTrends",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.53&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -513,7 +513,7 @@
 				"name": "imgSunGlasses",
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.53&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1086,7 +1086,7 @@
 				"name": "imgWomen",
 				"parent": "47f2-f138-9dd8-617a",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook_women_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.53&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/pgMainLookbook_women_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1122,7 +1122,7 @@
 				"name": "imgMen",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgMainLookbook_men_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.53&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/pgMainLookbook_men_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207"
 			}
 		},
 		{

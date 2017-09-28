@@ -12,7 +12,7 @@ Application.onUnhandledError = function(e) {
     });
 };
 
-// require("sf-extension-utils");
+require("sf-extension-utils");
 const Screen = require('sf-core/device/screen');
 
 const Router = require("sf-core/ui/router");
@@ -47,8 +47,7 @@ Router.add("pgMainLookbook", require("./pages/pgMainLookbook"), true);
 
 if (Screen.width < 450) {
     Router.go("pgSignupPhone");
-}
-else {
+} else {
     Router.go("pgSignupTablet");
 }
 

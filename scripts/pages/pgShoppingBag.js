@@ -28,7 +28,6 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
-  superOnLoad();
 }
 
 module && (module.exports = PgShoppingBag);
