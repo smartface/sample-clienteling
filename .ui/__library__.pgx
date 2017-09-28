@@ -2395,10 +2395,10 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 79.34782608695652,
-				"top": 256.52173913043475,
-				"width": 186.95652173913044,
-				"height": 60.869565217391305,
+				"left": 35.13513513513514,
+				"top": 241.8918918918919,
+				"width": 295.94594594594594,
+				"height": 83.78378378378379,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"flexDirection": "ROW",
@@ -2408,8 +2408,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 60.869565217391305,
-				"width": 186.95652173913044,
+				"height": 83.78378378378379,
+				"width": 295.94594594594594,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -2427,8 +2427,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 79.34782608695652,
-				"top": 256.52173913043475,
+				"left": 35.13513513513514,
+				"top": 241.8918918918919,
 				"name": "flCustomerProfileNumText",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -2442,27 +2442,16 @@
 			"id": "03ac-907a-db7a-3f75",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgCustomerProfile-scoreITem-title"
 			},
 			"userProps": {
-				"width": null,
 				"text": "50",
-				"textAlignment": "MIDLEFT",
-				"textColor": "rgba( 206, 19, 117, 1 )",
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"font": {
-					"size": 33,
-					"bold": false,
-					"family": "Lato"
-				}
+				"usePageVariable": true
 			},
-			"className": ".label",
+			"className": ".label #scoreItem-title",
 			"props": {
 				"width": null,
-				"height": 70,
+				"height": null,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
@@ -2470,7 +2459,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "rgba( 206, 19, 117, 1 )",
+				"textColor": "#CE1375",
 				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 33,
@@ -2479,7 +2468,7 @@
 					"family": "Lato"
 				},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -2495,33 +2484,24 @@
 			"id": "a4e8-2413-91fc-672a",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgCustomerProfile-scoreITem-text"
 			},
 			"userProps": {
-				"width": null,
 				"text": "ENGAGEMENT \nSCORE",
-				"multiline": true,
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 2.2
-				},
-				"font": {
-					"size": 13,
-					"family": "Lato"
-				}
+				"usePageVariable": true
 			},
-			"className": ".label",
+			"className": ".label #scoreItem-text",
 			"props": {
 				"width": null,
-				"height": 70,
+				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"multiline": true,
+				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#1D1D26",
+				"textColor": "#000000",
 				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 13,
@@ -2530,7 +2510,7 @@
 					"family": "Lato"
 				},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
 					"flexGrow": 2.2
 				},
@@ -2880,8 +2860,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 47.2972972972973,
-				"top": 167.56756756756758,
+				"left": 48.57142857142858,
+				"top": 167.14285714285717,
 				"width": 285.8695652173913,
 				"height": 55.43478260869565,
 				"flexProps": {
@@ -2910,8 +2890,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 47.2972972972973,
-				"top": 167.56756756756758,
+				"left": 48.57142857142858,
+				"top": 167.14285714285717,
 				"name": "flCustomerProfileTitleText",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -2995,6 +2975,7 @@
 				"top": null,
 				"height": null,
 				"textAlignment": "MIDRIGHT",
+				"marginRight": 10,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -3032,6 +3013,7 @@
 				"usePageVariable": true,
 				"left": null,
 				"top": null,
+				"marginRight": 10,
 				"name": "text",
 				"parent": "42b7-ee79-11cc-15e7",
 				"children": []

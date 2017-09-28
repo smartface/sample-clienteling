@@ -9,7 +9,8 @@
 			},
 			"userProps": {
 				"paddingLeft": 5,
-				"paddingRight": 5
+				"paddingRight": 5,
+				"orientation": "AUTO"
 			},
 			"className": ".page",
 			"version": "6.4.12",
@@ -24,7 +25,7 @@
 				},
 				"backgroundColor": "#FFFFFF",
 				"font": {},
-				"orientation": "PORTRAIT",
+				"orientation": "AUTO",
 				"paddingLeft": 5,
 				"paddingRight": 5,
 				"name": "pgCustomerProfile",
@@ -35,8 +36,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 375,
-				"height": 603
+				"width": 493.58,
+				"height": 230.14
 			}
 		},
 		{
@@ -110,11 +111,11 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 0.4
 				},
-				"maxHeight": 170,
+				"maxHeight": 110,
 				"name": "flFirst",
 				"parent": "c92e-4a8f-06cb-26ff",
 				"children": [
@@ -129,28 +130,16 @@
 			"id": "3640-7aea-3077-187c",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgCustomerProfile-flFirst-flInfo"
 			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"left": 0,
-				"top": 0,
-				"maxHeight": 80,
-				"marginLeft": null,
-				"marginRight": null,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flInfo",
 			"props": {
 				"height": null,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 216, 216, 216, 0 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -162,15 +151,10 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 1.5
 				},
-				"left": 0,
-				"top": 0,
-				"maxHeight": 80,
-				"marginLeft": null,
-				"marginRight": null,
 				"name": "flInfo",
 				"parent": "3166-df70-5cd8-82e8",
 				"children": [
@@ -183,25 +167,10 @@
 			"id": "9d82-b6ff-2177-1b4b",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgCustomerProfile-flFirst-flScores"
 			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"left": null,
-				"top": null,
-				"marginTop": null,
-				"marginBottom": null,
-				"marginLeft": 5,
-				"marginRight": 5,
-				"maxHeight": 55,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW",
-					"justifyContent": "SPACE_BETWEEN"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores",
 			"props": {
 				"height": null,
 				"width": null,
@@ -229,13 +198,13 @@
 				"marginBottom": null,
 				"marginLeft": 5,
 				"marginRight": 5,
-				"maxHeight": 55,
+				"maxHeight": null,
 				"name": "flScores",
 				"parent": "3166-df70-5cd8-82e8",
 				"children": [
-					"76c4-0be1-deda-7961",
+					"7956-91e3-bc4e-0388",
 					"5cc6-d566-e360-47cc",
-					"7956-91e3-bc4e-0388"
+					"76c4-0be1-deda-7961"
 				]
 			}
 		},
@@ -250,16 +219,16 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-flFirst-profile"
+				"Implementation": "pgCustomerProfile-flFirst-flInfo-profile"
 			},
 			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_profile",
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flInfo_profile",
 			"props": {
 				"height": null,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 216, 216, 216, 0.55 )",
+				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -347,30 +316,10 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgCustomerProfile-flFirst-flScores-scoreItem"
 			},
-			"userProps": {
-				"left": null,
-				"top": null,
-				"width": null,
-				"height": null,
-				"maxWidth": 170,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexDirection": "ROW",
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_START",
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				},
-				"flex": {
-					"positionType": 0,
-					"flexDirection": 2,
-					"alignItems": 2,
-					"justifyContent": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
 			"props": {
 				"height": null,
 				"width": null,
@@ -388,9 +337,10 @@
 					"alignItems": "CENTER",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 1.5,
+					"maxWidth": null
 				},
 				"left": null,
 				"top": null,
@@ -411,29 +361,12 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgCustomerProfile-flFirst-flScores-scoreItem"
 			},
 			"userProps": {
-				"left": null,
-				"top": null,
-				"width": null,
-				"height": null,
-				"maxWidth": 170,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexDirection": "ROW",
-					"alignItems": "CENTER",
-					"justifyContent": "CENTER",
-					"flexGrow": 1
-				},
-				"flex": {
-					"positionType": 0,
-					"flexDirection": 2,
-					"alignItems": 2,
-					"justifyContent": 1
-				}
+				"maxWidth": null
 			},
-			"className": ".flexLayout .flexLayout-default",
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
 			"props": {
 				"height": null,
 				"width": null,
@@ -445,19 +378,20 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "CENTER",
-					"justifyContent": "CENTER",
+					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 1.5,
+					"maxWidth": null
 				},
 				"left": null,
 				"top": null,
-				"maxWidth": 170,
+				"maxWidth": null,
 				"name": "loyalityPoints",
 				"parent": "9d82-b6ff-2177-1b4b",
 				"children": []
@@ -1440,18 +1374,10 @@
 			"hiddenComponent": false,
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "pgWomen-Buttons"
+				"Implementation": "pgCustomerProfile-flFirst-flButtons"
 			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"maxHeight": 41,
-				"flexProps": {
-					"justifyContent": "SPACE_BETWEEN",
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flButtons",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flButtons",
 			"props": {
 				"height": null,
 				"width": null,
@@ -1463,19 +1389,16 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
-					"alignContent": "STRETCH",
+					"alignContent": "CENTER",
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"left": 0,
-				"top": 0,
-				"maxHeight": 41,
 				"name": "flButtons_1",
 				"parent": "3166-df70-5cd8-82e8",
 				"children": [
@@ -1490,28 +1413,19 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "pgWomen-AddToCard"
+				"Implementation": "pgCustomerProfile-flFirst-flButtons-btn"
 			},
 			"userProps": {
-				"text": "ADD TO CART",
-				"marginTop": null,
-				"marginBottom": null,
-				"marginRight": null,
-				"width": null,
-				"maxWidth": 150,
-				"height": null,
-				"maxHeight": 41,
-				"flexProps": {
-					"alignSelf": "STRETCH"
-				}
+				"text": "Shopping Bag",
+				"backgroundColor": "rgba( 213, 38, 130, 1 )"
 			},
-			"className": ".button #pgWomenPhone.btnAddToCard",
+			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
 			"props": {
-				"width": null,
-				"height": null,
+				"width": 250,
+				"height": 70,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(210,49,132,1)",
+				"backgroundColor": "rgba( 213, 38, 130, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1525,15 +1439,11 @@
 				},
 				"flexProps": {
 					"positionType": "RELATIVE",
-					"alignSelf": "STRETCH",
-					"flexGrow": 1
+					"alignSelf": "CENTER"
 				},
-				"marginRight": null,
-				"text": "ADD TO CART",
-				"marginTop": null,
-				"marginBottom": null,
-				"maxWidth": 150,
 				"maxHeight": 41,
+				"maxWidth": 150,
+				"text": "Shopping Bag",
 				"name": "btnAddToCard",
 				"parent": "85f3-967e-a550-d173",
 				"children": []
@@ -1545,30 +1455,22 @@
 			"themeProps": {
 				"Sizes": "Default",
 				"Highlights": "Default",
-				"Implementation": "pgWomen-QuickOrder"
+				"Implementation": "pgCustomerProfile-flFirst-flButtons-btn"
 			},
 			"userProps": {
-				"text": "QUICK ORDER",
-				"marginTop": null,
-				"bottom": null,
-				"marginRight": null,
-				"marginBottom": null,
-				"width": null,
-				"marginLeft": null,
-				"maxWidth": 150,
-				"height": null,
-				"maxHeight": 41,
+				"text": "Look Book",
+				"backgroundColor": "rgba( 74, 163, 240, 1 )",
 				"flexProps": {
-					"alignSelf": "STRETCH"
+					"alignSelf": "CENTER"
 				}
 			},
-			"className": ".button #pgWomenPhone.btnQuickOrder",
+			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
 			"props": {
-				"width": null,
-				"height": null,
+				"width": 250,
+				"height": 70,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(103,164,231,1)",
+				"backgroundColor": "rgba( 74, 163, 240, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1582,17 +1484,11 @@
 				},
 				"flexProps": {
 					"positionType": "RELATIVE",
-					"alignSelf": "STRETCH",
-					"flexGrow": 1
+					"alignSelf": "CENTER"
 				},
-				"marginLeft": null,
-				"text": "QUICK ORDER",
-				"marginTop": null,
-				"bottom": null,
-				"marginRight": null,
-				"marginBottom": null,
-				"maxWidth": 150,
 				"maxHeight": 41,
+				"maxWidth": 150,
+				"text": "Look Book",
 				"name": "btnQuickOrder",
 				"parent": "85f3-967e-a550-d173",
 				"children": []

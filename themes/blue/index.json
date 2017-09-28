@@ -56,7 +56,9 @@
 				"pgSignupPhone-Signup": "#pgSignupPhone.btn.btnSignup",
 				"pgSignupPhone-Facebook": "#pgSignupPhone.btn.btnFacebook",
 				"pgSignupPhone-Anonymous": "#pgSignupPhone.btn.btnAnonymous",
-				"pgMainLookbook-ShopNow": "#pgMainLookbook.btnShopNow"
+				"pgMainLookbook-ShopNow": "#pgMainLookbook.btnShopNow",
+				"pgCustomerProfile-flFirst-flButtons-btn": "#pgCustomerProfile_flFirst_flButtons_btn"
+
 			}
 		},
 		"FlexLayout": {
@@ -86,8 +88,11 @@
 				"pgDashboard-EmployeeInfo-Part1": "#pgDashboard.infoPart1",
 				"pgDashboard-EmployeeInfo-Part2": "#pgDashboard.infoPart2",
 				"pgCustomerProfile-flFirst": "#pgCustomerProfile_flFirst",
-				"pgCustomerProfile-flFirst-profile": "#pgCustomerProfile_flFirst_profile",
-				"pgCustomerProfile-flFirst-flScores": "#pgCustomerProfile_flFirst_flScores"
+				"pgCustomerProfile-flFirst-flInfo": "#pgCustomerProfile_flFirst_flInfo",
+				"pgCustomerProfile-flFirst-flInfo-profile": "#pgCustomerProfile_flFirst_flInfo_profile",
+				"pgCustomerProfile-flFirst-flScores": "#pgCustomerProfile_flFirst_flScores",
+				"pgCustomerProfile-flFirst-flScores-scoreItem": "#pgCustomerProfile_flFirst_flScores_scoreItem",
+				"pgCustomerProfile-flFirst-flButtons": "#pgCustomerProfile_flFirst_flButtons"
 
 			}
 		},
@@ -142,7 +147,9 @@
 				"pgCustomerProfile-Reservation-Status": "#pgCustomerProfile.lblReservationStatus",
 				"pgCustomerProfile-Reservation-Info": "#pgCustomerProfile.lblReservationInfo",
 				"pgCustomerProfile-Reservation-Date": "#pgCustomerProfile.lblReservationDate",
-				"pgCustomerProfile-Recent": "#pgCustomerProfile.lblRecent"
+				"pgCustomerProfile-Recent": "#pgCustomerProfile.lblRecent",
+				"pgCustomerProfile-scoreITem-title": "#scoreItem-title",
+				"pgCustomerProfile-scoreITem-text": "#scoreItem-text"				
 			}
 		},
 		"ListView": {

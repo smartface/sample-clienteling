@@ -107,19 +107,30 @@
       },
       "+page:Screen.width > 450": {
         "flexProps": {
-          "flexDirection": "ROW"
+          "flexDirection": "ROW",
+          "flexGrow": 0.4
         },
         "maxHeight": 110
       },
-      "&_profile": {
+      "&_flInfo": {
         "width": null,
         "height": null,
         "backgroundColor": "rgba( 216, 216, 216, 0.55 )",
-        "marginLeft": null,
         "flexProps": {
-          "positionType": "RELATIVE",
-          "flexDirection": "ROW",
-          "flexGrow": 1
+          "flexGrow": 1.5
+        },
+        "+page:Screen.width > 450": {
+          "backgroundColor": "rgba( 216, 216, 216, 0 )"
+        },
+        "&_profile": {
+          "width": null,
+          "height": null,
+          "marginLeft": null,
+          "flexProps": {
+            "positionType": "RELATIVE",
+            "flexDirection": "ROW",
+            "flexGrow": 1
+          }
         }
       },
       "&_flScores": {
@@ -137,6 +148,9 @@
           "flexDirection": "ROW",
           "justifyContent": "SPACE_BETWEEN"
         },
+        "+page:Screen.width > 450": {
+          "maxHeight": null
+        },
         "&_scoreItem": {
           "left": null,
           "top": null,
@@ -150,9 +164,44 @@
             "justifyContent": "FLEX_START",
             "flexGrow": 1,
             "alignSelf": "STRETCH"
+          },
+          "+page:Screen.width > 450": {
+            "flexProps": {
+              "flexDirection": "COLUMN",
+              "flexGrow": 1.5,
+              "maxWidth": null
+            }
           }
         }
-
+      },
+      "&_flButtons": {
+        "width": null,
+        "height": null,
+        "flexProps": {
+          "positionType": "RELATIVE",
+          "flexDirection": "ROW",
+          "alignItems": "CENTER",
+          "alignContent": "CENTER",
+          "alignSelf": "STRETCH",
+          "justifyContent": "SPACE_BETWEEN",
+          "flexGrow": 1
+        },
+        "+page:Screen.width > 450": {
+          "flexProps": {
+            "flexDirection": "COLUMN"
+          }
+        },
+        "&_btn": {
+          "maxHeight": 41,
+          "maxWidth": 150,
+          "font": {
+            "family": "Lato",
+            "size": 15
+          },
+          "flexProps": {
+            "alignSelf": "CENTER"
+          }
+        }
       }
 
     }
