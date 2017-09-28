@@ -108,7 +108,7 @@
       "+page:Screen.width > 450": {
         "flexProps": {
           "flexDirection": "ROW",
-          "flexGrow": 0.4
+          "flexGrow": 0.64
         },
         "maxHeight": 110
       },
@@ -143,6 +143,7 @@
         "marginLeft": 5,
         "marginRight": 5,
         "maxHeight": 55,
+        "marginTop": null,
         "flexProps": {
           "flexGrow": 1,
           "flexDirection": "ROW",
@@ -151,8 +152,9 @@
         "+page:Screen.width > 450": {
           "maxHeight": null,
           "flexProps": {
-          "flexGrow": 1.5
-          }
+            "flexGrow": 1.5
+          },
+          "marginTop": 10
         },
         "&_scoreItem": {
           "left": null,
@@ -204,12 +206,20 @@
             "size": 15
           },
           "flexProps": {
-            "flexGrow":1,
+            "flexGrow": 1,
             "alignSelf": "STRETCH"
           }
         }
       }
 
+    },
+    "&-flSecond":{
+      "&-infoPart1":{
+        
+      },
+      "&-infoPart2":{
+        
+      }
     }
   }
 }

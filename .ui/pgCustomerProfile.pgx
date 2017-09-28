@@ -10,7 +10,7 @@
 			"userProps": {
 				"paddingLeft": 5,
 				"paddingRight": 5,
-				"orientation": "AUTO"
+				"orientation": "AUTOLANDSCAPE"
 			},
 			"className": ".page",
 			"version": "6.4.12",
@@ -25,7 +25,7 @@
 				},
 				"backgroundColor": "#FFFFFF",
 				"font": {},
-				"orientation": "AUTO",
+				"orientation": "AUTOLANDSCAPE",
 				"paddingLeft": 5,
 				"paddingRight": 5,
 				"name": "pgCustomerProfile",
@@ -34,10 +34,11 @@
 					"246b-87f5-e17a-8fa6",
 					"8ec9-e22c-12c6-b8f3",
 					"3166-df70-5cd8-82e8",
-					"36a5-0dc7-ccb7-576d"
+					"36a5-0dc7-ccb7-576d",
+					"f632-bb3a-747e-1d1f"
 				],
-				"width": 277.5,
-				"height": 446.21999999999997
+				"width": 667,
+				"height": 311
 			}
 		},
 		{
@@ -111,11 +112,11 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 0.4
 				},
-				"maxHeight": 170,
+				"maxHeight": 110,
 				"name": "flFirst",
 				"parent": "c92e-4a8f-06cb-26ff",
 				"children": [
@@ -139,7 +140,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 216, 216, 216, 0.55 )",
+				"backgroundColor": "rgba( 216, 216, 216, 0 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -190,21 +191,21 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 1.5
 				},
 				"left": null,
 				"top": null,
-				"marginTop": null,
+				"marginTop": 10,
 				"marginBottom": null,
 				"marginLeft": 5,
 				"marginRight": 5,
-				"maxHeight": 55,
+				"maxHeight": null,
 				"name": "flScores",
 				"parent": "3166-df70-5cd8-82e8",
 				"children": [
-					"7956-91e3-bc4e-0388",
+					"fa1b-4584-b58e-a9d2",
 					"5cc6-d566-e360-47cc",
-					"76c4-0be1-deda-7961"
+					"fc8f-b7a1-5541-54ce"
 				]
 			}
 		},
@@ -301,96 +302,6 @@
 				"marginTop": 10,
 				"marginBottom": 10,
 				"name": "divider",
-				"parent": "9d82-b6ff-2177-1b4b",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "7956-91e3-bc4e-0388",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileNumText",
-				"id": "c861-5a96-8f5a-c5ab"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-flFirst-flScores-scoreItem"
-			},
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "STRETCH",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"left": null,
-				"top": null,
-				"maxWidth": 170,
-				"name": "engamentScore",
-				"parent": "9d82-b6ff-2177-1b4b",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "76c4-0be1-deda-7961",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileNumText",
-				"id": "c861-5a96-8f5a-c5ab"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-flFirst-flScores-scoreItem"
-			},
-			"userProps": {
-				"maxWidth": null
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "STRETCH",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"left": null,
-				"top": null,
-				"maxWidth": null,
-				"name": "loyalityPoints",
 				"parent": "9d82-b6ff-2177-1b4b",
 				"children": []
 			}
@@ -1397,7 +1308,7 @@
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -1441,7 +1352,7 @@
 				},
 				"flexProps": {
 					"positionType": "RELATIVE",
-					"alignSelf": "CENTER",
+					"alignSelf": "STRETCH",
 					"flexGrow": 1
 				},
 				"maxHeight": 41,
@@ -1495,6 +1406,395 @@
 				"text": "Look Book",
 				"name": "btnQuickOrder",
 				"parent": "85f3-967e-a550-d173",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "f632-bb3a-747e-1d1f",
+			"hiddenComponent": false,
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": 295.94594594594594,
+				"height": 83.78378378378379,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"flexDirection": "ROW",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER"
+				}
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 83.78378378378379,
+				"width": 295.94594594594594,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"name": "flCustomerProfileNumText",
+				"parent": "c92e-4a8f-06cb-26ff",
+				"children": [
+					"d48b-b48f-9593-a6cb",
+					"b8e4-52f2-d7a3-efc3"
+				]
+			}
+		},
+		{
+			"type": "Label",
+			"id": "d48b-b48f-9593-a6cb",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgCustomerProfile-scoreITem-title"
+			},
+			"userProps": {
+				"text": "50",
+				"usePageVariable": true
+			},
+			"className": ".label #scoreItem-title",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#CE1375",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 33,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "50",
+				"usePageVariable": true,
+				"name": "number",
+				"parent": "f632-bb3a-747e-1d1f",
+				"children": []
+			}
+		},
+		{
+			"type": "Label",
+			"id": "b8e4-52f2-d7a3-efc3",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgCustomerProfile-scoreITem-text"
+			},
+			"userProps": {
+				"text": "ENGAGEMENT \nSCORE",
+				"usePageVariable": true
+			},
+			"className": ".label #scoreItem-text",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#000000",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "ENGAGEMENT \nSCORE",
+				"usePageVariable": true,
+				"name": "text",
+				"parent": "f632-bb3a-747e-1d1f",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "fc8f-b7a1-5541-54ce",
+			"hiddenComponent": false,
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgCustomerProfile-flFirst-flScores-scoreItem"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1.5,
+					"maxWidth": null
+				},
+				"left": null,
+				"top": null,
+				"maxWidth": 170,
+				"name": "loyality",
+				"parent": "9d82-b6ff-2177-1b4b",
+				"children": [
+					"411c-5d91-93ca-2d4f",
+					"dee0-1208-6717-f8b9"
+				]
+			}
+		},
+		{
+			"type": "Label",
+			"id": "411c-5d91-93ca-2d4f",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgCustomerProfile-scoreITem-title"
+			},
+			"userProps": {
+				"text": "50",
+				"usePageVariable": true
+			},
+			"className": ".label #scoreItem-title",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#CE1375",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 33,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "50",
+				"usePageVariable": true,
+				"name": "number",
+				"parent": "fc8f-b7a1-5541-54ce",
+				"children": []
+			}
+		},
+		{
+			"type": "Label",
+			"id": "dee0-1208-6717-f8b9",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgCustomerProfile-scoreITem-text"
+			},
+			"userProps": {
+				"text": "ENGAGEMENT \nSCORE",
+				"usePageVariable": true
+			},
+			"className": ".label #scoreItem-text",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#000000",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "ENGAGEMENT \nSCORE",
+				"usePageVariable": true,
+				"name": "text",
+				"parent": "fc8f-b7a1-5541-54ce",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "fa1b-4584-b58e-a9d2",
+			"hiddenComponent": false,
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgCustomerProfile-flFirst-flScores-scoreItem"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1.5,
+					"maxWidth": null
+				},
+				"left": null,
+				"top": null,
+				"maxWidth": 170,
+				"name": "engament",
+				"parent": "9d82-b6ff-2177-1b4b",
+				"children": [
+					"7712-bfea-f194-cb6b",
+					"ce77-1b55-069b-d96b"
+				]
+			}
+		},
+		{
+			"type": "Label",
+			"id": "7712-bfea-f194-cb6b",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgCustomerProfile-scoreITem-title"
+			},
+			"userProps": {
+				"text": "50",
+				"usePageVariable": true
+			},
+			"className": ".label #scoreItem-title",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#CE1375",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 33,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "50",
+				"usePageVariable": true,
+				"name": "number",
+				"parent": "fa1b-4584-b58e-a9d2",
+				"children": []
+			}
+		},
+		{
+			"type": "Label",
+			"id": "ce77-1b55-069b-d96b",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgCustomerProfile-scoreITem-text"
+			},
+			"userProps": {
+				"text": "ENGAGEMENT \nSCORE",
+				"usePageVariable": true
+			},
+			"className": ".label #scoreItem-text",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#000000",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "ENGAGEMENT \nSCORE",
+				"usePageVariable": true,
+				"name": "text",
+				"parent": "fa1b-4584-b58e-a9d2",
 				"children": []
 			}
 		}
