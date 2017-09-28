@@ -1,16 +1,19 @@
 {
   "#pgDashboard": {
-    ".svEmployeeInfo": {
-      "height": 90,
+    ".flEmployeeInfo": {
+      "height": 200,
       "width": null,
-      "scrollBarEnabled": true,
       "align": "HORIZONTAL",
       "flexProps": {
+        "flexDirection": "COLUMN",
         "flexWrap": "WRAP",
         "positionType": "RELATIVE"
       },
-      "+page:Screen.width < 450": {
-
+      "+page:Screen.width > 450": {
+        "flexProps": {
+          "flexDirection": "ROW"
+        },
+        "height": 100
       }
     },
     ".svMain": {
@@ -59,6 +62,44 @@
       "maxWidth": 600,
       ".small": {
         "height": 119.25
+      }
+    },
+    ".infoPart1": {
+      "height": null,
+      "width": null,
+      "paddingRight": 20,
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "ROW",
+        "positionType": "RELATIVE",
+        "flexGrow": 1
+      },
+      "+page:Screen.width > 450": {
+        "flexDirection": "COLUMN"
+      }
+    },
+    ".infoPart2": {
+      "height": null,
+      "width": null,
+      "paddingRight": 20,
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "ROW",
+        "positionType": "RELATIVE",
+        "flexGrow": 1
+      },
+      "+page:Screen.width > 450": {
+        "flexDirection": "COLUMN"
       }
     }
   }
