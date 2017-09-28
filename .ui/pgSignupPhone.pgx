@@ -31,8 +31,8 @@
 					"49a6-bd3e-b201-a73b",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 345,
-				"height": 554.76
+				"width": 330,
+				"height": 530.64
 			}
 		},
 		{
@@ -841,7 +841,8 @@
 				"Implementation": "pgSignupPhone-Facebook"
 			},
 			"userProps": {
-				"text": "Login with Facebook"
+				"text": "Login with Facebook",
+				"usePageVariable": true
 			},
 			"className": ".button #pgSignupPhone.btn.btnFacebook",
 			"props": {
@@ -870,7 +871,8 @@
 				"text": "Login with Facebook",
 				"name": "btnFacebook",
 				"parent": "3eca-e67b-d6e2-e8bf",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -960,7 +962,7 @@
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.17426005300100122"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.88&brandModel=iPhone%207?random=0.9385982031322508"
 			}
 		},
 		{

@@ -11,6 +11,9 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     this.btnSignup.onTouch = onTouchSignup;
     this.btnAnonymous.onTouch = onTouchAnonymous;
+    this.btnFacebook.onTouch = function(){
+      Router.go("pgWomen");
+    };
     //pageContextPatch(this, "pgSignupPhone");
   });
 

@@ -44,6 +44,7 @@ Router.add("pgDashboard", require("./pages/pgDashboard"), true);
 Router.add("pgSignupPhone", require("./pages/pgSignupPhone"), true);
 Router.add("pgSignupTablet", require("./pages/pgSignupTablet"), true);
 Router.add("pgMainLookbook", require("./pages/pgMainLookbook"), true);
+Router.add("pgWomen", require("./pages/pgWomen"), true);
 
 if (Screen.width < 450) {
     Router.go("pgSignupPhone");
