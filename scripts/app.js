@@ -50,9 +50,9 @@ Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
 
 
 if (Screen.width < 450) {
-    Router.go("pgCustomerProfile");
+    Router.go("pgSignupPhone");
 } else {
-    Router.go("pgSignupTablet");
+    Router.go("pgSignupPhone");
 }
 
 if (System.OS === "Android") {

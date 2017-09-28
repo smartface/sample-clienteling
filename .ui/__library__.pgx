@@ -41,8 +41,8 @@
 					"cef6-e901-fdef-32f2",
 					"cae6-e684-ae6f-aaa5"
 				],
-				"width": 277.5,
-				"height": 493.58
+				"width": 255.00000000000003,
+				"height": 453.56000000000006
 			}
 		},
 		{
@@ -149,7 +149,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 106,
 				"flexProps": {
 					"flexGrow": 5
 				}
@@ -176,7 +175,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 5
 				},
-				"id": 106,
 				"name": "flPreview",
 				"parent": "4a13-68fd-e0c7-dcfd",
 				"children": [
@@ -197,7 +195,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 100,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -224,7 +221,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
-				"id": 100,
 				"name": "flInfo",
 				"parent": "4a13-68fd-e0c7-dcfd",
 				"children": [
@@ -245,8 +241,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 107,
-				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -268,11 +262,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"id": 107,
 				"name": "imgPreview",
 				"parent": "6f29-5ea0-6987-8dab",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -289,7 +281,6 @@
 				"width": null,
 				"height": null,
 				"bottom": null,
-				"id": 103,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -317,7 +308,6 @@
 					"flexGrow": 2
 				},
 				"bottom": null,
-				"id": 103,
 				"name": "flName",
 				"parent": "fc33-df7a-68a8-cf3c",
 				"children": [
@@ -339,7 +329,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 101,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -366,7 +355,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"id": 101,
 				"name": "flPrice",
 				"parent": "fc33-df7a-68a8-cf3c",
 				"children": [
@@ -390,8 +378,6 @@
 				"textAlignment": "BOTTOMCENTER",
 				"marginBottom": 5,
 				"text": "NAME",
-				"id": 105,
-				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -422,11 +408,9 @@
 				},
 				"marginBottom": 5,
 				"text": "NAME",
-				"id": 105,
 				"name": "lblName",
 				"parent": "550f-3e5a-5bf7-19f8",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -440,7 +424,6 @@
 				"Implementation": "Line"
 			},
 			"userProps": {
-				"id": 104,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				}
@@ -466,7 +449,6 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"id": 104,
 				"name": "flLine",
 				"parent": "550f-3e5a-5bf7-19f8",
 				"children": []
@@ -487,8 +469,6 @@
 				"height": null,
 				"textAlignment": "MIDCENTER",
 				"text": "$10.00",
-				"id": 102,
-				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -521,11 +501,9 @@
 					"flexGrow": 1
 				},
 				"text": "$10.00",
-				"id": 102,
-				"name": "lblPrice",
+				"name": "label2",
 				"parent": "0fc5-59b6-389a-1f19",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -2395,8 +2373,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 35.13513513513514,
-				"top": 241.8918918918919,
+				"left": 35.29411764705882,
+				"top": 241.17647058823528,
 				"width": 295.94594594594594,
 				"height": 83.78378378378379,
 				"flexProps": {
@@ -2427,8 +2405,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 35.13513513513514,
-				"top": 241.8918918918919,
+				"left": 35.29411764705882,
+				"top": 241.17647058823528,
 				"name": "flCustomerProfileNumText",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -2496,7 +2474,7 @@
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"multiline": false,
+				"multiline": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -2622,7 +2600,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3378,7 +3356,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{

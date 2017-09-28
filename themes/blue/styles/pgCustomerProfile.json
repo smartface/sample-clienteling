@@ -108,7 +108,7 @@
       "+page:Screen.width > 450": {
         "flexProps": {
           "flexDirection": "ROW",
-          "flexGrow": 0.64
+          "flexGrow": 0.4
         },
         "maxHeight": 110
       },
@@ -213,12 +213,49 @@
       }
 
     },
-    "&-flSecond":{
-      "&-infoPart1":{
-        
+    "&-flSecond": {
+      "&-infoPart": {
+        "width": null,
+        "height": null,
+        "maxHeight": 159,
+        "flexProps": {
+          "flexDirection": "COLUMN",
+          "flexGrow": 1
+        },
+        "+page:Screen.width > 450": {
+          "flexProps": {
+            "flexDirection": "ROW"
+          },
+          "maxHeight": 41
+        }
       },
-      "&-infoPart2":{
-        
+      "&-divider":{
+        "@extend":".flexLayout-line",
+        "height": 0,
+        "maxHeight": 0,
+        "width": null,
+        "+page:Screen.width > 450": {
+          "height": 1,
+          
+          "maxHeight": 1
+        }
+      },
+      "&-infoItem": {
+        "width": null,
+        "height": null,
+        "maxHeight": 38,
+        "flexProps": {
+          "alignItems": "STRETCH",
+          "justifyContent": "CENTER",
+          "flexDirection": "ROW",
+          "flexGrow": 1,
+          "alignSelf": "STRETCH"
+        },
+        "+page:Screen.width > 450": {
+          "flexProps": {
+            "flexDirection": "COLUMN"
+          }
+        }
       }
     }
   }
