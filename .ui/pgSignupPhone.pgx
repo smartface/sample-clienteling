@@ -31,8 +31,8 @@
 					"49a6-bd3e-b201-a73b",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 330,
-				"height": 530.64
+				"width": 277.5,
+				"height": 446.21999999999997
 			}
 		},
 		{
@@ -869,10 +869,10 @@
 				},
 				"marginRight": 5,
 				"text": "Login with Facebook",
+				"usePageVariable": true,
 				"name": "btnFacebook",
 				"parent": "3eca-e67b-d6e2-e8bf",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -933,6 +933,7 @@
 				"minWidth": null,
 				"maxHeight": 50,
 				"maxWidth": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": null
 				}
@@ -962,7 +963,8 @@
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.88&brandModel=iPhone%207?random=0.9385982031322508"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207?random=0.46685953866616203",
+				"usePageVariable": true
 			}
 		},
 		{

@@ -95,6 +95,66 @@
       "textAlignment": "MIDLEFT",
       "marginLeft": 10,
       "textColor": "#6A6A6A"
+    },
+    "&_flFirst": {
+      "width": null,
+      "height": null,
+      "maxHeight": 170,
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "COLUMN",
+        "alignItems": "STRETCH"
+      },
+      "+page:Screen.width > 450": {
+        "flexProps": {
+          "flexDirection": "ROW"
+        },
+        "maxHeight": 110
+      },
+      "&_profile": {
+        "width": null,
+        "height": null,
+        "backgroundColor": "rgba( 216, 216, 216, 0.55 )",
+        "marginLeft": null,
+        "flexProps": {
+          "positionType": "RELATIVE",
+          "flexDirection": "ROW",
+          "flexGrow": 1
+        }
+      },
+      "&_flScores": {
+        "width": null,
+        "height": null,
+        "left": null,
+        "top": null,
+        "marginTop": null,
+        "marginBottom": null,
+        "marginLeft": 5,
+        "marginRight": 5,
+        "maxHeight": 55,
+        "flexProps": {
+          "flexGrow": 1,
+          "flexDirection": "ROW",
+          "justifyContent": "SPACE_BETWEEN"
+        },
+        "&_scoreItem": {
+          "left": null,
+          "top": null,
+          "width": null,
+          "height": null,
+          "maxWidth": 170,
+          "flexProps": {
+            "positionType": "RELATIVE",
+            "flexDirection": "ROW",
+            "alignItems": "CENTER",
+            "justifyContent": "FLEX_START",
+            "flexGrow": 1,
+            "alignSelf": "STRETCH"
+          }
+        }
+
+      }
+
     }
   }
 }

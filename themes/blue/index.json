@@ -84,7 +84,11 @@
 				"pgDashboard-Item-Small": "#pgDashboard.flItem.small",
 				"pgDashboard-EmployeeInfo": "#pgDashboard.flEmployeeInfo",
 				"pgDashboard-EmployeeInfo-Part1": "#pgDashboard.infoPart1",
-				"pgDashboard-EmployeeInfo-Part2": "#pgDashboard.infoPart2"
+				"pgDashboard-EmployeeInfo-Part2": "#pgDashboard.infoPart2",
+				"pgCustomerProfile-flFirst": "#pgCustomerProfile_flFirst",
+				"pgCustomerProfile-flFirst-profile": "#pgCustomerProfile_flFirst_profile",
+				"pgCustomerProfile-flFirst-flScores": "#pgCustomerProfile_flFirst_flScores"
+
 			}
 		},
 		"ScrollView": {

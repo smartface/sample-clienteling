@@ -14,6 +14,9 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     this.btnFacebook.onTouch = function(){
       Router.go("pgWomen");
     };
+    this.imgBanner.onTouch = function(){
+      Router.go("pgCustomerProfile");
+    }
     //pageContextPatch(this, "pgSignupPhone");
   });
 

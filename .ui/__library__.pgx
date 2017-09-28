@@ -41,8 +41,8 @@
 					"cef6-e901-fdef-32f2",
 					"cae6-e684-ae6f-aaa5"
 				],
-				"width": 345,
-				"height": 613.64
+				"width": 277.5,
+				"height": 493.58
 			}
 		},
 		{
@@ -2620,7 +2620,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2858,8 +2858,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 47.826086956521735,
-				"top": 167.3913043478261,
+				"left": 47.2972972972973,
+				"top": 167.56756756756758,
 				"width": 285.8695652173913,
 				"height": 55.43478260869565,
 				"flexProps": {
@@ -2888,8 +2888,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 47.826086956521735,
-				"top": 167.3913043478261,
+				"left": 47.2972972972973,
+				"top": 167.56756756756758,
 				"name": "flCustomerProfileTitleText",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -2952,7 +2952,7 @@
 				"usePageVariable": true,
 				"left": 0,
 				"top": 0,
-				"name": "text",
+				"name": "title",
 				"parent": "42b7-ee79-11cc-15e7",
 				"children": []
 			}
@@ -3010,7 +3010,7 @@
 				"usePageVariable": true,
 				"left": null,
 				"top": null,
-				"name": "title",
+				"name": "text",
 				"parent": "42b7-ee79-11cc-15e7",
 				"children": []
 			}
@@ -3374,7 +3374,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3540,8 +3540,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 57.608695652173914,
-				"top": 343.4782608695652,
+				"left": 59.45945945945946,
+				"top": 343.2432432432432,
 				"width": 276.0869565217391,
 				"height": 44.565217391304344,
 				"flexProps": {
@@ -3570,8 +3570,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 57.608695652173914,
-				"top": 343.4782608695652,
+				"left": 59.45945945945946,
+				"top": 343.2432432432432,
 				"name": "flCustomerProfileMostLikedColors",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -3634,7 +3634,7 @@
 				"usePageVariable": true,
 				"left": 0,
 				"top": 0,
-				"name": "text",
+				"name": "title",
 				"parent": "cae6-e684-ae6f-aaa5",
 				"children": []
 			}
@@ -3706,7 +3706,7 @@
 				"height": 13,
 				"backgroundColor": "rgba( 182, 138, 247, 1 )",
 				"marginLeft": 10,
-				"borderRadius": 2,
+				"borderRadius": 3,
 				"marginRight": 10
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -3731,7 +3731,7 @@
 					"positionType": "RELATIVE"
 				},
 				"marginLeft": 10,
-				"borderRadius": 2,
+				"borderRadius": 3,
 				"marginRight": 10,
 				"name": "color1",
 				"parent": "cf1b-dab0-1ecb-0afa",
@@ -3753,7 +3753,7 @@
 				"height": 13,
 				"backgroundColor": "rgba( 223, 9, 9, 1 )",
 				"marginLeft": 10,
-				"borderRadius": 2
+				"borderRadius": 3
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -3777,7 +3777,7 @@
 					"positionType": "RELATIVE"
 				},
 				"marginLeft": 10,
-				"borderRadius": 2,
+				"borderRadius": 3,
 				"name": "color2",
 				"parent": "cf1b-dab0-1ecb-0afa",
 				"children": []
@@ -3797,7 +3797,7 @@
 				"width": 13,
 				"height": 13,
 				"backgroundColor": "rgba( 216, 216, 216, 1 )",
-				"borderRadius": 2,
+				"borderRadius": 3,
 				"flexProps": {
 					"flexDirection": "ROW"
 				}
@@ -3823,7 +3823,7 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"borderRadius": 2,
+				"borderRadius": 3,
 				"name": "color3",
 				"parent": "cf1b-dab0-1ecb-0afa",
 				"children": []
