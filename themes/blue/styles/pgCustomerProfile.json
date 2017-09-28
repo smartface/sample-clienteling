@@ -105,7 +105,7 @@
         "flexDirection": "COLUMN",
         "alignItems": "STRETCH"
       },
-      "+page:Screen.width > 450": {
+      "+page:Screen.width > 451": {
         "flexProps": {
           "flexDirection": "ROW",
           "flexGrow": 0.4
@@ -119,7 +119,7 @@
         "flexProps": {
           "flexGrow": 1.5
         },
-        "+page:Screen.width > 450": {
+        "+page:Screen.width  >    450": {
           "backgroundColor": "rgba( 216, 216, 216, 0 )"
         },
         "&_profile": {
@@ -149,7 +149,7 @@
           "flexDirection": "ROW",
           "justifyContent": "SPACE_BETWEEN"
         },
-        "+page:Screen.width > 450": {
+        "+page:Screen.width  >   451": {
           "maxHeight": null,
           "flexProps": {
             "flexGrow": 1.5
@@ -191,7 +191,7 @@
           "justifyContent": "SPACE_BETWEEN",
           "flexGrow": 1
         },
-        "+page:Screen.width > 450": {
+        "+page:Screen.width  > 451 ": {
           "flexProps": {
             "flexDirection": "COLUMN"
           }
@@ -208,12 +208,25 @@
           "flexProps": {
             "flexGrow": 1,
             "alignSelf": "STRETCH"
+          },
+          "+page:Screen.width >  450": {
+            "maxWidth": null
           }
         }
       }
 
     },
     "&-flSecond": {
+      "width": null,
+      "height": null,
+      "maxHeight": 310,
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "COLUMN"
+      },
+      "+page:Screen.width   > 450": {
+        "maxHeight": 95
+      },
       "&-infoPart": {
         "width": null,
         "height": null,
@@ -222,21 +235,21 @@
           "flexDirection": "COLUMN",
           "flexGrow": 1
         },
-        "+page:Screen.width > 450": {
+        "+page:Screen.width >    450": {
           "flexProps": {
             "flexDirection": "ROW"
           },
           "maxHeight": 41
         }
       },
-      "&-divider":{
-        "@extend":".flexLayout-line",
+      "&-divider": {
+        "@extend": ".flexLayout-line",
         "height": 0,
         "maxHeight": 0,
         "width": null,
-        "+page:Screen.width > 450": {
+        "+page:Screen.width    > 450": {
           "height": 1,
-          
+
           "maxHeight": 1
         }
       },
@@ -251,7 +264,7 @@
           "flexGrow": 1,
           "alignSelf": "STRETCH"
         },
-        "+page:Screen.width > 450": {
+        "+page:Screen.width   >  450": {
           "flexProps": {
             "flexDirection": "COLUMN"
           }

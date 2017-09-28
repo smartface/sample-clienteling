@@ -93,6 +93,7 @@
 				"pgCustomerProfile-flFirst-flScores": "#pgCustomerProfile_flFirst_flScores",
 				"pgCustomerProfile-flFirst-flScores-scoreItem": "#pgCustomerProfile_flFirst_flScores_scoreItem",
 				"pgCustomerProfile-flFirst-flButtons": "#pgCustomerProfile_flFirst_flButtons",
+				"pgCustomerProfile-flSecond": "#pgCustomerProfile-flSecond",
 				"pgCustomerProfile-flScecond-infoPart": "#pgCustomerProfile-flSecond-infoPart",
 				"pgCustomerProfile-flScecond-infoItem": "#pgCustomerProfile-flSecond-infoItem",
 				"pgCustomerProfile-flScecond-divider": "#pgCustomerProfile-flSecond-divider"

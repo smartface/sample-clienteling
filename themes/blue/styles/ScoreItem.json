@@ -15,7 +15,7 @@
                 "flexGrow": 1,
                 "alignSelf": "STRETCH"
             },
-            "+page:Screen.width > 450": {
+            "+page:Screen.width >  451": {
                 "textAlignment": "MIDCENTER"
             }
         },
@@ -33,7 +33,7 @@
                 "flexGrow": 2.2,
                 "alignSelf": "STRETCH"
             },
-            "+page:Screen.width > 450": {
+            "+page:Screen.width >  452": {
                 "textAlignment": "MIDCENTER",
                 "flexProps": {
                     "flexGrow": 1
