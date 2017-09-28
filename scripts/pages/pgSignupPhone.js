@@ -9,11 +9,11 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     _super(this);
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    
+
     this.btnSignup.onTouchEnded = onTouchSignup;
     this.btnAnonymous.onTouchEnded = onTouchAnonymous;
     this.btnFacebook.onTouchEnded = onTouchFacebook;
-    this.imgBanner.onTouchEnded = function(){
+    this.imgBanner.onTouchEnded = function() {
       Router.go("pgCustomerProfile");
     };
 
