@@ -8,15 +8,13 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     // Initalizes super class for this page scope
     _super(this);
     // overrides super.onShow method
-    this.btnSignup.onTouch = onTouchSignup;
-    this.btnAnonymous.onTouch = onTouchAnonymous;
-    this.btnFacebook.onTouch = function(){
-      Router.go("pgWomen");
-    };
-    pageContextPatch(this, "pgSignupPhone");
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.btnFacebook.onTouch = onTouchFacebook;
-    //pageContextPatch(this, "pgSignupPhone");
+    
+    this.btnSignup.onTouchEnded = onTouchSignup;
+    this.btnAnonymous.onTouchEnded = onTouchAnonymous;
+    this.btnFacebook.onTouchEnded = onTouchFacebook;
+
+    pageContextPatch(this, "pgSignupPhone");
   });
 
 /**
