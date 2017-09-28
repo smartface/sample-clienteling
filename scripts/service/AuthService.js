@@ -2,6 +2,7 @@ const mcs = require("../lib/mcs");
 const serviceCall = require("./ServiceCall");
 const request = require("./request");
 exports.login = login;
+exports.logout = logout;
 
 function login(user, pass) {
   var opt = mcs.createRequestOptions({ apiName: "eCommerce", endpointName: "login" });
@@ -12,8 +13,12 @@ function login(user, pass) {
       "password": "password" //TODO: use pass
     })
   });
+  Object.assign(opt.headers, {
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+  });
 
-  return new Promise((resolve, reject)=> {
+  return new Promise((resolve, reject) => {
     request(opt, (err, result) => {
       if (err) {
         reject(err);
@@ -24,5 +29,13 @@ function login(user, pass) {
         resolve(result);
       }
     });
+  });
+}
+
+function logout() {
+  return new Promise((resolve, reject) => {
+    mcs.sessionId = "0";
+    serviceCall.registerUserToken(null);
+    resolve();
   });
 }
