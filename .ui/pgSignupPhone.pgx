@@ -104,7 +104,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -934,7 +934,7 @@
 				"maxHeight": 50,
 				"maxWidth": null,
 				"flexProps": {
-					"flexGrow": 0
+					"flexGrow": null
 				}
 			},
 			"className": ".imageView",
@@ -952,7 +952,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": null
 				},
 				"image": "smartface.png",
 				"minHeight": 50,
@@ -984,7 +984,7 @@
 					"size": 30
 				},
 				"flexProps": {
-					"flexGrow": 0
+					"flexGrow": null
 				}
 			},
 			"className": ".label",
@@ -1009,7 +1009,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": null
 				},
 				"text": "CLIENTELING",
 				"minHeight": 50,

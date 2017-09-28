@@ -126,22 +126,57 @@
         };
 
         var diff = Object.keys(styles).reduce(diffReducer, {});
-
-        /* global.benchmarkLog && 
-           global.benchmarkLog(Object.keys(diff));*/
+        
+        // if(this.name.indexOf("flBanner") > -1)
+        //   console.log(this.name+"="+flush("", diff));
 
         var beforeHook = hooks("beforeStyleDiffAssign");
         beforeHook && (diff = beforeHook(diff));
 
-        console.log(JSON.stringify(diff));
-
-        try{
+        // if(this.name !== "pgSignupPhone_flMain_flBanner" && this.name.indexOf("flBanner") > -1)
+        //   console.log(this.name+" : "+flush("",diff)+" : "+flush("", styles));
+          
+        function flush(str="", obj){
+          Object.keys(obj).forEach(function (key) {
+            if(obj[key] != null && obj[key] instanceof Object)
+              str += key+": "+flush("", obj[key])+", ";
+            else
+              str += key+": "+obj[key]+", ";
+          });
+          
+          return "{ "+str.trim(", ")+" }";
+        }
+        
+       /* var keys = [
+        "flexGrow",
+      	"marginLeft",
+      	"left",
+      	"top",
+      	"paddingLeft",
+      ]*/
+      
+      // if(this.component.flexGrow === 0){
+      //   this.component.flexGrow = -1
+      // }
+        
+        try {
           this.component.subscribeContext
             ? Object.keys(diff).length && this.component.subscribeContext({type:"new styles", data: diff})
-            : Object.keys(diff).length && Object.assign(this.component, diff);
+            : Object.keys(diff).length && Object.keys(diff).forEach(function(key) {
+              // if((this.name === "pgSignupPhone_flMain") || (!keys.some(k => k == key) && this.name !== "pgSignupPhone_flMain_flBanner" && this.name.indexOf("flBanner") > -1)){
+
+              if(key == "scrollEnabled"){
+                this.component.ios && (this.component.ios.scrollEnabled = diff[key]);
+              } else if(this.component[key] !== diff[key]){
+                this.component[key] = diff[key];
+              }
+              
+              // if(key ==  "flexGrow")
+                // console.log(this.name+" : "+key+":"+diff[key]);
+              // }
+            }.bind(this));
         } catch(e){
-          console.log(e.message);
-          // throw new Error(JSON.stringify(diff)+" is invalid. "+e.message);
+          throw new Error(JSON.stringify(diff)+" is invalid. "+e.message);
         }
         
         var afterHook = hooks("afterStyleDiffAssign");

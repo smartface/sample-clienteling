@@ -12,29 +12,6 @@ const INIT_CONTEXT_ACTION_TYPE = require("../lib/Context")
 const styles = require("../themes/blue");
 var styling = styler(styles);
 
-/*{
-	"width": 150,
-	"height": null,
-	"touchEnabled": true,
-	"visible": true,
-	"imageFillType": "ASPECTFIT",
-	"backgroundColor": "rgba(255,255,255,0)",
-	"alpha": 1,
-	"borderColor": "rgba(0,0,0,1)",
-	"borderWidth": 0,
-	"font": {},
-	"flexProps": {
-		"alignSelf": "AUTO",
-		"positionType": "RELATIVE",
-		"flexGrow": 0
-	},
-	"image": "smartface.png",
-	"minHeight": 50,
-	"minWidth": null,
-	"maxHeight": 50,
-	"maxWidth": null
-}*/
-
 commands.addRuntimeCommandFactory(function(type){
   switch (type) {
     case '+page':
@@ -107,29 +84,28 @@ function createContext(component, name, classMap=null, reducers=null) {
 						  if(key === 'align'){
 						    delete acc[key];
 						    return acc;
-						  } if(key == "flexProps"){
-					     if(!oldStyles[key] === undefined){
-					        Object.assign(acc, newStyles[key]);
-					      } else {
+						  } else if(key == "flexProps"){
+					     //if(!oldStyles[key] === undefined){
+					       // Object.assign(acc, newStyles[key]);
+					     // } else {
                   Object.keys(newStyles[key])
                   	.forEach(function(name) {
-                  		if(oldStyles[key] && newStyles[key][name] !== oldStyles[key][name]) {
+                  		if(!oldStyles[key] || newStyles[key][name] !== oldStyles[key][name]) {
+                				acc[name] = newStyles[key][name];
+                				
                   			if(newStyles[key][name] === null) {
+                					acc[name] = NaN;
                   				if(name === "flexGrow") {
                   					acc[name] = 0;
-                  				} else {
-                  					acc[name] = NaN;
                   				}
                   			} else {
                   				acc[name] = newStyles[key][name];
                   			}
-                  		} else {
-                				acc[name] = newStyles[key][name];
                   		}
                   	})
-                }
+                // }
   					  } else if(newStyles[key] !== null && typeof newStyles[key] === "object") {
-  							if(!isEqual(oldStyles[key], newStyles[key])) {
+  							if(Object.keys(newStyles[key]).length > 0 && !isEqual(oldStyles[key], newStyles[key])) {
   								 acc[key] = newStyles[key];
   							}
   						} else if(oldStyles[key] !== newStyles[key]) {
@@ -137,10 +113,7 @@ function createContext(component, name, classMap=null, reducers=null) {
   						}
 							
 							if(acc[key] === null) {
-							  if(key == "flexGrow")
-							    acc[key] = 0;
-							  else
-  							  acc[key] = NaN;
+							  acc[key] = NaN;
 							}
 							
 							return acc;
