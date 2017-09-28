@@ -33,8 +33,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 1104,
-				"height": 1472
+				"width": 336,
+				"height": 596.4
 			}
 		},
 		{
@@ -89,25 +89,18 @@
 			"id": "0d22-a22f-27a9-8b58",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgDashboard-Main"
 			},
 			"userProps": {
-				"usePageVariable": true,
-				"width": null,
-				"height": null,
-				"marginTop": 9,
-				"backgroundColor": "rgba( 139, 87, 42, 0 )",
-				"flexProps": {
-					"flexGrow": 1
-				}
+				"usePageVariable": true
 			},
-			"className": ".scrollView",
+			"className": ".scrollView #pgDashboard.svMain",
 			"props": {
 				"height": null,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 139, 87, 42, 0 )",
+				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -125,8 +118,8 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"layoutHeight": 1200,
 				"usePageVariable": true,
-				"marginTop": 9,
 				"name": "svMain",
 				"parent": "cf18-afa3-65ee-c058",
 				"children": [
@@ -403,7 +396,7 @@
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE"
 			}
 		},
 		{
@@ -441,7 +434,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE"
 			}
 		},
 		{
@@ -506,7 +499,7 @@
 				"paddingLeft": 14,
 				"marginLeft": 14,
 				"marginRight": 12,
-				"marginBottom": 13,
+				"marginBottom": 25,
 				"flexProps": {
 					"justifyContent": "SPACE_BETWEEN",
 					"flexDirection": "ROW"
@@ -537,12 +530,11 @@
 				"paddingLeft": 14,
 				"marginLeft": 14,
 				"marginRight": 12,
-				"marginBottom": 13,
+				"marginBottom": 25,
 				"name": "flNearbyCustomers",
 				"parent": "0d22-a22f-27a9-8b58",
 				"children": [
-					"971c-b2ca-f1a0-ff19",
-					"32cb-488b-02ee-ff3b"
+					"971c-b2ca-f1a0-ff19"
 				]
 			}
 		},
@@ -653,62 +645,14 @@
 			}
 		},
 		{
-			"type": "ImageView",
-			"id": "32cb-488b-02ee-ff3b",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"usePageVariable": true,
-				"height": null,
-				"width": null,
-				"image": "expand.png"
-			},
-			"className": ".imageView",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"usePageVariable": true,
-				"image": "expand.png",
-				"name": "imgNearbyCustomersExpand",
-				"parent": "33c3-95b9-18c3-7d3f",
-				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/expand.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
-			}
-		},
-		{
 			"type": "FlexLayout",
 			"id": "ab32-0a30-a588-fe5e",
 			"themeProps": {
-				"Implementation": "Default",
+				"Implementation": "pgDashboard-Item",
 				"Sizes": "Default"
 			},
-			"userProps": {
-				"width": null,
-				"height": 200,
-				"backgroundColor": "rgba( 184, 233, 134, 0 )",
-				"paddingBottom": null,
-				"marginRight": 15.68,
-				"marginBottom": 20.5,
-				"minWidth": 320,
-				"maxWidth": 600,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem",
 			"props": {
 				"height": 200,
 				"width": null,
@@ -733,7 +677,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320,
+				"minWidth": 240,
 				"maxWidth": 600,
 				"name": "flReservations",
 				"parent": "295e-648c-2b89-5438",
@@ -799,8 +743,7 @@
 				"name": "flTitle",
 				"parent": "ab32-0a30-a588-fe5e",
 				"children": [
-					"193c-7a77-a948-79b8",
-					"f7f0-1744-d530-4258"
+					"193c-7a77-a948-79b8"
 				]
 			}
 		},
@@ -848,42 +791,6 @@
 				"name": "lblTitle",
 				"parent": "4652-11da-c001-7ac7",
 				"children": []
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "f7f0-1744-d530-4258",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"usePageVariable": true,
-				"height": null,
-				"width": null,
-				"image": "collapse.png"
-			},
-			"className": ".imageView",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"usePageVariable": true,
-				"image": "collapse.png",
-				"name": "imgExpand",
-				"parent": "4652-11da-c001-7ac7",
-				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -954,6 +861,7 @@
 				"paddingTop": 7,
 				"paddingRight": 29.21,
 				"paddingLeft": 8.5,
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -964,7 +872,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1297,6 +1205,7 @@
 				"paddingTop": 7,
 				"paddingRight": 29.21,
 				"paddingLeft": 8.5,
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1307,7 +1216,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1770,7 +1679,7 @@
 				"name": "imgUser",
 				"parent": "d4d2-a0ac-600d-cddd",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE"
 			}
 		},
 		{
@@ -2923,23 +2832,11 @@
 			"type": "FlexLayout",
 			"id": "450e-bfdb-83b1-43da",
 			"themeProps": {
-				"Implementation": "Default",
+				"Implementation": "pgDashboard-Item",
 				"Sizes": "Default"
 			},
-			"userProps": {
-				"width": null,
-				"height": 200,
-				"backgroundColor": "rgba( 184, 233, 134, 0 )",
-				"paddingBottom": null,
-				"marginRight": 15.68,
-				"marginBottom": 20.5,
-				"minWidth": 320,
-				"maxWidth": 600,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem",
 			"props": {
 				"height": 200,
 				"width": null,
@@ -2964,7 +2861,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320,
+				"minWidth": 240,
 				"maxWidth": 600,
 				"name": "flTodo",
 				"parent": "295e-648c-2b89-5438",
@@ -3030,8 +2927,7 @@
 				"name": "flTitle",
 				"parent": "450e-bfdb-83b1-43da",
 				"children": [
-					"4424-b4e9-6cb4-2023",
-					"f0d2-8eea-97b2-2153"
+					"4424-b4e9-6cb4-2023"
 				]
 			}
 		},
@@ -3079,42 +2975,6 @@
 				"name": "lblTitle",
 				"parent": "47e9-f191-7cfd-668e",
 				"children": []
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "f0d2-8eea-97b2-2153",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"usePageVariable": true,
-				"height": null,
-				"width": null,
-				"image": "collapse.png"
-			},
-			"className": ".imageView",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"usePageVariable": true,
-				"image": "collapse.png",
-				"name": "imgExpand",
-				"parent": "47e9-f191-7cfd-668e",
-				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -3533,6 +3393,7 @@
 				"paddingTop": 7,
 				"paddingRight": 29.21,
 				"paddingLeft": 8.5,
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -3543,7 +3404,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -3849,30 +3710,18 @@
 				"name": "imgExclamation",
 				"parent": "4b39-63d4-b0ca-3108",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "40f9-7db7-7417-a704",
 			"themeProps": {
-				"Implementation": "Default",
+				"Implementation": "pgDashboard-Item",
 				"Sizes": "Default"
 			},
-			"userProps": {
-				"width": null,
-				"height": 200,
-				"backgroundColor": "rgba( 184, 233, 134, 0 )",
-				"paddingBottom": null,
-				"marginRight": 15.68,
-				"marginBottom": 20.5,
-				"minWidth": 320,
-				"maxWidth": 600,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem",
 			"props": {
 				"height": 200,
 				"width": null,
@@ -3897,7 +3746,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320,
+				"minWidth": 240,
 				"maxWidth": 600,
 				"name": "flOpenIncidents",
 				"parent": "295e-648c-2b89-5438",
@@ -3963,8 +3812,7 @@
 				"name": "flTitle",
 				"parent": "40f9-7db7-7417-a704",
 				"children": [
-					"02f0-bf39-c76b-43db",
-					"97bf-d95a-a0ac-6ea2"
+					"02f0-bf39-c76b-43db"
 				]
 			}
 		},
@@ -4012,42 +3860,6 @@
 				"name": "lblTitle",
 				"parent": "913e-88e1-4b90-5572",
 				"children": []
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "97bf-d95a-a0ac-6ea2",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"usePageVariable": true,
-				"height": null,
-				"width": null,
-				"image": "collapse.png"
-			},
-			"className": ".imageView",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"usePageVariable": true,
-				"image": "collapse.png",
-				"name": "imgExpand",
-				"parent": "913e-88e1-4b90-5572",
-				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -4118,6 +3930,7 @@
 				"paddingTop": 7,
 				"paddingRight": 29.21,
 				"paddingLeft": 8.5,
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -4128,7 +3941,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -4461,6 +4274,7 @@
 				"paddingTop": 7,
 				"paddingRight": 29.21,
 				"paddingLeft": 8.5,
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -4471,7 +4285,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -4741,23 +4555,11 @@
 			"type": "FlexLayout",
 			"id": "5f64-267c-bc46-fa3b",
 			"themeProps": {
-				"Implementation": "Default",
+				"Implementation": "pgDashboard-Item-Small",
 				"Sizes": "Default"
 			},
-			"userProps": {
-				"width": null,
-				"height": 119.25,
-				"backgroundColor": "rgba( 184, 233, 134, 0 )",
-				"paddingBottom": null,
-				"marginRight": 15.68,
-				"marginBottom": 20.5,
-				"minWidth": 320,
-				"maxWidth": 600,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem.small",
 			"props": {
 				"height": 119.25,
 				"width": null,
@@ -4782,7 +4584,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320,
+				"minWidth": 240,
 				"maxWidth": 600,
 				"name": "flNews",
 				"parent": "295e-648c-2b89-5438",
@@ -4848,8 +4650,7 @@
 				"name": "flTitle",
 				"parent": "5f64-267c-bc46-fa3b",
 				"children": [
-					"672b-66b8-8eec-4a9d",
-					"63c8-d992-5e7f-5873"
+					"672b-66b8-8eec-4a9d"
 				]
 			}
 		},
@@ -4900,42 +4701,6 @@
 			}
 		},
 		{
-			"type": "ImageView",
-			"id": "63c8-d992-5e7f-5873",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"usePageVariable": true,
-				"height": null,
-				"width": null,
-				"image": "collapse.png"
-			},
-			"className": ".imageView",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"usePageVariable": true,
-				"image": "collapse.png",
-				"name": "imgExpand",
-				"parent": "023c-e6d6-34a5-99a7",
-				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
-			}
-		},
-		{
 			"type": "FlexLayout",
 			"id": "9a8b-a380-90bb-11b2",
 			"hiddenComponent": false,
@@ -4945,7 +4710,7 @@
 			},
 			"userProps": {
 				"height": null,
-				"backgroundColor": "rgba( 144, 19, 254, 0 )",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"paddingBottom": 4.5,
 				"width": null,
 				"paddingLeft": null,
@@ -4960,7 +4725,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 144, 19, 254, 0 )",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -5280,23 +5045,11 @@
 			"type": "FlexLayout",
 			"id": "acae-69b2-29c4-d5e9",
 			"themeProps": {
-				"Implementation": "Default",
+				"Implementation": "pgDashboard-Item-Small",
 				"Sizes": "Default"
 			},
-			"userProps": {
-				"width": null,
-				"height": 119.25,
-				"backgroundColor": "rgba( 184, 233, 134, 0 )",
-				"paddingBottom": null,
-				"marginRight": 15.68,
-				"marginBottom": 20.5,
-				"minWidth": 320,
-				"maxWidth": 600,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem.small",
 			"props": {
 				"height": 119.25,
 				"width": null,
@@ -5321,7 +5074,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320,
+				"minWidth": 240,
 				"maxWidth": 600,
 				"name": "flShipments",
 				"parent": "295e-648c-2b89-5438",
@@ -5387,8 +5140,7 @@
 				"name": "flTitle",
 				"parent": "acae-69b2-29c4-d5e9",
 				"children": [
-					"0103-a7f7-dbbc-c1e7",
-					"2f98-6db6-9afb-ba52"
+					"0103-a7f7-dbbc-c1e7"
 				]
 			}
 		},
@@ -5436,42 +5188,6 @@
 				"name": "lblTitle",
 				"parent": "a438-6060-10f1-4e50",
 				"children": []
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "2f98-6db6-9afb-ba52",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"usePageVariable": true,
-				"height": null,
-				"width": null,
-				"image": "collapse.png"
-			},
-			"className": ".imageView",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"usePageVariable": true,
-				"image": "collapse.png",
-				"name": "imgExpand",
-				"parent": "a438-6060-10f1-4e50",
-				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -5540,6 +5256,7 @@
 				"paddingTop": 7,
 				"paddingRight": 29.21,
 				"paddingLeft": 8.5,
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -5550,7 +5267,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -5820,23 +5537,11 @@
 			"type": "FlexLayout",
 			"id": "fb82-7d44-e023-b112",
 			"themeProps": {
-				"Implementation": "Default",
+				"Implementation": "pgDashboard-Item-Small",
 				"Sizes": "Default"
 			},
-			"userProps": {
-				"width": null,
-				"height": 119.25,
-				"backgroundColor": "rgba( 184, 233, 134, 0 )",
-				"paddingBottom": null,
-				"marginRight": 15.68,
-				"marginBottom": 20.5,
-				"minWidth": 320,
-				"maxWidth": 600,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem.small",
 			"props": {
 				"height": 119.25,
 				"width": null,
@@ -5861,7 +5566,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 320,
+				"minWidth": 240,
 				"maxWidth": 600,
 				"name": "flSocialActivity",
 				"parent": "295e-648c-2b89-5438",
@@ -5927,8 +5632,7 @@
 				"name": "flTitle",
 				"parent": "fb82-7d44-e023-b112",
 				"children": [
-					"e144-8762-49f3-ba62",
-					"fdf2-1a4a-93fc-63bf"
+					"e144-8762-49f3-ba62"
 				]
 			}
 		},
@@ -5979,42 +5683,6 @@
 			}
 		},
 		{
-			"type": "ImageView",
-			"id": "fdf2-1a4a-93fc-63bf",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"usePageVariable": true,
-				"height": null,
-				"width": null,
-				"image": "collapse.png"
-			},
-			"className": ".imageView",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"usePageVariable": true,
-				"image": "collapse.png",
-				"name": "imgExpand",
-				"parent": "0979-6354-1dd4-7a8b",
-				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/collapse.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
-			}
-		},
-		{
 			"type": "FlexLayout",
 			"id": "bca6-08a9-02dc-e7c7",
 			"hiddenComponent": false,
@@ -6024,7 +5692,7 @@
 			},
 			"userProps": {
 				"height": null,
-				"backgroundColor": "rgba( 144, 19, 254, 0 )",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"paddingBottom": 4.5,
 				"width": null,
 				"paddingLeft": null,
@@ -6039,7 +5707,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 144, 19, 254, 0 )",
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -6400,7 +6068,7 @@
 				"name": "imgLogo",
 				"parent": "a153-0d0e-1142-3610",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface_logo.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1.25&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface_logo.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.05&brandModel=iPhone%20SE"
 			}
 		},
 		{

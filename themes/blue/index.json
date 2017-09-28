@@ -76,7 +76,9 @@
 				"pgMainLookbook-FirstLine": "#pgMainLookbook.flFirstLine",
 				"pgMainLookbook-SecondLine": "#pgMainLookbook.flSecondLine",
 				"pgMainLookbook-ThirdLine": "#pgMainLookbook.flThirdLine",
-				"pgMainLookbook-Sale": "#pgMainLookbook.flSale"
+				"pgMainLookbook-Sale": "#pgMainLookbook.flSale",
+				"pgDashboard-Item": "#pgDashboard.flItem",
+				"pgDashboard-Item-Small": "#pgDashboard.flItem.small"
 			}
 		},
 		"ScrollView": {
@@ -87,7 +89,8 @@
 				"Large": ".scrollView-large"
 			},
 			"Implementation": {
-				"pgDashboard-EmployeeInfo": "#pgDashboard.svEmployeeInfo"
+				"pgDashboard-EmployeeInfo": "#pgDashboard.svEmployeeInfo",
+				"pgDashboard-Main": "#pgDashboard.svMain"
 			}
 		},
 		"HeaderBar": {

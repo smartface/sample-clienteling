@@ -11,7 +11,7 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     this.btnSignup.onTouch = onTouchSignup;
     this.btnAnonymous.onTouch = onTouchAnonymous;
-    pageContextPatch(this, "pgSignupPhone");
+    //pageContextPatch(this, "pgSignupPhone");
   });
 
 /**

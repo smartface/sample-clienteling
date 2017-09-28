@@ -13,7 +13,7 @@ const PgDashboard = extend(PgDashboardDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    pageContextPatch(this, "pgDashboard");
+    //pageContextPatch(this, "pgDashboard");
   });
 
 /**

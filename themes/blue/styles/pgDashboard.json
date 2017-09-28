@@ -12,6 +12,54 @@
       "+page:Screen.width < 450": {
 
       }
+    },
+    ".svMain": {
+      "height": null,
+      "width": null,
+      "visible": true,
+      "align": "VERTICAL",
+      "scrollBarEnabled": true,
+      "layoutHeight": 1250,
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "COLUMN",
+        "positionType": "RELATIVE",
+        "flexGrow": 1
+      }
+    },
+    ".flItem": {
+      "height": 200,
+      "width": null,
+      "touchEnabled": true,
+      "visible": true,
+      "backgroundColor": "rgba( 184, 233, 134, 0 )",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "COLUMN",
+        "positionType": "RELATIVE",
+        "flexGrow": 1
+      },
+      "paddingBottom": null,
+      "marginRight": 15.68,
+      "marginBottom": 20.5,
+      "minWidth": 240,
+      "maxWidth": 600,
+      ".small": {
+        "height": 119.25
+      }
     }
   }
 }
