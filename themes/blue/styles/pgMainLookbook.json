@@ -7,7 +7,7 @@
         "flexGrow": 1
       },
       "font": {
-        "size": 15
+        "size": 22
       },
       "textAlignment": "MIDCENTER"
     },
@@ -153,6 +153,9 @@
       "textAlignment": "MIDRIGHT",
       "marginRight": 10,
       "marginLeft": null,
+      "font": {
+        "size": 15
+      },
       ".men": {
         "textAlignment": "MIDLEFT",
         "marginLeft": 10,
@@ -215,19 +218,11 @@
     },
     ".lblAccessories": {
       "width": null,
-      "height": 30,
+      "height": 20,
       "textAlignment": "MIDCENTER",
       "multiline": true,
-      "marginLeft": 20,
-      "marginRight": null,
-      "+page:Screen.width > 450": {
-        "height": 20,
-        "marginRight": null,
-        "marginLeft": null
-      },
       "+page:Screen.width > 1000": {
         "height": 40,
-        "marginRight": null,
         "font": {
           "size": 18
         }
@@ -236,14 +231,13 @@
     ".lblGlasses": {
       "width": null,
       "textAlignment": "MIDCENTER",
-      "height": 40,
+      "height": 30,
       "textColor": "#FFFFFF",
       "font": {
         "size": 20
       },
       "+page:Screen.width > 450": {
         "height": 20
-
       },
       "+page:Screen.width > 1000": {
         "height": 70,

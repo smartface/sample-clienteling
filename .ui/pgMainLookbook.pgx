@@ -33,8 +33,8 @@
 					"b740-f675-4f52-5243",
 					"6051-46a5-778b-d772"
 				],
-				"width": 345,
-				"height": 554.76
+				"width": 307.5,
+				"height": 494.46
 			}
 		},
 		{
@@ -418,7 +418,7 @@
 				"name": "imgBagTrends",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.9572642747612912"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -513,7 +513,7 @@
 				"name": "imgSunGlasses",
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.7155433316294617"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1087,7 +1087,7 @@
 				"name": "imgWomen",
 				"parent": "47f2-f138-9dd8-617a",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/pgmainlookbook_women_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.9349006096992247"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgmainlookbook_women_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1124,7 +1124,7 @@
 				"name": "imgMen",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/pgmainlookbook_men_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207?random=0.6680738123651602"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgmainlookbook_men_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1205,7 +1205,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDRIGHT",
 				"font": {
-					"size": 10,
+					"size": 15,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1325,10 +1325,7 @@
 				"Implementation": "pgMainLookbook-Shop-Men"
 			},
 			"userProps": {
-				"text": "SHOP",
-				"flexProps": {
-					"alignSelf": "AUTO"
-				}
+				"text": "SHOP"
 			},
 			"className": ".label #pgMainLookbook.lblShop.men",
 			"props": {
@@ -1344,7 +1341,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 10,
+					"size": 15,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1505,7 +1502,7 @@
 			"className": ".label #pgMainLookbook.lblAccessories",
 			"props": {
 				"width": null,
-				"height": 30,
+				"height": 20,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": true,
@@ -1525,10 +1522,8 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"marginLeft": 20,
-				"marginRight": null,
 				"text": "ACCESSORIES",
-				"name": "label1",
+				"name": "lblAccessories",
 				"parent": "5726-cbb7-f702-4812",
 				"children": []
 			}
@@ -1546,7 +1541,7 @@
 			"className": ".label #pgMainLookbook.lblGlasses",
 			"props": {
 				"width": null,
-				"height": 40,
+				"height": 30,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
@@ -1567,7 +1562,7 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "SUN GLASSES",
-				"name": "label2",
+				"name": "lblGlasses",
 				"parent": "5726-cbb7-f702-4812",
 				"children": []
 			}

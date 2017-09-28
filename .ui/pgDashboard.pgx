@@ -5954,7 +5954,7 @@
 				"imageFillType": "ASPECTFIT",
 				"width": 20,
 				"height": 20,
-				"left": 20,
+				"left": 14,
 				"top": 14,
 				"bottom": null,
 				"flexProps": {
@@ -5979,7 +5979,7 @@
 					"flexGrow": null
 				},
 				"image": "hamburger.png",
-				"left": 20,
+				"left": 14,
 				"top": 14,
 				"bottom": null,
 				"name": "imgHamburger",

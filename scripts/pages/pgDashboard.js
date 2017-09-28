@@ -13,7 +13,7 @@ const PgDashboard = extend(PgDashboardDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    //pageContextPatch(this, "pgDashboard");
+    pageContextPatch(this, "pgDashboard");
   });
 
 /**
@@ -45,9 +45,9 @@ function onLoad(superOnLoad) {
   page.imgSignOut.onTouchEnded = function() {
     Router.goBack("pgSignupPhone");
   };
-  page.svInfo.scrollBarEnabled = false;
-  page.svInfo.layout.height = 90;
-  page.svInfo.layout.minWidth = 768;
+  //page.svInfo.scrollBarEnabled = false;
+  //page.svInfo.layout.height = 90;
+  //page.svInfo.layout.minWidth = 768;
 }
 
 module && (module.exports = PgDashboard);
