@@ -1,6 +1,9 @@
 const extend = require('js-base/core/extend');
 const PgWomenDesign = require('ui/ui_pgWomen');
 
+const SwipeView = require("sf-core/ui/swipeview");
+
+
 const PgWomen = extend(PgWomenDesign)(
   // Constructor
   function(_super) {

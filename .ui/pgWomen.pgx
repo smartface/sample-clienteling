@@ -17,7 +17,7 @@
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
 					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
@@ -32,8 +32,8 @@
 					"ea77-2fe7-11f8-e93a",
 					"ecbb-8e1d-1438-6d78"
 				],
-				"width": 345,
-				"height": 554.76
+				"width": 613.64,
+				"height": 286.12
 			}
 		},
 		{
@@ -477,11 +477,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 1,
+					"flexProps": 1.4
 				},
 				"marginLeft": 20,
 				"marginRight": 20,
-				"marginTop": null,
+				"marginTop": 5,
 				"name": "flInfo",
 				"parent": "96f5-dfac-ba99-0fbc",
 				"children": [
@@ -588,11 +589,11 @@
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
+				"maxHeight": 25,
+				"minHeight": null,
 				"name": "lblProductName",
 				"parent": "e5ff-9c12-29bb-8455",
-				"children": [],
-				"maxHeight": 25,
-				"minHeight": null
+				"children": []
 			}
 		},
 		{
@@ -648,10 +649,10 @@
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
+				"maxHeight": 15,
 				"name": "lblProductDetail",
 				"parent": "e5ff-9c12-29bb-8455",
-				"children": [],
-				"maxHeight": 15
+				"children": []
 			}
 		},
 		{
@@ -707,10 +708,10 @@
 				"left": null,
 				"top": null,
 				"usePageVariable": true,
+				"maxHeight": 30,
 				"name": "lblProductPrice",
 				"parent": "e5ff-9c12-29bb-8455",
-				"children": [],
-				"maxHeight": 30
+				"children": []
 			}
 		},
 		{
@@ -720,7 +721,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgWomen-flSwipe"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flSwipe",
 			"props": {
 				"height": null,
@@ -743,13 +746,14 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxWidth": null,
-				"maxHeight": 359,
-				"paddingLeft": 20,
-				"paddingRight": 20,
+				"maxWidth": 225,
+				"maxHeight": null,
+				"paddingLeft": 5,
+				"paddingRight": 5,
 				"name": "flSwipe",
 				"parent": "96f5-dfac-ba99-0fbc",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -778,9 +782,9 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "COLUMN_REVERSE",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 4
 				},
 				"name": "flPart2",
 				"parent": "ecbb-8e1d-1438-6d78",
@@ -814,7 +818,7 @@
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
+					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
@@ -879,10 +883,10 @@
 				},
 				"text": "ABOUT ITEM",
 				"marginLeft": null,
+				"maxHeight": 30,
 				"name": "lblAbout",
 				"parent": "8923-f436-4f29-8628",
-				"children": [],
-				"maxHeight": 30
+				"children": []
 			}
 		},
 		{
@@ -983,10 +987,10 @@
 				"top": 0,
 				"usePageVariable": true,
 				"marginTop": 5,
+				"maxHeight": 22,
 				"name": "lblMaterial",
 				"parent": "8923-f436-4f29-8628",
-				"children": [],
-				"maxHeight": 22
+				"children": []
 			}
 		},
 		{
@@ -1041,10 +1045,10 @@
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
+				"maxHeight": 22,
 				"name": "lblSize",
 				"parent": "8923-f436-4f29-8628",
-				"children": [],
-				"maxHeight": 22
+				"children": []
 			}
 		},
 		{
@@ -1099,10 +1103,10 @@
 				"left": null,
 				"top": null,
 				"usePageVariable": true,
+				"maxHeight": 22,
 				"name": "lblColor",
 				"parent": "8923-f436-4f29-8628",
-				"children": [],
-				"maxHeight": 22
+				"children": []
 			}
 		},
 		{
@@ -1154,14 +1158,14 @@
 				"usePageVariable": true,
 				"paddingTop": 10,
 				"paddingBottom": 8,
+				"maxHeight": 35,
 				"name": "flColorButtons",
 				"parent": "8923-f436-4f29-8628",
 				"children": [
 					"254e-e23b-acfd-835e",
 					"f90e-6a9a-deb1-19bf",
 					"0b06-0f15-17a5-af1c"
-				],
-				"maxHeight": 35
+				]
 			}
 		},
 		{
@@ -1321,8 +1325,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"maxHeight": null,
-				"maxWidth": null,
+				"maxHeight": 0,
+				"maxWidth": 0,
 				"name": "flLine2",
 				"parent": "8923-f436-4f29-8628",
 				"children": []
@@ -1352,7 +1356,7 @@
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "CENTER",
-					"justifyContent": "SPACE_BETWEEN",
+					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -1406,9 +1410,9 @@
 					"flexGrow": 1
 				},
 				"marginRight": null,
-				"text": "ADD TO CART",
 				"marginTop": null,
 				"marginBottom": null,
+				"text": "ADD TO CART",
 				"maxWidth": 150,
 				"name": "btnAddToCard",
 				"parent": "cc0d-ebda-8532-d694",
@@ -1457,11 +1461,11 @@
 					"flexGrow": 1
 				},
 				"marginLeft": 10,
-				"text": "QUICK ORDER",
 				"marginTop": null,
+				"marginBottom": null,
+				"text": "QUICK ORDER",
 				"bottom": null,
 				"marginRight": null,
-				"marginBottom": null,
 				"maxWidth": 150,
 				"name": "btnQuickOrder",
 				"parent": "cc0d-ebda-8532-d694",
