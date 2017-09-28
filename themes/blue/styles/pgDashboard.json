@@ -33,6 +33,9 @@
         "flexDirection": "COLUMN",
         "positionType": "RELATIVE",
         "flexGrow": 1
+      },
+      "+page:Screen.width > 1000 || (Screen.width > 450 && Screen.width < Screen.height)": {
+        "layoutHeight": 750
       }
     },
     ".flItem": {
@@ -60,8 +63,14 @@
       "marginBottom": 20.5,
       "minWidth": 240,
       "maxWidth": 600,
+      "+page:Screen.width > 450": {
+        "minWidth": 400
+      },
       ".small": {
-        "height": 119.25
+        "height": 119.25,
+        "+page:Screen.width > 450": {
+          "minWidth": 400
+        }
       }
     },
     ".infoPart1": {
