@@ -101,8 +101,8 @@
 				"pgCustomerProfile-flThird-ReserveIndicates": "#pgCustomerProfile-flThird-ReserveIndicates",
 				"pgCustomerProfile-flThird-ReserveIndicates-divider": "#pgCustomerProfile-flThird-ReserveIndicates-divider",
 				"pgCustomerProfile-flScecond-infoPart-flColor": "#pgCustomerProfile-flSecond-infoPart-flColor",
-				"pgShoppingBag-FlcontinuButton": ".flexLayout-pgShoppingBagFlContinueButton"
-
+				"pgShoppingBag-FlcontinuButton": ".flexLayout-pgShoppingBagFlContinueButton",
+				"stepper-flButtons": "#stepper-flButtons"
 			}
 		},
 		"ScrollView": {
@@ -126,7 +126,8 @@
 				"Default": ".imageView",
 				"Auto Size": ".imageView",
 				"pgMainLookbook-Women": "#pgMainLookbook.imgWomen",
-				"pgMainLookbook-Men": "#pgMainLookbook.imgMen"
+				"pgMainLookbook-Men": "#pgMainLookbook.imgMen",
+				"stepper-flButtons-imgButton": "#stepper-flButtons-imgButton"
 			}
 		},
 		"Label": {
@@ -159,7 +160,8 @@
 				"pgCustomerProfile-Recent": "#pgCustomerProfile.lblRecent",
 				"pgCustomerProfile-scoreITem-title": "#scoreItem-title",
 				"pgCustomerProfile-scoreITem-text": "#scoreItem-text",
-				"pgCustomerProfile-flScecond-infoPart-itemText": "#pgCustomerProfile-flSecond-infoPart-itemText"
+				"pgCustomerProfile-flScecond-infoPart-itemText": "#pgCustomerProfile-flSecond-infoPart-itemText",
+				"stepper-label": "#stepper-label"
 			}
 		},
 		"ListView": {

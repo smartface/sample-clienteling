@@ -543,12 +543,13 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 6.756756756756757,
-				"top": 21.62162162162162,
+				"left": null,
+				"top": null,
 				"width": 359.4594594594595,
 				"height": 191.8918918918919,
 				"flexProps": {
-					"flexDirection": "ROW"
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER"
 				}
 			},
 			"className": ".listViewItem",
@@ -567,13 +568,13 @@
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
+					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 6.756756756756757,
-				"top": 21.62162162162162,
+				"left": null,
+				"top": null,
 				"name": "flShoppingBagItem",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -5919,10 +5920,10 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 104.05405405405405,
-				"top": 408.1081081081081,
-				"width": 60.810810810810814,
-				"height": 55.4054054054054,
+				"left": 179.72972972972974,
+				"top": 413.51351351351354,
+				"width": 74.32432432432432,
+				"height": 93.24324324324324,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "CENTER",
@@ -5931,8 +5932,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 55.4054054054054,
-				"width": 60.810810810810814,
+				"height": 93.24324324324324,
+				"width": 74.32432432432432,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -5950,8 +5951,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 104.05405405405405,
-				"top": 408.1081081081081,
+				"left": 179.72972972972974,
+				"top": 413.51351351351354,
 				"name": "stepper",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -5968,27 +5969,13 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "stepper-flButtons"
 			},
-			"userProps": {
-				"height": null,
-				"width": null,
-				"maxWidth": 50,
-				"top": null,
-				"paddingTop": 2,
-				"paddingBottom": 2,
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH",
-					"alignItems": "CENTER",
-					"alignContent": "STRETCH",
-					"justifyContent": "SPACE_BETWEEN"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
 			"props": {
-				"height": null,
-				"width": null,
+				"height": 45,
+				"width": 30,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -5997,26 +5984,26 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "STRETCH",
+					"alignSelf": "CENTER",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
+					"alignItems": "STRETCH",
 					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxWidth": 50,
+				"maxHeight": 45,
+				"maxWidth": 60,
+				"paddingTop": 8,
+				"paddingBottom": 8,
 				"name": "flButtons",
 				"parent": "6015-add5-c15e-d9f3",
 				"children": [
 					"8629-390f-2cc6-386e",
 					"bf4a-13b3-43aa-9e23"
-				],
-				"top": null,
-				"paddingTop": 2,
-				"paddingBottom": 2
+				]
 			}
 		},
 		{
@@ -6027,25 +6014,15 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "stepper-label"
 			},
 			"userProps": {
-				"width": 30,
-				"height": 30,
-				"text": "2",
-				"textAlignment": "MIDCENTER",
-				"flexProps": {
-					"alignSelf": "CENTER",
-					"flexGrow": null
-				},
-				"font": {
-					"size": 14
-				}
+				"text": "2"
 			},
-			"className": ".label",
+			"className": ".label #stepper-label",
 			"props": {
-				"width": 30,
-				"height": 30,
+				"width": 20,
+				"height": 20,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
@@ -6064,7 +6041,7 @@
 				"flexProps": {
 					"alignSelf": "CENTER",
 					"positionType": "RELATIVE",
-					"flexGrow": null
+					"flexGrow": 1
 				},
 				"text": "2",
 				"name": "label1",
@@ -6079,23 +6056,13 @@
 				"page": "__library__"
 			},
 			"themeProps": {
-				"Sizes": "Default"
+				"Sizes": "stepper-flButtons-imgButton"
 			},
 			"userProps": {
-				"width": 14,
-				"height": 10,
-				"image": "downTriangle.png",
-				"imageFillType": "ASPECTFIT",
-				"bottom": null,
-				"top": null,
-				"maxHeight": 20,
-				"maxWidth": 20,
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				}
+				"image": "downTriangle.png"
 			},
-			"className": ".imageView",
+			"className": ".imageView #stepper-flButtons-imgButton",
 			"props": {
 				"width": 14,
 				"height": 10,
@@ -6108,16 +6075,14 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "CENTER",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "downTriangle.png",
-				"bottom": null,
-				"top": null,
-				"maxHeight": 20,
-				"maxWidth": 20,
+				"maxWidth": 14,
+				"maxHeight": 10,
 				"usePageVariable": true,
+				"image": "downTriangle.png",
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
@@ -6131,22 +6096,13 @@
 				"page": "__library__"
 			},
 			"themeProps": {
-				"Sizes": "Default"
+				"Sizes": "stepper-flButtons-imgButton"
 			},
 			"userProps": {
-				"width": 14,
-				"height": 10,
-				"image": "upTriangle.png",
-				"imageFillType": "ASPECTFIT",
-				"maxHeight": 20,
-				"maxWidth": 20,
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "AUTO"
-				}
+				"image": "upTriangle.png"
 			},
-			"className": ".imageView",
+			"className": ".imageView #stepper-flButtons-imgButton",
 			"props": {
 				"width": 14,
 				"height": 10,
@@ -6159,14 +6115,14 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "CENTER",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "upTriangle.png",
-				"maxHeight": 20,
-				"maxWidth": 20,
+				"maxWidth": 14,
+				"maxHeight": 10,
 				"usePageVariable": true,
+				"image": "upTriangle.png",
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
@@ -6184,11 +6140,11 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "stepper-flButtons"
 			},
 			"userProps": {
-				"left": 0,
-				"top": 0,
+				"left": null,
+				"top": null,
 				"width": 63,
 				"height": 45,
 				"maxHeight": 45,
@@ -6198,13 +6154,16 @@
 				"borderColor": "rgba( 151, 151, 151, 1 )",
 				"id": 211,
 				"maxWidth": 63,
+				"paddingBottom": null,
+				"paddingTop": null,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "CENTER",
-					"alignItems": "STRETCH",
+					"alignItems": "CENTER",
 					"positionType": "RELATIVE",
 					"flexGrow": 1,
-					"alignSelf": "CENTER"
+					"alignSelf": "CENTER",
+					"alignContent": "CENTER"
 				},
 				"flex": {
 					"flexDirection": 2,
@@ -6213,7 +6172,7 @@
 					"positionType": 0
 				}
 			},
-			"className": ".flexLayout .flexLayout-default",
+			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
 			"props": {
 				"height": 45,
 				"width": 63,
@@ -6227,21 +6186,23 @@
 				"flexProps": {
 					"alignSelf": "CENTER",
 					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
+					"alignContent": "CENTER",
+					"alignItems": "CENTER",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"left": 0,
-				"top": 0,
 				"maxHeight": 45,
+				"maxWidth": 63,
+				"paddingTop": null,
+				"paddingBottom": null,
+				"left": null,
+				"top": null,
 				"usePageVariable": true,
 				"marginTop": 28,
 				"id": 211,
-				"maxWidth": 63,
 				"name": "stepper",
 				"parent": "7fe9-cc6a-23d3-446a",
 				"children": []

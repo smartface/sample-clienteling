@@ -1,0 +1,55 @@
+{
+    "#stepper": {
+        "width": 63,
+        "height": 45,
+        "maxWidth": 63,
+        "maxHeight": 45,
+        "flexProps": {
+            "alignItems": "CENTER",
+            "alignContent": "STRETCH",
+            "flexDirection": "ROW",
+            "justifyContent": "CENTER"
+        },
+        "&-label": {
+            "height": 20,
+            "width": 20,
+            "textAlignment": "MIDCENTER",
+            "flexProps": {
+                "flexGrow": 1,
+                "alignSelf": "CENTER"
+            },
+            "font": {
+                "family": "Lato",
+                "size": 14
+            }
+        },
+        "&-flButtons": {
+            "width": 30,
+            "height": 45,
+            "maxHeight": 45,
+            "maxWidth": 60,
+            "paddingTop": 8,
+            "paddingBottom": 8,
+            "flexProps": {
+                "flexGrow": 1,
+                "justifyContent": "SPACE_BETWEEN",
+                "alignItems": "STRETCH",
+                "alignContent": "STRETCH",
+                "flexDirection": "COLUMN",
+                "alignSelf": "CENTER"
+            },
+            "&-imgButton": {
+                "width": 14,
+                "height": 10,
+                "maxWidth": 14,
+                "maxHeight": 10,
+                "imageFillType": "ASPECTFIT",
+                "flexProps": {
+                    "flexGrow": 1,
+                    "alignSelf": "CENTER"
+                }
+            }
+        }
+
+    }
+}
