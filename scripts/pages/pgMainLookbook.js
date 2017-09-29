@@ -10,8 +10,6 @@ const PgMainLookbook = extend(PgMainLookbookDesign)(
     
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    console.log("PgMainLookbook")
-
     pageContextPatch(this, "pgMainLookbook");
   });
   

@@ -28,6 +28,37 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
+  superOnLoad();
+
+  var myDataSet = [{
+    title: 'Title 1'
+  }, {
+    title: 'Title 2'
+  }, {
+    title: 'Title 3'
+  }, {
+    title: 'Title 4'
+  }, {
+    title: 'Title 5'
+  }, {
+    title: 'Title 6'
+  }, {
+    title: 'Title 7'
+  }, {
+    title: 'Title 8'
+  }, {
+    title: 'Title 9'
+  }];
+
+
+  this.lvShoppingBag.itemCount = myDataSet.length;
+  this.lvShoppingBag.onRowBind = function(listViewItem, index) {
+    var shoppingBagItem = listViewItem.shoppingBagItem;
+    var detail = shoppingBagItem.lblDetail;
+    var size = shoppingBagItem.lblSize;
+    var color = shoppingBagItem.lblColor;
+    detail.text = myDataSet[index].title;
+  };
 }
 
 module && (module.exports = PgShoppingBag);

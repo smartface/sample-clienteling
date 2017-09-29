@@ -47,6 +47,7 @@ Router.add("pgMainLookbook", require("./pages/pgMainLookbook"), true);
 Router.add("pgLookbook", require("./pages/pgLookbook"), true);
 Router.add("pgWomen", require("./pages/pgWomen"), true);
 Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
+Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
 
 
 if (Screen.width < 450) {
@@ -59,3 +60,6 @@ if (System.OS === "Android") {
     sliderDrawer = require("./sliderDrawer");
     Router.sliderDrawer = sliderDrawer;
 }
+
+
+
