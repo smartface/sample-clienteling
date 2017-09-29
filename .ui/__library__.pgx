@@ -47,8 +47,8 @@
 					"6e4d-ec19-d1be-e8f5",
 					"c835-c323-179b-387a"
 				],
-				"width": 345,
-				"height": 613.64
+				"width": 476.92800000000005,
+				"height": 635.904
 			}
 		},
 		{
@@ -155,6 +155,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 101,
 				"flexProps": {
 					"flexGrow": 5
 				}
@@ -181,6 +182,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 5
 				},
+				"id": 101,
 				"name": "flPreview",
 				"parent": "4a13-68fd-e0c7-dcfd",
 				"children": [
@@ -201,6 +203,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 100,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -227,6 +230,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"id": 100,
 				"name": "flInfo",
 				"parent": "4a13-68fd-e0c7-dcfd",
 				"children": [
@@ -289,6 +293,7 @@
 				"width": null,
 				"height": null,
 				"bottom": null,
+				"id": 103,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -316,6 +321,7 @@
 					"flexGrow": 2
 				},
 				"bottom": null,
+				"id": 103,
 				"name": "flName",
 				"parent": "fc33-df7a-68a8-cf3c",
 				"children": [
@@ -337,6 +343,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 102,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -363,6 +370,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 102,
 				"name": "flPrice",
 				"parent": "fc33-df7a-68a8-cf3c",
 				"children": [
@@ -386,6 +394,7 @@
 				"textAlignment": "BOTTOMCENTER",
 				"marginBottom": 5,
 				"text": "NAME",
+				"id": 106,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -416,7 +425,7 @@
 				},
 				"marginBottom": 5,
 				"text": "NAME",
-				"id": 105,
+				"id": 106,
 				"usePageVariable": true,
 				"name": "lblName",
 				"parent": "550f-3e5a-5bf7-19f8",
@@ -434,6 +443,7 @@
 				"Implementation": "Line"
 			},
 			"userProps": {
+				"id": 105,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				}
@@ -459,6 +469,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"id": 105,
 				"name": "flLine",
 				"parent": "550f-3e5a-5bf7-19f8",
 				"children": []
@@ -479,6 +490,7 @@
 				"height": null,
 				"textAlignment": "MIDCENTER",
 				"text": "$10.00",
+				"id": 104,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -511,7 +523,7 @@
 					"flexGrow": 1
 				},
 				"text": "$10.00",
-				"id": 102,
+				"id": 104,
 				"usePageVariable": true,
 				"name": "lblPrice",
 				"parent": "0fc5-59b6-389a-1f19",
@@ -610,6 +622,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 5
 				},
+				"id": 103,
 				"name": "flProductDetail",
 				"parent": "5be9-8547-09ac-6568",
 				"children": [
@@ -657,6 +670,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"id": 102,
 				"name": "flQuantity",
 				"parent": "5be9-8547-09ac-6568",
 				"children": [
@@ -705,6 +719,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"id": 101,
 				"name": "flPrice",
 				"parent": "5be9-8547-09ac-6568",
 				"children": [
@@ -751,6 +766,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"id": 100,
 				"name": "flTotal",
 				"parent": "5be9-8547-09ac-6568",
 				"children": [
@@ -798,6 +814,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 207,
 				"name": "flImage",
 				"parent": "ca15-df69-0936-4de4",
 				"children": [
@@ -846,6 +863,7 @@
 					"flexGrow": 1
 				},
 				"paddingLeft": 30,
+				"id": 206,
 				"name": "flInfo",
 				"parent": "ca15-df69-0936-4de4",
 				"children": [
@@ -888,6 +906,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 310,
 				"name": "imageView1",
 				"parent": "dc3e-edb9-e2e4-8e2a",
 				"children": []
@@ -935,6 +954,8 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Farlap Dress Sleve Top",
+				"usePageVariable": true,
+				"id": 309,
 				"name": "lblDetail",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
@@ -982,6 +1003,8 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Size: M",
+				"usePageVariable": true,
+				"id": 308,
 				"name": "lblSize",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
@@ -1029,6 +1052,8 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Color: Light Blue",
+				"usePageVariable": true,
+				"id": 307,
 				"name": "lblColor",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
@@ -1073,6 +1098,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 205,
 				"name": "flPart1",
 				"parent": "7fe9-cc6a-23d3-446a",
 				"children": []
@@ -1119,6 +1145,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 204,
 				"name": "flPart2",
 				"parent": "7fe9-cc6a-23d3-446a",
 				"children": [
@@ -1166,6 +1193,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 203,
 				"name": "flPart3",
 				"parent": "7fe9-cc6a-23d3-446a",
 				"children": []
@@ -1218,6 +1246,7 @@
 					"flexGrow": null
 				},
 				"text": "REMOVE",
+				"id": 305,
 				"name": "lblRemove",
 				"parent": "4c1d-c211-7132-b627",
 				"children": []
@@ -1263,6 +1292,7 @@
 					"flexGrow": null
 				},
 				"marginLeft": 40,
+				"id": 304,
 				"name": "flLine",
 				"parent": "4c1d-c211-7132-b627",
 				"children": []
@@ -1315,6 +1345,7 @@
 					"flexGrow": 1
 				},
 				"text": "$ 100",
+				"id": 202,
 				"name": "label1",
 				"parent": "b1ab-98b8-a397-600b",
 				"children": []
@@ -1359,6 +1390,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 201,
 				"name": "flPart1",
 				"parent": "24ab-80f5-ac48-bed9",
 				"children": [
@@ -1407,6 +1439,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 200,
 				"name": "flPart2",
 				"parent": "24ab-80f5-ac48-bed9",
 				"children": [
@@ -1507,6 +1540,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 300,
 				"name": "flEdit",
 				"parent": "f891-13be-4263-5601",
 				"children": [
@@ -1555,6 +1589,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"id": 301,
 				"name": "flSaveForLater",
 				"parent": "f891-13be-4263-5601",
 				"children": [
@@ -1610,6 +1645,7 @@
 					"flexGrow": null
 				},
 				"text": "EDIT",
+				"id": 403,
 				"name": "lblRemove",
 				"parent": "6fa3-2ffa-0776-6e76",
 				"children": []
@@ -1654,6 +1690,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"id": 402,
 				"marginLeft": 50,
 				"name": "flLine",
 				"parent": "6fa3-2ffa-0776-6e76",
@@ -1707,6 +1744,7 @@
 					"flexGrow": null
 				},
 				"text": "SAVE FOR LATER",
+				"id": 401,
 				"name": "lblRemove",
 				"parent": "c14d-097c-e3ee-d53b",
 				"children": []
@@ -1751,6 +1789,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"id": 400,
 				"marginLeft": 15,
 				"name": "flLine",
 				"parent": "c14d-097c-e3ee-d53b",
@@ -1855,6 +1894,8 @@
 				},
 				"left": null,
 				"top": null,
+				"usePageVariable": true,
+				"id": 1000,
 				"name": "shoppingBagItem",
 				"parent": "e30a-e6af-e075-a2b5",
 				"children": []
@@ -2514,7 +2555,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "c4c5-2c0a-4dd1-7152",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -2612,7 +2653,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.54&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -3351,7 +3392,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.54&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -4580,7 +4621,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.54&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -5682,8 +5723,8 @@
 			"userProps": {
 				"width": 314.1304347826087,
 				"height": 163.04347826086956,
-				"left": 38.04347826086956,
-				"top": 495.65217391304344,
+				"left": 357.4074074074074,
+				"top": 440.7407407407407,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"

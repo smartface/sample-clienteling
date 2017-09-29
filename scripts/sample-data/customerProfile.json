@@ -1,0 +1,146 @@
+{
+    "info": {
+        "name": "Anna",
+        "lastName": "",
+        "fullName": "Anna",
+        "job": "Architect"
+    },
+    "traits": {
+        "engamentScore": 50,
+        "loyalityPoints": 350,
+        "joined": "2017-06-15T00:00:00.000Z",
+        "spendsPerVisit": {
+            "amount": 250,
+            "currency": "$"
+        },
+        "lastPurchase": "2017-06-26T00:00:00.000Z",
+        "preferedStore": "London",
+        "mostLikedBrands": [
+            "London Convert", "Nike"
+        ],
+        "interests": [
+            "Art & Culture",
+            "Style"
+        ],
+        "mostLikedColors": [{
+                "name": "white",
+                "code": "#D8D8D8"
+            },
+            {
+                "name": "red",
+                "code": "#DF0909"
+            },
+            {
+                "name": "purple",
+                "code": "#B68AF7"
+            }
+        ]
+    },
+    "wardrobe": [{
+        "productId": "D56362",
+        "name": "Lavender Handbag",
+        "price": {
+            "amount": 125,
+            "currency": "$"
+        },
+        "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56362.png"
+    }],
+    "recentActivities": [{
+        "date": "2017-12-03T00:00:00.000Z",
+        "action": "Email Sent: Invite to try wishlist"
+    }, {
+        "date": "2017-12-03T00:00:00.000Z",
+        "action": "Email Sent: Invite to try wishlist"
+    }, {
+        "date": "2017-10-05T00:00:00.000Z",
+        "action": "Shared wishlist on Facebook"
+    }, {
+        "date": "2017-10-05T00:00:00.000Z",
+        "action": "Shared wishlist on Facebook"
+    }, {
+        "date": "2017-10-05T00:00:00.000Z",
+        "action": "Shared wishlist on Facebook"
+    }],
+    "reservations": [{
+        "status": "In Transit",
+        "type": "Online Order",
+        "date": "2017-12-03T00:00:00.000Z"
+    }],
+    "openIncidents": [{
+        "status": "Open",
+        "name": "How to clean dirty dress",
+        "date": "2017-12-03T00:00:00.000Z"
+    }],
+    "relevantDates": [{
+        "date": "2017-12-03T00:00:00.000Z",
+        "name": "Birthday"
+    }, {
+        "date": "2017-07-04T00:00:00.000Z",
+        "name": "Marriage"
+    }],
+    "loyalityRewards": [{
+        "name": "In Store event invition"
+    }],
+    "whishlist": [{
+            "productId": "D56363",
+            "name": "Lavender Hat",
+            "price": {
+                "amount": 65,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56363.png"
+        },
+        {
+            "productId": "D56363",
+            "name": "Funfury Bag",
+            "price": {
+                "amount": 89,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56356.png"
+        },
+        {
+            "productId": "D56363",
+            "name": "Burberry Sunglasses",
+            "price": {
+                "amount": 225,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D563629.png"
+        },
+        {
+            "productId": "D56364",
+            "name": "Seven Red Dress",
+            "price": {
+                "amount": 109,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56364.png"
+        },
+        {
+            "productId": "D56365",
+            "name": "Seven Bl",
+            "price": {
+                "amount": 109,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56365.png"
+        }
+    ],
+    "storeRecommendations": [{
+        "productId": "D5544",
+        "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D5544.png"
+    }, {
+        "productId": "D7444",
+        "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D7444.png"
+    }, {
+        "productId": "D8756",
+        "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D8756.png"
+    }, {
+        "productId": "D3577",
+        "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D3577.png"
+    }, {
+        "productId": "D2449",
+        "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D2449.png"
+    }]
+}

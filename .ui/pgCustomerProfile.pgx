@@ -221,7 +221,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flFirst-flInfo-profile"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flInfo_profile",
 			"props": {
 				"height": null,
@@ -245,6 +247,7 @@
 					"flexGrow": 1
 				},
 				"marginLeft": null,
+				"usePageVariable": true,
 				"name": "profileHeader",
 				"parent": "3640-7aea-3077-187c",
 				"children": []
@@ -470,11 +473,11 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxHeight": 159,
+				"maxHeight": 41,
 				"usePageVariable": true,
 				"name": "infoPart2",
 				"parent": "b9d8-3483-810d-b40b",
@@ -502,7 +505,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoItem"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
 			"props": {
 				"height": null,
@@ -528,7 +533,8 @@
 				"maxHeight": 38,
 				"name": "mostLikedColors",
 				"parent": "0d20-beab-712a-5aaa",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -544,7 +550,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoItem"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
 			"props": {
 				"height": null,
@@ -570,7 +578,8 @@
 				"maxHeight": 38,
 				"name": "interest",
 				"parent": "0d20-beab-712a-5aaa",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -627,7 +636,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoItem"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
 			"props": {
 				"height": null,
@@ -653,7 +664,8 @@
 				"maxHeight": 38,
 				"name": "brands",
 				"parent": "0d20-beab-712a-5aaa",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -669,7 +681,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoItem"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
 			"props": {
 				"height": null,
@@ -695,7 +709,8 @@
 				"maxHeight": 38,
 				"name": "job",
 				"parent": "0d20-beab-712a-5aaa",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -807,11 +822,11 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxHeight": 159,
+				"maxHeight": 41,
 				"usePageVariable": true,
 				"name": "infoPart1",
 				"parent": "b9d8-3483-810d-b40b",
@@ -960,7 +975,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoItem"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
 			"props": {
 				"height": null,
@@ -984,6 +1001,7 @@
 					"flexGrow": 1
 				},
 				"maxHeight": 38,
+				"usePageVariable": true,
 				"name": "store",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1002,7 +1020,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoItem"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
 			"props": {
 				"height": null,
@@ -1026,6 +1046,7 @@
 					"flexGrow": 1
 				},
 				"maxHeight": 38,
+				"usePageVariable": true,
 				"name": "joined",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1044,7 +1065,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoItem"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
 			"props": {
 				"height": null,
@@ -1068,6 +1091,7 @@
 					"flexGrow": 1
 				},
 				"maxHeight": 38,
+				"usePageVariable": true,
 				"name": "perVisit",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1086,7 +1110,9 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoItem"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
 			"props": {
 				"height": null,
@@ -1110,6 +1136,7 @@
 					"flexGrow": 1
 				},
 				"maxHeight": 38,
+				"usePageVariable": true,
 				"name": "lastPurchase",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1368,7 +1395,7 @@
 				},
 				"text": "50",
 				"usePageVariable": true,
-				"name": "number",
+				"name": "lblLoyaltyPoints",
 				"parent": "fc8f-b7a1-5541-54ce",
 				"children": []
 			}
@@ -1381,7 +1408,7 @@
 				"Implementation": "pgCustomerProfile-scoreITem-text"
 			},
 			"userProps": {
-				"text": "ENGAGEMENT \nSCORE",
+				"text": "LOYALTY POINTS",
 				"usePageVariable": true
 			},
 			"className": ".label #scoreItem-text",
@@ -1408,7 +1435,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"text": "ENGAGEMENT \nSCORE",
+				"text": "LOYALTY POINTS",
 				"usePageVariable": true,
 				"name": "text",
 				"parent": "fc8f-b7a1-5541-54ce",
@@ -1495,7 +1522,7 @@
 				},
 				"text": "50",
 				"usePageVariable": true,
-				"name": "number",
+				"name": "lblEngagementScore",
 				"parent": "fa1b-4584-b58e-a9d2",
 				"children": []
 			}
