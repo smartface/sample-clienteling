@@ -36,8 +36,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 613.64,
-				"height": 286.12
+				"width": 667,
+				"height": 311
 			}
 		},
 		{
@@ -311,6 +311,7 @@
 		{
 			"type": "ScrollView",
 			"id": "36a5-0dc7-ccb7-576d",
+			"hiddenComponent": false,
 			"themeProps": {
 				"Sizes": "Default",
 				"Implementation": "Default"
@@ -359,6 +360,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "aff8-f57b-2780-9681",
+			"hiddenComponent": false,
 			"themeProps": {
 				"Sizes": "Default",
 				"Implementation": "Default"
@@ -408,6 +410,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "b9d8-3483-810d-b40b",
+			"hiddenComponent": false,
 			"themeProps": {
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flSecond"
@@ -448,6 +451,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "0d20-beab-712a-5aaa",
+			"hiddenComponent": false,
 			"themeProps": {
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoPart"
@@ -587,15 +591,10 @@
 			"id": "e6e7-5d20-5da1-9572",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Line"
+				"Implementation": "pgCustomerProfile-flScecond-divider"
 			},
-			"userProps": {
-				"width": null,
-				"left": 0,
-				"top": 0,
-				"height": 1
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
 				"height": 1,
 				"width": null,
@@ -616,8 +615,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"left": 0,
-				"top": 0,
+				"maxHeight": 1,
 				"name": "divider_4_1_1",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -690,7 +688,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 253, 10, 10, 0 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -718,14 +716,10 @@
 			"id": "9c97-125d-ca0e-15a0",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Line"
+				"Implementation": "pgCustomerProfile-flScecond-divider"
 			},
-			"userProps": {
-				"width": null,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
 				"height": 1,
 				"width": null,
@@ -746,8 +740,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"left": 0,
-				"top": 0,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_1",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -758,14 +751,10 @@
 			"id": "286c-6bc5-c03e-0e86",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Line"
+				"Implementation": "pgCustomerProfile-flScecond-divider"
 			},
-			"userProps": {
-				"width": null,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
 				"height": 1,
 				"width": null,
@@ -786,8 +775,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"left": 0,
-				"top": 0,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_2",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -847,14 +835,10 @@
 			"id": "ed0b-fc5b-6aa3-9d8d",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Line"
+				"Implementation": "pgCustomerProfile-flScecond-divider"
 			},
-			"userProps": {
-				"width": null,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
 				"height": 1,
 				"width": null,
@@ -875,8 +859,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"left": 0,
-				"top": 0,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_2",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -887,14 +870,10 @@
 			"id": "cdbb-95a0-e66f-b63a",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Line"
+				"Implementation": "pgCustomerProfile-flScecond-divider"
 			},
-			"userProps": {
-				"width": null,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
 				"height": 1,
 				"width": null,
@@ -915,8 +894,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"left": 0,
-				"top": 0,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_1",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -927,14 +905,10 @@
 			"id": "ec87-1f70-1bcd-ce56",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Line"
+				"Implementation": "pgCustomerProfile-flScecond-divider"
 			},
-			"userProps": {
-				"width": null,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
 				"height": 1,
 				"width": null,
@@ -955,8 +929,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"left": 0,
-				"top": 0,
+				"maxHeight": 1,
 				"name": "divider_4_1_1",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1145,16 +1118,13 @@
 		{
 			"type": "FlexLayout",
 			"id": "6ff3-5916-9c61-c4a3",
+			"hiddenComponent": false,
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Line"
+				"Implementation": "pgCustomerProfile-flScecond-divider"
 			},
-			"userProps": {
-				"width": null,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
 				"height": 1,
 				"width": null,
@@ -1175,8 +1145,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"left": 0,
-				"top": 0,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_3",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1218,7 +1187,7 @@
 					"flexGrow": 1
 				},
 				"marginTop": 2,
-				"name": "flButtons_1",
+				"name": "flButtons",
 				"parent": "3166-df70-5cd8-82e8",
 				"children": [
 					"4b6c-7e4a-e60c-4a77",
@@ -6637,6 +6606,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "7dd3-a673-d522-5983",
+			"hiddenComponent": false,
 			"themeProps": {
 				"Sizes": "Default",
 				"Implementation": "Default"

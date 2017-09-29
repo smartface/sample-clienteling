@@ -6,6 +6,10 @@
 			"width": 200
 		},
 		"&-line": {
+			"width": 0,
+			"flexProps": {
+				"flexGrow": 0
+			},
 			"height": 1,
 			"alpha": 0.1,
 			"backgroundColor": "#1D1D26"

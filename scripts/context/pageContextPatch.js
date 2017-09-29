@@ -42,6 +42,7 @@ module.exports = function pageContextPatch(page, name){
 
       this.layout.applyLayout();
     }.bind(this), 1);
+    
   };
   
   page.setContextDispatcher = function(dispatcher) {
