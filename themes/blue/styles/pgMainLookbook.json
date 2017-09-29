@@ -253,9 +253,9 @@
         "flexGrow": 1
       },
       "imageFillType": "STRETCH",
-      "image": "pgMainLookbook_women_vertical.png",
+      "image": "pgmainlookbook_women_vertical.png",
       "+page:Screen.width > 450": {
-        "image": "pgMainLookbook_women_horizontal.png"
+        "image": "pgmainlookbook_women_horizontal.png"
       }
     },
     ".imgMen": {
@@ -265,9 +265,9 @@
         "flexGrow": 1
       },
       "imageFillType": "STRETCH",
-      "image": "pgMainLookbook_men_vertical.png",
+      "image": "pgmainlookbook_men_vertical.png",
       "+page:Screen.width > 450": {
-        "image": "pgMainLookbook_men_horizontal.png"
+        "image": "pgmainlookbook_men_horizontal.png"
       }
     }
   }
