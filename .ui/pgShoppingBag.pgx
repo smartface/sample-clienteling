@@ -531,7 +531,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"rowHeight": 300,
+				"rowHeight": 250,
 				"itemCount": null,
 				"usePageVariable": true,
 				"flexProps": {
@@ -544,7 +544,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"multiline": false,
-				"rowHeight": 300,
+				"rowHeight": 250,
 				"itemCount": null,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -561,59 +561,8 @@
 				"name": "lvShoppingBag",
 				"parent": "d125-d864-c390-0484",
 				"children": [
-					"903c-a182-ea6c-da4b"
+					"9d40-1ab2-afbd-812a"
 				]
-			}
-		},
-		{
-			"type": "ListViewItem",
-			"id": "903c-a182-ea6c-da4b",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"id": "e30a-e6af-e075-a2b5"
-			},
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 300,
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".listViewItem",
-			"props": {
-				"height": 300,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
-				"name": "lviShoppingBagItem",
-				"parent": "0956-1b61-5add-487e",
-				"children": []
 			}
 		},
 		{
@@ -642,9 +591,10 @@
 					"alignItems": "CENTER",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
+				"marginTop": 5,
 				"marginBottom": 20,
 				"name": "flButton",
 				"parent": "d125-d864-c390-0484",
@@ -702,6 +652,62 @@
 				"name": "btnContinueShopping",
 				"parent": "e6e8-5b33-9017-7609",
 				"children": []
+			}
+		},
+		{
+			"type": "ListViewItem",
+			"id": "9d40-1ab2-afbd-812a",
+			"hiddenComponent": false,
+			"source": {
+				"page": "__library__",
+				"type": "flShoppingBagItem",
+				"id": "5be9-8547-09ac-6568"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": 250,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"flexDirection": 2,
+					"positionType": 0
+				}
+			},
+			"className": ".listViewItem",
+			"props": {
+				"height": 250,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"name": "flShoppingBagItem",
+				"parent": "0956-1b61-5add-487e",
+				"children": [],
+				"visibility": true
 			}
 		}
 	]

@@ -29,7 +29,6 @@
 					"885b-9905-5cbd-64ff",
 					"4a13-68fd-e0c7-dcfd",
 					"5be9-8547-09ac-6568",
-					"e30a-e6af-e075-a2b5",
 					"1041-55d5-cb0c-fd5f",
 					"f3c9-f72b-84ed-36d3",
 					"cb00-7eb0-f7e1-5b4e",
@@ -45,7 +44,8 @@
 					"cd86-49b6-b456-0d16",
 					"a082-f3e1-fe37-1c2c",
 					"6e4d-ec19-d1be-e8f5",
-					"c835-c323-179b-387a"
+					"c835-c323-179b-387a",
+					"6015-add5-c15e-d9f3"
 				],
 				"width": 277.5,
 				"height": 493.58
@@ -532,7 +532,7 @@
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"type": "ListViewItem",
 			"id": "5be9-8547-09ac-6568",
 			"hiddenComponent": false,
 			"source": {
@@ -543,15 +543,15 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 10.81081081081081,
-				"top": 450,
+				"left": 6.756756756756757,
+				"top": 21.62162162162162,
 				"width": 359.4594594594595,
 				"height": 191.8918918918919,
 				"flexProps": {
 					"flexDirection": "ROW"
 				}
 			},
-			"className": ".flexLayout .flexLayout-default",
+			"className": ".listViewItem",
 			"props": {
 				"height": 191.8918918918919,
 				"width": 359.4594594594595,
@@ -572,8 +572,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 10.81081081081081,
-				"top": 450,
+				"left": 6.756756756756757,
+				"top": 21.62162162162162,
 				"name": "flShoppingBagItem",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -675,7 +675,7 @@
 				"name": "flQuantity",
 				"parent": "5be9-8547-09ac-6568",
 				"children": [
-					"c48f-f49d-3e9f-042b",
+					"3184-263f-4e23-3ea3",
 					"4c1d-c211-7132-b627",
 					"aeaf-eefe-b6fa-d7cd"
 				]
@@ -836,7 +836,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"paddingLeft": 30,
+				"paddingLeft": 10,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -863,7 +863,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"paddingLeft": 30,
+				"paddingLeft": 10,
 				"id": 206,
 				"name": "flInfo",
 				"parent": "ca15-df69-0936-4de4",
@@ -886,6 +886,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"imageFillType": "ASPECTFIT",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -896,7 +897,7 @@
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"imageFillType": "NORMAL",
+				"imageFillType": "ASPECTFIT",
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -1058,53 +1059,6 @@
 				"name": "lblColor",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "c48f-f49d-3e9f-042b",
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"id": 205,
-				"name": "flStepper",
-				"parent": "7fe9-cc6a-23d3-446a",
-				"children": [],
-				"usePageVariable": true
 			}
 		},
 		{
@@ -1800,111 +1754,6 @@
 				"id": 400,
 				"name": "flLine",
 				"parent": "c14d-097c-e3ee-d53b",
-				"children": []
-			}
-		},
-		{
-			"type": "ListViewItem",
-			"id": "e30a-e6af-e075-a2b5",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"flexProps": {},
-				"left": 13.513513513513514,
-				"top": 177.02702702702703,
-				"width": 347.2972972972973,
-				"height": 252.7027027027027
-			},
-			"className": ".listViewItem",
-			"props": {
-				"height": 252.7027027027027,
-				"width": 347.2972972972973,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "ABSOLUTE"
-				},
-				"left": 13.513513513513514,
-				"top": 177.02702702702703,
-				"name": "lviShoppingBagItem",
-				"parent": "fb96-1dcf-3bb9-cd95",
-				"children": [
-					"3f7f-224f-ef6b-8495"
-				]
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "3f7f-224f-ef6b-8495",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"id": "5be9-8547-09ac-6568"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"left": null,
-				"top": null,
-				"width": null,
-				"height": null,
-				"flexProps": {
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"flex": {
-					"flexDirection": 2,
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"left": null,
-				"top": null,
-				"usePageVariable": true,
-				"id": 1000,
-				"name": "shoppingBagItem",
-				"parent": "e30a-e6af-e075-a2b5",
 				"children": []
 			}
 		},
@@ -5738,8 +5587,8 @@
 			"userProps": {
 				"width": 314.1304347826087,
 				"height": 163.04347826086956,
-				"left": 24.691358024691358,
-				"top": 53.08641975308642,
+				"left": 27.027027027027028,
+				"top": 241.8918918918919,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -5767,8 +5616,8 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
-				"left": 24.691358024691358,
-				"top": 53.08641975308642,
+				"left": 27.027027027027028,
+				"top": 241.8918918918919,
 				"name": "flWardrobe",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -6050,6 +5899,336 @@
 				"name": "price",
 				"parent": "3f75-f335-7142-cf9a",
 				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "6015-add5-c15e-d9f3",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"left": 104.05405405405405,
+				"top": 408.1081081081081,
+				"width": 60.810810810810814,
+				"height": 55.4054054054054,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER",
+					"alignItems": "CENTER"
+				}
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 55.4054054054054,
+				"width": 60.810810810810814,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "ABSOLUTE"
+				},
+				"left": 104.05405405405405,
+				"top": 408.1081081081081,
+				"name": "stepper",
+				"parent": "fb96-1dcf-3bb9-cd95",
+				"children": [
+					"7d1d-2bb2-8a0a-443d",
+					"6fd8-cd8c-3fbb-f64d"
+				]
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "6fd8-cd8c-3fbb-f64d",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"maxWidth": 50,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH",
+					"alignItems": "CENTER",
+					"alignContent": "STRETCH",
+					"justifyContent": "CENTER"
+				}
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"maxWidth": 50,
+				"name": "flButtons",
+				"parent": "6015-add5-c15e-d9f3",
+				"children": [
+					"8629-390f-2cc6-386e",
+					"bf4a-13b3-43aa-9e23"
+				]
+			}
+		},
+		{
+			"type": "Label",
+			"id": "7d1d-2bb2-8a0a-443d",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"width": 30,
+				"height": 30,
+				"text": "2",
+				"textAlignment": "MIDCENTER",
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"flexGrow": null
+				},
+				"font": {
+					"size": 14
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": 30,
+				"height": 30,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#1D1D26",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"text": "2",
+				"name": "label1",
+				"parent": "6015-add5-c15e-d9f3",
+				"children": []
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "bf4a-13b3-43aa-9e23",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"width": 14,
+				"height": 10,
+				"image": "downTriangle.png",
+				"imageFillType": "ASPECTFIT",
+				"bottom": null,
+				"top": null,
+				"maxHeight": 20,
+				"maxWidth": 20,
+				"usePageVariable": true,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 14,
+				"height": 10,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"image": "downTriangle.png",
+				"bottom": null,
+				"top": null,
+				"maxHeight": 20,
+				"maxWidth": 20,
+				"usePageVariable": true,
+				"name": "down",
+				"parent": "6fd8-cd8c-3fbb-f64d",
+				"children": [],
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downTriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "8629-390f-2cc6-386e",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"width": 14,
+				"height": 10,
+				"image": "upTriangle.png",
+				"imageFillType": "ASPECTFIT",
+				"maxHeight": 20,
+				"maxWidth": 20,
+				"usePageVariable": true,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "AUTO"
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 14,
+				"height": 10,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"image": "upTriangle.png",
+				"maxHeight": 20,
+				"maxWidth": 20,
+				"usePageVariable": true,
+				"name": "up",
+				"parent": "6fd8-cd8c-3fbb-f64d",
+				"children": [],
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/upTriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "3184-263f-4e23-3ea3",
+			"hiddenComponent": false,
+			"source": {
+				"page": "__library__",
+				"type": "stepper",
+				"id": "6015-add5-c15e-d9f3"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": null,
+				"maxHeight": 45,
+				"usePageVariable": true,
+				"marginTop": 28,
+				"borderWidth": 1,
+				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"id": 211,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER",
+					"alignItems": "CENTER",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"flex": {
+					"flexDirection": 2,
+					"justifyContent": 1,
+					"alignItems": 2,
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderWidth": 1,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"left": 0,
+				"top": 0,
+				"maxHeight": 45,
+				"usePageVariable": true,
+				"marginTop": 28,
+				"name": "stepper",
+				"parent": "7fe9-cc6a-23d3-446a",
+				"children": [],
+				"id": 211
 			}
 		}
 	]
