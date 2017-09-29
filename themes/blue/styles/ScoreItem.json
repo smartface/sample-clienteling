@@ -25,6 +25,7 @@
             "textColor": "#000000",
             "textAlignment": "MIDLEFT",
             "multiline": true,
+            "maxWidth": 110,
             "font": {
                 "family": "Lato",
                 "size": 13
