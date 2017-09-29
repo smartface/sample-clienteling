@@ -47,8 +47,8 @@
 					"6e4d-ec19-d1be-e8f5",
 					"c835-c323-179b-387a"
 				],
-				"width": 311.25,
-				"height": 553.61
+				"width": 277.5,
+				"height": 493.58
 			}
 		},
 		{
@@ -451,7 +451,7 @@
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
 				"height": 1,
-				"width": 200,
+				"width": 0,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -467,7 +467,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"id": 105,
 				"name": "flLine",
@@ -533,7 +534,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "5be9-8547-09ac-6568",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -542,18 +543,18 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 122.82608695652173,
-				"top": 511.95652173913044,
-				"width": 241.26984126984127,
-				"height": 123.80952380952381,
+				"left": 10.81081081081081,
+				"top": 450,
+				"width": 359.4594594594595,
+				"height": 191.8918918918919,
 				"flexProps": {
 					"flexDirection": "ROW"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 123.80952380952381,
-				"width": 241.26984126984127,
+				"height": 191.8918918918919,
+				"width": 359.4594594594595,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -571,8 +572,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 122.82608695652173,
-				"top": 511.95652173913044,
+				"left": 10.81081081081081,
+				"top": 450,
 				"name": "flShoppingBagItem",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -927,7 +928,7 @@
 				"width": null,
 				"text": "Farlap Dress Sleve Top",
 				"font": {
-					"size": 15
+					"size": 14
 				}
 			},
 			"className": ".label",
@@ -944,7 +945,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 15,
+					"size": 14,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -976,7 +977,7 @@
 				"width": null,
 				"text": "Size: M",
 				"font": {
-					"size": 15
+					"size": 14
 				}
 			},
 			"className": ".label",
@@ -993,7 +994,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 15,
+					"size": 14,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1025,7 +1026,7 @@
 				"width": null,
 				"text": "Color: Light Blue",
 				"font": {
-					"size": 15
+					"size": 14
 				}
 			},
 			"className": ".label",
@@ -1042,7 +1043,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 15,
+					"size": 14,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1072,6 +1073,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1099,9 +1101,10 @@
 					"flexGrow": 1
 				},
 				"id": 205,
-				"name": "flPart1",
+				"name": "flStepper",
 				"parent": "7fe9-cc6a-23d3-446a",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -1218,7 +1221,7 @@
 					"flexGrow": null
 				},
 				"font": {
-					"size": 15
+					"size": 13
 				}
 			},
 			"className": ".label",
@@ -1235,7 +1238,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "BOTTOMCENTER",
 				"font": {
-					"size": 15,
+					"size": 13,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1310,14 +1313,15 @@
 			},
 			"userProps": {
 				"width": null,
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"text": "$ 100",
+				"marginTop": 40,
 				"flexProps": {
 					"flexGrow": 1
 				},
 				"font": {
 					"bold": true,
-					"size": 20
+					"size": 15
 				}
 			},
 			"className": ".label",
@@ -1332,9 +1336,9 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"font": {
-					"size": 20,
+					"size": 15,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1345,6 +1349,7 @@
 					"flexGrow": 1
 				},
 				"text": "$ 100",
+				"marginTop": 40,
 				"id": 202,
 				"name": "label1",
 				"parent": "b1ab-98b8-a397-600b",
@@ -1461,10 +1466,11 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"text": "$ 100",
+				"marginTop": 40,
 				"font": {
-					"size": 20,
+					"size": 15,
 					"bold": true
 				},
 				"flexProps": {
@@ -1483,9 +1489,9 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"font": {
-					"size": 20,
+					"size": 15,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1496,6 +1502,7 @@
 					"flexGrow": 1
 				},
 				"text": "$ 100",
+				"marginTop": 40,
 				"name": "lblTotal",
 				"parent": "2a8b-d8dc-6c10-5255",
 				"children": []
@@ -1617,7 +1624,7 @@
 					"flexGrow": null
 				},
 				"font": {
-					"size": 15
+					"size": 13
 				}
 			},
 			"className": ".label",
@@ -1634,7 +1641,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "BOTTOMCENTER",
 				"font": {
-					"size": 15,
+					"size": 13,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1716,7 +1723,7 @@
 					"flexGrow": null
 				},
 				"font": {
-					"size": 15
+					"size": 13
 				}
 			},
 			"className": ".label",
@@ -1733,7 +1740,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "BOTTOMCENTER",
 				"font": {
-					"size": 15,
+					"size": 13,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1799,7 +1806,7 @@
 		{
 			"type": "ListViewItem",
 			"id": "e30a-e6af-e075-a2b5",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -1808,15 +1815,15 @@
 			},
 			"userProps": {
 				"flexProps": {},
-				"left": -6.521739130434782,
-				"top": 401.0869565217391,
-				"width": 226.984126984127,
-				"height": 152.38095238095238
+				"left": 13.513513513513514,
+				"top": 177.02702702702703,
+				"width": 347.2972972972973,
+				"height": 252.7027027027027
 			},
 			"className": ".listViewItem",
 			"props": {
-				"height": 152.38095238095238,
-				"width": 226.984126984127,
+				"height": 252.7027027027027,
+				"width": 347.2972972972973,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -1834,8 +1841,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": -6.521739130434782,
-				"top": 401.0869565217391,
+				"left": 13.513513513513514,
+				"top": 177.02702702702703,
 				"name": "lviShoppingBagItem",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -2545,6 +2552,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2.2
 				},
+				"maxWidth": 110,
 				"text": "ENGAGEMENT \nSCORE",
 				"usePageVariable": true,
 				"name": "text",
@@ -2653,7 +2661,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.83&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3392,7 +3400,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.83&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4624,7 +4632,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.83&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
 			}
 		},
 		{
