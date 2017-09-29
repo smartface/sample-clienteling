@@ -98,8 +98,9 @@
 				"pgCustomerProfile-flScecond-infoItem": "#pgCustomerProfile-flSecond-infoItem",
 				"pgCustomerProfile-flScecond-divider": "#pgCustomerProfile-flSecond-divider",
 				"pgCustomerProfile-flThird-ReserveIndicates": "#pgCustomerProfile-flThird-ReserveIndicates",
-				"pgCustomerProfile-flThird-ReserveIndicates-divider": "#pgCustomerProfile-flThird-ReserveIndicates-divider"
-				
+				"pgCustomerProfile-flThird-ReserveIndicates-divider": "#pgCustomerProfile-flThird-ReserveIndicates-divider",
+				"pgCustomerProfile-flScecond-infoPart-flColor": "#pgCustomerProfile-flSecond-infoPart-flColor"
+
 			}
 		},
 		"ScrollView": {
@@ -155,7 +156,8 @@
 				"pgCustomerProfile-Reservation-Date": "#pgCustomerProfile.lblReservationDate",
 				"pgCustomerProfile-Recent": "#pgCustomerProfile.lblRecent",
 				"pgCustomerProfile-scoreITem-title": "#scoreItem-title",
-				"pgCustomerProfile-scoreITem-text": "#scoreItem-text"				
+				"pgCustomerProfile-scoreITem-text": "#scoreItem-text",
+				"pgCustomerProfile-flScecond-infoPart-itemText": "#pgCustomerProfile-flSecond-infoPart-itemText"
 			}
 		},
 		"ListView": {

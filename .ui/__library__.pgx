@@ -1,5 +1,6 @@
 {
-	"components": [{
+	"components": [
+		{
 			"type": "Page",
 			"id": "fb96-1dcf-3bb9-cd95",
 			"initialized": true,
@@ -53,7 +54,6 @@
 		{
 			"type": "StatusBar",
 			"id": "e314-b42b-624d-a844",
-			"hiddenComponent": true,
 			"themeProps": {
 				"StatusBar": "Default"
 			},
@@ -74,7 +74,6 @@
 		{
 			"type": "HeaderBar",
 			"id": "885b-9905-5cbd-64ff",
-			"hiddenComponent": true,
 			"themeProps": {
 				"HeaderBar": "Default"
 			},
@@ -522,7 +521,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "5be9-8547-09ac-6568",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -531,18 +530,18 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 57,
-				"top": 459,
-				"width": 714,
-				"height": 286,
+				"left": 122.82608695652173,
+				"top": 511.95652173913044,
+				"width": 241.26984126984127,
+				"height": 123.80952380952381,
 				"flexProps": {
 					"flexDirection": "ROW"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 286,
-				"width": 714,
+				"height": 123.80952380952381,
+				"width": 241.26984126984127,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -560,8 +559,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 57,
-				"top": 459,
+				"left": 122.82608695652173,
+				"top": 511.95652173913044,
 				"name": "flShoppingBagItem",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -585,7 +584,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 103,
 				"flexProps": {
 					"flexGrow": 5
 				}
@@ -617,8 +615,7 @@
 				"children": [
 					"dc3e-edb9-e2e4-8e2a",
 					"3551-acc4-3adb-ddb1"
-				],
-				"id": 103
+				]
 			}
 		},
 		{
@@ -634,7 +631,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 102,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -667,8 +663,7 @@
 					"c48f-f49d-3e9f-042b",
 					"4c1d-c211-7132-b627",
 					"aeaf-eefe-b6fa-d7cd"
-				],
-				"id": 102
+				]
 			}
 		},
 		{
@@ -684,7 +679,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 101,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -715,8 +709,7 @@
 				"parent": "5be9-8547-09ac-6568",
 				"children": [
 					"6870-8044-2f1b-22ef"
-				],
-				"id": 101
+				]
 			}
 		},
 		{
@@ -732,7 +725,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 100,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -764,8 +756,7 @@
 				"children": [
 					"2a8b-d8dc-6c10-5255",
 					"f891-13be-4263-5601"
-				],
-				"id": 100
+				]
 			}
 		},
 		{
@@ -781,9 +772,8 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 207,
 				"flexProps": {
-					"flexGrow": 3
+					"flexGrow": 1
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -806,14 +796,13 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 3
+					"flexGrow": 1
 				},
 				"name": "flImage",
 				"parent": "ca15-df69-0936-4de4",
 				"children": [
 					"2d1d-042e-77af-6174"
-				],
-				"id": 207
+				]
 			}
 		},
 		{
@@ -830,7 +819,6 @@
 				"width": null,
 				"height": null,
 				"paddingLeft": 30,
-				"id": 206,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -864,8 +852,7 @@
 					"a371-a7e3-5341-7b50",
 					"c712-0738-3ced-e85d",
 					"8c8c-a1e4-b9b3-242a"
-				],
-				"id": 206
+				]
 			}
 		},
 		{
@@ -880,7 +867,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 310,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -904,8 +890,7 @@
 				},
 				"name": "imageView1",
 				"parent": "dc3e-edb9-e2e4-8e2a",
-				"children": [],
-				"id": 310
+				"children": []
 			}
 		},
 		{
@@ -922,8 +907,6 @@
 				"height": 25,
 				"width": null,
 				"text": "Farlap Dress Sleve Top",
-				"usePageVariable": true,
-				"id": 309,
 				"font": {
 					"size": 15
 				}
@@ -952,11 +935,9 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Farlap Dress Sleve Top",
-				"usePageVariable": true,
 				"name": "lblDetail",
 				"parent": "3551-acc4-3adb-ddb1",
-				"children": [],
-				"id": 309
+				"children": []
 			}
 		},
 		{
@@ -973,8 +954,6 @@
 				"height": 25,
 				"width": null,
 				"text": "Size: M",
-				"usePageVariable": true,
-				"id": 308,
 				"font": {
 					"size": 15
 				}
@@ -1003,11 +982,9 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Size: M",
-				"usePageVariable": true,
 				"name": "lblSize",
 				"parent": "3551-acc4-3adb-ddb1",
-				"children": [],
-				"id": 308
+				"children": []
 			}
 		},
 		{
@@ -1024,8 +1001,6 @@
 				"height": 25,
 				"width": null,
 				"text": "Color: Light Blue",
-				"usePageVariable": true,
-				"id": 307,
 				"font": {
 					"size": 15
 				}
@@ -1054,11 +1029,9 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Color: Light Blue",
-				"usePageVariable": true,
 				"name": "lblColor",
 				"parent": "3551-acc4-3adb-ddb1",
-				"children": [],
-				"id": 307
+				"children": []
 			}
 		},
 		{
@@ -1074,7 +1047,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 205,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1103,8 +1075,7 @@
 				},
 				"name": "flPart1",
 				"parent": "7fe9-cc6a-23d3-446a",
-				"children": [],
-				"id": 205
+				"children": []
 			}
 		},
 		{
@@ -1120,7 +1091,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 204,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignItems": "AUTO",
@@ -1154,8 +1124,7 @@
 				"children": [
 					"29cd-0e2d-5471-190c",
 					"45e8-3374-0867-46c0"
-				],
-				"id": 204
+				]
 			}
 		},
 		{
@@ -1171,7 +1140,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 203,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1200,8 +1168,7 @@
 				},
 				"name": "flPart3",
 				"parent": "7fe9-cc6a-23d3-446a",
-				"children": [],
-				"id": 203
+				"children": []
 			}
 		},
 		{
@@ -1219,7 +1186,6 @@
 				"textAlignment": "BOTTOMCENTER",
 				"width": null,
 				"height": 20,
-				"id": 305,
 				"flexProps": {
 					"flexGrow": null
 				},
@@ -1254,8 +1220,7 @@
 				"text": "REMOVE",
 				"name": "lblRemove",
 				"parent": "4c1d-c211-7132-b627",
-				"children": [],
-				"id": 305
+				"children": []
 			}
 		},
 		{
@@ -1270,8 +1235,7 @@
 			},
 			"userProps": {
 				"width": 70,
-				"marginLeft": 30,
-				"id": 304,
+				"marginLeft": 40,
 				"flexProps": {
 					"flexGrow": null
 				}
@@ -1298,11 +1262,10 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"marginLeft": 30,
+				"marginLeft": 40,
 				"name": "flLine",
 				"parent": "4c1d-c211-7132-b627",
-				"children": [],
-				"id": 304
+				"children": []
 			}
 		},
 		{
@@ -1319,7 +1282,6 @@
 				"width": null,
 				"textAlignment": "MIDCENTER",
 				"text": "$ 100",
-				"id": 202,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -1355,8 +1317,7 @@
 				"text": "$ 100",
 				"name": "label1",
 				"parent": "b1ab-98b8-a397-600b",
-				"children": [],
-				"id": 202
+				"children": []
 			}
 		},
 		{
@@ -1372,7 +1333,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 201,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1403,8 +1363,7 @@
 				"parent": "24ab-80f5-ac48-bed9",
 				"children": [
 					"be3a-35c6-5b5f-8aa6"
-				],
-				"id": 201
+				]
 			}
 		},
 		{
@@ -1420,7 +1379,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 200,
 				"flexProps": {
 					"flexGrow": 1,
 					"justifyContent": "FLEX_START",
@@ -1454,8 +1412,7 @@
 				"children": [
 					"6fa3-2ffa-0776-6e76",
 					"c14d-097c-e3ee-d53b"
-				],
-				"id": 200
+				]
 			}
 		},
 		{
@@ -1524,8 +1481,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"backgroundColor": "rgba( 235, 215, 215, 0 )",
-				"id": 300,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1536,7 +1491,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 235, 215, 215, 0 )",
+				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1557,8 +1512,7 @@
 				"children": [
 					"1587-09da-33e1-6de1",
 					"79f3-0338-d5da-d87e"
-				],
-				"id": 300
+				]
 			}
 		},
 		{
@@ -1574,7 +1528,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 301,
 				"flexProps": {
 					"flexGrow": 1,
 					"justifyContent": "FLEX_END"
@@ -1607,8 +1560,7 @@
 				"children": [
 					"df4b-c6b5-7e4d-27fe",
 					"1247-74a4-b9d2-8a9d"
-				],
-				"id": 301
+				]
 			}
 		},
 		{
@@ -1626,7 +1578,6 @@
 				"textAlignment": "BOTTOMCENTER",
 				"width": null,
 				"height": 20,
-				"id": 403,
 				"flexProps": {
 					"flexGrow": null
 				},
@@ -1661,8 +1612,7 @@
 				"text": "EDIT",
 				"name": "lblRemove",
 				"parent": "6fa3-2ffa-0776-6e76",
-				"children": [],
-				"id": 403
+				"children": []
 			}
 		},
 		{
@@ -1676,12 +1626,16 @@
 				"Implementation": "Line"
 			},
 			"userProps": {
-				"id": 402
+				"width": 50,
+				"marginLeft": 50,
+				"flexProps": {
+					"flexGrow": null
+				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
 				"height": 1,
-				"width": 200,
+				"width": 50,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -1697,12 +1651,13 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": null
 				},
+				"marginLeft": 50,
 				"name": "flLine",
 				"parent": "6fa3-2ffa-0776-6e76",
-				"children": [],
-				"id": 402
+				"children": []
 			}
 		},
 		{
@@ -1720,7 +1675,6 @@
 				"textAlignment": "BOTTOMCENTER",
 				"width": null,
 				"height": 20,
-				"id": 401,
 				"flexProps": {
 					"flexGrow": null
 				},
@@ -1755,8 +1709,7 @@
 				"text": "SAVE FOR LATER",
 				"name": "lblRemove",
 				"parent": "c14d-097c-e3ee-d53b",
-				"children": [],
-				"id": 401
+				"children": []
 			}
 		},
 		{
@@ -1770,12 +1723,16 @@
 				"Implementation": "Line"
 			},
 			"userProps": {
-				"id": 400
+				"width": 120,
+				"marginLeft": 15,
+				"flexProps": {
+					"flexGrow": null
+				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
 				"height": 1,
-				"width": 200,
+				"width": 120,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -1791,18 +1748,19 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": null
 				},
+				"marginLeft": 15,
 				"name": "flLine",
 				"parent": "c14d-097c-e3ee-d53b",
-				"children": [],
-				"id": 400
+				"children": []
 			}
 		},
 		{
 			"type": "ListViewItem",
 			"id": "e30a-e6af-e075-a2b5",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -1811,15 +1769,15 @@
 			},
 			"userProps": {
 				"flexProps": {},
-				"left": 27.586206896551726,
-				"top": 56.896551724137936,
-				"width": 774,
-				"height": 323
+				"left": -6.521739130434782,
+				"top": 401.0869565217391,
+				"width": 226.984126984127,
+				"height": 152.38095238095238
 			},
 			"className": ".listViewItem",
 			"props": {
-				"height": 323,
-				"width": 774,
+				"height": 152.38095238095238,
+				"width": 226.984126984127,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -1837,8 +1795,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 27.586206896551726,
-				"top": 56.896551724137936,
+				"left": -6.521739130434782,
+				"top": 401.0869565217391,
 				"name": "lviShoppingBagItem",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -1863,8 +1821,6 @@
 				"top": null,
 				"width": null,
 				"height": null,
-				"usePageVariable": true,
-				"id": 1000,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -1899,11 +1855,9 @@
 				},
 				"left": null,
 				"top": null,
-				"usePageVariable": true,
 				"name": "shoppingBagItem",
 				"parent": "e30a-e6af-e075-a2b5",
-				"children": [],
-				"id": 1000
+				"children": []
 			}
 		},
 		{
@@ -2496,7 +2450,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#CE1375",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 33,
 					"bold": false,
@@ -2538,7 +2492,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 13,
 					"bold": false,
@@ -2548,7 +2502,7 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2.2
 				},
 				"text": "ENGAGEMENT \nSCORE",
 				"usePageVariable": true,
@@ -2896,8 +2850,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 18.478260869565215,
-				"top": 513.0434782608695,
+				"left": 38.04347826086956,
+				"top": 447.8260869565217,
 				"width": 285.8695652173913,
 				"height": 55.43478260869565,
 				"flexProps": {
@@ -2926,8 +2880,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 18.478260869565215,
-				"top": 513.0434782608695,
+				"left": 38.04347826086956,
+				"top": 447.8260869565217,
 				"name": "flCustomerProfileTitleText",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -3001,37 +2955,20 @@
 			"id": "c4e7-7a7d-9d74-bdcd",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgCustomerProfile-flScecond-infoPart-itemText"
 			},
 			"userProps": {
-				"width": null,
 				"text": "$250",
-				"multiline": true,
-				"usePageVariable": true,
-				"left": null,
-				"top": null,
-				"height": null,
-				"textAlignment": "MIDRIGHT",
-				"marginRight": 10,
-				"backgroundColor": "rgba( 111, 82, 82, 0 )",
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				},
-				"font": {
-					"size": 14,
-					"family": "Lato",
-					"bold": false
-				}
+				"usePageVariable": true
 			},
-			"className": ".label",
+			"className": ".label #pgCustomerProfile-flSecond-infoPart-itemText",
 			"props": {
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"multiline": true,
-				"backgroundColor": "rgba( 111, 82, 82, 0 )",
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -3050,9 +2987,6 @@
 				},
 				"text": "$250",
 				"usePageVariable": true,
-				"left": null,
-				"top": null,
-				"marginRight": 10,
 				"name": "text",
 				"parent": "42b7-ee79-11cc-15e7",
 				"children": []
@@ -3574,7 +3508,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "cae6-e684-ae6f-aaa5",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -3583,8 +3517,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 58.73015873015873,
-				"top": 342.85714285714283,
+				"left": 33.69565217391304,
+				"top": 346.73913043478257,
 				"width": 276.0869565217391,
 				"height": 44.565217391304344,
 				"flexProps": {
@@ -3613,8 +3547,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 58.73015873015873,
-				"top": 342.85714285714283,
+				"left": 33.69565217391304,
+				"top": 346.73913043478257,
 				"name": "flCustomerProfileMostLikedColors",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -3690,23 +3624,13 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgCustomerProfile-flScecond-infoPart-flColor"
 			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"flexProps": {
-					"flexGrow": 1,
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_END",
-					"alignContent": "STRETCH",
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart-flColor",
 			"props": {
-				"height": null,
-				"width": null,
+				"height": 200,
+				"width": 200,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -3718,12 +3642,11 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_END",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
 				},
 				"name": "flColor",
 				"parent": "cae6-e684-ae6f-aaa5",
@@ -3875,7 +3798,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "f8b6-a9fc-13a6-9efc",
-			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -3885,8 +3807,8 @@
 			},
 			"userProps": {
 				"flexProps": {},
-				"left": 7.017543859649123,
-				"top": 1.7543859649122808,
+				"left": 46.73913043478261,
+				"top": 79.34782608695652,
 				"width": 323.25581395348837,
 				"height": 86.04651162790698
 			},
@@ -3911,8 +3833,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 7.017543859649123,
-				"top": 1.7543859649122808,
+				"left": 46.73913043478261,
+				"top": 79.34782608695652,
 				"name": "flDashboardItem1",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -4274,7 +4196,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "3725-3a21-8599-f43a",
-			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -4718,7 +4639,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "cd86-49b6-b456-0d16",
-			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -5063,7 +4983,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "a082-f3e1-fe37-1c2c",
-			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -5073,8 +4992,8 @@
 			},
 			"userProps": {
 				"flexProps": {},
-				"left": 1.7543859649122808,
-				"top": 307.01754385964915,
+				"left": 13.043478260869565,
+				"top": 446.73913043478257,
 				"width": 328.0701754385965,
 				"height": 103.50877192982458
 			},
@@ -5099,8 +5018,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 1.7543859649122808,
-				"top": 307.01754385964915,
+				"left": 13.043478260869565,
+				"top": 446.73913043478257,
 				"name": "flDashboardItem4",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -5408,7 +5327,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "6e4d-ec19-d1be-e8f5",
-			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -5418,8 +5336,8 @@
 			},
 			"userProps": {
 				"flexProps": {},
-				"left": 8.771929824561404,
-				"top": 408.7719298245614,
+				"left": 8.695652173913043,
+				"top": 532.6086956521739,
 				"width": 314.03508771929825,
 				"height": 82.4561403508772
 			},
@@ -5444,8 +5362,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 8.771929824561404,
-				"top": 408.7719298245614,
+				"left": 8.695652173913043,
+				"top": 532.6086956521739,
 				"name": "flDashboardItem5",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -5793,14 +5711,14 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
+				"left": 38.04347826086956,
+				"top": 495.65217391304344,
 				"name": "flWardrobe",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
 					"446f-6fb8-474a-7830",
 					"3f75-f335-7142-cf9a"
-				],
-				"left": 38.04347826086956,
-				"top": 495.65217391304344
+				]
 			}
 		},
 		{
@@ -5843,10 +5761,10 @@
 				"marginBottom": 10,
 				"marginTop": 10,
 				"maxWidth": 120,
+				"id": 1,
 				"name": "image",
 				"parent": "c835-c323-179b-387a",
-				"children": [],
-				"id": 1
+				"children": []
 			}
 		},
 		{
@@ -5896,14 +5814,14 @@
 				"top": 0,
 				"paddingLeft": 20,
 				"paddingTop": 10,
+				"id": 5,
 				"name": "flDetail",
 				"parent": "c835-c323-179b-387a",
 				"children": [
 					"6dcb-8e3d-62a6-e128",
 					"e762-3bda-37d4-8357",
 					"549c-581a-e603-7779"
-				],
-				"id": 5
+				]
 			}
 		},
 		{
@@ -5955,10 +5873,10 @@
 				"marginTop": 2,
 				"text": "Lavender Handbag",
 				"maxHeight": 20,
+				"id": 2,
 				"name": "name",
 				"parent": "3f75-f335-7142-cf9a",
-				"children": [],
-				"id": 2
+				"children": []
 			}
 		},
 		{
@@ -6009,10 +5927,10 @@
 				"marginTop": 2,
 				"text": "D56362",
 				"maxHeight": 20,
+				"id": 3,
 				"name": "model",
 				"parent": "3f75-f335-7142-cf9a",
-				"children": [],
-				"id": 3
+				"children": []
 			}
 		},
 		{
@@ -6064,10 +5982,10 @@
 				"marginTop": 2,
 				"text": "$125",
 				"maxHeight": 70,
+				"id": 4,
 				"name": "price",
 				"parent": "3f75-f335-7142-cf9a",
-				"children": [],
-				"id": 4
+				"children": []
 			}
 		}
 	]

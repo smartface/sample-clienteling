@@ -240,12 +240,44 @@
           "alignContent": "STRETCH",
           "flexGrow": 1
         },
-        "+page:Screen.width >    451  ": {
+        "+page:Screen.width> 451   ": {
           "flexProps": {
             "flexDirection": "ROW",
             "alignItems": "STRETCH"
           },
           "maxHeight": 41
+        },
+        "&-itemText": {
+          "width": null,
+          "height": null,
+          "font": {
+            "size": 14,
+            "family": "Lato"
+          },
+          "flexProps": {
+            "flexGrow": 1,
+            "alignSelf": "STRETCH"
+          },
+          "textAlignment": "MIDRIGHT",
+          "+page:Screen.width >448  ": {
+            "textAlignment": "MIDLEFT"
+          }
+        },
+        "&-flColor": {
+          "width": null,
+          "height": null,
+          "flexProps": {
+            "flexGrow": 1,
+            "alignItems": "CENTER",
+            "justifyContent": "FLEX_END",
+            "alignContent": "STRETCH",
+            "flexDirection": "ROW"
+          },
+          "+page:Screen.width >449  ": {
+            "flexProps": {
+              "justifyContent": "FLEX_START"
+            }
+          }
         }
       },
       "&-divider": {
@@ -296,15 +328,15 @@
           "height": 100
         },
         "&-divider": {
-            "@extend": ".flexLayout-line",
-            "height": 0,
-            "maxHeight": 0,
-            "width": 0,
-            "+page:Screen.width    >  452  ": {
-              "width": 20,
-              "maxWidth": 20,
-              "height": null
-            }
+          "@extend": ".flexLayout-line",
+          "height": 0,
+          "maxHeight": 0,
+          "width": 0,
+          "+page:Screen.width    >  452  ": {
+            "width": 20,
+            "maxWidth": 20,
+            "height": null
+          }
         }
       }
     }
