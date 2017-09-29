@@ -1,13 +1,14 @@
 const MCS = require('sf-extension-mcs');
 const options = {
-	'backendId': 'b9ebb1a8-a5d9-49f2-b5c5-50bf1d7e7e64', 
-	'baseUrl': 'https://smartface-mobilebel.mobileenv.em2.oraclecloud.com', 
+	'backendId': 'b9ebb1a8-a5d9-49f2-b5c5-50bf1d7e7e64',
+	'baseUrl': 'https://smartface-mobilebel.mobileenv.em2.oraclecloud.com',
 	'androidApplicationKey': 'cddfbf73-a581-4e09-9121-e8f5da8fa49b',
-	'iOSApplicationKey': 'd599ef10-f6e0-4f7c-a8cf-598e11191909', 
+	'iOSApplicationKey': 'd599ef10-f6e0-4f7c-a8cf-598e11191909',
 	'anonymousKey': 'TU9CSUxFQkVMX1NNQVJURkFDRV9NT0JJTEVfQU5PTllNT1VTX0FQUElEOmZzOXEzakltbm9iX2hw'
 };
 const mcs = new MCS(options);
 module.exports = exports = mcs;
+const launchQueue = [];
 
 const sendBasicEventSymbol = "__mcs.sendBasicEvent__";
 mcs[sendBasicEventSymbol] = mcs.sendBasicEvent;
@@ -33,10 +34,12 @@ mcs.launch = function() {
 						function(err, result) {
 							if (err) {
 								mcs.deviceToken = "emulator";
+								setLaunched();
 								reject(err);
 							}
 							else {
 								mcs.deviceToken = result.notificationToken;
+								setLaunched();
 								resolve();
 							}
 						}
@@ -57,3 +60,25 @@ function sendBasicEvent(eventName, callback) {
 		eventName
 	}, callback);
 }
+
+
+function fireLaunchQueue() {
+	var fn;
+	while (fn = launchQueue.shift()) {
+		fn.call(mcs);
+	}
+}
+
+function setLaunched() {
+	mcs.launched = true;
+	fireLaunchQueue();
+}
+
+mcs.onLaunch = function(fn) {
+	if (mcs.launched) {
+		fn.call(mcs);
+	}
+	else {
+		launchQueue.push(fn);
+	}
+};

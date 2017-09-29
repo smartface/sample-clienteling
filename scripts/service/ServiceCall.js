@@ -1,12 +1,18 @@
 const mixinDeep = require('mixin-deep');
 const mcs = require("../lib/mcs");
+const Http = require("sf-core/net/http");
+const requestQueue = [];
 var userToken = null;
 exports.registerUserToken = registerUserToken;
 exports.createRequestOptions = createRequestOptions;
+exports.hasUserToken = hasUserToken;
+exports.request = request;
 
 function registerUserToken(token) {
-  if (token)
+  if (token) {
     userToken = token;
+    processQueue();
+  }
   else
     userToken = null;
 }
@@ -22,12 +28,71 @@ function createRequestOptions(endPointName, options) {
       "Accept": "application/json"
     }
   }, options || {});
+  return requestOptions;
+}
+
+
+function hasUserToken() {
+  return !!userToken;
+}
+
+function request(options, callback) {
+  if (mcs.launched && (hasUserToken() || (options && options.immediate))) {
+    performRequest(options, callback);
+  }
+  else {
+    requestQueue.push({
+      options,
+      callback
+    });
+  }
+}
+
+function processQueue() {
+  var req;
+  while (req = requestQueue.shift()) {
+    request(req.options, req.callback);
+  }
+}
+
+function performRequest(options, callback) {
   if (userToken) {
-    requestOptions = mixinDeep(requestOptions, {
+    options = mixinDeep(options, {
       headers: {
         token: userToken
       }
     });
   }
-  return requestOptions;
+  Http.request(options, (response) => {
+    response.body = response.body.toString();
+    var contentType = getContentType(response.headers);
+    if (contentType === "application/json")
+      response.body = JSON.parse(response.body);
+
+    callback(null, response.body);
+  }, (error) => {
+    error.body = error.body.toString();
+    var contentType = getContentType(error.headers);
+    if (contentType === "application/json")
+      error.body = JSON.parse(error.body);
+    console.log(`Service Error -- Request: ${JSON.stringify(options)}`);
+    callback(error);
+  });
+}
+
+
+
+function getContentType(headers) {
+  var contentType = headers["Content-Type"];
+  if (!contentType) {
+    let headers = Object.keys(headers);
+    for (let i in headers) {
+      let h = headers[i];
+      if (h.toLowerCase() === "content-type") {
+        contentType = headers[h];
+        break;
+      }
+    }
+  }
+  return contentType;
 }

@@ -1,5 +1,5 @@
 var serviceCall = require("./ServiceCall");
-const request = require("./request");
+const request = serviceCall.request;
 
 exports.getProducts = getProducts;
 exports.getProductDetails = getProductDetails;

@@ -1,33 +1,36 @@
 const mcs = require("../lib/mcs");
 const serviceCall = require("./ServiceCall");
-const request = require("./request");
+const request = serviceCall.request;
 exports.login = login;
 exports.logout = logout;
 
 function login(user, pass) {
-  var opt = mcs.createRequestOptions({ apiName: "eCommerce", endpointName: "login" });
-  Object.assign(opt, {
-    method: "POST",
-    body: JSON.stringify({
-      "username": "employee", //TODO: use user
-      "password": "password" //TODO: use pass
-    })
-  });
-  Object.assign(opt.headers, {
-    "Content-Type": "application/json",
-    "Accept": "application/json"
-  });
-
   return new Promise((resolve, reject) => {
-    request(opt, (err, result) => {
-      if (err) {
-        reject(err);
-      }
-      else {
-        mcs.sessionId = String(Math.floor(Date.now() / 1000));
-        serviceCall.registerUserToken(result.token);
-        resolve(result);
-      }
+    mcs.onLaunch(() => {
+      var opt = mcs.createRequestOptions({ apiName: "eCommerce", endpointName: "login" });
+      Object.assign(opt, {
+        method: "POST",
+        immediate: true,
+        body: JSON.stringify({
+          "username": "employee", //TODO: use user
+          "password": "password" //TODO: use pass
+        })
+      });
+      Object.assign(opt.headers, {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      });
+
+      request(opt, (err, result) => {
+        if (err) {
+          reject(err);
+        }
+        else {
+          mcs.sessionId = String(Math.floor(Date.now() / 1000));
+          serviceCall.registerUserToken(result.token);
+          resolve(result);
+        }
+      });
     });
   });
 }

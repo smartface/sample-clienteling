@@ -3,7 +3,7 @@ const PgSignupPhoneDesign = require('ui/ui_pgSignupPhone');
 const pageContextPatch = require("../context/pageContextPatch");
 const Router = require("sf-core/ui/router");
 const fingerprint = require("sf-extension-utils").fingerprint;
-const authService = require("../service/AuthService")
+const authService = require("../service/AuthService");
 const PgSignupPhone = extend(PgSignupPhoneDesign)(
   // Constructor
   function(_super) {
@@ -35,6 +35,7 @@ function onShow(superOnShow, data) {
   data.appStart && fingerprint.init({
     userNameTextBox: page.taUserID,
     passwordTextBox: page.taPassword,
+    autoLogin: false, //TODO: set true after clearing static login values from textboxes
     callback: function(err, fingerprintResult) {
       var password;
       if (err)
