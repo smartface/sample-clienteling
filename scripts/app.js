@@ -13,10 +13,10 @@ Application.onUnhandledError = function(e) {
 };
 
 require("sf-extension-utils");
-const Screen = require('sf-core/device/screen');
 
 const Router = require("sf-core/ui/router");
 const System = require("sf-core/device/system");
+const isTablet = require("./lib/isTablet");
 
 // const mcsService = require("./service/MCSServive")();
 
@@ -50,7 +50,7 @@ Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
 Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
 
 
-if (Screen.width < 450) {
+if (!isTablet) {
     Router.go("pgSignupPhone");
 } else {
     Router.go("pgSignupPhone");
