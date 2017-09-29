@@ -52,11 +52,10 @@ function onLoad(superOnLoad) {
 
 
   this.lvShoppingBag.itemCount = myDataSet.length;
-  this.lvShoppingBag.onRowBind = function(listViewItem, index) {
-    var shoppingBagItem = listViewItem.shoppingBagItem;
-    var detail = shoppingBagItem.lblDetail;
-    var size = shoppingBagItem.lblSize;
-    var color = shoppingBagItem.lblColor;
+  this.lvShoppingBag.onRowBind = function(shoppingBagItem, index) {
+    var detail = shoppingBagItem.lblDetail,
+     size = shoppingBagItem.lblSize,
+     color = shoppingBagItem.lblColor;
     detail.text = myDataSet[index].title;
   };
 }

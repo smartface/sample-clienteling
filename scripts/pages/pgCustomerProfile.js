@@ -2,6 +2,7 @@ const extend = require('js-base/core/extend');
 const PgCustomerProfileDesign = require('ui/ui_pgCustomerProfile');
 const pageContextPatch = require("../context/pageContextPatch");
 const FlWardrobe = require("components/FlWardrobe");
+const Router = require("sf-core/ui/router");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
     // Constructor
@@ -15,6 +16,10 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 
         pageContextPatch(this, "pgCustomerProfile");
         loadUI.call(this);
+        
+        this.shoppingBag.onPress = function(){
+          Router.go("pgShoppingBag");  
+        };
     });
 
 /**

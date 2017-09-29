@@ -2347,7 +2347,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#CE1375",
-				"textAlignment": "MIDLEFT",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 33,
 					"bold": false,
@@ -2357,7 +2357,7 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.2
+					"flexGrow": 1
 				},
 				"text": "50",
 				"usePageVariable": true,
@@ -3535,8 +3535,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart-flColor",
 			"props": {
-				"height": null,
-				"width": null,
+				"height": 200,
+				"width": 200,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -3548,12 +3548,11 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
+					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
 				},
 				"name": "flColor",
 				"parent": "cae6-e684-ae6f-aaa5",
@@ -4489,7 +4488,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.48&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5927,7 +5926,7 @@
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "CENTER",
-					"alignItems": "CENTER"
+					"alignItems": "STRETCH"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -5945,7 +5944,7 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
+					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
@@ -5975,12 +5974,15 @@
 				"height": null,
 				"width": null,
 				"maxWidth": 50,
+				"top": null,
+				"paddingTop": 2,
+				"paddingBottom": 2,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH",
 					"alignItems": "CENTER",
 					"alignContent": "STRETCH",
-					"justifyContent": "CENTER"
+					"justifyContent": "SPACE_BETWEEN"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -5999,7 +6001,7 @@
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "CENTER",
-					"justifyContent": "CENTER",
+					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
@@ -6011,7 +6013,10 @@
 				"children": [
 					"8629-390f-2cc6-386e",
 					"bf4a-13b3-43aa-9e23"
-				]
+				],
+				"top": null,
+				"paddingTop": 2,
+				"paddingBottom": 2
 			}
 		},
 		{
@@ -6196,7 +6201,7 @@
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "CENTER",
-					"alignItems": "CENTER",
+					"alignItems": "STRETCH",
 					"positionType": "RELATIVE",
 					"flexGrow": 1,
 					"alignSelf": "CENTER"
@@ -6223,7 +6228,7 @@
 					"alignSelf": "CENTER",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
+					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
