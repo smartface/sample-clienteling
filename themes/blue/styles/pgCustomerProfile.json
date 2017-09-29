@@ -1,5 +1,26 @@
 {
   "#pgCustomerProfile": {
+    "&_swc": {
+      "&_flSecond": {
+        "&_divider": {
+          "@extend": ".flexLayout-line",
+          "width": 0,
+          "maxWidth": 0,
+          "maxHeight": 0,
+          "height": 0,
+          "marginBottom": 0,
+          "marginTop": 0,
+          "+page:Screen.width > 450": {
+            "width": null,
+            "maxWidth": null,
+            "maxHeight": 1,
+            "height": 1,
+            "marginBottom": 3,
+            "marginTop": 3
+          }
+        }
+      }
+    },
     ".lblWishlistItemName": {
       "width": null,
       "height": null,
@@ -100,12 +121,14 @@
       "width": null,
       "height": null,
       "maxHeight": 132,
+      "marginBottom": 0,
       "flexProps": {
         "flexGrow": 1,
         "flexDirection": "COLUMN",
         "alignItems": "STRETCH"
       },
       "+page:Screen.width > 450": {
+        "marginBottom": 10,
         "flexProps": {
           "flexDirection": "ROW",
           "flexGrow": 0.4
@@ -265,29 +288,17 @@
           }
         },
         "&-flColor": {
-          "width": null,
-          "height": null,
-          "flexProps": {
-            "flexGrow": 1,
-            "alignItems": "CENTER",
-            "justifyContent": "FLEX_END",
-            "alignContent": "STRETCH",
-            "flexDirection": "ROW"
-          },
-          "+page:Screen.width > 450": {
-            "flexProps": {
-              "justifyContent": "FLEX_START"
-            }
-          }
         }
       },
       "&-divider": {
         "@extend": ".flexLayout-line",
-        "maxHeight": 1,
+        "width": null,
         "maxWidth": null,
+        "maxHeight": 1,
         "+page:Screen.width > 450": {
-          "width": null,
-          "maxHeight": 1
+          "width": 1,
+          "maxWidth": 1,
+          "maxHeight": null
         }
       },
       "&-infoItem": {
@@ -341,52 +352,107 @@
       }
     }
   },
-  "#pgCustomerProfile_scw_flSecond_infoPart1_store_text": {
-    "textAlignment": "MIDRIGHT",
-    "+page:Screen.width >449": {
-      "textAlignment": "MIDLEFT"
+  ".infoPartTextBlocks":{
+    "&_title": {
+    },
+    "&_text": {
+      "textAlignment": "MIDRIGHT",
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "+page:Screen.width > 450": {
+        "textAlignment": "MIDLEFT"
+      }
     }
   },
-  "#pgCustomerProfile_scw_flSecond_infoPart1_lastPurchase_text": {
-    "textAlignment": "MIDRIGHT",
-    "+page:Screen.width >449": {
-      "textAlignment": "MIDLEFT"
+  "#pgCustomerProfile_scw_flSecond_infoPart2":{
+    "&_job": {
+      "@extend": ".infoPartTextBlocks",
+      "&_text": {
+        "@extend": ".infoPartTextBlocks_text"
+      },
+      "&_title": {
+        "@extend": ".infoPartTextBlocks_title"
+      }
+    },
+    "&_brands": {
+      "@extend": ".infoPartTextBlocks",
+      "&_text": {
+        "@extend": ".infoPartTextBlocks_text"
+      },
+      "&_title": {
+        "@extend": ".infoPartTextBlocks_title"
+      }
+    },
+    "&_interest": {
+      "@extend": ".infoPartTextBlocks",
+      "&_text": {
+        "@extend": ".infoPartTextBlocks_text"
+      },
+      "&_title": {
+        "@extend": ".infoPartTextBlocks_title"
+      }
+    },
+    "&_mostLikedColors": {
+      "@extend": ".infoPartTextBlocks",
+      "&_title": {
+        "@extend": ".infoPartTextBlocks_title"
+      },
+      "&_flColor": {
+        "@extend": ".infoPartTextBlocks_text",
+        "width": null,
+        "height": null,
+        "flexProps": {
+          "flexGrow": 1,
+          "alignItems": "CENTER",
+          "justifyContent": "FLEX_END",
+          "alignContent": "STRETCH",
+          "flexDirection": "ROW"
+        },
+        "+page:Screen.width > 450": {
+          "flexProps": {
+            "justifyContent": "FLEX_START"
+          }
+        }
+      }
     }
   },
-  "#pgCustomerProfile_scw_flSecond_infoPart1_perVisit_text": {
-    "textAlignment": "MIDRIGHT",
-    "+page:Screen.width >449": {
-      "textAlignment": "MIDLEFT"
-    }
-  },
-  "#pgCustomerProfile_scw_flSecond_infoPart1_joined_text": {
-    "textAlignment": "MIDRIGHT",
-    "+page:Screen.width >449": {
-      "textAlignment": "MIDLEFT"
-    }
-  },
-  "#pgCustomerProfile_scw_flSecond_infoPart2_job_text": {
-    "textAlignment": "MIDRIGHT",
-    "+page:Screen.width >449": {
-      "textAlignment": "MIDLEFT"
-    }
-  },
-  "#pgCustomerProfile_scw_flSecond_infoPart2_brands_text": {
-    "textAlignment": "MIDRIGHT",
-    "+page:Screen.width >449": {
-      "textAlignment": "MIDLEFT"
-    }
-  },
-  "#pgCustomerProfile_scw_flSecond_infoPart2_interest_text": {
-    "textAlignment": "MIDRIGHT",
-    "+page:Screen.width >449": {
-      "textAlignment": "MIDLEFT"
-    }
-  },
-  "#pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor": {
-    "justifyContent": "FLEX_END",
-    "+page:Screen.width >449": {
-      "justifyContent": "FLEX_START"
+  "#pgCustomerProfile_scw_flSecond_infoPart1":{
+    "&_store": {
+      "@extend": ".infoPartTextBlocks",
+      "&_text": {
+        "@extend": ".infoPartTextBlocks_text"
+      },
+      "&_title": {
+        "@extend": ".infoPartTextBlocks_title"
+      }
+    },
+    "&_lastPurchase": {
+      "@extend": ".infoPartTextBlocks",
+      "&_text": {
+        "@extend": ".infoPartTextBlocks_text"
+      },
+      "&_title": {
+        "@extend": ".infoPartTextBlocks_title"
+      }
+    },
+    "&_perVisit": {
+      "@extend": ".infoPartTextBlocks",
+      "&_text": {
+        "@extend": ".infoPartTextBlocks_text"
+      },
+      "&_title": {
+        "@extend": ".infoPartTextBlocks_title"
+      }
+    },
+    "&_joined": {
+      "@extend": ".infoPartTextBlocks",
+      "&_text": {
+        "@extend": ".infoPartTextBlocks_text"
+      },
+      "&_title": {
+        "@extend": ".infoPartTextBlocks_title"
+      }
     }
   }
 }

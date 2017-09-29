@@ -2357,7 +2357,7 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 1.2
 				},
 				"text": "50",
 				"usePageVariable": true,
@@ -2391,7 +2391,7 @@
 				"textColor": "#000000",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 13,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -2399,9 +2399,9 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 2.2
+					"flexGrow": 1
 				},
-				"maxWidth": 110,
+				"maxWidth": null,
 				"text": "ENGAGEMENT \nSCORE",
 				"usePageVariable": true,
 				"name": "text",
@@ -2739,7 +2739,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "42b7-ee79-11cc-15e7",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -2750,17 +2750,17 @@
 			"userProps": {
 				"left": 38.04347826086956,
 				"top": 447.8260869565217,
-				"width": 285.8695652173913,
-				"height": 55.43478260869565,
+				"width": 282.6666666666667,
+				"height": 70.66666666666667,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
-					"flexDirection": "ROW"
+					"flexDirection": "COLUMN"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 55.43478260869565,
-				"width": 285.8695652173913,
+				"height": 70.66666666666667,
+				"width": 282.6666666666667,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -2775,7 +2775,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
 				"left": 38.04347826086956,
@@ -2857,7 +2857,11 @@
 			},
 			"userProps": {
 				"text": "$250",
-				"usePageVariable": true
+				"usePageVariable": true,
+				"textAlignment": "MIDLEFT",
+				"flexProps": {
+					"flexGrow": 2
+				}
 			},
 			"className": ".label #pgCustomerProfile-flSecond-infoPart-itemText",
 			"props": {
@@ -2871,7 +2875,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDRIGHT",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -2881,7 +2885,7 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
 				"text": "$250",
 				"usePageVariable": true,
@@ -3406,7 +3410,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "cae6-e684-ae6f-aaa5",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -3524,7 +3528,11 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile-flScecond-infoPart-flColor"
 			},
-			"userProps": {},
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "FLEX_START"
+				}
+			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart-flColor",
 			"props": {
 				"height": null,
@@ -3541,7 +3549,7 @@
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "CENTER",
-					"justifyContent": "FLEX_END",
+					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -4481,7 +4489,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.48&brandModel=iPhone%207"
 			}
 		},
 		{

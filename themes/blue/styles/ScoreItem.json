@@ -1,46 +1,49 @@
 {
-    "#scoreItem": {
-        "width": null,
-        "height": null,
-        "&-title": {
-            "width": null,
-            "height": null,
-            "textColor": "#CE1375",
-            "textAlignment": "MIDLEFT",
-            "font": {
-                "family": "Lato",
-                "size": 33
-            },
-            "flexProps": {
-                "flexGrow": 1,
-                "alignSelf": "STRETCH"
-            },
-            "+page:Screen.width >  451": {
-                "textAlignment": "MIDCENTER"
-            }
-        },
-        "&-text": {
-            "width": null,
-            "height": null,
-            "textColor": "#000000",
-            "textAlignment": "MIDLEFT",
-            "multiline": true,
-            "maxWidth": 110,
-            "font": {
-                "family": "Lato",
-                "size": 13
-            },
-            "flexProps": {
-                "flexGrow": 2.2,
-                "alignSelf": "STRETCH"
-            },
-            "+page:Screen.width >  452": {
-                "textAlignment": "MIDCENTER",
-                "flexProps": {
-                    "flexGrow": 1
-                },
-                "maxWidth": null
-            }
-        }
-    }
+	"#scoreItem": {
+		"width": null,
+		"height": null,
+		"&-title": {
+			"width": null,
+			"height": null,
+			"textColor": "#CE1375",
+			"textAlignment": "MIDCENTER",
+			"font": {
+				"family": "Lato",
+				"size": 33
+			},
+			"flexProps": {
+				"flexGrow": 1,
+				"alignSelf": "STRETCH"
+			},
+			"+page:Screen.width > 450": {
+				"textAlignment": "MIDCENTER",
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				}
+			}
+		},
+		"&-text": {
+			"width": null,
+			"height": null,
+			"textColor": "#000000",
+			"textAlignment": "MIDLEFT",
+			"multiline": true,
+			"maxWidth": null,
+			"font": {
+				"family": "Lato",
+				"size": 12
+			},
+			"flexProps": {
+				"flexGrow": 1,
+				"alignSelf": "STRETCH"
+			},
+			"+page:Screen.width > 450": {
+				"textAlignment": "MIDCENTER",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			}
+		}
+	}
 }
