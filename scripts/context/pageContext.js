@@ -2,23 +2,22 @@ const StyleContext = require("../lib/StyleContext");
 const styler = require("@smartface/styler/lib/styler");
 const commands = require("@smartface/styler/lib/commandsManager");
 const merge = require("@smartface/styler/lib/utils/merge");
-const getOneProp = require("library/styler-builder")
-	.getOneProp;
+const stylerBuilder = require("library/styler-builder");
 	
 const Screen = require('sf-core/device/screen');
 const INIT_CONTEXT_ACTION_TYPE = require("../lib/Context")
 	.INIT_CONTEXT_ACTION_TYPE;
 
-const styles = require("../themes/blue");
-var styling = styler(styles);
+const theme = require("../themes/blue");
 
 commands.addRuntimeCommandFactory(function(type){
   switch (type) {
     case '+page':
       return function pageCommand(opts){
+        opts = merge(opts);
         var isOK = (function(Screen) { return eval(opts.args); }({width: Screen.width, height: Screen.height}));
-        console.log("RunstimeCommand :: isOK"+isOK.toString()+" "+opts.args+" "+JSON.stringify(opts.value))
-		return  isOK ? opts.value : {};
+        console.log("RunstimeCommand :: isOK : "+isOK.toString()+" "+JSON.stringify(opts))
+		    return  isOK ? opts.value : {};
       };
       
       break;
@@ -33,12 +32,15 @@ module.exports = {
 };
 
 function createContext(component, name, classMap=null, reducers=null) {
+  const styling = styler(theme);
+
 	var styleContext = StyleContext.fromSFComponent(
 		component,
 		name,
 		//initial classNames
 		function(name){
 		  const id = "#"+name;
+		  console.log(id);
 		  return classMap ? id+" "+classMap(name) : id;
 		},
 		//context hooks
@@ -52,7 +54,7 @@ function createContext(component, name, classMap=null, reducers=null) {
 					return function beforeStyleAssignment(styles) {
 						Object.keys(styles)
 							.forEach(function(key) {
-								styles[key] = getOneProp(key, styles[key]);
+								styles[key] = stylerBuilder.getOneProp(key, styles[key]);
 							});
 
 						return styles;
@@ -130,20 +132,11 @@ function createContext(component, name, classMap=null, reducers=null) {
 	  : contextReducer;
 
 	// creates an initial styling for the context
-	styleContext(
-		styling
-		/*function(className) {
-			return function getStyle() {
-				return getPropsFromStyle(styling, className);
-			}
-		}*/
-		,
-		_contextReducer
-	);
+	styleContext(styling, _contextReducer);
 
 	return function setStyle(newStyles) {
 		try {
-			const styling = styler(styles, newStyles);
+			const styling = styler(styles,newStyles);
 			// injects a new styling to the context
 			styleContext(styling, _contextReducer);
 		} catch(e) {
@@ -162,26 +155,6 @@ function contextReducer(state, actors, action, target) {
 	    });
 	    
 	    return newState;
-		case "changeOrientation":
-			for(var actorName in actors) {
-				var actor = actors[actorName];
-				// if(actor.initialClassName) {
-					deviceType = action.deviceType;
-					orientation = action.orientation;
-
-					actor.resetClassNames();
-					actor.pushClassName(`#${actor.name}-${action.deviceType}-${action.orientation}`);
-					
-				// 	console.log();
-					
-				// 	actor.pushClassName(actor.initialClassName);
-				// 	var className2Add = `${actor.initialClassName}.${action.deviceType}.${action.orientation}`;
-
-				// 	actor.pushClassName(className2Add);
-				// }
-			}
-			
-    	return newState;
 	}
 
 	return state;
