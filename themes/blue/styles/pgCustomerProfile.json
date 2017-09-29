@@ -233,11 +233,14 @@
         "maxHeight": 159,
         "flexProps": {
           "flexDirection": "COLUMN",
+          "alignItems": "STRETCH",
+          "alignContent": "STRETCH",
           "flexGrow": 1
         },
-        "+page:Screen.width >    450": {
+        "+page:Screen.width >    451  ": {
           "flexProps": {
-            "flexDirection": "ROW"
+            "flexDirection": "ROW",
+            "alignItems": "STRETCH"
           },
           "maxHeight": 41
         }
@@ -264,10 +267,41 @@
           "flexGrow": 1,
           "alignSelf": "STRETCH"
         },
-        "+page:Screen.width   >  450": {
+        "+page:Screen.width>  452 ": {
           "flexProps": {
             "flexDirection": "COLUMN"
           }
+        }
+      }
+    },
+    "&-flThird": {
+      "&-ReserveIndicates": {
+        "width": null,
+        "height": 200,
+        "flexProps": {
+          "positionType": "RELATIVE",
+          "flexDirection": "COLUMN",
+          "alignItems": "STRETCH",
+          "alignContent": "STRETCH",
+          "alignSelf": "STRETCH",
+          "justifyContent": "SPACE_BETWEEN"
+        },
+        "+page:Screen.width  > 449 ": {
+          "flexProps": {
+            "flexDirection": "ROW"
+          },
+          "height": 100
+        },
+        "&-divider": {
+            "@extend": ".flexLayout-line",
+            "height": 0,
+            "maxHeight": 0,
+            "width": 0,
+            "+page:Screen.width    >  452  ": {
+              "width": 20,
+              "maxWidth": 20,
+              "height": null
+            }
         }
       }
     }

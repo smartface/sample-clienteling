@@ -96,7 +96,10 @@
 				"pgCustomerProfile-flSecond": "#pgCustomerProfile-flSecond",
 				"pgCustomerProfile-flScecond-infoPart": "#pgCustomerProfile-flSecond-infoPart",
 				"pgCustomerProfile-flScecond-infoItem": "#pgCustomerProfile-flSecond-infoItem",
-				"pgCustomerProfile-flScecond-divider": "#pgCustomerProfile-flSecond-divider"
+				"pgCustomerProfile-flScecond-divider": "#pgCustomerProfile-flSecond-divider",
+				"pgCustomerProfile-flThird-ReserveIndicates": "#pgCustomerProfile-flThird-ReserveIndicates",
+				"pgCustomerProfile-flThird-ReserveIndicates-divider": "#pgCustomerProfile-flThird-ReserveIndicates-divider"
+				
 			}
 		},
 		"ScrollView": {

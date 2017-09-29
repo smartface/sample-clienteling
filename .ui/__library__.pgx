@@ -1,5 +1,6 @@
 {
-	"components": [{
+	"components": [
+		{
 			"type": "Page",
 			"id": "fb96-1dcf-3bb9-cd95",
 			"initialized": true,
@@ -45,8 +46,8 @@
 					"a082-f3e1-fe37-1c2c",
 					"6e4d-ec19-d1be-e8f5"
 				],
-				"width": 255.00000000000003,
-				"height": 453.56000000000006
+				"width": 345,
+				"height": 613.64
 			}
 		},
 		{
@@ -2396,8 +2397,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 83.78378378378379,
-				"width": 295.94594594594594,
+				"height": 60.869565217391305,
+				"width": 186.95652173913044,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -2610,7 +2611,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2839,7 +2840,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "42b7-ee79-11cc-15e7",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -2848,8 +2849,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 48.57142857142858,
-				"top": 167.14285714285717,
+				"left": 18.478260869565215,
+				"top": 513.0434782608695,
 				"width": 285.8695652173913,
 				"height": 55.43478260869565,
 				"flexProps": {
@@ -2878,8 +2879,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 48.57142857142858,
-				"top": 167.14285714285717,
+				"left": 18.478260869565215,
+				"top": 513.0434782608695,
 				"name": "flCustomerProfileTitleText",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -2906,7 +2907,8 @@
 				"textAlignment": "MIDLEFT",
 				"textColor": "rgba( 166, 166, 166, 1 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
 				},
 				"font": {
 					"size": 14,
@@ -2934,7 +2936,7 @@
 					"family": "Lato"
 				},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -2964,8 +2966,10 @@
 				"height": null,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 10,
+				"backgroundColor": "rgba( 111, 82, 82, 0 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
 				},
 				"font": {
 					"size": 14,
@@ -2980,7 +2984,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 111, 82, 82, 0 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -2993,7 +2997,7 @@
 					"family": "Lato"
 				},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -3366,7 +3370,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4606,7 +4610,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.57&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5494,10 +5498,10 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Evelyn Johansson",
+				"usePageVariable": true,
 				"name": "lblItemTitle",
 				"parent": "da93-1c47-3d11-a6ff",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -5636,10 +5640,10 @@
 					"flexGrow": 1
 				},
 				"text": "Overdue",
+				"usePageVariable": true,
 				"name": "lblItemType",
 				"parent": "fc35-9752-6b7c-8d80",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -5689,10 +5693,10 @@
 					"flexGrow": 1
 				},
 				"text": "02.01. 2017",
+				"usePageVariable": true,
 				"name": "lblItemDate",
 				"parent": "fc35-9752-6b7c-8d80",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		}
 	]
