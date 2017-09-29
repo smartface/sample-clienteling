@@ -6184,20 +6184,22 @@
 			"userProps": {
 				"left": 0,
 				"top": 0,
-				"width": null,
-				"height": null,
+				"width": 63,
+				"height": 45,
 				"maxHeight": 45,
 				"usePageVariable": true,
 				"marginTop": 28,
 				"borderWidth": 1,
 				"borderColor": "rgba( 151, 151, 151, 1 )",
 				"id": 211,
+				"maxWidth": 63,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "CENTER",
 					"alignItems": "CENTER",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 1,
+					"alignSelf": "CENTER"
 				},
 				"flex": {
 					"flexDirection": 2,
@@ -6208,8 +6210,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
+				"height": 45,
+				"width": 63,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -6218,7 +6220,7 @@
 				"borderWidth": 1,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "CENTER",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "CENTER",
@@ -6233,10 +6235,11 @@
 				"maxHeight": 45,
 				"usePageVariable": true,
 				"marginTop": 28,
+				"id": 211,
+				"maxWidth": 63,
 				"name": "stepper",
 				"parent": "7fe9-cc6a-23d3-446a",
-				"children": [],
-				"id": 211
+				"children": []
 			}
 		}
 	]
