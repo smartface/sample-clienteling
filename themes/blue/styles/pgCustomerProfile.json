@@ -260,7 +260,7 @@
             "alignSelf": "STRETCH"
           },
           "textAlignment": "MIDRIGHT",
-          "+page:Screen.width > 450  ": {
+          "+page:Screen.width > 448  ": {
             "textAlignment": "MIDLEFT"
           }
         },
@@ -286,8 +286,8 @@
         "maxHeight": 1,
         "maxWidth": null,
         "+page:Screen.width > 450": {
-          "maxWidth": 1,
-          "maxHeight": null
+          "width": null,
+          "maxHeight": 1
         }
       },
       "&-infoItem": {
@@ -339,6 +339,54 @@
           }
         }
       }
+    }
+  },
+  "#pgCustomerProfile_scw_flSecond_infoPart1_store_text": {
+    "textAlignment": "MIDRIGHT",
+    "+page:Screen.width >449": {
+      "textAlignment": "MIDLEFT"
+    }
+  },
+  "#pgCustomerProfile_scw_flSecond_infoPart1_lastPurchase_text": {
+    "textAlignment": "MIDRIGHT",
+    "+page:Screen.width >449": {
+      "textAlignment": "MIDLEFT"
+    }
+  },
+  "#pgCustomerProfile_scw_flSecond_infoPart1_perVisit_text": {
+    "textAlignment": "MIDRIGHT",
+    "+page:Screen.width >449": {
+      "textAlignment": "MIDLEFT"
+    }
+  },
+  "#pgCustomerProfile_scw_flSecond_infoPart1_joined_text": {
+    "textAlignment": "MIDRIGHT",
+    "+page:Screen.width >449": {
+      "textAlignment": "MIDLEFT"
+    }
+  },
+  "#pgCustomerProfile_scw_flSecond_infoPart2_job_text": {
+    "textAlignment": "MIDRIGHT",
+    "+page:Screen.width >449": {
+      "textAlignment": "MIDLEFT"
+    }
+  },
+  "#pgCustomerProfile_scw_flSecond_infoPart2_brands_text": {
+    "textAlignment": "MIDRIGHT",
+    "+page:Screen.width >449": {
+      "textAlignment": "MIDLEFT"
+    }
+  },
+  "#pgCustomerProfile_scw_flSecond_infoPart2_interest_text": {
+    "textAlignment": "MIDRIGHT",
+    "+page:Screen.width >449": {
+      "textAlignment": "MIDLEFT"
+    }
+  },
+  "#pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor": {
+    "justifyContent": "FLEX_END",
+    "+page:Screen.width >449": {
+      "justifyContent": "FLEX_START"
     }
   }
 }
