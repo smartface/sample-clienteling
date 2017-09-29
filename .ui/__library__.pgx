@@ -47,8 +47,8 @@
 					"6e4d-ec19-d1be-e8f5",
 					"c835-c323-179b-387a"
 				],
-				"width": 303.75,
-				"height": 540.27
+				"width": 311.25,
+				"height": 553.61
 			}
 		},
 		{
@@ -2653,7 +2653,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.83&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3392,7 +3392,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.83&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4624,7 +4624,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.83&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5782,7 +5782,7 @@
 				"marginBottom": 10,
 				"marginTop": 10,
 				"maxWidth": 120,
-				"imageFillType": "STRETCH",
+				"imageFillType": "ASPECTFIT",
 				"id": 1,
 				"usePageVariable": true,
 				"flexProps": {
@@ -5795,7 +5795,7 @@
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"imageFillType": "STRETCH",
+				"imageFillType": "ASPECTFIT",
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -5811,10 +5811,10 @@
 				"marginTop": 10,
 				"maxWidth": 120,
 				"id": 1,
+				"usePageVariable": true,
 				"name": "image",
 				"parent": "c835-c323-179b-387a",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -5925,10 +5925,10 @@
 				"text": "Lavender Handbag",
 				"maxHeight": 20,
 				"id": 2,
+				"usePageVariable": true,
 				"name": "name",
 				"parent": "3f75-f335-7142-cf9a",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -5981,10 +5981,10 @@
 				"text": "D56362",
 				"maxHeight": 20,
 				"id": 3,
+				"usePageVariable": true,
 				"name": "model",
 				"parent": "3f75-f335-7142-cf9a",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -6038,10 +6038,10 @@
 				"text": "$125",
 				"maxHeight": 70,
 				"id": 4,
+				"usePageVariable": true,
 				"name": "price",
 				"parent": "3f75-f335-7142-cf9a",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		}
 	]

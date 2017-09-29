@@ -1,6 +1,7 @@
 const extend = require('js-base/core/extend');
 const PgCustomerProfileDesign = require('ui/ui_pgCustomerProfile');
 const pageContextPatch = require("../context/pageContextPatch");
+const FlWardrobe = require("components/FlWardrobe");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
     // Constructor
@@ -68,7 +69,20 @@ function addInfo(json) {
 }
 
 function addWardrobe(json) {
-    this.swWardrobe;
+    var items = json.wardrobe;
+    items.forEach(item => {
+        var fl = new FlWardrobe({
+            marginRight: 20,
+            width: 300,
+            height: 150
+        },{
+            image: item.image,
+            price: item.price.currency + " " + item.price.amount,
+            name: item.name,
+            model: item.productId
+        });
+        this.swWardrobe.layout.addChild(fl);
+    });
 }
 
 function loadUI() {
