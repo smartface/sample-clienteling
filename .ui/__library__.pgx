@@ -47,8 +47,8 @@
 					"6e4d-ec19-d1be-e8f5",
 					"c835-c323-179b-387a"
 				],
-				"width": 476.92800000000005,
-				"height": 635.904
+				"width": 303.75,
+				"height": 540.27
 			}
 		},
 		{
@@ -1690,8 +1690,8 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"id": 402,
 				"marginLeft": 50,
+				"id": 402,
 				"name": "flLine",
 				"parent": "6fa3-2ffa-0776-6e76",
 				"children": []
@@ -1789,8 +1789,8 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"id": 400,
 				"marginLeft": 15,
+				"id": 400,
 				"name": "flLine",
 				"parent": "c14d-097c-e3ee-d53b",
 				"children": []
@@ -2555,7 +2555,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "c4c5-2c0a-4dd1-7152",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -2653,7 +2653,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.54&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2882,7 +2882,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "42b7-ee79-11cc-15e7",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -3392,7 +3392,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.54&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3549,7 +3549,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "cae6-e684-ae6f-aaa5",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -3670,8 +3670,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart-flColor",
 			"props": {
-				"height": 200,
-				"width": 200,
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -3683,11 +3683,12 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
+					"alignItems": "CENTER",
+					"justifyContent": "FLEX_END",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
 				"name": "flColor",
 				"parent": "cae6-e684-ae6f-aaa5",
@@ -3839,6 +3840,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "f8b6-a9fc-13a6-9efc",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -4237,6 +4239,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "3725-3a21-8599-f43a",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -4621,7 +4624,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.54&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4680,6 +4683,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "cd86-49b6-b456-0d16",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -5024,6 +5028,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "a082-f3e1-fe37-1c2c",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -5368,6 +5373,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "6e4d-ec19-d1be-e8f5",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -5713,6 +5719,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "c835-c323-179b-387a",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -5723,8 +5730,8 @@
 			"userProps": {
 				"width": 314.1304347826087,
 				"height": 163.04347826086956,
-				"left": 357.4074074074074,
-				"top": 440.7407407407407,
+				"left": 24.691358024691358,
+				"top": 53.08641975308642,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -5752,8 +5759,8 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
-				"left": 38.04347826086956,
-				"top": 495.65217391304344,
+				"left": 24.691358024691358,
+				"top": 53.08641975308642,
 				"name": "flWardrobe",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -5777,6 +5784,7 @@
 				"maxWidth": 120,
 				"imageFillType": "STRETCH",
 				"id": 1,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -5805,7 +5813,8 @@
 				"id": 1,
 				"name": "image",
 				"parent": "c835-c323-179b-387a",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -5880,6 +5889,7 @@
 				"textAlignment": "BOTTOMLEFT",
 				"maxHeight": 20,
 				"id": 2,
+				"usePageVariable": true,
 				"font": {
 					"size": 14
 				},
@@ -5917,7 +5927,8 @@
 				"id": 2,
 				"name": "name",
 				"parent": "3f75-f335-7142-cf9a",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -5934,6 +5945,7 @@
 				"text": "D56362",
 				"maxHeight": 20,
 				"id": 3,
+				"usePageVariable": true,
 				"font": {
 					"size": 14
 				},
@@ -5971,7 +5983,8 @@
 				"id": 3,
 				"name": "model",
 				"parent": "3f75-f335-7142-cf9a",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -5988,6 +6001,7 @@
 				"text": "$125",
 				"maxHeight": 70,
 				"id": 4,
+				"usePageVariable": true,
 				"font": {
 					"size": 18,
 					"bold": true
@@ -6026,7 +6040,8 @@
 				"id": 4,
 				"name": "price",
 				"parent": "3f75-f335-7142-cf9a",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		}
 	]
