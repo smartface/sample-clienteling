@@ -36,8 +36,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 375,
-				"height": 603
+				"width": 345,
+				"height": 554.76
 			}
 		},
 		{
@@ -1188,7 +1188,7 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 0
 				},
 				"name": "flButtons_1",
 				"parent": "3166-df70-5cd8-82e8",
@@ -1610,7 +1610,7 @@
 				"parent": "aff8-f57b-2780-9681",
 				"children": [
 					"93e7-16d4-ccfb-3332",
-					"a0db-e8f5-6066-159a"
+					"4ec6-0e7a-b460-bd6e"
 				]
 			}
 		},
@@ -6344,308 +6344,6 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "a0db-e8f5-6066-159a",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": 120,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": 120,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"name": "flItem",
-				"parent": "6481-a692-7607-884a",
-				"children": [
-					"582b-dc37-57e9-af5d",
-					"e67a-9d2b-4171-f410"
-				]
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "e67a-9d2b-4171-f410",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"left": 0,
-				"top": 0,
-				"paddingLeft": 20,
-				"paddingTop": 10,
-				"flexProps": {
-					"flexGrow": 2,
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 2
-				},
-				"left": 0,
-				"top": 0,
-				"paddingLeft": 20,
-				"paddingTop": 10,
-				"name": "flDetail",
-				"parent": "a0db-e8f5-6066-159a",
-				"children": [
-					"6da8-e24e-6a88-3bfe",
-					"a74d-cf8b-d9b3-e79d",
-					"29ee-7642-398b-aa87"
-				]
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "582b-dc37-57e9-af5d",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"height": null,
-				"width": null,
-				"marginLeft": 5,
-				"marginBottom": 10,
-				"marginTop": 10,
-				"maxWidth": 120,
-				"imageFillType": "STRETCH",
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".imageView",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "STRETCH",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"marginLeft": 5,
-				"marginBottom": 10,
-				"marginTop": 10,
-				"maxWidth": 120,
-				"name": "image",
-				"parent": "a0db-e8f5-6066-159a",
-				"children": []
-			}
-		},
-		{
-			"type": "Label",
-			"id": "6da8-e24e-6a88-3bfe",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"marginTop": 2,
-				"height": null,
-				"width": null,
-				"text": "Lavender Handbag",
-				"textAlignment": "BOTTOMLEFT",
-				"maxHeight": 20,
-				"font": {
-					"size": 14
-				},
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".label",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#1D1D26",
-				"textAlignment": "BOTTOMLEFT",
-				"font": {
-					"size": 14,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"marginTop": 2,
-				"text": "Lavender Handbag",
-				"maxHeight": 20,
-				"name": "name",
-				"parent": "e67a-9d2b-4171-f410",
-				"children": []
-			}
-		},
-		{
-			"type": "Label",
-			"id": "a74d-cf8b-d9b3-e79d",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"marginTop": 2,
-				"height": null,
-				"width": null,
-				"text": "D56362",
-				"maxHeight": 20,
-				"font": {
-					"size": 14
-				},
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".label",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#1D1D26",
-				"textAlignment": "MIDLEFT",
-				"font": {
-					"size": 14,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"marginTop": 2,
-				"text": "D56362",
-				"maxHeight": 20,
-				"name": "model",
-				"parent": "e67a-9d2b-4171-f410",
-				"children": []
-			}
-		},
-		{
-			"type": "Label",
-			"id": "29ee-7642-398b-aa87",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"marginTop": 2,
-				"height": 30,
-				"width": null,
-				"text": "$125",
-				"maxHeight": 70,
-				"font": {
-					"size": 18,
-					"bold": true
-				},
-				"flexProps": {
-					"flexGrow": 5
-				}
-			},
-			"className": ".label",
-			"props": {
-				"width": null,
-				"height": 30,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#1D1D26",
-				"textAlignment": "MIDLEFT",
-				"font": {
-					"size": 18,
-					"bold": true,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 5
-				},
-				"marginTop": 2,
-				"text": "$125",
-				"maxHeight": 70,
-				"name": "price",
-				"parent": "e67a-9d2b-4171-f410",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
 			"id": "93cc-815a-beb6-40ac",
 			"themeProps": {
 				"Sizes": "Default",
@@ -6722,11 +6420,11 @@
 				},
 				"left": 0,
 				"top": 0,
-				"name": "flReservations",
+				"name": "flIndicates",
 				"parent": "93cc-815a-beb6-40ac",
 				"children": [
 					"e949-dcc0-4f0f-a77e",
-					"08e0-eb49-e284-8583"
+					"019f-240c-046f-b4de"
 				]
 			}
 		},
@@ -6796,59 +6494,6 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "08e0-eb49-e284-8583",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileReservationItem",
-				"id": "f3c9-f72b-84ed-36d3"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 62,
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": 62,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
-				"name": "flCustomerProfileReservationItem",
-				"parent": "06f6-ca60-5dac-c0f5",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
 			"id": "e67e-de48-a448-9086",
 			"themeProps": {
 				"Sizes": "Default",
@@ -6887,11 +6532,11 @@
 				},
 				"left": 0,
 				"top": 0,
-				"name": "flIndicates",
+				"name": "flReservations",
 				"parent": "93cc-815a-beb6-40ac",
 				"children": [
 					"b38e-a902-39f8-dbb9",
-					"776b-ee1a-69aa-9eb2"
+					"199b-fbf2-bf34-4bcb"
 				]
 			}
 		},
@@ -6961,59 +6606,6 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "776b-ee1a-69aa-9eb2",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileReservationItem",
-				"id": "f3c9-f72b-84ed-36d3"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 62,
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": 62,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
-				"name": "flCustomerProfileReservationItem",
-				"parent": "e67e-de48-a448-9086",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
 			"id": "7dd3-a673-d522-5983",
 			"themeProps": {
 				"Sizes": "Default",
@@ -7047,7 +6639,8 @@
 				"name": "flWishlist",
 				"parent": "aff8-f57b-2780-9681",
 				"children": [
-					"41f5-1d8c-6197-d0a5"
+					"41f5-1d8c-6197-d0a5",
+					"373f-4b3c-0270-d0fc"
 				]
 			}
 		},
@@ -7148,6 +6741,192 @@
 				"name": "divider",
 				"parent": "93cc-815a-beb6-40ac",
 				"children": []
+			}
+		},
+		{
+			"type": "ScrollView",
+			"id": "4ec6-0e7a-b460-bd6e",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"height": 150,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				}
+			},
+			"className": ".scrollView",
+			"props": {
+				"height": 150,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"align": "VERTICAL",
+				"scrollBarEnabled": true,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "scw",
+				"parent": "6481-a692-7607-884a",
+				"children": []
+			}
+		},
+		{
+			"type": "ScrollView",
+			"id": "199b-fbf2-bf34-4bcb",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"left": 0,
+				"top": 0,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				}
+			},
+			"className": ".scrollView",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"align": "VERTICAL",
+				"scrollBarEnabled": true,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "scw",
+				"parent": "e67e-de48-a448-9086",
+				"children": [],
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"type": "ScrollView",
+			"id": "019f-240c-046f-b4de",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"height": 150,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".scrollView",
+			"props": {
+				"height": 150,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"align": "VERTICAL",
+				"scrollBarEnabled": true,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "scw",
+				"parent": "06f6-ca60-5dac-c0f5",
+				"children": [],
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"type": "ScrollView",
+			"id": "373f-4b3c-0270-d0fc",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"height": 150,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".scrollView",
+			"props": {
+				"height": 150,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"align": "VERTICAL",
+				"scrollBarEnabled": true,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "scw",
+				"parent": "7dd3-a673-d522-5983",
+				"children": [],
+				"left": 0,
+				"top": 0
 			}
 		}
 	]
