@@ -23,7 +23,7 @@ function createRequestOptions(endPointName, options) {
     }
   }, options || {});
   if (userToken) {
-    requestOptions(requestOptions, {
+    requestOptions = mixinDeep(requestOptions, {
       headers: {
         token: userToken
       }

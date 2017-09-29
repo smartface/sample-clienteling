@@ -49,12 +49,10 @@ Router.add("pgWomen", require("./pages/pgWomen"), true);
 Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
 Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
 
+Router.go(isTablet ? "pgSignupTablet" : "pgSignupPhone", {
+    appStart: true
+});
 
-if (!isTablet) {
-    Router.go("pgSignupPhone");
-} else {
-    Router.go("pgSignupPhone");
-}
 
 if (System.OS === "Android") {
     sliderDrawer = require("./sliderDrawer");
@@ -62,4 +60,15 @@ if (System.OS === "Android") {
 }
 
 
+const mcs = require("./lib/mcs");
+mcs.launch().then(() => {
+    console.log("mcs launch sucess");
+}).catch((err) => {
+    if (err) {
+        err = JSON.stringify(err);
+    }
+    else
+        err = "unknown";
+    console.log(`mcs launch error! Reason: ${err}`);
 
+});

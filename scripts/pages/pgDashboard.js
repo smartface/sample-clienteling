@@ -9,6 +9,7 @@ const FlDashboardItem2 = require('components/FlDashboardItem2');
 const FlDashboardItem3 = require('components/FlDashboardItem3');
 const FlDashboardItem4 = require('components/FlDashboardItem4');
 const FlDashboardItem5 = require('components/FlDashboardItem5');
+const dashboardService = require("../service/Dashboard");
 
 const PgDashboard = extend(PgDashboardDesign)(
     // Constructor
@@ -149,12 +150,13 @@ function addIncomingShipments(items) {
 }
 
 function loadUI() {
-    const json = require("../sample-data/dashboard.json");
-    addReservations.call(this, json.reservations);
-    addTodos.call(this, json.todo.items);
-    addOpenIncidents.call(this, json.openIncidents);
-    addStoreAndCorporateNews.call(this, json.storeAndCorporateNews);
-    addIncomingShipments.call(this, json.incomingShipments);
+    dashboardService.getDashboardData().then((json) => {
+        addReservations.call(this, json.reservations);
+        addTodos.call(this, json.todo.items);
+        addOpenIncidents.call(this, json.openIncidents);
+        addStoreAndCorporateNews.call(this, json.storeAndCorporateNews);
+        addIncomingShipments.call(this, json.incomingShipments);
+    });
 }
 
 module && (module.exports = PgDashboard);

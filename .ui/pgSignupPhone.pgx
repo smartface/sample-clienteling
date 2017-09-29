@@ -31,8 +31,8 @@
 					"49a6-bd3e-b201-a73b",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 277.5,
-				"height": 446.21999999999997
+				"width": 210.00000000000003,
+				"height": 337.68000000000006
 			}
 		},
 		{
@@ -104,7 +104,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -338,6 +338,7 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 197, 197, 197, 1 )",
 				"textColor": "rgba( 63, 63, 63, 1 )",
+				"usePageVariable": true,
 				"font": {
 					"family": "Nunito"
 				}
@@ -367,7 +368,8 @@
 				"text": "smartface@smartface.io",
 				"children": [],
 				"parent": "076e-47c9-12e8-938b",
-				"name": "taUserID"
+				"name": "taUserID",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -511,6 +513,7 @@
 				"borderColor": "rgba( 197, 197, 197, 1 )",
 				"textColor": "rgba( 63, 63, 63, 1 )",
 				"isPassword": true,
+				"usePageVariable": true,
 				"font": {
 					"family": "Nunito"
 				}
@@ -541,7 +544,8 @@
 				"isPassword": true,
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
-				"name": "taPassword"
+				"name": "taPassword",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -872,8 +876,7 @@
 				"usePageVariable": true,
 				"name": "btnFacebook",
 				"parent": "3eca-e67b-d6e2-e8bf",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -961,11 +964,11 @@
 				"minWidth": null,
 				"maxHeight": 50,
 				"maxWidth": null,
+				"usePageVariable": true,
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207?random=0.46685953866616203",
-				"usePageVariable": true
+				"imageURL": "https://dispatcher.dev.smartface.io/smartface77/ecommerce3/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207?random=0.042217414098086214"
 			}
 		},
 		{
