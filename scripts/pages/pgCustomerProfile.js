@@ -47,33 +47,34 @@ function addInfo(json) {
 
     this.joined.title.text = "Joined";
     this.joined.text.text = "June 15th 17"; // TODO
-    
+
     this.perVisit.title.text = "Spend per visit";
     this.perVisit.text.text = traits.spendsPerVisit.currency + " " + traits.spendsPerVisit.amount;
-    
+
     this.lastPurchase.title.text = "Last purchase date";
     this.lastPurchase.text.text = "June 26th 17"; // TODO
-    
+
     this.store.title.text = "Prefered store";
     this.store.text.text = traits.preferedStore;
-    
+
     this.job.title.text = "Job";
     this.job.text.text = info.job;
-    
+
     this.brands.title.text = "Most liked brands";
     this.brands.text.text = traits.mostLikedBrands.join(", ");
-    
+
     this.interest.title.text = "Interests";
     this.interest.text.text = traits.interests.join(", ");
+}
+
+function addWardrobe(json) {
+    this.swWardrobe;
 }
 
 function loadUI() {
     const json = require("../sample-data/customerProfile.json");
     addInfo.call(this, json);
-
-
-
-
+    addWardrobe.call(this, json);
 }
 
 

@@ -36,8 +36,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 345,
-				"height": 554.76
+				"width": 303.75,
+				"height": 488.43
 			}
 		},
 		{
@@ -534,7 +534,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"minWidth": 10,
 				"maxHeight": 38,
 				"usePageVariable": true,
 				"name": "mostLikedColors",
@@ -580,7 +579,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"minWidth": 10,
 				"maxHeight": 38,
 				"usePageVariable": true,
 				"name": "interest",
@@ -598,8 +596,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 1,
-				"width": 0,
+				"height": 0,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -615,11 +613,9 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"positionType": "RELATIVE"
 				},
-				"maxHeight": 1,
-				"maxWidth": null,
+				"maxHeight": 0,
 				"name": "divider_4_1_1",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -663,7 +659,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"minWidth": 10,
 				"maxHeight": 38,
 				"usePageVariable": true,
 				"name": "brands",
@@ -709,7 +704,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"minWidth": 10,
 				"maxHeight": 38,
 				"usePageVariable": true,
 				"name": "job",
@@ -727,8 +721,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 1,
-				"width": 0,
+				"height": 0,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -744,11 +738,9 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"positionType": "RELATIVE"
 				},
-				"maxHeight": 1,
-				"maxWidth": null,
+				"maxHeight": 0,
 				"name": "divider_4_1_1_1",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -764,8 +756,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 1,
-				"width": 0,
+				"height": 0,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -781,11 +773,9 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"positionType": "RELATIVE"
 				},
-				"maxHeight": 1,
-				"maxWidth": null,
+				"maxHeight": 0,
 				"name": "divider_4_1_1_2",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -850,8 +840,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 1,
-				"width": 0,
+				"height": 0,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -867,11 +857,9 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"positionType": "RELATIVE"
 				},
-				"maxHeight": 1,
-				"maxWidth": null,
+				"maxHeight": 0,
 				"name": "divider_4_1_1_2",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -887,8 +875,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 1,
-				"width": 0,
+				"height": 0,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -904,11 +892,9 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"positionType": "RELATIVE"
 				},
-				"maxHeight": 1,
-				"maxWidth": null,
+				"maxHeight": 0,
 				"name": "divider_4_1_1_1",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -924,8 +910,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 1,
-				"width": 0,
+				"height": 0,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -941,11 +927,9 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"positionType": "RELATIVE"
 				},
-				"maxHeight": 1,
-				"maxWidth": null,
+				"maxHeight": 0,
 				"name": "divider_4_1_1",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -989,7 +973,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"minWidth": 10,
 				"maxHeight": 38,
 				"usePageVariable": true,
 				"name": "store",
@@ -1035,7 +1018,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"minWidth": 10,
 				"maxHeight": 38,
 				"usePageVariable": true,
 				"name": "joined",
@@ -1081,7 +1063,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"minWidth": 10,
 				"maxHeight": 38,
 				"usePageVariable": true,
 				"name": "perVisit",
@@ -1127,7 +1108,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"minWidth": 10,
 				"maxHeight": 38,
 				"usePageVariable": true,
 				"name": "lastPurchase",
@@ -1146,8 +1126,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 1,
-				"width": 0,
+				"height": 0,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -1163,11 +1143,9 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"positionType": "RELATIVE"
 				},
-				"maxHeight": 1,
-				"maxWidth": null,
+				"maxHeight": 0,
 				"name": "divider_4_1_1_3",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1188,7 +1166,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flButtons",
 			"props": {
-				"height": 0,
+				"height": null,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -1209,7 +1187,6 @@
 					"flexGrow": 0
 				},
 				"marginTop": null,
-				"maxWidth": null,
 				"name": "flButtons",
 				"parent": "3166-df70-5cd8-82e8",
 				"children": [
@@ -1358,8 +1335,7 @@
 			},
 			"userProps": {
 				"text": "50",
-				"usePageVariable": true,
-				"textColor": "rgba( 74, 144, 226, 1 )"
+				"usePageVariable": true
 			},
 			"className": ".label #scoreItem-title",
 			"props": {
@@ -1372,7 +1348,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "rgba( 74, 144, 226, 1 )",
+				"textColor": "#CE1375",
 				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 33,
@@ -1427,7 +1403,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2.2
 				},
-				"maxWidth": 110,
 				"text": "LOYALTY POINTS",
 				"usePageVariable": true,
 				"name": "text",
@@ -1554,7 +1529,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2.2
 				},
-				"maxWidth": 110,
 				"text": "ENGAGEMENT \nSCORE",
 				"usePageVariable": true,
 				"name": "text",
@@ -1572,8 +1546,8 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 1,
-				"width": 0,
+				"height": 0,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -1589,11 +1563,9 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"positionType": "RELATIVE"
 				},
-				"maxHeight": 1,
-				"maxWidth": null,
+				"maxHeight": 0,
 				"name": "divider_4_1_1",
 				"parent": "b9d8-3483-810d-b40b",
 				"children": []
@@ -6761,8 +6733,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"positionType": "RELATIVE"
 				},
 				"maxHeight": 0,
 				"name": "divider",
@@ -6780,6 +6751,7 @@
 			"userProps": {
 				"height": 150,
 				"width": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
@@ -6809,9 +6781,10 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "scw",
+				"name": "swWardrobe",
 				"parent": "6481-a692-7607-884a",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
