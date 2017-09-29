@@ -99,7 +99,8 @@
 				"pgCustomerProfile-flScecond-divider": "#pgCustomerProfile-flSecond-divider",
 				"pgCustomerProfile-flThird-ReserveIndicates": "#pgCustomerProfile-flThird-ReserveIndicates",
 				"pgCustomerProfile-flThird-ReserveIndicates-divider": "#pgCustomerProfile-flThird-ReserveIndicates-divider",
-				"pgCustomerProfile-flScecond-infoPart-flColor": "#pgCustomerProfile-flSecond-infoPart-flColor"
+				"pgCustomerProfile-flScecond-infoPart-flColor": "#pgCustomerProfile-flSecond-infoPart-flColor",
+				"pgShoppingBag-FlcontinuButton": ".flexLayout-pgShoppingBagFlContinueButton"
 
 			}
 		},

@@ -44,8 +44,10 @@
         "flexProps": {
           "flexGrow": 1
         },
+        "textColor": "#000000",
         "font": {
-          "size": 20
+          "size": 12,
+          "family": "Lato"
         }
       }
     }

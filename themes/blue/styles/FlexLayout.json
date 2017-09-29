@@ -17,6 +17,22 @@
 		"&-margin": {
 			"marginLeft": 20,
 			"marginRight": 20
+		},
+		"&-pgShoppingBagFlContinueButton": {
+			"marginTop": 5,
+			"marginBottom": 20,
+			"height": 42,
+			"width": null,
+			"flexProps": {
+				"alignItems": "CENTER",
+				"flexDirection": "ROW",
+				"justifyContent": "CENTER"
+			},
+			"+page:Screen.width > 451": {
+				"flexProps": {
+					"justifyContent": "FLEX_END"
+				}
+			}
 		}
 	}
 }

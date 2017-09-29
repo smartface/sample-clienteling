@@ -38,7 +38,8 @@
                 "textAlignment": "MIDCENTER",
                 "flexProps": {
                     "flexGrow": 1
-                }
+                },
+                "maxWidth": null
             }
         }
     }

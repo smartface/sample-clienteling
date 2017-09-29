@@ -8,7 +8,11 @@
 				"Page": "Default"
 			},
 			"userProps": {
-				"orientation": "AUTO"
+				"orientation": "AUTO",
+				"paddingTop": 10,
+				"paddingRight": 10,
+				"paddingBottom": 10,
+				"paddingLeft": 10
 			},
 			"className": ".page",
 			"version": "6.4.12",
@@ -24,6 +28,10 @@
 				"backgroundColor": "#FFFFFF",
 				"font": {},
 				"orientation": "AUTO",
+				"paddingTop": 10,
+				"paddingRight": 10,
+				"paddingBottom": 10,
+				"paddingLeft": 10,
 				"name": "pgShoppingBag",
 				"parent": null,
 				"children": [
@@ -31,10 +39,11 @@
 					"5c49-2ac7-579d-0e65",
 					"a754-0923-0873-d1bf",
 					"a4f8-0d3d-9f3c-ffd8",
-					"0956-1b61-5add-487e"
+					"0956-1b61-5add-487e",
+					"e6e8-5b33-9017-7609"
 				],
-				"width": 281.25,
-				"height": 452.25
+				"width": 277.5,
+				"height": 446.21999999999997
 			}
 		},
 		{
@@ -307,15 +316,7 @@
 				"Implementation": "ShoppingBagHeader"
 			},
 			"userProps": {
-				"text": "PRODUCT DETAIL",
-				"width": null,
-				"height": null,
-				"font": {
-					"size": 20
-				},
-				"flexProps": {
-					"flexGrow": 1
-				}
+				"text": "PRODUCT DETAIL"
 			},
 			"className": ".label .label-header.shopping",
 			"props": {
@@ -328,10 +329,10 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "rgba(162,162,162,1)",
+				"textColor": "#000000",
 				"textAlignment": "BOTTOMCENTER",
 				"font": {
-					"size": 20,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -380,7 +381,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"marginLeft": 20,
 				"marginRight": 20,
@@ -410,10 +412,10 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "rgba(162,162,162,1)",
+				"textColor": "#000000",
 				"textAlignment": "BOTTOMCENTER",
 				"font": {
-					"size": 20,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -453,10 +455,10 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "rgba(162,162,162,1)",
+				"textColor": "#000000",
 				"textAlignment": "BOTTOMCENTER",
 				"font": {
-					"size": 20,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -498,10 +500,10 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "rgba(162,162,162,1)",
+				"textColor": "#000000",
 				"textAlignment": "BOTTOMCENTER",
 				"font": {
-					"size": 20,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -611,6 +613,94 @@
 				"top": 0,
 				"name": "lviShoppingBagItem",
 				"parent": "0956-1b61-5add-487e",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "e6e8-5b33-9017-7609",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgShoppingBag-FlcontinuButton"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default .flexLayout-pgShoppingBagFlContinueButton",
+			"props": {
+				"height": 42,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"marginBottom": 20,
+				"name": "flButton",
+				"parent": "d125-d864-c390-0484",
+				"children": [
+					"da2e-0d61-3494-8792"
+				]
+			}
+		},
+		{
+			"type": "Button",
+			"id": "da2e-0d61-3494-8792",
+			"themeProps": {
+				"Sizes": "Default",
+				"Highlights": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"text": "CONTINUE SHOPPING",
+				"height": null,
+				"width": null,
+				"maxWidth": 230,
+				"font": {
+					"size": 15
+				},
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				}
+			},
+			"className": ".button",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#4A90E2",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 15,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"flexGrow": 1
+				},
+				"text": "CONTINUE SHOPPING",
+				"maxWidth": 230,
+				"name": "btnContinueShopping",
+				"parent": "e6e8-5b33-9017-7609",
 				"children": []
 			}
 		}
