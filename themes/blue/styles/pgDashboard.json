@@ -58,7 +58,7 @@
       }
     },
     ".flInfo": {
-      "height": 200,
+      "height": 160,
       "width": null,
       "touchEnabled": true,
       "visible": true,
@@ -241,7 +241,7 @@
       "borderColor": "rgba(0,0,0,1)",
       "borderWidth": 0,
       "textColor": "rgba( 209, 16, 118, 1 )",
-        "textAlignment": "MIDCENTER",
+      "textAlignment": "MIDCENTER",
       "font": {
         "size": 25,
         "bold": false,
@@ -348,6 +348,36 @@
         "textAlignment": "MIDCENTER",
         "marginLeft": 10,
         "marginRight": 10
+      }
+    },
+    ".lblTargetNumber": {
+      "width": null,
+      "height": null,
+      "touchEnabled": true,
+      "visible": true,
+      "multiline": false,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "textColor": "rgba( 246, 207, 40, 1 )",
+      "textAlignment": "MIDCENTER",
+      "font": {
+        "size": 25,
+        "bold": false,
+        "italic": false,
+        "family": "Lato"
+      },
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "positionType": "RELATIVE",
+        "flexGrow": 2
+      },
+      "+page:Screen.width > 450": {
+        "flexProps": {
+          "flexGrow": 3
+        },
+        "textAlignment": "BOTTOMCENTER"
       }
     }
   }

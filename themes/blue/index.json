@@ -171,7 +171,8 @@
 				"pgDashboard-TaskNumber": "#pgDashboard.lblTaskNumber",
 				"pgDashboard-TaskText": "#pgDashboard.lblTaskText",
 				"pgDashboard-ConversionNumber": "#pgDashboard.lblConversionNumber",
-				"pgDashboard-ConversionText": "#pgDashboard.lblConversionText"
+				"pgDashboard-ConversionText": "#pgDashboard.lblConversionText",
+				"pgDashboard-TargetNumber": "#pgDashboard.lblTargetNumber"
 			}
 		},
 		"ListView": {

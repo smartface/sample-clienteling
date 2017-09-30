@@ -49,7 +49,7 @@ Router.add("pgWomen", require("./pages/pgWomen"), true);
 Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
 Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
 
-Router.go(isTablet ? "pgSignupTablet" : "pgCustomerProfile", {
+Router.go(isTablet ? "pgSignupTablet" : "pgSignupPhone", {
     appStart: true
 });
 
