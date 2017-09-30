@@ -33,8 +33,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 344.44800000000004,
-				"height": 459.26399999999995
+				"width": 206.25000000000003,
+				"height": 366.85
 			}
 		},
 		{
@@ -118,7 +118,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"layoutHeight": 750,
+				"layoutHeight": 1300,
 				"usePageVariable": true,
 				"name": "svMain",
 				"parent": "cf18-afa3-65ee-c058",
@@ -396,7 +396,7 @@
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.39&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.55&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -434,7 +434,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.39&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.55&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1908,7 +1908,7 @@
 				"name": "imgHamburger",
 				"parent": "a153-0d0e-1142-3610",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.39&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.55&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1921,7 +1921,7 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfo",
 			"props": {
-				"height": 100,
+				"height": 160,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -1937,7 +1937,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
 				"paddingLeft": 20,
@@ -2039,12 +2039,13 @@
 				"image": "lisa_town.png",
 				"width": null,
 				"height": null,
-				"marginBottom": null,
+				"marginBottom": 10,
 				"right": null,
 				"marginRight": null,
-				"imageFillType": "NORMAL",
+				"imageFillType": "ASPECTFIT",
 				"left": null,
 				"top": null,
+				"marginTop": 10,
 				"flexProps": {
 					"flexGrow": 0.5
 				}
@@ -2055,7 +2056,7 @@
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"imageFillType": "NORMAL",
+				"imageFillType": "ASPECTFIT",
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -2068,7 +2069,7 @@
 				},
 				"usePageVariable": true,
 				"image": "lisa_town.png",
-				"marginBottom": null,
+				"marginBottom": 10,
 				"right": null,
 				"marginRight": null,
 				"left": null,
@@ -2076,7 +2077,8 @@
 				"name": "imgUser",
 				"parent": "d2cc-973c-4896-6905",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.39&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.55&brandModel=iPhone%207",
+				"marginTop": 10
 			}
 		},
 		{
@@ -2357,7 +2359,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 209, 16, 118, 1 )",
-				"textAlignment": "BOTTOMCENTER",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 25,
 					"bold": false,
@@ -2399,7 +2401,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 32, 32, 32, 1 )",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -2409,10 +2411,8 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 1
 				},
-				"marginLeft": 10,
-				"marginRight": 10,
 				"text": "Task Pending",
 				"usePageVariable": true,
 				"name": "lblPendingTasks",
@@ -2484,7 +2484,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -2519,7 +2519,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 74, 163, 241, 1 )",
-				"textAlignment": "BOTTOMCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 25,
 					"bold": false,
@@ -2529,7 +2529,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 3
+					"flexGrow": 2
 				},
 				"text": "76%",
 				"usePageVariable": true,
@@ -2561,7 +2561,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 32, 32, 32, 1 )",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -2573,8 +2573,8 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 3
 				},
-				"marginLeft": 10,
-				"marginRight": 10,
+				"marginLeft": null,
+				"marginRight": null,
 				"text": "Last Month Sales Conversion",
 				"usePageVariable": true,
 				"name": "lblConversion",
@@ -2608,7 +2608,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -2643,7 +2643,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 246, 207, 40, 1 )",
-				"textAlignment": "BOTTOMCENTER",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 25,
 					"bold": false,
@@ -2653,7 +2653,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 3
+					"flexGrow": 2
 				},
 				"text": "80%",
 				"usePageVariable": true,

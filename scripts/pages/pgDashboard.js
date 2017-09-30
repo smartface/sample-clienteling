@@ -10,6 +10,7 @@ const FlDashboardItem3 = require('components/FlDashboardItem3');
 const FlDashboardItem4 = require('components/FlDashboardItem4');
 const FlDashboardItem5 = require('components/FlDashboardItem5');
 const dashboardService = require("../service/Dashboard");
+const userService = require("../service/User");
 const isTablet = require("../lib/isTablet");
 
 const RGB_BLUE = [74, 144, 226];
@@ -147,7 +148,6 @@ function addIncomingShipments(items) {
 
 function addSocialActivities(items) {
     var page = this;
-    console.log("BOK"+JSON.stringify(items));
     items.forEach(function(item) {
         var flDashboardItem3 = new FlDashboardItem3();
         flDashboardItem3.width = NaN;
@@ -161,14 +161,33 @@ function addSocialActivities(items) {
     });
 }
 
+function addUserInfo(json) {
+    var page = this;
+    page.imgUser.loadFromUrl(json.picture);
+    page.lblUserName.text = json.fullName;
+    page.lblEmployeeId.text = "Employee ID: " + json.id;
+    page.lblPosition.text = json.rating;
+}
+
+function addInformation(json) {
+    var page = this;
+    page.lblTaskNumber.text = json.pendingTaks;
+    page.lblConversionPercentage.text = json.lastMonthSalesConversion;
+    page.lblTargetPercentage.text = json.thisWeekTarget;
+}
+
 function loadUI() {
-    dashboardService.getDashboardData().then((json) => {
-        addReservations.call(this, json.reservations);
-        addTodos.call(this, json.todo.items);
-        addOpenIncidents.call(this, json.openIncidents);
-        addStoreAndCorporateNews.call(this, json.storeAndCorporateNews);
-        addIncomingShipments.call(this, json.incomingShipments);
-        addSocialActivities.call(this, json.socialActivityMonitor);
+    userService.getUserData().then((userJson) => {
+        addUserInfo.call(this, userJson);
+        dashboardService.getDashboardData().then((json) => {
+            addInformation.call(this, json.information);
+            addReservations.call(this, json.reservations);
+            addTodos.call(this, json.todo.items);
+            addOpenIncidents.call(this, json.openIncidents);
+            addStoreAndCorporateNews.call(this, json.storeAndCorporateNews);
+            addIncomingShipments.call(this, json.incomingShipments);
+            addSocialActivities.call(this, json.socialActivityMonitor);
+        });
     });
 }
 
