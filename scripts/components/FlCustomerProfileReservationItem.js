@@ -7,14 +7,14 @@ const FlCustomerProfileReservationItemDesign = require('library/FlCustomerProfil
 
 const FlCustomerProfileReservationItem = extend(FlCustomerProfileReservationItemDesign)(
   //constructor
-  function(_super, props, pageName) {
+  function(_super, props, opt) {
     // initalizes super class for this scope
+    opt = opt || {};
     _super(this, props || FlCustomerProfileReservationItemDesign.defaults);
-    this.pageName = pageName;
-    
-    this.children.lblDate.text = new Date(props.date).toLocaleDateString();
-    this.children.lblInfo.text = props.type;
-    this.children.lblStatus.text = props.status;
+
+    this.children.lblDate.text = new Date(opt.date).toLocaleDateString();
+    this.children.lblInfo.text = opt.type;
+    this.children.lblStatus.text = opt.status;
   }
 
 );

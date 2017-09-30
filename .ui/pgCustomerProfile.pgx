@@ -36,8 +36,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 243.75,
-				"height": 391.95
+				"width": 258.75,
+				"height": 416.06999999999994
 			}
 		},
 		{
@@ -6826,11 +6826,7 @@
 				"layoutWidth": null,
 				"name": "scFlReservations",
 				"parent": "e67e-de48-a448-9086",
-				"children": [
-					"6f84-4f4e-0b71-a5e5",
-					"d0b1-f819-861e-ab67",
-					"c346-bbd5-3700-fff9"
-				]
+				"children": []
 			}
 		},
 		{
@@ -6845,6 +6841,8 @@
 				"width": null,
 				"left": 0,
 				"top": 0,
+				"layoutWidth": 500,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -6876,343 +6874,11 @@
 				},
 				"left": 0,
 				"top": 0,
-				"name": "scw",
+				"layoutWidth": 500,
+				"name": "scwIndicates",
 				"parent": "06f6-ca60-5dac-c0f5",
-				"children": [
-					"78a7-fc17-23d2-48fa",
-					"87bf-cebd-4053-b8e1",
-					"af4b-5cb1-db3d-a25c"
-				]
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "6f84-4f4e-0b71-a5e5",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileReservationItem",
-				"id": "f3c9-f72b-84ed-36d3"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 62,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": 62,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"left": 0,
-				"top": 0,
-				"name": "flCustomerProfileReservationItem",
-				"parent": "199b-fbf2-bf34-4bcb",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "d0b1-f819-861e-ab67",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileReservationItem",
-				"id": "f3c9-f72b-84ed-36d3"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 62,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": 62,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"left": 0,
-				"top": 0,
-				"name": "flCustomerProfileReservationItem1",
-				"parent": "199b-fbf2-bf34-4bcb",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "c346-bbd5-3700-fff9",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileReservationItem",
-				"id": "f3c9-f72b-84ed-36d3"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 62,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": 62,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"left": 0,
-				"top": 0,
-				"name": "flCustomerProfileReservationItem2",
-				"parent": "199b-fbf2-bf34-4bcb",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "78a7-fc17-23d2-48fa",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileReservationItem",
-				"id": "f3c9-f72b-84ed-36d3"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 62,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": 62,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"left": 0,
-				"top": 0,
-				"name": "flCustomerProfileReservationItem",
-				"parent": "019f-240c-046f-b4de",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "af4b-5cb1-db3d-a25c",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileReservationItem",
-				"id": "f3c9-f72b-84ed-36d3"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 62,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": 62,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"left": 0,
-				"top": 0,
-				"name": "flCustomerProfileReservationItem2",
-				"parent": "019f-240c-046f-b4de",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "87bf-cebd-4053-b8e1",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileReservationItem",
-				"id": "f3c9-f72b-84ed-36d3"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 62,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": 62,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"left": 0,
-				"top": 0,
-				"name": "flCustomerProfileReservationItem1",
-				"parent": "019f-240c-046f-b4de",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -7260,10 +6926,10 @@
 				},
 				"usePageVariable": true,
 				"layoutWidth": 800,
+				"marginTop": 10,
 				"name": "wishlistScw",
 				"parent": "7dd3-a673-d522-5983",
-				"children": [],
-				"marginTop": 10
+				"children": []
 			}
 		},
 		{

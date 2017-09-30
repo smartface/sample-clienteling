@@ -17,14 +17,14 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		// overrides super.onLoad method
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 		loadUI.call(this);
-  	pageContextPatch(this, "pgCustomerProfile");
+		pageContextPatch(this, "pgCustomerProfile");
 
-	  this.shoppingBag.onPress = function(){
-	    Router.go("pgShoppingBag");  
-	  };
-	  this.lookBook.onPress = function(){
-	    Router.go("pgMainLookbook");  
-	  };
+		this.shoppingBag.onPress = function() {
+			Router.go("pgShoppingBag");
+		};
+		this.lookBook.onPress = function() {
+			Router.go("pgMainLookbook");
+		};
 	});
 
 /**
@@ -103,19 +103,37 @@ function addWardrobe(items) {
 function addReservations(items) {
 	this.scFlReservations.layout.removeAll();
 	items.forEach(item => {
-		var fl = new FlCustomerProfileReservationItem(Object.assign({}, item));
+		var fl = new FlCustomerProfileReservationItem({
+			width: 140,
+			height: 50,
+			marginRight: 20
+		}, item);
 		this.scFlReservations.layout.addChild(fl);
 	});
+	this.scFlReservations.layout.width = 170 * items.length;
 }
 
-function addWishlistItems(items){
+function addOpenIndicates(items){
+		this.scwIndicates.layout.removeAll();
+	items.forEach(item => {
+		var fl = new FlCustomerProfileReservationItem({
+			width: 140,
+			height: 50,
+			marginRight: 20
+		}, item);
+		this.scwIndicates.layout.addChild(fl);
+	});
+	this.scwIndicates.layout.width = 170 * items.length;
+}
+
+function addWishlistItems(items) {
 	this.wishlistScw.layout.removeAll();
-	items.forEach( item => {
+	items.forEach(item => {
 		var fl = new LvCustomerProfileWishlistItem({
 			width: 130,
 			height: 240,
 			marginRight: 20
-		},{
+		}, {
 			image: item.image,
 			price: item.price.currency + " " + item.price.amount,
 			name: item.name,
@@ -131,6 +149,7 @@ function loadUI() {
 	addInfo.call(this, json);
 	addWardrobe.call(this, json.wardrobe);
 	addReservations.call(this, json.reservations);
+	addOpenIndicates.call(this, json.openIncidents);
 	addWishlistItems.call(this, json.whishlist);
 }
 
