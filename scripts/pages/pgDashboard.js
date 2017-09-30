@@ -10,6 +10,11 @@ const FlDashboardItem3 = require('components/FlDashboardItem3');
 const FlDashboardItem4 = require('components/FlDashboardItem4');
 const FlDashboardItem5 = require('components/FlDashboardItem5');
 const dashboardService = require("../service/Dashboard");
+const isTablet = require("../lib/isTablet");
+
+const RGB_BLUE = [74, 144, 226];
+const RGB_RED = [185, 54, 123];
+const ARGB_BLUE = [63, 74, 144, 226];
 
 const PgDashboard = extend(PgDashboardDesign)(
     // Constructor
@@ -32,7 +37,6 @@ const PgDashboard = extend(PgDashboardDesign)(
 function onShow(superOnShow) {
     superOnShow();
     const page = this;
-
     if (System.OS === "iOS") {
         page.flStatusBarBg.height = page.statusBar.height;
     }
@@ -50,15 +54,12 @@ function onLoad(superOnLoad) {
     superOnLoad();
     const page = this;
     page.imgSignOut.onTouchEnded = function() {
-        Router.goBack("pgSignupPhone");
+        Router.goBack(isTablet ? "pgSignupTablet" : "pgSignupPhone");
     };
-    //page.svInfo.scrollBarEnabled = false;
-    //page.svInfo.layout.height = 90;
-    //page.svInfo.layout.minWidth = 768;
 }
 
 function addReservations(items) {
-    var self = this;
+    var page = this;
     items.forEach(function(item) {
         var flDashboardItem1 = new FlDashboardItem1();
         flDashboardItem1.width = NaN;
@@ -66,86 +67,97 @@ function addReservations(items) {
         flDashboardItem1.lblItemType.text = item.orderType;
         flDashboardItem1.lblItemName.text = item.employee;
         flDashboardItem1.lblItemTitle.text = item.location;
+        if (item.location.toLowerCase() === "out of store") {
+            flDashboardItem1.lblItemTitle.textColor = Color.create.apply(null, RGB_RED);
+        }
         // TODO: Date
-        self.flReservationItems.addChild(flDashboardItem1);
-        self.flReservationItems.height += flDashboardItem1.height;
+        page.flReservationItems.addChild(flDashboardItem1);
+        page.flReservationItems.height += flDashboardItem1.height;
     });
 }
 
 function addTodos(items) {
-    var self = this;
+    var page = this;
     items.forEach(function(item) {
         var flDashboardItem2 = new FlDashboardItem2();
         flDashboardItem2.width = NaN;
         flDashboardItem2.height = 80;
-
         flDashboardItem2.lblItemTitle.text = item.title;
         flDashboardItem2.lblItemName.text = item.type;
         flDashboardItem2.lblItemType.text = item.status;
         if (item.status.toLowerCase() === "overdue") {
-            // TODO: sf-core bug, color seems wrong
             flDashboardItem2.backgroundColor =
-                Color.create(74, 144, 226, 63);
+                Color.create.apply(null, ARGB_BLUE);
+            flDashboardItem2.imgExclamation.visible = true;
         }
         // TODO: Date
-
-        self.flTodoItems.addChild(flDashboardItem2);
-        self.flTodoItems.height += flDashboardItem2.height;
+        page.flTodoItems.addChild(flDashboardItem2);
+        page.flTodoItems.height += flDashboardItem2.height;
     });
 }
 
 function addOpenIncidents(items) {
-    var self = this;
+    var page = this;
     items.forEach(function(item) {
         var flDashboardItem3 = new FlDashboardItem3();
         flDashboardItem3.width = NaN;
         flDashboardItem3.height = 80;
-
         flDashboardItem3.lblItemTitle.text = item.state;
         flDashboardItem3.lblItemName.text = item.employee;
         flDashboardItem3.lblItemType.text = item.title;
         if (item.state.toLowerCase() === "completed") {
             flDashboardItem3.lblItemTitle.textColor =
-                Color.create(74, 144, 226, 255);
+                Color.create.apply(null, RGB_BLUE);
         }
         // TODO: Date
-
-        self.flOpenIncidentItems.addChild(flDashboardItem3);
-        self.flOpenIncidentItems.height += flDashboardItem3.height;
+        page.flOpenIncidentItems.addChild(flDashboardItem3);
+        page.flOpenIncidentItems.height += flDashboardItem3.height;
     });
 }
 
 function addStoreAndCorporateNews(items) {
-    var self = this;
+    var page = this;
     items.forEach(function(item) {
         var flDashboardItem4 = new FlDashboardItem4();
         flDashboardItem4.width = NaN;
         flDashboardItem4.height = 80;
-
         flDashboardItem4.lblItemTitle.text = item.location;
         flDashboardItem4.lblItemName.text = item.employee;
         flDashboardItem4.lblItemType.text = item.type;
         // TODO: Date
-
-        self.flNewsItems.addChild(flDashboardItem4);
-        self.flNewsItems.height += flDashboardItem4.height;
+        page.flNewsItems.addChild(flDashboardItem4);
+        page.flNewsItems.height += flDashboardItem4.height;
     });
 }
 
 function addIncomingShipments(items) {
-    var self = this;
+    var page = this;
     items.forEach(function(item) {
         var flDashboardItem5 = new FlDashboardItem5();
         flDashboardItem5.width = NaN;
         flDashboardItem5.height = 80;
-
         flDashboardItem5.lblItemTitle.text = item.title;
         flDashboardItem5.lblItemName.text = item.type;
         flDashboardItem5.lblItemType.text = item.status;
         // TODO: Date
+        page.flShipmentsItems.addChild(flDashboardItem5);
+        page.flShipmentsItems.height += flDashboardItem5.height;
+    });
+}
 
-        self.flShipmentsItems.addChild(flDashboardItem5);
-        self.flShipmentsItems.height += flDashboardItem5.height;
+function addSocialActivities(items) {
+    var page = this;
+    console.log("BOK"+JSON.stringify(items));
+    items.forEach(function(item) {
+        var flDashboardItem3 = new FlDashboardItem3();
+        flDashboardItem3.width = NaN;
+        flDashboardItem3.height = 80;
+        flDashboardItem3.lblItemTitle.text = item.state;
+        flDashboardItem3.lblItemName.text = item.employee;
+        flDashboardItem3.lblItemType.text = item.title;
+        // TODO: Date
+        page.flSocialActivityItems.addChild(flDashboardItem3);
+        page.flSocialActivityItems.height += flDashboardItem3.height;
     });
 }
 
@@ -156,6 +168,7 @@ function loadUI() {
         addOpenIncidents.call(this, json.openIncidents);
         addStoreAndCorporateNews.call(this, json.storeAndCorporateNews);
         addIncomingShipments.call(this, json.incomingShipments);
+        addSocialActivities.call(this, json.socialActivityMonitor);
     });
 }
 

@@ -33,8 +33,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 195,
-				"height": 346.84000000000003
+				"width": 78.75,
+				"height": 140.07
 			}
 		},
 		{
@@ -118,7 +118,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"layoutHeight": 1250,
+				"layoutHeight": 1400,
 				"usePageVariable": true,
 				"name": "svMain",
 				"parent": "cf18-afa3-65ee-c058",
@@ -396,7 +396,7 @@
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.52&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.21&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -434,7 +434,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.52&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.21&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1654,7 +1654,9 @@
 				"Implementation": "pgDashboard-Item-Small",
 				"Sizes": "Default"
 			},
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": false
+			},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem.small",
 			"props": {
 				"height": 119.25,
@@ -1682,6 +1684,7 @@
 				"marginBottom": 20.5,
 				"minWidth": 240,
 				"maxWidth": 600,
+				"usePageVariable": false,
 				"name": "flSocialActivity",
 				"parent": "295e-648c-2b89-5438",
 				"children": [
@@ -1811,6 +1814,7 @@
 				"width": null,
 				"paddingLeft": null,
 				"paddingRight": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1840,9 +1844,10 @@
 				"paddingBottom": 4.5,
 				"paddingLeft": null,
 				"paddingRight": null,
-				"name": "flItems",
+				"name": "flSocialActivityItems",
 				"parent": "fb82-7d44-e023-b112",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -1887,7 +1892,7 @@
 				"name": "imgHamburger",
 				"parent": "a153-0d0e-1142-3610",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.52&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.21&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2055,7 +2060,7 @@
 				"name": "imgUser",
 				"parent": "d2cc-973c-4896-6905",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.52&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.21&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2321,7 +2326,8 @@
 				"Implementation": "pgDashboard-TaskNumber"
 			},
 			"userProps": {
-				"text": "3"
+				"text": "3",
+				"usePageVariable": true
 			},
 			"className": ".label #pgDashboard.lblTaskNumber",
 			"props": {
@@ -2348,6 +2354,7 @@
 					"flexGrow": 2
 				},
 				"text": "3",
+				"usePageVariable": true,
 				"name": "lblTaskNumber",
 				"parent": "d489-15fe-e01b-2ef3",
 				"children": []
@@ -2479,7 +2486,8 @@
 				"Implementation": "pgDashboard-ConversionNumber"
 			},
 			"userProps": {
-				"text": "76%"
+				"text": "76%",
+				"usePageVariable": true
 			},
 			"className": ".label #pgDashboard.lblConversionNumber",
 			"props": {
@@ -2506,6 +2514,7 @@
 					"flexGrow": 2
 				},
 				"text": "76%",
+				"usePageVariable": true,
 				"name": "lblConversionPercentage",
 				"parent": "5ae2-0be1-d75e-a36a",
 				"children": []
@@ -2601,7 +2610,8 @@
 				"Implementation": "pgDashboard-TargetNumber"
 			},
 			"userProps": {
-				"text": "80%"
+				"text": "80%",
+				"usePageVariable": true
 			},
 			"className": ".label #pgDashboard.lblTargetNumber",
 			"props": {
@@ -2628,6 +2638,7 @@
 					"flexGrow": 2
 				},
 				"text": "80%",
+				"usePageVariable": true,
 				"name": "lblTargetPercentage",
 				"parent": "482b-fb52-7ba2-3cbe",
 				"children": []
