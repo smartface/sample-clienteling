@@ -256,6 +256,7 @@
 				"width": null,
 				"height": null,
 				"imageFillType": "ASPECTFIT",
+				"id": 110,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -277,7 +278,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"id": 107,
+				"id": 110,
 				"usePageVariable": true,
 				"name": "imgPreview",
 				"parent": "6f29-5ea0-6987-8dab",
@@ -5528,8 +5529,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 37.83783783783784,
-				"top": 236.48648648648648,
+				"left": 79.71014492753623,
+				"top": 244.9275362318841,
 				"width": 74.32432432432432,
 				"height": 93.24324324324324,
 				"flexProps": {
@@ -5559,8 +5560,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 37.83783783783784,
-				"top": 236.48648648648648,
+				"left": 79.71014492753623,
+				"top": 244.9275362318841,
 				"name": "stepper",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [

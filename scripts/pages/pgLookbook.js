@@ -102,7 +102,7 @@ function reDesignListviewItem() {
             if (item && sourceIndex < myDataSet.length) {
                 console.log("Index_>"+sourceIndex+"DATA_>"+JSON.stringify(data,null,"\t"));
                 item.visible = true;
-                data.image && item.imgPreview.loadFromUrl(data.image);
+                item.imgPreview.loadFromUrl(data.image);
                 item.lblPrice.text = "$" + data.price.amount;
                 item.lblName.text = data.name;
             }
