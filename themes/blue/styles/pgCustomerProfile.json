@@ -334,7 +334,7 @@
     "&-flThird": {
       "&-ReserveIndicates": {
         "width": null,
-        "height": 400,
+        "height": 200,
         "flexProps": {
           "positionType": "RELATIVE",
           "flexDirection": "COLUMN",

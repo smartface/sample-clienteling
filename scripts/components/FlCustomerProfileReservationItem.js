@@ -13,8 +13,8 @@ const FlCustomerProfileReservationItem = extend(FlCustomerProfileReservationItem
     this.pageName = pageName;
     
     this.children.lblDate.text = new Date(props.date).toLocaleDateString();
-    this.children.lblInfo = props.type;
-    this.children.lblStatus = props.status;
+    this.children.lblInfo.text = props.type;
+    this.children.lblStatus.text = props.status;
   }
 
 );

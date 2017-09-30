@@ -60,9 +60,13 @@
     function collect(component, name, initialClassNameMap) {
       var newComp = makeStylable(component, initialClassNameMap(name), name, hooks(hooksList));
       flat(name, newComp);
-
+      
       component.children && Object.keys(component.children).forEach(function (child) {
-        collect(component.children[child], name + "_" + child, initialClassNameMap);
+        try {
+          collect(component.children[child], name + "_" + child, initialClassNameMap);
+        } catch(e) {
+          throw new Error("Error when component would be collected: "+child+". "+e.message);
+        }
       });
     }
 
