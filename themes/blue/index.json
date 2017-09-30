@@ -98,6 +98,7 @@
 				"pgCustomerProfile-flScecond-infoPart-flColor": "#pgCustomerProfile-flSecond-infoPart-flColor",
 				"pgShoppingBag-FlcontinuButton": ".flexLayout-pgShoppingBagFlContinueButton",
 				"stepper": "#stepper",
+
 				"stepper-flButtons": "#stepper-flButtons",
 				"pgDashboard-Item": "#pgDashboard.flItem",
 				"pgDashboard-Item-Small": "#pgDashboard.flItem.small",
