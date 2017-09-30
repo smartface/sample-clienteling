@@ -47,8 +47,8 @@
 					"c835-c323-179b-387a",
 					"6015-add5-c15e-d9f3"
 				],
-				"width": 281.25,
-				"height": 500.25
+				"width": 221.25,
+				"height": 393.53
 			}
 		},
 		{
@@ -647,7 +647,10 @@
 				"width": null,
 				"height": null,
 				"flexProps": {
-					"flexGrow": 2
+					"flexGrow": 2,
+					"alignItems": "STRETCH",
+					"justifyContent": "CENTER",
+					"alignContent": "CENTER"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -664,9 +667,9 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
-					"alignContent": "STRETCH",
+					"alignContent": "CENTER",
 					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
+					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
@@ -677,8 +680,7 @@
 				"parent": "5be9-8547-09ac-6568",
 				"children": [
 					"3184-263f-4e23-3ea3",
-					"4c1d-c211-7132-b627",
-					"aeaf-eefe-b6fa-d7cd"
+					"4c1d-c211-7132-b627"
 				]
 			}
 		},
@@ -1075,6 +1077,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"maxHeight": 30,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignItems": "AUTO",
@@ -1103,6 +1106,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"maxHeight": 30,
 				"id": 204,
 				"name": "flPart2",
 				"parent": "7fe9-cc6a-23d3-446a",
@@ -1110,51 +1114,6 @@
 					"29cd-0e2d-5471-190c",
 					"45e8-3374-0867-46c0"
 				]
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "aeaf-eefe-b6fa-d7cd",
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"id": 203,
-				"name": "flPart3",
-				"parent": "7fe9-cc6a-23d3-446a",
-				"children": []
 			}
 		},
 		{
@@ -1220,17 +1179,11 @@
 				"Sizes": "Default",
 				"Implementation": "Line"
 			},
-			"userProps": {
-				"width": 70,
-				"marginLeft": 40,
-				"flexProps": {
-					"flexGrow": null
-				}
-			},
+			"userProps": {},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
 				"height": 1,
-				"width": 70,
+				"width": 0,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#1D1D26",
@@ -1247,9 +1200,8 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": null
+					"flexGrow": 0
 				},
-				"marginLeft": 40,
 				"id": 304,
 				"name": "flLine",
 				"parent": "4c1d-c211-7132-b627",
@@ -2033,7 +1985,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "f3c9-f72b-84ed-36d3",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -2511,7 +2463,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3254,7 +3206,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3540,8 +3492,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart-flColor",
 			"props": {
-				"height": 200,
-				"width": 200,
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -3553,7 +3505,7 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
+					"alignItems": "CENTER",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
@@ -4494,7 +4446,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.74&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5600,8 +5552,8 @@
 			"userProps": {
 				"width": 314.1304347826087,
 				"height": 163.04347826086956,
-				"left": 29.333333333333332,
-				"top": 132,
+				"left": 8.064516129032258,
+				"top": 201.61290322580646,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -5629,8 +5581,8 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
-				"left": 29.333333333333332,
-				"top": 132,
+				"left": 8.064516129032258,
+				"top": 201.61290322580646,
 				"name": "flWardrobe",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -5922,22 +5874,22 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "stepper-flButtons"
 			},
 			"userProps": {
 				"left": 179.72972972972974,
 				"top": 413.51351351351354,
 				"width": 74.32432432432432,
-				"height": 93.24324324324324,
+				"height": 60,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "CENTER",
 					"alignItems": "STRETCH"
 				}
 			},
-			"className": ".flexLayout .flexLayout-default",
+			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
 			"props": {
-				"height": 93.24324324324324,
+				"height": 60,
 				"width": 74.32432432432432,
 				"touchEnabled": true,
 				"visible": true,
@@ -5947,15 +5899,20 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "CENTER",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
-					"positionType": "ABSOLUTE"
+					"positionType": "ABSOLUTE",
+					"flexGrow": 1
 				},
+				"maxHeight": 45,
+				"maxWidth": null,
+				"paddingTop": 8,
+				"paddingBottom": 8,
 				"left": 179.72972972972974,
 				"top": 413.51351351351354,
 				"name": "stepper",
@@ -5980,7 +5937,7 @@
 			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
 			"props": {
 				"height": 45,
-				"width": 30,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -6000,7 +5957,7 @@
 					"flexGrow": 1
 				},
 				"maxHeight": 45,
-				"maxWidth": 60,
+				"maxWidth": null,
 				"paddingTop": 8,
 				"paddingBottom": 8,
 				"name": "flButtons",
@@ -6026,7 +5983,7 @@
 			},
 			"className": ".label #stepper-label",
 			"props": {
-				"width": 20,
+				"width": null,
 				"height": 20,
 				"touchEnabled": true,
 				"visible": true,
@@ -6091,7 +6048,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/downTriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/downTriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -6131,7 +6088,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/upTriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/upTriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -6145,53 +6102,29 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "stepper-flButtons"
+				"Implementation": "stepper"
 			},
 			"userProps": {
-				"left": null,
-				"top": null,
-				"width": 63,
-				"height": 45,
-				"maxHeight": 45,
 				"usePageVariable": true,
-				"marginTop": 28,
-				"borderWidth": 1,
-				"borderColor": "rgba( 151, 151, 151, 1 )",
 				"id": 211,
-				"maxWidth": 63,
-				"paddingBottom": null,
-				"paddingTop": null,
-				"flexProps": {
-					"flexDirection": "ROW",
-					"justifyContent": "CENTER",
-					"alignItems": "CENTER",
-					"positionType": "RELATIVE",
-					"flexGrow": 1,
-					"alignSelf": "CENTER",
-					"alignContent": "CENTER"
-				},
-				"flex": {
-					"flexDirection": 2,
-					"justifyContent": 1,
-					"alignItems": 2,
-					"positionType": 0
-				}
+				"borderWidth": 1,
+				"borderColor": "rgba( 0, 0, 0, 0.1 )"
 			},
-			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
+			"className": ".flexLayout .flexLayout-default #stepper",
 			"props": {
-				"height": 45,
-				"width": 63,
+				"height": 65,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
-				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderColor": "rgba( 0, 0, 0, 0.1 )",
 				"borderWidth": 1,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "CENTER",
+					"alignSelf": "AUTO",
 					"direction": "INHERIT",
-					"alignContent": "CENTER",
+					"alignContent": "STRETCH",
 					"alignItems": "CENTER",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
@@ -6199,14 +6132,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxHeight": 45,
-				"maxWidth": 63,
-				"paddingTop": null,
-				"paddingBottom": null,
-				"left": null,
-				"top": null,
+				"maxWidth": null,
+				"maxHeight": 65,
 				"usePageVariable": true,
-				"marginTop": 28,
 				"id": 211,
 				"name": "stepper",
 				"parent": "7fe9-cc6a-23d3-446a",
