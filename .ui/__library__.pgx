@@ -47,8 +47,8 @@
 					"c835-c323-179b-387a",
 					"6015-add5-c15e-d9f3"
 				],
-				"width": 393.53,
-				"height": 221.25
+				"width": 258.75,
+				"height": 460.22999999999996
 			}
 		},
 		{
@@ -809,6 +809,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 208,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -835,7 +836,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"id": 207,
+				"id": 208,
 				"name": "flImage",
 				"parent": "ca15-df69-0936-4de4",
 				"children": [
@@ -857,6 +858,7 @@
 				"width": null,
 				"height": null,
 				"paddingLeft": null,
+				"id": 207,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -884,7 +886,7 @@
 					"flexGrow": 1
 				},
 				"paddingLeft": null,
-				"id": 206,
+				"id": 207,
 				"name": "flInfo",
 				"parent": "ca15-df69-0936-4de4",
 				"children": [
@@ -907,6 +909,8 @@
 				"width": null,
 				"height": null,
 				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"id": 311,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -928,8 +932,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"id": 310,
-				"name": "imageView1",
+				"usePageVariable": true,
+				"id": 311,
+				"name": "productImage",
 				"parent": "dc3e-edb9-e2e4-8e2a",
 				"children": []
 			}
@@ -949,6 +954,7 @@
 				"width": null,
 				"text": "Farlap Dress Sleve Top",
 				"textAlignment": "MIDCENTER",
+				"id": 310,
 				"font": {
 					"size": 14
 				},
@@ -981,7 +987,7 @@
 				},
 				"text": "Farlap Dress Sleve Top",
 				"usePageVariable": true,
-				"id": 309,
+				"id": 310,
 				"name": "lblDetail",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
@@ -1002,6 +1008,7 @@
 				"width": null,
 				"text": "Size: M",
 				"textAlignment": "MIDCENTER",
+				"id": 309,
 				"font": {
 					"size": 14
 				},
@@ -1034,7 +1041,7 @@
 				},
 				"text": "Size: M",
 				"usePageVariable": true,
-				"id": 308,
+				"id": 309,
 				"name": "lblSize",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
@@ -1055,6 +1062,7 @@
 				"width": null,
 				"text": "Color: Light Blue",
 				"textAlignment": "MIDCENTER",
+				"id": 308,
 				"font": {
 					"size": 14
 				},
@@ -1087,7 +1095,7 @@
 				},
 				"text": "Color: Light Blue",
 				"usePageVariable": true,
-				"id": 307,
+				"id": 308,
 				"name": "lblColor",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
@@ -1262,6 +1270,7 @@
 				"marginTop": null,
 				"maxHeight": 60,
 				"height": null,
+				"id": 222,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -1297,7 +1306,7 @@
 				"text": "$ 100",
 				"marginTop": null,
 				"maxHeight": 60,
-				"id": 202,
+				"id": 222,
 				"name": "label1",
 				"parent": "b1ab-98b8-a397-600b",
 				"children": []
@@ -1368,6 +1377,7 @@
 				"text": "$ 100",
 				"marginTop": null,
 				"maxHeight": 60,
+				"id": 223,
 				"font": {
 					"size": 15,
 					"bold": true
@@ -1405,7 +1415,8 @@
 				"maxHeight": 60,
 				"name": "lblTotal",
 				"parent": "2a8b-d8dc-6c10-5255",
-				"children": []
+				"children": [],
+				"id": 223
 			}
 		},
 		{
@@ -2050,7 +2061,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -2171,7 +2182,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2914,7 +2925,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4139,7 +4150,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5720,7 +5731,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5760,7 +5771,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.59&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
 			}
 		},
 		{
