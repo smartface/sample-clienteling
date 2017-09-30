@@ -11,6 +11,10 @@ const FlCustomerProfileReservationItem = extend(FlCustomerProfileReservationItem
     // initalizes super class for this scope
     _super(this, props || FlCustomerProfileReservationItemDesign.defaults);
     this.pageName = pageName;
+    
+    this.children.lblDate.text = new Date(props.date).toLocaleDateString();
+    this.children.lblInfo = props.type;
+    this.children.lblStatus = props.status;
   }
 
 );

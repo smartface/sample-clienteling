@@ -19,6 +19,17 @@
             "marginTop": 3
           }
         }
+      },
+      "&_flThird": {
+        "&_flReserveIndicates": {
+         "&_flReservations": {
+           "&_flReservations": {
+            "&_scFlReservations": {
+              
+            }
+           }
+         }
+        }
       }
     },
     ".lblWishlistItemName": {
@@ -323,7 +334,7 @@
     "&-flThird": {
       "&-ReserveIndicates": {
         "width": null,
-        "height": 200,
+        "height": 400,
         "flexProps": {
           "positionType": "RELATIVE",
           "flexDirection": "COLUMN",
