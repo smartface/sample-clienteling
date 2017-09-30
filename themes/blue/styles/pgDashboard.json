@@ -80,7 +80,13 @@
       "paddingLeft": 20,
       "paddingRight": 20,
       "left": null,
-      "top": null
+      "top": null,
+      "+page:Screen.width > 450": {
+        "flexProps": {
+          "flexDirection": "ROW"
+        },
+        "height": 100
+      }
     },
     ".flInfoPart1": {
       "height": null,
@@ -190,6 +196,11 @@
         "flexDirection": "ROW",
         "positionType": "RELATIVE",
         "flexGrow": 1
+      },
+      "+page:Screen.width > 450": {
+        "flexProps": {
+          "flexDirection": "COLUMN"
+        }
       }
     },
     ".flInfoPart22": {
@@ -212,6 +223,11 @@
         "flexDirection": "ROW",
         "positionType": "RELATIVE",
         "flexGrow": 1
+      },
+      "+page:Screen.width > 450": {
+        "flexProps": {
+          "flexDirection": "COLUMN"
+        }
       }
     }
   }
