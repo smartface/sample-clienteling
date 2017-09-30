@@ -136,7 +136,7 @@ function createContext(component, name, classMap=null, reducers=null) {
 
 	return function setStyle(newStyles) {
 		try {
-			const styling = styler(styles,newStyles);
+			const styling = styler(newStyles);
 			// injects a new styling to the context
 			styleContext(styling, _contextReducer);
 		} catch(e) {
