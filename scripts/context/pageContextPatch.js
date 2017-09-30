@@ -9,14 +9,6 @@ module.exports = function pageContextPatch(page, name){
   
   function onLoad(superOnLoad) {
     superOnLoad();
-  
-    this.styleContext = pageContext.createContext(
-      this,
-      name,
-      null,
-      function reducers(state, actors, action, target) {
-        return state;
-      });
   }
   
   function onHide(superOnHide) {
@@ -26,7 +18,15 @@ module.exports = function pageContextPatch(page, name){
   
   function onShow(superOnShow) {
     superOnShow();
-    this.dispatch({
+    this.styleContext = pageContext.createContext(
+      this,
+      name,
+      null,
+      function reducers(state, actors, action, target) {
+        return state;
+      });
+      
+      this.dispatch({
       type: "invalidate"
     });
     
