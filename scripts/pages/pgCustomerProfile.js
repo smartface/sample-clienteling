@@ -3,6 +3,7 @@ const PgCustomerProfileDesign = require('ui/ui_pgCustomerProfile');
 const pageContextPatch = require("../context/pageContextPatch");
 const FlWardrobe = require("components/FlWardrobe");
 const FlCustomerProfileReservationItem = require("../components/FlCustomerProfileReservationItem");
+const Router = require("sf-core/ui/router");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 	// Constructor
@@ -13,12 +14,15 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		// overrides super.onLoad method
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-	  // loadUI.call(this);
+		loadUI.call(this);
   	pageContextPatch(this, "pgCustomerProfile");
 
-	  /*this.shoppingBag.onPress = function(){
+	  this.shoppingBag.onPress = function(){
 	    Router.go("pgShoppingBag");  
-	  };*/
+	  };
+	  this.lookBook.onPress = function(){
+	    Router.go("pgMainLookbook");  
+	  };
 	});
 
 /**
