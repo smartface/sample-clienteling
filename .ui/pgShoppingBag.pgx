@@ -42,8 +42,8 @@
 					"0956-1b61-5add-487e",
 					"e6e8-5b33-9017-7609"
 				],
-				"width": 221.25,
-				"height": 355.77
+				"width": 258.75,
+				"height": 416.06999999999994
 			}
 		},
 		{
@@ -575,6 +575,7 @@
 			"userProps": {
 				"minHeight": 42,
 				"maxHeight": 42,
+				"marginBottom": null,
 				"flexProps": {
 					"justifyContent": "CENTER"
 				}
@@ -602,14 +603,14 @@
 					"flexGrow": 1
 				},
 				"marginTop": 5,
-				"marginBottom": 20,
+				"marginBottom": null,
+				"minHeight": 42,
+				"maxHeight": 42,
 				"name": "flButton",
 				"parent": "d125-d864-c390-0484",
 				"children": [
 					"da2e-0d61-3494-8792"
-				],
-				"minHeight": 42,
-				"maxHeight": 42
+				]
 			}
 		},
 		{
