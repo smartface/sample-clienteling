@@ -241,7 +241,7 @@
       "borderColor": "rgba(0,0,0,1)",
       "borderWidth": 0,
       "textColor": "rgba( 209, 16, 118, 1 )",
-      "textAlignment": "MIDCENTER",
+        "textAlignment": "MIDCENTER",
       "font": {
         "size": 25,
         "bold": false,
@@ -252,6 +252,9 @@
         "alignSelf": "AUTO",
         "positionType": "RELATIVE",
         "flexGrow": 2
+      },
+      "+page:Screen.width > 450": {
+        "textAlignment": "BOTTOMCENTER"
       }
     },
     ".lblTaskText": {
@@ -280,7 +283,10 @@
       "+page:Screen.width > 450": {
         "textAlignment": "MIDCENTER",
         "marginLeft": 10,
-        "marginRight": 10
+        "marginRight": 10,
+        "flexProps": {
+          "flexGrow": 2
+        }
       }
     },
     ".lblConversionNumber": {
