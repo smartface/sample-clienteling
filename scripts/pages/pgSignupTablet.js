@@ -2,6 +2,8 @@ const extend = require('js-base/core/extend');
 const PgSignupTabletDesign = require('ui/ui_pgSignupTablet');
 const pageContextPatch = require("../context/pageContextPatch");
 const Router = require("sf-core/ui/router");
+const fingerprint = require("sf-extension-utils").fingerprint;
+const authService = require("../service/AuthService");
 const PgSignupTablet = extend(PgSignupTabletDesign)(
   // Constructor
   function(_super) {
@@ -9,9 +11,15 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
     _super(this);
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.btnSignup.onTouch = onTouchSignup;
-    this.btnAnonymous.onTouch = onTouchAnonymous;
-    pageContextPatch(this, "pgSignupTablet");
+
+    this.btnSignup.onPress = onPressSignup.bind(this);
+    this.btnAnonymous.onPress = onPressAnonymous;
+    this.btnFacebook.onPress = onPressFacebook;
+    this.imgBanner.onTouchEnded = function() {
+      Router.go("pgCustomerProfile");
+    };
+
+    pageContextPatch(this, "PgSignupTablet");
   });
 
 /**
@@ -20,16 +28,62 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
  * @param {function} superOnShow super onShow function
  * @param {Object} parameters passed from Router.go function
  */
-function onShow(superOnShow) {
+function onShow(superOnShow, data) {
   superOnShow();
+  const page = this;
+  data = data || {};
+  data.appStart && fingerprint.init({
+    userNameTextBox: page.taUserID,
+    passwordTextBox: page.taPassword,
+    autoLogin: false, //TODO: set true after clearing static login values from textboxes
+    callback: function(err, fingerprintResult) {
+      var password;
+      if (err)
+        password = page.taUserID.text;
+      else
+        password = fingerprintResult.password;
+      if (!password)
+        return alert("password is required");
+      loginWithUserNameAndPassword(page.taUserID.text, password, function(err) {
+        if (err)
+          return alert("Cannot login. Check user name and password. Or system is down");
+        fingerprintResult && fingerprintResult.success(); //Important!
+        Router.go('pgDashboard', {
+          //some data
+        });
+      });
+    }
+  });
 }
 
-function onTouchSignup() {
-  Router.go("pgDashboard");
+function onPressSignup() {
+  const page = this;
+  if (!page.taUserID.text) {
+    return alert("Username should not be empty");
+  }
+  fingerprint.loginWithFingerprint();
 }
 
-function onTouchAnonymous() {
+function onPressAnonymous() {
   Router.go("pgMainLookbook");
+}
+
+function onPressFacebook() {
+  Router.go("pgLookbook");
+}
+
+function loginWithUserNameAndPassword(username, password, callback) {
+  authService.login().then(() => {
+    callback();
+  }).catch((err) => {
+    if (err) {
+      err = JSON.stringify(err);
+    }
+    else
+      err = "unknown";
+    console.log(`login error! Reason: ${err}`);
+    callback(err);
+  });
 }
 
 module && (module.exports = PgSignupTablet);

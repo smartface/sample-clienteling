@@ -31,8 +31,8 @@
 					"3aac-ed2b-6f28-f93e",
 					"85f3-4d55-de4a-fe98"
 				],
-				"width": 330,
-				"height": 530.64
+				"width": 183.75,
+				"height": 295.46999999999997
 			}
 		},
 		{
@@ -180,6 +180,7 @@
 				"marginRight": 20,
 				"marginTop": 20,
 				"marginBottom": 20,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -206,10 +207,11 @@
 				"marginRight": 20,
 				"marginTop": 20,
 				"marginBottom": 20,
-				"name": "ivBanner",
+				"usePageVariable": true,
+				"name": "imgBanner",
 				"parent": "25f8-b6c1-967d-a7e3",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.88&brandModel=iPhone%207?random=0.2931601758490816"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.49&brandModel=iPhone%207?random=0.8683863578375239"
 			}
 		},
 		{
@@ -313,6 +315,7 @@
 				"text": "User ID",
 				"width": null,
 				"height": 40,
+				"usePageVariable": true,
 				"font": {
 					"size": 28
 				}
@@ -341,6 +344,7 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "User ID",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "b980-8891-42c7-67ca",
 				"name": "lblUserID"
@@ -359,6 +363,7 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 197, 197, 197, 1 )",
 				"textColor": "rgba( 63, 63, 63, 1 )",
+				"usePageVariable": true,
 				"font": {
 					"family": "Nunito",
 					"size": 28
@@ -387,6 +392,7 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "smartface@smartface.io",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "b980-8891-42c7-67ca",
 				"name": "taUserID"
@@ -421,7 +427,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"children": [],
 				"parent": "b980-8891-42c7-67ca",
@@ -487,6 +494,7 @@
 				"text": "Password",
 				"width": null,
 				"height": 40,
+				"usePageVariable": true,
 				"font": {
 					"size": 28
 				}
@@ -515,6 +523,7 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Password",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "8fe8-6348-112c-7fea",
 				"name": "lblPassword"
@@ -534,6 +543,7 @@
 				"borderColor": "rgba( 197, 197, 197, 1 )",
 				"textColor": "rgba( 63, 63, 63, 1 )",
 				"isPassword": true,
+				"usePageVariable": true,
 				"font": {
 					"family": "Nunito",
 					"size": 28
@@ -563,6 +573,7 @@
 				},
 				"text": "",
 				"isPassword": true,
+				"usePageVariable": true,
 				"children": [],
 				"parent": "8fe8-6348-112c-7fea",
 				"name": "taPassword"
@@ -597,7 +608,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"children": [],
 				"parent": "8fe8-6348-112c-7fea",
@@ -878,10 +890,10 @@
 				"marginRight": 10,
 				"marginBottom": null,
 				"text": "Login with Facebook",
+				"usePageVariable": true,
 				"name": "btnFacebook",
 				"parent": "b2a4-af8f-ab1e-15e6",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{

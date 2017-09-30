@@ -12,9 +12,9 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
 
-    this.btnSignup.onPress = onTouchSignup.bind(this);
-    this.btnAnonymous.onPress = onTouchAnonymous;
-    this.btnFacebook.onPress = onTouchFacebook;
+    this.btnSignup.onPress = onPressSignup.bind(this);
+    this.btnAnonymous.onPress = onPressAnonymous;
+    this.btnFacebook.onPress = onPressFacebook;
     this.imgBanner.onTouchEnded = function() {
       Router.go("pgCustomerProfile");
     };
@@ -56,25 +56,21 @@ function onShow(superOnShow, data) {
   });
 }
 
-function onTouchSignup() {
-  // Router.go("pgDashboard");
+function onPressSignup() {
   const page = this;
-
   if (!page.taUserID.text) {
     return alert("Username should not be empty");
   }
   fingerprint.loginWithFingerprint();
 }
 
-function onTouchAnonymous() {
+function onPressAnonymous() {
   Router.go("pgMainLookbook");
 }
 
-function onTouchFacebook() {
+function onPressFacebook() {
   Router.go("pgLookbook");
 }
-
-
 
 function loginWithUserNameAndPassword(username, password, callback) {
   authService.login().then(() => {
@@ -82,7 +78,7 @@ function loginWithUserNameAndPassword(username, password, callback) {
   }).catch((err) => {
     if (err) {
       err = JSON.stringify(err);
-    } 
+    }
     else
       err = "unknown";
     console.log(`login error! Reason: ${err}`);
