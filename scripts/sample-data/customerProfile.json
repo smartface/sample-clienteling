@@ -135,6 +135,51 @@
                 "currency": "$"
             },
             "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56365.png"
+        },
+        {
+            "productId": "D56363",
+            "name": "Lavender Hat",
+            "price": {
+                "amount": 65,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56363.png"
+        },
+        {
+            "productId": "D56363",
+            "name": "Funfury Bag",
+            "price": {
+                "amount": 89,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56356.png"
+        },
+        {
+            "productId": "D56363",
+            "name": "Burberry Sunglasses",
+            "price": {
+                "amount": 225,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D563629.png"
+        },
+        {
+            "productId": "D56364",
+            "name": "Seven Red Dress",
+            "price": {
+                "amount": 109,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56364.png"
+        },
+        {
+            "productId": "D56365",
+            "name": "Seven Bl",
+            "price": {
+                "amount": 109,
+                "currency": "$"
+            },
+            "image": "https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56365.png"
         }
     ],
     "storeRecommendations": [{

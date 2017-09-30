@@ -7,7 +7,9 @@
 			"themeProps": {
 				"Page": "Default"
 			},
-			"userProps": {},
+			"userProps": {
+				"orientation": "AUTO"
+			},
 			"className": ".page",
 			"version": "6.4.12",
 			"props": {
@@ -21,7 +23,7 @@
 				},
 				"backgroundColor": "#FFFFFF",
 				"font": {},
-				"orientation": "PORTRAIT",
+				"orientation": "AUTO",
 				"name": "pgLookbook",
 				"parent": null,
 				"children": [
@@ -29,8 +31,8 @@
 					"1709-15ff-299c-d200",
 					"4e6d-4b6a-ed73-f480"
 				],
-				"width": 345,
-				"height": 554.76
+				"width": 258.75,
+				"height": 416.06999999999994
 			}
 		},
 		{
@@ -111,62 +113,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"usePageVariable": true,
 				"name": "lvMain",
 				"parent": "599f-a414-1eef-1663",
-				"children": [
-					"95f8-3354-c79b-9a13"
-				],
-				"usePageVariable": true
-			}
-		},
-		{
-			"type": "ListViewItem",
-			"id": "95f8-3354-c79b-9a13",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"id": "4a13-68fd-e0c7-dcfd"
-			},
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": 300,
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".listViewItem",
-			"props": {
-				"height": 300,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
-				"name": "lookbookItem",
-				"parent": "4e6d-4b6a-ed73-f480",
 				"children": []
 			}
 		}

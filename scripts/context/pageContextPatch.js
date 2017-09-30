@@ -5,6 +5,7 @@ module.exports = function pageContextPatch(page, name){
   page.onLoad = onLoad.bind(page, page.onLoad.bind(page));
   page.onShow = onShow.bind(page, page.onShow.bind(page));
   page.onHide = onHide.bind(page, page.onHide ? page.onHide.bind(page) : null);
+  page.onOrientationChange = onOrientationChange.bind(page, page.onOrientationChange ? page.onOrientationChange.bind(page) : null);
   
   function onLoad(superOnLoad) {
     superOnLoad();
@@ -31,10 +32,11 @@ module.exports = function pageContextPatch(page, name){
     
     this.layout.applyLayout();
 
-    this.onOrientationChange = onOrientationChange.bind(this);
+   //this.onOrientationChange = onOrientationChange.bind(this);
   }
   
-  function onOrientationChange() {
+  function onOrientationChange(superOnOrientationChange) {
+    superOnOrientationChange && setTimeout(superOnOrientationChange.bind(this),1);
     setTimeout(function() {
       this.dispatch({
         type: "invalidate"

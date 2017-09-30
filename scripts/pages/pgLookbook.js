@@ -1,5 +1,14 @@
 const extend = require('js-base/core/extend');
+
 const PgLookbookDesign = require('ui/ui_pgLookbook');
+const ListViewItem = require('sf-core/ui/listviewitem');
+const FlexLayout = require('sf-core/ui/flexlayout');
+const Color = require('sf-core/ui/color');
+const LookbookItem = require("components/LookbookItem");
+const Screen = require('sf-core/device/screen');
+const pageContextPatch = require("../context/pageContextPatch");
+
+const ITEM_WIDTH = 140;
 
 const PgLookbook = extend(PgLookbookDesign)(
     // Constructor
@@ -11,6 +20,10 @@ const PgLookbook = extend(PgLookbookDesign)(
         // overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
+        this.onOrientationChange = onOrientationChange.bind(this);
+
+        pageContextPatch(this, "pgLookBook");
+
     });
 
 /**
@@ -21,6 +34,7 @@ const PgLookbook = extend(PgLookbookDesign)(
  */
 function onShow(superOnShow) {
     superOnShow();
+
 }
 
 /**
@@ -30,33 +44,57 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
     superOnLoad();
+    reDesignListviewItem.call(this);
+}
 
-    var myDataSet = [{
-        title: 'Smartface Title 1'
-    }, {
-        title: 'Smartface Title 2'
-    }, {
-        title: 'Smartface Title 3'
-    }, {
-        title: 'Smartface Title 4'
-    }, {
-        title: 'Smartface Title 5'
-    }, {
-        title: 'Smartface Title 6'
-    }, {
-        title: 'Smartface Title 7'
-    }, {
-        title: 'Smartface Title 8'
-    }, {
-        title: 'Smartface Title 9'
-    }];
+function onOrientationChange() {
+    reDesignListviewItem.call(this);
+    this.layout.applyLayout();
+}
 
-    this.lvMain.itemCount = myDataSet.length;
-    this.lvMain.onRowBind = function(listViewItem, index) {
-        var myLabelTitle = listViewItem.lblPrice;
-        myLabelTitle.text = myDataSet[index].title;
+function reDesignListviewItem() {
+    const json = require("../sample-data/customerProfile.json");
+    var myDataSet = json.whishlist;
+
+    var itemCountPerRow = Math.floor(Screen.width / ITEM_WIDTH);
+    this.lvMain.onRowCreate = function() {
+        var listItem = new ListViewItem({
+            positionType: "RELATIVE",
+            flexGrow: 1,
+            flexDirection: FlexLayout.FlexDirection.ROW,
+            justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN,
+            alignItems: FlexLayout.AlignItems.STRETCH,
+        });
+        for (var i = 0; i < itemCountPerRow; ++i) {
+            listItem.addChild(new LookbookItem({
+                positionType: "RELATIVE",
+                alignSelf: FlexLayout.AlignSelf.CENTER,
+                height: 200,
+                width: 140,
+                id: i
+            }));
+        }
+        return listItem;
+
     };
-
+    this.lvMain.rowHeight = 250;
+    this.lvMain.itemCount = Math.ceil(myDataSet.length / itemCountPerRow);
+    console.log("LıstView -> " + this.lvMain.rowHeight + " - " + this.lvMain.itemCount + " per " + itemCountPerRow);
+    this.lvMain.onRowBind = function(listViewItem, index) {
+        var item, sourceIndex;
+        for (var i = 0; i < itemCountPerRow; ++i) {
+            sourceIndex = (index * itemCountPerRow) + i;
+            item = listViewItem.findChildById(i);
+            if (item && sourceIndex < myDataSet.length) {
+                item.imgPreview.loadFromUrl(myDataSet[sourceIndex].image);
+                item.lblPrice.text = "$" + myDataSet[sourceIndex].price.amount;
+                item.lblName.text = myDataSet[sourceIndex].name;
+            }
+        }
+    };
+    this.lvMain.refreshData();
+    this.lvMain.stopRefresh();
+    this.lvMain.applyLayout();
 }
 
 module && (module.exports = PgLookbook);
