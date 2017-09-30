@@ -100,7 +100,7 @@ function reDesignListviewItem() {
             item = listViewItem.findChildById(i+1);
             data = myDataSet[sourceIndex];
             if (item && sourceIndex < myDataSet.length) {
-                console.log("Index_>"+sourceIndex+"DATA_>"+JSON.stringify(data,null,"\t"));
+                //console.log("Index_>"+sourceIndex+"DATA_>"+JSON.stringify(data,null,"\t"));
                 item.visible = true;
                 item.imgPreview.loadFromUrl(data.image);
                 item.lblPrice.text = "$" + data.price.amount;
