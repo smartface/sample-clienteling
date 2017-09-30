@@ -82,11 +82,6 @@
 				"pgMainLookbook-SecondLine": "#pgMainLookbook.flSecondLine",
 				"pgMainLookbook-ThirdLine": "#pgMainLookbook.flThirdLine",
 				"pgMainLookbook-Sale": "#pgMainLookbook.flSale",
-				"pgDashboard-Item": "#pgDashboard.flItem",
-				"pgDashboard-Item-Small": "#pgDashboard.flItem.small",
-				"pgDashboard-EmployeeInfo": "#pgDashboard.flEmployeeInfo",
-				"pgDashboard-EmployeeInfo-Part1": "#pgDashboard.infoPart1",
-				"pgDashboard-EmployeeInfo-Part2": "#pgDashboard.infoPart2",
 				"pgCustomerProfile-flFirst": "#pgCustomerProfile_flFirst",
 				"pgCustomerProfile-flFirst-flInfo": "#pgCustomerProfile_flFirst_flInfo",
 				"pgCustomerProfile-flFirst-flInfo-profile": "#pgCustomerProfile_flFirst_flInfo_profile",
@@ -102,7 +97,16 @@
 				"pgCustomerProfile-flThird-ReserveIndicates-divider": "#pgCustomerProfile-flThird-ReserveIndicates-divider",
 				"pgCustomerProfile-flScecond-infoPart-flColor": "#pgCustomerProfile-flSecond-infoPart-flColor",
 				"pgShoppingBag-FlcontinuButton": ".flexLayout-pgShoppingBagFlContinueButton",
-				"stepper-flButtons": "#stepper-flButtons"
+				"stepper-flButtons": "#stepper-flButtons",
+				"pgDashboard-Item": "#pgDashboard.flItem",
+				"pgDashboard-Item-Small": "#pgDashboard.flItem.small",
+				"pgDashboard-Info": "#pgDashboard.flInfo",
+				"pgDashboard-Info1": "#pgDashboard.flInfoPart1",
+				"pgDashboard-Info2": "#pgDashboard.flInfoPart2",
+				"pgDashboard-Info11": "#pgDashboard.flInfoPart11",
+				"pgDashboard-Info12": "#pgDashboard.flInfoPart12",
+				"pgDashboard-Info21": "#pgDashboard.flInfoPart21",
+				"pgDashboard-Info22": "#pgDashboard.flInfoPart22"
 			}
 		},
 		"ScrollView": {

@@ -1,21 +1,5 @@
 {
   "#pgDashboard": {
-    ".flEmployeeInfo": {
-      "height": 200,
-      "width": null,
-      "align": "HORIZONTAL",
-      "flexProps": {
-        "flexDirection": "COLUMN",
-        "flexWrap": "WRAP",
-        "positionType": "RELATIVE"
-      },
-      "+page:Screen.width > 450": {
-        "flexProps": {
-          "flexDirection": "ROW"
-        },
-        "height": 100
-      }
-    },
     ".svMain": {
       "height": null,
       "width": null,
@@ -73,10 +57,41 @@
         }
       }
     },
-    ".infoPart1": {
+    ".flInfo": {
+      "height": 200,
+      "width": null,
+      "touchEnabled": true,
+      "visible": true,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "font": {},
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "COLUMN",
+        "positionType": "RELATIVE"
+      },
+      "paddingLeft": 20,
+      "paddingRight": 20,
+      "left": null,
+      "top": null
+    },
+    ".flInfoPart1": {
       "height": null,
       "width": null,
-      "paddingRight": 20,
+      "touchEnabled": true,
+      "visible": true,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "font": {},
       "flexProps": {
         "alignSelf": "AUTO",
         "direction": "INHERIT",
@@ -87,17 +102,18 @@
         "flexDirection": "ROW",
         "positionType": "RELATIVE",
         "flexGrow": 1
-      },
-      "+page:Screen.width > 450": {
-        "flexProps": {
-          "flexDirection": "COLUMN"
-        }
       }
     },
-    ".infoPart2": {
+    ".flInfoPart2": {
       "height": null,
       "width": null,
-      "paddingRight": 20,
+      "touchEnabled": true,
+      "visible": true,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "font": {},
       "flexProps": {
         "alignSelf": "AUTO",
         "direction": "INHERIT",
@@ -108,11 +124,94 @@
         "flexDirection": "ROW",
         "positionType": "RELATIVE",
         "flexGrow": 1
-      },
-      "+page:Screen.width > 450": {
-        "flexProps": {
-          "flexDirection": "COLUMN"
-        }
+      }
+    },
+    ".flInfoPart11": {
+      "height": null,
+      "width": null,
+      "touchEnabled": true,
+      "visible": true,
+      "backgroundColor": "rgba( 255, 255, 255, 0 )",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "font": {},
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "ROW",
+        "positionType": "RELATIVE",
+        "flexGrow": 2
+      }
+    },
+    ".flInfoPart12": {
+      "height": null,
+      "width": null,
+      "touchEnabled": true,
+      "visible": true,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "font": {},
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "COLUMN",
+        "positionType": "RELATIVE",
+        "flexGrow": 1
+      }
+    },
+    ".flInfoPart21": {
+      "height": null,
+      "width": null,
+      "touchEnabled": true,
+      "visible": true,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "font": {},
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "ROW",
+        "positionType": "RELATIVE",
+        "flexGrow": 1
+      }
+    },
+    ".flInfoPart22": {
+      "height": null,
+      "width": null,
+      "touchEnabled": true,
+      "visible": true,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "font": {},
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "ROW",
+        "positionType": "RELATIVE",
+        "flexGrow": 1
       }
     }
   }
