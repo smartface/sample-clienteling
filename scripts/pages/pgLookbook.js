@@ -7,9 +7,12 @@ const FlexLayout = require('sf-core/ui/flexlayout');
 const Color = require('sf-core/ui/color');
 const LookbookItem = require("components/LookbookItem");
 const Screen = require('sf-core/device/screen');
+const customerService = require("service/Customer");
 const pageContextPatch = require("../context/pageContextPatch");
 
 const ITEM_WIDTH = 140;
+const json = require("../sample-data/customerProfile.json");
+var myDataSet = json.whishlist.slice();
 
 const PgLookbook = extend(PgLookbookDesign)(
     // Constructor
@@ -46,6 +49,9 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     superOnLoad();
     reDesignListviewItem.call(this);
+    customerService
+        .getLookBook(1445)
+        .then(res => console.log("RES_> " + JSON.stringify(res, null, "\t")), err => console.log("ERR_> ") + JSON.stringify(err, null, "\t"));
 }
 
 function onOrientationChange() {
@@ -53,57 +59,62 @@ function onOrientationChange() {
 }
 
 function reDesignListviewItem() {
-    const json = require("../sample-data/customerProfile.json");
-    var myDataSet = json.whishlist;
     this.layout.removeChild(this.lvMain);
     this.lvMain = new ListView({
         positionType: FlexLayout.PositionType.RELATIVE,
         flexGrow: 1
     });
+    var id = 0;
     var itemCountPerRow = Math.floor(Screen.width / ITEM_WIDTH);
     this.lvMain.onRowCreate = function() {
         var listItem = new ListViewItem({
-            positionType: "RELATIVE",
+            positionType: FlexLayout.PositionType.RELATIVE,
             flexGrow: 1,
             flexDirection: FlexLayout.FlexDirection.ROW,
             justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN,
             alignItems: FlexLayout.AlignItems.STRETCH,
             marginLeft: 5,
-            width: Screen.width - 10
+            width: Screen.width - 10,
+            id: ++id
         });
         for (var i = 0; i < itemCountPerRow; ++i) {
             listItem.addChild(new LookbookItem({
-                positionType: "RELATIVE",
+                positionType: FlexLayout.PositionType.RELATIVE,
                 alignSelf: FlexLayout.AlignSelf.CENTER,
                 height: 200,
                 width: 140,
-                id: i
+                id: i+1
             }));
         }
-        
+
         return listItem;
 
     };
     this.lvMain.rowHeight = 250;
-    this.lvMain.itemCount = 4
-    // Math.ceil(myDataSet.length / itemCountPerRow);
+    this.lvMain.itemCount = Math.ceil(myDataSet.length / itemCountPerRow);
     console.log("LıstView -> " + this.lvMain.rowHeight + " - " + this.lvMain.itemCount + " per " + itemCountPerRow);
     this.lvMain.onRowBind = function(listViewItem, index) {
-        var item, sourceIndex;
+        var item, sourceIndex, data;
         for (var i = 0; i < itemCountPerRow; ++i) {
             sourceIndex = (index * itemCountPerRow) + i;
-            item = listViewItem.findChildById(i);
+            item = listViewItem.findChildById(i+1);
+            data = myDataSet[sourceIndex];
             if (item && sourceIndex < myDataSet.length) {
-                item.imgPreview.loadFromUrl(myDataSet[sourceIndex].image);
-                item.lblPrice.text = "$" + myDataSet[sourceIndex].price.amount;
-                item.lblName.text = myDataSet[sourceIndex].name;
+                console.log("Index_>"+sourceIndex+"DATA_>"+JSON.stringify(data,null,"\t"));
+                item.visible = true;
+                data.image && item.imgPreview.loadFromUrl(data.image);
+                item.lblPrice.text = "$" + data.price.amount;
+                item.lblName.text = data.name;
+            }
+            else {
+                item && (item.visible = false);
             }
         }
     };
-    
+
     this.lvMain.refreshData();
     this.lvMain.stopRefresh();
-    
+
     this.layout.addChild(this.lvMain);
 }
 
