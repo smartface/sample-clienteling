@@ -80,11 +80,13 @@ function reDesignListviewItem() {
                 id: i
             }));
         }
+        
         return listItem;
 
     };
     this.lvMain.rowHeight = 250;
-    this.lvMain.itemCount = Math.ceil(myDataSet.length / itemCountPerRow);
+    this.lvMain.itemCount = 4
+    // Math.ceil(myDataSet.length / itemCountPerRow);
     console.log("LıstView -> " + this.lvMain.rowHeight + " - " + this.lvMain.itemCount + " per " + itemCountPerRow);
     this.lvMain.onRowBind = function(listViewItem, index) {
         var item, sourceIndex;
@@ -98,6 +100,7 @@ function reDesignListviewItem() {
             }
         }
     };
+    
     this.lvMain.refreshData();
     this.lvMain.stopRefresh();
     

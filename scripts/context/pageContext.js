@@ -9,6 +9,7 @@ const INIT_CONTEXT_ACTION_TYPE = require("../lib/Context")
 	.INIT_CONTEXT_ACTION_TYPE;
 
 const theme = require("../themes/blue");
+var orientationState = "ended"
 
 commands.addRuntimeCommandFactory(function(type){
   switch (type) {
@@ -16,7 +17,18 @@ commands.addRuntimeCommandFactory(function(type){
       return function pageCommand(opts){
         opts = merge(opts);
         var isOK = (function(Screen) { return eval(opts.args); }({width: Screen.width, height: Screen.height}));
-        console.log("RunstimeCommand :: isOK : "+isOK.toString()+" "+JSON.stringify(opts))
+        // console.log("+page :: isOK : "+isOK.toString()+" "+JSON.stringify(opts))
+		    return  isOK ? opts.value : {};
+      };
+      
+      break;
+    case '+orientationChange':
+      return function pageCommand(opts){
+        opts = merge(opts);
+        var isOK = (function(Screen, orientation) { 
+          return eval(opts.args); 
+        }({width: Screen.width, height: Screen.height}, orientationState));
+        console.log("+orientationChange :: isOK : "+isOK.toString()+" "+JSON.stringify(opts))
 		    return  isOK ? opts.value : {};
       };
       
@@ -153,6 +165,23 @@ function contextReducer(state, actors, action, target) {
 	      var actor = actors[name];
 	      actor.setUgly(true);
 	    });
+	    
+	    return newState;
+	  case "orientationStarted" :
+	    Object.keys(actors).forEach(function(name){
+	      var actor = actors[name];
+	      actor.setUgly(true);
+	    });
+	    
+	    orientationState = "started";
+	    return newState;
+	  case "orientationEnded" :
+	    Object.keys(actors).forEach(function(name){
+	      var actor = actors[name];
+	      actor.setUgly(true);
+	    });
+	    
+	    orientationState = "ended";
 	    
 	    return newState;
 	}

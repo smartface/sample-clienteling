@@ -57,8 +57,19 @@
       "height": null,
       "maxHeight": null,
       "maxWidth": null,
+      "visible": true,
       "flexProps": {
         "flexGrow": 27
+      },
+      "+orientationChange:orientation == 'started' && Screen.width < Screen.height": {
+        "visible": false,
+        "width": 0,
+        "height": 0,
+        "maxHeight": 0,
+        "maxWidth": 0,
+        "flexProps": {
+          "flexGrow": 0
+        }
       },
       "+page:Screen.width > 450 && Screen.width > Screen.height": {
         "width": 0,
@@ -83,10 +94,22 @@
       "height": 0,
       "maxHeight": 0,
       "maxWidth": 0,
+      "visible": true,
       "flexProps": {
         "flexGrow": 0
       },
+      "+orientationChange:orientation == 'started' && Screen.width > Screen.height": {
+        "visible": false,
+        "width": 0,
+        "height": 0,
+        "maxHeight": 0,
+        "maxWidth": 0,
+        "flexProps": {
+          "flexGrow": 0
+        }
+      },
       "+page:Screen.width > 450 && Screen.width > Screen.height": {
+        "visible": true,
         "width": null,
         "height": null,
         "maxHeight": null,
