@@ -165,7 +165,11 @@
 				"pgCustomerProfile-scoreITem-title": "#scoreItem-title",
 				"pgCustomerProfile-scoreITem-text": "#scoreItem-text",
 				"pgCustomerProfile-flScecond-infoPart-itemText": "#pgCustomerProfile-flSecond-infoPart-itemText",
-				"stepper-label": "#stepper-label"
+				"stepper-label": "#stepper-label",
+				"pgDashboard-TaskNumber": "#pgDashboard.lblTaskNumber",
+				"pgDashboard-TaskText": "#pgDashboard.lblTaskText",
+				"pgDashboard-ConversionNumber": "#pgDashboard.lblConversionNumber",
+				"pgDashboard-ConversionText": "#pgDashboard.lblConversionText"
 			}
 		},
 		"ListView": {

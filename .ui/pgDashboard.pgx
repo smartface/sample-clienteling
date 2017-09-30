@@ -33,8 +33,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 240,
-				"height": 426
+				"width": 346.84000000000003,
+				"height": 195
 			}
 		},
 		{
@@ -396,7 +396,7 @@
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.52&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -434,7 +434,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.52&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1887,7 +1887,7 @@
 				"name": "imgHamburger",
 				"parent": "a153-0d0e-1142-3610",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.52&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1900,7 +1900,7 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfo",
 			"props": {
-				"height": 200,
+				"height": 100,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -1916,7 +1916,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
 				"paddingLeft": 20,
@@ -2055,7 +2055,7 @@
 				"name": "imgUser",
 				"parent": "d2cc-973c-4896-6905",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%20SE"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisa_town.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.52&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2318,24 +2318,12 @@
 			"id": "255b-2fed-fb53-3111",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgDashboard-TaskNumber"
 			},
 			"userProps": {
-				"text": "3",
-				"textColor": "rgba( 209, 16, 118, 1 )",
-				"textAlignment": "MIDCENTER",
-				"width": null,
-				"height": null,
-				"left": null,
-				"top": null,
-				"font": {
-					"size": 25
-				},
-				"flexProps": {
-					"flexGrow": 2
-				}
+				"text": "3"
 			},
-			"className": ".label",
+			"className": ".label #pgDashboard.lblTaskNumber",
 			"props": {
 				"width": null,
 				"height": null,
@@ -2360,8 +2348,6 @@
 					"flexGrow": 2
 				},
 				"text": "3",
-				"left": null,
-				"top": null,
 				"name": "lblTaskNumber",
 				"parent": "d489-15fe-e01b-2ef3",
 				"children": []
@@ -2372,26 +2358,13 @@
 			"id": "86d4-c8b0-4710-a726",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgDashboard-TaskText"
 			},
 			"userProps": {
-				"height": null,
-				"width": null,
 				"text": "TASKS PENDING",
-				"multiline": true,
-				"textColor": "rgba( 32, 32, 32, 1 )",
-				"usePageVariable": true,
-				"textAlignment": "TOPCENTER",
-				"left": null,
-				"top": null,
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"font": {
-					"size": 12
-				}
+				"usePageVariable": true
 			},
-			"className": ".label",
+			"className": ".label #pgDashboard.lblTaskText",
 			"props": {
 				"width": null,
 				"height": null,
@@ -2417,8 +2390,6 @@
 				},
 				"text": "TASKS PENDING",
 				"usePageVariable": true,
-				"left": null,
-				"top": null,
 				"name": "lblPendingTasks",
 				"parent": "d489-15fe-e01b-2ef3",
 				"children": []
@@ -2488,7 +2459,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -2505,24 +2476,12 @@
 			"id": "e9c0-5e02-c604-bc82",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgDashboard-ConversionNumber"
 			},
 			"userProps": {
-				"text": "76%",
-				"textColor": "rgba( 74, 163, 241, 1 )",
-				"textAlignment": "MIDLEFT",
-				"width": null,
-				"height": null,
-				"left": null,
-				"top": null,
-				"font": {
-					"size": 25
-				},
-				"flexProps": {
-					"flexGrow": 2
-				}
+				"text": "76%"
 			},
-			"className": ".label",
+			"className": ".label #pgDashboard.lblConversionNumber",
 			"props": {
 				"width": null,
 				"height": null,
@@ -2547,8 +2506,6 @@
 					"flexGrow": 2
 				},
 				"text": "76%",
-				"left": null,
-				"top": null,
 				"name": "lblConversionPercentage",
 				"parent": "5ae2-0be1-d75e-a36a",
 				"children": []
@@ -2559,25 +2516,13 @@
 			"id": "6f9b-0adb-40ff-1dd9",
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgDashboard-ConversionText"
 			},
 			"userProps": {
-				"height": null,
-				"width": null,
 				"text": "Last Month Sales Conversion",
-				"multiline": true,
-				"textColor": "rgba( 32, 32, 32, 1 )",
-				"usePageVariable": true,
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"flexGrow": 3
-				},
-				"font": {
-					"size": 12
-				}
+				"usePageVariable": true
 			},
-			"className": ".label",
+			"className": ".label #pgDashboard.lblConversionText",
 			"props": {
 				"width": null,
 				"height": null,
@@ -2603,8 +2548,6 @@
 				},
 				"text": "Last Month Sales Conversion",
 				"usePageVariable": true,
-				"left": 0,
-				"top": 0,
 				"name": "lblConversion",
 				"parent": "5ae2-0be1-d75e-a36a",
 				"children": []
@@ -2636,7 +2579,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},

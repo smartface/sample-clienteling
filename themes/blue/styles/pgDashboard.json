@@ -229,6 +229,102 @@
           "flexDirection": "COLUMN"
         }
       }
+    },
+    ".lblTaskNumber": {
+      "width": null,
+      "height": null,
+      "touchEnabled": true,
+      "visible": true,
+      "multiline": false,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "textColor": "rgba( 209, 16, 118, 1 )",
+      "textAlignment": "MIDCENTER",
+      "font": {
+        "size": 25,
+        "bold": false,
+        "italic": false,
+        "family": "Lato"
+      },
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "positionType": "RELATIVE",
+        "flexGrow": 2
+      }
+    },
+    ".lblTaskText": {
+      "width": null,
+      "height": null,
+      "touchEnabled": true,
+      "visible": true,
+      "multiline": true,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "textColor": "rgba( 32, 32, 32, 1 )",
+      "textAlignment": "TOPCENTER",
+      "font": {
+        "size": 12,
+        "bold": false,
+        "italic": false,
+        "family": "Lato"
+      },
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "positionType": "RELATIVE",
+        "flexGrow": 1
+      }
+    },
+    ".lblConversionNumber": {
+      "width": null,
+      "height": null,
+      "touchEnabled": true,
+      "visible": true,
+      "multiline": false,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "textColor": "rgba( 74, 163, 241, 1 )",
+      "textAlignment": "MIDLEFT",
+      "font": {
+        "size": 25,
+        "bold": false,
+        "italic": false,
+        "family": "Lato"
+      },
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "positionType": "RELATIVE",
+        "flexGrow": 2
+      }
+    },
+    ".lblConversionText": {
+      "width": null,
+      "height": null,
+      "touchEnabled": true,
+      "visible": true,
+      "multiline": true,
+      "backgroundColor": "rgba(255,255,255,0)",
+      "alpha": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "textColor": "rgba( 32, 32, 32, 1 )",
+      "textAlignment": "MIDLEFT",
+      "font": {
+        "size": 12,
+        "bold": false,
+        "italic": false,
+        "family": "Lato"
+      },
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "positionType": "RELATIVE",
+        "flexGrow": 3
+      }
     }
   }
 }
