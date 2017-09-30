@@ -7,10 +7,10 @@ const FlWardrobe = extend(FlWardrobeDesign)(
     opt = opt || {};
     // initalizes super class for this scope
     _super(this, Object.assign({}, FlWardrobeDesign.defaults, props));
-    this.name = opt.name;
-    this.price = opt.price;
+    this.name.text = opt.name;
+    this.price.text = opt.price;
     this.image.loadFromUrl(opt.image);
-    this.model = opt.model;
+    this.model.text = opt.model;
   }
 );
 

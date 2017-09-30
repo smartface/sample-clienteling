@@ -36,8 +36,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 277.5,
-				"height": 446.21999999999997
+				"width": 243.75,
+				"height": 391.95
 			}
 		},
 		{
@@ -6649,12 +6649,12 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 170,
+				"height": 300,
 				"usePageVariable": true
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 170,
+				"height": 300,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -6677,72 +6677,9 @@
 				"name": "flWishlist",
 				"parent": "aff8-f57b-2780-9681",
 				"children": [
-					"41f5-1d8c-6197-d0a5"
+					"0234-60b3-1505-fe5b",
+					"3961-769e-0072-cd55"
 				]
-			}
-		},
-		{
-			"type": "Label",
-			"id": "41f5-1d8c-6197-d0a5",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "tbCustomerProfileText",
-				"id": "cb00-7eb0-f7e1-5b4e"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": 25,
-				"left": 0,
-				"top": 0,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"text": "WISHLIST ITEMS",
-				"textColor": "rgba( 238, 238, 238, 1 )",
-				"textAlignment": "MIDCENTER",
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"font": {
-					"family": "Lato",
-					"size": 14
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".label",
-			"props": {
-				"width": null,
-				"height": 25,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 238, 238, 238, 1 )",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 14,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
-				"text": "WISHLIST ITEMS",
-				"name": "tbCustomerProfileText",
-				"parent": "7dd3-a673-d522-5983",
-				"children": []
 			}
 		},
 		{
@@ -7275,6 +7212,121 @@
 				"top": 0,
 				"name": "flCustomerProfileReservationItem1",
 				"parent": "019f-240c-046f-b4de",
+				"children": []
+			}
+		},
+		{
+			"type": "ScrollView",
+			"id": "3961-769e-0072-cd55",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"usePageVariable": true,
+				"height": null,
+				"width": null,
+				"align": "HORIZONTAL",
+				"layoutWidth": 800,
+				"marginTop": 10,
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				}
+			},
+			"className": ".scrollView",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"align": "HORIZONTAL",
+				"scrollBarEnabled": true,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"usePageVariable": true,
+				"layoutWidth": 800,
+				"name": "wishlistScw",
+				"parent": "7dd3-a673-d522-5983",
+				"children": [],
+				"marginTop": 10
+			}
+		},
+		{
+			"type": "Label",
+			"id": "0234-60b3-1505-fe5b",
+			"hiddenComponent": false,
+			"source": {
+				"page": "__library__",
+				"type": "tbCustomerProfileText",
+				"id": "cb00-7eb0-f7e1-5b4e"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": 25,
+				"left": 0,
+				"top": 0,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"text": "AANA'S WISHLIST",
+				"textColor": "rgba( 238, 238, 238, 1 )",
+				"textAlignment": "MIDCENTER",
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"font": {
+					"family": "Lato",
+					"size": 14
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": 25,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 238, 238, 238, 1 )",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"text": "AANA'S WISHLIST",
+				"name": "tbCustomerProfileText",
+				"parent": "7dd3-a673-d522-5983",
 				"children": []
 			}
 		}

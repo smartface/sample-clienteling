@@ -2,8 +2,10 @@ const extend = require('js-base/core/extend');
 const PgCustomerProfileDesign = require('ui/ui_pgCustomerProfile');
 const pageContextPatch = require("../context/pageContextPatch");
 const FlWardrobe = require("components/FlWardrobe");
-const FlCustomerProfileReservationItem = require("../components/FlCustomerProfileReservationItem");
+const FlCustomerProfileReservationItem = require("components/FlCustomerProfileReservationItem");
+const LvCustomerProfileWishlistItem = require("components/LvCustomerProfileWishlistItem");
 const Router = require("sf-core/ui/router");
+const Color = require('sf-core/ui/color');
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 	// Constructor
@@ -77,6 +79,7 @@ function addInfo(json) {
 }
 
 function addWardrobe(items) {
+	this.swWardrobe.layout.removeAll();
 	items.forEach(item => {
 		var fl = new FlWardrobe({
 			marginRight: 20,
@@ -98,10 +101,29 @@ function addWardrobe(items) {
  *  "date": "2017-12-03T00:00:00.000Z"
  */
 function addReservations(items) {
+	this.scFlReservations.layout.removeAll();
 	items.forEach(item => {
 		var fl = new FlCustomerProfileReservationItem(Object.assign({}, item));
 		this.scFlReservations.layout.addChild(fl);
 	});
+}
+
+function addWishlistItems(items){
+	this.wishlistScw.layout.removeAll();
+	items.forEach( item => {
+		var fl = new LvCustomerProfileWishlistItem({
+			width: 130,
+			height: 240,
+			marginRight: 20
+		},{
+			image: item.image,
+			price: item.price.currency + " " + item.price.amount,
+			name: item.name,
+			model: item.productId
+		});
+		this.wishlistScw.layout.addChild(fl);
+	});
+	this.wishlistScw.layout.width = 150 * items.length;
 }
 
 function loadUI() {
@@ -109,6 +131,7 @@ function loadUI() {
 	addInfo.call(this, json);
 	addWardrobe.call(this, json.wardrobe);
 	addReservations.call(this, json.reservations);
+	addWishlistItems.call(this, json.whishlist);
 }
 
 module && (module.exports = PgCustomerProfile);
