@@ -652,7 +652,9 @@
 			},
 			"userProps": {
 				"height": 200,
-				"usePageVariable": true
+				"usePageVariable": true,
+				"minWidth": 200,
+				"maxWidth": 600
 			},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem",
 			"props": {
@@ -679,7 +681,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 400,
+				"minWidth": 200,
 				"maxWidth": 600,
 				"usePageVariable": true,
 				"name": "flReservations",
@@ -854,7 +856,10 @@
 				"Implementation": "pgDashboard-Item",
 				"Sizes": "Default"
 			},
-			"userProps": {},
+			"userProps": {
+				"minWidth": 200,
+				"maxWidth": 600
+			},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem",
 			"props": {
 				"height": 200,
@@ -880,7 +885,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 400,
+				"minWidth": 200,
 				"maxWidth": 600,
 				"name": "flTodo",
 				"parent": "295e-648c-2b89-5438",
@@ -1054,7 +1059,10 @@
 				"Implementation": "pgDashboard-Item",
 				"Sizes": "Default"
 			},
-			"userProps": {},
+			"userProps": {
+				"maxWidth": 600,
+				"minWidth": 200
+			},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem",
 			"props": {
 				"height": 200,
@@ -1080,7 +1088,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 400,
+				"minWidth": 200,
 				"maxWidth": 600,
 				"name": "flOpenIncidents",
 				"parent": "295e-648c-2b89-5438",
@@ -1254,7 +1262,10 @@
 				"Implementation": "pgDashboard-Item-Small",
 				"Sizes": "Default"
 			},
-			"userProps": {},
+			"userProps": {
+				"maxWidth": 600,
+				"minWidth": 200
+			},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem.small",
 			"props": {
 				"height": 119.25,
@@ -1280,7 +1291,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 400,
+				"minWidth": 200,
 				"maxWidth": 600,
 				"name": "flNews",
 				"parent": "295e-648c-2b89-5438",
@@ -1454,7 +1465,10 @@
 				"Implementation": "pgDashboard-Item-Small",
 				"Sizes": "Default"
 			},
-			"userProps": {},
+			"userProps": {
+				"maxWidth": 600,
+				"minWidth": 200
+			},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem.small",
 			"props": {
 				"height": 119.25,
@@ -1480,7 +1494,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 400,
+				"minWidth": 200,
 				"maxWidth": 600,
 				"name": "flShipments",
 				"parent": "295e-648c-2b89-5438",
@@ -1655,7 +1669,9 @@
 				"Sizes": "Default"
 			},
 			"userProps": {
-				"usePageVariable": false
+				"usePageVariable": false,
+				"maxWidth": 600,
+				"minWidth": 200
 			},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem.small",
 			"props": {
@@ -1682,7 +1698,7 @@
 				"paddingBottom": null,
 				"marginRight": 15.68,
 				"marginBottom": 20.5,
-				"minWidth": 400,
+				"minWidth": 200,
 				"maxWidth": 600,
 				"usePageVariable": false,
 				"name": "flSocialActivity",

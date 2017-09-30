@@ -48,12 +48,12 @@
       "minWidth": 240,
       "maxWidth": 600,
       "+page:Screen.width > 450": {
-        "minWidth": 400
+        "minWidth": 300
       },
       ".small": {
         "height": 119.25,
         "+page:Screen.width > 450": {
-          "minWidth": 400
+          "minWidth": 300
         }
       }
     },
