@@ -12,6 +12,7 @@
 	<!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
 	<!-- Required for Internet access by 3G, GSM and WIFI -->
 	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.USE_FINGERPRINT" />
 	<!-- Required for GPS Usage. -->
 	<!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
 	<!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
