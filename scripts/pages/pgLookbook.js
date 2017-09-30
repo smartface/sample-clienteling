@@ -2,6 +2,7 @@ const extend = require('js-base/core/extend');
 
 const PgLookbookDesign = require('ui/ui_pgLookbook');
 const ListViewItem = require('sf-core/ui/listviewitem');
+const ListView = require('sf-core/ui/listview');
 const FlexLayout = require('sf-core/ui/flexlayout');
 const Color = require('sf-core/ui/color');
 const LookbookItem = require("components/LookbookItem");
@@ -49,13 +50,16 @@ function onLoad(superOnLoad) {
 
 function onOrientationChange() {
     reDesignListviewItem.call(this);
-    this.layout.applyLayout();
 }
 
 function reDesignListviewItem() {
     const json = require("../sample-data/customerProfile.json");
     var myDataSet = json.whishlist;
-
+    this.layout.removeChild(this.lvMain);
+    this.lvMain = new ListView({
+        positionType: FlexLayout.PositionType.RELATIVE,
+        flexGrow: 1
+    });
     var itemCountPerRow = Math.floor(Screen.width / ITEM_WIDTH);
     this.lvMain.onRowCreate = function() {
         var listItem = new ListViewItem({
@@ -64,6 +68,8 @@ function reDesignListviewItem() {
             flexDirection: FlexLayout.FlexDirection.ROW,
             justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN,
             alignItems: FlexLayout.AlignItems.STRETCH,
+            marginLeft: 5,
+            width: Screen.width - 10
         });
         for (var i = 0; i < itemCountPerRow; ++i) {
             listItem.addChild(new LookbookItem({
@@ -94,7 +100,8 @@ function reDesignListviewItem() {
     };
     this.lvMain.refreshData();
     this.lvMain.stopRefresh();
-    this.lvMain.applyLayout();
+    
+    this.layout.addChild(this.lvMain);
 }
 
 module && (module.exports = PgLookbook);
