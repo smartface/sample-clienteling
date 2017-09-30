@@ -36,8 +36,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 232.5,
-				"height": 373.86
+				"width": 277.5,
+				"height": 446.21999999999997
 			}
 		},
 		{
@@ -111,9 +111,9 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0.4
+					"flexGrow": 1
 				},
 				"maxHeight": 132,
 				"marginBottom": 0,
@@ -140,7 +140,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 216, 216, 216, 0 )",
+				"backgroundColor": "rgba( 216, 216, 216, 0.55 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -191,15 +191,15 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.5
+					"flexGrow": 1
 				},
 				"left": null,
 				"top": null,
-				"marginTop": 10,
+				"marginTop": null,
 				"marginBottom": null,
 				"marginLeft": 5,
 				"marginRight": 5,
-				"maxHeight": null,
+				"maxHeight": 55,
 				"name": "flScores",
 				"parent": "3166-df70-5cd8-82e8",
 				"children": [
@@ -439,7 +439,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxHeight": 95,
+				"maxHeight": 310,
 				"name": "flSecond",
 				"parent": "36a5-0dc7-ccb7-576d",
 				"children": [
@@ -478,11 +478,11 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxHeight": 41,
+				"maxHeight": 159,
 				"usePageVariable": true,
 				"name": "infoPart2",
 				"parent": "b9d8-3483-810d-b40b",
@@ -531,7 +531,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -577,7 +577,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -599,12 +599,12 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 200,
-				"width": 1,
+				"height": 1,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -616,10 +616,11 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
-				"maxWidth": 1,
-				"maxHeight": null,
+				"maxWidth": null,
+				"maxHeight": 1,
 				"name": "divider_4_1_1",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -659,7 +660,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -705,7 +706,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -727,12 +728,12 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 200,
-				"width": 1,
+				"height": 1,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -744,10 +745,11 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
-				"maxWidth": 1,
-				"maxHeight": null,
+				"maxWidth": null,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_1",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -763,12 +765,12 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 200,
-				"width": 1,
+				"height": 1,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -780,10 +782,11 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
-				"maxWidth": 1,
-				"maxHeight": null,
+				"maxWidth": null,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_2",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -818,11 +821,11 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxHeight": 41,
+				"maxHeight": 159,
 				"usePageVariable": true,
 				"name": "infoPart1",
 				"parent": "b9d8-3483-810d-b40b",
@@ -848,12 +851,12 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 200,
-				"width": 1,
+				"height": 1,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -865,10 +868,11 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
-				"maxWidth": 1,
-				"maxHeight": null,
+				"maxWidth": null,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_2",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -884,12 +888,12 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 200,
-				"width": 1,
+				"height": 1,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -901,10 +905,11 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
-				"maxWidth": 1,
-				"maxHeight": null,
+				"maxWidth": null,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_1",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -920,12 +925,12 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 200,
-				"width": 1,
+				"height": 1,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -937,10 +942,11 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
-				"maxWidth": 1,
-				"maxHeight": null,
+				"maxWidth": null,
+				"maxHeight": 1,
 				"name": "divider_4_1_1",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -980,7 +986,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -1026,7 +1032,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -1072,7 +1078,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -1118,7 +1124,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -1141,12 +1147,12 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
 			"props": {
-				"height": 200,
-				"width": 1,
+				"height": 1,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -1158,10 +1164,11 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
-				"maxWidth": 1,
-				"maxHeight": null,
+				"maxWidth": null,
+				"maxHeight": 1,
 				"name": "divider_4_1_1_3",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1182,7 +1189,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flButtons",
 			"props": {
-				"height": null,
+				"height": 0,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -1198,11 +1205,11 @@
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 0
 				},
-				"marginTop": 2,
+				"marginTop": null,
 				"maxWidth": null,
 				"name": "flButtons",
 				"parent": "3166-df70-5cd8-82e8",
@@ -1249,7 +1256,7 @@
 					"flexGrow": 1
 				},
 				"maxHeight": 41,
-				"maxWidth": null,
+				"maxWidth": 150,
 				"text": "Shopping Bag",
 				"usePageVariable": true,
 				"name": "shoppingBag",
@@ -1297,7 +1304,7 @@
 					"flexGrow": 1
 				},
 				"maxHeight": 41,
-				"maxWidth": null,
+				"maxWidth": 150,
 				"text": "Look Book",
 				"usePageVariable": true,
 				"name": "lookBook",
@@ -1332,10 +1339,9 @@
 					"alignItems": "CENTER",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.5,
-					"maxWidth": null
+					"flexGrow": 1
 				},
 				"left": null,
 				"top": null,
@@ -1357,7 +1363,8 @@
 			},
 			"userProps": {
 				"text": "350",
-				"usePageVariable": true
+				"usePageVariable": true,
+				"textColor": "rgba( 74, 163, 241, 1 )"
 			},
 			"className": ".label #scoreItem-title",
 			"props": {
@@ -1370,7 +1377,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#CE1375",
+				"textColor": "rgba( 74, 163, 241, 1 )",
 				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 33,
@@ -1413,7 +1420,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -1460,10 +1467,9 @@
 					"alignItems": "CENTER",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.5,
-					"maxWidth": null
+					"flexGrow": 1
 				},
 				"left": null,
 				"top": null,
@@ -1541,7 +1547,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -1572,12 +1578,12 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_swc_flSecond_divider",
 			"props": {
-				"height": 1,
-				"width": null,
+				"height": 0,
+				"width": 0,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -1589,7 +1595,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"maxWidth": 0,
 				"maxHeight": 0,
@@ -6380,7 +6387,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flThird-ReserveIndicates",
 			"props": {
-				"height": 100,
+				"height": 200,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -6396,7 +6403,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
 				"name": "flReserveIndicates",
@@ -6666,12 +6673,12 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"usePageVariable": true,
 				"name": "flWishlist",
 				"parent": "aff8-f57b-2780-9681",
 				"children": [
 					"41f5-1d8c-6197-d0a5"
-				],
-				"usePageVariable": true
+				]
 			}
 		},
 		{
@@ -6748,12 +6755,12 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flThird-ReserveIndicates-divider",
 			"props": {
-				"height": null,
-				"width": 20,
+				"height": 0,
+				"width": 0,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -6765,10 +6772,10 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"maxHeight": 0,
-				"maxWidth": 20,
 				"name": "divider",
 				"parent": "93cc-815a-beb6-40ac",
 				"children": []
