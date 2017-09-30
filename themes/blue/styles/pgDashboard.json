@@ -46,7 +46,7 @@
       "marginRight": 15.68,
       "marginBottom": 20.5,
       "minWidth": 240,
-      "maxWidth": 600,
+      "maxWidth": 650,
       "+page:Screen.width > 450": {
         "minWidth": 300
       },
