@@ -276,6 +276,11 @@
         "alignSelf": "AUTO",
         "positionType": "RELATIVE",
         "flexGrow": 1
+      },
+      "+page:Screen.width > 450": {
+        "textAlignment": "MIDCENTER",
+        "marginLeft": 10,
+        "marginRight": 10
       }
     },
     ".lblConversionNumber": {
@@ -300,6 +305,12 @@
         "alignSelf": "AUTO",
         "positionType": "RELATIVE",
         "flexGrow": 2
+      },
+      "+page:Screen.width > 450": {
+        "textAlignment": "BOTTOMCENTER",
+        "flexProps": {
+          "flexGrow": 3
+        }
       }
     },
     ".lblConversionText": {
@@ -314,6 +325,8 @@
       "borderWidth": 0,
       "textColor": "rgba( 32, 32, 32, 1 )",
       "textAlignment": "MIDLEFT",
+      "marginLeft": null,
+      "marginRight": null,
       "font": {
         "size": 12,
         "bold": false,
@@ -324,6 +337,11 @@
         "alignSelf": "AUTO",
         "positionType": "RELATIVE",
         "flexGrow": 3
+      },
+      "+page:Screen.width > 450": {
+        "textAlignment": "MIDCENTER",
+        "marginLeft": 10,
+        "marginRight": 10
       }
     }
   }
