@@ -47,8 +47,8 @@
 					"c835-c323-179b-387a",
 					"6015-add5-c15e-d9f3"
 				],
-				"width": 258.75,
-				"height": 460.22999999999996
+				"width": 1000.5,
+				"height": 562.5
 			}
 		},
 		{
@@ -556,8 +556,10 @@
 			"userProps": {
 				"left": 4.615384615384615,
 				"top": 24.615384615384613,
-				"width": 359.4594594594595,
-				"height": 191.8918918918919,
+				"width": 641,
+				"height": 195,
+				"marginRight": null,
+				"right": 0,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "CENTER"
@@ -565,8 +567,8 @@
 			},
 			"className": ".listViewItem",
 			"props": {
-				"height": 191.8918918918919,
-				"width": 359.4594594594595,
+				"height": 195,
+				"width": 641,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -594,7 +596,9 @@
 					"b1ab-98b8-a397-600b",
 					"24ab-80f5-ac48-bed9",
 					"e325-3dc2-82f5-e9a3"
-				]
+				],
+				"marginRight": null,
+				"right": 0
 			}
 		},
 		{
@@ -1103,7 +1107,7 @@
 				"id": 205,
 				"flexProps": {
 					"flexGrow": 1,
-					"alignItems": "AUTO",
+					"alignItems": "STRETCH",
 					"justifyContent": "CENTER"
 				}
 			},
@@ -1122,7 +1126,7 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "AUTO",
+					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
@@ -1205,10 +1209,10 @@
 			},
 			"userProps": {
 				"width": 70,
-				"marginLeft": 40,
-				"id": 305,
+				"marginLeft": null,
 				"flexProps": {
-					"flexGrow": null
+					"flexGrow": null,
+					"alignSelf": "CENTER"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
@@ -1223,7 +1227,7 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "CENTER",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -1233,8 +1237,8 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"marginLeft": 40,
-				"id": 305,
+				"marginLeft": null,
+				"id": 304,
 				"name": "flLine",
 				"parent": "4c1d-c211-7132-b627",
 				"children": []
@@ -2043,7 +2047,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#000000",
-				"textAlignment": "MIDLEFT",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -2164,7 +2168,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2907,7 +2911,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4132,7 +4136,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5714,7 +5718,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.2576878841863881"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5754,7 +5758,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.6270053298196483"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.5&brandModel=iPhone%207"
 			}
 		},
 		{

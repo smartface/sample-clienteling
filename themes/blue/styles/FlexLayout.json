@@ -24,14 +24,10 @@
 			"height": 42,
 			"width": null,
 			"flexProps": {
+				"flexGrow": 1,
 				"alignItems": "CENTER",
 				"flexDirection": "ROW",
 				"justifyContent": "CENTER"
-			},
-			"+page:Screen.width > 451": {
-				"flexProps": {
-					"justifyContent": "FLEX_END"
-				}
 			}
 		}
 	}

@@ -42,8 +42,8 @@
 					"0956-1b61-5add-487e",
 					"e6e8-5b33-9017-7609"
 				],
-				"width": 277.5,
-				"height": 446.21999999999997
+				"width": 221.25,
+				"height": 355.77
 			}
 		},
 		{
@@ -572,7 +572,13 @@
 				"Sizes": "Default",
 				"Implementation": "pgShoppingBag-FlcontinuButton"
 			},
-			"userProps": {},
+			"userProps": {
+				"minHeight": 42,
+				"maxHeight": 42,
+				"flexProps": {
+					"justifyContent": "CENTER"
+				}
+			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-pgShoppingBagFlContinueButton",
 			"props": {
 				"height": 42,
@@ -592,7 +598,8 @@
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
 				"marginTop": 5,
 				"marginBottom": 20,
@@ -600,7 +607,9 @@
 				"parent": "d125-d864-c390-0484",
 				"children": [
 					"da2e-0d61-3494-8792"
-				]
+				],
+				"minHeight": 42,
+				"maxHeight": 42
 			}
 		},
 		{
@@ -613,7 +622,7 @@
 			},
 			"userProps": {
 				"text": "CONTINUE SHOPPING",
-				"height": null,
+				"height": 42,
 				"width": null,
 				"maxWidth": 230,
 				"font": {
@@ -627,7 +636,7 @@
 			"className": ".button",
 			"props": {
 				"width": null,
-				"height": null,
+				"height": 42,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#4A90E2",
@@ -706,8 +715,7 @@
 				"top": 0,
 				"name": "flShoppingBagItem",
 				"parent": "0956-1b61-5add-487e",
-				"children": [],
-				"visibility": true
+				"children": []
 			}
 		}
 	]
