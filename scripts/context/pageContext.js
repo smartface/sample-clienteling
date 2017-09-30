@@ -66,7 +66,7 @@ function createContext(component, name, classMap=null, reducers=null) {
 					return function beforeStyleAssignment(styles) {
 						Object.keys(styles)
 							.forEach(function(key) {
-								styles[key] = stylerBuilder.getOneProp(key, styles[key]);
+  							styles[key] = stylerBuilder.getOneProp(key, styles[key]);
 							});
 
 						return styles;
@@ -98,7 +98,7 @@ function createContext(component, name, classMap=null, reducers=null) {
 						  if(key === 'align'){
 						    delete acc[key];
 						    return acc;
-						  } else if(key == "flexProps"){
+					    } else if(key == "flexProps"){
 					     //if(!oldStyles[key] === undefined){
 					       // Object.assign(acc, newStyles[key]);
 					     // } else {

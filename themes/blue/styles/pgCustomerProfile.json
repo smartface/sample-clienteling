@@ -1,6 +1,6 @@
 {
   "#pgCustomerProfile": {
-    "&_swc": {
+    "&_scw": {
       "&_flSecond": {
         "&_divider": {
           "@extend": ".flexLayout-line",
@@ -185,10 +185,11 @@
         },
         "+page:Screen.width > 450": {
           "maxHeight": null,
+          "minHieght": 55,
           "flexProps": {
             "flexGrow": 1.5
           },
-          "marginTop": 10
+          "marginTop": 0
         },
         "&_scoreItem": {
           "left": null,
@@ -207,7 +208,7 @@
           "+page:Screen.width > 450": {
             "flexProps": {
               "flexDirection": "COLUMN",
-              "flexGrow": 1.5,
+              "flexGrow": 2,
               "maxWidth": null
             }
           }
