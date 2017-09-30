@@ -18,17 +18,19 @@ module.exports = function pageContextPatch(page, name){
   
   function onShow(superOnShow) {
     superOnShow();
-    this.styleContext = pageContext.createContext(
-      this,
-      name,
-      null,
-      function reducers(state, actors, action, target) {
-        return state;
-      });
-      
+    
+    if(!this.styleContext)
+      this.styleContext = pageContext.createContext(
+        this,
+        name,
+        null,
+        function reducers(state, actors, action, target) {
+          return state;
+        });
+        
       this.dispatch({
-      type: "invalidate"
-    });
+        type: "invalidate"
+      });
     
     this.layout.applyLayout();
 
