@@ -16,6 +16,9 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     this.btnAnonymous.onPress = onPressAnonymous;
     this.btnFacebook.onPress = onPressFacebook;
 
+    // AND-3014
+    this.headerBar.leftItemEnabled = false;
+
     pageContextPatch(this, "pgSignupPhone");
   });
 
