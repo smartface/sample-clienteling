@@ -33,8 +33,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 206.25000000000003,
-				"height": 366.85
+				"width": 460.22999999999996,
+				"height": 258.75
 			}
 		},
 		{
@@ -396,7 +396,7 @@
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.55&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.12211940734150928"
 			}
 		},
 		{
@@ -434,7 +434,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.55&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.7720377084584877"
 			}
 		},
 		{
@@ -556,7 +556,11 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW",
-					"flexWrap": "WRAP"
+					"flexWrap": "WRAP",
+					"alignSelf": "STRETCH",
+					"alignItems": "FLEX_START",
+					"alignContent": "FLEX_START",
+					"justifyContent": "FLEX_START"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -571,10 +575,10 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
+					"alignContent": "FLEX_START",
+					"alignItems": "FLEX_START",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "WRAP",
 					"flexDirection": "ROW",
@@ -1908,7 +1912,7 @@
 				"name": "imgHamburger",
 				"parent": "a153-0d0e-1142-3610",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.55&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.710295073416197"
 			}
 		},
 		{
@@ -1921,7 +1925,7 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfo",
 			"props": {
-				"height": 160,
+				"height": 100,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -1937,7 +1941,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
 				"paddingLeft": 20,
@@ -2078,7 +2082,7 @@
 				"name": "imgUser",
 				"parent": "d2cc-973c-4896-6905",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisatown.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.55&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/lisatown.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.11197050524799579"
 			}
 		},
 		{
@@ -2359,7 +2363,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 209, 16, 118, 1 )",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "BOTTOMCENTER",
 				"font": {
 					"size": 25,
 					"bold": false,
@@ -2401,7 +2405,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 32, 32, 32, 1 )",
-				"textAlignment": "TOPCENTER",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -2411,8 +2415,10 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
+				"marginLeft": 10,
+				"marginRight": 10,
 				"text": "Task Pending",
 				"usePageVariable": true,
 				"name": "lblPendingTasks",
@@ -2484,7 +2490,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -2519,7 +2525,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 74, 163, 241, 1 )",
-				"textAlignment": "MIDLEFT",
+				"textAlignment": "BOTTOMCENTER",
 				"font": {
 					"size": 25,
 					"bold": false,
@@ -2529,7 +2535,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 3
 				},
 				"text": "76%",
 				"usePageVariable": true,
@@ -2561,7 +2567,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 32, 32, 32, 1 )",
-				"textAlignment": "MIDLEFT",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -2573,8 +2579,8 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 3
 				},
-				"marginLeft": null,
-				"marginRight": null,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"text": "Last Month Sales Conversion",
 				"usePageVariable": true,
 				"name": "lblConversion",
@@ -2608,7 +2614,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -2643,7 +2649,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 246, 207, 40, 1 )",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "BOTTOMCENTER",
 				"font": {
 					"size": 25,
 					"bold": false,
@@ -2653,7 +2659,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 3
 				},
 				"text": "80%",
 				"usePageVariable": true,
