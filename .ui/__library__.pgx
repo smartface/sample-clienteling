@@ -45,10 +45,12 @@
 					"a082-f3e1-fe37-1c2c",
 					"6e4d-ec19-d1be-e8f5",
 					"c835-c323-179b-387a",
-					"6015-add5-c15e-d9f3"
+					"6015-add5-c15e-d9f3",
+					"1757-127d-acfb-f5e1",
+					"ddfa-0686-69f0-77af"
 				],
-				"width": 258.75,
-				"height": 460.22999999999996
+				"width": 243.75,
+				"height": 433.55
 			}
 		},
 		{
@@ -597,7 +599,8 @@
 					"7fe9-cc6a-23d3-446a",
 					"b1ab-98b8-a397-600b",
 					"24ab-80f5-ac48-bed9",
-					"e325-3dc2-82f5-e9a3"
+					"e325-3dc2-82f5-e9a3",
+					"df5d-3540-38b5-e9e1"
 				]
 			}
 		},
@@ -986,8 +989,8 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Farlap Dress Sleve Top",
-				"usePageVariable": true,
 				"id": 310,
+				"usePageVariable": true,
 				"name": "lblDetail",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
@@ -1040,8 +1043,8 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Size: M",
-				"usePageVariable": true,
 				"id": 309,
+				"usePageVariable": true,
 				"name": "lblSize",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
@@ -1094,8 +1097,8 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "Color: Light Blue",
-				"usePageVariable": true,
 				"id": 308,
+				"usePageVariable": true,
 				"name": "lblColor",
 				"parent": "3551-acc4-3adb-ddb1",
 				"children": []
@@ -1413,10 +1416,10 @@
 				"text": "$ 100",
 				"marginTop": null,
 				"maxHeight": 60,
+				"id": 223,
 				"name": "lblTotal",
 				"parent": "2a8b-d8dc-6c10-5255",
-				"children": [],
-				"id": 223
+				"children": []
 			}
 		},
 		{
@@ -2182,7 +2185,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.65&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2925,7 +2928,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.65&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4150,7 +4153,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.65&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5731,7 +5734,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.65&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5771,7 +5774,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.65&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -6317,6 +6320,139 @@
 				"name": "flLine",
 				"parent": "6e4d-ec19-d1be-e8f5",
 				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "1757-127d-acfb-f5e1",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 200,
+				"width": 200,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "ABSOLUTE"
+				},
+				"name": "flexLayout1",
+				"parent": "fb96-1dcf-3bb9-cd95",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "ddfa-0686-69f0-77af",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"flexProps": {},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 200,
+				"width": 200,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "ABSOLUTE"
+				},
+				"left": 0,
+				"top": 0,
+				"name": "flexLayout2",
+				"parent": "fb96-1dcf-3bb9-cd95",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "df5d-3540-38b5-e9e1",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Line"
+			},
+			"userProps": {
+				"width": null,
+				"bottom": 10,
+				"left": 0,
+				"top": null,
+				"right": 0,
+				"flexProps": {
+					"flexGrow": null,
+					"alignSelf": "STRETCH",
+					"positionType": "ABSOLUTE"
+				}
+			},
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"props": {
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "ABSOLUTE",
+					"flexGrow": null
+				},
+				"name": "line",
+				"parent": "5be9-8547-09ac-6568",
+				"children": [],
+				"bottom": 10,
+				"left": 0,
+				"top": null,
+				"right": 0
 			}
 		}
 	]
