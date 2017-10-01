@@ -7,7 +7,7 @@ const Image = require('sf-core/ui/image');
 var sliderDrawerWidth = 333;
 var sliderDrawer = new SliderDrawer({
     width: sliderDrawerWidth,
-    enabled: true,
+    enabled: false,
     onLoad: function() {
         var uiSliderDrawer = new UISliderDrawer({
             width: sliderDrawerWidth,

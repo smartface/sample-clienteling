@@ -32,6 +32,7 @@ function onShow(superOnShow, data) {
   superOnShow();
   const page = this;
   data = data || {};
+  Router.sliderDrawer.enabled = false;
   data.appStart && fingerprint.init({
     userNameTextBox: page.taUserID,
     passwordTextBox: page.taPassword,

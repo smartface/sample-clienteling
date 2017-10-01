@@ -38,6 +38,7 @@ const PgDashboard = extend(PgDashboardDesign)(
 function onShow(superOnShow) {
     superOnShow();
     const page = this;
+    Router.sliderDrawer.enabled = true;
     if (System.OS === "iOS") {
         page.flStatusBarBg.height = page.statusBar.height;
     }
