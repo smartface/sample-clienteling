@@ -1,10 +1,8 @@
 const extend = require('js-base/core/extend');
-
 const PgLookbookDesign = require('ui/ui_pgLookbook');
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ListView = require('sf-core/ui/listview');
 const FlexLayout = require('sf-core/ui/flexlayout');
-const Color = require('sf-core/ui/color');
 const LookbookItem = require("components/LookbookItem");
 const Screen = require('sf-core/device/screen');
 const customerService = require("service/Customer");
@@ -19,15 +17,11 @@ const PgLookbook = extend(PgLookbookDesign)(
     function(_super) {
         // Initalizes super class for this page scope
         _super(this);
-        // overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
-        // overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-
         this.onOrientationChange = onOrientationChange.bind(this);
 
         pageContextPatch(this, "pgLookBook");
-
     });
 
 /**
@@ -38,7 +32,6 @@ const PgLookbook = extend(PgLookbookDesign)(
  */
 function onShow(superOnShow) {
     superOnShow();
-
 }
 
 /**
@@ -83,7 +76,7 @@ function reDesignListviewItem() {
                 alignSelf: FlexLayout.AlignSelf.CENTER,
                 height: 200,
                 width: 140,
-                id: i+1
+                id: i + 200
             }));
         }
 
@@ -97,7 +90,7 @@ function reDesignListviewItem() {
         var item, sourceIndex, data;
         for (var i = 0; i < itemCountPerRow; ++i) {
             sourceIndex = (index * itemCountPerRow) + i;
-            item = listViewItem.findChildById(i+1);
+            item = listViewItem.findChildById(i + 200);
             data = myDataSet[sourceIndex];
             if (item && sourceIndex < myDataSet.length) {
                 //console.log("Index_>"+sourceIndex+"DATA_>"+JSON.stringify(data,null,"\t"));
