@@ -15,9 +15,6 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     this.btnSignup.onPress = onPressSignup.bind(this);
     this.btnAnonymous.onPress = onPressAnonymous;
     this.btnFacebook.onPress = onPressFacebook;
-    this.imgBanner.onTouchEnded = function() {
-      Router.go("pgCustomerProfile");
-    };
 
     pageContextPatch(this, "pgSignupPhone");
   });

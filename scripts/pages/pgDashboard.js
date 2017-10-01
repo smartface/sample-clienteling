@@ -24,6 +24,9 @@ const PgDashboard = extend(PgDashboardDesign)(
 
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+        this.imgNotification.onTouchEnded = function() {
+            Router.go("pgCustomerProfile");
+        };
 
         pageContextPatch(this, "pgDashboard");
         loadUI.call(this);
