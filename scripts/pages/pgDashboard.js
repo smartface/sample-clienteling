@@ -182,6 +182,7 @@ function addInformation(json) {
 
 function loadUI() {
     userService.getUserData().then((userJson) => {
+        console.log("USER_> "+ JSON.stringify(userJson,null,"\t"));
         addUserInfo.call(this, userJson);
         dashboardService.getDashboardData().then((json) => {
             addInformation.call(this, json.information);

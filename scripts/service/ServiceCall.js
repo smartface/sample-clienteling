@@ -66,8 +66,13 @@ function performRequest(options, callback) {
   Http.request(options, (response) => {
     response.body = response.body.toString();
     var contentType = getContentType(response.headers);
-    if (contentType === "application/json")
-      response.body = JSON.parse(response.body);
+    if (contentType === "application/json"){
+      try{
+        response.body = JSON.parse(response.body);
+      }catch(e){
+        
+      }
+    }
 
     callback(null, response.body);
   }, (error) => {

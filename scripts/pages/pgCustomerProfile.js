@@ -6,6 +6,7 @@ const FlCustomerProfileReservationItem = require("components/FlCustomerProfileRe
 const LvCustomerProfileWishlistItem = require("components/LvCustomerProfileWishlistItem");
 const Router = require("sf-core/ui/router");
 const Color = require('sf-core/ui/color');
+const customerService = require("service/Customer");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 	// Constructor
@@ -35,6 +36,9 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
  */
 function onShow(superOnShow) {
 	superOnShow();
+	customerService.getCutomerProfile(1445).then(res => {
+		console.log("RES_PRF> " + JSON.stringify(res, null, "\t"));
+	});
 }
 
 /**
