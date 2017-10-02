@@ -15,7 +15,7 @@
         }
       }
     },
-    ".flButtons": {
+    "&-flButtons": {
       "width": null,
       "height": null,
       "flexProps": {

@@ -71,7 +71,7 @@
 				"pgSignupTablet-Main": "#pgSignupTablet.flMain",
 				"pgSignupTablet-Info": "#pgSignupTablet.flInfo",
 				"pgSignupPhone-Main": "#pgSignupPhone.flMain",
-				"pgWomen-Buttons": "#pgWomenPhone.flButtons",
+				"pgWomen-Buttons": "#pgWomenPhone-flButtons",
 				"pgWomen-Info": "#pgWomenPhone.flInfo",
 				"pgWomen-Part2": "#pgWomenPhone.flInfo-flPart2",
 				"pgWomen-flSwipe": "#pgWomenPhone.flSwipe",

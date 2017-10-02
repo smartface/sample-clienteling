@@ -35,8 +35,8 @@
 					"9425-0c93-396b-b7b0",
 					"830a-dd25-540d-36c7"
 				],
-				"width": 506.36799999999994,
-				"height": 379.776
+				"width": 413.54,
+				"height": 232.5
 			}
 		},
 		{
@@ -701,7 +701,7 @@
 				"name": "imgHamburger",
 				"parent": "d932-8dc8-d410-d306",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.43&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.62&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1002,7 +1002,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 38,
+					"size": 18,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1087,7 +1087,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 30,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1095,7 +1095,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.7
+					"flexGrow": 1
 				},
 				"text": "Farlap Dress Sleve Top",
 				"usePageVariable": true,
@@ -1134,7 +1134,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 38,
+					"size": 18,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1217,7 +1217,7 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 2.8
 				},
 				"marginBottom": 20,
 				"name": "flInfo",
@@ -1257,7 +1257,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 30,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1348,7 +1348,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 30,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1390,7 +1390,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 30,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1432,7 +1432,7 @@
 				"textColor": "#1D1D26",
 				"textAlignment": "MIDLEFT",
 				"font": {
-					"size": 30,
+					"size": 12,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1526,8 +1526,8 @@
 			},
 			"className": ".button #pgWomenPhone.btnColor",
 			"props": {
-				"width": 35,
-				"height": 35,
+				"width": 15,
+				"height": 15,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 173, 251, 253, 1 )",
@@ -1568,8 +1568,8 @@
 			},
 			"className": ".button #pgWomenPhone.btnColor",
 			"props": {
-				"width": 35,
-				"height": 35,
+				"width": 15,
+				"height": 15,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 254, 188, 247, 1 )",
@@ -1609,8 +1609,8 @@
 			},
 			"className": ".button #pgWomenPhone.btnColor",
 			"props": {
-				"width": 35,
-				"height": 35,
+				"width": 15,
+				"height": 15,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 248, 247, 226, 1 )",
@@ -1687,13 +1687,8 @@
 				"Sizes": "Default",
 				"Implementation": "pgWomen-Buttons"
 			},
-			"userProps": {
-				"flexProps": {
-					"flexDirection": "COLUMN",
-					"alignItems": "STRETCH"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flButtons",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgWomenPhone-flButtons",
 			"props": {
 				"height": null,
 				"width": null,
@@ -1708,10 +1703,10 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
+					"alignItems": "CENTER",
 					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -1739,24 +1734,22 @@
 				"Implementation": "pgWomen-AddToCard"
 			},
 			"userProps": {
-				"text": "ADD TO CART",
-				"marginBottom": null,
-				"marginTop": null
+				"text": "ADD TO CART"
 			},
-			"className": ".button #pgWomenPhone.btnAddToCard",
+			"className": ".button #pgWomenPhone-btnAddToCard",
 			"props": {
 				"width": null,
-				"height": 70,
+				"height": 50,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(210,49,132,1)",
+				"backgroundColor": "rgba(210,49,130,1)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
 				"font": {
-					"size": 32,
+					"size": 15,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1768,7 +1761,7 @@
 				},
 				"marginBottom": null,
 				"marginTop": null,
-				"marginRight": 40,
+				"marginRight": 10,
 				"text": "ADD TO CART",
 				"name": "btnAddToCard",
 				"parent": "839f-1c74-3380-99b5",
@@ -1784,15 +1777,12 @@
 				"Implementation": "pgWomen-QuickOrder"
 			},
 			"userProps": {
-				"text": "QUICK ORDER",
-				"marginBottom": null,
-				"marginTop": null,
-				"marginLeft": null
+				"text": "QUICK ORDER"
 			},
-			"className": ".button #pgWomenPhone.btnQuickOrder",
+			"className": ".button #pgWomenPhone-btnQuickOrder",
 			"props": {
 				"width": null,
-				"height": 70,
+				"height": 50,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(103,164,231,1)",
@@ -1802,7 +1792,7 @@
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
 				"font": {
-					"size": 32,
+					"size": 15,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -1856,9 +1846,9 @@
 					"flexGrow": 1
 				},
 				"maxWidth": null,
+				"maxHeight": null,
 				"paddingLeft": 5,
 				"paddingRight": 5,
-				"maxHeight": null,
 				"usePageVariable": true,
 				"name": "flSwipe",
 				"parent": "830a-dd25-540d-36c7",
