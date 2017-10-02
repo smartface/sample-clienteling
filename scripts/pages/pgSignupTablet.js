@@ -68,13 +68,9 @@ function onPressSignup() {
   fingerprint.loginWithFingerprint();
 }
 
-function onPressAnonymous() {
-  Router.go("pgMainLookbook");
-}
+function onPressAnonymous() {}
 
-function onPressFacebook() {
-  Router.go("pgLookbook");
-}
+function onPressFacebook() {}
 
 function loginWithUserNameAndPassword(username, password, callback) {
   authService.login().then(() => {
