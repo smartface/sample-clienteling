@@ -17,7 +17,7 @@
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
 					"direction": "INHERIT",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
@@ -32,8 +32,8 @@
 					"ea77-2fe7-11f8-e93a",
 					"ecbb-8e1d-1438-6d78"
 				],
-				"width": 613.64,
-				"height": 286.12
+				"width": 345,
+				"height": 554.76
 			}
 		},
 		{
@@ -112,7 +112,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"paddingLeft": null,
 				"paddingRight": null,
@@ -297,7 +298,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"paddingLeft": null,
 				"paddingRight": null,
@@ -456,7 +458,11 @@
 				"Sizes": "Default",
 				"Implementation": "pgWomen-flInfoOuter"
 			},
-			"userProps": {},
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				}
+			},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flInfoOuter",
 			"props": {
 				"height": null,
@@ -469,7 +475,7 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -477,12 +483,11 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 1,
-					"flexProps": 1.4
+					"flexGrow": 1
 				},
 				"marginLeft": 20,
 				"marginRight": 20,
-				"marginTop": 5,
+				"marginTop": null,
 				"name": "flInfo",
 				"parent": "96f5-dfac-ba99-0fbc",
 				"children": [
@@ -502,7 +507,8 @@
 				"width": null,
 				"height": null,
 				"flexProps": {
-					"flexGrow": 0.6
+					"flexGrow": 0.6,
+					"flexDirection": "COLUMN"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -531,8 +537,7 @@
 				"parent": "ecbb-8e1d-1438-6d78",
 				"children": [
 					"86dd-01f9-c43f-2055",
-					"bcde-b0cd-2615-0e84",
-					"09c0-1840-2ea5-dbdf"
+					"ebe4-a10d-33d2-e72c"
 				]
 			}
 		},
@@ -597,124 +602,6 @@
 			}
 		},
 		{
-			"type": "Label",
-			"id": "bcde-b0cd-2615-0e84",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"text": "Farlap Dress Sleve Top",
-				"width": null,
-				"height": null,
-				"marginLeft": null,
-				"left": 0,
-				"top": 0,
-				"textAlignment": "TOPLEFT",
-				"usePageVariable": true,
-				"maxHeight": 15,
-				"font": {
-					"size": 12
-				},
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".label",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#1D1D26",
-				"textAlignment": "TOPLEFT",
-				"font": {
-					"size": 12,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"text": "Farlap Dress Sleve Top",
-				"marginLeft": null,
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true,
-				"maxHeight": 15,
-				"name": "lblProductDetail",
-				"parent": "e5ff-9c12-29bb-8455",
-				"children": []
-			}
-		},
-		{
-			"type": "Label",
-			"id": "09c0-1840-2ea5-dbdf",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"text": "$ 400",
-				"width": null,
-				"height": null,
-				"marginLeft": null,
-				"left": null,
-				"top": null,
-				"usePageVariable": true,
-				"maxHeight": 30,
-				"font": {
-					"bold": false,
-					"size": 18
-				},
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".label",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#1D1D26",
-				"textAlignment": "MIDLEFT",
-				"font": {
-					"size": 18,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"text": "$ 400",
-				"marginLeft": null,
-				"left": null,
-				"top": null,
-				"usePageVariable": true,
-				"maxHeight": 30,
-				"name": "lblProductPrice",
-				"parent": "e5ff-9c12-29bb-8455",
-				"children": []
-			}
-		},
-		{
 			"type": "FlexLayout",
 			"id": "ea77-2fe7-11f8-e93a",
 			"themeProps": {
@@ -722,7 +609,12 @@
 				"Implementation": "pgWomen-flSwipe"
 			},
 			"userProps": {
-				"usePageVariable": true
+				"usePageVariable": true,
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"alignSelf": "STRETCH"
+				}
 			},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flSwipe",
 			"props": {
@@ -736,7 +628,7 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -746,14 +638,14 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxWidth": 225,
-				"maxHeight": null,
-				"paddingLeft": 5,
-				"paddingRight": 5,
+				"maxWidth": null,
+				"maxHeight": 359,
+				"paddingLeft": 20,
+				"paddingRight": 20,
+				"usePageVariable": true,
 				"name": "flSwipe",
 				"parent": "96f5-dfac-ba99-0fbc",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -782,9 +674,9 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN_REVERSE",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 4
+					"flexGrow": 2
 				},
 				"name": "flPart2",
 				"parent": "ecbb-8e1d-1438-6d78",
@@ -814,7 +706,7 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -922,7 +814,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"paddingLeft": null,
 				"paddingRight": null,
@@ -1005,8 +898,8 @@
 				"width": null,
 				"height": null,
 				"marginLeft": null,
-				"left": 0,
-				"top": 0,
+				"left": null,
+				"top": null,
 				"usePageVariable": true,
 				"maxHeight": 22,
 				"font": {
@@ -1042,8 +935,8 @@
 				},
 				"text": "Size: M",
 				"marginLeft": null,
-				"left": 0,
-				"top": 0,
+				"left": null,
+				"top": null,
 				"usePageVariable": true,
 				"maxHeight": 22,
 				"name": "lblSize",
@@ -1303,10 +1196,15 @@
 				"Sizes": "Default",
 				"Implementation": "pgWomen-lineUnderColor"
 			},
-			"userProps": {},
+			"userProps": {
+				"maxHeight": 1,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone_lineUnderColor",
 			"props": {
-				"height": 1,
+				"height": 200,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -1323,10 +1221,11 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
-				"maxHeight": 0,
-				"maxWidth": 0,
+				"maxHeight": 1,
+				"maxWidth": null,
 				"name": "flLine2",
 				"parent": "8923-f436-4f29-8628",
 				"children": []
@@ -1356,7 +1255,7 @@
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "CENTER",
-					"justifyContent": "FLEX_START",
+					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -1410,9 +1309,9 @@
 					"flexGrow": 1
 				},
 				"marginRight": null,
+				"text": "ADD TO CART",
 				"marginTop": null,
 				"marginBottom": null,
-				"text": "ADD TO CART",
 				"maxWidth": 150,
 				"name": "btnAddToCard",
 				"parent": "cc0d-ebda-8532-d694",
@@ -1461,14 +1360,170 @@
 					"flexGrow": 1
 				},
 				"marginLeft": 10,
-				"marginTop": null,
-				"marginBottom": null,
 				"text": "QUICK ORDER",
+				"marginTop": null,
 				"bottom": null,
 				"marginRight": null,
+				"marginBottom": null,
 				"maxWidth": 150,
 				"name": "btnQuickOrder",
 				"parent": "cc0d-ebda-8532-d694",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "ebe4-a10d-33d2-e72c",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "pgWomenPhone-flDetail"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgWomenPhone-flDetail",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "flDetail",
+				"parent": "e5ff-9c12-29bb-8455",
+				"children": [
+					"18ce-26cc-12d2-7fb5",
+					"d12f-4733-d019-5804"
+				]
+			}
+		},
+		{
+			"type": "Label",
+			"id": "d12f-4733-d019-5804",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"text": "$ 400",
+				"width": null,
+				"height": null,
+				"marginLeft": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"maxHeight": null,
+				"font": {
+					"bold": false,
+					"size": 18
+				},
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#1D1D26",
+				"textAlignment": "MIDLEFT",
+				"font": {
+					"size": 18,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "$ 400",
+				"marginLeft": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"maxHeight": null,
+				"name": "lblProductPrice",
+				"parent": "ebe4-a10d-33d2-e72c",
+				"children": []
+			}
+		},
+		{
+			"type": "Label",
+			"id": "18ce-26cc-12d2-7fb5",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"text": "Farlap Dress Sleve Top",
+				"width": null,
+				"height": null,
+				"marginLeft": null,
+				"left": 0,
+				"top": 0,
+				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
+				"maxHeight": null,
+				"font": {
+					"size": 12
+				},
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#1D1D26",
+				"textAlignment": "MIDLEFT",
+				"font": {
+					"size": 12,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "Farlap Dress Sleve Top",
+				"marginLeft": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"maxHeight": null,
+				"name": "lblProductDetail",
+				"parent": "ebe4-a10d-33d2-e72c",
 				"children": []
 			}
 		}

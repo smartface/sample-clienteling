@@ -1,5 +1,6 @@
 const extend = require('js-base/core/extend');
 const PgWomenDesign = require('ui/ui_pgWomen');
+const pageContextPatch = require("../context/pageContextPatch");
 
 const SwipeView = require("sf-core/ui/swipeview");
 
@@ -13,6 +14,7 @@ const PgWomen = extend(PgWomenDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    pageContextPatch(this, "pgWomen");
   });
 
 /**

@@ -1,7 +1,6 @@
 {
   "#pgWomenPhone": {
     ".flButtons": {
-      "@extend": ".flexLayout",
       "width": null,
       "height": null,
       "flexProps": {
@@ -17,17 +16,18 @@
       }
     },
     ".flInfo": {
-      "@extend": ".flexLayout",
       "width": null,
       "height": null,
       "flexProps": {
         "flexGrow": 2,
-        "justifyContent":"SPACE_BETWEEN",
-        "flexDirection": "COLUMN"
+        "justifyContent": "SPACE_BETWEEN",
+        "flexDirection": "COLUMN",
+        "alignItems": "STRETCH",
+        "alignContent": "STRETCH",
+        "alignSelf": "STRETCH"
       }
     },
     ".flPart2": {
-      "@extend": ".flexLayout",
       "width": null,
       "height": null,
       "flexProps": {
@@ -41,11 +41,26 @@
         }
       }
     },
-    ".page": {
+    "&-flDetail": {
+      "height": null,
+      "width": null,
       "flexProps": {
+        "flexGrow": 1,
         "flexDirection": "COLUMN"
       },
-      "+page:Screen.width > 450": {
+      "+page:Screen.width   >   449 ": {
+        "flexProps": {
+          "flexDirection": "ROW"
+        }
+      }
+    },
+    ".page": {
+      "flexProps": {
+        "flexDirection": "COLUMN",
+        "alignItems": "STRETCH",
+        "alignContent": "STRETCH"
+      },
+      "+page:Screen.width > 448": {
         "flexProps": {
           "flexDirection": "ROW"
         }
@@ -116,7 +131,8 @@
       "height": null,
       "width": null,
       "flexProps": {
-        "flexGrow": 1
+        "flexGrow": 1,
+        "flexDirection": "COLUMN"
       },
       "marginTop": null,
       "+page:Screen.width > 450": {
@@ -126,14 +142,18 @@
         "marginTop": 5
       }
     },
-    "&_lineUnderColor":{
-      "@extend": ".flexLayout-line",
-      "maxHeight": null,
+    "&_lineUnderColor": {
+      "maxHeight": 1,
       "maxWidth": null,
-      "width":null,
+      "width": null,
+			"alpha": 0.1,
+			"visible": true,
+			"backgroundColor": "#1D1D26",
+      "width": null,
       "+page:Screen.width > 450": {
         "maxHeight": 0,
-        "maxWidth": 0
+        "maxWidth": 0,
+        "visible": false
       }
     }
   }
