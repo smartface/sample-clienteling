@@ -1712,11 +1712,6 @@
 				},
 				"marginTop": 10,
 				"marginBottom": 10,
-				">layout": {
-					"flexProps": {
-						"justifyContent": "FLEX_START"
-					}
-				},
 				"name": "flButtons",
 				"parent": "47f8-6678-f299-571d",
 				"children": [
