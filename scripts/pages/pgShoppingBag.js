@@ -39,10 +39,6 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
-
-
-
-
   this.lvShoppingBag.itemCount = 5;
   this.lvShoppingBag.onRowBind = function(shoppingBagItem, index) {
     shoppingBagItem.productImage.loadFromUrl("https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56363.png");

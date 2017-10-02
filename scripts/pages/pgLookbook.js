@@ -38,6 +38,7 @@ const PgLookbook = extend(PgLookbookDesign)(
 function onShow(superOnShow) {
     const page = this;
     superOnShow();
+    reDesignListviewItem.call(this);
 
     if (System.OS === "iOS") {
         page.flStatusBarBg.height = page.statusBar.height;
@@ -55,9 +56,6 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     superOnLoad();
     reDesignListviewItem.call(this);
-    customerService
-        .getLookBook(1445)
-        .then(res => console.log("RES_> " + JSON.stringify(res, null, "\t")), err => console.log("ERR_> ") + JSON.stringify(err, null, "\t"));
 }
 
 function onOrientationChange() {
