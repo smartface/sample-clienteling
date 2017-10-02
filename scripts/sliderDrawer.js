@@ -4,13 +4,14 @@ const Color = require('sf-core/ui/color');
 const HeaderBarItem = require('sf-core/ui/headerbaritem');
 const Image = require('sf-core/ui/image');
 
-var sliderDrawerWidth = 333;
+const WIDTH = 275;
+
 var sliderDrawer = new SliderDrawer({
-    width: sliderDrawerWidth,
+    width: WIDTH,
     enabled: false,
     onLoad: function() {
         var uiSliderDrawer = new UISliderDrawer({
-            width: sliderDrawerWidth,
+            width: WIDTH,
             height: NaN,
             flexGrow: 1
         });
@@ -31,12 +32,8 @@ var sliderDrawer = new SliderDrawer({
     }
 });
 
-sliderDrawer.drawerPosition = SliderDrawer.Position.LEFT;
-module.exports = exports = sliderDrawer;
-
 sliderDrawer.moveHighlight = function() {};
 sliderDrawer.setUserData = function() {};
-
 sliderDrawer.applyTheme = function sliderDrawer_applyTheme() {};
 
 sliderDrawer.setLeftItem = function setLeftItem(headerBar, force) {
@@ -58,3 +55,6 @@ sliderDrawer.setLeftItem = function setLeftItem(headerBar, force) {
     headerBar.leftItem = sliderDrawerItem;
     sliderDrawer.enabled = true;
 };
+
+sliderDrawer.drawerPosition = SliderDrawer.Position.LEFT;
+module.exports = exports = sliderDrawer;
