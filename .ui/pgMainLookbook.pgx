@@ -265,6 +265,7 @@
 				"width": null,
 				"height": null,
 				"backgroundColor": "rgba( 203, 203, 203, 1 )",
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 3
 				}
@@ -296,7 +297,8 @@
 				"children": [
 					"5114-d220-b1ed-6b58",
 					"6f1c-1a10-c120-fe7d"
-				]
+				],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -429,7 +431,7 @@
 				"name": "imgBagTrends",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.2952838120672705"
 			}
 		},
 		{
@@ -524,7 +526,7 @@
 				"name": "imgSunGlasses",
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.779713084615278"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.1149192619772259"
 			}
 		},
 		{
@@ -1099,7 +1101,7 @@
 				"name": "imgWomen",
 				"parent": "47f2-f138-9dd8-617a",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgmainlookbook_women_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.8013324231721772"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgmainlookbook_women_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.12158170964535531"
 			}
 		},
 		{
@@ -1136,7 +1138,7 @@
 				"name": "imgMen",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgmainlookbook_men_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.6311046326239713"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgmainlookbook_men_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.69862470616496"
 			}
 		},
 		{

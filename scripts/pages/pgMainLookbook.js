@@ -12,6 +12,9 @@ const PgMainLookbook = extend(PgMainLookbookDesign)(
     this.flHeaderLeft.onTouchEnded = function() {
       Router.goBack();
     };
+    this.flWomen.onTouchEnded = function() {
+      Router.go("pgLookbook");
+    };
 
     pageContextPatch(this, "pgMainLookbook");
   });

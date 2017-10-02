@@ -72,6 +72,9 @@ function reDesignListviewItem() {
     });
     var id = 0;
     var itemCountPerRow = Math.floor(Screen.width / ITEM_WIDTH);
+    this.lvMain.onRowSelected = function() {
+        Router.go("pgWomen");
+    };
     this.lvMain.onRowCreate = function() {
         var listItem = new ListViewItem({
             positionType: FlexLayout.PositionType.RELATIVE,
