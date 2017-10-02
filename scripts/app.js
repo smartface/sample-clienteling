@@ -42,7 +42,7 @@ Router.go("pgSignup" + (isTablet ? "Tablet" : "Phone"), {
     appStart: true
 });
 
-//Router.go("pgWomen");
+Router.go("pgShoppingBag");
 
 if (System.OS === "Android") {
     sliderDrawer = require("./sliderDrawer");

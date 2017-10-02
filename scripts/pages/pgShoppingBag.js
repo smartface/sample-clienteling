@@ -5,7 +5,7 @@ const PgShoppingBagDesign = require('ui/ui_pgShoppingBag');
 const Color = require("sf-core/ui/color");
 const pageContextPatch = require("../context/pageContextPatch");
 
-const TRANSPARENT_GRAY = Color.create(25, 125, 125, 125);
+const TRANSPARENT_GRAY = Color.create(15, 125, 125, 125);
 const PgShoppingBag = extend(PgShoppingBagDesign)(
   // Constructor
   function(_super) {
