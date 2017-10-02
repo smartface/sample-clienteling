@@ -19,7 +19,7 @@
       "width": null,
       "height": null,
       "flexProps": {
-        "flexGrow": 0.5,
+        "flexGrow": 1,
         "flexDirection": "ROW",
         "alignItems": "CENTER",
         "justifyContent": "SPACE_BETWEEN"
@@ -29,6 +29,21 @@
           "flexProps": {
             "justifyContent": "FLEX_START"
           }
+        }
+      },
+      "marginTop": 10,
+      "marginBottom": 10,
+      "+isTablet:": {
+        "flexProps": {
+          "flexGrow": 0.6
+        }
+      },
+      "+isTablet_landscape:": {
+        "flexProps": {
+          "flexGrow": 1.2,
+          "flexDirection": "COLUMN",
+          "alignItems": "STRETCH",
+          "alignContent": "STRETCH"
         }
       }
     },
@@ -46,6 +61,11 @@
       "marginBottom": null,
       "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
         "marginBottom": 20
+      },
+      "+isTablet_portrait:":{
+        "flexProps":{
+          "flexProps": 1.5
+        }
       },
       "&-flPart1": {
         "&-lblProductName": {
@@ -144,7 +164,10 @@
         }
       }
     },
-    ".btnAddToCard": {
+    "&-btnAddToCard": {
+      "marginBottom": null,
+      "marginTop": null,
+      "marginRight": null,
       "width": null,
       "height": 50,
       "flexProps": {
@@ -155,9 +178,26 @@
         "size": 15
       },
       "backgroundColor": "rgba(210,49,130,1)",
-      "marginRight": 10
+      "marginRight": 10,
+      "+isTablet:": {
+        "height": 70,
+        "font": {
+          "family": "Lato",
+          "size": 32
+        },
+        "marginRight": null
+      },
+      "+isTablet_portrait:":{
+        "marginRight":10
+      },
+      "+isTablet_landscape:":{
+        "marginBottom":10
+      }
     },
-    ".btnQuickOrder": {
+    "&-btnQuickOrder": {
+      "marginBottom": null,
+      "marginTop": null,
+      "marginRight": null,
       "width": null,
       "height": 50,
       "flexProps": {
@@ -168,9 +208,23 @@
         "size": 15
       },
       "backgroundColor": "rgba(103,164,231,1)",
-      "marginLeft": null
+      "marginLeft": null,
+      "+isTablet:": {
+        "height": 70,
+        "font": {
+          "family": "Lato",
+          "size": 32
+        }
+      },
+      "+isTablet_portrait:":{
+        "marginLeft":10
+      },
+      "+isTablet_landscape:":{
+        "marginTop":10
+      }
     },
     ".btnColor": {
+
       "width": 15,
       "height": 15,
       "marginLeft": 11,
@@ -183,7 +237,6 @@
       "maxWidth": null,
       "height": null,
       "width": null,
-      "maxHeight": 359,
       "flexProps": {
         "flexGrow": 1
       },
