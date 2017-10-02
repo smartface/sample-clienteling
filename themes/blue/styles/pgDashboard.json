@@ -19,10 +19,10 @@
         "flexGrow": 1
       },
       "+page: Screen.width > 450 && Screen.width < 800":{
-        "layoutHeight": 600
+        "layoutHeight": 800
       },
       "+isTablet:": {
-        "layoutHeight": 600
+        "layoutHeight": 800
       }
     },
     ".flItem": {
