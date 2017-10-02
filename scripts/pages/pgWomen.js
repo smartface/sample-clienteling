@@ -1,7 +1,8 @@
 const extend = require('js-base/core/extend');
 const PgWomenDesign = require('ui/ui_pgWomen');
 const pageContextPatch = require("../context/pageContextPatch");
-
+const SvipeViewTemplatePage = require("pages/pgWomenSwipePage");
+const globalSvipeViewList = require("lib/swipeViewList");
 const SwipeView = require("sf-core/ui/swipeview");
 
 
@@ -15,6 +16,7 @@ const PgWomen = extend(PgWomenDesign)(
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     pageContextPatch(this, "pgWomen");
+    loadUI.call(this);
   });
 
 /**
@@ -34,6 +36,27 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+}
+
+
+function loadUI(){
+  const json = require("../sample-data/customerProfile.json");
+  var list  = json.wishlist;
+  globalSvipeViewList.setList(list);
+  this.flSwipe.removeAll();
+  var swipeView = new SwipeView({
+        page: this,
+        flexGrow: 1,
+        pages: [SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage],
+        onPageSelected: onChildPageChanged.bind(this)
+  });
+  this.flSwipe.addChild(swipeView);
+
+}
+
+function onChildPageChanged(index) {
+  globalSvipeViewList.setActiveIndex(index);
+  //this.dotIndicator.currentIndex = index;
 }
 
 module && (module.exports = PgWomen);

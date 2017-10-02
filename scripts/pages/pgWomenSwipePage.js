@@ -1,7 +1,9 @@
 const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
-const Color = require('sf-core/ui/color');
 const ImageView = require('sf-core/ui/imageview');
+const ImageFillType = require("sf-core/ui/imagefilltype");
+const FlexLayout = require('sf-core/ui/flexlayout');
+const globalSvipeViewList = require("lib/swipeViewList");
 
 const Page_ = extend(Page)(
 	// Constructor
@@ -11,20 +13,24 @@ const Page_ = extend(Page)(
 		    onShow: onShow.bind(this),
 			onLoad: onLoad.bind(this)
 		});
+		this.layout.removeAll();
 		var img = new ImageView({
-		    image: props.image
+		    alignSelf: FlexLayout.AlignSelf.STRETCH,
+		    flexGrow: 1,
+		    imageFillType: ImageFillType.ASPECTFIT
 		});
+		this.image = img;
 		this.layout.addChild(img);
 });
 
 // Page.onShow -> This event is called when a page appears on the screen (everytime).
 function onShow() {
     this.headerBar.visible = false;
-    this.headerBar.title = "pgWomenSwipePage";
-    this.headerBar.titleColor = Color.create("#000000");
-    this.headerBar.backgroundColor = Color.create("#FFFFFF");
     this.statusBar.visible = false;
-    this.statusBar.android && (this.statusBar.android.color = Color.create("#00A1F1"));
+    var index = globalSvipeViewList.getActiveIndex();
+    if(index !== -1){
+    	this.image.loadFromUrl(globalSvipeViewList.getList()[index]);
+    }
 }
 
 // Page.onLoad -> This event is called once when page is created.
