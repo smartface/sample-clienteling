@@ -42,8 +42,8 @@
 					"0956-1b61-5add-487e",
 					"e6e8-5b33-9017-7609"
 				],
-				"width": 258.75,
-				"height": 416.06999999999994
+				"width": 345,
+				"height": 554.76
 			}
 		},
 		{
@@ -359,8 +359,8 @@
 			},
 			"userProps": {
 				"width": null,
-				"marginLeft": 20,
-				"marginRight": 20
+				"marginLeft": null,
+				"marginRight": null
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
@@ -384,8 +384,8 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 0
 				},
-				"marginLeft": 20,
-				"marginRight": 20,
+				"marginLeft": null,
+				"marginRight": null,
 				"name": "flLine",
 				"parent": "d125-d864-c390-0484",
 				"children": []
