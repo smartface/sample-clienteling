@@ -29,10 +29,12 @@
 				"children": [
 					"a431-6426-27d6-3884",
 					"49a6-bd3e-b201-a73b",
+					"7fc3-32b9-6f31-0ced",
+					"eed5-adce-b93c-8173",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 210.00000000000003,
-				"height": 337.68000000000006
+				"width": 365.5384615384615,
+				"height": 585.6061538461538
 			}
 		},
 		{
@@ -44,7 +46,7 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#202020",
+				"color": "#424242",
 				"visible": true,
 				"font": {},
 				"flexProps": {},
@@ -62,13 +64,14 @@
 				"HeaderBar": "Default"
 			},
 			"userProps": {
-				"title": "SIGN IN"
+				"title": "SIGN IN",
+				"visible": false
 			},
 			"className": ".headerBar",
 			"props": {
 				"title": "SIGN IN",
 				"titleColor": "#FFFFFF",
-				"visible": true,
+				"visible": false,
 				"backgroundColor": "#202020",
 				"font": {},
 				"flexProps": {},
@@ -366,10 +369,10 @@
 					"positionType": "RELATIVE"
 				},
 				"text": "smartface@smartface.io",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "076e-47c9-12e8-938b",
-				"name": "taUserID",
-				"usePageVariable": true
+				"name": "taUserID"
 			}
 		},
 		{
@@ -401,7 +404,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"children": [],
 				"parent": "076e-47c9-12e8-938b",
@@ -542,10 +546,10 @@
 				},
 				"text": "12345",
 				"isPassword": true,
+				"usePageVariable": true,
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
-				"name": "taPassword",
-				"usePageVariable": true
+				"name": "taPassword"
 			}
 		},
 		{
@@ -577,7 +581,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 0
 				},
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
@@ -968,7 +973,7 @@
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://dispatcher.dev.smartface.io/smartface77/ecommerce3/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.56&brandModel=iPhone%207?random=0.042217414098086214"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=Android&osVersion=7&density=423&densityRatio=0.3846153846153846&zoomLevel=0.88&brandModel=Nexus%205X&resourceFolderOrder=drawable-xxhdpi%2Cdrawable-xxxhdpi%2Cdrawable-xhdpi%2Cdrawable-hdpi%2Cdrawable-mdpi%2Cdrawable-ldpi%2Cdrawable"
 			}
 		},
 		{
@@ -1023,6 +1028,153 @@
 				"maxHeight": 50,
 				"name": "taHeader",
 				"parent": "7eb6-9fa4-2799-664c",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "7fc3-32b9-6f31-0ced",
+			"themeProps": {
+				"Implementation": "Default",
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"usePageVariable": true,
+				"width": null,
+				"height": 20,
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 20,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"usePageVariable": true,
+				"left": 0,
+				"top": 0,
+				"name": "flStatusBarBg",
+				"parent": "da7d-a011-d4fb-9c5b",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "eed5-adce-b93c-8173",
+			"themeProps": {
+				"Implementation": "Default",
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": 50,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 50,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "SPACE_BETWEEN",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"name": "flHeaderBar",
+				"parent": "da7d-a011-d4fb-9c5b",
+				"children": [
+					"a00f-6621-283e-eca6"
+				]
+			}
+		},
+		{
+			"type": "Label",
+			"id": "a00f-6621-283e-eca6",
+			"hiddenComponent": false,
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"text": "SIGN IN",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"left": null,
+				"top": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 15
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 15,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "SIGN IN",
+				"left": null,
+				"top": null,
+				"name": "lblTitle",
+				"parent": "eed5-adce-b93c-8173",
 				"children": []
 			}
 		}

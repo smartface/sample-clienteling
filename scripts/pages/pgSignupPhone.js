@@ -2,22 +2,17 @@ const extend = require('js-base/core/extend');
 const PgSignupPhoneDesign = require('ui/ui_pgSignupPhone');
 const pageContextPatch = require("../context/pageContextPatch");
 const Router = require("sf-core/ui/router");
+const System = require('sf-core/device/system');
 const fingerprint = require("sf-extension-utils").fingerprint;
 const authService = require("../service/AuthService");
 const PgSignupPhone = extend(PgSignupPhoneDesign)(
   // Constructor
   function(_super) {
-    // Initalizes super class for this page scope
     _super(this);
-    // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-
     this.btnSignup.onPress = onPressSignup.bind(this);
     this.btnAnonymous.onPress = onPressAnonymous;
     this.btnFacebook.onPress = onPressFacebook;
-
-    // AND-3014
-    this.headerBar.leftItemEnabled = false;
 
     pageContextPatch(this, "pgSignupPhone");
   });
@@ -29,8 +24,16 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow, data) {
-  superOnShow();
   const page = this;
+  superOnShow();
+
+  if (System.OS === "iOS") {
+    page.flStatusBarBg.height = page.statusBar.height;
+  }
+  else {
+    page.layout.removeChild(page.flStatusBarBg);
+  }
+
   data = data || {};
   Router.sliderDrawer.enabled = false;
   data.appStart && fingerprint.init({

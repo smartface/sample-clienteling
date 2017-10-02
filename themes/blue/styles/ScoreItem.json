@@ -12,13 +12,12 @@
 				"size": 33
 			},
 			"flexProps": {
-				"flexGrow": 1,
+				"flexGrow": 2,
 				"alignSelf": "STRETCH"
 			},
 			"+page:Screen.width > 450": {
 				"textAlignment": "MIDCENTER",
 				"flexProps": {
-					"flexGrow": 1,
 					"alignSelf": "STRETCH"
 				}
 			}
@@ -26,6 +25,7 @@
 		"&-text": {
 			"width": null,
 			"height": null,
+			"marginLeft": 10,
 			"textColor": "#000000",
 			"textAlignment": "MIDLEFT",
 			"multiline": true,
@@ -35,13 +35,14 @@
 				"size": 12
 			},
 			"flexProps": {
-				"flexGrow": 1,
+				"flexGrow": 3,
 				"alignSelf": "STRETCH"
 			},
 			"+page:Screen.width > 450": {
+				"marginLeft": null,
 				"textAlignment": "MIDCENTER",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			}
 		}

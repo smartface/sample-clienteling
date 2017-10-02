@@ -5,17 +5,14 @@ const FlWardrobe = require("components/FlWardrobe");
 const FlCustomerProfileReservationItem = require("components/FlCustomerProfileReservationItem");
 const LvCustomerProfileWishlistItem = require("components/LvCustomerProfileWishlistItem");
 const Router = require("sf-core/ui/router");
-const Color = require('sf-core/ui/color');
+const System = require('sf-core/device/system');
 const customerService = require("service/Customer");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 	// Constructor
 	function(_super) {
-		// Initalizes super class for this page scope
 		_super(this);
-		// overrides super.onShow method
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
-		// overrides super.onLoad method
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 		loadUI.call(this);
 		pageContextPatch(this, "pgCustomerProfile");
@@ -35,7 +32,16 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
+	const page = this;
 	superOnShow();
+
+	if (System.OS === "iOS") {
+		page.flStatusBarBg.height = page.statusBar.height;
+	}
+	else {
+		page.layout.removeChild(page.flStatusBarBg);
+	}
+
 	customerService.getCutomerProfile(1445).then(res => {
 		console.log("RES_PRF> " + JSON.stringify(res, null, "\t"));
 	});
@@ -117,8 +123,8 @@ function addReservations(items) {
 	this.scFlReservations.layout.width = 170 * items.length;
 }
 
-function addOpenIndicates(items){
-		this.scwIndicates.layout.removeAll();
+function addOpenIndicates(items) {
+	this.scwIndicates.layout.removeAll();
 	items.forEach(item => {
 		var fl = new FlCustomerProfileReservationItem({
 			width: 140,

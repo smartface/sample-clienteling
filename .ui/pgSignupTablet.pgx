@@ -29,10 +29,12 @@
 				"children": [
 					"5607-d230-75de-9a8c",
 					"3aac-ed2b-6f28-f93e",
+					"3431-db49-9ff4-da66",
+					"8668-e576-bebf-2bb0",
 					"85f3-4d55-de4a-fe98"
 				],
-				"width": 183.75,
-				"height": 295.46999999999997
+				"width": 303.75,
+				"height": 540.27
 			}
 		},
 		{
@@ -44,7 +46,7 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#202020",
+				"color": "#424242",
 				"visible": true,
 				"font": {},
 				"flexProps": {},
@@ -62,13 +64,14 @@
 				"HeaderBar": "Default"
 			},
 			"userProps": {
-				"title": "SIGN IN"
+				"title": "SIGN IN",
+				"visible": false
 			},
 			"className": ".headerBar",
 			"props": {
 				"title": "SIGN IN",
 				"titleColor": "#FFFFFF",
-				"visible": true,
+				"visible": false,
 				"backgroundColor": "#202020",
 				"font": {},
 				"flexProps": {},
@@ -211,7 +214,7 @@
 				"name": "imgBanner",
 				"parent": "25f8-b6c1-967d-a7e3",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.49&brandModel=iPhone%207?random=0.8683863578375239"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -938,6 +941,153 @@
 				"usePageVariable": true,
 				"name": "btnAnonymous",
 				"parent": "b2a4-af8f-ab1e-15e6",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "3431-db49-9ff4-da66",
+			"themeProps": {
+				"Implementation": "Default",
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"usePageVariable": true,
+				"width": null,
+				"height": 20,
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 20,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"usePageVariable": true,
+				"left": 0,
+				"top": 0,
+				"name": "flStatusBarBg",
+				"parent": "eddf-f4fa-fca3-67f4",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "8668-e576-bebf-2bb0",
+			"themeProps": {
+				"Implementation": "Default",
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": 50,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 50,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "SPACE_BETWEEN",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"name": "flHeaderBar",
+				"parent": "eddf-f4fa-fca3-67f4",
+				"children": [
+					"d912-7dbb-83d0-d1ec"
+				]
+			}
+		},
+		{
+			"type": "Label",
+			"id": "d912-7dbb-83d0-d1ec",
+			"hiddenComponent": false,
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"text": "SIGN IN",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"left": null,
+				"top": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 15
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 15,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "SIGN IN",
+				"left": null,
+				"top": null,
+				"name": "lblTitle",
+				"parent": "8668-e576-bebf-2bb0",
 				"children": []
 			}
 		}

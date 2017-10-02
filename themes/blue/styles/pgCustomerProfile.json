@@ -196,7 +196,6 @@
           "top": null,
           "width": null,
           "height": null,
-          "maxWidth": 170,
           "flexProps": {
             "positionType": "RELATIVE",
             "flexDirection": "ROW",
