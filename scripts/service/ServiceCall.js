@@ -1,7 +1,6 @@
 const mixinDeep = require('mixin-deep');
 const mcs = require("../lib/mcs");
-const http = require("sf-core/net/http");
-const Http = new http();
+const Http = require("sf-core/net/http");
 const requestQueue = [];
 var userToken = null;
 exports.registerUserToken = registerUserToken;
@@ -64,32 +63,29 @@ function performRequest(options, callback) {
       }
     });
   }
-
-  options.onLoad = function(response) {
+  Http.request(options, (response) => {
     response.body = response.body.toString();
     var contentType = getContentType(response.headers);
-    if (contentType === "application/json") {
-      try {
+    if (contentType === "application/json"){
+      try{
         response.body = JSON.parse(response.body);
-      }
-      catch (e) {
-
+      }catch(e){
+        
       }
     }
-    callback(null, response.body);
-  };
 
-  options.onError = function(error) {
+    callback(null, response.body);
+  }, (error) => {
     error.body = error.body.toString();
     var contentType = getContentType(error.headers);
     if (contentType === "application/json")
       error.body = JSON.parse(error.body);
     console.log(`Service Error -- Request: ${JSON.stringify(options)}`);
     callback(error);
-  };
-
-  Http.request(options);
+  });
 }
+
+
 
 function getContentType(headers) {
   var contentType = headers["Content-Type"];
