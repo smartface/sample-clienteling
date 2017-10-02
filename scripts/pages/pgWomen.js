@@ -4,7 +4,8 @@ const pageContextPatch = require("../context/pageContextPatch");
 const SvipeViewTemplatePage = require("pages/pgWomenSwipePage");
 const globalSvipeViewList = require("lib/swipeViewList");
 const SwipeView = require("sf-core/ui/swipeview");
-
+const DotIndicator = require("components/DotIndicator");
+const FlexLayout = require('sf-core/ui/flexlayout');
 const flexProps = ["flexGrow", "flexDirection", "alignItems", "justifyContent"];
 
 const PgWomen = extend(PgWomenDesign)(
@@ -28,7 +29,7 @@ const PgWomen = extend(PgWomenDesign)(
         }.bind(this));
       }
     };
-
+    initDotIndicator(this);
     pageContextPatch(this, "pgWomen");
     loadUI.call(this);
   });
@@ -58,21 +59,26 @@ function loadUI(){
   var list  = json.whishlist;
   globalSvipeViewList.setList(list);
   globalSvipeViewList.setActiveIndex(0);
-  this.flSwipe.removeAll();
   var swipeView = new SwipeView({
         page: this,
         flexGrow: 1,
         pages: [SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage],
-        onPageSelected: onChildPageChanged.bind(this)
+        onPageSelected: onChildPageChanged.bind(this),
+        marginBottom: 18
   });
   this.flSwipe.addChild(swipeView);
 
 }
 
+function initDotIndicator(page) {
+    page.dotIndicator.size = 4;
+}
+
+
 function onChildPageChanged(index) {
   console.log("SelectedIndeex_> "+index);
   globalSvipeViewList.setActiveIndex(index);
-  //this.dotIndicator.currentIndex = index;
+  this.dotIndicator.currentIndex = index;
 }
 
 module && (module.exports = PgWomen);

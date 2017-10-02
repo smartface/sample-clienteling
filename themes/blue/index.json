@@ -100,7 +100,6 @@
 				"pgCustomerProfile-flScecond-infoPart-flColor": "#pgCustomerProfile-flSecond-infoPart-flColor",
 				"pgShoppingBag-FlcontinuButton": ".flexLayout-pgShoppingBagFlContinueButton",
 				"stepper": "#stepper",
-
 				"stepper-flButtons": "#stepper-flButtons",
 				"pgDashboard-Item": "#pgDashboard.flItem",
 				"pgDashboard-Item-Small": "#pgDashboard.flItem.small",
@@ -110,7 +109,10 @@
 				"pgDashboard-Info11": "#pgDashboard.flInfoPart11",
 				"pgDashboard-Info12": "#pgDashboard.flInfoPart12",
 				"pgDashboard-Info21": "#pgDashboard.flInfoPart21",
-				"pgDashboard-Info22": "#pgDashboard.flInfoPart22"
+				"pgDashboard-Info22": "#pgDashboard.flInfoPart22",
+				"DotIndicator": ".flexLayout-dotIndicator-main",
+				"DotIndicatorInactiveItem": ".flexLayout-dotIndicator-item.inactive",
+				"DotIndicatorActiveItem": ".flexLayout-dotIndicator-item.active"
 			}
 		},
 		"ScrollView": {

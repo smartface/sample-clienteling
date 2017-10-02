@@ -8,11 +8,7 @@
 				"Page": "pgWomen"
 			},
 			"userProps": {
-				"orientation": "AUTO",
-				"flexProps": {
-					"alignItems": "STRETCH",
-					"alignContent": "STRETCH"
-				}
+				"orientation": "AUTO"
 			},
 			"className": ".page #pgWomenPhone.page",
 			"version": "6.4.8-rc.13",
@@ -49,7 +45,7 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#424242",
+				"color": "#202020",
 				"visible": true,
 				"font": {},
 				"flexProps": {},
@@ -463,8 +459,6 @@
 				"Implementation": "pgWomen-flInfoOuter"
 			},
 			"userProps": {
-				"height": null,
-				"width": null,
 				"flexProps": {
 					"alignSelf": "STRETCH"
 				}
@@ -616,8 +610,6 @@
 			},
 			"userProps": {
 				"usePageVariable": true,
-				"height": null,
-				"width": null,
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -1533,6 +1525,67 @@
 				"name": "lblProductDetail",
 				"parent": "ebe4-a10d-33d2-e72c",
 				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "5a0f-1dc0-0e7f-532a",
+			"hiddenComponent": false,
+			"source": {
+				"page": "__library__",
+				"type": "dotIndicator",
+				"id": "cd3b-2912-1a7f-7558"
+			},
+			"themeProps": {
+				"Highlights": "DotIndicator",
+				"Sizes": "Default",
+				"Implementation": "DotIndicator"
+			},
+			"userProps": {
+				"width": null,
+				"height": 10,
+				"left": 0,
+				"top": null,
+				"bottom": 8,
+				"right": 0,
+				"usePageVariable": true,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"justifyContent": "CENTER"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-main",
+			"props": {
+				"height": 10,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#00FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "ABSOLUTE"
+				},
+				"left": 0,
+				"top": null,
+				"bottom": 8,
+				"right": 0,
+				"usePageVariable": true,
+				"children": [],
+				"parent": "ea77-2fe7-11f8-e93a",
+				"name": "dotIndicator"
 			}
 		}
 	]

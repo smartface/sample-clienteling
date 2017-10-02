@@ -47,7 +47,8 @@
 					"c835-c323-179b-387a",
 					"6015-add5-c15e-d9f3",
 					"1757-127d-acfb-f5e1",
-					"ddfa-0686-69f0-77af"
+					"ddfa-0686-69f0-77af",
+					"cd3b-2912-1a7f-7558"
 				],
 				"width": 345,
 				"height": 613.64
@@ -62,7 +63,7 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#202020",
+				"color": "#424242",
 				"visible": false,
 				"font": {},
 				"flexProps": {},
@@ -556,8 +557,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 4.615384615384615,
-				"top": 24.615384615384613,
+				"left": 4.3478260869565215,
+				"top": 25,
 				"width": 527.1186440677966,
 				"height": 196.61016949152543,
 				"marginRight": null,
@@ -588,8 +589,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 4.615384615384615,
-				"top": 24.615384615384613,
+				"left": 4.3478260869565215,
+				"top": 25,
 				"marginRight": null,
 				"right": null,
 				"name": "flShoppingBagItem",
@@ -2032,7 +2033,7 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
 				"text": "50",
 				"usePageVariable": true,
@@ -2074,8 +2075,9 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 3
 				},
+				"marginLeft": 10,
 				"maxWidth": null,
 				"text": "ENGAGEMENT \nSCORE",
 				"usePageVariable": true,
@@ -6457,6 +6459,172 @@
 				"name": "line",
 				"parent": "5be9-8547-09ac-6568",
 				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "cd3b-2912-1a7f-7558",
+			"hiddenComponent": false,
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "DotIndicator",
+				"Sizes": "Default",
+				"Implementation": "DotIndicator"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-main",
+			"props": {
+				"height": 10,
+				"width": 42,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#00FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "ABSOLUTE"
+				},
+				"children": [
+					"1a3f-b617-dfa5-9576",
+					"9db2-9989-1122-0ec1",
+					"e7f4-d7f7-4f19-92b6"
+				],
+				"parent": "fb96-1dcf-3bb9-cd95",
+				"name": "dotIndicator"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "1a3f-b617-dfa5-9576",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "DotIndicatorActiveItem",
+				"Sizes": "Default",
+				"Implementation": "DotIndicatorInactiveItem"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.inactive",
+			"props": {
+				"height": 10,
+				"width": 10,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#D8D8D8",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"borderRadius": 5,
+				"marginLeft": 2,
+				"marginRight": 2,
+				"children": [],
+				"parent": "cd3b-2912-1a7f-7558",
+				"name": "dot0"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "9db2-9989-1122-0ec1",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "DotIndicatorInactiveItem",
+				"Sizes": "Default",
+				"Implementation": "DotIndicatorInactiveItem"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.inactive",
+			"props": {
+				"height": 10,
+				"width": 10,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#D8D8D8",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"borderRadius": 5,
+				"marginLeft": 2,
+				"marginRight": 2,
+				"children": [],
+				"parent": "cd3b-2912-1a7f-7558",
+				"name": "dot1"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "e7f4-d7f7-4f19-92b6",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "DotIndicatorInactiveItem",
+				"Sizes": "Default",
+				"Implementation": "DotIndicatorActiveItem"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.active",
+			"props": {
+				"height": 10,
+				"width": 10,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#1775D0",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"borderRadius": 5,
+				"marginLeft": 2,
+				"marginRight": 2,
+				"children": [],
+				"parent": "cd3b-2912-1a7f-7558",
+				"name": "dot2"
 			}
 		}
 	]

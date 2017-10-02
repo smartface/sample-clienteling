@@ -15,9 +15,15 @@ const Page_ = extend(Page)(
 		});
 		this.layout.removeAll();
 		var img = new ImageView({
+			positionType: FlexLayout.PositionType.ABSOLUTE,
+			top: 10,
+			left: 0,
+			right: 0,
+			bottom: 20,
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			flexGrow: 1,
-			imageFillType: ImageView.FillType.ASPECTFIT
+			imageFillType: ImageView.FillType.ASPECTFIT,
+			backgroundColor: Color.TRANSPARENT
 		});
 		this.image = img;
 		this.layout.addChild(img);
@@ -27,18 +33,19 @@ const Page_ = extend(Page)(
 function onShow() {
 	this.headerBar.visible = false;
 	this.statusBar.visible = false;
-	var index = globalSvipeViewList.getActiveIndex();
-	var list = globalSvipeViewList.getList();
-	console.log("Index _> " + index + JSON.stringify(list));
-		
-	if (index !== -1)
-		setTimeout(function() {
-			this.image.loadFromUrl(list[index].image);
-		}.bind(this), 100);
+	setTimeout(function() {
+		var index = globalSvipeViewList.getActiveIndex();
+		var list = globalSvipeViewList.getList();
+		//console.log("Index _> " + index + JSON.stringify(list));
+		if (index !== -1 && !this.isImageLoaded)
+			this.image.loadFromUrl(list[index + 1].image);
+		this.isImageLoaded = true;
+	}.bind(this), 100);
 
 }
 
 // Page.onLoad -> This event is called once when page is created.
 function onLoad() {}
+
 
 module && (module.exports = Page_);
