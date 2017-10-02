@@ -5,6 +5,7 @@ const SvipeViewTemplatePage = require("pages/pgWomenSwipePage");
 const globalSvipeViewList = require("lib/swipeViewList");
 const SwipeView = require("sf-core/ui/swipeview");
 
+const flexProps = ["flexGrow", "flexDirection", "alignItems", "justifyContent"];
 
 const PgWomen = extend(PgWomenDesign)(
   // Constructor
@@ -15,6 +16,19 @@ const PgWomen = extend(PgWomenDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    
+    this.subscribeContext = function(e){
+      if(e.type == "new-styles"){
+        Object.keys(e.data).forEach(function(key){
+          if(flexProps.some(function(prop){ return  prop == key})){
+            this.layout[key] = e.data[key];
+          } else {
+            this[key] = e.data[key];
+          }
+        }.bind(this));
+      }
+    };
+
     pageContextPatch(this, "pgWomen");
     loadUI.call(this);
   });

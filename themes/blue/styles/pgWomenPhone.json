@@ -10,8 +10,10 @@
         "justifyContent": "SPACE_BETWEEN"
       },
       "+page:Screen.width > 450": {
-        "flexProps": {
-          "justifyContent": "FLEX_START"
+        ">layout": {
+          "flexProps": {
+            "justifyContent": "FLEX_START"
+          }
         }
       }
     },
@@ -48,7 +50,7 @@
         "flexGrow": 1,
         "flexDirection": "COLUMN"
       },
-      "+page:Screen.width   >   449 ": {
+      "+page:Screen.width > 450 ": {
         "flexProps": {
           "flexDirection": "ROW"
         }
@@ -60,7 +62,7 @@
         "alignItems": "STRETCH",
         "alignContent": "STRETCH"
       },
-      "+page:Screen.width > 448": {
+      "+page:Screen.width > 450": {
         "flexProps": {
           "flexDirection": "ROW"
         }

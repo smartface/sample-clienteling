@@ -41,6 +41,9 @@ module.exports = function pageContextPatch(page, name){
     this.dispatch({
       type: "orientationStarted"
     });
+    
+    this.layout.applyLayout();
+
     superOnOrientationChange && setTimeout(superOnOrientationChange.bind(this),1);
     setTimeout(function() {
       this.dispatch({
@@ -48,7 +51,7 @@ module.exports = function pageContextPatch(page, name){
       });
 
       this.layout.applyLayout();
-    }.bind(this), 10);
+    }.bind(this), 1);
   };
   
   page.setContextDispatcher = function(dispatcher) {

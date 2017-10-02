@@ -17,7 +17,7 @@ commands.addRuntimeCommandFactory(function(type){
       return function pageCommand(opts){
         opts = merge(opts);
         var isOK = (function(Screen) { return eval(opts.args); }({width: Screen.width, height: Screen.height}));
-        // console.log("+page :: isOK : "+isOK.toString()+" "+JSON.stringify(opts))
+        console.log("+page :: isOK : "+isOK.toString()+" "+JSON.stringify(opts))
 		    return  isOK ? opts.value : {};
       };
       

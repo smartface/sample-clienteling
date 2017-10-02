@@ -131,9 +131,6 @@
 
         var diff = Object.keys(styles).reduce(diffReducer, {});
         
-        // if(this.name.indexOf("flBanner") > -1)
-        //   console.log(this.name+"="+flush("", diff));
-
         var beforeHook = hooks("beforeStyleDiffAssign");
         beforeHook && (diff = beforeHook(diff));
 
@@ -165,10 +162,11 @@
         
         try {
           this.component.subscribeContext
-            ? Object.keys(diff).length && this.component.subscribeContext({type:"new styles", data: diff})
+            ? Object.keys(diff).length && this.component.subscribeContext({type:"new-styles", data: diff})
             : Object.keys(diff).length && Object.keys(diff).forEach(function(key) {
               // if((this.name === "pgSignupPhone_flMain") || (!keys.some(k => k == key) && this.name !== "pgSignupPhone_flMain_flBanner" && this.name.indexOf("flBanner") > -1)){
 
+    
               if(key == "scrollEnabled"){
                 this.component.ios && (this.component.ios.scrollEnabled = diff[key]);
               } else if(this.component[key] !== diff[key]){
@@ -179,6 +177,8 @@
                 // console.log(this.name+" : "+key+":"+diff[key]);
               // }
             }.bind(this));
+          if(this.name === "pgWomen")
+            console.log("pgWomen"+this.component.flexDirection);
         } catch(e){
           throw new Error(JSON.stringify(diff)+" is invalid. "+e.message);
         }
@@ -300,7 +300,7 @@
             var beforeHook = hooks("beforeAssignComponentStyles");
             beforeHook && (className = beforeHook(name, className));
             var styles;
-            
+
             try {
               styles = styler(className)();
             } catch (e) {
