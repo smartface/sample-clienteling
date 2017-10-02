@@ -8,7 +8,11 @@
 				"Page": "pgWomen"
 			},
 			"userProps": {
-				"orientation": "AUTO"
+				"orientation": "AUTO",
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
+				}
 			},
 			"className": ".page #pgWomenPhone.page",
 			"version": "6.4.8-rc.13",
@@ -45,7 +49,7 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#202020",
+				"color": "#424242",
 				"visible": true,
 				"font": {},
 				"flexProps": {},
@@ -459,6 +463,8 @@
 				"Implementation": "pgWomen-flInfoOuter"
 			},
 			"userProps": {
+				"height": null,
+				"width": null,
 				"flexProps": {
 					"alignSelf": "STRETCH"
 				}
@@ -610,6 +616,8 @@
 			},
 			"userProps": {
 				"usePageVariable": true,
+				"height": null,
+				"width": null,
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",

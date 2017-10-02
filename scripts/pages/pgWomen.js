@@ -55,8 +55,9 @@ function onLoad(superOnLoad) {
 
 function loadUI(){
   const json = require("../sample-data/customerProfile.json");
-  var list  = json.wishlist;
+  var list  = json.whishlist;
   globalSvipeViewList.setList(list);
+  globalSvipeViewList.setActiveIndex(0);
   this.flSwipe.removeAll();
   var swipeView = new SwipeView({
         page: this,
@@ -69,6 +70,7 @@ function loadUI(){
 }
 
 function onChildPageChanged(index) {
+  console.log("SelectedIndeex_> "+index);
   globalSvipeViewList.setActiveIndex(index);
   //this.dotIndicator.currentIndex = index;
 }
