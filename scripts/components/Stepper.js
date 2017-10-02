@@ -11,8 +11,18 @@ const Stepper = extend(StepperDesign)(
     // initalizes super class for this scope
     _super(this, props || StepperDesign.defaults);
     this.pageName = pageName;
+    
+    this.up.onTouchEnded = function upEnded(){
+      this.lblNumber = Number(this.lblNumber.text) + 1;
+    }.bind(this);
+    
+    this.down.onTouchEnded = function upEnded(){
+      this.lblNumber = Number(this.lblNumber.text) - 1;
+    }.bind(this);
+    
   }
 
 );
+
 
 module && (module.exports = Stepper);

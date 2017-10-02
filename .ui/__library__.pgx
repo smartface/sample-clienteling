@@ -50,8 +50,8 @@
 					"ddfa-0686-69f0-77af",
 					"cd3b-2912-1a7f-7558"
 				],
-				"width": 667,
-				"height": 375
+				"width": 255.00000000000003,
+				"height": 453.56000000000006
 			}
 		},
 		{
@@ -557,8 +557,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 20,
-				"top": 38,
+				"left": 20.588235294117645,
+				"top": 38.23529411764706,
 				"width": 616.3934426229508,
 				"height": 236.0655737704918,
 				"marginRight": null,
@@ -589,8 +589,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 20,
-				"top": 38,
+				"left": 20.588235294117645,
+				"top": 38.23529411764706,
 				"marginRight": null,
 				"right": null,
 				"name": "flShoppingBagItem",
@@ -1920,7 +1920,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -1930,9 +1930,9 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 3
 				},
-				"marginLeft": null,
+				"marginLeft": 10,
 				"maxWidth": null,
 				"text": "ENGAGEMENT \nSCORE",
 				"usePageVariable": true,
@@ -2042,7 +2042,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2785,7 +2785,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4009,7 +4009,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5415,7 +5415,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "6015-add5-c15e-d9f3",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -5521,7 +5521,8 @@
 				"Implementation": "stepper-label"
 			},
 			"userProps": {
-				"text": "2"
+				"text": "2",
+				"usePageVariable": true
 			},
 			"className": ".label #stepper-label",
 			"props": {
@@ -5548,7 +5549,8 @@
 					"flexGrow": 1
 				},
 				"text": "2",
-				"name": "label1",
+				"usePageVariable": true,
+				"name": "lblNumber",
 				"parent": "6015-add5-c15e-d9f3",
 				"children": []
 			}
@@ -5590,7 +5592,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5630,7 +5632,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -6240,8 +6242,9 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 21.311475409836067,
-				"top": 260.655737704918
+				"left": 20.588235294117645,
+				"top": 260.2941176470588,
+				"flexProps": {}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -6264,8 +6267,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 21.311475409836067,
-				"top": 260.655737704918,
+				"left": 20.588235294117645,
+				"top": 260.2941176470588,
 				"name": "flexLayout2",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": []
