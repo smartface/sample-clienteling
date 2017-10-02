@@ -6,6 +6,8 @@ const FlexLayout = require('sf-core/ui/flexlayout');
 const LookbookItem = require("components/LookbookItem");
 const Screen = require('sf-core/device/screen');
 const customerService = require("service/Customer");
+const Router = require("sf-core/ui/router");
+const System = require('sf-core/device/system');
 const pageContextPatch = require("../context/pageContextPatch");
 
 const ITEM_WIDTH = 140;
@@ -20,6 +22,9 @@ const PgLookbook = extend(PgLookbookDesign)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
         this.onOrientationChange = onOrientationChange.bind(this);
+        this.flHeaderLeft.onTouchEnded = function() {
+            Router.goBack();
+        };
 
         pageContextPatch(this, "pgLookBook");
     });
@@ -31,7 +36,15 @@ const PgLookbook = extend(PgLookbookDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
+    const page = this;
     superOnShow();
+
+    if (System.OS === "iOS") {
+        page.flStatusBarBg.height = page.statusBar.height;
+    }
+    else {
+        page.layout.removeChild(page.flStatusBarBg);
+    }
 }
 
 /**
