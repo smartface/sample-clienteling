@@ -8,7 +8,8 @@
 				"Page": "pgWomen"
 			},
 			"userProps": {
-				"orientation": "AUTO"
+				"orientation": "AUTO",
+				"paddingTop": 10
 			},
 			"className": ".page #pgWomenPhone.page",
 			"version": "6.4.8-rc.13",
