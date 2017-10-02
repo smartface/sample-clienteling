@@ -38,9 +38,11 @@ Router.add("pgWomen", require("./pages/pgWomen"), true);
 Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
 Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
 
-Router.go(isTablet ? "pgSignupTablet" : "pgSignupPhone", {
-    appStart: true
-});
+//Router.go(isTablet ? "pgSignupTablet" : "pgSignupPhone", {
+//    appStart: true
+//});
+
+Router.go("pgWomen");
 
 if (System.OS === "Android") {
     sliderDrawer = require("./sliderDrawer");
