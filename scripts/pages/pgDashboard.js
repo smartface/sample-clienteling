@@ -27,6 +27,9 @@ const PgDashboard = extend(PgDashboardDesign)(
         this.imgNotification.onTouchEnded = function() {
             Router.go("pgCustomerProfile");
         };
+        this.flHeaderLeft.onTouchEnded = function() {
+            Router.sliderDrawer.show();
+        };
 
         pageContextPatch(this, "pgDashboard");
         loadUI.call(this);
@@ -41,7 +44,7 @@ const PgDashboard = extend(PgDashboardDesign)(
 function onShow(superOnShow) {
     const page = this;
     superOnShow();
-    
+
     Router.sliderDrawer.enabled = true;
     if (System.OS === "iOS") {
         page.flStatusBarBg.height = page.statusBar.height;
@@ -183,7 +186,7 @@ function addInformation(json) {
 
 function loadUI() {
     userService.getUserData().then((userJson) => {
-        console.log("USER_> "+ JSON.stringify(userJson,null,"\t"));
+        console.log("USER_> " + JSON.stringify(userJson, null, "\t"));
         addUserInfo.call(this, userJson);
         dashboardService.getDashboardData().then((json) => {
             addInformation.call(this, json.information);

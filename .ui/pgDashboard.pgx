@@ -33,8 +33,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 303.75,
-				"height": 540.27
+				"width": 288.75,
+				"height": 513.59
 			}
 		},
 		{
@@ -397,7 +397,7 @@
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.7015075992154618"
 			}
 		},
 		{
@@ -435,7 +435,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.3413076725350037"
 			}
 		},
 		{
@@ -449,6 +449,7 @@
 				"width": null,
 				"height": null,
 				"minWidth": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -481,7 +482,8 @@
 				"parent": "14c7-05e3-2ddc-6adc",
 				"children": [
 					"9626-2b4b-bac8-387e"
-				]
+				],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -1913,7 +1915,7 @@
 				"name": "imgHamburger",
 				"parent": "a153-0d0e-1142-3610",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.39750175498042584"
 			}
 		},
 		{
@@ -2083,7 +2085,7 @@
 				"name": "imgUser",
 				"parent": "d2cc-973c-4896-6905",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisatown.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisatown.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.23358546926254298"
 			}
 		},
 		{
