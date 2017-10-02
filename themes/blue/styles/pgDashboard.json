@@ -18,8 +18,11 @@
         "positionType": "RELATIVE",
         "flexGrow": 1
       },
-      "+page:Screen.width > 1000 || (Screen.width > 450 && Screen.width < Screen.height)": {
-        "layoutHeight": 750
+      "+page: Screen.width > 450 && Screen.width < 800":{
+        "layoutHeight": 600
+      },
+      "+isTablet:": {
+        "layoutHeight": 600
       }
     },
     ".flItem": {

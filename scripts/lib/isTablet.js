@@ -7,7 +7,8 @@ if (System.OS === "iOS" && orientationLib.shortEdge >= 720) {
     isTablet = true;
 }
 else if (System.OS === "Android") {
-    let Activity = Android.getActivity();
+    const AndroidConfig = require("sf-core/util/Android/androidconfig");
+    let Activity = AndroidConfig.activity;
     let context = Activity;
     let Configuration = Activity.getResources().getConfiguration();
     let xlarge = Boolean((context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) === 4);

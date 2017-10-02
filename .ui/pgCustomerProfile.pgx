@@ -38,8 +38,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 288.75,
-				"height": 513.59
+				"width": 236.25,
+				"height": 420.21
 			}
 		},
 		{
@@ -319,19 +319,13 @@
 			"hiddenComponent": false,
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Default"
+				"Implementation": "pgCustomerProfile-scw"
 			},
 			"userProps": {
-				"width": null,
-				"height": null,
 				"layoutHeight": 1000,
-				"paddingLeft": 5,
-				"paddingRight": 5,
-				"flexProps": {
-					"flexGrow": 1
-				}
+				"usePageVariable": true
 			},
-			"className": ".scrollView",
+			"className": ".scrollView #pgCustomerProfile_scw",
 			"props": {
 				"height": null,
 				"width": null,
@@ -356,8 +350,7 @@
 					"flexGrow": 1
 				},
 				"layoutHeight": 1000,
-				"paddingLeft": 5,
-				"paddingRight": 5,
+				"usePageVariable": true,
 				"name": "scw",
 				"parent": "c92e-4a8f-06cb-26ff",
 				"children": [
@@ -7323,7 +7316,7 @@
 				"name": "imgLeft",
 				"parent": "f9f9-25be-751b-892c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207?random=0.14099485613190188"
 			}
 		},
 		{
@@ -7541,7 +7534,7 @@
 				"name": "imgShoppingBag",
 				"parent": "9409-7385-94c8-c698",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/shoppingbag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/shoppingbag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207?random=0.3632581798660175"
 			}
 		},
 		{
@@ -7584,7 +7577,7 @@
 				"name": "imgLookbook",
 				"parent": "9409-7385-94c8-c698",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lookbook.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/lookbook.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207?random=0.9944546587395873"
 			}
 		}
 	]

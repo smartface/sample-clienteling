@@ -33,6 +33,16 @@ const PgDashboard = extend(PgDashboardDesign)(
 
         pageContextPatch(this, "pgDashboard");
         loadUI.call(this);
+
+        this.svMain.subscribeContext = function(e) {
+			if (e.type == "new-styles") {
+				if (e.data["layoutHeight"]) {
+					console.log("LAyoutHeight_>" + e.data["layoutHeight"])
+					this.layout.height = e.data["layoutHeight"];
+				}
+
+			}
+		}.bind(this.svMain);
     });
 
 /**

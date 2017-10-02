@@ -32,6 +32,15 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.imgShoppingBag.onTouchEnded = function() {
 			Router.go("pgShoppingBag");
 		};
+		this.scw.subscribeContext = function(e) {
+			if (e.type == "new-styles") {
+				if (e.data["layoutHeight"]) {
+					console.log("LAyoutHeight_>" + e.data["layoutHeight"])
+					this.layout.height = e.data["layoutHeight"];
+				}
+
+			}
+		}.bind(this.scw);
 	});
 
 /**

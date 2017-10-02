@@ -23,6 +23,17 @@
       }
     },
     "&_scw": {
+      "layoutHeight": 1000,
+      "width": null,
+      "height": null,
+      "flexProps":{
+        "flexGrow": 1,
+        "alignItems": "STRETCH",
+        "alignContent": "STRETCH"
+      },
+      "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
+        "layoutHeight": 750
+      },
       "&_flSecond": {
         "&_divider": {
           "@extend": ".flexLayout-line",

@@ -125,7 +125,8 @@
 				"Large": ".scrollView-large"
 			},
 			"Implementation": {
-				"pgDashboard-Main": "#pgDashboard.svMain"
+				"pgDashboard-Main": "#pgDashboard.svMain",
+				"pgCustomerProfile-scw": "#pgCustomerProfile_scw"
 			}
 		},
 		"HeaderBar": {
