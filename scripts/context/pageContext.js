@@ -15,7 +15,6 @@ commands.addRuntimeCommandFactory(function(type) {
 			return function pageCommand(opts) {
 				opts = merge(opts);
 				var isOK = (function(Screen) { return eval(opts.args); }({ width: Screen.width, height: Screen.height }));
-				// console.log("+page :: isOK : " + isOK.toString() + " " + JSON.stringify(opts))
 				return isOK ? opts.value : {};
 			};
 		case '+orientationChange':
@@ -24,12 +23,11 @@ commands.addRuntimeCommandFactory(function(type) {
 				var isOK = (function(Screen, orientation) {
 					return eval(opts.args);
 				}({ width: Screen.width, height: Screen.height }, orientationState));
-				// console.log("+orientationChange :: isOK : " + isOK.toString() + " " + JSON.stringify(opts))
 				return isOK ? opts.value : {};
 			};
 		case "+isTablet_landscape":
 			return function pageCommand(opts) {
-		  	console.log("+isTablet_landscape :: " + JSON.stringify(opts))
+				console.log("+isTablet_landscape :: " + JSON.stringify(opts));
 				opts = merge(opts);
 				var isOK = isTablet && Screen.width > Screen.height;
 				console.log("isTablet_landscape" + Screen.width + " " + Screen.height);
@@ -37,14 +35,14 @@ commands.addRuntimeCommandFactory(function(type) {
 			};
 		case "+isTablet_portrait":
 			return function pageCommand(opts) {
-		  	console.log("+isTablet_portrait :: " + JSON.stringify(opts))
+				console.log("+isTablet_portrait :: " + JSON.stringify(opts));
 				opts = merge(opts);
 				var isOK = isTablet && Screen.width < Screen.height;
 				return isOK ? opts.value : {};
 			};
 		case "+isTablet":
 			return function pageCommand(opts) {
-		  	console.log("+isTablet :: " + JSON.stringify(opts))
+				console.log("+isTablet :: " + JSON.stringify(opts));
 				opts = merge(opts);
 				return isTablet ? opts.value : {};
 			};
@@ -126,7 +124,7 @@ function createContext(component, name, classMap = null, reducers = null) {
 												acc[name] = newStyles[key][name];
 											}
 										}
-									})
+									});
 								// }
 							}
 							else if (newStyles[key] !== null && typeof newStyles[key] === "object") {
