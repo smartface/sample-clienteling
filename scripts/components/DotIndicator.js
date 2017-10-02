@@ -7,7 +7,7 @@ const FlexLayout = require('sf-core/ui/flexlayout');
 
 const DotIndicatorDesign = require('library/DotIndicator');
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
-const ItemStyle = getCombinedStyle(".flexLayout .flexLayout-dotIndicator-item.active", {});
+const ItemStyle = getCombinedStyle(".flexLayout .flexLayout-dotIndicator-item.inactive", {});
 
 const PREFIX = "dot";
 var activeSettings = getCombinedStyle(".flexLayout-dotIndicator-item.active", {});

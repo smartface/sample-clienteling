@@ -33,19 +33,10 @@ const Page_ = extend(Page)(
 function onShow() {
 	this.headerBar.visible = false;
 	this.statusBar.visible = false;
-	setTimeout(function() {
-		var index = globalSvipeViewList.getActiveIndex();
-		var list = globalSvipeViewList.getList();
-		//console.log("Index _> " + index + JSON.stringify(list));
-		if (index !== -1 && !this.isImageLoaded)
-			this.image.loadFromUrl(list[index + 1].image);
-		this.isImageLoaded = true;
-	}.bind(this), 100);
-
+	globalSvipeViewList.setActiveImage(this.image);
 }
 
 // Page.onLoad -> This event is called once when page is created.
 function onLoad() {}
-
 
 module && (module.exports = Page_);
