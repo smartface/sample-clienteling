@@ -1,15 +1,17 @@
 const extend = require('js-base/core/extend');
+const Router = require("sf-core/ui/router");
+const System = require('sf-core/device/system');
 const PgShoppingBagDesign = require('ui/ui_pgShoppingBag');
 
 const PgShoppingBag = extend(PgShoppingBagDesign)(
   // Constructor
   function(_super) {
-    // Initalizes super class for this page scope
     _super(this);
-    // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    this.flHeaderLeft.onTouchEnded = function() {
+      Router.goBack();
+    };
   });
 
 /**
@@ -19,7 +21,15 @@ const PgShoppingBag = extend(PgShoppingBagDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
+  const page = this;
   superOnShow();
+
+  if (System.OS === "iOS") {
+    page.flStatusBarBg.height = page.statusBar.height;
+  }
+  else {
+    page.layout.removeChild(page.flStatusBarBg);
+  }
 }
 
 /**
