@@ -19,7 +19,7 @@ module.exports = function pageContextPatch(page, name){
   function onShow(superOnShow) {
     superOnShow();
     
-    if(!this.styleContext)
+    if(!this.styleContext) {
       this.styleContext = pageContext.createContext(
         this,
         name,
@@ -27,10 +27,11 @@ module.exports = function pageContextPatch(page, name){
         function reducers(state, actors, action, target) {
           return state;
         });
-        
+    } else {
       this.dispatch({
         type: "invalidate"
       });
+    }
     
     this.layout.applyLayout();
 
