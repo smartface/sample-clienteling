@@ -7242,6 +7242,7 @@
 				"width": null,
 				"height": null,
 				"minWidth": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -7274,7 +7275,8 @@
 				"parent": "77f9-afe4-e992-e58b",
 				"children": [
 					"a014-fdf8-07db-8cd6"
-				]
+				],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -7291,7 +7293,7 @@
 				"left": 14,
 				"top": 14,
 				"bottom": null,
-				"usePageVariable": true,
+				"usePageVariable": false,
 				"flexProps": {
 					"flexGrow": null
 				}
@@ -7317,11 +7319,11 @@
 				"left": 14,
 				"top": 14,
 				"bottom": null,
-				"usePageVariable": true,
+				"usePageVariable": false,
 				"name": "imgLeft",
 				"parent": "f9f9-25be-751b-892c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207?random=0.2122335889513467"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207?random=0.47937812688521975"
 			}
 		},
 		{

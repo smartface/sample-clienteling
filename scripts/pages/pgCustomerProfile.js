@@ -23,7 +23,7 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.lookBook.onPress = function() {
 			Router.go("pgMainLookbook");
 		};
-		this.imgLeft.onTouchEnded = function() {
+		this.flHeaderLeft.onTouchEnded = function() {
 			Router.goBack();
 		};
 	});

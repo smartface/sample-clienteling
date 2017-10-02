@@ -33,8 +33,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 460.22999999999996,
-				"height": 258.75
+				"width": 303.75,
+				"height": 540.27
 			}
 		},
 		{
@@ -274,9 +274,10 @@
 				"paddingRight": 17.5,
 				"minWidth": null,
 				"flexProps": {
-					"flexDirection": "ROW_REVERSE",
+					"flexDirection": "ROW",
 					"alignItems": "CENTER",
-					"flexGrow": 1
+					"flexGrow": 1,
+					"justifyContent": "FLEX_END"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -295,9 +296,9 @@
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "CENTER",
-					"justifyContent": "FLEX_START",
+					"justifyContent": "FLEX_END",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW_REVERSE",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -306,8 +307,8 @@
 				"name": "flHeaderRight",
 				"parent": "14c7-05e3-2ddc-6adc",
 				"children": [
-					"8347-952d-df9d-1ae2",
-					"3411-6b25-ada2-65ae"
+					"3411-6b25-ada2-65ae",
+					"8347-952d-df9d-1ae2"
 				]
 			}
 		},
@@ -369,15 +370,15 @@
 			},
 			"userProps": {
 				"usePageVariable": true,
-				"width": 22,
-				"height": 22,
+				"width": 40,
+				"height": 40,
 				"image": "logout.png",
-				"marginLeft": 30
+				"marginLeft": 10
 			},
 			"className": ".imageView",
 			"props": {
-				"width": 22,
-				"height": 22,
+				"width": 40,
+				"height": 40,
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "NORMAL",
@@ -392,11 +393,11 @@
 				},
 				"usePageVariable": true,
 				"image": "logout.png",
-				"marginLeft": 30,
+				"marginLeft": 10,
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.12211940734150928"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -407,15 +408,15 @@
 			},
 			"userProps": {
 				"usePageVariable": true,
-				"width": 22,
-				"height": 22,
+				"width": 40,
+				"height": 40,
 				"image": "notification.png",
 				"marginRight": null
 			},
 			"className": ".imageView",
 			"props": {
-				"width": 22,
-				"height": 22,
+				"width": 40,
+				"height": 40,
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "NORMAL",
@@ -434,7 +435,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.7720377084584877"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1912,7 +1913,7 @@
 				"name": "imgHamburger",
 				"parent": "a153-0d0e-1142-3610",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.710295073416197"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1925,7 +1926,7 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfo",
 			"props": {
-				"height": 100,
+				"height": 160,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -1941,7 +1942,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
 				"paddingLeft": 20,
@@ -2082,7 +2083,7 @@
 				"name": "imgUser",
 				"parent": "d2cc-973c-4896-6905",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/lisatown.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.69&brandModel=iPhone%207?random=0.11197050524799579"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisatown.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2363,7 +2364,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 209, 16, 118, 1 )",
-				"textAlignment": "BOTTOMCENTER",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 25,
 					"bold": false,
@@ -2405,7 +2406,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 32, 32, 32, 1 )",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -2415,10 +2416,8 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 1
 				},
-				"marginLeft": 10,
-				"marginRight": 10,
 				"text": "Task Pending",
 				"usePageVariable": true,
 				"name": "lblPendingTasks",
@@ -2490,7 +2489,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -2525,7 +2524,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 74, 163, 241, 1 )",
-				"textAlignment": "BOTTOMCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 25,
 					"bold": false,
@@ -2535,7 +2534,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 3
+					"flexGrow": 2
 				},
 				"text": "76%",
 				"usePageVariable": true,
@@ -2567,7 +2566,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 32, 32, 32, 1 )",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -2579,8 +2578,8 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 3
 				},
-				"marginLeft": 10,
-				"marginRight": 10,
+				"marginLeft": null,
+				"marginRight": null,
 				"text": "Last Month Sales Conversion",
 				"usePageVariable": true,
 				"name": "lblConversion",
@@ -2614,7 +2613,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -2649,7 +2648,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 246, 207, 40, 1 )",
-				"textAlignment": "BOTTOMCENTER",
+				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 25,
 					"bold": false,
@@ -2659,7 +2658,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 3
+					"flexGrow": 2
 				},
 				"text": "80%",
 				"usePageVariable": true,
