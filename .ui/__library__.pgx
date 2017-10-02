@@ -50,8 +50,8 @@
 					"ddfa-0686-69f0-77af",
 					"cd3b-2912-1a7f-7558"
 				],
-				"width": 375,
-				"height": 667
+				"width": 236.25,
+				"height": 420.21
 			}
 		},
 		{
@@ -557,8 +557,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": -23,
-				"top": 35,
+				"left": 20.588235294117645,
+				"top": 38.23529411764706,
 				"width": 616.3934426229508,
 				"height": 236.0655737704918,
 				"marginRight": null,
@@ -589,8 +589,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": -23,
-				"top": 35,
+				"left": 20.588235294117645,
+				"top": 38.23529411764706,
 				"marginRight": null,
 				"right": null,
 				"name": "flShoppingBagItem",
@@ -620,7 +620,6 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"paddingTop": 10,
 				"flexProps": {
 					"flexGrow": 5
 				}
@@ -647,7 +646,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 5
 				},
-				"paddingTop": 10,
 				"id": 103,
 				"name": "flProductDetail",
 				"parent": "5be9-8547-09ac-6568",
@@ -660,7 +658,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "7fe9-cc6a-23d3-446a",
-			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -764,7 +761,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "24ab-80f5-ac48-bed9",
-			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -2046,7 +2042,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2789,7 +2785,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4013,7 +4009,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5419,7 +5415,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "6015-add5-c15e-d9f3",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -5525,7 +5521,8 @@
 				"Implementation": "stepper-label"
 			},
 			"userProps": {
-				"text": "2"
+				"text": "2",
+				"usePageVariable": true
 			},
 			"className": ".label #stepper-label",
 			"props": {
@@ -5552,7 +5549,8 @@
 					"flexGrow": 1
 				},
 				"text": "2",
-				"name": "label1",
+				"usePageVariable": true,
+				"name": "lblNumber",
 				"parent": "6015-add5-c15e-d9f3",
 				"children": []
 			}
@@ -5594,7 +5592,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5634,7 +5632,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5729,12 +5727,12 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 35,
+				"height": 40,
 				"right": 0,
 				"bottom": 0,
 				"left": 0,
 				"minHeight": null,
-				"maxHeight": 35,
+				"maxHeight": 40,
 				"flexProps": {
 					"flexGrow": null,
 					"justifyContent": "FLEX_END",
@@ -5745,7 +5743,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 35,
+				"height": 40,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -5769,7 +5767,7 @@
 				"bottom": 0,
 				"left": 0,
 				"minHeight": null,
-				"maxHeight": 35,
+				"maxHeight": 40,
 				"id": 200,
 				"name": "flPart2",
 				"parent": "5be9-8547-09ac-6568",
@@ -5792,7 +5790,7 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 35,
+				"height": 45,
 				"flexProps": {
 					"flexGrow": 1,
 					"justifyContent": "FLEX_START"
@@ -5800,7 +5798,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 35,
+				"height": 45,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -5841,12 +5839,11 @@
 			},
 			"userProps": {
 				"text": "EDIT",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "BOTTOMCENTER",
 				"width": null,
-				"height": null,
+				"height": 20,
 				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "AUTO"
+					"flexGrow": null
 				},
 				"font": {
 					"size": 13
@@ -5855,7 +5852,7 @@
 			"className": ".label",
 			"props": {
 				"width": null,
-				"height": null,
+				"height": 20,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
@@ -5864,7 +5861,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "BOTTOMCENTER",
 				"font": {
 					"size": 13,
 					"bold": false,
@@ -5874,7 +5871,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": null
 				},
 				"text": "EDIT",
 				"id": 403,
@@ -5896,7 +5893,6 @@
 			"userProps": {
 				"width": 30,
 				"marginLeft": null,
-				"bottom": 10,
 				"flexProps": {
 					"flexGrow": null,
 					"alignSelf": "CENTER"
@@ -5925,7 +5921,6 @@
 					"flexGrow": null
 				},
 				"marginLeft": null,
-				"bottom": 10,
 				"id": 402,
 				"name": "flLine",
 				"parent": "1872-0632-f672-8921",
@@ -5944,14 +5939,14 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 35,
+				"height": 45,
 				"flexProps": {
 					"flexGrow": 1
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 35,
+				"height": 45,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -5992,11 +5987,11 @@
 			},
 			"userProps": {
 				"text": "SAVE FOR LATER",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "BOTTOMCENTER",
 				"width": null,
-				"height": null,
+				"height": 20,
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": null
 				},
 				"font": {
 					"size": 13
@@ -6005,7 +6000,7 @@
 			"className": ".label",
 			"props": {
 				"width": null,
-				"height": null,
+				"height": 20,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
@@ -6014,7 +6009,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "BOTTOMCENTER",
 				"font": {
 					"size": 13,
 					"bold": false,
@@ -6024,7 +6019,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": null
 				},
 				"text": "SAVE FOR LATER",
 				"id": 401,
@@ -6045,10 +6040,7 @@
 			},
 			"userProps": {
 				"width": 100,
-				"marginLeft": null,
-				"alpha": 1,
-				"backgroundColor": "rgba( 29, 29, 38, 0.1 )",
-				"bottom": 10,
+				"marginLeft": 15,
 				"flexProps": {
 					"flexGrow": null,
 					"alignSelf": "CENTER"
@@ -6060,8 +6052,8 @@
 				"width": 100,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 29, 29, 38, 0.1 )",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -6076,8 +6068,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"marginLeft": null,
-				"bottom": 10,
+				"marginLeft": 15,
 				"id": 400,
 				"name": "flLine",
 				"parent": "e069-d2ae-6cfe-ba73",
@@ -6251,8 +6242,9 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 21.311475409836067,
-				"top": 260.655737704918
+				"left": 20.588235294117645,
+				"top": 260.2941176470588,
+				"flexProps": {}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -6275,8 +6267,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 21.311475409836067,
-				"top": 260.655737704918,
+				"left": 20.588235294117645,
+				"top": 260.2941176470588,
 				"name": "flexLayout2",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": []
@@ -6295,14 +6287,12 @@
 			},
 			"userProps": {
 				"width": null,
-				"bottom": 35,
+				"bottom": 50,
 				"left": 0,
 				"top": null,
 				"right": 0,
 				"marginLeft": null,
 				"marginRight": null,
-				"alpha": 1,
-				"backgroundColor": "rgba( 0, 0, 0, 0.1 )",
 				"flexProps": {
 					"flexGrow": null,
 					"alignSelf": "STRETCH",
@@ -6315,8 +6305,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 0, 0, 0, 0.1 )",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -6331,7 +6321,7 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": null
 				},
-				"bottom": 35,
+				"bottom": 50,
 				"left": 0,
 				"top": null,
 				"right": 0,
@@ -6526,19 +6516,17 @@
 			},
 			"userProps": {
 				"width": null,
-				"height": 35,
-				"maxHeight": 35,
+				"height": 45,
+				"maxHeight": 45,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"alignContent": "FLEX_START",
-					"flexDirection": "COLUMN"
+					"justifyContent": "FLEX_START"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 35,
+				"height": 45,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -6550,7 +6538,7 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
-					"alignContent": "FLEX_START",
+					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
@@ -6558,7 +6546,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"maxHeight": 35,
+				"maxHeight": 45,
 				"id": 204,
 				"name": "flPart2",
 				"parent": "e325-3dc2-82f5-e9a3",
@@ -6580,15 +6568,12 @@
 			},
 			"userProps": {
 				"text": "REMOVE",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "BOTTOMCENTER",
 				"width": null,
 				"height": 20,
 				"textColor": "rgba( 208, 2, 27, 1 )",
-				"marginBottom": null,
-				"bottom": null,
 				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "AUTO"
+					"flexGrow": null
 				},
 				"font": {
 					"size": 13
@@ -6606,7 +6591,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba( 208, 2, 27, 1 )",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "BOTTOMCENTER",
 				"font": {
 					"size": 13,
 					"bold": false,
@@ -6616,11 +6601,9 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": null
 				},
 				"text": "REMOVE",
-				"marginBottom": null,
-				"bottom": null,
 				"id": 305,
 				"name": "lblRemove",
 				"parent": "1247-131b-d667-72c0",
@@ -6640,14 +6623,8 @@
 			"userProps": {
 				"width": 70,
 				"marginLeft": null,
-				"maxHeight": 1,
-				"paddingBottom": null,
-				"bottom": 10,
-				"alpha": 1,
-				"backgroundColor": "rgba( 208, 2, 27, 0.2 )",
-				"borderColor": "rgba( 29, 29, 38, 0.1 )",
 				"flexProps": {
-					"flexGrow": 1,
+					"flexGrow": null,
 					"alignSelf": "CENTER"
 				}
 			},
@@ -6657,9 +6634,9 @@
 				"width": 70,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 208, 2, 27, 0.2 )",
-				"alpha": 1,
-				"borderColor": "rgba( 29, 29, 38, 0.1 )",
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
+				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
@@ -6671,12 +6648,9 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": null
 				},
 				"marginLeft": null,
-				"maxHeight": 1,
-				"paddingBottom": null,
-				"bottom": 10,
 				"id": 304,
 				"name": "flLine",
 				"parent": "1247-131b-d667-72c0",
@@ -6686,7 +6660,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "e902-6593-cd03-76d9",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -6696,14 +6670,12 @@
 			},
 			"userProps": {
 				"width": null,
-				"bottom": 0,
-				"left": 0,
+				"bottom": 10,
+				"left": 10,
 				"top": null,
 				"right": 0,
 				"marginLeft": null,
 				"marginRight": null,
-				"alpha": 1,
-				"backgroundColor": "rgba( 0, 0, 0, 0.1 )",
 				"flexProps": {
 					"flexGrow": null,
 					"alignSelf": "STRETCH",
@@ -6716,8 +6688,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 0, 0, 0, 0.1 )",
-				"alpha": 1,
+				"backgroundColor": "#1D1D26",
+				"alpha": 0.1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -6732,8 +6704,8 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": null
 				},
-				"bottom": 0,
-				"left": 0,
+				"bottom": 10,
+				"left": 10,
 				"top": null,
 				"right": 0,
 				"marginLeft": null,
