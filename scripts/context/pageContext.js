@@ -3,62 +3,55 @@ const styler = require("@smartface/styler/lib/styler");
 const commands = require("@smartface/styler/lib/commandsManager");
 const merge = require("@smartface/styler/lib/utils/merge");
 const stylerBuilder = require("library/styler-builder");
-const isTablet = require("lib/isTablet");
+const isTablet = require("../lib/isTablet");
 const Screen = require('sf-core/device/screen');
-const INIT_CONTEXT_ACTION_TYPE = require("../lib/Context")
-	.INIT_CONTEXT_ACTION_TYPE;
-
+const INIT_CONTEXT_ACTION_TYPE = require("../lib/Context").INIT_CONTEXT_ACTION_TYPE;
 const theme = require("../themes/blue");
-var orientationState = "ended"
+var orientationState = "ended";
 
 commands.addRuntimeCommandFactory(function(type) {
 	switch (type) {
 		case '+page':
 			return function pageCommand(opts) {
 				opts = merge(opts);
-				var isOK = (function(Screen) { return eval(opts.args); }({ width: Screen.width, height: Screen.height }));
-				console.log("+page :: isOK : " + isOK.toString() + " " + JSON.stringify(opts))
+				console.log("+page :: isOK : " + isOK.toString() + " " + JSON.stringify(opts));
+				var isOK = (function(Screen) {
+					return eval(opts.args);
+				}({
+					width: Screen.width,
+					height: Screen.height
+				}));
 				return isOK ? opts.value : {};
 			};
-
-			break;
 		case '+orientationChange':
 			return function pageCommand(opts) {
 				opts = merge(opts);
 				var isOK = (function(Screen, orientation) {
 					return eval(opts.args);
 				}({ width: Screen.width, height: Screen.height }, orientationState));
-				console.log("+orientationChange :: isOK : " + isOK.toString() + " " + JSON.stringify(opts))
+				console.log("+orientationChange :: isOK : " + isOK.toString() + " " + JSON.stringify(opts));
 				return isOK ? opts.value : {};
 			};
-			break;
 		case "+isTablet_landscape":
 			return function pageCommand(opts) {
 				opts = merge(opts);
-				return isTablet && (Screen.width > Screen.height) ? opts.value : {};
+				var isOK = isTablet && Screen.width > Screen.height;
+				console.log("isTablet_landscape" + Screen.width + " " + Screen.height);
+				return isOK ? opts.value : {};
 			};
-			break;
 		case "+isTablet_portrait":
 			return function pageCommand(opts) {
 				opts = merge(opts);
-				return isTablet && (Screen.width < Screen.height) ? opts.value : {};
+				var isOK = isTablet && Screen.width < Screen.height;
+				return isOK ? opts.value : {};
 			};
-			break;
 		case "+isTablet":
 			return function pageCommand(opts) {
 				opts = merge(opts);
 				return isTablet ? opts.value : {};
 			};
-			break;
 	}
 });
-
-var deviceType = "";
-var orientation = "";
-
-module.exports = {
-	createContext
-};
 
 function createContext(component, name, classMap = null, reducers = null) {
 	const styling = styler(theme);
@@ -210,3 +203,7 @@ function contextReducer(state, actors, action, target) {
 
 	return state;
 }
+
+module.exports = {
+	createContext
+};

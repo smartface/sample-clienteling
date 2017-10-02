@@ -15,7 +15,7 @@
         "family": "Lato"
       },
       "backgroundColor": "rgba(71,94,174,1)",
-      "+page:Screen.width > 1000": {
+      "+isTablet_landscape:": {
         "marginRight": 20,
         "marginBottom": 10
       }
@@ -36,7 +36,7 @@
       "backgroundColor": "rgba(103,164,231,1)",
       "textColor": "#FFFFFF",
       "borderWidth": 0,
-      "+page:Screen.width > 1000": {
+      "+isTablet_landscape:": {
         "marginLeft": 20,
         "marginTop": 10,
         "backgroundColor": "#FFFFFF",
@@ -57,8 +57,7 @@
       "font": {
         "size": 28,
         "family": "Lato"
-      },
-      "+page:Screen.width > 1000": {}
+      }
     },
     ".flOther": {
       "height": null,
@@ -74,7 +73,7 @@
         "positionType": "RELATIVE",
         "flexGrow": 1
       },
-      "+page:Screen.width > 1000": {
+      "+isTablet_landscape:": {
         "flexProps": {
           "flexDirection": "COLUMN"
         }
@@ -94,7 +93,7 @@
         "positionType": "RELATIVE",
         "flexGrow": 1
       },
-      "+page:Screen.width > 1000": {
+      "+isTablet_landscape:": {
         "flexProps": {
           "flexDirection": "ROW"
         }
@@ -115,7 +114,7 @@
         "positionType": "RELATIVE",
         "flexGrow": 1
       },
-      "+page:Screen.width > 1000": {
+      "+isTablet_landscape:": {
         "marginBottom": 80
       }
     },
@@ -133,7 +132,7 @@
         "positionType": "RELATIVE",
         "flexGrow": 1
       },
-      "+page:Screen.width > 1000": {
+      "+isTablet_landscape:": {
         "paddingBottom": 20,
         "flexProps": {
           "alignItems": "FLEX_END"
