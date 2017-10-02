@@ -7284,7 +7284,7 @@
 				"Sizes": "Default"
 			},
 			"userProps": {
-				"image": "hamburger.png",
+				"image": "back.png",
 				"imageFillType": "ASPECTFIT",
 				"width": 20,
 				"height": 20,
@@ -7313,7 +7313,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"image": "hamburger.png",
+				"image": "back.png",
 				"left": 14,
 				"top": 14,
 				"bottom": null,
@@ -7321,7 +7321,7 @@
 				"name": "imgLeft",
 				"parent": "f9f9-25be-751b-892c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207?random=0.2122335889513467"
 			}
 		},
 		{

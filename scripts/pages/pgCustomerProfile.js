@@ -23,6 +23,9 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.lookBook.onPress = function() {
 			Router.go("pgMainLookbook");
 		};
+		this.imgLeft.onTouchEnded = function() {
+			Router.goBack();
+		};
 	});
 
 /**
