@@ -73,11 +73,13 @@
 				"pgSignupPhone-Main": "#pgSignupPhone.flMain",
 				"pgWomen-Buttons": "#pgWomenPhone.flButtons",
 				"pgWomen-Info": "#pgWomenPhone.flInfo",
-				"pgWomen-Part2": "#pgWomenPhone.flPart2",
+				"pgWomen-Part2": "#pgWomenPhone.flInfo-flPart2",
 				"pgWomen-flSwipe": "#pgWomenPhone.flSwipe",
 				"pgWomen-lineUnderColor": "#pgWomenPhone_lineUnderColor",
 				"pgWomen-flInfoOuter": "#pgWomenPhone.flInfoOuter",
-				"pgWomenPhone-flDetail": "#pgWomenPhone-flDetail",
+				"pgWomen-flMain": "#pgWomenPhone-flMain",
+				"pgWomen-flSwipe-dotIndicator": "#pgWomenPhone.flSwipe-dotIndicator",
+				"pgWomenPhone-flDetail": "#pgWomenPhone.flInfo-flPart1-flDetail",
 				"pgMainLookbook-ShopNow": "#pgMainLookbook.flShopNow",
 				"pgMainLookbook-FirstLine": "#pgMainLookbook.flFirstLine",
 				"pgMainLookbook-SecondLine": "#pgMainLookbook.flSecondLine",
@@ -176,7 +178,11 @@
 				"pgDashboard-TaskText": "#pgDashboard.lblTaskText",
 				"pgDashboard-ConversionNumber": "#pgDashboard.lblConversionNumber",
 				"pgDashboard-ConversionText": "#pgDashboard.lblConversionText",
-				"pgDashboard-TargetNumber": "#pgDashboard.lblTargetNumber"
+				"pgDashboard-TargetNumber": "#pgDashboard.lblTargetNumber",
+				"pgWomen-Info-flPart1-lblProductName": "#pgWomenPhone.flInfo-flPart1-lblProductName",
+				"pgWomen-Info-flPart1-lblProductPrice": "#pgWomenPhone.flInfo-flPart1-flDetail-lblProductPrice",
+				"pgWomen-Info-flPart1-lblProductDetail": "#pgWomenPhone.flInfo-flPart1-flDetail-lblProductDetail",
+				"pgWomen-Info-flPart2-flInfo-lbl": "#pgWomenPhone.flInfo-flPart2-flInfo-lbl"
 			}
 		},
 		"ListView": {
@@ -206,8 +212,7 @@
 		"Page": {
 			"Page": {
 				"Default": ".page",
-				"Blue": ".page-blue",
-				"pgWomen": "#pgWomenPhone.page"
+				"Blue": ".page-blue"
 			}
 		},
 		"SearchView": {

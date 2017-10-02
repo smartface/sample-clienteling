@@ -7,6 +7,7 @@ const SwipeView = require("sf-core/ui/swipeview");
 const Router = require("sf-core/ui/router");
 const System = require('sf-core/device/system');
 const flexProps = ["flexGrow", "flexDirection", "alignItems", "justifyContent"];
+const Color = require("sf-core/ui/color");
 
 const PgWomen = extend(PgWomenDesign)(
   // Constructor
@@ -73,7 +74,8 @@ function loadUI() {
     flexGrow: 1,
     pages: [SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage],
     onPageSelected: onChildPageChanged.bind(this),
-    marginBottom: 18
+    marginBottom: 18,
+    backgroundColor: Color.TRANSPARENT
   });
   this.flSwipe.addChild(swipeView);
 

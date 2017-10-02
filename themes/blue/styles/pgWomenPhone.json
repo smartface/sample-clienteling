@@ -1,15 +1,30 @@
 {
   "#pgWomenPhone": {
-    ".flButtons": {
+    "&-flMain": {
       "width": null,
       "height": null,
       "flexProps": {
         "flexGrow": 1,
+        "flexDirection": "COLUMN",
+        "alignItems": "STRETCH",
+        "justifyContent": "FLEX_START"
+      },
+      "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
+        "flexProps": {
+          "flexDirection": "ROW"
+        }
+      }
+    },
+    ".flButtons": {
+      "width": null,
+      "height": null,
+      "flexProps": {
+        "flexGrow": 0.5,
         "flexDirection": "ROW",
         "alignItems": "CENTER",
         "justifyContent": "SPACE_BETWEEN"
       },
-      "+page:Screen.width > 450": {
+      "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
         ">layout": {
           "flexProps": {
             "justifyContent": "FLEX_START"
@@ -21,50 +36,111 @@
       "width": null,
       "height": null,
       "flexProps": {
-        "flexGrow": 2,
+        "flexGrow": 2.8,
         "justifyContent": "SPACE_BETWEEN",
         "flexDirection": "COLUMN",
         "alignItems": "STRETCH",
         "alignContent": "STRETCH",
         "alignSelf": "STRETCH"
-      }
-    },
-    ".flPart2": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 2,
-        "flexDirection": "COLUMN"
       },
-      "+page:Screen.width > 450": {
-        "flexProps": {
-          "flexGrow": 4,
-          "flexDirection": "COLUMN_REVERSE"
+      "marginBottom": null,
+      "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
+        "marginBottom": 20
+      },
+      "&-flPart1": {
+        "&-lblProductName": {
+          "width": null,
+          "font": {
+            "size": 18,
+            "family": "Lato"
+          },
+          "+isTablet:": {
+            "font": {
+              "size": 38,
+              "family": "Lato"
+            }
+          }
+        },
+        "&-flDetail": {
+          "height": null,
+          "width": null,
+          "flexProps": {
+            "flexGrow": 1,
+            "alignItems": "STRETCH",
+            "alignSelf": "STRETCH",
+            "flexDirection": "COLUMN"
+          },
+          "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
+            "flexProps": {
+              "flexDirection": "ROW"
+            }
+          },
+          "&-lblProductPrice": {
+            "width": null,
+            "font": {
+              "size": 18,
+              "family": "Lato"
+            },
+            "+isTablet:": {
+              "font": {
+                "size": 38,
+                "family": "Lato"
+              }
+            }
+          },
+          "&-lblProductDetail": {
+            "width": null,
+            "flexProps": {
+              "flexGrow": 1
+            },
+            "font": {
+              "size": 12,
+              "family": "Lato"
+            },
+            "+isTablet:": {
+              "font": {
+                "size": 30,
+                "family": "Lato"
+              },
+              "flexProps": {
+                "flexGrow": 1.7
+              }
+            }
+          }
+
         }
-      }
-    },
-    "&-flDetail": {
-      "height": null,
-      "width": null,
-      "flexProps": {
-        "flexGrow": 1,
-        "flexDirection": "COLUMN"
       },
-      "+page:Screen.width > 450 ": {
+      "&-flPart2": {
+        "width": null,
+        "height": null,
         "flexProps": {
-          "flexDirection": "ROW"
-        }
-      }
-    },
-    ".page": {
-      "flexProps": {
-        "flexDirection": "COLUMN",
-        "alignItems": "STRETCH",
-        "alignContent": "STRETCH"
-      },
-      "+page:Screen.width > 450": {
-        "flexProps": {
-          "flexDirection": "ROW"
+          "flexGrow": 2,
+          "flexDirection": "COLUMN"
+        },
+        "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
+          "flexProps": {
+            "flexGrow": 4,
+            "flexDirection": "COLUMN_REVERSE"
+          }
+        },
+        "&-flInfo": {
+          "&-lbl": {
+            "width": null,
+            "height": null,
+            "flexProps": {
+              "flexGrow": 1
+            },
+            "font": {
+              "size": 12,
+              "family": "Lato"
+            },
+            "+isTablet:": {
+              "font": {
+                "size": 30,
+                "family": "Lato"
+              }
+            }
+          }
         }
       }
     },
@@ -78,13 +154,8 @@
         "family": "Lato",
         "size": 15
       },
-      "backgroundColor": "rgba(210,49,132,1)",
-      "marginRight": 5,
-      "+page:Screen.width > 450": {
-        "marginRight": 40,
-        "marginTop": 10,
-        "marginBottom": 5
-      }
+      "backgroundColor": "rgba(210,49,130,1)",
+      "marginRight": 10
     },
     ".btnQuickOrder": {
       "width": null,
@@ -97,17 +168,16 @@
         "size": 15
       },
       "backgroundColor": "rgba(103,164,231,1)",
-      "marginLeft": null,
-      "+page:Screen.width > 450": {
-        "marginTop": 5,
-        "marginLeft": 10,
-        "marginBottom": 10
-      }
+      "marginLeft": null
     },
     ".btnColor": {
       "width": 15,
       "height": 15,
-      "marginLeft": 11
+      "marginLeft": 11,
+      "+isTablet:": {
+        "width": 35,
+        "height": 35
+      }
     },
     ".flSwipe": {
       "maxWidth": null,
@@ -120,11 +190,24 @@
       "paddingLeft": 20,
       "paddingRight": 20,
       "+page:Screen.width > 450": {
-        "maxWidth": 225,
         "maxHeight": null,
         "flexProps": {},
         "paddingLeft": 5,
         "paddingRight": 5
+      },
+      "&-dotIndicator": {
+        "width": null,
+        "height": 10,
+        "top": null,
+        "left": 0,
+        "right": 0,
+        "bottom": 8,
+        "flexProps": {
+          "positionType": "ABSOLUTE",
+          "justifyContent": "CENTER",
+          "flexDirection": "ROW",
+          "alignItems": "CENTER"
+        }
       }
     },
     ".flInfoOuter": {
@@ -137,7 +220,7 @@
         "flexDirection": "COLUMN"
       },
       "marginTop": null,
-      "+page:Screen.width > 450": {
+      "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
         "flexProps": {
           "flexProps": 1.4
         },
@@ -148,15 +231,13 @@
       "maxHeight": 1,
       "maxWidth": null,
       "width": null,
-			"alpha": 0.1,
-			"visible": true,
-			"backgroundColor": "#1D1D26",
-      "width": null,
-      "+page:Screen.width > 450": {
-        "maxHeight": 0,
-        "maxWidth": 0,
-        "visible": false
-      }
+      "height": 1,
+      "alpha": 0.1,
+      "visible": true,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "backgroundColor": "#1D1D26"
     }
   }
 }

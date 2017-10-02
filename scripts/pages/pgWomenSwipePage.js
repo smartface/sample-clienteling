@@ -13,7 +13,6 @@ const Page_ = extend(Page)(
 			onShow: onShow.bind(this),
 			onLoad: onLoad.bind(this)
 		});
-		this.layout.removeAll();
 		var img = new ImageView({
 			positionType: FlexLayout.PositionType.ABSOLUTE,
 			top: 10,
