@@ -14,7 +14,7 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
     this.btnAnonymous.onPress = onPressAnonymous;
     this.btnFacebook.onPress = onPressFacebook;
 
-    pageContextPatch(this, "PgSignupTablet");
+    pageContextPatch(this, "pgSignupTablet");
   });
 
 /**
