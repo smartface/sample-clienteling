@@ -9,7 +9,17 @@
         "alignItems": "STRETCH",
         "justifyContent": "FLEX_START"
       },
-      "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
+      "+page:Screen.width > Screen.height": {
+        "flexProps": {
+          "flexDirection": "ROW"
+        }
+      },
+      "+isTablet_portrait:": {
+        "flexProps": {
+          "flexDirection": "COLUMN"
+        }
+      },
+      "+isTablet_landscape:": {
         "flexProps": {
           "flexDirection": "ROW"
         }
@@ -62,8 +72,8 @@
       "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
         "marginBottom": 20
       },
-      "+isTablet_portrait:":{
-        "flexProps":{
+      "+isTablet_portrait:": {
+        "flexProps": {
           "flexProps": 1.5
         }
       },
@@ -187,11 +197,11 @@
         },
         "marginRight": null
       },
-      "+isTablet_portrait:":{
-        "marginRight":10
+      "+isTablet_portrait:": {
+        "marginRight": 10
       },
-      "+isTablet_landscape:":{
-        "marginBottom":10
+      "+isTablet_landscape:": {
+        "marginBottom": 10
       }
     },
     "&-btnQuickOrder": {
@@ -216,11 +226,11 @@
           "size": 32
         }
       },
-      "+isTablet_portrait:":{
-        "marginLeft":10
+      "+isTablet_portrait:": {
+        "marginLeft": 10
       },
-      "+isTablet_landscape:":{
-        "marginTop":10
+      "+isTablet_landscape:": {
+        "marginTop": 10
       }
     },
     ".btnColor": {
