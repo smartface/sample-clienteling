@@ -29,11 +29,13 @@
 				"children": [
 					"a001-0712-b987-7a09",
 					"cc61-eef4-6cd0-8cd4",
+					"6239-6693-c042-0e80",
+					"9425-0c93-396b-b7b0",
 					"ea77-2fe7-11f8-e93a",
 					"ecbb-8e1d-1438-6d78"
 				],
-				"width": 345,
-				"height": 554.76
+				"width": 303.75,
+				"height": 540.27
 			}
 		},
 		{
@@ -45,7 +47,7 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#202020",
+				"color": "#424242",
 				"visible": true,
 				"font": {},
 				"flexProps": {},
@@ -63,13 +65,14 @@
 				"HeaderBar": "Default"
 			},
 			"userProps": {
-				"title": "WOMEN"
+				"title": "WOMEN",
+				"visible": false
 			},
 			"className": ".headerBar",
 			"props": {
 				"title": "WOMEN",
 				"titleColor": "#FFFFFF",
-				"visible": true,
+				"visible": false,
 				"backgroundColor": "#202020",
 				"font": {},
 				"flexProps": {},
@@ -1586,6 +1589,337 @@
 				"children": [],
 				"parent": "ea77-2fe7-11f8-e93a",
 				"name": "dotIndicator"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "6239-6693-c042-0e80",
+			"themeProps": {
+				"Implementation": "Default",
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"usePageVariable": true,
+				"width": null,
+				"height": 20,
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 20,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"usePageVariable": true,
+				"left": 0,
+				"top": 0,
+				"name": "flStatusBarBg",
+				"parent": "96f5-dfac-ba99-0fbc",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "9425-0c93-396b-b7b0",
+			"themeProps": {
+				"Implementation": "Default",
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": 50,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": 50,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "SPACE_BETWEEN",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"name": "flHeaderBar",
+				"parent": "96f5-dfac-ba99-0fbc",
+				"children": [
+					"d932-8dc8-d410-d306",
+					"075d-f723-5e93-7b83",
+					"85ab-4f27-d709-5be6"
+				],
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "d932-8dc8-d410-d306",
+			"themeProps": {
+				"Implementation": "Default",
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"minWidth": null,
+				"usePageVariable": true,
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				}
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"minWidth": null,
+				"usePageVariable": true,
+				"name": "flHeaderLeft",
+				"parent": "9425-0c93-396b-b7b0",
+				"children": [
+					"dcd5-3c07-675b-14de"
+				]
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "dcd5-3c07-675b-14de",
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"image": "back.png",
+				"imageFillType": "ASPECTFIT",
+				"width": 20,
+				"height": 20,
+				"left": 14,
+				"top": 14,
+				"bottom": null,
+				"flexProps": {
+					"flexGrow": null
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 20,
+				"height": 20,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"image": "back.png",
+				"left": 14,
+				"top": 14,
+				"bottom": null,
+				"name": "imgHamburger",
+				"parent": "d932-8dc8-d410-d306",
+				"children": [],
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "075d-f723-5e93-7b83",
+			"themeProps": {
+				"Implementation": "Default",
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"minWidth": null,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"flexGrow": 1
+				}
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"minWidth": null,
+				"name": "flHeaderMiddle",
+				"parent": "9425-0c93-396b-b7b0",
+				"children": [
+					"8ed5-5382-2631-f09b"
+				]
+			}
+		},
+		{
+			"type": "Label",
+			"id": "8ed5-5382-2631-f09b",
+			"themeProps": {
+				"Sizes": "Default",
+				"Implementation": "Default"
+			},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"text": "WOMEN",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 15
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 15,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"text": "WOMEN",
+				"name": "lblTitle",
+				"parent": "075d-f723-5e93-7b83",
+				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "85ab-4f27-d709-5be6",
+			"themeProps": {
+				"Implementation": "Default",
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"paddingRight": 17.5,
+				"minWidth": null,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "CENTER",
+					"flexGrow": 1,
+					"justifyContent": "FLEX_END"
+				}
+			},
+			"className": ".flexLayout .flexLayout-default",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "FLEX_END",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"paddingRight": 17.5,
+				"minWidth": null,
+				"name": "flHeaderRight",
+				"parent": "9425-0c93-396b-b7b0",
+				"children": []
 			}
 		}
 	]

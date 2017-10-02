@@ -4,26 +4,27 @@ const pageContextPatch = require("../context/pageContextPatch");
 const SvipeViewTemplatePage = require("pages/pgWomenSwipePage");
 const globalSvipeViewList = require("lib/swipeViewList");
 const SwipeView = require("sf-core/ui/swipeview");
-const DotIndicator = require("components/DotIndicator");
-const FlexLayout = require('sf-core/ui/flexlayout');
+const Router = require("sf-core/ui/router");
+const System = require('sf-core/device/system');
 const flexProps = ["flexGrow", "flexDirection", "alignItems", "justifyContent"];
 
 const PgWomen = extend(PgWomenDesign)(
   // Constructor
   function(_super) {
-    // Initalizes super class for this page scope
     _super(this);
-    // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
-    // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    
-    this.subscribeContext = function(e){
-      if(e.type == "new-styles"){
-        Object.keys(e.data).forEach(function(key){
-          if(flexProps.some(function(prop){ return  prop == key})){
+    this.flHeaderLeft.onTouchEnded = function() {
+      Router.goBack();
+    };
+
+    this.subscribeContext = function(e) {
+      if (e.type == "new-styles") {
+        Object.keys(e.data).forEach(function(key) {
+          if (flexProps.some(function(prop) { return prop == key })) {
             this.layout[key] = e.data[key];
-          } else {
+          }
+          else {
             this[key] = e.data[key];
           }
         }.bind(this));
@@ -41,7 +42,15 @@ const PgWomen = extend(PgWomenDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
+  const page = this;
   superOnShow();
+
+  if (System.OS === "iOS") {
+    page.flStatusBarBg.height = page.statusBar.height;
+  }
+  else {
+    page.layout.removeChild(page.flStatusBarBg);
+  }
 }
 
 /**
@@ -54,29 +63,29 @@ function onLoad(superOnLoad) {
 }
 
 
-function loadUI(){
+function loadUI() {
   const json = require("../sample-data/customerProfile.json");
-  var list  = json.whishlist;
+  var list = json.whishlist;
   globalSvipeViewList.setList(list);
   globalSvipeViewList.setActiveIndex(0);
   var swipeView = new SwipeView({
-        page: this,
-        flexGrow: 1,
-        pages: [SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage],
-        onPageSelected: onChildPageChanged.bind(this),
-        marginBottom: 18
+    page: this,
+    flexGrow: 1,
+    pages: [SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage],
+    onPageSelected: onChildPageChanged.bind(this),
+    marginBottom: 18
   });
   this.flSwipe.addChild(swipeView);
 
 }
 
 function initDotIndicator(page) {
-    page.dotIndicator.size = 4;
+  page.dotIndicator.size = 4;
 }
 
 
 function onChildPageChanged(index) {
-  console.log("SelectedIndeex_> "+index);
+  console.log("SelectedIndeex_> " + index);
   globalSvipeViewList.setActiveIndex(index);
   this.dotIndicator.currentIndex = index;
 }
