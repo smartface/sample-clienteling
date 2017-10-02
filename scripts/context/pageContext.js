@@ -30,7 +30,6 @@ commands.addRuntimeCommandFactory(function(type) {
 				console.log("+isTablet_landscape :: " + JSON.stringify(opts));
 				opts = merge(opts);
 				var isOK = isTablet && Screen.width > Screen.height;
-				console.log("isTablet_landscape" + Screen.width + " " + Screen.height);
 				return isOK ? opts.value : {};
 			};
 		case "+isTablet_portrait":
