@@ -1,5 +1,27 @@
 {
   "#pgCustomerProfile": {
+    ".rightItem": {
+      "height": null,
+      "width": null,
+      "visible": true,
+      "touchEnabled": true,
+      "flexProps": {
+        "alignSelf": "AUTO",
+        "direction": "INHERIT",
+        "alignContent": "STRETCH",
+        "alignItems": "CENTER",
+        "justifyContent": "FLEX_END",
+        "flexWrap": "NOWRAP",
+        "flexDirection": "ROW",
+        "positionType": "RELATIVE",
+        "flexGrow": 1
+      },
+      "paddingRight": 17.5,
+      "+page:Screen.width > 450": {
+        "visible": false,
+        "touchEnabled": false
+      }
+    },
     "&_scw": {
       "&_flSecond": {
         "&_divider": {
@@ -22,13 +44,13 @@
       },
       "&_flThird": {
         "&_flReserveIndicates": {
-         "&_flReservations": {
-           "&_flReservations": {
-            "&_scFlReservations": {
-              
+          "&_flReservations": {
+            "&_flReservations": {
+              "&_scFlReservations": {
+
+              }
             }
-           }
-         }
+          }
         }
       }
     },
@@ -306,8 +328,7 @@
             "textAlignment": "BOTTOMLEFT"
           }
         },
-        "&-flColor": {
-        }
+        "&-flColor": {}
       },
       "&-divider": {
         "@extend": ".flexLayout-line",
@@ -372,9 +393,8 @@
       }
     }
   },
-  ".infoPartTextBlocks":{
-    "&_title": {
-    },
+  ".infoPartTextBlocks": {
+    "&_title": {},
     "&_text": {
       "textAlignment": "MIDRIGHT",
       "flexProps": {
@@ -385,7 +405,7 @@
       }
     }
   },
-  "#pgCustomerProfile_scw_flSecond_infoPart2":{
+  "#pgCustomerProfile_scw_flSecond_infoPart2": {
     "&_job": {
       "@extend": ".infoPartTextBlocks",
       "&_text": {
@@ -437,7 +457,7 @@
       }
     }
   },
-  "#pgCustomerProfile_scw_flSecond_infoPart1":{
+  "#pgCustomerProfile_scw_flSecond_infoPart1": {
     "&_store": {
       "@extend": ".infoPartTextBlocks",
       "&_text": {

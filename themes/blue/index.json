@@ -83,6 +83,7 @@
 				"pgMainLookbook-SecondLine": "#pgMainLookbook.flSecondLine",
 				"pgMainLookbook-ThirdLine": "#pgMainLookbook.flThirdLine",
 				"pgMainLookbook-Sale": "#pgMainLookbook.flSale",
+				"pgCustomerProfile-HeaderBar-Right": "#pgCustomerProfile.rightItem",
 				"pgCustomerProfile-flFirst": "#pgCustomerProfile_flFirst",
 				"pgCustomerProfile-flFirst-flInfo": "#pgCustomerProfile_flFirst_flInfo",
 				"pgCustomerProfile-flFirst-flInfo-profile": "#pgCustomerProfile_flFirst_flInfo_profile",

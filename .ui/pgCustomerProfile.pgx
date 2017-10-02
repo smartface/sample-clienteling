@@ -38,8 +38,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 303.75,
-				"height": 540.27
+				"width": 288.75,
+				"height": 513.59
 			}
 		},
 		{
@@ -7227,7 +7227,7 @@
 				"children": [
 					"f9f9-25be-751b-892c",
 					"d369-bb1c-5538-cfdc",
-					"b0dc-3f03-b5df-80b8"
+					"9409-7385-94c8-c698"
 				]
 			}
 		},
@@ -7271,12 +7271,12 @@
 					"flexGrow": 1
 				},
 				"minWidth": null,
+				"usePageVariable": true,
 				"name": "flHeaderLeft",
 				"parent": "77f9-afe4-e992-e58b",
 				"children": [
 					"a014-fdf8-07db-8cd6"
-				],
-				"usePageVariable": true
+				]
 			}
 		},
 		{
@@ -7323,7 +7323,7 @@
 				"name": "imgLeft",
 				"parent": "f9f9-25be-751b-892c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.81&brandModel=iPhone%207?random=0.47937812688521975"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -7424,53 +7424,6 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "b0dc-3f03-b5df-80b8",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"height": null,
-				"width": null,
-				"paddingRight": 17.5,
-				"minWidth": null,
-				"flexProps": {
-					"flexDirection": "ROW_REVERSE",
-					"alignItems": "CENTER",
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW_REVERSE",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"paddingRight": 17.5,
-				"minWidth": null,
-				"name": "flHeaderRight",
-				"parent": "77f9-afe4-e992-e58b",
-				"children": []
-			}
-		},
-		{
-			"type": "FlexLayout",
 			"id": "4df7-e5f9-ff40-9fd6",
 			"themeProps": {
 				"Implementation": "Default",
@@ -7511,6 +7464,127 @@
 				"name": "flStatusBarBg",
 				"parent": "c92e-4a8f-06cb-26ff",
 				"children": []
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "9409-7385-94c8-c698",
+			"themeProps": {
+				"Implementation": "pgCustomerProfile-HeaderBar-Right",
+				"Sizes": "Default"
+			},
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile.rightItem",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "FLEX_END",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"paddingRight": 17.5,
+				"name": "flHeaderRight",
+				"parent": "77f9-afe4-e992-e58b",
+				"children": [
+					"94de-b2fb-bdc7-bbb9",
+					"74b5-df1d-d54a-3190"
+				]
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "94de-b2fb-bdc7-bbb9",
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"usePageVariable": true,
+				"width": 20,
+				"height": 20,
+				"image": "shoppingbag.png",
+				"marginRight": null,
+				"imageFillType": "ASPECTFIT"
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 20,
+				"height": 20,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"usePageVariable": true,
+				"image": "shoppingbag.png",
+				"marginRight": null,
+				"name": "imgShoppingBag",
+				"parent": "9409-7385-94c8-c698",
+				"children": [],
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/shoppingbag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "74b5-df1d-d54a-3190",
+			"themeProps": {
+				"Sizes": "Default"
+			},
+			"userProps": {
+				"usePageVariable": true,
+				"width": 20,
+				"height": 20,
+				"image": "lookbook.png",
+				"marginLeft": 20,
+				"imageFillType": "ASPECTFIT",
+				"flexProps": {
+					"flexGrow": null
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 20,
+				"height": 20,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"usePageVariable": true,
+				"image": "lookbook.png",
+				"marginLeft": 20,
+				"name": "imgLookbook",
+				"parent": "9409-7385-94c8-c698",
+				"children": [],
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lookbook.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207"
 			}
 		}
 	]

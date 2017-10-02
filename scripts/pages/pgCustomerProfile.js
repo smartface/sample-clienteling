@@ -26,6 +26,12 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.flHeaderLeft.onTouchEnded = function() {
 			Router.goBack();
 		};
+		this.imgLookbook.onTouchEnded = function() {
+			Router.go("pgMainLookbook");
+		};
+		this.imgShoppingBag.onTouchEnded = function() {
+			Router.go("pgShoppingBag");
+		};
 	});
 
 /**
