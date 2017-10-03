@@ -6,6 +6,7 @@ module.exports = exports = function(page) {
     }
     else {
         page.headerBar.visible = false;
+        page.statusBar.visible = false;
         page.flStatusBarBg && page.layout.removeChild(page.flStatusBarBg);
     }
 };
