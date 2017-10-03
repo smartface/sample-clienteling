@@ -35,12 +35,12 @@ const PgDashboard = extend(PgDashboardDesign)(
         loadUI.call(this);
 
         this.svMain.subscribeContext = function(e) {
-			if (e.type == "new-styles") {
-				if (e.data["layoutHeight"]) {
-					this.layout.height = e.data["layoutHeight"];
-				}
-			}
-		}.bind(this.svMain);
+            if (e.type == "new-styles") {
+                if (e.data["layoutHeight"]) {
+                    this.layout.height = e.data["layoutHeight"];
+                }
+            }
+        }.bind(this.svMain);
     });
 
 /**
@@ -186,19 +186,20 @@ function addInformation(json) {
 }
 
 function loadUI() {
-    userService.getUserData().then((userJson) => {
-        console.log("USER_> " + JSON.stringify(userJson, null, "\t"));
-        addUserInfo.call(this, userJson);
-        dashboardService.getDashboardData().then((json) => {
-            addInformation.call(this, json.information);
-            addReservations.call(this, json.reservations);
-            addTodos.call(this, json.todo.items);
-            addOpenIncidents.call(this, json.openIncidents);
-            addStoreAndCorporateNews.call(this, json.storeAndCorporateNews);
-            addIncomingShipments.call(this, json.incomingShipments);
-            addSocialActivities.call(this, json.socialActivityMonitor);
-        });
-    });
+    var userJson = require("../sample-data/dashboardUser.json");
+    var json = require("../sample-data/dashboardData.json");
+    //userService.getUserData().then((userJson) => {
+    addUserInfo.call(this, userJson);
+    //    dashboardService.getDashboardData().then((json) => {
+    addInformation.call(this, json.information);
+    addReservations.call(this, json.reservations);
+    addTodos.call(this, json.todo.items);
+    addOpenIncidents.call(this, json.openIncidents);
+    addStoreAndCorporateNews.call(this, json.storeAndCorporateNews);
+    addIncomingShipments.call(this, json.incomingShipments);
+    addSocialActivities.call(this, json.socialActivityMonitor);
+    //    });
+    //});
 }
 
 module && (module.exports = PgDashboard);

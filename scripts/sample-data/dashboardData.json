@@ -1,0 +1,61 @@
+{
+    "information": {
+        "pendingTaks": "3",
+        "lastMonthSalesConversion": "76%",
+        "thisWeekTarget": "80%"
+    },
+    "reservations": [{
+            "location": "In Store",
+            "employee": "Anna",
+            "orderType": "Online Order",
+            "date": "2017-01-02T00:00:00.000Z"
+        },
+        {
+            "location": "Out of Store",
+            "employee": "John",
+            "orderType": "Store Order",
+            "date": "2017-01-02T00:00:00.000Z"
+        }
+    ],
+    "todo": {
+        "date": "2017-01-02T00:00:00.000Z",
+        "items": [{
+                "title": "Evelyn Johansson",
+                "type": "Birthday Call",
+                "status": "Overdue"
+            },
+            {
+                "title": "Stephanie Joust",
+                "type": "Call",
+                "status": "Not Started"
+            }
+        ]
+    },
+    "openIncidents": [{
+        "state": "Open",
+        "employee": "Anna",
+        "title": "Hotels in the shirt",
+        "date": "2017-01-02T00:00:00.000Z"
+    }, {
+        "state": "Completed",
+        "employee": "Anna",
+        "title": "Alterations ready for pickup"
+    }],
+    "storeAndCorporateNews": [{
+        "location": "In Store",
+        "employee": "Anna",
+        "type": "Online Order",
+        "date": "2017-01-02T00:00:00.000Z"
+    }],
+    "incomingShipments": [{
+        "title": "Evelyn Johansson",
+        "type": "Birthday Call",
+        "status": "Overdue"
+    }],
+    "socialActivityMonitor": [{
+        "state": "Open",
+        "employee": "Anna",
+        "title": "Hotels in the shirt",
+        "date": "2017-01-02T00:00:00.000Z"
+    }]
+}
