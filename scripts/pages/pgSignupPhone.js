@@ -5,6 +5,7 @@ const Router = require("sf-core/ui/router");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const authService = require("../service/AuthService");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
+const System = require('sf-core/device/system');
 
 const PgSignupPhone = extend(PgSignupPhoneDesign)(
   // Constructor
