@@ -50,8 +50,8 @@
 					"ddfa-0686-69f0-77af",
 					"cd3b-2912-1a7f-7558"
 				],
-				"width": 375,
-				"height": 667
+				"width": 123.75,
+				"height": 220.11
 			}
 		},
 		{
@@ -2046,7 +2046,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2789,7 +2789,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4013,7 +4013,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5525,7 +5525,8 @@
 				"Implementation": "stepper-label"
 			},
 			"userProps": {
-				"text": "2"
+				"text": "2",
+				"usePageVariable": true
 			},
 			"className": ".label #stepper-label",
 			"props": {
@@ -5552,9 +5553,10 @@
 					"flexGrow": 1
 				},
 				"text": "2",
-				"name": "label1",
+				"name": "lblNumber",
 				"parent": "6015-add5-c15e-d9f3",
-				"children": []
+				"children": [],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -5594,7 +5596,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5634,7 +5636,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
 			}
 		},
 		{
