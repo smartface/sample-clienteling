@@ -59,8 +59,8 @@ function onLoad(superOnLoad) {
 }
 
 function loadUI() {
-  const json = require("../sample-data/customerProfile.json");
-  var list = json.whishlist;
+  const json = require("../sample-data/lookbook.json");
+  var list = json.products;
   globalSvipeViewList.setList(list);
   globalSvipeViewList.setActiveIndex(0);
   var swipeView = new SwipeView({
@@ -79,7 +79,6 @@ function initDotIndicator(page) {
 }
 
 function onChildPageChanged(index) {
-  console.log("SelectedIndeex_> " + index);
   globalSvipeViewList.setActiveIndex(index);
   this.dotIndicator.currentIndex = index;
 }
