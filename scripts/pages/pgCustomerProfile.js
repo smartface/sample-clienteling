@@ -6,6 +6,7 @@ const FlCustomerProfileReservationItem = require("components/FlCustomerProfileRe
 const LvCustomerProfileWishlistItem = require("components/LvCustomerProfileWishlistItem");
 const Router = require("sf-core/ui/router");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
+const customerService = require("../service/Customer");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 	// Constructor
@@ -161,12 +162,14 @@ function addWishlistItems(items) {
 }
 
 function loadUI() {
+	//customerService.getCutomerProfile(1445).then((json) => {
 	const json = require("../sample-data/customerProfile.json");
 	addInfo.call(this, json);
 	addWardrobe.call(this, json.wardrobe);
 	addReservations.call(this, json.reservations);
 	addOpenIncidents.call(this, json.openIncidents);
 	addWishlistItems.call(this, json.whishlist);
+	//});
 }
 
 module && (module.exports = PgCustomerProfile);
