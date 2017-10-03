@@ -10,6 +10,7 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
   function(_super) {
     _super(this);
     this.onShow = onShow.bind(this, this.onShow.bind(this));
+    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     this.btnSignup.onPress = onPressSignup.bind(this);
     this.btnAnonymous.onPress = onPressAnonymous;
     this.btnFacebook.onPress = onPressFacebook;
@@ -26,14 +27,6 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
 function onShow(superOnShow, data) {
   const page = this;
   superOnShow();
-
-  if (System.OS === "iOS") {
-    page.flStatusBarBg.height = page.statusBar.height;
-  }
-  else {
-    page.layout.removeChild(page.flStatusBarBg);
-  }
-
   data = data || {};
   Router.sliderDrawer.enabled = false;
   data.appStart && fingerprint.init({
@@ -58,6 +51,18 @@ function onShow(superOnShow, data) {
       });
     }
   });
+}
+
+function onLoad(superOnLoad) {
+  const page = this;
+  superOnLoad();
+
+  if (System.OS === "iOS") {
+    page.flStatusBarBg.height = page.statusBar.height;
+  }
+  else {
+    page.layout.removeChild(page.flStatusBarBg);
+  }
 }
 
 function onPressSignup() {

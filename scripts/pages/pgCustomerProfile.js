@@ -35,7 +35,6 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.scw.subscribeContext = function(e) {
 			if (e.type == "new-styles") {
 				if (e.data["layoutHeight"]) {
-					console.log("LAyoutHeight_>" + e.data["layoutHeight"])
 					this.layout.height = e.data["layoutHeight"];
 				}
 
@@ -141,7 +140,7 @@ function addReservations(items) {
 	this.scFlReservations.layout.width = 170 * items.length;
 }
 
-function addOpenIndicates(items) {
+function addOpenIncidents(items) {
 	this.scwIndicates.layout.removeAll();
 	items.forEach(item => {
 		var fl = new FlCustomerProfileReservationItem({
@@ -177,7 +176,7 @@ function loadUI() {
 	addInfo.call(this, json);
 	addWardrobe.call(this, json.wardrobe);
 	addReservations.call(this, json.reservations);
-	addOpenIndicates.call(this, json.openIncidents);
+	addOpenIncidents.call(this, json.openIncidents);
 	addWishlistItems.call(this, json.whishlist);
 }
 
