@@ -5,7 +5,6 @@ const FlWardrobe = require("components/FlWardrobe");
 const FlCustomerProfileReservationItem = require("components/FlCustomerProfileReservationItem");
 const LvCustomerProfileWishlistItem = require("components/LvCustomerProfileWishlistItem");
 const Router = require("sf-core/ui/router");
-const customerService = require("service/Customer");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(

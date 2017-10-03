@@ -38,13 +38,9 @@ Router.add("pgWomen", require("./pages/pgWomen"), true);
 Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
 Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
 
-/*
 Router.go("pgSignup" + (isTablet ? "Tablet" : "Phone"), {
     appStart: true
 });
-*/
-
-Router.go("pgWomen");
 
 if (System.OS === "Android") {
     sliderDrawer = require("./sliderDrawer");

@@ -8,10 +8,10 @@ const Screen = require('sf-core/device/screen');
 const Router = require("sf-core/ui/router");
 const pageContextPatch = require("../context/pageContextPatch");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
+const lookbookService = require("../service/Lookbook");
 
 const ITEM_WIDTH = 140;
-const json = require("../sample-data/customerProfile.json");
-var myDataSet = json.whishlist.slice();
+var dataset = null;
 
 const PgLookbook = extend(PgLookbookDesign)(
     // Constructor
@@ -26,6 +26,7 @@ const PgLookbook = extend(PgLookbookDesign)(
         };
 
         pageContextPatch(this, "pgLookBook");
+        loadUI.call(this);
     });
 
 /**
@@ -92,16 +93,14 @@ function redesignListviewItem() {
 
     };
     this.lvMain.rowHeight = 250;
-    this.lvMain.itemCount = Math.ceil(myDataSet.length / itemCountPerRow);
-    console.log("LıstView -> " + this.lvMain.rowHeight + " - " + this.lvMain.itemCount + " per " + itemCountPerRow);
+    this.lvMain.itemCount = Math.ceil(dataset.length / itemCountPerRow);
     this.lvMain.onRowBind = function(listViewItem, index) {
         var item, sourceIndex, data;
         for (var i = 0; i < itemCountPerRow; ++i) {
             sourceIndex = (index * itemCountPerRow) + i;
             item = listViewItem.findChildById(i + 200);
-            data = myDataSet[sourceIndex];
-            if (item && sourceIndex < myDataSet.length) {
-                //console.log("Index_>"+sourceIndex+"DATA_>"+JSON.stringify(data,null,"\t"));
+            data = dataset[sourceIndex];
+            if (item && sourceIndex < dataset.length) {
                 item.visible = true;
                 item.imgPreview.loadFromUrl(data.image);
                 item.lblPrice.text = "$" + data.price.amount;
@@ -115,8 +114,14 @@ function redesignListviewItem() {
 
     this.lvMain.refreshData();
     this.lvMain.stopRefresh();
-
     this.layout.addChild(this.lvMain);
+}
+
+function loadUI() {
+    //lookbookService.getProducts(754).then((json) => {
+    //});
+    var json = require("../sample-data/lookbook.json");
+    dataset = json.products;
 }
 
 module && (module.exports = PgLookbook);
