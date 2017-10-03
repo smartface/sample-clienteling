@@ -50,8 +50,8 @@
 					"ddfa-0686-69f0-77af",
 					"cd3b-2912-1a7f-7558"
 				],
-				"width": 123.75,
-				"height": 220.11
+				"width": 255.00000000000003,
+				"height": 453.56000000000006
 			}
 		},
 		{
@@ -557,8 +557,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": -23,
-				"top": 35,
+				"left": -10.294117647058822,
+				"top": 7.352941176470588,
 				"width": 616.3934426229508,
 				"height": 236.0655737704918,
 				"marginRight": null,
@@ -589,8 +589,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": -23,
-				"top": 35,
+				"left": -10.294117647058822,
+				"top": 7.352941176470588,
 				"marginRight": null,
 				"right": null,
 				"name": "flShoppingBagItem",
@@ -2046,7 +2046,11 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
+<<<<<<< HEAD
 				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
+=======
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
+>>>>>>> fix pgWomen tablet
 			}
 		},
 		{
@@ -2393,11 +2397,7 @@
 			},
 			"userProps": {
 				"text": "$250",
-				"usePageVariable": true,
-				"textAlignment": "MIDLEFT",
-				"flexProps": {
-					"flexGrow": 2
-				}
+				"usePageVariable": true
 			},
 			"className": ".label #pgCustomerProfile-flSecond-infoPart-itemText",
 			"props": {
@@ -2411,7 +2411,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDLEFT",
+				"textAlignment": "MIDRIGHT",
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -2421,7 +2421,7 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 1
 				},
 				"text": "$250",
 				"usePageVariable": true,
@@ -2789,7 +2789,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4013,7 +4013,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5596,7 +5596,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5636,7 +5636,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
 			}
 		},
 		{

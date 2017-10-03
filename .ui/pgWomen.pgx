@@ -35,8 +35,8 @@
 					"9425-0c93-396b-b7b0",
 					"830a-dd25-540d-36c7"
 				],
-				"width": 194.304,
-				"height": 259.072
+				"width": 883.2,
+				"height": 1177.6
 			}
 		},
 		{
@@ -701,7 +701,7 @@
 				"name": "imgHamburger",
 				"parent": "d932-8dc8-d410-d306",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.22&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
 			}
 		},
 		{
@@ -1646,17 +1646,10 @@
 			"hiddenComponent": false,
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "Line"
+				"Implementation": "pgWomen-lineUnderColor"
 			},
-			"userProps": {
-				"width": null,
-				"maxHeight": 1,
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"userProps": {},
+			"className": ".flexLayout .flexLayout-default #pgWomenPhone_lineUnderColor",
 			"props": {
 				"height": 1,
 				"width": null,
@@ -1668,7 +1661,7 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "STRETCH",
+					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -1679,6 +1672,8 @@
 					"flexGrow": 1
 				},
 				"maxHeight": 1,
+				"maxWidth": null,
+				"marginTop": 20,
 				"name": "flLine2",
 				"parent": "6cc0-1c81-4a7e-1235",
 				"children": []

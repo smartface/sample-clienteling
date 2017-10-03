@@ -35,17 +35,18 @@
         "justifyContent": "SPACE_BETWEEN"
       },
       "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
-        ">layout": {
           "flexProps": {
             "justifyContent": "FLEX_START"
           }
-        }
       },
       "marginTop": 10,
       "marginBottom": 10,
-      "+isTablet:": {
+      "+isTablet_portrait:": {
         "flexProps": {
-          "flexGrow": 0.6
+          "flexGrow": 1,
+          "alignItems": "CENTER",
+          "justifyContent": "CENTER",
+          "alignContent": "CENTER"
         }
       },
       "+isTablet_landscape:": {
@@ -147,10 +148,16 @@
           "flexGrow": 2,
           "flexDirection": "COLUMN"
         },
-        "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
+        "+page:(  Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
           "flexProps": {
             "flexGrow": 4,
             "flexDirection": "COLUMN_REVERSE"
+          }
+        },
+        "+isTablet_portrait:": {
+          "flexProps": {
+            "flexGrow": 3,
+            "flexDirection": "COLUMN"
           }
         },
         "&-flInfo": {
@@ -181,7 +188,8 @@
       "width": null,
       "height": 50,
       "flexProps": {
-        "flexGrow": 1
+        "flexGrow": 1,
+        "alignSelf": "STRETCH"
       },
       "font": {
         "family": "Lato",
@@ -211,7 +219,8 @@
       "width": null,
       "height": 50,
       "flexProps": {
-        "flexGrow": 1
+        "flexGrow": 1,
+        "alignSelf": "STRETCH"
       },
       "font": {
         "family": "Lato",
@@ -299,6 +308,10 @@
       "visible": true,
       "flexProps": {
         "flexGrow": 1
+      },
+      "marginTop": null,
+      "+isTablet:": {
+        "marginTop": 15
       },
       "backgroundColor": "#1D1D26"
     }
