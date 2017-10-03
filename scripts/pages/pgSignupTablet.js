@@ -2,14 +2,16 @@ const extend = require('js-base/core/extend');
 const PgSignupTabletDesign = require('ui/ui_pgSignupTablet');
 const pageContextPatch = require("../context/pageContextPatch");
 const Router = require("sf-core/ui/router");
-const System = require('sf-core/device/system');
 const fingerprint = require("sf-extension-utils").fingerprint;
 const authService = require("../service/AuthService");
+const adjustHeaderBar = require("../lib/adjustHeaderBar");
+
 const PgSignupTablet = extend(PgSignupTabletDesign)(
   // Constructor
   function(_super) {
     _super(this);
     this.onShow = onShow.bind(this, this.onShow.bind(this));
+    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     this.btnSignup.onPress = onPressSignup.bind(this);
     this.btnAnonymous.onPress = onPressAnonymous;
     this.btnFacebook.onPress = onPressFacebook;
@@ -26,14 +28,6 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
 function onShow(superOnShow, data) {
   const page = this;
   superOnShow();
-
-  if (System.OS === "iOS") {
-    page.flStatusBarBg.height = page.statusBar.height;
-  }
-  else {
-    page.layout.removeChild(page.flStatusBarBg);
-  }
-
   data = data || {};
   Router.sliderDrawer.enabled = false;
   data.appStart && fingerprint.init({
@@ -58,6 +52,12 @@ function onShow(superOnShow, data) {
       });
     }
   });
+}
+
+function onLoad(superOnLoad) {
+  const page = this;
+  superOnLoad();
+  adjustHeaderBar(page);
 }
 
 function onPressSignup() {

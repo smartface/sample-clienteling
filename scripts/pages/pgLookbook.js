@@ -5,10 +5,9 @@ const ListView = require('sf-core/ui/listview');
 const FlexLayout = require('sf-core/ui/flexlayout');
 const LookbookItem = require("components/LookbookItem");
 const Screen = require('sf-core/device/screen');
-const customerService = require("service/Customer");
 const Router = require("sf-core/ui/router");
-const System = require('sf-core/device/system');
 const pageContextPatch = require("../context/pageContextPatch");
+const adjustHeaderBar = require("../lib/adjustHeaderBar");
 
 const ITEM_WIDTH = 140;
 const json = require("../sample-data/customerProfile.json");
@@ -36,16 +35,8 @@ const PgLookbook = extend(PgLookbookDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-    const page = this;
     superOnShow();
-    reDesignListviewItem.call(this);
-
-    if (System.OS === "iOS") {
-        page.flStatusBarBg.height = page.statusBar.height;
-    }
-    else {
-        page.layout.removeChild(page.flStatusBarBg);
-    }
+    redesignListviewItem.call(this);
 }
 
 /**
@@ -54,15 +45,17 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
+    const page = this;
     superOnLoad();
-    reDesignListviewItem.call(this);
+    adjustHeaderBar(page);
+    redesignListviewItem.call(this);
 }
 
 function onOrientationChange() {
-    reDesignListviewItem.call(this);
+    redesignListviewItem.call(this);
 }
 
-function reDesignListviewItem() {
+function redesignListviewItem() {
     this.layout.removeChild(this.lvMain);
     this.lvMain = new ListView({
         positionType: FlexLayout.PositionType.RELATIVE,

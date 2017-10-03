@@ -5,8 +5,8 @@ const FlWardrobe = require("components/FlWardrobe");
 const FlCustomerProfileReservationItem = require("components/FlCustomerProfileReservationItem");
 const LvCustomerProfileWishlistItem = require("components/LvCustomerProfileWishlistItem");
 const Router = require("sf-core/ui/router");
-const System = require('sf-core/device/system');
 const customerService = require("service/Customer");
+const adjustHeaderBar = require("../lib/adjustHeaderBar");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 	// Constructor
@@ -49,19 +49,7 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-	const page = this;
 	superOnShow();
-
-	if (System.OS === "iOS") {
-		page.flStatusBarBg.height = page.statusBar.height;
-	}
-	else {
-		page.layout.removeChild(page.flStatusBarBg);
-	}
-
-	customerService.getCutomerProfile(1445).then(res => {
-		console.log("RES_PRF> " + JSON.stringify(res, null, "\t"));
-	});
 }
 
 /**
@@ -70,7 +58,9 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
+	const page = this;
 	superOnLoad();
+	adjustHeaderBar(page);
 }
 
 function addInfo(json) {

@@ -8,7 +8,6 @@ const Color = require("sf-core/ui/color");
 const Page_ = extend(Page)(
 	// Constructor
 	function(_super, props) {
-		// Initalizes super class for this page scope
 		_super(this, {
 			onShow: onShow.bind(this),
 			onLoad: onLoad.bind(this)
@@ -36,7 +35,6 @@ function onShow() {
 	globalSvipeViewList.setActiveImage(this.image);
 }
 
-// Page.onLoad -> This event is called once when page is created.
 function onLoad() {}
 
 module && (module.exports = Page_);

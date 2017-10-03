@@ -5,9 +5,9 @@ const SvipeViewTemplatePage = require("pages/pgWomenSwipePage");
 const globalSvipeViewList = require("lib/swipeViewList");
 const SwipeView = require("sf-core/ui/swipeview");
 const Router = require("sf-core/ui/router");
-const System = require('sf-core/device/system');
 const flexProps = ["flexGrow", "flexDirection", "alignItems", "justifyContent"];
 const Color = require("sf-core/ui/color");
+const adjustHeaderBar = require("../lib/adjustHeaderBar");
 
 const PgWomen = extend(PgWomenDesign)(
   // Constructor
@@ -43,15 +43,7 @@ const PgWomen = extend(PgWomenDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-  const page = this;
   superOnShow();
-
-  if (System.OS === "iOS") {
-    page.flStatusBarBg.height = page.statusBar.height;
-  }
-  else {
-    page.layout.removeChild(page.flStatusBarBg);
-  }
 }
 
 /**
@@ -60,9 +52,11 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
+  const page = this;
   superOnLoad();
-}
+  adjustHeaderBar(page);
 
+}
 
 function loadUI() {
   const json = require("../sample-data/customerProfile.json");
@@ -78,13 +72,11 @@ function loadUI() {
     backgroundColor: Color.TRANSPARENT
   });
   this.flSwipe.addChild(swipeView);
-
 }
 
 function initDotIndicator(page) {
   page.dotIndicator.size = 4;
 }
-
 
 function onChildPageChanged(index) {
   console.log("SelectedIndeex_> " + index);

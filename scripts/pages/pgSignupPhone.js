@@ -2,9 +2,10 @@ const extend = require('js-base/core/extend');
 const PgSignupPhoneDesign = require('ui/ui_pgSignupPhone');
 const pageContextPatch = require("../context/pageContextPatch");
 const Router = require("sf-core/ui/router");
-const System = require('sf-core/device/system');
 const fingerprint = require("sf-extension-utils").fingerprint;
 const authService = require("../service/AuthService");
+const adjustHeaderBar = require("../lib/adjustHeaderBar");
+
 const PgSignupPhone = extend(PgSignupPhoneDesign)(
   // Constructor
   function(_super) {
@@ -56,13 +57,7 @@ function onShow(superOnShow, data) {
 function onLoad(superOnLoad) {
   const page = this;
   superOnLoad();
-
-  if (System.OS === "iOS") {
-    page.flStatusBarBg.height = page.statusBar.height;
-  }
-  else {
-    page.layout.removeChild(page.flStatusBarBg);
-  }
+  adjustHeaderBar(page);
 }
 
 function onPressSignup() {

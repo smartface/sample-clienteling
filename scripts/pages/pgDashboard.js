@@ -1,6 +1,5 @@
 const extend = require('js-base/core/extend');
 const PgDashboardDesign = require('ui/ui_pgDashboard');
-const System = require('sf-core/device/system');
 const Router = require("sf-core/ui/router");
 const Color = require('sf-core/ui/color');
 const pageContextPatch = require("../context/pageContextPatch");
@@ -12,6 +11,7 @@ const FlDashboardItem5 = require('components/FlDashboardItem5');
 const dashboardService = require("../service/Dashboard");
 const userService = require("../service/User");
 const isTablet = require("../lib/isTablet");
+const adjustHeaderBar = require("../lib/adjustHeaderBar");
 
 const RGB_BLUE = [74, 144, 226];
 const RGB_RED = [185, 54, 123];
@@ -37,10 +37,8 @@ const PgDashboard = extend(PgDashboardDesign)(
         this.svMain.subscribeContext = function(e) {
 			if (e.type == "new-styles") {
 				if (e.data["layoutHeight"]) {
-					console.log("LAyoutHeight_>" + e.data["layoutHeight"])
 					this.layout.height = e.data["layoutHeight"];
 				}
-
 			}
 		}.bind(this.svMain);
     });
@@ -52,16 +50,8 @@ const PgDashboard = extend(PgDashboardDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-    const page = this;
     superOnShow();
-
     Router.sliderDrawer.enabled = true;
-    if (System.OS === "iOS") {
-        page.flStatusBarBg.height = page.statusBar.height;
-    }
-    else {
-        page.layout.removeChild(page.flStatusBarBg);
-    }
 }
 
 /**
@@ -72,6 +62,7 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     superOnLoad();
     const page = this;
+    adjustHeaderBar(page);
     page.imgSignOut.onTouchEnded = function() {
         Router.goBack(isTablet ? "pgSignupTablet" : "pgSignupPhone");
     };
