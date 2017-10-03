@@ -65,6 +65,10 @@ function onPressSignup() {
   if (!page.taUserID.text) {
     return alert("Username should not be empty");
   }
+  // TODO: Remove workaround
+  if (System.OS === "Android") {
+    return Router.go("pgDashboard");
+  }
   fingerprint.loginWithFingerprint();
 }
 
