@@ -27,12 +27,11 @@ module.exports = function pageContextPatch(page, name){
         function reducers(state, actors, action, target) {
           return state;
         });
-    } else {
-      this.dispatch({
-        type: "invalidate"
-      });
     }
     
+    this.dispatch({
+      type: "invalidate"
+    });
     this.layout.applyLayout();
 
    this.onOrientationChange = pageOnOrientationChange;
