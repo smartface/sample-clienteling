@@ -2046,11 +2046,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-<<<<<<< HEAD
 				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.33&brandModel=iPhone%207"
-=======
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.68&brandModel=iPhone%207"
->>>>>>> fix pgWomen tablet
 			}
 		},
 		{
