@@ -73,6 +73,7 @@ function reDesignListviewItem() {
     this.lvMain.onRowSelected = function() {
         Router.go("pgWomen");
     };
+    this.lvMain.refreshEnabled = false;
     this.lvMain.onRowCreate = function() {
         var listItem = new ListViewItem({
             positionType: FlexLayout.PositionType.RELATIVE,

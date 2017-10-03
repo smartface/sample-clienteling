@@ -24,6 +24,7 @@ const Page_ = extend(Page)(
 			imageFillType: ImageView.FillType.ASPECTFIT,
 			backgroundColor: Color.TRANSPARENT
 		});
+		this.orientation = Page.Orientation.AUTO;
 		this.image = img;
 		this.layout.addChild(img);
 	});

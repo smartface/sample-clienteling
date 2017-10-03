@@ -47,6 +47,7 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
   superOnLoad();
   this.lvShoppingBag.itemCount = 5;
+  this.lvShoppingBag.refreshEnabled = false;
   this.lvShoppingBag.onRowBind = function(shoppingBagItem, index) {
    (shoppingBagItem.backgroundColor =   (index % 2 === 0) ? TRANSPARENT_GRAY: Color.TRANSPARENT);
     shoppingBagItem.productImage.loadFromUrl("https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56363.png");

@@ -1,11 +1,11 @@
 {
 	"info": {
-		"name": "Clienteling",
-		"company": "Smartface",
+		"name": "Client Telling",
+		"company": "Smartface Inc",
 		"webSite": "https://www.smartface.io",
 		"version": "1.0.0",
 		"runtimeVersion": "1100",
-		"description": "Clienteling App"
+		"description": "Client Telling App"
 	},
 	"config": {
 		"cache": {
@@ -63,7 +63,7 @@
 						"active": false
 					}
 				},
-				"playerPath": null
+				"playerPath": "playeriOS651beta.zip"
 			},
 			"android": {
 				"scripts": "scripts",
