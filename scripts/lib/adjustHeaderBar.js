@@ -1,4 +1,5 @@
 const System = require('sf-core/device/system');
+const Color = require("sf-core/ui/color");
 
 module.exports = exports = function(page) {
     if (System.OS === "iOS") {
@@ -6,7 +7,7 @@ module.exports = exports = function(page) {
     }
     else {
         page.headerBar.visible = false;
-        page.statusBar.visible = false;
+        page.statusBar.android.color = Color.TRANSPARENT;
         page.flStatusBarBg && page.layout.removeChild(page.flStatusBarBg);
     }
 };
