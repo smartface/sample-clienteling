@@ -33,8 +33,8 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"width": 266.25,
-				"height": 473.57
+				"width": 307.5,
+				"height": 546.9399999999999
 			}
 		},
 		{
@@ -373,7 +373,8 @@
 				"width": 40,
 				"height": 40,
 				"image": "logout.png",
-				"marginLeft": 10
+				"marginLeft": 10,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )"
 			},
 			"className": ".imageView",
 			"props": {
@@ -382,7 +383,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -397,7 +398,7 @@
 				"name": "imgSignOut",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.71&brandModel=iPhone%207?random=0.19255349689606516"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/logout.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.4121530372459805"
 			}
 		},
 		{
@@ -411,7 +412,8 @@
 				"width": 40,
 				"height": 40,
 				"image": "notification.png",
-				"marginRight": null
+				"marginRight": null,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )"
 			},
 			"className": ".imageView",
 			"props": {
@@ -420,7 +422,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -435,7 +437,7 @@
 				"name": "imgNotification",
 				"parent": "4573-b010-1cb3-d136",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.71&brandModel=iPhone%207?random=0.6543726051957082"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/notification.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.8441617969995208"
 			}
 		},
 		{
@@ -1887,6 +1889,7 @@
 				"left": 14,
 				"top": 14,
 				"bottom": null,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"flexProps": {
 					"flexGrow": null
 				}
@@ -1898,7 +1901,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1915,7 +1918,7 @@
 				"name": "imgHamburger",
 				"parent": "a153-0d0e-1142-3610",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.71&brandModel=iPhone%207?random=0.329008440159984"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/hamburger.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.14661410245151774"
 			}
 		},
 		{
@@ -2085,7 +2088,7 @@
 				"name": "imgUser",
 				"parent": "d2cc-973c-4896-6905",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/lisatown.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.71&brandModel=iPhone%207?random=0.11791416073157746"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/lisatown.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.9656147867347451"
 			}
 		},
 		{

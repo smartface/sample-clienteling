@@ -38,8 +38,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 236.25,
-				"height": 420.21
+				"width": 307.5,
+				"height": 546.9399999999999
 			}
 		},
 		{
@@ -287,7 +287,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
-				"alpha": 0.1,
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -302,9 +302,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"maxHeight": null,
+				"marginLeft": 4,
+				"marginRight": 4,
 				"left": null,
 				"top": null,
-				"maxHeight": null,
 				"maxWidth": null,
 				"marginTop": 10,
 				"marginBottom": 10,
@@ -609,8 +611,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -623,10 +625,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
-				"maxWidth": null,
 				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
+				"maxWidth": null,
 				"name": "divider_4_1_1",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -738,8 +742,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -752,10 +756,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
-				"maxWidth": null,
 				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
+				"maxWidth": null,
 				"name": "divider_4_1_1_1",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -775,8 +781,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -789,10 +795,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
-				"maxWidth": null,
 				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
+				"maxWidth": null,
 				"name": "divider_4_1_1_2",
 				"parent": "0d20-beab-712a-5aaa",
 				"children": []
@@ -865,8 +873,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -879,10 +887,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
-				"maxWidth": null,
 				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
+				"maxWidth": null,
 				"name": "divider_4_1_1_2",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -902,8 +912,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -916,10 +926,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
-				"maxWidth": null,
 				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
+				"maxWidth": null,
 				"name": "divider_4_1_1_1",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -939,8 +951,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -953,10 +965,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
-				"maxWidth": null,
 				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
+				"maxWidth": null,
 				"name": "divider_4_1_1",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1161,8 +1175,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -1175,10 +1189,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
-				"maxWidth": null,
 				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
+				"maxWidth": null,
 				"name": "divider_4_1_1_3",
 				"parent": "6910-2b24-1834-5cc4",
 				"children": []
@@ -1592,8 +1608,8 @@
 				"width": 0,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -1606,10 +1622,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
-				"maxWidth": 0,
 				"maxHeight": 0,
+				"marginLeft": 4,
+				"marginRight": 4,
+				"maxWidth": 0,
 				"marginBottom": 0,
 				"marginTop": 0,
 				"name": "divider",
@@ -6514,8 +6532,8 @@
 				"width": 0,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -6528,9 +6546,11 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
 				"maxHeight": 0,
+				"marginLeft": 4,
+				"marginRight": 4,
 				"name": "divider",
 				"parent": "93cc-815a-beb6-40ac",
 				"children": []
@@ -7287,6 +7307,7 @@
 				"top": 14,
 				"bottom": null,
 				"usePageVariable": false,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"flexProps": {
 					"flexGrow": null
 				}
@@ -7298,7 +7319,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -7316,7 +7337,7 @@
 				"name": "imgLeft",
 				"parent": "f9f9-25be-751b-892c",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207?random=0.14099485613190188"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.6629513865343066"
 			}
 		},
 		{
@@ -7473,7 +7494,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -7510,7 +7531,8 @@
 				"height": 20,
 				"image": "shoppingbag.png",
 				"marginRight": null,
-				"imageFillType": "ASPECTFIT"
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba( 32, 32, 32, 1 )"
 			},
 			"className": ".imageView",
 			"props": {
@@ -7519,7 +7541,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -7534,7 +7556,7 @@
 				"name": "imgShoppingBag",
 				"parent": "9409-7385-94c8-c698",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/shoppingbag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207?random=0.3632581798660175"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/shoppingbag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.0014366841923456608"
 			}
 		},
 		{
@@ -7550,6 +7572,7 @@
 				"image": "lookbook.png",
 				"marginLeft": 20,
 				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"flexProps": {
 					"flexGrow": null
 				}
@@ -7561,7 +7584,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -7577,7 +7600,7 @@
 				"name": "imgLookbook",
 				"parent": "9409-7385-94c8-c698",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/lookbook.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.63&brandModel=iPhone%207?random=0.9944546587395873"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/lookbook.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.5975161495194368"
 			}
 		}
 	]
