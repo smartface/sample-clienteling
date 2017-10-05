@@ -3,6 +3,7 @@
     ".rightItem": {
       "height": null,
       "width": null,
+      "backgroundColor": "rgba(0,0,0,0)",
       "visible": true,
       "touchEnabled": true,
       "flexProps": {
@@ -26,7 +27,7 @@
       "layoutHeight": 1000,
       "width": null,
       "height": null,
-      "flexProps":{
+      "flexProps": {
         "flexGrow": 1,
         "alignItems": "STRETCH",
         "alignContent": "STRETCH"
