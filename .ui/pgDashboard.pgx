@@ -11,7 +11,7 @@
 				"orientation": "AUTO"
 			},
 			"className": ".page",
-			"version": "6.4.8",
+			"version": "6.4.13",
 			"props": {
 				"flexProps": {
 					"alignContent": "STRETCH",
