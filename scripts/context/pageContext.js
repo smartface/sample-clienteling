@@ -6,7 +6,8 @@ const stylerBuilder = require("library/styler-builder");
 const isTablet = require("../lib/isTablet");
 const Screen = require('sf-core/device/screen');
 const INIT_CONTEXT_ACTION_TYPE = require("../lib/Context").INIT_CONTEXT_ACTION_TYPE;
-const theme = require("../themes/blue");
+const buildStyles = require("@smartface/styler/lib/buildStyles");
+const theme = buildStyles(require("../themes/blue"));
 var orientationState = "ended";
 
 commands.addRuntimeCommandFactory(function(type) {
@@ -57,7 +58,7 @@ function createContext(component, name, classMap = null, reducers = null) {
 		//initial classNames
 		function(name) {
 			const id = "#" + name;
-			//console.log(id);
+
 			return classMap ? id + " " + classMap(name) : id;
 		},
 		//context hooks
