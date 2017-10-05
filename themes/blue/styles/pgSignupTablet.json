@@ -51,12 +51,13 @@
     ".btnSignup": {
       "backgroundColor": "rgba(210,49,132,1)",
       "width": null,
-      "height": 70,
+      "maxHeight": 70,
       "marginLeft": 20,
       "marginRight": 20,
       "flexProps": {
         "flexGrow": 1
       },
+      "textAlignment": "MIDCENTER",
       "font": {
         "size": 28,
         "family": "Lato"
@@ -78,7 +79,7 @@
       },
       "+isTablet_landscape:": {
         "flexProps": {
-          "flexGrow": 2,
+          "flexGrow": 2.5,
           "flexDirection": "COLUMN",
           "alignItems": "FLEX_START",
           "justifyContent": "FLEX_START",
@@ -122,7 +123,7 @@
         "flexGrow": 1
       },
       "+isTablet_landscape:": {
-        "marginBottom": 80
+        "marginBottom": 20
       }
     },
     ".flSignup": {
