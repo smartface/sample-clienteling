@@ -20,14 +20,9 @@ const PgMainLookbook = extend(PgMainLookbookDesign)(
     pageContextPatch(this, "pgMainLookbook");
   });
 
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} routeData - parameters passed from Router.go function
- */
-function onShow(superOnShow, routeData) {
+function onShow(superOnShow) {
   superOnShow();
+  Router.sliderDrawer.enabled = false;
 }
 
 function onLoad(superOnLoad) {

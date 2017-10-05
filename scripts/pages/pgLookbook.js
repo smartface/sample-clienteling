@@ -39,6 +39,7 @@ const PgLookbook = extend(PgLookbookDesign)(
  */
 function onShow(superOnShow) {
     superOnShow();
+    Router.sliderDrawer.enabled = false;
     redesignListviewItem.call(this);
 }
 

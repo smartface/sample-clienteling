@@ -50,6 +50,7 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
  */
 function onShow(superOnShow) {
 	superOnShow();
+	Router.sliderDrawer.enabled = false;
 }
 
 /**

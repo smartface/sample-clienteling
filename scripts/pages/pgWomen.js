@@ -44,6 +44,7 @@ const PgWomen = extend(PgWomenDesign)(
  */
 function onShow(superOnShow) {
   superOnShow();
+  Router.sliderDrawer.enabled = false;
 }
 
 /**

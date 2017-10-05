@@ -18,7 +18,6 @@ const PgShoppingBag = extend(PgShoppingBagDesign)(
       Router.goBack();
     };
     //pageContextPatch(this, "pgShoppingBag");
-
   });
 
 /**
@@ -29,6 +28,7 @@ const PgShoppingBag = extend(PgShoppingBagDesign)(
  */
 function onShow(superOnShow) {
   superOnShow();
+  Router.sliderDrawer.enabled = false;
 }
 
 /**
