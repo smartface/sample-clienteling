@@ -15,7 +15,7 @@
 				"paddingLeft": null
 			},
 			"className": ".page",
-			"version": "6.4.13",
+			"version": "6.4.14",
 			"props": {
 				"flexProps": {
 					"alignContent": "STRETCH",
