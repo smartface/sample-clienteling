@@ -38,6 +38,7 @@
     ".flShopNow": {
       "width": null,
       "height": null,
+      "backgroundColor": "rgba(0,0,0,0)",
       "flexProps": {
         "flexGrow": 1,
         "alignItems": "CENTER",
@@ -147,6 +148,7 @@
       "width": null,
       "height": 40,
       "textAlignment": "MIDRIGHT",
+      "backgroundColor": "rgba(0,0,0,0)",
       "textColor": "#FFFFFF",
       "font": {
         "size": 30
@@ -174,6 +176,7 @@
       "width": null,
       "height": 20,
       "textAlignment": "MIDRIGHT",
+      "backgroundColor": "rgba(0,0,0,0)",
       "marginRight": 10,
       "marginLeft": null,
       "font": {
@@ -200,6 +203,7 @@
       "width": null,
       "height": 30,
       "textAlignment": "MIDLEFT",
+      "backgroundColor": "rgba(0,0,0,0)",
       "multiline": true,
       "marginLeft": 20,
       "marginRight": null,
@@ -224,6 +228,7 @@
       "textAlignment": "MIDCENTER",
       "multiline": true,
       "textColor": "#FFFFFF",
+      "backgroundColor": "rgba(0,0,0,0)",
       "font": {
         "size": 20
       },
@@ -243,6 +248,7 @@
       "width": null,
       "height": 20,
       "textAlignment": "MIDCENTER",
+      "backgroundColor": "rgba(0,0,0,0)",
       "multiline": true,
       "+page:Screen.width > 1000": {
         "height": 40,
@@ -256,6 +262,7 @@
       "textAlignment": "MIDCENTER",
       "height": 30,
       "textColor": "#FFFFFF",
+      "backgroundColor": "rgba(0,0,0,0)",
       "font": {
         "size": 20
       },
@@ -272,6 +279,7 @@
     ".imgWomen": {
       "width": null,
       "height": null,
+      "backgroundColor": "rgba(0,0,0,0)",
       "flexProps": {
         "flexGrow": 1
       },
