@@ -79,7 +79,7 @@
       },
       "+isTablet_landscape:": {
         "flexProps": {
-          "flexGrow": 2.5,
+          "flexGrow": 2.7,
           "flexDirection": "COLUMN",
           "alignItems": "FLEX_START",
           "justifyContent": "FLEX_START",

@@ -9,8 +9,10 @@ const Router = require("sf-core/ui/router");
 const pageContextPatch = require("../context/pageContextPatch");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const lookbookService = require("../service/Lookbook");
+const Color = require("sf-core/ui/color");
 
-const ITEM_WIDTH = 140;
+const ITEM_WIDTH =  157;
+const ITEM_HEIGHT =  275;
 var dataset = null;
 
 const PgLookbook = extend(PgLookbookDesign)(
@@ -70,21 +72,28 @@ function redesignListviewItem() {
     this.lvMain.refreshEnabled = false;
     this.lvMain.onRowCreate = function() {
         var listItem = new ListViewItem({
-            positionType: FlexLayout.PositionType.RELATIVE,
+            positionType: FlexLayout.PositionType.ABSOLUTE,
+            top: 0,
+            bottom: 0,
+            left: 10,
+            right: 10,
             flexGrow: 1,
             flexDirection: FlexLayout.FlexDirection.ROW,
             justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN,
-            alignItems: FlexLayout.AlignItems.STRETCH,
-            marginLeft: 5,
-            width: Screen.width - 10,
+            alignItems: FlexLayout.AlignItems.CENTER,
+            alignContent: FlexLayout.AlignContent.CENTER,
+            //backgroundColor: Color.GRAY,
             id: ++id
         });
         for (var i = 0; i < itemCountPerRow; ++i) {
             listItem.addChild(new LookbookItem({
                 positionType: FlexLayout.PositionType.RELATIVE,
                 alignSelf: FlexLayout.AlignSelf.CENTER,
-                height: 200,
-                width: 140,
+                alignItems: FlexLayout.AlignItems.CENTER,
+                alignContent: FlexLayout.AlignContent.STRETCH,
+                height: ITEM_HEIGHT,
+                width: ITEM_WIDTH,
+                //backgroundColor: Color.LIGHTGRAY,
                 id: i + 200
             }));
         }
@@ -92,7 +101,7 @@ function redesignListviewItem() {
         return listItem;
 
     };
-    this.lvMain.rowHeight = 250;
+    this.lvMain.rowHeight = ITEM_HEIGHT + 50;
     this.lvMain.itemCount = Math.ceil(dataset.length / itemCountPerRow);
     this.lvMain.onRowBind = function(listViewItem, index) {
         var item, sourceIndex, data;
