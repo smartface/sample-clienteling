@@ -6,13 +6,16 @@
 			"width": 200
 		},
 		"&-line": {
-			"width": 0,
+			"width": null,
+			"maxHeight": 1,
+			"alpha": 0.5,
 			"flexProps": {
-				"flexGrow": 0
+				"flexGrow": 1
 			},
 			"height": 1,
-			"alpha": 0.1,
-			"backgroundColor": "#1D1D26"
+			"backgroundColor": "#979797",
+			"marginLeft": 4,
+			"marginRight": 4
 		},
 		"&-margin": {
 			"marginLeft": 20,

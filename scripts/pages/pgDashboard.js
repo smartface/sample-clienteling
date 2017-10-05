@@ -70,13 +70,15 @@ function onLoad(superOnLoad) {
 
 function addReservations(items) {
     var page = this;
-    items.forEach(function(item) {
+    items.forEach(function(item, index) {
         var flDashboardItem1 = new FlDashboardItem1();
         flDashboardItem1.width = NaN;
         flDashboardItem1.height = 80;
         flDashboardItem1.lblItemType.text = item.orderType;
         flDashboardItem1.lblItemName.text = item.employee;
         flDashboardItem1.lblItemTitle.text = item.location;
+        if (index === items.length - 1)
+            flDashboardItem1.flLine.visible = false;
         if (item.location.toLowerCase() === "out of store") {
             flDashboardItem1.lblItemTitle.textColor = Color.create.apply(null, RGB_RED);
         }
@@ -88,13 +90,14 @@ function addReservations(items) {
 
 function addTodos(items) {
     var page = this;
-    items.forEach(function(item) {
+    items.forEach(function(item, index) {
         var flDashboardItem2 = new FlDashboardItem2();
         flDashboardItem2.width = NaN;
         flDashboardItem2.height = 80;
         flDashboardItem2.lblItemTitle.text = item.title;
         flDashboardItem2.lblItemName.text = item.type;
         flDashboardItem2.lblItemType.text = item.status;
+        flDashboardItem2.flLine.visible = false;
         if (item.status.toLowerCase() === "overdue") {
             flDashboardItem2.backgroundColor =
                 Color.create.apply(null, ARGB_BLUE);
@@ -108,13 +111,15 @@ function addTodos(items) {
 
 function addOpenIncidents(items) {
     var page = this;
-    items.forEach(function(item) {
+    items.forEach(function(item, index) {
         var flDashboardItem3 = new FlDashboardItem3();
         flDashboardItem3.width = NaN;
         flDashboardItem3.height = 80;
         flDashboardItem3.lblItemTitle.text = item.state;
         flDashboardItem3.lblItemName.text = item.employee;
         flDashboardItem3.lblItemType.text = item.title;
+        if (index === items.length - 1)
+            flDashboardItem3.flLine.visible = false;
         if (item.state.toLowerCase() === "completed") {
             flDashboardItem3.lblItemTitle.textColor =
                 Color.create.apply(null, RGB_BLUE);
@@ -127,7 +132,7 @@ function addOpenIncidents(items) {
 
 function addStoreAndCorporateNews(items) {
     var page = this;
-    items.forEach(function(item) {
+    items.forEach(function(item, index) {
         var flDashboardItem4 = new FlDashboardItem4();
         flDashboardItem4.width = NaN;
         flDashboardItem4.height = 80;
@@ -135,6 +140,8 @@ function addStoreAndCorporateNews(items) {
         flDashboardItem4.lblItemName.text = item.employee;
         flDashboardItem4.lblItemType.text = item.type;
         // TODO: Date
+        if (index === items.length - 1)
+            flDashboardItem4.flLine.visible = false;
         page.flNewsItems.addChild(flDashboardItem4);
         page.flNewsItems.height += flDashboardItem4.height;
     });
@@ -142,7 +149,7 @@ function addStoreAndCorporateNews(items) {
 
 function addIncomingShipments(items) {
     var page = this;
-    items.forEach(function(item) {
+    items.forEach(function(item, index) {
         var flDashboardItem5 = new FlDashboardItem5();
         flDashboardItem5.width = NaN;
         flDashboardItem5.height = 80;
@@ -150,6 +157,8 @@ function addIncomingShipments(items) {
         flDashboardItem5.lblItemName.text = item.type;
         flDashboardItem5.lblItemType.text = item.status;
         // TODO: Date
+        if (index === items.length - 1)
+            flDashboardItem5.flLine.visible = false;
         page.flShipmentsItems.addChild(flDashboardItem5);
         page.flShipmentsItems.height += flDashboardItem5.height;
     });
@@ -157,7 +166,7 @@ function addIncomingShipments(items) {
 
 function addSocialActivities(items) {
     var page = this;
-    items.forEach(function(item) {
+    items.forEach(function(item, index) {
         var flDashboardItem3 = new FlDashboardItem3();
         flDashboardItem3.width = NaN;
         flDashboardItem3.height = 80;
@@ -165,6 +174,8 @@ function addSocialActivities(items) {
         flDashboardItem3.lblItemName.text = item.employee;
         flDashboardItem3.lblItemType.text = item.title;
         // TODO: Date
+        if (index === items.length - 1)
+            flDashboardItem3.flLine.visible = false;
         page.flSocialActivityItems.addChild(flDashboardItem3);
         page.flSocialActivityItems.height += flDashboardItem3.height;
     });
