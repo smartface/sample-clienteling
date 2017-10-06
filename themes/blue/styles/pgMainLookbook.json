@@ -49,11 +49,12 @@
       "width": null,
       "height": null,
       "flexProps": {
-        "flexGrow": 39,
+        "flexGrow": 36,
         "flexDirection": "ROW"
       }
     },
     ".flSecondLine": {
+      "backgroundColor": "#FEFEF8",
       "width": null,
       "height": null,
       "maxHeight": null,
@@ -86,7 +87,7 @@
       "width": null,
       "height": null,
       "flexProps": {
-        "flexGrow": 65,
+        "flexGrow": 43,
         "flexDirection": "ROW"
       }
     },
@@ -128,6 +129,7 @@
       "bottom": 0,
       "width": null,
       "height": null,
+      "backgroundColor": "rgba(0,0,0,0)",
       "textAlignment": "MIDCENTER",
       "textColor": "rgba(29,29,38,0.1)",
       "flexProps": {
@@ -205,7 +207,6 @@
       "textAlignment": "MIDLEFT",
       "backgroundColor": "rgba(0,0,0,0)",
       "multiline": true,
-      "marginLeft": 20,
       "marginRight": null,
       "+page:Screen.width > 450 ": {
         "multiline": false,

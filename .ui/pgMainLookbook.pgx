@@ -35,8 +35,8 @@
 					"b740-f675-4f52-5243",
 					"6051-46a5-778b-d772"
 				],
-				"width": 288.75,
-				"height": 513.59
+				"width": 667,
+				"height": 375
 			}
 		},
 		{
@@ -111,7 +111,7 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 39
+					"flexGrow": 36
 				},
 				"name": "flFirstLine",
 				"parent": "06bb-a00e-c029-0539",
@@ -150,7 +150,7 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 65
+					"flexGrow": 43
 				},
 				"name": "flThirdLine",
 				"parent": "06bb-a00e-c029-0539",
@@ -171,7 +171,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"backgroundColor": "rgba( 126, 173, 225, 1 )",
+				"backgroundColor": "rgba( 105, 166, 236, 1 )",
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -183,7 +183,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 126, 173, 225, 1 )",
+				"backgroundColor": "rgba( 105, 166, 236, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -217,10 +217,10 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"backgroundColor": "rgba( 254, 232, 255, 1 )",
-				"marginLeft": null,
+				"backgroundColor": "rgba( 253, 208, 224, 1 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 1,
+					"flexDirection": "COLUMN"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -229,7 +229,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba( 254, 232, 255, 1 )",
+				"backgroundColor": "rgba( 253, 208, 224, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -245,7 +245,6 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"marginLeft": null,
 				"name": "flSunGlasses",
 				"parent": "c457-e6cb-6b46-b023",
 				"children": [
@@ -292,13 +291,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 3
 				},
+				"usePageVariable": true,
 				"name": "flWomen",
 				"parent": "6051-46a5-778b-d772",
 				"children": [
 					"5114-d220-b1ed-6b58",
 					"6f1c-1a10-c120-fe7d"
-				],
-				"usePageVariable": true
+				]
 			}
 		},
 		{
@@ -309,13 +308,7 @@
 				"Sizes": "Default",
 				"Implementation": "pgMainLookbook-Sale"
 			},
-			"userProps": {
-				"height": null,
-				"width": null,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
+			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flSale",
 			"props": {
 				"height": null,
@@ -336,10 +329,10 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2.8
 				},
-				"maxHeight": 0,
-				"maxWidth": 0,
+				"maxHeight": null,
+				"maxWidth": null,
 				"name": "flSale",
 				"parent": "6051-46a5-778b-d772",
 				"children": [
@@ -407,7 +400,7 @@
 				"image": "bag.png",
 				"imageFillType": "ASPECTFIT",
 				"flexProps": {
-					"flexGrow": 1.3
+					"flexGrow": 1
 				}
 			},
 			"className": ".imageView",
@@ -425,13 +418,13 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.3
+					"flexGrow": 1
 				},
 				"image": "bag.png",
 				"name": "imgBagTrends",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.2952838120672705"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/bag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -444,6 +437,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"right": 5,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignItems": "AUTO",
@@ -472,6 +466,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"right": 5,
 				"name": "flInfo",
 				"parent": "2a84-1b42-a1a7-b7c8",
 				"children": [
@@ -526,7 +521,7 @@
 				"name": "imgSunGlasses",
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.1149192619772259"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -674,7 +669,7 @@
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"multiline": true,
+				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -712,7 +707,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -788,11 +783,11 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flSecondLine",
 			"props": {
-				"height": null,
-				"width": null,
+				"height": 0,
+				"width": 0,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "#FEFEF8",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -806,10 +801,10 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 27
+					"flexGrow": 0
 				},
-				"maxHeight": null,
-				"maxWidth": null,
+				"maxHeight": 0,
+				"maxWidth": 0,
 				"name": "flSecondLine",
 				"parent": "06bb-a00e-c029-0539",
 				"children": [
@@ -876,7 +871,7 @@
 				"height": null,
 				"touchEnabled": true,
 				"visible": true,
-				"multiline": true,
+				"multiline": false,
 				"backgroundColor": "rgba(255,255,255,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -914,7 +909,7 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -998,14 +993,14 @@
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba(29,29,38,0.1)",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"font": {
-					"size": 100,
+					"size": 70,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1041,14 +1036,14 @@
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "rgba(29,29,38,0.1)",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "TOPCENTER",
 				"font": {
-					"size": 100,
+					"size": 70,
 					"bold": true,
 					"italic": false,
 					"family": "Lato"
@@ -1073,13 +1068,7 @@
 			"themeProps": {
 				"Sizes": "pgMainLookbook-Women"
 			},
-			"userProps": {
-				"height": null,
-				"image": "pgmainlookbook_women_vertical.png",
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
+			"userProps": {},
 			"className": ".imageView #pgMainLookbook.imgWomen",
 			"props": {
 				"width": null,
@@ -1087,7 +1076,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "STRETCH",
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1097,11 +1086,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "pgmainlookbook_women_vertical.png",
+				"image": "pgmainlookbook_women_horizontal.png",
 				"name": "imgWomen",
 				"parent": "47f2-f138-9dd8-617a",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgmainlookbook_women_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.12158170964535531"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/pgmainlookbook_women_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1110,13 +1099,7 @@
 			"themeProps": {
 				"Sizes": "pgMainLookbook-Men"
 			},
-			"userProps": {
-				"height": null,
-				"image": "pgmainlookbook_men_vertical.png",
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
+			"userProps": {},
 			"className": ".imageView #pgMainLookbook.imgMen",
 			"props": {
 				"width": null,
@@ -1134,11 +1117,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"image": "pgmainlookbook_men_vertical.png",
+				"image": "pgmainlookbook_men_horizontal.png",
 				"name": "imgMen",
 				"parent": "a1cd-4b9b-acad-6cf7",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/pgmainlookbook_men_vertical.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207?random=0.69862470616496"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/pgmainlookbook_men_horizontal.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1212,7 +1195,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1253,7 +1236,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1348,7 +1331,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1380,14 +1363,7 @@
 				"Implementation": "pgMainLookbook-Gender-Men"
 			},
 			"userProps": {
-				"text": "MEN",
-				"left": null,
-				"right": null,
-				"marginRight": 10,
-				"marginLeft": 10,
-				"flexProps": {
-					"alignSelf": "AUTO"
-				}
+				"text": "MEN"
 			},
 			"className": ".label #pgMainLookbook.lblGender.men",
 			"props": {
@@ -1396,7 +1372,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1415,8 +1391,6 @@
 				"marginRight": 10,
 				"marginLeft": 10,
 				"text": "MEN",
-				"left": null,
-				"right": null,
 				"name": "lblGender",
 				"parent": "be6f-d58b-d42a-e94c",
 				"children": []
@@ -1438,13 +1412,13 @@
 				"height": 30,
 				"touchEnabled": true,
 				"visible": true,
-				"multiline": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"multiline": false,
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "MIDLEFT",
+				"textAlignment": "MIDRIGHT",
 				"font": {
 					"size": 10,
 					"bold": false,
@@ -1455,8 +1429,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"marginLeft": 20,
-				"marginRight": null,
+				"marginRight": 30,
 				"text": "SUMMER 2017",
 				"name": "lblBag",
 				"parent": "171a-9f20-120a-7188",
@@ -1480,12 +1453,12 @@
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDRIGHT",
 				"font": {
 					"size": 20,
 					"bold": false,
@@ -1496,7 +1469,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"marginRight": null,
+				"marginRight": 30,
 				"text": "BAG\nTRENDS",
 				"name": "lblSummer",
 				"parent": "171a-9f20-120a-7188",
@@ -1520,7 +1493,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1555,11 +1528,11 @@
 			"className": ".label #pgMainLookbook.lblGlasses",
 			"props": {
 				"width": null,
-				"height": 30,
+				"height": 20,
 				"touchEnabled": true,
 				"visible": true,
 				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -1723,7 +1696,7 @@
 				"name": "imgLeft",
 				"parent": "8dc6-cc2f-5f10-d1a6",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1834,9 +1807,9 @@
 			"props": {
 				"height": null,
 				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
+				"touchEnabled": false,
+				"visible": false,
+				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
