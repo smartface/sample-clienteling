@@ -2,10 +2,10 @@ const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const ImageView = require('sf-core/ui/imageview');
 const FlexLayout = require('sf-core/ui/flexlayout');
-const globalSvipeViewList = require("lib/swipeViewList");
 const Color = require("sf-core/ui/color");
 
-const Page_ = extend(Page)(
+function contructorFactory(url){
+	return extend(Page)(
 	// Constructor
 	function(_super, props) {
 		_super(this, {
@@ -25,16 +25,16 @@ const Page_ = extend(Page)(
 		});
 		this.orientation = Page.Orientation.AUTO;
 		this.image = img;
+		url && setTimeout(()=> img.loadFromUrl(url), 100);
 		this.layout.addChild(img);
 	});
-
+}
 // Page.onShow -> This event is called when a page appears on the screen (everytime).
 function onShow() {
 	this.headerBar.visible = false;
 	this.statusBar.visible = false;
-	globalSvipeViewList.setActiveImage(this.image);
 }
 
 function onLoad() {}
 
-module && (module.exports = Page_);
+module && (module.exports = contructorFactory);

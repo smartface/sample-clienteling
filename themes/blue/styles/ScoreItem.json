@@ -16,7 +16,7 @@
 				"flexGrow": 3,
 				"alignSelf": "STRETCH"
 			},
-			"+page:Screen.width > Screen.height": {
+			"+page:Screen.width > 450 ": {
 				"textAlignment": "MIDCENTER",
 				"flexProps": {
 					"alignSelf": "STRETCH"
@@ -41,7 +41,7 @@
 				"flexGrow": 3,
 				"alignSelf": "STRETCH"
 			},
-			"+page:Screen.width > Screen.height": {
+			"+page:Screen.width > 449": {
 				"marginLeft": null,
 				"textAlignment": "MIDCENTER",
 				"flexProps": {

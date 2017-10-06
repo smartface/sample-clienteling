@@ -1,8 +1,7 @@
 const extend = require('js-base/core/extend');
 const PgWomenDesign = require('ui/ui_pgWomen');
 const pageContextPatch = require("../context/pageContextPatch");
-const SvipeViewTemplatePage = require("pages/pgWomenSwipePage");
-const globalSvipeViewList = require("lib/swipeViewList");
+const pgWomenSwipePageFactory = require("pages/pgWomenSwipePageFactory");
 const SwipeView = require("sf-core/ui/swipeview");
 const Router = require("sf-core/ui/router");
 const flexProps = ["flexGrow", "flexDirection", "alignItems", "justifyContent"];
@@ -62,12 +61,10 @@ function onLoad(superOnLoad) {
 function loadUI() {
   const json = require("../sample-data/lookbook.json");
   var list = json.products;
-  globalSvipeViewList.setList(list);
-  globalSvipeViewList.setActiveIndex(0);
   var swipeView = new SwipeView({
     page: this,
     flexGrow: 1,
-    pages: [SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage, SvipeViewTemplatePage],
+    pages: [pgWomenSwipePageFactory(list[0].image), pgWomenSwipePageFactory(list[1].image), pgWomenSwipePageFactory(list[2].image), pgWomenSwipePageFactory(list[3].image)],
     onPageSelected: onChildPageChanged.bind(this),
     marginBottom: 18,
     backgroundColor: Color.TRANSPARENT
@@ -80,7 +77,6 @@ function initDotIndicator(page) {
 }
 
 function onChildPageChanged(index) {
-  globalSvipeViewList.setActiveIndex(index);
   this.dotIndicator.currentIndex = index;
 }
 

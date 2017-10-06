@@ -298,13 +298,12 @@
         "flexGrow": 1,
         "flexDirection": "COLUMN"
       },
-      "+page:Screen.width > 450": {
-        "maxHeight": 120,
+      "+page:Screen.width > 448": {
+        "maxHeight": 150,
         "marginBottom": 10
       },
       "&-infoPart": {
         "width": null,
-        "height": null,
         "maxHeight": 159,
         "marginLeft": 10,
         "marginRight": 10,
@@ -316,13 +315,13 @@
           "alignContent": "STRETCH",
           "flexGrow": 1
         },
-        "+page: Screen.width > Screen.height": {
+        "+page: Screen.width > 449": {
           "flexProps": {
             "flexDirection": "ROW"
           },
           "marginTop": 8,
           "marginBottom": 5,
-          "maxHeight": 80
+          "maxHeight": 70
         },
         "&-itemText": {
           "width": null,
@@ -465,7 +464,7 @@
           "flexDirection": "ROW",
           "alignSelf": "CENTER"
         },
-        "+page:Screen.width > Screen.height": {
+        "+page:Screen.width > 449 ": {
           "flexProps": {
             "justifyContent": "FLEX_START",
             "alignSelf": "STRETCH",
