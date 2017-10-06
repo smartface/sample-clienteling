@@ -63,7 +63,9 @@ function redesignListviewItem() {
     this.layout.removeChild(this.lvMain);
     this.lvMain = new ListView({
         positionType: FlexLayout.PositionType.RELATIVE,
-        flexGrow: 1
+        flexGrow: 1,
+        marginLeft: 10,
+        marginRight: 10
     });
     var id = 0;
     var itemCountPerRow = Math.floor(Screen.width / ITEM_WIDTH);
@@ -93,8 +95,10 @@ function redesignListviewItem() {
                 alignItems: FlexLayout.AlignItems.CENTER,
                 alignContent: FlexLayout.AlignContent.STRETCH,
                 height: ITEM_HEIGHT,
+                borderRadius: 10,
                 width: ITEM_WIDTH,
-                //backgroundColor: Color.LIGHTGRAY,
+                paddingTop: 10,
+                backgroundColor: Color.create(200,241,241,241),
                 id: i + 200
             }));
         }
