@@ -12,7 +12,7 @@
 				"size": 33
 			},
 			"flexProps": {
-				"flexGrow": 2,
+				"flexGrow": 3,
 				"alignSelf": "STRETCH"
 			},
 			"+page:Screen.width > 450": {

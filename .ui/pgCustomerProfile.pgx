@@ -38,8 +38,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 307.5,
-				"height": 546.9399999999999
+				"width": 285,
+				"height": 506.92
 			}
 		},
 		{
@@ -7337,7 +7337,7 @@
 				"name": "imgLeft",
 				"parent": "f9f9-25be-751b-892c",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.6629513865343066"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.76&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -7556,7 +7556,7 @@
 				"name": "imgShoppingBag",
 				"parent": "9409-7385-94c8-c698",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/shoppingbag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.0014366841923456608"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/shoppingbag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.76&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -7600,7 +7600,7 @@
 				"name": "imgLookbook",
 				"parent": "9409-7385-94c8-c698",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/lookbook.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207?random=0.5975161495194368"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/lookbook.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.76&brandModel=iPhone%207"
 			}
 		}
 	]
