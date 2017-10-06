@@ -7,6 +7,7 @@
 			"height": null,
 			"textColor": "#CE1375",
 			"textAlignment": "MIDCENTER",
+			"maxWidth":58,
 			"font": {
 				"family": "Lato",
 				"size": 33
@@ -15,20 +16,22 @@
 				"flexGrow": 3,
 				"alignSelf": "STRETCH"
 			},
-			"+page:Screen.width > 450": {
+			"+page:Screen.width > Screen.height": {
 				"textAlignment": "MIDCENTER",
 				"flexProps": {
 					"alignSelf": "STRETCH"
-				}
+				},
+				
+			"maxWidth":null
 			}
 		},
 		"&-text": {
 			"width": null,
 			"height": null,
-			"marginLeft": 10,
 			"textColor": "#000000",
 			"textAlignment": "MIDLEFT",
 			"multiline": true,
+			"marginLeft": 10,
 			"maxWidth": null,
 			"font": {
 				"family": "Lato",
@@ -38,7 +41,7 @@
 				"flexGrow": 3,
 				"alignSelf": "STRETCH"
 			},
-			"+page:Screen.width > 450": {
+			"+page:Screen.width > Screen.height": {
 				"marginLeft": null,
 				"textAlignment": "MIDCENTER",
 				"flexProps": {
