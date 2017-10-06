@@ -11,7 +11,7 @@ const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const lookbookService = require("../service/Lookbook");
 const Color = require("sf-core/ui/color");
 
-const ITEM_WIDTH = 157;
+const ITEM_WIDTH = 140;
 const ITEM_HEIGHT = 275;
 var dataset = null;
 
@@ -26,7 +26,6 @@ const PgLookbook = extend(PgLookbookDesign)(
         this.flHeaderLeft.onTouchEnded = function() {
             Router.goBack();
         };
-
         pageContextPatch(this, "pgLookBook");
         loadUI.call(this);
     });
@@ -64,12 +63,12 @@ function redesignListviewItem() {
     this.lvMain = new ListView({
         positionType: FlexLayout.PositionType.RELATIVE,
         flexGrow: 1,
-        marginLeft: 10,
-        marginRight: 10,
+        paddingLeft: 10,
+        paddingRight: 10,
         backgroundColor: Color.create(200, 241, 241, 241)
     });
     var id = 0;
-    var itemCountPerRow = Math.floor(Screen.width / ITEM_WIDTH);
+    var itemCountPerRow = Math.floor(Screen.width / (ITEM_WIDTH + 20));
     this.lvMain.onRowSelected = function() {
         Router.go("pgWomen");
     };
@@ -100,6 +99,8 @@ function redesignListviewItem() {
                 borderRadius: 10,
                 width: ITEM_WIDTH,
                 paddingTop: 10,
+                marginLeft: 10,
+                marginRight: 10,
                 id: i + 200
             }));
         }

@@ -38,8 +38,8 @@
 					"3166-df70-5cd8-82e8",
 					"36a5-0dc7-ccb7-576d"
 				],
-				"width": 375,
-				"height": 667
+				"width": 296.25,
+				"height": 526.9300000000001
 			}
 		},
 		{
@@ -125,16 +125,16 @@
 				},
 				"maxHeight": 132,
 				"marginBottom": 0,
+				"marginLeft": 5,
+				"marginRight": 5,
+				"marginTop": 5,
 				"name": "flFirst",
 				"parent": "c92e-4a8f-06cb-26ff",
 				"children": [
 					"3640-7aea-3077-187c",
 					"9d82-b6ff-2177-1b4b",
 					"85f3-967e-a550-d173"
-				],
-				"marginLeft": 5,
-				"marginRight": 5,
-				"marginTop": 5
+				]
 			}
 		},
 		{
@@ -363,15 +363,15 @@
 				},
 				"layoutHeight": 1000,
 				"usePageVariable": true,
+				"marginLeft": 5,
+				"marginRight": 5,
+				"marginBottom": 5,
 				"name": "scw",
 				"parent": "c92e-4a8f-06cb-26ff",
 				"children": [
 					"b9d8-3483-810d-b40b",
 					"aff8-f57b-2780-9681"
-				],
-				"marginLeft": 5,
-				"marginRight": 5,
-				"marginBottom": 5
+				]
 			}
 		},
 		{
@@ -479,7 +479,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart",
 			"props": {
-				"height": null,
+				"height": 200,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -832,7 +832,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart",
 			"props": {
-				"height": null,
+				"height": 200,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -7352,7 +7352,7 @@
 				"name": "imgLeft",
 				"parent": "f9f9-25be-751b-892c",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface272/clienteling/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207?random=0.40020794688372674"
 			}
 		},
 		{
@@ -7571,7 +7571,7 @@
 				"name": "imgShoppingBag",
 				"parent": "9409-7385-94c8-c698",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/shoppingbag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface272/clienteling/ui-editor/img/shoppingbag.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207?random=0.9028485073008257"
 			}
 		},
 		{
@@ -7615,7 +7615,7 @@
 				"name": "imgLookbook",
 				"parent": "9409-7385-94c8-c698",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/lookbook.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface272/clienteling/ui-editor/img/lookbook.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207?random=0.8450365621620897"
 			}
 		}
 	]

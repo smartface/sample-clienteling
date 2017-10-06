@@ -368,7 +368,7 @@
           "alignSelf": "STRETCH"
         },
         "+page:Screen.width > 450": {
-          "maxHeight": 80,
+          "maxHeight": 70,
           "flexProps": {
             "flexDirection": "COLUMN"
           }

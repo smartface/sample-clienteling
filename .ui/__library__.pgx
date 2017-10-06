@@ -50,8 +50,8 @@
 					"ddfa-0686-69f0-77af",
 					"cd3b-2912-1a7f-7558"
 				],
-				"width": 307.5,
-				"height": 546.9399999999999
+				"width": 281.25,
+				"height": 500.25
 			}
 		},
 		{
@@ -100,7 +100,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "4a13-68fd-e0c7-dcfd",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -111,8 +111,8 @@
 			"userProps": {
 				"width": 178.3783783783784,
 				"height": 312.1621621621622,
-				"left": 108,
-				"top": 321.3333333333333,
+				"left": 107.99999961370153,
+				"top": 25.13080065763449,
 				"flexProps": {
 					"justifyContent": "CENTER",
 					"alignItems": "CENTER"
@@ -139,8 +139,8 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 108,
-				"top": 321.3333333333333,
+				"left": 107.99999961370153,
+				"top": 25.13080065763449,
 				"name": "LookbookItem",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -160,17 +160,18 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"width": 138,
+				"width": null,
 				"height": 198.5,
 				"id": 101,
 				"flexProps": {
-					"flexGrow": 5
+					"flexGrow": 5,
+					"alignSelf": "STRETCH"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"height": 198.5,
-				"width": 138,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba(255,255,255,0)",
@@ -179,7 +180,7 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -193,6 +194,7 @@
 				"name": "flPreview",
 				"parent": "4a13-68fd-e0c7-dcfd",
 				"children": [
+					"94fb-9802-376d-cb02",
 					"dd63-e633-58e3-5ef1"
 				]
 			}
@@ -249,6 +251,7 @@
 		{
 			"type": "ImageView",
 			"id": "dd63-e633-58e3-5ef1",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -260,6 +263,7 @@
 				"height": null,
 				"imageFillType": "ASPECTFIT",
 				"id": 110,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -271,7 +275,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(255,255,255,0)",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -303,6 +307,7 @@
 				"height": null,
 				"bottom": null,
 				"id": 103,
+				"maxHeight": 30,
 				"flexProps": {
 					"flexGrow": 2
 				}
@@ -331,6 +336,7 @@
 				},
 				"bottom": null,
 				"id": 103,
+				"maxHeight": 30,
 				"name": "flName",
 				"parent": "fc33-df7a-68a8-cf3c",
 				"children": [
@@ -1288,7 +1294,7 @@
 		{
 			"type": "ListViewItem",
 			"id": "1041-55d5-cb0c-fd5f",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -1328,6 +1334,7 @@
 				"name": "lvCustomerProfileWishlistItem",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
+					"eb01-46c0-3895-e92f",
 					"5d33-ec42-15f9-c94b",
 					"1f67-2d48-76c0-c7af"
 				]
@@ -2050,7 +2057,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface272/clienteling/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2789,7 +2796,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface272/clienteling/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2955,8 +2962,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 39.24050632911392,
-				"top": 465.82278481012656,
+				"left": 44.573839823404946,
+				"top": 377.8227945963542,
 				"width": 276.0869565217391,
 				"height": 44.565217391304344,
 				"flexProps": {
@@ -2985,8 +2992,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 39.24050632911392,
-				"top": 465.82278481012656,
+				"left": 44.573839823404946,
+				"top": 377.8227945963542,
 				"name": "flCustomerProfileMostLikedColors",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -3007,8 +3014,8 @@
 				"text": "Spend per visit",
 				"multiline": true,
 				"usePageVariable": true,
-				"left": 0,
-				"top": 0,
+				"left": null,
+				"top": null,
 				"height": null,
 				"textAlignment": "MIDLEFT",
 				"textColor": "rgba( 166, 166, 166, 1 )",
@@ -3047,8 +3054,8 @@
 				},
 				"text": "Spend per visit",
 				"usePageVariable": true,
-				"left": 0,
-				"top": 0,
+				"left": null,
+				"top": null,
 				"name": "title",
 				"parent": "cae6-e684-ae6f-aaa5",
 				"children": []
@@ -3064,13 +3071,7 @@
 				"Sizes": "Default",
 				"Implementation": "pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor"
 			},
-			"userProps": {
-				"width": null,
-				"flexProps": {
-					"flexDirection": "ROW",
-					"flexGrow": 1
-				}
-			},
+			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor",
 			"props": {
 				"height": 13,
@@ -3247,7 +3248,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "f8b6-a9fc-13a6-9efc",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -3640,7 +3641,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "3725-3a21-8599-f43a",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -4030,7 +4031,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface272/clienteling/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4771,7 +4772,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "6e4d-ec19-d1be-e8f5",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -5624,7 +5625,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface272/clienteling/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5664,7 +5665,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface272/clienteling/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -6797,6 +6798,116 @@
 				"right": 0,
 				"name": "line_1",
 				"parent": "5be9-8547-09ac-6568",
+				"children": []
+			}
+		},
+		{
+			"type": "ActivityIndicator",
+			"id": "94fb-9802-376d-cb02",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Color": "Default"
+			},
+			"userProps": {
+				"bottom": 0,
+				"top": 1.1764705882352942,
+				"left": -1.1764705882352942,
+				"right": 0,
+				"width": null,
+				"height": null,
+				"minWidth": null,
+				"minHeight": null,
+				"color": "rgba( 155, 155, 155, 1 )",
+				"maxWidth": null,
+				"maxHeight": null,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				}
+			},
+			"className": ".activityIndicator",
+			"props": {
+				"touchEnabled": true,
+				"width": null,
+				"height": null,
+				"color": "rgba( 155, 155, 155, 1 )",
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO"
+				},
+				"minHeight": null,
+				"minWidth": null,
+				"bottom": 0,
+				"top": 1.1764705882352942,
+				"left": -1.1764705882352942,
+				"right": 0,
+				"maxWidth": null,
+				"maxHeight": null,
+				"name": "activityIndicator1",
+				"parent": "6f29-5ea0-6987-8dab",
+				"children": []
+			}
+		},
+		{
+			"type": "ActivityIndicator",
+			"id": "eb01-46c0-3895-e92f",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Default",
+				"Color": "Default"
+			},
+			"userProps": {
+				"bottom": 55,
+				"top": 0,
+				"left": 0,
+				"right": 0,
+				"width": null,
+				"height": null,
+				"minWidth": null,
+				"minHeight": null,
+				"color": "rgba( 155, 155, 155, 1 )",
+				"maxWidth": null,
+				"maxHeight": null,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				}
+			},
+			"className": ".activityIndicator",
+			"props": {
+				"touchEnabled": true,
+				"width": null,
+				"height": null,
+				"color": "rgba( 155, 155, 155, 1 )",
+				"visible": true,
+				"backgroundColor": "rgba(255,255,255,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO"
+				},
+				"minHeight": null,
+				"minWidth": null,
+				"bottom": 55,
+				"top": 0,
+				"left": 0,
+				"right": 0,
+				"maxWidth": null,
+				"maxHeight": null,
+				"name": "activityIndicator1",
+				"parent": "1041-55d5-cb0c-fd5f",
 				"children": []
 			}
 		}
