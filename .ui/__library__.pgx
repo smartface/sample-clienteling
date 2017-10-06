@@ -52,8 +52,8 @@
 					"ddfa-0686-69f0-77af",
 					"cd3b-2912-1a7f-7558"
 				],
-				"width": 883.2,
-				"height": 1177.6
+				"width": 296.25,
+				"height": 526.9300000000001
 			}
 		},
 		{
@@ -1929,7 +1929,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
+				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -1939,9 +1939,9 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 3
 				},
-				"marginLeft": null,
+				"marginLeft": 10,
 				"maxWidth": null,
 				"text": "ENGAGEMENT \nSCORE",
 				"usePageVariable": true,
@@ -2051,7 +2051,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2412,7 +2412,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"textColor": "#1D1D26",
-				"textAlignment": "BOTTOMLEFT",
+				"textAlignment": "MIDRIGHT",
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -2790,7 +2790,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2947,7 +2947,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "cae6-e684-ae6f-aaa5",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -2956,8 +2956,8 @@
 				"Implementation": "Default"
 			},
 			"userProps": {
-				"left": 147.2972972972973,
-				"top": 301.35135135135135,
+				"left": 39.24050632911392,
+				"top": 465.82278481012656,
 				"width": 276.0869565217391,
 				"height": 44.565217391304344,
 				"flexProps": {
@@ -2986,8 +2986,8 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"left": 147.2972972972973,
-				"top": 301.35135135135135,
+				"left": 39.24050632911392,
+				"top": 465.82278481012656,
 				"name": "flCustomerProfileMostLikedColors",
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"children": [
@@ -3066,17 +3066,15 @@
 				"Implementation": "pgCustomerProfile-flScecond-infoPart-flColor"
 			},
 			"userProps": {
-				"height": null,
 				"width": null,
 				"flexProps": {
 					"flexDirection": "ROW",
-					"flexGrow": 2.3,
-					"alignItems": "CENTER"
+					"flexGrow": 1
 				}
 			},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart-flColor",
 			"props": {
-				"height": null,
+				"height": 13,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
@@ -3089,12 +3087,12 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
+					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 2.3
+					"flexGrow": 1
 				},
 				"name": "flColor",
 				"parent": "cae6-e684-ae6f-aaa5",
@@ -3167,7 +3165,10 @@
 				"height": 13,
 				"backgroundColor": "rgba( 223, 9, 9, 1 )",
 				"marginLeft": 10,
-				"borderRadius": 3
+				"borderRadius": 3,
+				"flexProps": {
+					"justifyContent": "CENTER"
+				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -3185,7 +3186,7 @@
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
+					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
@@ -4029,7 +4030,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4076,7 +4077,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "cd86-49b6-b456-0d16",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -5623,7 +5624,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5663,7 +5664,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=1&brandModel=iPad%20Mini%204"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
 			}
 		},
 		{

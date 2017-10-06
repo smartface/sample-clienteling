@@ -316,12 +316,12 @@
           "alignContent": "STRETCH",
           "flexGrow": 1
         },
-        "+page:Screen.width > 450": {
+        "+page: Screen.width > Screen.height": {
           "flexProps": {
             "flexDirection": "ROW"
           },
-          "marginTop": 10,
-          "marginBottom": 10,
+          "marginTop": 8,
+          "marginBottom": 5,
           "maxHeight": 80
         },
         "&-itemText": {
@@ -340,7 +340,10 @@
             "textAlignment": "BOTTOMLEFT"
           }
         },
-        "&-flColor": {}
+        "&-flColor": {
+          "width": 100,
+          "height": 13
+        }
       },
       "&-divider": {
         "@extend": ".flexLayout-line",
@@ -453,18 +456,22 @@
       "&_flColor": {
         "@extend": ".infoPartTextBlocks_text",
         "width": null,
-        "height": null,
+        "height": 13,
         "flexProps": {
           "flexGrow": 1,
-          "alignItems": "CENTER",
+          "alignItems": "STRETCH",
           "justifyContent": "FLEX_END",
           "alignContent": "STRETCH",
-          "flexDirection": "ROW"
+          "flexDirection": "ROW",
+          "alignSelf": "CENTER"
         },
-        "+page:Screen.width > 450": {
+        "+page:Screen.width > Screen.height": {
           "flexProps": {
-            "justifyContent": "FLEX_START"
-          }
+            "justifyContent": "FLEX_START",
+            "alignSelf": "STRETCH",
+            "alignItems": "FLEX_END"
+          },
+          "maxHeight": 13
         }
       }
     }

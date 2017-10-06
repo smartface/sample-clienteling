@@ -99,7 +99,7 @@
 				"pgCustomerProfile_swc_flSecond_divider": "#pgCustomerProfile_scw_flSecond_divider",
 				"pgCustomerProfile-flThird-ReserveIndicates": "#pgCustomerProfile-flThird-ReserveIndicates",
 				"pgCustomerProfile-flThird-ReserveIndicates-divider": "#pgCustomerProfile-flThird-ReserveIndicates-divider",
-				"pgCustomerProfile-flScecond-infoPart-flColor": "#pgCustomerProfile-flSecond-infoPart-flColor",
+				"pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor": "#pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor",
 				"pgShoppingBag-FlcontinuButton": ".flexLayout-pgShoppingBagFlContinueButton",
 				"stepper": "#stepper",
 				"stepper-flButtons": "#stepper-flButtons",

@@ -77,13 +77,13 @@ function addInfo(json) {
 	this.joined.title.text = "Joined";
 	this.joined.text.text = "June 15th 17"; // TODO
 
-	this.perVisit.title.text = "Spend per visit";
+	this.perVisit.title.text = "Spent per visit";
 	this.perVisit.text.text = traits.spendsPerVisit.currency + " " + traits.spendsPerVisit.amount;
 
 	this.lastPurchase.title.text = "Last purchase date";
 	this.lastPurchase.text.text = "June 26th 17"; // TODO
 
-	this.store.title.text = "Prefered store";
+	this.store.title.text = "Preferred store";
 	this.store.text.text = traits.preferedStore;
 
 	this.job.title.text = "Job";
@@ -94,6 +94,9 @@ function addInfo(json) {
 
 	this.interest.title.text = "Interests";
 	this.interest.text.text = traits.interests.join(", ");
+	
+	this.mostLikedColors.title.text = "Most liked colors";
+	
 }
 
 function addWardrobe(items) {
