@@ -11,8 +11,8 @@ const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const lookbookService = require("../service/Lookbook");
 const Color = require("sf-core/ui/color");
 
-const ITEM_WIDTH =  157;
-const ITEM_HEIGHT =  275;
+const ITEM_WIDTH = 157;
+const ITEM_HEIGHT = 275;
 var dataset = null;
 
 const PgLookbook = extend(PgLookbookDesign)(
@@ -65,7 +65,8 @@ function redesignListviewItem() {
         positionType: FlexLayout.PositionType.RELATIVE,
         flexGrow: 1,
         marginLeft: 10,
-        marginRight: 10
+        marginRight: 10,
+        backgroundColor: Color.create(200, 241, 241, 241)
     });
     var id = 0;
     var itemCountPerRow = Math.floor(Screen.width / ITEM_WIDTH);
@@ -95,10 +96,10 @@ function redesignListviewItem() {
                 alignItems: FlexLayout.AlignItems.CENTER,
                 alignContent: FlexLayout.AlignContent.STRETCH,
                 height: ITEM_HEIGHT,
+                backgroundColor: Color.WHITE,
                 borderRadius: 10,
                 width: ITEM_WIDTH,
                 paddingTop: 10,
-                backgroundColor: Color.create(200,241,241,241),
                 id: i + 200
             }));
         }
