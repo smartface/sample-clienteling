@@ -16,7 +16,6 @@ commands.addRuntimeCommandFactory(function(type) {
 			return function pageCommand(opts) {
 				opts = merge(opts);
 				var isOK = (function(Screen) { return eval(opts.args); }({ width: Screen.width, height: Screen.height }));
-				// console.log("+page :: " + isOK+" :: "+JSON.stringify(opts.args));
 				return isOK ? opts.value : {};
 			};
 		case '+orientationChange':
@@ -25,27 +24,25 @@ commands.addRuntimeCommandFactory(function(type) {
 				var isOK = (function(Screen, orientation) {
 					return eval(opts.args);
 				}({ width: Screen.width, height: Screen.height }, orientationState));
-				
-				// console.log("+orientationChange :: " + JSON.stringify(opts));
 				return isOK ? opts.value : {};
 			};
 		case "+isTablet_landscape":
 			return function pageCommand(opts) {
-				// console.log("+isTablet_landscape :: " + JSON.stringify(opts));
+				//console.log("+isTablet_landscape :: " + JSON.stringify(opts));
 				opts = merge(opts);
 				var isOK = isTablet && Screen.width > Screen.height;
 				return isOK ? opts.value : {};
 			};
 		case "+isTablet_portrait":
 			return function pageCommand(opts) {
-				// console.log("+isTablet_portrait :: " + JSON.stringify(opts));
+				//console.log("+isTablet_portrait :: " + JSON.stringify(opts));
 				opts = merge(opts);
 				var isOK = isTablet && Screen.width < Screen.height;
 				return isOK ? opts.value : {};
 			};
 		case "+isTablet":
 			return function pageCommand(opts) {
-				// console.log("+isTablet :: " + JSON.stringify(opts));
+				//console.log("+isTablet :: " + JSON.stringify(opts));
 				opts = merge(opts);
 				return isTablet ? opts.value : {};
 			};

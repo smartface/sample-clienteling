@@ -27,11 +27,11 @@ const PgDashboard = extend(PgDashboardDesign)(
         this.imgNotification.onTouchEnded = function() {
             Router.go("pgCustomerProfile");
         };
-        
         this.flHeaderLeft.onTouchEnded = function() {
             Router.sliderDrawer.show();
         };
 
+        pageContextPatch(this, "pgDashboard");
         loadUI.call(this);
 
         this.svMain.subscribeContext = function(e) {
@@ -41,8 +41,6 @@ const PgDashboard = extend(PgDashboardDesign)(
                 }
             }
         }.bind(this.svMain);
-
-        pageContextPatch(this, "pgDashboard");
     });
 
 /**

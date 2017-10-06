@@ -5,7 +5,7 @@ module.exports = function pageContextPatch(page, name){
   page.onLoad = onLoad.bind(page, page.onLoad.bind(page));
   page.onShow = onShow.bind(page, page.onShow.bind(page));
   page.onHide = onHide.bind(page, page.onHide ? page.onHide.bind(page) : null);
-  page.onOrientationChange = onOrientationChange.bind(page, page.onOrientationChange ? page.onOrientationChange.bind(page) : null);
+  const pageOnOrientationChange = onOrientationChange.bind(page, page.onOrientationChange ? page.onOrientationChange.bind(page) : null);
   
   function onLoad(superOnLoad) {
     superOnLoad();
@@ -13,53 +13,53 @@ module.exports = function pageContextPatch(page, name){
   
   function onHide(superOnHide) {
     superOnHide && superOnHide();
+    this.onOrientationChange = function(){};
   }
   
   function onShow(superOnShow) {
     superOnShow();
     
     if(!this.styleContext) {
+      this.styleContext = pageContext.createContext(
+        this,
+        name,
+        null,
+        function reducers(state, actors, action, target) {
+          return state;
+        });
         setTimeout(function(){
-          this.styleContext = pageContext.createContext(
-            this,
-            name,
-            null,
-            function reducers(state, actors, action, target) {
-              return state;
-            });
-    
           this.dispatch({
             type: "invalidate"
           });
-        }.bind(this), 1000);
-        
+          
+          this.layout.applyLayout();
+        }.bind(this), 50);
     } else {
-      setTimeout(function(){
-        this.dispatch({
-          type: "invalidate"
-        });
-      }.bind(this), 100);
+      this.dispatch({
+        type: "invalidate"
+      });
+      this.layout.applyLayout();
     }
     
-    this.layout.applyLayout();
+
+    this.onOrientationChange = pageOnOrientationChange;
   }
   
   function onOrientationChange(superOnOrientationChange) {
-    superOnOrientationChange && superOnOrientationChange();
-    
     this.dispatch({
       type: "orientationStarted"
     });
     
     this.layout.applyLayout();
 
+    superOnOrientationChange && setTimeout(superOnOrientationChange.bind(this),1);
     setTimeout(function() {
       this.dispatch({
         type: "orientationEnded"
       });
 
       this.layout.applyLayout();
-    }.bind(this), 10);
+    }.bind(this), 1);
   };
   
   page.setContextDispatcher = function(dispatcher) {
