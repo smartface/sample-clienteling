@@ -52,8 +52,8 @@
 					"ddfa-0686-69f0-77af",
 					"cd3b-2912-1a7f-7558"
 				],
-				"width": 296.25,
-				"height": 526.9300000000001
+				"width": 307.5,
+				"height": 546.9399999999999
 			}
 		},
 		{
@@ -1897,8 +1897,9 @@
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 3
 				},
+				"maxWidth": 58,
 				"text": "50",
 				"usePageVariable": true,
 				"name": "number",
@@ -2051,7 +2052,7 @@
 				"name": "icon",
 				"parent": "c4c5-2c0a-4dd1-7152",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/anna_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2790,7 +2791,7 @@
 				"name": "image",
 				"parent": "cdee-436a-2eb5-b887",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3063,7 +3064,7 @@
 			},
 			"themeProps": {
 				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-flScecond-infoPart-flColor"
+				"Implementation": "pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor"
 			},
 			"userProps": {
 				"width": null,
@@ -3072,7 +3073,7 @@
 					"flexGrow": 1
 				}
 			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart-flColor",
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor",
 			"props": {
 				"height": 13,
 				"width": null,
@@ -3084,16 +3085,17 @@
 				"borderWidth": 0,
 				"font": {},
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "CENTER",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
+					"justifyContent": "FLEX_END",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"textAlignment": "MIDRIGHT",
 				"name": "flColor",
 				"parent": "cae6-e684-ae6f-aaa5",
 				"children": [
@@ -3119,7 +3121,7 @@
 				"backgroundColor": "rgba( 182, 138, 247, 1 )",
 				"marginLeft": 10,
 				"borderRadius": 3,
-				"marginRight": 10
+				"marginRight": null
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -3144,7 +3146,7 @@
 				},
 				"marginLeft": 10,
 				"borderRadius": 3,
-				"marginRight": 10,
+				"marginRight": null,
 				"name": "color1",
 				"parent": "cf1b-dab0-1ecb-0afa",
 				"children": []
@@ -4030,7 +4032,7 @@
 				"name": "imgExclamation",
 				"parent": "c008-5a4e-2dec-9d45",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/blue_exclamation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5624,7 +5626,7 @@
 				"name": "down",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/downtriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5664,7 +5666,7 @@
 				"name": "up",
 				"parent": "6fd8-cd8c-3fbb-f64d",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.79&brandModel=iPhone%207"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/uptriangle.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.82&brandModel=iPhone%207"
 			}
 		},
 		{
