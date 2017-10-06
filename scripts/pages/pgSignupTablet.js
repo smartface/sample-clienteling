@@ -48,6 +48,7 @@ function onShow(superOnShow, data) {
         if (err)
           return alert("Cannot login. Check user name and password. Or system is down");
         fingerprintResult && fingerprintResult.success(); //Important!
+        page.indicator.visible = false;
         Router.go('pgDashboard', {
           //some data
         });
@@ -71,6 +72,7 @@ function onPressSignup() {
   if (System.OS === "Android") {
     return Router.go("pgDashboard");
   }
+  page.indicator.visible = true;
   fingerprint.loginWithFingerprint();
 }
 

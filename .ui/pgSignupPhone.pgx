@@ -33,8 +33,8 @@
 					"eed5-adce-b93c-8173",
 					"c868-c144-5c0f-6155"
 				],
-				"width": 365.5384615384615,
-				"height": 585.6061538461538
+				"width": 240,
+				"height": 426.88
 			}
 		},
 		{
@@ -391,8 +391,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -405,8 +405,11 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
+				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
 				"children": [],
 				"parent": "076e-47c9-12e8-938b",
 				"name": "flLine"
@@ -568,8 +571,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -582,8 +585,11 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
+				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b",
 				"name": "flLine"
@@ -749,7 +755,8 @@
 				"name": "flSignup",
 				"parent": "85cb-ef9b-d868-698e",
 				"children": [
-					"31a0-dfc1-b0fb-8936"
+					"31a0-dfc1-b0fb-8936",
+					"f7b6-6f73-6779-bcdc"
 				]
 			}
 		},
@@ -973,7 +980,7 @@
 				"name": "imgBanner",
 				"parent": "7eb6-9fa4-2799-664c",
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=Android&osVersion=7&density=423&densityRatio=0.3846153846153846&zoomLevel=0.88&brandModel=Nexus%205X&resourceFolderOrder=drawable-xxhdpi%2Cdrawable-xxxhdpi%2Cdrawable-xhdpi%2Cdrawable-hdpi%2Cdrawable-mdpi%2Cdrawable-ldpi%2Cdrawable"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.64&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1175,6 +1182,58 @@
 				"top": null,
 				"name": "lblTitle",
 				"parent": "eed5-adce-b93c-8173",
+				"children": []
+			}
+		},
+		{
+			"type": "ActivityIndicator",
+			"id": "f7b6-6f73-6779-bcdc",
+			"themeProps": {
+				"Sizes": "Default",
+				"Color": "Default"
+			},
+			"userProps": {
+				"width": 50,
+				"height": null,
+				"minWidth": null,
+				"minHeight": null,
+				"left": null,
+				"right": 0,
+				"top": 0,
+				"bottom": 0,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"color": "rgba( 255, 255, 255, 1 )",
+				"visible": false,
+				"usePageVariable": true,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				}
+			},
+			"className": ".activityIndicator",
+			"props": {
+				"touchEnabled": true,
+				"width": 50,
+				"height": null,
+				"color": "rgba( 255, 255, 255, 1 )",
+				"visible": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO"
+				},
+				"minHeight": null,
+				"minWidth": null,
+				"left": null,
+				"right": 0,
+				"top": 0,
+				"bottom": 0,
+				"usePageVariable": true,
+				"name": "indicator",
+				"parent": "ec72-6d93-7723-3f20",
 				"children": []
 			}
 		}

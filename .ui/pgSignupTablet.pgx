@@ -33,8 +33,8 @@
 					"8668-e576-bebf-2bb0",
 					"85f3-4d55-de4a-fe98"
 				],
-				"width": 694.7839999999999,
-				"height": 521.088
+				"width": 240,
+				"height": 426.88
 			}
 		},
 		{
@@ -107,7 +107,7 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
@@ -214,7 +214,7 @@
 				"name": "imgBanner",
 				"parent": "25f8-b6c1-967d-a7e3",
 				"children": [],
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=324&densityRatio=0.5&zoomLevel=0.59&brandModel=iPad%20Mini%204"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/signup_banner.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.64&brandModel=iPhone%207?random=0.6450032549339424"
 			}
 		},
 		{
@@ -247,7 +247,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"marginBottom": 80,
+				"marginBottom": null,
 				"name": "flInfo",
 				"parent": "85f3-4d55-de4a-fe98",
 				"children": [
@@ -417,8 +417,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -431,8 +431,11 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
+				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
 				"children": [],
 				"parent": "b980-8891-42c7-67ca",
 				"name": "flLine"
@@ -598,8 +601,8 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
+				"backgroundColor": "#979797",
+				"alpha": 0.5,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
@@ -612,8 +615,11 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 0
+					"flexGrow": 1
 				},
+				"maxHeight": 1,
+				"marginLeft": 4,
+				"marginRight": 4,
 				"children": [],
 				"parent": "8fe8-6348-112c-7fea",
 				"name": "flLine"
@@ -768,7 +774,8 @@
 				"name": "flSignup",
 				"parent": "a560-fcae-9e93-0a16",
 				"children": [
-					"3fe7-ad5f-0e4a-b97e"
+					"3fe7-ad5f-0e4a-b97e",
+					"515c-b90b-3b02-7dd9"
 				]
 			}
 		},
@@ -807,6 +814,7 @@
 					"alignSelf": "AUTO",
 					"flexGrow": 1
 				},
+				"maxHeight": 70,
 				"marginLeft": 20,
 				"marginRight": 20,
 				"text": "Sign In",
@@ -842,9 +850,9 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"flexGrow": 2
+					"flexGrow": 1
 				},
 				"name": "flOther",
 				"parent": "a560-fcae-9e93-0a16",
@@ -886,12 +894,14 @@
 				},
 				"flexProps": {
 					"positionType": "RELATIVE",
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"flexGrow": 1
 				},
+				"maxHeight": 70,
 				"marginLeft": 20,
-				"marginRight": 20,
-				"marginBottom": 10,
+				"marginRight": 10,
+				"marginBottom": null,
+				"marginTop": null,
 				"text": "Login with Facebook",
 				"usePageVariable": true,
 				"name": "btnFacebook",
@@ -917,11 +927,11 @@
 				"height": 70,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#FFFFFF",
+				"backgroundColor": "rgba(103,164,231,1)",
 				"alpha": 1,
-				"borderColor": "#979393",
-				"borderWidth": 1,
-				"textColor": "rgba(103,164,231,1)",
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 28,
@@ -931,12 +941,13 @@
 				},
 				"flexProps": {
 					"positionType": "RELATIVE",
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"flexGrow": 1
 				},
-				"marginLeft": 20,
+				"maxHeight": 70,
+				"marginLeft": 10,
 				"marginRight": 20,
-				"marginTop": 10,
+				"marginTop": null,
 				"text": "Anonymous Login",
 				"usePageVariable": true,
 				"name": "btnAnonymous",
@@ -1088,6 +1099,60 @@
 				"top": null,
 				"name": "lblTitle",
 				"parent": "8668-e576-bebf-2bb0",
+				"children": []
+			}
+		},
+		{
+			"type": "ActivityIndicator",
+			"id": "515c-b90b-3b02-7dd9",
+			"themeProps": {
+				"Sizes": "Default",
+				"Color": "Default"
+			},
+			"userProps": {
+				"width": 50,
+				"height": null,
+				"minWidth": null,
+				"minHeight": null,
+				"left": null,
+				"right": 20,
+				"top": 0,
+				"bottom": 0,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"color": "rgba( 255, 255, 255, 1 )",
+				"visible": false,
+				"usePageVariable": true,
+				"marginRight": null,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				}
+			},
+			"className": ".activityIndicator",
+			"props": {
+				"touchEnabled": true,
+				"width": 50,
+				"height": null,
+				"color": "rgba( 255, 255, 255, 1 )",
+				"visible": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO"
+				},
+				"minHeight": null,
+				"minWidth": null,
+				"left": null,
+				"right": 20,
+				"top": 0,
+				"bottom": 0,
+				"usePageVariable": true,
+				"marginRight": null,
+				"name": "indicator",
+				"parent": "4309-0f0c-2018-4d90",
 				"children": []
 			}
 		}
