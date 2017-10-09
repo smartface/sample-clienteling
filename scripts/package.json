@@ -4,7 +4,7 @@
     "js-base": "^1.0.0",
     "mixin-deep": "^1.2.0",
     "sf-core": "^2.0.0",
-    "sf-extension-mcs": "git+https://github.com/smartface/sf-extension-mcs.git",
+    "sf-extension-mcs": "^2.1.0",
     "sf-extension-utils": "^3.1.1"
   }
 }
