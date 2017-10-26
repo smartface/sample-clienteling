@@ -11,7 +11,7 @@
 				"orientation": "AUTO"
 			},
 			"className": ".page",
-			"version": "6.5.1",
+			"version": "6.5.2",
 			"props": {
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -522,47 +522,6 @@
 				"parent": "842d-3186-5326-4b81",
 				"children": [],
 				"imageURL": "https://dispatcher.r0.smartface.io/smartface3257/clienteling/ui-editor/img/sunglasses.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "7e01-c936-ddc4-5bda",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"name": "flInfo",
-				"parent": "842d-3186-5326-4b81",
-				"children": []
 			}
 		},
 		{

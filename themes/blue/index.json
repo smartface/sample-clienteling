@@ -58,7 +58,6 @@
 				"pgSignupPhone-Anonymous": "#pgSignupPhone.btn.btnAnonymous",
 				"pgMainLookbook-ShopNow": "#pgMainLookbook.btnShopNow",
 				"pgCustomerProfile-flFirst-flButtons-btn": "#pgCustomerProfile_flFirst_flButtons_btn"
-
 			}
 		},
 		"FlexLayout": {
