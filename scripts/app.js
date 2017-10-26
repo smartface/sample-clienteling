@@ -9,6 +9,26 @@ Application.onUnhandledError = function(e) {
     });
 };
 
+
+const Application = require("sf-core/application");
+const createThemeContextBound = require("@smartface/contx/lib/styling/ThemeContext").createThemeContextBound;
+
+// Set uncaught exception handler, all exceptions that are not caught will
+// trigger onUnhandledError callback.
+Application.onUnhandledError = function(e) {
+    alert({
+        title: lang.applicationError,
+        message: e.message + "\n\n*" + e.sourceURL + "\n*" + e.line + "\n*" + e.stack
+    });
+};
+
+Application.theme = createThemeContextBound(
+    [
+        {name: "default", rawStyles: require("./themes/Defaults"), isDefault: false},
+        {name: "blue", rawStyles: require("./themes/blue"), isDefault: true}
+    ]
+);
+
 require("sf-extension-utils");
 
 const mcs = require("./lib/mcs");
@@ -17,10 +37,10 @@ const System = require("sf-core/device/system");
 const isTablet = require("./lib/isTablet");
 var settings = require("./settings.json");
 var themeSettings = settings.config.theme;
-var stylerBuilder = require("library/styler-builder");
+// var stylerBuilder = require("library/styler-builder");
 
-stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
-stylerBuilder.setActiveTheme(themeSettings.currentTheme);
+// stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
+// stylerBuilder.setActiveTheme(themeSettings.currentTheme);
 
 var sliderDrawer;
 

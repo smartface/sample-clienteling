@@ -1,7 +1,6 @@
 const extend = require('js-base/core/extend');
 const PgMainLookbookDesign = require('ui/ui_pgMainLookbook');
 const Router = require("sf-core/ui/router");
-const pageContextPatch = require("../context/pageContextPatch");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 
 const PgMainLookbook = extend(PgMainLookbookDesign)(
@@ -16,8 +15,6 @@ const PgMainLookbook = extend(PgMainLookbookDesign)(
     this.flWomen.onTouchEnded = function() {
       Router.go("pgLookbook");
     };
-
-    pageContextPatch(this, "pgMainLookbook");
   });
 
 function onShow(superOnShow) {
