@@ -1,6 +1,5 @@
 const extend = require('js-base/core/extend');
 const PgSignupPhoneDesign = require('ui/ui_pgSignupPhone');
-const pageContextPatch = require("../context/pageContextPatch");
 const Router = require("sf-core/ui/router");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const authService = require("../service/AuthService");
@@ -11,14 +10,15 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
   // Constructor
   function(_super) {
     _super(this);
+
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+
     this.btnSignup.onPress = onPressSignup.bind(this);
     this.btnAnonymous.onPress = onPressAnonymous;
     this.btnFacebook.onPress = onPressFacebook;
     this.taUserID.ios &&  (this.taUserID.ios.clearButtonEnabled = true);
     this.taPassword.ios &&  (this.taPassword.ios.clearButtonEnabled = true);
-    pageContextPatch(this, "pgSignupPhone");
   });
 
 /**
