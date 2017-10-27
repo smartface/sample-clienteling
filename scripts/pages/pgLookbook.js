@@ -6,7 +6,6 @@ const FlexLayout = require('sf-core/ui/flexlayout');
 const LookbookItem = require("components/LookbookItem");
 const Screen = require('sf-core/device/screen');
 const Router = require("sf-core/ui/router");
-const pageContextPatch = require("../context/pageContextPatch");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const lookbookService = require("../service/Lookbook");
 const Color = require("sf-core/ui/color");
@@ -26,7 +25,6 @@ const PgLookbook = extend(PgLookbookDesign)(
         this.flHeaderLeft.onTouchEnded = function() {
             Router.goBack();
         };
-        pageContextPatch(this, "pgLookBook");
         loadUI.call(this);
     });
 

@@ -2,7 +2,6 @@ const extend = require('js-base/core/extend');
 const PgDashboardDesign = require('ui/ui_pgDashboard');
 const Router = require("sf-core/ui/router");
 const Color = require('sf-core/ui/color');
-const pageContextPatch = require("../context/pageContextPatch");
 const FlDashboardItem1 = require('components/FlDashboardItem1');
 const FlDashboardItem2 = require('components/FlDashboardItem2');
 const FlDashboardItem3 = require('components/FlDashboardItem3');
@@ -27,20 +26,24 @@ const PgDashboard = extend(PgDashboardDesign)(
         this.imgNotification.onTouchEnded = function() {
             Router.go("pgCustomerProfile");
         };
+        
         this.flHeaderLeft.onTouchEnded = function() {
             Router.sliderDrawer.show();
         };
 
-        pageContextPatch(this, "pgDashboard");
-        loadUI.call(this);
-
         this.svMain.subscribeContext = function(e) {
             if (e.type == "new-styles") {
-                if (e.data["layoutHeight"]) {
-                    this.layout.height = e.data["layoutHeight"];
-                }
+                Object.keys(e.data).forEach(function(key){
+                    if (key === "layoutHeight") {
+                        this.layout.height = e.data[key];
+                    } else {
+                        this[key] = e.data[key];
+                    }
+                }.bind(this))
             }
         }.bind(this.svMain);
+    
+        loadUI.call(this);
     });
 
 /**
@@ -61,15 +64,21 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
     superOnLoad();
-    const page = this;
-    adjustHeaderBar(page);
-    page.imgSignOut.onTouchEnded = function() {
+    adjustHeaderBar(this);
+    
+    this.imgSignOut.onTouchEnded = function() {
         Router.goBack(isTablet ? "pgSignupTablet" : "pgSignupPhone");
     };
+    
+    this.dispatch({
+        type: "invalidateContext"
+    });
 }
 
 function addReservations(items) {
     var page = this;
+    page.flReservationItems.children = page.flReservationItems.children || [];
+    
     items.forEach(function(item, index) {
         var flDashboardItem1 = new FlDashboardItem1();
         flDashboardItem1.width = NaN;
@@ -77,6 +86,8 @@ function addReservations(items) {
         flDashboardItem1.lblItemType.text = item.orderType;
         flDashboardItem1.lblItemName.text = item.employee;
         flDashboardItem1.lblItemTitle.text = item.location;
+        page.children[""]
+        
         if (index === items.length - 1)
             flDashboardItem1.flLine.visible = false;
         if (item.location.toLowerCase() === "out of store") {
@@ -84,12 +95,15 @@ function addReservations(items) {
         }
         // TODO: Date
         page.flReservationItems.addChild(flDashboardItem1);
+        page.flReservationItems.children["flDashboardItem1_"+index] = flDashboardItem1;
         page.flReservationItems.height += flDashboardItem1.height;
     });
 }
 
 function addTodos(items) {
     var page = this;
+    page.flTodoItems.children = page.flTodoItems.children || [];
+    
     items.forEach(function(item, index) {
         var flDashboardItem2 = new FlDashboardItem2();
         flDashboardItem2.width = NaN;
@@ -105,12 +119,15 @@ function addTodos(items) {
         }
         // TODO: Date
         page.flTodoItems.addChild(flDashboardItem2);
+        page.flTodoItems.children["flDashboardItem2_"+index] = flDashboardItem2;
         page.flTodoItems.height += flDashboardItem2.height;
     });
 }
 
 function addOpenIncidents(items) {
     var page = this;
+    page.flOpenIncidentItems.children = page.flOpenIncidentItems.children || [];
+    
     items.forEach(function(item, index) {
         var flDashboardItem3 = new FlDashboardItem3();
         flDashboardItem3.width = NaN;
@@ -126,12 +143,14 @@ function addOpenIncidents(items) {
         }
         // TODO: Date
         page.flOpenIncidentItems.addChild(flDashboardItem3);
+        page.flOpenIncidentItems.children["flDashboardItem3_"+index] = flDashboardItem3;
         page.flOpenIncidentItems.height += flDashboardItem3.height;
     });
 }
 
 function addStoreAndCorporateNews(items) {
     var page = this;
+    page.flNewsItems.children = page.flNewsItems.children || [];
     items.forEach(function(item, index) {
         var flDashboardItem4 = new FlDashboardItem4();
         flDashboardItem4.width = NaN;
@@ -143,12 +162,15 @@ function addStoreAndCorporateNews(items) {
         if (index === items.length - 1)
             flDashboardItem4.flLine.visible = false;
         page.flNewsItems.addChild(flDashboardItem4);
+        page.flNewsItems.children["flDashboardItem4_"+index] = flDashboardItem4;
         page.flNewsItems.height += flDashboardItem4.height;
     });
 }
 
 function addIncomingShipments(items) {
     var page = this;
+    page.flShipmentsItems.children = page.flShipmentsItems.children || [];
+
     items.forEach(function(item, index) {
         var flDashboardItem5 = new FlDashboardItem5();
         flDashboardItem5.width = NaN;
@@ -160,12 +182,15 @@ function addIncomingShipments(items) {
         if (index === items.length - 1)
             flDashboardItem5.flLine.visible = false;
         page.flShipmentsItems.addChild(flDashboardItem5);
+        page.flShipmentsItems.children["flDashboardItem5_"+index] = flDashboardItem5;
         page.flShipmentsItems.height += flDashboardItem5.height;
     });
 }
 
 function addSocialActivities(items) {
     var page = this;
+    page.flSocialActivityItems.children = page.flSocialActivityItems.children || [];
+    
     items.forEach(function(item, index) {
         var flDashboardItem3 = new FlDashboardItem3();
         flDashboardItem3.width = NaN;
@@ -177,6 +202,7 @@ function addSocialActivities(items) {
         if (index === items.length - 1)
             flDashboardItem3.flLine.visible = false;
         page.flSocialActivityItems.addChild(flDashboardItem3);
+        page.flSocialActivityItems.children["flDashboardItem3_"+index] = flDashboardItem3;
         page.flSocialActivityItems.height += flDashboardItem3.height;
     });
 }
@@ -209,6 +235,7 @@ function loadUI() {
     addStoreAndCorporateNews.call(this, json.storeAndCorporateNews);
     addIncomingShipments.call(this, json.incomingShipments);
     addSocialActivities.call(this, json.socialActivityMonitor);
+    
     //    });
     //});
 }

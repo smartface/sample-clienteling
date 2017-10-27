@@ -2,7 +2,6 @@ const extend = require('js-base/core/extend');
 const Router = require("sf-core/ui/router");
 const PgShoppingBagDesign = require('ui/ui_pgShoppingBag');
 const Color = require("sf-core/ui/color");
-const pageContextPatch = require("../context/pageContextPatch");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 
 const TRANSPARENT_GRAY = Color.create(15, 125, 125, 125);
@@ -12,12 +11,11 @@ const PgShoppingBag = extend(PgShoppingBagDesign)(
     _super(this);
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    this.onOrientationChange = onOrientationChange.bind(this);
+    this.onOrientationChange = onOrientationChange.bind(this, this.onOrientationChange.bind(this));
 
     this.flHeaderLeft.onTouchEnded = function() {
       Router.goBack();
     };
-    //pageContextPatch(this, "pgShoppingBag");
   });
 
 /**
@@ -49,7 +47,8 @@ function onLoad(superOnLoad) {
 }
 
 
-function onOrientationChange() {
+function onOrientationChange(superOnOrientationChange) {
+  superOnOrientationChange && superOnOrientationChange();
   this.lvShoppingBag.refreshData();
   this.lvShoppingBag.stopRefresh();
 }

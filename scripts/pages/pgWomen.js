@@ -1,6 +1,5 @@
 const extend = require('js-base/core/extend');
 const PgWomenDesign = require('ui/ui_pgWomen');
-const pageContextPatch = require("../context/pageContextPatch");
 const pgWomenSwipePageFactory = require("pages/pgWomenSwipePageFactory");
 const SwipeView = require("sf-core/ui/swipeview");
 const Router = require("sf-core/ui/router");
@@ -31,7 +30,6 @@ const PgWomen = extend(PgWomenDesign)(
       }
     };
     initDotIndicator(this);
-    pageContextPatch(this, "pgWomen");
     loadUI.call(this);
   });
 

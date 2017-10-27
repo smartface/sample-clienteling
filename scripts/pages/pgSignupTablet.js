@@ -1,6 +1,5 @@
 const extend = require('js-base/core/extend');
 const PgSignupTabletDesign = require('ui/ui_pgSignupTablet');
-const pageContextPatch = require("../context/pageContextPatch");
 const Router = require("sf-core/ui/router");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const authService = require("../service/AuthService");
@@ -18,7 +17,6 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
     this.btnFacebook.onPress = onPressFacebook;
     this.taUserID.ios &&  (this.taUserID.ios.clearButtonEnabled = true);
     this.taPassword.ios &&  (this.taPassword.ios.clearButtonEnabled = true);
-    pageContextPatch(this, "pgSignupTablet");
   });
 
 /**

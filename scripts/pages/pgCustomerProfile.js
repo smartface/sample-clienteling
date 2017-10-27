@@ -1,6 +1,5 @@
 const extend = require('js-base/core/extend');
 const PgCustomerProfileDesign = require('ui/ui_pgCustomerProfile');
-const pageContextPatch = require("../context/pageContextPatch");
 const FlWardrobe = require("components/FlWardrobe");
 const FlCustomerProfileReservationItem = require("components/FlCustomerProfileReservationItem");
 const LvCustomerProfileWishlistItem = require("components/LvCustomerProfileWishlistItem");
@@ -15,7 +14,6 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 		loadUI.call(this);
-		pageContextPatch(this, "pgCustomerProfile");
 
 		this.shoppingBag.onPress = function() {
 			Router.go("pgShoppingBag");
@@ -33,12 +31,15 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 			Router.go("pgShoppingBag");
 		};
 		this.scw.subscribeContext = function(e) {
-			if (e.type == "new-styles") {
-				if (e.data["layoutHeight"]) {
-					this.layout.height = e.data["layoutHeight"];
-				}
-
-			}
+            if (e.type == "new-styles") {
+                Object.keys(e.data).forEach(function(key){
+                    if (key === "layoutHeight") {
+                        this.layout.height = e.data[key];
+                    } else {
+                        this[key] = e.data[key];
+                    }
+                }.bind(this))
+            }
 		}.bind(this.scw);
 	});
 
