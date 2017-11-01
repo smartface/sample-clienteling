@@ -13,19 +13,7 @@
 			"className": ".page",
 			"version": "6.5.2",
 			"props": {
-				"flexProps": {
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START"
-				},
-				"backgroundColor": "#FFFFFF",
-				"font": {},
-				"orientation": "AUTO",
 				"name": "pgLookbook",
-				"parent": null,
 				"children": [
 					"6a4e-b0a2-5de1-2a20",
 					"1709-15ff-299c-d200",
@@ -33,8 +21,8 @@
 					"3a0b-fc71-d956-7be3",
 					"4e6d-4b6a-ed73-f480"
 				],
-				"width": 288.75,
-				"height": 513.59
+				"parent": null,
+				"orientation": "AUTO"
 			}
 		},
 		{
@@ -46,14 +34,9 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#424242",
-				"visible": true,
-				"font": {},
-				"flexProps": {},
-				"style": "LIGHTCONTENT",
 				"name": "statusBar",
-				"parent": "599f-a414-1eef-1663",
 				"children": [],
+				"parent": "599f-a414-1eef-1663",
 				"isRemovable": false
 			}
 		},
@@ -69,15 +52,10 @@
 			},
 			"className": ".headerBar",
 			"props": {
-				"title": "LOOKBOOK",
-				"titleColor": "#FFFFFF",
-				"visible": false,
-				"backgroundColor": "#202020",
-				"font": {},
-				"flexProps": {},
 				"name": "headerBar",
-				"parent": "599f-a414-1eef-1663",
+				"title": "LOOKBOOK",
 				"children": [],
+				"parent": "599f-a414-1eef-1663",
 				"isRemovable": false
 			}
 		},
@@ -99,27 +77,10 @@
 			},
 			"className": ".listView",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"multiline": false,
-				"rowHeight": 300,
-				"itemCount": 5,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"usePageVariable": true,
 				"name": "lvMain",
-				"parent": "599f-a414-1eef-1663",
-				"children": []
+				"usePageVariable": true,
+				"children": [],
+				"parent": "599f-a414-1eef-1663"
 			}
 		},
 		{
@@ -139,31 +100,10 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 20,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
-				"usePageVariable": true,
-				"left": 0,
-				"top": 0,
 				"name": "flStatusBarBg",
-				"parent": "599f-a414-1eef-1663",
-				"children": []
+				"usePageVariable": true,
+				"children": [],
+				"parent": "599f-a414-1eef-1663"
 			}
 		},
 		{
@@ -186,34 +126,13 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 50,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "SPACE_BETWEEN",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
 				"name": "flHeaderBar",
-				"parent": "599f-a414-1eef-1663",
 				"children": [
 					"a513-b2ff-d675-412f",
 					"c2f1-4bd5-7823-1685",
 					"f759-31e4-98d5-b77b"
-				]
+				],
+				"parent": "599f-a414-1eef-1663"
 			}
 		},
 		{
@@ -235,33 +154,12 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"minWidth": null,
-				"usePageVariable": true,
 				"name": "flHeaderLeft",
-				"parent": "3a0b-fc71-d956-7be3",
+				"usePageVariable": true,
 				"children": [
 					"9655-c9e8-b911-fefd"
-				]
+				],
+				"parent": "3a0b-fc71-d956-7be3"
 			}
 		},
 		{
@@ -285,30 +183,10 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": 20,
-				"height": 20,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
-				"image": "back.png",
-				"left": 14,
-				"top": 14,
-				"bottom": null,
-				"usePageVariable": false,
 				"name": "imgLeft",
-				"parent": "a513-b2ff-d675-412f",
+				"usePageVariable": false,
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.77&brandModel=iPhone%207"
+				"parent": "a513-b2ff-d675-412f"
 			}
 		},
 		{
@@ -329,32 +207,11 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 2
-				},
-				"minWidth": null,
 				"name": "flHeaderMiddle",
-				"parent": "3a0b-fc71-d956-7be3",
 				"children": [
 					"af14-e46e-7540-84b8"
-				]
+				],
+				"parent": "3a0b-fc71-d956-7be3"
 			}
 		},
 		{
@@ -379,32 +236,10 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 15,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"text": "LOOKBOOK",
 				"name": "lblTitle",
-				"parent": "c2f1-4bd5-7823-1685",
-				"children": []
+				"text": "LOOKBOOK",
+				"children": [],
+				"parent": "c2f1-4bd5-7823-1685"
 			}
 		},
 		{
@@ -417,30 +252,9 @@
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile.rightItem",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_END",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"paddingRight": 17.5,
 				"name": "flHeaderRight",
-				"parent": "3a0b-fc71-d956-7be3",
-				"children": []
+				"children": [],
+				"parent": "3a0b-fc71-d956-7be3"
 			}
 		}
 	]

@@ -1,4 +1,12 @@
 {
+  ".dashboardDataElement": {
+    "width": null,
+    "height": 80,
+    "left": null,
+    "top": null,
+    "right": null,
+    "bottom": null
+  },
   "#pgDashboard": {
     ".svMain": {
       "height": null,

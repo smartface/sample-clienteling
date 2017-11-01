@@ -12,7 +12,6 @@ const FlDashboardItem2 = extend(FlDashboardItem2Design)(
     _super(this, props || FlDashboardItem2Design.defaults);
     this.pageName = pageName;
   }
-
 );
 
 module && (module.exports = FlDashboardItem2);

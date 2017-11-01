@@ -102,7 +102,9 @@ function addInfo(json) {
 
 function addWardrobe(items) {
 	this.swWardrobe.layout.removeAll();
-	items.forEach(item => {
+	this.swWardrobe.children = this.swWardrobe.children || {};
+
+	items.forEach((item, index) => {
 		var fl = new FlWardrobe({
 			marginRight: 20,
 			width: 300,
@@ -114,6 +116,7 @@ function addWardrobe(items) {
 			model: item.productId
 		});
 		this.swWardrobe.layout.addChild(fl);
+		this.swWardrobe.children[item.name+index] = fl;
 	});
 }
 
@@ -124,26 +127,30 @@ function addWardrobe(items) {
  */
 function addReservations(items) {
 	this.scFlReservations.layout.removeAll();
-	items.forEach(item => {
+	this.scFlReservations.children = this.scFlReservations.children || {};
+	items.forEach((item, index) => {
 		var fl = new FlCustomerProfileReservationItem({
 			width: 140,
 			height: 50,
 			marginRight: 20
 		}, item);
 		this.scFlReservations.layout.addChild(fl);
+		this.scFlReservations.children["reservations_"+index] = fl;
 	});
 	this.scFlReservations.layout.width = 170 * items.length;
 }
 
 function addOpenIncidents(items) {
 	this.scwIndicates.layout.removeAll();
-	items.forEach(item => {
+	this.scwIndicates.children = this.scwIndicates.children || {};
+	items.forEach((item, index) => {
 		var fl = new FlCustomerProfileReservationItem({
 			width: 140,
 			height: 50,
 			marginRight: 20
 		}, item);
 		this.scwIndicates.layout.addChild(fl);
+		this.scwIndicates.children["incitends"+index] = fl;
 	});
 	this.scwIndicates.layout.width = 170 * items.length;
 }

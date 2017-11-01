@@ -26,10 +26,10 @@ const settings = require("./settings.json");
 
 // Deprecated
 var themeSettings = settings.config.theme;
-var stylerBuilder = require("library/styler-builder");
+// var stylerBuilder = require("library/styler-builder");
 
-stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
-stylerBuilder.setActiveTheme(themeSettings.currentTheme);
+// stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
+// stylerBuilder.setActiveTheme(themeSettings.currentTheme);
 // ------------
 
 var sliderDrawer;

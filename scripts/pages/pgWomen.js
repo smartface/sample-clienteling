@@ -22,8 +22,7 @@ const PgWomen = extend(PgWomenDesign)(
         Object.keys(e.data).forEach(function(key) {
           if (flexProps.some(function(prop) { return prop == key })) {
             this.layout[key] = e.data[key];
-          }
-          else {
+          } else {
             this[key] = e.data[key];
           }
         }.bind(this));

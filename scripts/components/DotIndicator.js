@@ -6,12 +6,12 @@ const Color = require("sf-core/ui/color");
 const FlexLayout = require('sf-core/ui/flexlayout');
 
 const DotIndicatorDesign = require('library/DotIndicator');
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
-const ItemStyle = getCombinedStyle(".flexLayout .flexLayout-dotIndicator-item.inactive", {});
+// const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
+// const ItemStyle = getCombinedStyle(".flexLayout .flexLayout-dotIndicator-item.inactive", {});
 
 const PREFIX = "dot";
-var activeSettings = getCombinedStyle(".flexLayout-dotIndicator-item.active", {});
-var inactiveSettings = getCombinedStyle(".flexLayout-dotIndicator-item.inactive", {});
+// var activeSettings = getCombinedStyle(".flexLayout-dotIndicator-item.active", {});
+// var inactiveSettings = getCombinedStyle(".flexLayout-dotIndicator-item.inactive", {});
 
 const DotIndicator = extend(DotIndicatorDesign)(
 	//constructor
@@ -54,7 +54,7 @@ const DotIndicator = extend(DotIndicatorDesign)(
 					}
 					
 					_size = value;
-					setSize(this, _size);
+					setSize.call(this, _size);
 				}
 			},
 			'activeColor': {
@@ -80,29 +80,35 @@ const DotIndicator = extend(DotIndicatorDesign)(
 );
 
 function invalidate(indicator) {
-	if (indicator.activeColor !== null) {
+/*	if (indicator.activeColor !== null) {
 		activeSettings.backgroundColor = indicator.activeColor;
 	}
 	if (indicator.inactiveColor !== null) {
 		inactiveSettings.backgroundColor = indicator.inactiveColor;
 	}
-	
-	Object.assign(indicator.children[PREFIX + indicator.lastActiveIndex], inactiveSettings);
-	Object.assign(indicator.children[PREFIX + indicator.currentIndex], activeSettings);
+*/	
+	// Object.assign(indicator.children[PREFIX + indicator.lastActiveIndex], inactiveSettings);
+	// Object.assign(indicator.children[PREFIX + indicator.currentIndex], activeSettings);
 }
 
-function setSize(indicator, newSize) {
-	indicator.width = newSize * 14;
-	indicator.applyLayout();
+function setSize(newSize) {
+	this.width = newSize * 14;
+	this.applyLayout();
 	
-	indicator.removeAll();
-	indicator.children = {};
+	this.removeAll();
+	this.children = {};
+	
 	for (var i = 0; i < newSize; i++) {
-		indicator.children[PREFIX+i] = new FlexLayout(ItemStyle);
-		indicator.addChild(indicator.children[PREFIX+i]);
+		this.children[PREFIX+i] = new FlexLayout();
+		this.addChild(this.children[PREFIX+i]);
 	}
 	
-	invalidate(indicator);
+	invalidate(this);
+	
+	this.dispatch({
+		type: "invalidateContext"
+	})
+	
 }
 
 module && (module.exports = DotIndicator);

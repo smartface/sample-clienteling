@@ -4,9 +4,6 @@
 			"type": "Page",
 			"id": "fb96-1dcf-3bb9-cd95",
 			"initialized": true,
-			"themeProps": {
-				"Page": "Default"
-			},
 			"userProps": {},
 			"className": ".page",
 			"version": "6.5.2",
@@ -45,9 +42,6 @@
 		{
 			"type": "StatusBar",
 			"id": "e314-b42b-624d-a844",
-			"themeProps": {
-				"StatusBar": "Default"
-			},
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
@@ -60,9 +54,6 @@
 		{
 			"type": "HeaderBar",
 			"id": "885b-9905-5cbd-64ff",
-			"themeProps": {
-				"HeaderBar": "Default"
-			},
 			"userProps": {
 				"title": "__library__"
 			},
@@ -81,10 +72,6 @@
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": 178.3783783783784,
@@ -112,10 +99,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 198.5,
@@ -141,10 +124,6 @@
 			"id": "fc33-df7a-68a8-cf3c",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": 138,
@@ -172,9 +151,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -199,10 +175,6 @@
 			"id": "550f-3e5a-5bf7-19f8",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -231,10 +203,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -258,10 +226,6 @@
 			"id": "ad64-9553-69b0-73ce",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -292,10 +256,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
-			},
 			"userProps": {
 				"id": 105,
 				"flexProps": {
@@ -315,10 +275,6 @@
 			"id": "8f50-f1d1-86f1-acdb",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -350,10 +306,6 @@
 			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"left": -10.294117647058822,
@@ -389,10 +341,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -419,10 +367,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -448,10 +392,6 @@
 			"id": "b1ab-98b8-a397-600b",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -481,10 +421,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -507,10 +443,6 @@
 			"id": "dc3e-edb9-e2e4-8e2a",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -535,10 +467,6 @@
 			"id": "3551-acc4-3adb-ddb1",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -567,9 +495,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -594,10 +519,6 @@
 			"id": "a371-a7e3-5341-7b50",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"height": 20,
@@ -628,10 +549,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"width": null,
@@ -661,10 +578,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"width": null,
@@ -693,10 +606,6 @@
 			"id": "6870-8044-2f1b-22ef",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -729,10 +638,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -757,10 +662,6 @@
 			"id": "be3a-35c6-5b5f-8aa6",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -794,9 +695,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"flexProps": {},
 				"left": 195,
@@ -821,9 +719,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -846,10 +741,6 @@
 			"id": "1f67-2d48-76c0-c7af",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -875,10 +766,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-Wishlist-Name"
-			},
 			"userProps": {
 				"text": "Lavender Hat",
 				"usePageVariable": true,
@@ -902,10 +789,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-Wishlist-ID"
-			},
 			"userProps": {
 				"text": "D56362",
 				"usePageVariable": true,
@@ -927,10 +810,6 @@
 			"id": "ad0e-3b5f-2337-8122",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-Wishlist-Price"
 			},
 			"userProps": {
 				"text": "$65",
@@ -954,10 +833,6 @@
 			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"flexProps": {},
@@ -983,10 +858,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-Reservation-Status"
-			},
 			"userProps": {
 				"text": "In Transit"
 			},
@@ -1003,10 +874,6 @@
 			"id": "fef0-bc00-5e67-072f",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-Reservation-Info"
 			},
 			"userProps": {
 				"text": "Online Order"
@@ -1025,10 +892,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-Reservation-Date"
-			},
 			"userProps": {
 				"text": "03.12.2007"
 			},
@@ -1046,10 +909,6 @@
 			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": 156.52173913043478,
@@ -1083,10 +942,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"left": 79.36507936507937,
 				"top": 258.73015873015873,
@@ -1112,10 +967,6 @@
 		{
 			"type": "Label",
 			"id": "03ac-907a-db7a-3f75",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-scoreITem-title"
-			},
 			"userProps": {
 				"text": "50",
 				"usePageVariable": true
@@ -1132,10 +983,6 @@
 		{
 			"type": "Label",
 			"id": "a4e8-2413-91fc-672a",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-scoreITem-text"
-			},
 			"userProps": {
 				"text": "ENGAGEMENT \nSCORE",
 				"usePageVariable": true
@@ -1155,10 +1002,6 @@
 			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"left": 8.695652173913043,
@@ -1183,9 +1026,6 @@
 		{
 			"type": "ImageView",
 			"id": "c868-4646-6cf3-1874",
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"width": null,
@@ -1213,10 +1053,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "9335-b874-bd11-7b0c",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": 62,
 				"width": null,
@@ -1242,10 +1078,6 @@
 		{
 			"type": "Label",
 			"id": "226f-1861-790c-adbe",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"text": "ANNA",
@@ -1276,10 +1108,6 @@
 		{
 			"type": "Label",
 			"id": "dae6-1275-1250-2115",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"text": "0102-40BC",
@@ -1309,10 +1137,6 @@
 		{
 			"type": "Label",
 			"id": "b32e-ba03-46b6-52b8",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"text": "Joined January 10th 2017",
@@ -1346,10 +1170,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"left": 38.04347826086956,
 				"top": 447.8260869565217,
@@ -1373,10 +1193,6 @@
 		{
 			"type": "Label",
 			"id": "b3a6-2a42-5370-29e5",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"text": "Spend per visit",
@@ -1409,10 +1225,6 @@
 		{
 			"type": "Label",
 			"id": "c4e7-7a7d-9d74-bdcd",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile-flScecond-infoPart-itemText"
-			},
 			"userProps": {
 				"text": "$250",
 				"usePageVariable": true
@@ -1432,10 +1244,6 @@
 			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"left": 76.82926829268293,
@@ -1465,10 +1273,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": 332.7586206896552,
 				"height": 791.3793103448277,
@@ -1493,10 +1297,6 @@
 			"id": "1167-8aad-4408-0eb9",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": 50,
@@ -1523,10 +1323,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": 1,
 				"height": null,
@@ -1550,10 +1346,6 @@
 			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": 50,
@@ -1582,10 +1374,6 @@
 			"id": "cdee-436a-2eb5-b887",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": 50,
@@ -1619,9 +1407,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": 20,
 				"height": 20,
@@ -1648,10 +1433,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 1,
@@ -1676,10 +1457,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 1,
@@ -1703,10 +1480,6 @@
 			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"backgroundColor": "rgba( 37, 37, 37, 0 )",
@@ -1735,10 +1508,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"left": 66.66666666666667,
 				"top": 321.6666666666667,
@@ -1762,10 +1531,6 @@
 		{
 			"type": "Label",
 			"id": "e40c-2e66-3203-1bd6",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"text": "Spend per visit",
@@ -1800,10 +1565,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor",
 			"props": {
@@ -1821,10 +1582,6 @@
 			"id": "75e8-6ca2-f430-dc4b",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": 13,
@@ -1846,10 +1603,6 @@
 			"id": "f3f7-f00b-30ba-57b9",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": 13,
@@ -1874,10 +1627,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": 13,
 				"height": 13,
@@ -1897,18 +1646,14 @@
 		{
 			"type": "FlexLayout",
 			"id": "f8b6-a9fc-13a6-9efc",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"flexProps": {},
-				"left": 33,
-				"top": 34,
+				"left": 8.333333333333334,
+				"top": 8.333333333333334,
 				"width": 323.25581395348837,
 				"height": 86.04651162790698,
 				"backgroundColor": "rgba( 216, 216, 216, 0.25 )"
@@ -1926,10 +1671,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "6470-719e-0ce9-b0ab",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -1938,7 +1679,8 @@
 				"paddingTop": 7,
 				"paddingRight": 8.5,
 				"paddingLeft": 8.5,
-				"backgroundColor": "rgba( 216, 216, 216, 0 )",
+				"backgroundColor": "rgba( 245, 166, 35, 0 )",
+				"alpha": 1,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1957,10 +1699,6 @@
 		{
 			"type": "Label",
 			"id": "8bd3-9e59-412c-e3a2",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"textColor": "rgba( 74, 144, 226, 1 )",
@@ -1983,10 +1721,6 @@
 		{
 			"type": "Label",
 			"id": "fae9-28f2-cc54-fefd",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"text": "Anna",
 				"textColor": "rgba( 106, 106, 106, 1 )",
@@ -2008,18 +1742,16 @@
 		{
 			"type": "FlexLayout",
 			"id": "20f8-7f53-2e80-cef9",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"width": null,
 				"maxHeight": null,
+				"backgroundColor": "rgba( 245, 166, 35, 0 )",
+				"minHeight": null,
 				"flexProps": {
 					"flexDirection": "ROW",
-					"flexGrow": null,
-					"alignSelf": "STRETCH"
+					"flexGrow": 1,
+					"alignSelf": "AUTO"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -2035,10 +1767,6 @@
 		{
 			"type": "Label",
 			"id": "fde7-b99c-1d0a-b8bb",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2066,10 +1794,6 @@
 		{
 			"type": "Label",
 			"id": "b9d1-3c28-e44a-bacc",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2096,10 +1820,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "ee75-2204-211e-c75a",
-			"themeProps": {
-				"Implementation": "Line",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"usePageVariable": true
 			},
@@ -2117,10 +1837,6 @@
 			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"left": 37,
@@ -2144,10 +1860,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "c008-5a4e-2dec-9d45",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2176,10 +1888,6 @@
 		{
 			"type": "Label",
 			"id": "63c4-dbd4-33b4-94f4",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"textColor": "rgba( 106, 106, 106, 1 )",
@@ -2202,10 +1910,6 @@
 		{
 			"type": "Label",
 			"id": "2f23-fb49-98f5-bf90",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"text": "Birthday Call",
 				"textColor": "rgba( 32, 32, 32, 1 )",
@@ -2227,10 +1931,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "c081-9cc7-e107-3a69",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"width": null,
@@ -2251,10 +1951,6 @@
 		{
 			"type": "Label",
 			"id": "b692-e95d-4522-2ce7",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2282,10 +1978,6 @@
 		{
 			"type": "Label",
 			"id": "f519-a334-6d3f-e904",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2313,9 +2005,6 @@
 		{
 			"type": "ImageView",
 			"id": "179b-8e8f-677b-a1b6",
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"image": "blue_exclamation.png",
 				"height": null,
@@ -2340,10 +2029,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "362c-cb03-1fc7-0fad",
-			"themeProps": {
-				"Implementation": "Line",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"usePageVariable": true
 			},
@@ -2358,17 +2043,13 @@
 		{
 			"type": "FlexLayout",
 			"id": "cd86-49b6-b456-0d16",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
-				"left": 36,
-				"top": 241,
+				"left": 21.666666666666668,
+				"top": 141.66666666666669,
 				"width": 292.45283018867923,
 				"height": 113.20754716981132,
 				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
@@ -2387,10 +2068,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "4ee7-5878-2005-6123",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2418,10 +2095,6 @@
 		{
 			"type": "Label",
 			"id": "0baf-339a-2288-d6aa",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"textColor": "rgba( 209, 17, 118, 1 )",
@@ -2444,10 +2117,6 @@
 		{
 			"type": "Label",
 			"id": "2f8b-b104-b4ff-fa15",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"text": "Anna",
 				"textColor": "rgba( 106, 106, 106, 1 )",
@@ -2469,10 +2138,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "628a-2454-d631-afc6",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"width": null,
@@ -2493,10 +2158,6 @@
 		{
 			"type": "Label",
 			"id": "8826-b7a0-e267-41d4",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2524,10 +2185,6 @@
 		{
 			"type": "Label",
 			"id": "5c9a-3e25-724a-28d1",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2558,10 +2215,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"left": 18.666666666666668,
 				"top": 180,
@@ -2583,10 +2236,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "f6be-b7e9-1894-80d2",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2614,10 +2263,6 @@
 		{
 			"type": "Label",
 			"id": "e3cb-4bb7-b969-6b56",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"textColor": "rgba( 0, 162, 90, 1 )",
@@ -2640,10 +2285,6 @@
 		{
 			"type": "Label",
 			"id": "0256-84b2-192f-4e88",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"text": "Anna",
 				"textColor": "rgba( 106, 106, 106, 1 )",
@@ -2665,10 +2306,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "bfad-4d3e-2bcf-bcbe",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"width": null,
@@ -2689,10 +2326,6 @@
 		{
 			"type": "Label",
 			"id": "faef-582e-43c9-c27d",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2720,10 +2353,6 @@
 		{
 			"type": "Label",
 			"id": "65c2-1129-072d-46e8",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2754,10 +2383,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"flexProps": {},
 				"left": 37.80487804878049,
@@ -2779,10 +2404,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "da93-1c47-3d11-a6ff",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2810,10 +2431,6 @@
 		{
 			"type": "Label",
 			"id": "a489-b7e3-400b-bb22",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"textColor": "rgba( 106, 106, 106, 1 )",
@@ -2836,10 +2453,6 @@
 		{
 			"type": "Label",
 			"id": "f0ab-0c19-0671-4fc1",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"text": "Birthday Call",
 				"textColor": "rgba( 32, 32, 32, 1 )",
@@ -2861,10 +2474,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "fc35-9752-6b7c-8d80",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": 20,
 				"width": null,
@@ -2885,10 +2494,6 @@
 		{
 			"type": "Label",
 			"id": "efe9-f03d-5fce-9d6d",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2916,10 +2521,6 @@
 		{
 			"type": "Label",
 			"id": "b7fb-ed30-a734-cc26",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2951,10 +2552,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": 314.1304347826087,
 				"height": 163.04347826086956,
@@ -2978,9 +2575,6 @@
 		{
 			"type": "ImageView",
 			"id": "446f-6fb8-474a-7830",
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"width": null,
@@ -3007,10 +2601,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "3f75-f335-7142-cf9a",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -3040,10 +2630,6 @@
 		{
 			"type": "Label",
 			"id": "6dcb-8e3d-62a6-e128",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"marginTop": 2,
 				"height": null,
@@ -3073,10 +2659,6 @@
 		{
 			"type": "Label",
 			"id": "e762-3bda-37d4-8357",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"marginTop": 2,
 				"height": null,
@@ -3105,10 +2687,6 @@
 		{
 			"type": "Label",
 			"id": "549c-581a-e603-7779",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"marginTop": 2,
 				"height": 30,
@@ -3142,10 +2720,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"left": 79.71014492753623,
 				"top": 244.9275362318841,
@@ -3173,10 +2747,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "stepper-flButtons"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
 			"props": {
@@ -3193,10 +2763,6 @@
 			"id": "7d1d-2bb2-8a0a-443d",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "stepper-label"
 			},
 			"userProps": {
 				"text": "2",
@@ -3217,9 +2783,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "stepper-flButtons-imgButton"
-			},
 			"userProps": {
 				"usePageVariable": true,
 				"image": "downtriangle.png"
@@ -3237,9 +2800,6 @@
 			"id": "8629-390f-2cc6-386e",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "stepper-flButtons-imgButton"
 			},
 			"userProps": {
 				"usePageVariable": true,
@@ -3261,10 +2821,6 @@
 				"page": "__library__",
 				"type": "stepper",
 				"id": "6015-add5-c15e-d9f3"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "stepper-flButtons"
 			},
 			"userProps": {
 				"left": null,
@@ -3312,10 +2868,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 35,
@@ -3350,10 +2902,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 35,
@@ -3378,10 +2926,6 @@
 			"id": "77dd-9966-1e45-3e9c",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"text": "EDIT",
@@ -3411,10 +2955,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
-			},
 			"userProps": {
 				"width": 30,
 				"marginLeft": null,
@@ -3437,10 +2977,6 @@
 			"id": "e069-d2ae-6cfe-ba73",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -3465,10 +3001,6 @@
 			"id": "a676-531e-46e8-e37c",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"text": "SAVE FOR LATER",
@@ -3497,10 +3029,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
-			},
 			"userProps": {
 				"width": 100,
 				"marginLeft": null,
@@ -3526,10 +3054,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
-			},
 			"userProps": {
 				"usePageVariable": true
 			},
@@ -3547,10 +3071,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
-			},
 			"userProps": {
 				"usePageVariable": true
 			},
@@ -3567,10 +3087,6 @@
 			"id": "4de4-7fd1-f85f-917f",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
 			},
 			"userProps": {
 				"usePageVariable": true
@@ -3590,10 +3106,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"left": 259,
 				"top": 285
@@ -3612,10 +3124,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"left": 21.311475409836067,
 				"top": 260.655737704918
@@ -3633,10 +3141,6 @@
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
 			},
 			"userProps": {
 				"width": null,
@@ -3668,11 +3172,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Highlights": "DotIndicator",
-				"Sizes": "Default",
-				"Implementation": "DotIndicator"
-			},
 			"userProps": {
 				"left": 108.19672131147541,
 				"top": 454.09836065573774
@@ -3694,11 +3193,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Highlights": "DotIndicatorActiveItem",
-				"Sizes": "Default",
-				"Implementation": "DotIndicatorInactiveItem"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.inactive",
 			"props": {
@@ -3712,11 +3206,6 @@
 			"id": "9db2-9989-1122-0ec1",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Highlights": "DotIndicatorInactiveItem",
-				"Sizes": "Default",
-				"Implementation": "DotIndicatorInactiveItem"
 			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.inactive",
@@ -3732,11 +3221,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Highlights": "DotIndicatorInactiveItem",
-				"Sizes": "Default",
-				"Implementation": "DotIndicatorActiveItem"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.active",
 			"props": {
@@ -3751,10 +3235,6 @@
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -3784,10 +3264,6 @@
 			"id": "0d76-4334-141f-21da",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"text": "REMOVE",
@@ -3820,10 +3296,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
-			},
 			"userProps": {
 				"width": 70,
 				"marginLeft": null,
@@ -3853,10 +3325,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
-			},
 			"userProps": {
 				"width": null,
 				"bottom": 0,
@@ -3885,10 +3353,6 @@
 			"id": "4f8a-4873-1ad2-5f52",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -3920,10 +3384,6 @@
 			"id": "e2bb-a6d3-9083-3bb9",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Color": "Default"
 			},
 			"userProps": {
 				"bottom": 0,
@@ -3957,10 +3417,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -3991,10 +3447,6 @@
 			"id": "5233-4790-d00f-8546",
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Color": "Default"
 			},
 			"userProps": {
 				"bottom": 0,
