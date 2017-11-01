@@ -56,6 +56,8 @@ const PgDashboard = extend(PgDashboardDesign)(
 function onShow(superOnShow) {
   superOnShow();
   Router.sliderDrawer.enabled = true;
+  
+  loadUI.call(this);
 }
 
 /**
@@ -71,7 +73,6 @@ function onLoad(superOnLoad) {
     Router.goBack(isTablet ? "pgSignupTablet" : "pgSignupPhone");
   };
 
-  loadUI.call(this);
 }
 
 function addReservations(items) {
@@ -168,8 +169,8 @@ function addStoreAndCorporateNews(items) {
     flDashboardItem4.width = NaN;
     flDashboardItem4.height = 80;
     flDashboardItem4.lblItemTitle.text = item.location;
-    flDashboardItem4.lblItemName.text = item.employee;
-    flDashboardItem4.lblItemType.text = item.type;
+    flDashboardItem4.lblItemName.text  = item.employee;
+    flDashboardItem4.lblItemType.text  = item.type;
 
     // TODO: Date
     if (index === items.length - 1) {

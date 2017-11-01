@@ -13,7 +13,6 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-		loadUI.call(this);
 
 		this.shoppingBag.onPress = function() {
 			Router.go("pgShoppingBag");
@@ -41,6 +40,10 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
                 }.bind(this))
             }
 		}.bind(this.scw);
+		
+		
+		
+		loadUI.call(this);
 	});
 
 /**
