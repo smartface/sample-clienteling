@@ -4,14 +4,11 @@
 			"type": "Page",
 			"id": "cf18-afa3-65ee-c058",
 			"initialized": true,
-			"themeProps": {
-				"Page": "Default"
-			},
 			"userProps": {
 				"orientation": "AUTO"
 			},
 			"className": ".page",
-			"version": "6.5.2",
+			"version": "6.5.3",
 			"props": {
 				"name": "pgDashboard",
 				"children": [
@@ -28,9 +25,6 @@
 		{
 			"type": "StatusBar",
 			"id": "c7b1-37c2-7e09-33aa",
-			"themeProps": {
-				"StatusBar": "Default"
-			},
 			"userProps": {
 				"style": "LIGHTCONTENT",
 				"color": "rgba( 66, 66, 66, 1 )"
@@ -46,9 +40,6 @@
 		{
 			"type": "HeaderBar",
 			"id": "01c7-3573-291f-cbd3",
-			"themeProps": {
-				"HeaderBar": "Default"
-			},
 			"userProps": {
 				"title": "Dashboard",
 				"visible": false
@@ -65,10 +56,6 @@
 		{
 			"type": "ScrollView",
 			"id": "0d22-a22f-27a9-8b58",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-Main"
-			},
 			"userProps": {
 				"usePageVariable": true
 			},
@@ -87,10 +74,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "14c7-05e3-2ddc-6adc",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 50,
@@ -114,10 +97,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "31e7-303e-2cfc-9cf8",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"usePageVariable": true,
 				"width": null,
@@ -135,10 +114,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "bb0f-b908-3424-b47e",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"width": null,
@@ -160,10 +135,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "4573-b010-1cb3-d136",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"width": null,
@@ -189,10 +160,6 @@
 		{
 			"type": "Label",
 			"id": "843b-71e6-7821-17fe",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -217,9 +184,6 @@
 		{
 			"type": "ImageView",
 			"id": "8347-952d-df9d-1ae2",
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"usePageVariable": true,
 				"width": 40,
@@ -239,9 +203,6 @@
 		{
 			"type": "ImageView",
 			"id": "3411-6b25-ada2-65ae",
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"usePageVariable": true,
 				"width": 40,
@@ -261,10 +222,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "a153-0d0e-1142-3610",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -288,10 +245,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "33c3-95b9-18c3-7d3f",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 37.5,
@@ -319,10 +272,6 @@
 			"type": "FlexLayout",
 			"id": "295e-648c-2b89-5438",
 			"hiddenComponent": false,
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -359,10 +308,6 @@
 		{
 			"type": "Label",
 			"id": "971c-b2ca-f1a0-ff19",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"text": "NEARBY CUSTOMERS",
@@ -384,10 +329,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "ab32-0a30-a588-fe5e",
-			"themeProps": {
-				"Implementation": "pgDashboard-Item",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": 200,
 				"usePageVariable": true,
@@ -408,10 +349,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "4652-11da-c001-7ac7",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 37.5,
@@ -442,10 +379,6 @@
 		{
 			"type": "Label",
 			"id": "193c-7a77-a948-79b8",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"text": "RESERVATIONS",
@@ -468,10 +401,6 @@
 			"type": "FlexLayout",
 			"id": "7edb-aacb-c9ef-19d9",
 			"hiddenComponent": false,
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": 40,
 				"backgroundColor": "rgba( 144, 19, 254, 0 )",
@@ -495,10 +424,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "450e-bfdb-83b1-43da",
-			"themeProps": {
-				"Implementation": "pgDashboard-Item",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"minWidth": 200,
 				"maxWidth": 650
@@ -516,10 +441,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "47e9-f191-7cfd-668e",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 37.5,
@@ -550,10 +471,6 @@
 		{
 			"type": "Label",
 			"id": "4424-b4e9-6cb4-2023",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"text": "TO DO FOR 01.01.2017",
@@ -576,10 +493,6 @@
 			"type": "FlexLayout",
 			"id": "0b23-6c7c-2ddb-a864",
 			"hiddenComponent": false,
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 144, 19, 254, 0 )",
@@ -603,10 +516,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "40f9-7db7-7417-a704",
-			"themeProps": {
-				"Implementation": "pgDashboard-Item",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"maxWidth": 650,
 				"minWidth": 200
@@ -624,10 +533,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "913e-88e1-4b90-5572",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 37.5,
@@ -658,10 +563,6 @@
 		{
 			"type": "Label",
 			"id": "02f0-bf39-c76b-43db",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"text": "OPEN INCIDENTS",
@@ -684,10 +585,6 @@
 			"type": "FlexLayout",
 			"id": "0e85-3325-621f-95f5",
 			"hiddenComponent": false,
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 144, 19, 254, 0 )",
@@ -711,10 +608,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "5f64-267c-bc46-fa3b",
-			"themeProps": {
-				"Implementation": "pgDashboard-Item-Small",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"maxWidth": 650,
 				"minWidth": 200
@@ -732,10 +625,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "023c-e6d6-34a5-99a7",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 37.5,
@@ -766,10 +655,6 @@
 		{
 			"type": "Label",
 			"id": "672b-66b8-8eec-4a9d",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"text": "STORE AND CORPORATE NEWS",
@@ -792,10 +677,6 @@
 			"type": "FlexLayout",
 			"id": "9a8b-a380-90bb-11b2",
 			"hiddenComponent": false,
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 216, 216, 216, 0 )",
@@ -819,10 +700,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "acae-69b2-29c4-d5e9",
-			"themeProps": {
-				"Implementation": "pgDashboard-Item-Small",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"maxWidth": 650,
 				"minWidth": 200
@@ -840,10 +717,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "a438-6060-10f1-4e50",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 37.5,
@@ -874,10 +747,6 @@
 		{
 			"type": "Label",
 			"id": "0103-a7f7-dbbc-c1e7",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"text": "INCOMING SHIPMENTS",
@@ -900,10 +769,6 @@
 			"type": "FlexLayout",
 			"id": "992f-b551-a14b-f254",
 			"hiddenComponent": false,
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 144, 19, 254, 0 )",
@@ -927,10 +792,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "fb82-7d44-e023-b112",
-			"themeProps": {
-				"Implementation": "pgDashboard-Item-Small",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"usePageVariable": false,
 				"maxWidth": 650,
@@ -950,10 +811,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "0979-6354-1dd4-7a8b",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 37.5,
@@ -984,10 +841,6 @@
 		{
 			"type": "Label",
 			"id": "e144-8762-49f3-ba62",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"text": "SOCIAL ACTIVITY MONITOR",
@@ -1010,10 +863,6 @@
 			"type": "FlexLayout",
 			"id": "bca6-08a9-02dc-e7c7",
 			"hiddenComponent": false,
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 216, 216, 216, 0 )",
@@ -1037,23 +886,14 @@
 		{
 			"type": "ImageView",
 			"id": "9626-2b4b-bac8-387e",
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"image": "hamburger.png",
 				"imageFillType": "ASPECTFIT",
+				"flexProps": {},
 				"width": 20,
-				"height": 20,
-				"left": 14,
-				"top": 14,
-				"bottom": null,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"flexProps": {
-					"flexGrow": null
-				}
+				"height": 25
 			},
-			"className": ".imageView",
+			"className": ".pageBackIconButton",
 			"props": {
 				"name": "imgHamburger",
 				"children": [],
@@ -1063,10 +903,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "f12f-7811-631b-6b87",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-Info"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfo",
 			"props": {
@@ -1081,10 +917,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "e687-6633-72c8-3320",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-Info1"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfoPart1",
 			"props": {
@@ -1099,10 +931,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "d2cc-973c-4896-6905",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-Info11"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfoPart11",
 			"props": {
@@ -1117,9 +945,6 @@
 		{
 			"type": "ImageView",
 			"id": "152d-b15a-ef51-f5af",
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"usePageVariable": true,
 				"image": "lisatown.png",
@@ -1147,10 +972,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "331e-9f4c-fddd-62db",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"left": null,
 				"top": null,
@@ -1179,10 +1000,6 @@
 		{
 			"type": "Label",
 			"id": "f4f5-e4fa-f908-9cec",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"textColor": "rgba( 32, 32, 32, 1 )",
 				"usePageVariable": true,
@@ -1211,10 +1028,6 @@
 		{
 			"type": "Label",
 			"id": "8ba8-690f-4923-0f5e",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": 135,
 				"height": 17,
@@ -1239,10 +1052,6 @@
 		{
 			"type": "Label",
 			"id": "6f13-456c-c6b2-3787",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": 135,
 				"height": 15,
@@ -1267,10 +1076,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "d489-15fe-e01b-2ef3",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-Info12"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfoPart12",
 			"props": {
@@ -1285,10 +1090,6 @@
 		{
 			"type": "Label",
 			"id": "255b-2fed-fb53-3111",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-TaskNumber"
-			},
 			"userProps": {
 				"text": "3",
 				"usePageVariable": true
@@ -1305,10 +1106,6 @@
 		{
 			"type": "Label",
 			"id": "86d4-c8b0-4710-a726",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-TaskText"
-			},
 			"userProps": {
 				"text": "Task Pending",
 				"usePageVariable": true
@@ -1325,10 +1122,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "9bf4-5a83-9363-c248",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-Info2"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfoPart2",
 			"props": {
@@ -1343,10 +1136,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "5ae2-0be1-d75e-a36a",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-Info21"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfoPart21",
 			"props": {
@@ -1361,10 +1150,6 @@
 		{
 			"type": "Label",
 			"id": "e9c0-5e02-c604-bc82",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-ConversionNumber"
-			},
 			"userProps": {
 				"text": "76%",
 				"usePageVariable": true
@@ -1381,10 +1166,6 @@
 		{
 			"type": "Label",
 			"id": "6f9b-0adb-40ff-1dd9",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-ConversionText"
-			},
 			"userProps": {
 				"text": "Last Month Sales Conversion",
 				"usePageVariable": true
@@ -1401,10 +1182,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "482b-fb52-7ba2-3cbe",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-Info22"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfoPart22",
 			"props": {
@@ -1419,10 +1196,6 @@
 		{
 			"type": "Label",
 			"id": "9538-6f7b-8b75-5e43",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgDashboard-TargetNumber"
-			},
 			"userProps": {
 				"text": "80%",
 				"usePageVariable": true
@@ -1439,10 +1212,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "4d06-7248-ce13-f804",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -1470,10 +1239,6 @@
 		{
 			"type": "Label",
 			"id": "e5fd-1cc5-3d87-44ae",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"width": null,
@@ -1503,10 +1268,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "c439-c828-6c58-f3b8",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -1529,10 +1290,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "9494-b8d7-be83-fc14",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -1560,10 +1317,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "7302-883c-10ca-1c0d",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 6,
@@ -1583,10 +1336,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "78fd-9114-a1bc-6fe3",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -1615,10 +1364,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "d646-65ac-85e6-b966",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 6,
@@ -1640,10 +1385,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "ad3c-6661-fe7c-7140",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 6,

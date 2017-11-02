@@ -30,19 +30,17 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 			Router.go("pgShoppingBag");
 		};
 		this.scw.subscribeContext = function(e) {
-            if (e.type == "new-styles") {
-                Object.keys(e.data).forEach(function(key){
-                    if (key === "layoutHeight") {
-                        this.layout.height = e.data[key];
-                    } else {
-                        this[key] = e.data[key];
-                    }
-                }.bind(this))
-            }
+			if (e.type == "new-styles") {
+				Object.keys(e.data).forEach(function(key) {
+					if (key === "layoutHeight") {
+						this.layout.height = e.data[key];
+					} else {
+						this[key] = e.data[key];
+					}
+				}.bind(this))
+			}
 		}.bind(this.scw);
-		
-		
-		
+
 		loadUI.call(this);
 	});
 
@@ -98,9 +96,9 @@ function addInfo(json) {
 
 	this.interest.title.text = "Interests";
 	this.interest.text.text = traits.interests.join(", ");
-	
+
 	this.mostLikedColors.title.text = "Most liked colors";
-	
+
 }
 
 function addWardrobe(items) {
@@ -119,7 +117,7 @@ function addWardrobe(items) {
 			model: item.productId
 		});
 		this.swWardrobe.layout.addChild(fl);
-		this.swWardrobe.children[item.name+index] = fl;
+		this.swWardrobe.children[item.name + index] = fl;
 	});
 }
 
@@ -138,7 +136,7 @@ function addReservations(items) {
 			marginRight: 20
 		}, item);
 		this.scFlReservations.layout.addChild(fl);
-		this.scFlReservations.children["reservations_"+index] = fl;
+		this.scFlReservations.children["reservations_" + index] = fl;
 	});
 	this.scFlReservations.layout.width = 170 * items.length;
 }
@@ -153,7 +151,7 @@ function addOpenIncidents(items) {
 			marginRight: 20
 		}, item);
 		this.scwIndicates.layout.addChild(fl);
-		this.scwIndicates.children["incitends"+index] = fl;
+		this.scwIndicates.children["incitends" + index] = fl;
 	});
 	this.scwIndicates.layout.width = 170 * items.length;
 }

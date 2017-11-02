@@ -263,7 +263,6 @@
       "paddingRight": 20,
       "+page:Screen.width > 450": {
         "maxHeight": null,
-        "flexProps": {},
         "paddingLeft": 5,
         "paddingRight": 5
       },

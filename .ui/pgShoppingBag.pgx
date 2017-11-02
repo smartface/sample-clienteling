@@ -4,9 +4,6 @@
 			"type": "Page",
 			"id": "d125-d864-c390-0484",
 			"initialized": true,
-			"themeProps": {
-				"Page": "Default"
-			},
 			"userProps": {
 				"orientation": "AUTO",
 				"paddingTop": null,
@@ -15,25 +12,9 @@
 				"paddingLeft": null
 			},
 			"className": ".page",
-			"version": "6.5.2",
+			"version": "6.5.3",
 			"props": {
-				"flexProps": {
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START"
-				},
-				"backgroundColor": "#FFFFFF",
-				"font": {},
-				"orientation": "AUTO",
-				"paddingTop": null,
-				"paddingRight": null,
-				"paddingBottom": 10,
-				"paddingLeft": null,
 				"name": "pgShoppingBag",
-				"parent": null,
 				"children": [
 					"0524-a91c-96f8-2719",
 					"5c49-2ac7-579d-0e65",
@@ -44,61 +25,41 @@
 					"0956-1b61-5add-487e",
 					"e6e8-5b33-9017-7609"
 				],
-				"width": 375,
-				"height": 667
+				"parent": null,
+				"orientation": "AUTO"
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "0524-a91c-96f8-2719",
-			"themeProps": {
-				"StatusBar": "Default"
-			},
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#424242",
-				"visible": true,
-				"font": {},
-				"flexProps": {},
-				"style": "LIGHTCONTENT",
 				"name": "statusBar",
-				"parent": "d125-d864-c390-0484",
 				"children": [],
+				"parent": "d125-d864-c390-0484",
 				"isRemovable": false
 			}
 		},
 		{
 			"type": "HeaderBar",
 			"id": "5c49-2ac7-579d-0e65",
-			"themeProps": {
-				"HeaderBar": "Default"
-			},
 			"userProps": {
 				"title": "SHOPPING BAG",
 				"visible": false
 			},
 			"className": ".headerBar",
 			"props": {
-				"title": "SHOPPING BAG",
-				"titleColor": "#FFFFFF",
-				"visible": false,
-				"backgroundColor": "#202020",
-				"font": {},
-				"flexProps": {},
 				"name": "headerBar",
-				"parent": "d125-d864-c390-0484",
+				"title": "SHOPPING BAG",
 				"children": [],
+				"parent": "d125-d864-c390-0484",
 				"isRemovable": false
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "a754-0923-0873-d1bf",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -113,47 +74,19 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 10
-				},
-				"marginLeft": 10,
-				"marginRight": 10,
 				"name": "flHeader",
-				"parent": "d125-d864-c390-0484",
 				"children": [
 					"228c-536e-e843-34f5",
 					"e053-51f8-1928-9cd2",
 					"48a5-31f9-7829-a7d4",
 					"775d-2230-7c2f-6324"
 				],
-				"marginTop": 10,
-				"marginBottom": 10
+				"parent": "d125-d864-c390-0484"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "228c-536e-e843-34f5",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -163,40 +96,16 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 5
-				},
 				"name": "flProductDetail",
-				"parent": "a754-0923-0873-d1bf",
 				"children": [
 					"bb75-4eb2-97bf-8d43"
-				]
+				],
+				"parent": "a754-0923-0873-d1bf"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "e053-51f8-1928-9cd2",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -206,40 +115,16 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 2
-				},
 				"name": "flQuantity",
-				"parent": "a754-0923-0873-d1bf",
 				"children": [
 					"ab75-aae4-f565-6789"
-				]
+				],
+				"parent": "a754-0923-0873-d1bf"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "48a5-31f9-7829-a7d4",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -249,40 +134,16 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 2
-				},
 				"name": "flPrice",
-				"parent": "a754-0923-0873-d1bf",
 				"children": [
 					"7bae-fec8-395c-ff0d"
-				]
+				],
+				"parent": "a754-0923-0873-d1bf"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "775d-2230-7c2f-6324",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -292,82 +153,31 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 2
-				},
 				"name": "flTotal",
-				"parent": "a754-0923-0873-d1bf",
 				"children": [
 					"30af-58a6-fa2e-b564"
-				]
+				],
+				"parent": "a754-0923-0873-d1bf"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "bb75-4eb2-97bf-8d43",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "ShoppingBagHeader"
-			},
 			"userProps": {
 				"text": "PRODUCT DETAIL"
 			},
 			"className": ".label .label-header.shopping",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "BOTTOMCENTER",
-				"font": {
-					"size": 12,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"marginBottom": 5,
-				"text": "PRODUCT DETAIL",
 				"name": "lblProductDetail",
-				"parent": "228c-536e-e843-34f5",
-				"children": []
+				"text": "PRODUCT DETAIL",
+				"children": [],
+				"parent": "228c-536e-e843-34f5"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "a4f8-0d3d-9f3c-ffd8",
 			"hiddenComponent": false,
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Line"
-			},
 			"userProps": {
 				"width": null,
 				"marginLeft": null,
@@ -375,81 +185,28 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#1D1D26",
-				"alpha": 0.1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
-				},
-				"marginLeft": null,
-				"marginRight": null,
 				"name": "flLine",
-				"parent": "d125-d864-c390-0484",
-				"children": []
+				"children": [],
+				"parent": "d125-d864-c390-0484"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "ab75-aae4-f565-6789",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "ShoppingBagHeader"
-			},
 			"userProps": {
 				"text": "QUANTITY"
 			},
 			"className": ".label .label-header.shopping",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "BOTTOMCENTER",
-				"font": {
-					"size": 12,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"marginBottom": 5,
-				"text": "QUANTITY",
 				"name": "lblQuantity",
-				"parent": "e053-51f8-1928-9cd2",
-				"children": []
+				"text": "QUANTITY",
+				"children": [],
+				"parent": "e053-51f8-1928-9cd2"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "7bae-fec8-395c-ff0d",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "ShoppingBagHeader"
-			},
 			"userProps": {
 				"text": "PRICE",
 				"left": 0,
@@ -457,44 +214,15 @@
 			},
 			"className": ".label .label-header.shopping",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "BOTTOMCENTER",
-				"font": {
-					"size": 12,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"marginBottom": 5,
-				"text": "PRICE",
-				"left": 0,
-				"top": 0,
 				"name": "lblPrice",
-				"parent": "48a5-31f9-7829-a7d4",
-				"children": []
+				"text": "PRICE",
+				"children": [],
+				"parent": "48a5-31f9-7829-a7d4"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "30af-58a6-fa2e-b564",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "ShoppingBagHeader"
-			},
 			"userProps": {
 				"text": "TOTAL",
 				"left": 0,
@@ -502,43 +230,15 @@
 			},
 			"className": ".label .label-header.shopping",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "BOTTOMCENTER",
-				"font": {
-					"size": 12,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"marginBottom": 5,
-				"text": "TOTAL",
-				"left": 0,
-				"top": 0,
 				"name": "lblTotal",
-				"parent": "775d-2230-7c2f-6324",
-				"children": []
+				"text": "TOTAL",
+				"children": [],
+				"parent": "775d-2230-7c2f-6324"
 			}
 		},
 		{
 			"type": "ListView",
 			"id": "0956-1b61-5add-487e",
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -554,41 +254,17 @@
 			},
 			"className": ".listView",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"multiline": false,
-				"rowHeight": 250,
-				"itemCount": null,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 100
-				},
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"marginBottom": null,
 				"name": "lvShoppingBag",
-				"parent": "d125-d864-c390-0484",
+				"usePageVariable": true,
 				"children": [
 					"9d40-1ab2-afbd-812a"
-				]
+				],
+				"parent": "d125-d864-c390-0484"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "e6e8-5b33-9017-7609",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "pgShoppingBag-FlcontinuButton"
-			},
 			"userProps": {
 				"minHeight": 42,
 				"maxHeight": 42,
@@ -599,45 +275,16 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-pgShoppingBagFlContinueButton",
 			"props": {
-				"height": 42,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "CENTER",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"marginTop": 5,
-				"marginBottom": null,
-				"minHeight": 42,
-				"maxHeight": 42,
 				"name": "flButton",
-				"parent": "d125-d864-c390-0484",
 				"children": [
 					"da2e-0d61-3494-8792"
-				]
+				],
+				"parent": "d125-d864-c390-0484"
 			}
 		},
 		{
 			"type": "Button",
 			"id": "da2e-0d61-3494-8792",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"text": "CONTINUE SHOPPING",
 				"height": 42,
@@ -653,32 +300,10 @@
 			},
 			"className": ".button",
 			"props": {
-				"width": null,
-				"height": 42,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#4A90E2",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#FFFFFF",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 15,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "STRETCH",
-					"flexGrow": 1
-				},
-				"text": "CONTINUE SHOPPING",
-				"maxWidth": 230,
 				"name": "btnContinueShopping",
-				"parent": "e6e8-5b33-9017-7609",
-				"children": []
+				"text": "CONTINUE SHOPPING",
+				"children": [],
+				"parent": "e6e8-5b33-9017-7609"
 			}
 		},
 		{
@@ -689,10 +314,6 @@
 				"page": "__library__",
 				"type": "flShoppingBagItem",
 				"id": "5be9-8547-09ac-6568"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
 			},
 			"userProps": {
 				"left": 0,
@@ -710,39 +331,14 @@
 			},
 			"className": ".listViewItem",
 			"props": {
-				"height": 250,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
 				"name": "flShoppingBagItem",
-				"parent": "0956-1b61-5add-487e",
-				"children": []
+				"children": [],
+				"parent": "0956-1b61-5add-487e"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "7e6a-481f-e941-a88e",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 50,
@@ -756,43 +352,18 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 50,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "SPACE_BETWEEN",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
 				"name": "flHeaderBar",
-				"parent": "d125-d864-c390-0484",
 				"children": [
 					"7744-8076-221a-9e0a",
 					"0ed9-8da4-ad4b-53bd",
 					"f86a-7893-f794-d0e2"
-				]
+				],
+				"parent": "d125-d864-c390-0484"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "7744-8076-221a-9e0a",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -805,89 +376,29 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"minWidth": null,
-				"usePageVariable": true,
 				"name": "flHeaderLeft",
-				"parent": "7e6a-481f-e941-a88e",
+				"usePageVariable": true,
 				"children": [
 					"aaa9-a1a1-bc5e-a26a"
-				]
+				],
+				"parent": "7e6a-481f-e941-a88e"
 			}
 		},
 		{
 			"type": "ImageView",
 			"id": "aaa9-a1a1-bc5e-a26a",
-			"themeProps": {
-				"Sizes": "Default"
-			},
-			"userProps": {
-				"image": "back.png",
-				"imageFillType": "ASPECTFIT",
-				"width": 20,
-				"height": 20,
-				"left": 14,
-				"top": 14,
-				"bottom": null,
-				"usePageVariable": false,
-				"flexProps": {
-					"flexGrow": null
-				}
-			},
-			"className": ".imageView",
+			"userProps": {},
+			"className": ".pageBackIconButton",
 			"props": {
-				"width": 20,
-				"height": 20,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
-				"image": "back.png",
-				"left": 14,
-				"top": 14,
-				"bottom": null,
-				"usePageVariable": false,
 				"name": "imgLeft",
-				"parent": "7744-8076-221a-9e0a",
+				"usePageVariable": false,
 				"children": [],
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/back.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"parent": "7744-8076-221a-9e0a"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "0ed9-8da4-ad4b-53bd",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"height": null,
 				"width": null,
@@ -899,41 +410,16 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 2
-				},
-				"minWidth": null,
 				"name": "flHeaderMiddle",
-				"parent": "7e6a-481f-e941-a88e",
 				"children": [
 					"77d6-b48d-2f13-5ca4"
-				]
+				],
+				"parent": "7e6a-481f-e941-a88e"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "77d6-b48d-2f13-5ca4",
-			"themeProps": {
-				"Sizes": "Default",
-				"Implementation": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -949,77 +435,26 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 15,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"text": "SHOPPING BAG",
 				"name": "lblTitle",
-				"parent": "0ed9-8da4-ad4b-53bd",
-				"children": []
+				"text": "SHOPPING BAG",
+				"children": [],
+				"parent": "0ed9-8da4-ad4b-53bd"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "f86a-7893-f794-d0e2",
-			"themeProps": {
-				"Implementation": "pgCustomerProfile-HeaderBar-Right",
-				"Sizes": "Default"
-			},
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile.rightItem",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba(255,255,255,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_END",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"paddingRight": 17.5,
 				"name": "flHeaderRight",
-				"parent": "7e6a-481f-e941-a88e",
-				"children": []
+				"children": [],
+				"parent": "7e6a-481f-e941-a88e"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "456e-2b5f-449b-1ea8",
-			"themeProps": {
-				"Implementation": "Default",
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"usePageVariable": true,
 				"width": null,
@@ -1030,31 +465,10 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"height": 20,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
-				"usePageVariable": true,
-				"left": 0,
-				"top": 0,
 				"name": "flStatusBarBg",
-				"parent": "d125-d864-c390-0484",
-				"children": []
+				"usePageVariable": true,
+				"children": [],
+				"parent": "d125-d864-c390-0484"
 			}
 		}
 	]

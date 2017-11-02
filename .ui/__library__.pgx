@@ -6,7 +6,7 @@
 			"initialized": true,
 			"userProps": {},
 			"className": ".page",
-			"version": "6.5.2",
+			"version": "6.5.3",
 			"props": {
 				"name": "__library__",
 				"children": [
@@ -3168,13 +3168,19 @@
 		{
 			"type": "FlexLayout",
 			"id": "cd3b-2912-1a7f-7558",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
 			"userProps": {
-				"left": 108.19672131147541,
-				"top": 454.09836065573774
+				"left": 53.333333333333336,
+				"top": 333.33333333333337,
+				"width": 163.33333333333334,
+				"height": 10,
+				"flexProps": {
+					"alignItems": "AUTO",
+					"justifyContent": "CENTER"
+				}
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-main",
 			"props": {

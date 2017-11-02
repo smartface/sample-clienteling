@@ -10,7 +10,7 @@
 				"orientation": "AUTO"
 			},
 			"className": ".page",
-			"version": "6.5.2",
+			"version": "6.5.3",
 			"props": {
 				"name": "pgCustomerProfile",
 				"children": [
@@ -3102,21 +3102,8 @@
 		{
 			"type": "ImageView",
 			"id": "a014-fdf8-07db-8cd6",
-			"userProps": {
-				"image": "back.png",
-				"imageFillType": "ASPECTFIT",
-				"width": 20,
-				"height": 20,
-				"left": 14,
-				"top": 14,
-				"bottom": null,
-				"usePageVariable": false,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"flexProps": {
-					"flexGrow": null
-				}
-			},
-			"className": ".imageView",
+			"userProps": {},
+			"className": ".pageBackIconButton",
 			"props": {
 				"name": "imgLeft",
 				"usePageVariable": false,
@@ -3233,9 +3220,8 @@
 				"marginLeft": 20,
 				"imageFillType": "ASPECTFIT",
 				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"flexProps": {
-					"flexGrow": null
-				}
+				"minHeight": 20,
+				"minWidth": 20
 			},
 			"className": ".imageView",
 			"props": {

@@ -11,7 +11,7 @@ const dashboardService = require("../service/Dashboard");
 const userService = require("../service/User");
 const isTablet = require("../lib/isTablet");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
-const addContextChild = require("@smartface/contx/lib/styling/action/addContextChild");
+const addPageContextChild = require("@smartface/contx/lib/smartface/action/addPageContextChild");
 const pushClassNames = require("@smartface/contx/lib/styling/action/pushClassNames");
 
 const RGB_BLUE = [74, 144, 226];
@@ -94,7 +94,7 @@ function addReservations(items) {
     }
 
     // TODO: Date
-    page.flReservationItems.dispatch(addContextChild("reservations_"+index, flDashboardItem1));
+    page.flReservationItems.dispatch(addPageContextChild("reservations_"+index, flDashboardItem1));
     flDashboardItem1.dispatch(pushClassNames(".dashboardDataElement"));
     page.flReservationItems.addChild(flDashboardItem1);
     page.flReservationItems.height += flDashboardItem1.height;
@@ -123,7 +123,7 @@ function addTodos(items) {
 
     // TODO: Date
     page.flTodoItems.addChild(flDashboardItem2);
-    page.flTodoItems.dispatch(addContextChild("todoItem_"+index, flDashboardItem2, {}));
+    page.flTodoItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem2));
     flDashboardItem2.dispatch(pushClassNames(".dashboardDataElement"));
 
     page.flTodoItems.children["flDashboardItem2_" + index] = flDashboardItem2;
@@ -148,14 +148,13 @@ function addOpenIncidents(items) {
     }
 
     if (item.state.toLowerCase() === "completed") {
-      flDashboardItem3.lblItemTitle.textColor =
-        Color.create.apply(null, RGB_BLUE);
+      flDashboardItem3.lblItemTitle.textColor = Color.create.apply(null, RGB_BLUE);
     }
     // TODO: Date
     page.flOpenIncidentItems.addChild(flDashboardItem3);
     page.flOpenIncidentItems.children["flDashboardItem3_" + index] = flDashboardItem3;
-    page.flOpenIncidentItems.dispatch(addContextChild("todoItem_"+index, flDashboardItem3, {}));
-    flDashboardItem3.dispatch(pushClassNames(".dashboardDataElement"))
+    page.flOpenIncidentItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem3));
+    flDashboardItem3.dispatch(pushClassNames(".dashboardDataElement"));
     
     page.flOpenIncidentItems.height += flDashboardItem3.height;
   });

@@ -5,5 +5,13 @@
     "flexProps": {
       "flexGrow": 1
     }
+  },
+  ".pageBackIconButton": {
+    "@extend": ".imageView",
+    "width" : 20,
+    "height": 20,
+    "top": 14,
+    "left": 14,
+    "image": "back.png"
   }
 }

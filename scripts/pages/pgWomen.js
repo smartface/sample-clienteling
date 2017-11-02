@@ -17,7 +17,7 @@ const PgWomen = extend(PgWomenDesign)(
       Router.goBack();
     };
 
-    this.subscribeContext = function(e) {
+    /*this.subscribeContext = function(e) {
       if (e.type == "new-styles") {
         Object.keys(e.data).forEach(function(key) {
           if (flexProps.some(function(prop) { return prop == key })) {
@@ -27,9 +27,7 @@ const PgWomen = extend(PgWomenDesign)(
           }
         }.bind(this));
       }
-    };
-    initDotIndicator(this);
-    loadUI.call(this);
+    };*/
   });
 
 /**
@@ -41,6 +39,10 @@ const PgWomen = extend(PgWomenDesign)(
 function onShow(superOnShow) {
   superOnShow();
   Router.sliderDrawer.enabled = false;
+  
+  initDotIndicator(this);
+  adjustHeaderBar(this);
+
 }
 
 /**
@@ -49,10 +51,8 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
-  const page = this;
   superOnLoad();
-  adjustHeaderBar(page);
-
+  loadUI.call(this);
 }
 
 function loadUI() {
@@ -61,11 +61,17 @@ function loadUI() {
   var swipeView = new SwipeView({
     page: this,
     flexGrow: 1,
-    pages: [pgWomenSwipePageFactory(list[0].image), pgWomenSwipePageFactory(list[1].image), pgWomenSwipePageFactory(list[2].image), pgWomenSwipePageFactory(list[3].image)],
+    pages: [
+      pgWomenSwipePageFactory(list[0].image),
+      pgWomenSwipePageFactory(list[1].image),
+      pgWomenSwipePageFactory(list[2].image),
+      pgWomenSwipePageFactory(list[3].image)
+    ],
     onPageSelected: onChildPageChanged.bind(this),
     marginBottom: 18,
     backgroundColor: Color.TRANSPARENT
   });
+  
   this.flSwipe.addChild(swipeView);
 }
 
