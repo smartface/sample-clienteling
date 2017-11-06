@@ -30,7 +30,7 @@ const DotIndicator = extend(DotIndicatorDesign)(
 		var _inactiveColor = null;
 		this._styles = {};
 		
-		/*this.subscribeContext = function(e) {
+	/*this.subscribeContext = function(e) {
 			if (e.type == 'new-styles') {
 				const styles = e.data;
 				console.log(JSON.stringify(styles));

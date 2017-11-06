@@ -15,6 +15,7 @@ var sliderDrawer = new SliderDrawer({
             height: NaN,
             flexGrow: 1
         });
+        
         this.moveHighlight = uiSliderDrawer.moveHighlight;
         sliderDrawer.layout.addChild(uiSliderDrawer);
         sliderDrawer.onHide = function sliderDrawer_onHide() {
@@ -24,13 +25,12 @@ var sliderDrawer = new SliderDrawer({
             sliderDrawer.shown = true;
         };
         sliderDrawer.shown = false;
-
-        sliderDrawer.applyTheme();
     },
     onShow: function() {
         console.log("sliderDrawer is shown");
     }
 });
+
 
 sliderDrawer.moveHighlight = function() {};
 sliderDrawer.setUserData = function() {};
