@@ -3,29 +3,24 @@ require("i18n/i18n.js");
 
 const Application = require("sf-core/application");
 Application.onUnhandledError = function(e) {
-    alert({
-        title: lang.applicationError,
-        message: e.message + "\n\n*" + e.sourceURL + "\n*" + e.line + "\n*" + e.stack
-    });
+  alert({
+    title: lang.applicationError,
+    message: e.message + "\n\n*" + e.sourceURL + "\n*" + e.line + "\n*" + e.stack
+  });
 };
-
-const createThemeContextBound = require("@smartface/contx/lib/styling/ThemeContext").createThemeContextBound;
-Application.theme = createThemeContextBound(
-    [
-        {name: "default", rawStyles: require("./themes/blue"), isDefault: true}
-    ]
-);
 
 require("sf-extension-utils");
 
-const mcs      = require("./lib/mcs");
-const Router   = require("sf-core/ui/router");
-const System   = require("sf-core/device/system");
+const mcs = require("./lib/mcs");
+const Router = require("sf-core/ui/router");
+const System = require("sf-core/device/system");
 const isTablet = require("./lib/isTablet");
-const settings = require("./settings.json");
+
+require("./theme");
+
+// const settings = require("./settings.json");
 
 // Deprecated
-var themeSettings = settings.config.theme;
 // var stylerBuilder = require("library/styler-builder");
 
 // stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
@@ -35,8 +30,8 @@ var themeSettings = settings.config.theme;
 var sliderDrawer;
 
 if (System.OS === "iOS") {
-    sliderDrawer = require("./sliderDrawer");
-    Router.sliderDrawer = sliderDrawer;
+  sliderDrawer = require("./sliderDrawer");
+  Router.sliderDrawer = sliderDrawer;
 }
 
 Router.add("pgDashboard", require("./pages/pgDashboard"), true);
@@ -49,19 +44,18 @@ Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
 Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
 
 // Router.go("pgSignup" + (isTablet ? "Tablet" : "Phone"), {
-Router.go("pgDashboard", {
-    appStart: true
+Router.go("pgCustomerProfile", {
+  appStart: true
 });
 
 if (System.OS === "Android") {
-    sliderDrawer = require("./sliderDrawer");
-    Router.sliderDrawer = sliderDrawer;
-    
+  sliderDrawer = require("./sliderDrawer");
+  Router.sliderDrawer = sliderDrawer;
 }
 
 mcs.launch().then(() => {
-    console.log("mcs launch sucess");
+  console.log("mcs launch sucess");
 }).catch((err) => {
-    err = err ? JSON.stringify(err) : "unknown";
-    console.log(`mcs launch error! Reason: ${err}`);
+  err = err ? JSON.stringify(err) : "unknown";
+  console.log(`mcs launch error! Reason: ${err}`);
 });

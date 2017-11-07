@@ -29,7 +29,7 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.imgShoppingBag.onTouchEnded = function() {
 			Router.go("pgShoppingBag");
 		};
-		this.scw.subscribeContext = function(e) {
+		/*this.scw.subscribeContext = function(e) {
 			if (e.type == "new-styles") {
 				Object.keys(e.data).forEach(function(key) {
 					if (key === "layoutHeight") {
@@ -39,7 +39,7 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 					}
 				}.bind(this))
 			}
-		}.bind(this.scw);
+		}.bind(this.scw);*/
 
 		loadUI.call(this);
 	});

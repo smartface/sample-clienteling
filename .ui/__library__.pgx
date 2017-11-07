@@ -1340,7 +1340,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "301e-6dd8-2fc0-fd12",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -1407,7 +1407,6 @@
 			"userProps": {
 				"width": 20,
 				"height": 20,
-				"image": "profile.png",
 				"backgroundColor": "rgba( 58, 129, 219, 0 )",
 				"imageFillType": "ASPECTFIT",
 				"usePageVariable": true,

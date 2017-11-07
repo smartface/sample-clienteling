@@ -38,21 +38,25 @@ const SliderDrawer = extend(SliderDrawerDesign)(
     }, {
       activeColor: activeCategoryColor
     }));
+    
     addChild.call(this.flIcons, "icon2", new FlIcon({
       id: 2,
       image: "hr_icon.png",
       onTouch: onTouchCategory.bind(this, 2)
     }));
+    
     addChild.call(this.flIcons, 'icon3', new FlIcon({
       id: 3,
       image: "approvals.png",
       onTouch: onTouchCategory.bind(this, 3)
     }));
+    
     addChild.call(this.flIcons, 'icon4', new FlIcon({
       id: 4,
       image: "home.png",
       onTouch: onTouchCategory.bind(this, 4)
     }));
+    
     addChild.call(this.flIcons, 'icon5', new FlIcon({
       id: 5,
       image: "settings.png",
