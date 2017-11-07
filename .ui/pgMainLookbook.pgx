@@ -55,6 +55,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "c457-e6cb-6b46-b023",
+			"hiddenComponent": false,
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flFirstLine",
 			"props": {
@@ -215,8 +216,9 @@
 				"right": 5,
 				"flexProps": {
 					"flexGrow": 1,
+					"justifyContent": "CENTER",
 					"alignItems": "AUTO",
-					"justifyContent": "CENTER"
+					"alignContent": "FLEX_START"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -335,6 +337,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "b740-f675-4f52-5243",
+			"hiddenComponent": false,
 			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flSecondLine",
 			"props": {
@@ -570,7 +573,11 @@
 			"type": "Label",
 			"id": "7610-00e5-d374-b174",
 			"userProps": {
-				"text": "SUMMER 2017"
+				"text": "SUMMER 2017",
+				"backgroundColor": "rgba( 80, 227, 194, 1 )",
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				}
 			},
 			"className": ".label #pgMainLookbook.lblSummer",
 			"props": {
@@ -584,7 +591,11 @@
 			"type": "Label",
 			"id": "8dba-703a-ea9b-e04b",
 			"userProps": {
-				"text": "BAG\nTRENDS"
+				"text": "BAG\nTRENDS",
+				"backgroundColor": "rgba( 245, 166, 35, 1 )",
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				}
 			},
 			"className": ".label #pgMainLookbook.lblBag",
 			"props": {
@@ -598,7 +609,10 @@
 			"type": "Label",
 			"id": "f0dd-30e9-ff1a-b192",
 			"userProps": {
-				"text": "ACCESSORIES"
+				"text": "ACCESSORIES",
+				"flexProps": {
+					"alignSelf": "AUTO"
+				}
 			},
 			"className": ".label #pgMainLookbook.lblAccessories",
 			"props": {

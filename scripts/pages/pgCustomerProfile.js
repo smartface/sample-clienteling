@@ -17,29 +17,22 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.shoppingBag.onPress = function() {
 			Router.go("pgShoppingBag");
 		};
+		
 		this.lookBook.onPress = function() {
 			Router.go("pgMainLookbook");
 		};
+		
 		this.flHeaderLeft.onTouchEnded = function() {
 			Router.goBack();
 		};
+		
 		this.imgLookbook.onTouchEnded = function() {
 			Router.go("pgMainLookbook");
 		};
+		
 		this.imgShoppingBag.onTouchEnded = function() {
 			Router.go("pgShoppingBag");
 		};
-		/*this.scw.subscribeContext = function(e) {
-			if (e.type == "new-styles") {
-				Object.keys(e.data).forEach(function(key) {
-					if (key === "layoutHeight") {
-						this.layout.height = e.data[key];
-					} else {
-						this[key] = e.data[key];
-					}
-				}.bind(this))
-			}
-		}.bind(this.scw);*/
 
 		loadUI.call(this);
 	});
@@ -103,7 +96,7 @@ function addInfo(json) {
 
 function addWardrobe(items) {
 	this.swWardrobe.layout.removeAll();
-	this.swWardrobe.children = this.swWardrobe.children || {};
+	this.swWardrobe.children = {};
 
 	items.forEach((item, index) => {
 		var fl = new FlWardrobe({
@@ -116,6 +109,7 @@ function addWardrobe(items) {
 			name: item.name,
 			model: item.productId
 		});
+
 		this.swWardrobe.layout.addChild(fl);
 		this.swWardrobe.children[item.name + index] = fl;
 	});
@@ -128,13 +122,15 @@ function addWardrobe(items) {
  */
 function addReservations(items) {
 	this.scFlReservations.layout.removeAll();
-	this.scFlReservations.children = this.scFlReservations.children || {};
+	this.scFlReservations.children = {};
+	
 	items.forEach((item, index) => {
 		var fl = new FlCustomerProfileReservationItem({
 			width: 140,
 			height: 50,
 			marginRight: 20
 		}, item);
+		
 		this.scFlReservations.layout.addChild(fl);
 		this.scFlReservations.children["reservations_" + index] = fl;
 	});
@@ -143,7 +139,7 @@ function addReservations(items) {
 
 function addOpenIncidents(items) {
 	this.scwIndicates.layout.removeAll();
-	this.scwIndicates.children = this.scwIndicates.children || {};
+	this.scwIndicates.children = {};
 	items.forEach((item, index) => {
 		var fl = new FlCustomerProfileReservationItem({
 			width: 140,

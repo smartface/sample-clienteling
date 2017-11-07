@@ -4,6 +4,8 @@
     "visible": true,
     "font": {},
     "flexProps": {},
-    "style": "LIGHTCONTENT"
+    "ios": {
+      "style": "LIGHTCONTENT"
+    }
   }
 }
