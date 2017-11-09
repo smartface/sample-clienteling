@@ -154,7 +154,11 @@
 			"type": "FlexLayout",
 			"id": "5bae-54e6-f533-71cd",
 			"hiddenComponent": false,
-			"userProps": {},
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 2.8
+				}
+			},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flSale",
 			"props": {
 				"name": "flSale",
@@ -217,7 +221,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"justifyContent": "CENTER",
-					"alignItems": "AUTO",
+					"alignItems": "STRETCH",
 					"alignContent": "FLEX_START"
 				}
 			},
@@ -343,10 +347,10 @@
 			"props": {
 				"name": "flSecondLine",
 				"children": [
+					"4637-e165-3e1c-b798",
 					"6768-9cf0-f298-8760",
 					"9dec-745a-6b4b-d034",
-					"0b77-0e2d-97eb-edd1",
-					"7c44-b3ec-bc80-9f3f"
+					"0b77-0e2d-97eb-edd1"
 				],
 				"parent": "06bb-a00e-c029-0539"
 			}
@@ -382,7 +386,11 @@
 		{
 			"type": "FlexLayout",
 			"id": "0b77-0e2d-97eb-edd1",
-			"userProps": {},
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flShopNow",
 			"props": {
 				"name": "flShopNow",
@@ -406,21 +414,6 @@
 				"text": "SHOP NOW",
 				"children": [],
 				"parent": "0b77-0e2d-97eb-edd1"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "7c44-b3ec-bc80-9f3f",
-			"hiddenComponent": false,
-			"userProps": {
-				"text": "S A L E"
-			},
-			"className": ".label #pgMainLookbook.lblSaleBackground",
-			"props": {
-				"name": "lblSaleBackground",
-				"text": "S A L E",
-				"children": [],
-				"parent": "b740-f675-4f52-5243"
 			}
 		},
 		{
@@ -472,8 +465,9 @@
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"justifyContent": "CENTER",
-					"alignItems": "AUTO",
-					"alignContent": "STRETCH"
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"alignSelf": "FLEX_START"
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -504,7 +498,10 @@
 			"type": "Label",
 			"id": "4554-9d90-5938-8d03",
 			"userProps": {
-				"text": "WOMEN"
+				"text": "WOMEN",
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				}
 			},
 			"className": ".label #pgMainLookbook.lblGender",
 			"props": {
@@ -574,8 +571,11 @@
 			"id": "7610-00e5-d374-b174",
 			"userProps": {
 				"text": "SUMMER 2017",
+				"backgroundColor": "rgba( 80, 227, 194, 1 )",
+				"width": null,
+				"height": 20,
 				"flexProps": {
-					"alignSelf": "STRETCH"
+					"alignSelf": "AUTO"
 				}
 			},
 			"className": ".label #pgMainLookbook.lblSummer",
@@ -589,10 +589,11 @@
 		{
 			"type": "Label",
 			"id": "8dba-703a-ea9b-e04b",
+			"hiddenComponent": false,
 			"userProps": {
 				"text": "BAG\nTRENDS",
 				"flexProps": {
-					"alignSelf": "STRETCH"
+					"alignSelf": "AUTO"
 				}
 			},
 			"className": ".label #pgMainLookbook.lblBag",
@@ -767,6 +768,23 @@
 				"usePageVariable": true,
 				"children": [],
 				"parent": "06bb-a00e-c029-0539"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "4637-e165-3e1c-b798",
+			"hiddenComponent": false,
+			"userProps": {
+				"text": "S A L E",
+				"left": 0,
+				"top": 0
+			},
+			"className": ".label #pgMainLookbook.lblSaleBackground",
+			"props": {
+				"name": "lblSaleBackground_1",
+				"text": "S A L E",
+				"children": [],
+				"parent": "b740-f675-4f52-5243"
 			}
 		}
 	]

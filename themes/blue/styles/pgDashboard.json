@@ -14,7 +14,9 @@
       "visible": true,
       "align": "VERTICAL",
       "scrollBarEnabled": true,
-      "layoutHeight": 1300,
+      "layout": {
+        "height": 1300
+      },
       "flexProps": {
         "alignSelf": "AUTO",
         "direction": "INHERIT",
