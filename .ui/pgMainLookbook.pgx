@@ -264,7 +264,7 @@
 				"left": 0,
 				"top": 0,
 				"flexProps": {
-					"flexGrow": 2
+					"flexGrow": 1
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
@@ -574,7 +574,6 @@
 			"id": "7610-00e5-d374-b174",
 			"userProps": {
 				"text": "SUMMER 2017",
-				"backgroundColor": "rgba( 80, 227, 194, 1 )",
 				"flexProps": {
 					"alignSelf": "STRETCH"
 				}
@@ -592,7 +591,6 @@
 			"id": "8dba-703a-ea9b-e04b",
 			"userProps": {
 				"text": "BAG\nTRENDS",
-				"backgroundColor": "rgba( 245, 166, 35, 1 )",
 				"flexProps": {
 					"alignSelf": "STRETCH"
 				}
