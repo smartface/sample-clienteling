@@ -11,8 +11,8 @@ const dashboardService = require("../service/Dashboard");
 const userService = require("../service/User");
 const isTablet = require("../lib/isTablet");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
-const addPageContextChild = require("@smartface/contx/lib/smartface/action/addPageContextChild");
-const pushClassNames = require("@smartface/contx/lib/styling/action/pushClassNames");
+// const addPageContextChild = require("@smartface/contx/lib/smartface/action/addPageContextChild");
+// const pushClassNames = require("@smartface/contx/lib/styling/action/pushClassNames");
 
 const RGB_BLUE = [74, 144, 226];
 const RGB_RED = [185, 54, 123];
@@ -32,19 +32,6 @@ const PgDashboard = extend(PgDashboardDesign)(
     this.flHeaderLeft.onTouchEnded = function() {
       Router.sliderDrawer.show();
     };
-
-    /*this.svMain.subscribeContext = function(e) {
-      if (e.type == "new-styles") {
-        Object.keys(e.data).forEach(function(key) {
-          if (key === "layoutHeight") {
-            this.layout.height = e.data[key];
-          }
-          else {
-            this[key] = e.data[key];
-          }
-        }.bind(this))
-      }
-    }.bind(this.svMain);*/
   });
 
 /**
@@ -56,8 +43,6 @@ const PgDashboard = extend(PgDashboardDesign)(
 function onShow(superOnShow) {
   superOnShow();
   Router.sliderDrawer.enabled = true;
-  
-  loadUI.call(this);
 }
 
 /**
@@ -73,6 +58,7 @@ function onLoad(superOnLoad) {
     Router.goBack(isTablet ? "pgSignupTablet" : "pgSignupPhone");
   };
 
+  loadUI.call(this);
 }
 
 function addReservations(items) {
@@ -94,9 +80,9 @@ function addReservations(items) {
     }
 
     // TODO: Date
-    page.flReservationItems.dispatch(addPageContextChild("reservations_"+index, flDashboardItem1));
-    flDashboardItem1.dispatch(pushClassNames(".dashboardDataElement"));
-    page.flReservationItems.addChild(flDashboardItem1);
+    // page.flReservationItems.dispatch(addPageContextChild("reservations_"+index, flDashboardItem1));
+    // flDashboardItem1.dispatch(pushClassNames(".dashboardDataElement"));
+    page.flReservationItems.addChild(flDashboardItem1, "reservations_"+index, ".dashboardDataElement");
     page.flReservationItems.height += flDashboardItem1.height;
 
   });
@@ -122,11 +108,11 @@ function addTodos(items) {
     }
 
     // TODO: Date
-    page.flTodoItems.addChild(flDashboardItem2);
-    page.flTodoItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem2));
-    flDashboardItem2.dispatch(pushClassNames(".dashboardDataElement"));
-
-    page.flTodoItems.children["flDashboardItem2_" + index] = flDashboardItem2;
+    page.flTodoItems.addChild(flDashboardItem2, "flDashboardItem2_" + index, ".dashboardDataElement");
+    // page.flTodoItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem2));
+    // flDashboardItem2.dispatch(pushClassNames(".dashboardDataElement"));
+    
+    // page.flTodoItems.children["flDashboardItem2_" + index] = flDashboardItem2;
     page.flTodoItems.height += flDashboardItem2.height;
   });
 }
@@ -137,8 +123,6 @@ function addOpenIncidents(items) {
 
   items.forEach(function(item, index) {
     var flDashboardItem3 = new FlDashboardItem3();
-    flDashboardItem3.width = NaN;
-    flDashboardItem3.height = 80;
     flDashboardItem3.lblItemTitle.text = item.state;
     flDashboardItem3.lblItemName.text = item.employee;
     flDashboardItem3.lblItemType.text = item.title;
@@ -151,10 +135,10 @@ function addOpenIncidents(items) {
       flDashboardItem3.lblItemTitle.textColor = Color.create.apply(null, RGB_BLUE);
     }
     // TODO: Date
-    page.flOpenIncidentItems.addChild(flDashboardItem3);
-    page.flOpenIncidentItems.children["flDashboardItem3_" + index] = flDashboardItem3;
-    page.flOpenIncidentItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem3));
-    flDashboardItem3.dispatch(pushClassNames(".dashboardDataElement"));
+    page.flOpenIncidentItems.addChild(flDashboardItem3, "flDashboardItem3_" + index, ".dashboardDataElement");
+    // page.flOpenIncidentItems.children["flDashboardItem3_" + index] = flDashboardItem3;
+    // page.flOpenIncidentItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem3));
+    // flDashboardItem3.dispatch(pushClassNames(".dashboardDataElement"));
     
     page.flOpenIncidentItems.height += flDashboardItem3.height;
   });
@@ -165,8 +149,6 @@ function addStoreAndCorporateNews(items) {
   page.flNewsItems.children = page.flNewsItems.children || [];
   items.forEach(function(item, index) {
     var flDashboardItem4 = new FlDashboardItem4();
-    flDashboardItem4.width = NaN;
-    flDashboardItem4.height = 80;
     flDashboardItem4.lblItemTitle.text = item.location;
     flDashboardItem4.lblItemName.text  = item.employee;
     flDashboardItem4.lblItemType.text  = item.type;
@@ -176,8 +158,7 @@ function addStoreAndCorporateNews(items) {
       flDashboardItem4.flLine.visible = false;
     }
 
-    page.flNewsItems.addChild(flDashboardItem4);
-    page.flNewsItems.children["flDashboardItem4_" + index] = flDashboardItem4;
+    page.flNewsItems.addChild(flDashboardItem4, "flDashboardItem4_" + index,".dashboardDataElement");
     page.flNewsItems.height += flDashboardItem4.height;
   });
 }
@@ -188,8 +169,6 @@ function addIncomingShipments(items) {
 
   items.forEach(function(item, index) {
     var flDashboardItem5 = new FlDashboardItem5();
-    flDashboardItem5.width = NaN;
-    flDashboardItem5.height = 80;
     flDashboardItem5.lblItemTitle.text = item.title;
     flDashboardItem5.lblItemName.text = item.type;
     flDashboardItem5.lblItemType.text = item.status;
@@ -199,8 +178,7 @@ function addIncomingShipments(items) {
       flDashboardItem5.flLine.visible = false;
     }
 
-    page.flShipmentsItems.addChild(flDashboardItem5);
-    page.flShipmentsItems.children["flDashboardItem5_" + index] = flDashboardItem5;
+    page.flShipmentsItems.addChild(flDashboardItem5, "flDashboardItem5_" + index,".dashboardDataElement");
     page.flShipmentsItems.height += flDashboardItem5.height;
   });
 }
@@ -211,8 +189,6 @@ function addSocialActivities(items) {
 
   items.forEach(function(item, index) {
     var flDashboardItem3 = new FlDashboardItem3();
-    flDashboardItem3.width = NaN;
-    flDashboardItem3.height = 80;
     flDashboardItem3.lblItemTitle.text = item.state;
     flDashboardItem3.lblItemName.text = item.employee;
     flDashboardItem3.lblItemType.text = item.title;
@@ -222,8 +198,8 @@ function addSocialActivities(items) {
       flDashboardItem3.flLine.visible = false;
     }
 
-    page.flSocialActivityItems.addChild(flDashboardItem3);
-    page.flSocialActivityItems.children["flDashboardItem3_" + index] = flDashboardItem3;
+    page.flSocialActivityItems.addChild(flDashboardItem3, "flDashboardItem3_" + index, ".dashboardDataElement");
+    // page.flSocialActivityItems.children["flDashboardItem3_" + index] = flDashboardItem3;
     page.flSocialActivityItems.height += flDashboardItem3.height;
   });
 }

@@ -16,6 +16,7 @@ const Router = require("sf-core/ui/router");
 const System = require("sf-core/device/system");
 const isTablet = require("./lib/isTablet");
 
+require("./context/pageContext");
 require("./theme");
 
 // const settings = require("./settings.json");

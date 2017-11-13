@@ -4,7 +4,6 @@
 const extend = require('js-base/core/extend');
 const Color = require("sf-core/ui/color");
 const FlexLayout = require('sf-core/ui/flexlayout');
-const addPageContextChild = require("@smartface/contx/lib/smartface/action/addPageContextChild")
 const pushClassNames = require("@smartface/contx/lib/styling/action/pushClassNames")
 const removeClassName = require("@smartface/contx/lib/styling/action/removeClassName")
 
@@ -116,8 +115,8 @@ function setSize(newSize) {
 
 	for (var i = 0; i < newSize; i++) {
 		this.children[PREFIX+i] = new FlexLayout();
-		this.dispatch(addPageContextChild(PREFIX + i, this.children[PREFIX + i], [".flexLayout", ".flexLayout-dotIndicator-item.inactive"]));
-		this.addChild(this.children[PREFIX + i]);
+		// this.dispatch(addPageContextChild(PREFIX + i, this.children[PREFIX + i], [".flexLayout", ".flexLayout-dotIndicator-item.inactive"]));
+		this.addChild(this.children[PREFIX + i], PREFIX + i, ".flexLayout .flexLayout-dotIndicator-item.inactive");
 	}
 	
 	this.currentIndex = 0;

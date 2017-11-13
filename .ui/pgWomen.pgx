@@ -4,11 +4,8 @@
 			"type": "Page",
 			"id": "96f5-dfac-ba99-0fbc",
 			"initialized": true,
-			"userProps": {
-				"orientation": "AUTO",
-				"paddingTop": null
-			},
-			"className": ".page",
+			"userProps": {},
+			"className": ".page .womenPageMain",
 			"version": "6.5.2",
 			"props": {
 				"name": "pgWomen",
@@ -26,7 +23,9 @@
 		{
 			"type": "StatusBar",
 			"id": "a001-0712-b987-7a09",
-			"userProps": {},
+			"userProps": {
+				"style": "LIGHTCONTENT"
+			},
 			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",

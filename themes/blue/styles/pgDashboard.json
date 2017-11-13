@@ -14,9 +14,7 @@
       "visible": true,
       "align": "VERTICAL",
       "scrollBarEnabled": true,
-      "layout": {
-        "height": 1300
-      },
+      "layoutHeight": 1300,
       "flexProps": {
         "alignSelf": "AUTO",
         "direction": "INHERIT",
@@ -28,11 +26,11 @@
         "positionType": "RELATIVE",
         "flexGrow": 1
       },
-      "+page: Screen.width > 450 && Screen.width < 800":{
-        "layoutHeight": 800
+      "+page: Screen.width > 450":{
+        "layoutHeight": 400
       },
       "+isTablet:": {
-        "layoutHeight": 800
+        "layoutHeight": 400
       }
     },
     ".flItem": {

@@ -128,7 +128,7 @@ function redesignListviewItem() {
 
   this.lvMain.refreshData();
   this.lvMain.stopRefresh();
-  this.layout.addChild(this.lvMain);
+  this.layout.addChild(this.lvMain, "lvMain");
 }
 
 function loadUI() {
