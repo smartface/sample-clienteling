@@ -9,6 +9,7 @@ const Router = require("sf-core/ui/router");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const lookbookService = require("../service/Lookbook");
 const Color = require("sf-core/ui/color");
+const addContextChild = require("@smartface/contx/lib/smartface/action/addChild");
 
 const ITEM_WIDTH = 140;
 const ITEM_HEIGHT = 275;
@@ -25,6 +26,7 @@ const PgLookbook = extend(PgLookbookDesign)(
     this.flHeaderLeft.onTouchEnded = function() {
       Router.goBack();
     };
+    
     loadUI.call(this);
   });
 
@@ -65,6 +67,9 @@ function redesignListviewItem() {
     paddingRight: 10,
     backgroundColor: Color.create(200, 241, 241, 241)
   });
+  
+  this.layout.addChild(this.lvMain, "lvMain");
+
   var id = 0;
   var itemCountPerRow = Math.floor(Screen.width / (ITEM_WIDTH + 20));
   this.lvMain.onRowSelected = function() {
@@ -86,6 +91,9 @@ function redesignListviewItem() {
       //backgroundColor: Color.GRAY,
       id: ++id
     });
+    
+    this.lvMain.dispatch(addContextChild("listItems", listItem));
+    
     for (var i = 0; i < itemCountPerRow; ++i) {
       listItem.addChild(new LookbookItem({
         positionType: FlexLayout.PositionType.RELATIVE,
@@ -100,12 +108,11 @@ function redesignListviewItem() {
         marginLeft: 10,
         marginRight: 10,
         id: i + 200
-      }));
+      }), "listItem_"+i);
     }
 
     return listItem;
-
-  };
+  }.bind(this);
   this.lvMain.rowHeight = ITEM_HEIGHT + 50;
   this.lvMain.itemCount = Math.ceil(dataset.length / itemCountPerRow);
   this.lvMain.onRowBind = function(listViewItem, index) {
@@ -128,7 +135,6 @@ function redesignListviewItem() {
 
   this.lvMain.refreshData();
   this.lvMain.stopRefresh();
-  this.layout.addChild(this.lvMain, "lvMain");
 }
 
 function loadUI() {
