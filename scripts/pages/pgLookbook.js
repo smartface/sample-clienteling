@@ -22,10 +22,16 @@ const PgLookbook = extend(PgLookbookDesign)(
     _super(this);
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    this.onOrientationChange = onOrientationChange.bind(this);
+    this.onOrientationChange = onOrientationChange.bind(this, this.onOrientationChange.bind(this));
     this.flHeaderLeft.onTouchEnded = function() {
       Router.goBack();
     };
+    
+    this.itemsPool = [];
+    
+    // for(var i=0; i < 1000; i++){
+    //   this.itemsPool.push();
+    // }
     
     loadUI.call(this);
   });
@@ -39,7 +45,6 @@ const PgLookbook = extend(PgLookbookDesign)(
 function onShow(superOnShow) {
   superOnShow();
   Router.sliderDrawer.enabled = false;
-  redesignListviewItem.call(this);
 }
 
 /**
@@ -48,18 +53,23 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
-  const page = this;
   superOnLoad();
-  adjustHeaderBar(page);
+  adjustHeaderBar(this);
   redesignListviewItem.call(this);
 }
 
-function onOrientationChange() {
-  redesignListviewItem.call(this);
+function onOrientationChange(superOnOrientationChange) {
+  superOnOrientationChange && superOnOrientationChange();
+  setTimeout(redesignListviewItem.bind(this), 1);
 }
 
 function redesignListviewItem() {
-  this.layout.removeChild(this.lvMain);
+  if(this.lvMain){
+    this.layout.removeChild(this.lvMain);
+    this.lvMain.onRowBind = function(){};
+    this.lvMain.onRowCreate = function(){};
+  }
+  
   this.lvMain = new ListView({
     positionType: FlexLayout.PositionType.RELATIVE,
     flexGrow: 1,
@@ -72,6 +82,8 @@ function redesignListviewItem() {
 
   var id = 0;
   var itemCountPerRow = Math.floor(Screen.width / (ITEM_WIDTH + 20));
+  // const items = this.itemsPool.slice(0, itemCountPerRow);
+  
   this.lvMain.onRowSelected = function() {
     Router.go("pgWomen");
   };
@@ -95,20 +107,7 @@ function redesignListviewItem() {
     this.lvMain.dispatch(addContextChild("listItems", listItem));
     
     for (var i = 0; i < itemCountPerRow; ++i) {
-      listItem.addChild(new LookbookItem({
-        positionType: FlexLayout.PositionType.RELATIVE,
-        alignSelf: FlexLayout.AlignSelf.CENTER,
-        alignItems: FlexLayout.AlignItems.CENTER,
-        alignContent: FlexLayout.AlignContent.STRETCH,
-        height: ITEM_HEIGHT,
-        backgroundColor: Color.WHITE,
-        borderRadius: 10,
-        width: ITEM_WIDTH,
-        paddingTop: 10,
-        marginLeft: 10,
-        marginRight: 10,
-        id: i + 200
-      }), "listItem_"+i);
+      listItem.addChild(new LookbookItem({id: i + 200}), "listItem_"+i, ".pgLookBook_lookbookItem");
     }
 
     return listItem;
@@ -121,13 +120,13 @@ function redesignListviewItem() {
       sourceIndex = (index * itemCountPerRow) + i;
       item = listViewItem.findChildById(i + 200);
       data = dataset[sourceIndex];
+      
       if (item && sourceIndex < dataset.length) {
         item.visible = true;
         item.imgPreview.loadFromUrl(data.image);
         item.lblPrice.text = "$" + data.price.amount;
         item.lblName.text = data.name;
-      }
-      else {
+      } else {
         item && (item.visible = false);
       }
     }

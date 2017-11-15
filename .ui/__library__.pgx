@@ -1241,7 +1241,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "e02d-b805-d189-cc15",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
