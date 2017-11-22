@@ -89,6 +89,7 @@ function redesignListviewItem() {
   };
   this.lvMain.refreshEnabled = false;
   this.lvMain.onRowCreate = function() {
+    const itemid = ++id;
     var listItem = new ListViewItem({
       positionType: FlexLayout.PositionType.ABSOLUTE,
       top: 0,
@@ -101,10 +102,10 @@ function redesignListviewItem() {
       alignItems: FlexLayout.AlignItems.CENTER,
       alignContent: FlexLayout.AlignContent.CENTER,
       //backgroundColor: Color.GRAY,
-      id: ++id
+      id: itemid
     });
     
-    this.lvMain.dispatch(addContextChild("listItems", listItem));
+    this.lvMain.dispatch(addContextChild("listItems_"+itemid, listItem));
     
     for (var i = 0; i < itemCountPerRow; ++i) {
       listItem.addChild(new LookbookItem({id: i + 200}), "listItem_"+i, ".pgLookBook_lookbookItem");
