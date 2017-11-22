@@ -69,7 +69,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "4a13-68fd-e0c7-dcfd",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -345,13 +345,14 @@
 				"width": null,
 				"height": null,
 				"paddingTop": 10,
+				"id": 7,
 				"flexProps": {
 					"flexGrow": 5
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 103,
+				"id": 7,
 				"name": "flProductDetail",
 				"children": [
 					"dc3e-edb9-e2e4-8e2a",
@@ -371,6 +372,7 @@
 				"width": null,
 				"height": null,
 				"paddingTop": 40,
+				"id": 6,
 				"flexProps": {
 					"flexGrow": 2,
 					"alignContent": "FLEX_START",
@@ -379,7 +381,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 102,
+				"id": 6,
 				"name": "flQuantity",
 				"children": [
 					"3184-263f-4e23-3ea3"
@@ -397,6 +399,7 @@
 				"width": null,
 				"height": null,
 				"paddingTop": 30,
+				"id": 5,
 				"flexProps": {
 					"flexGrow": 2,
 					"alignContent": "STRETCH",
@@ -406,7 +409,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 101,
+				"id": 5,
 				"name": "flPrice",
 				"children": [
 					"6870-8044-2f1b-22ef"
@@ -424,13 +427,14 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 4,
 				"flexProps": {
 					"flexGrow": 2
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 100,
+				"id": 4,
 				"name": "flTotal",
 				"children": [
 					"2a8b-d8dc-6c10-5255"
@@ -447,14 +451,14 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"id": 208,
+				"id": 80,
 				"flexProps": {
 					"flexGrow": 1
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 208,
+				"id": 80,
 				"name": "flImage",
 				"children": [
 					"2d1d-042e-77af-6174"
@@ -472,14 +476,14 @@
 				"width": null,
 				"height": null,
 				"paddingLeft": null,
-				"id": 207,
+				"id": 70,
 				"flexProps": {
 					"flexGrow": 1
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 207,
+				"id": 70,
 				"name": "flInfo",
 				"children": [
 					"a371-a7e3-5341-7b50",
@@ -500,14 +504,14 @@
 				"height": null,
 				"imageFillType": "ASPECTFIT",
 				"usePageVariable": true,
-				"id": 311,
+				"id": 81,
 				"flexProps": {
 					"flexGrow": 1
 				}
 			},
 			"className": ".imageView",
 			"props": {
-				"id": 311,
+				"id": 81,
 				"name": "productImage",
 				"usePageVariable": true,
 				"children": [],
@@ -525,7 +529,7 @@
 				"width": null,
 				"text": "Farlap Dress Sleve Top",
 				"textAlignment": "MIDCENTER",
-				"id": 310,
+				"id": 73,
 				"font": {
 					"size": 14
 				},
@@ -535,7 +539,7 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 310,
+				"id": 73,
 				"name": "lblDetail",
 				"text": "Farlap Dress Sleve Top",
 				"usePageVariable": true,
@@ -554,7 +558,7 @@
 				"width": null,
 				"text": "Size: M",
 				"textAlignment": "MIDCENTER",
-				"id": 309,
+				"id": 72,
 				"font": {
 					"size": 14
 				},
@@ -564,7 +568,7 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 309,
+				"id": 72,
 				"name": "lblSize",
 				"text": "Size: M",
 				"usePageVariable": true,
@@ -583,7 +587,7 @@
 				"width": null,
 				"text": "Color: Light Blue",
 				"textAlignment": "MIDCENTER",
-				"id": 308,
+				"id": 71,
 				"font": {
 					"size": 14
 				},
@@ -593,7 +597,7 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 308,
+				"id": 71,
 				"name": "lblColor",
 				"text": "Color: Light Blue",
 				"usePageVariable": true,
@@ -614,7 +618,7 @@
 				"marginTop": null,
 				"maxHeight": 60,
 				"height": null,
-				"id": 222,
+				"id": 50,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -625,7 +629,7 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 222,
+				"id": 50,
 				"name": "label1",
 				"text": "$ 100",
 				"children": [],
@@ -642,6 +646,7 @@
 				"width": null,
 				"height": null,
 				"paddingTop": 30,
+				"id": 40,
 				"flexProps": {
 					"flexGrow": 1,
 					"justifyContent": "FLEX_START"
@@ -649,7 +654,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 201,
+				"id": 40,
 				"name": "flPart1",
 				"children": [
 					"be3a-35c6-5b5f-8aa6"
@@ -670,7 +675,7 @@
 				"text": "$ 100",
 				"marginTop": null,
 				"maxHeight": 60,
-				"id": 223,
+				"id": 41,
 				"font": {
 					"size": 15,
 					"bold": true
@@ -681,7 +686,7 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 223,
+				"id": 41,
 				"name": "lblTotal",
 				"text": "$ 100",
 				"children": [],
@@ -691,7 +696,7 @@
 		{
 			"type": "ListViewItem",
 			"id": "1041-55d5-cb0c-fd5f",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -1340,7 +1345,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "301e-6dd8-2fc0-fd12",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -1642,7 +1647,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "f8b6-a9fc-13a6-9efc",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -2039,7 +2044,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "cd86-49b6-b456-0d16",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -2743,9 +2748,12 @@
 			"source": {
 				"page": "__library__"
 			},
-			"userProps": {},
+			"userProps": {
+				"id": 999
+			},
 			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
 			"props": {
+				"id": 999,
 				"name": "flButtons",
 				"children": [
 					"8629-390f-2cc6-386e",
@@ -2762,10 +2770,12 @@
 			},
 			"userProps": {
 				"text": "2",
-				"usePageVariable": true
+				"usePageVariable": true,
+				"id": 996
 			},
 			"className": ".label #stepper-label",
 			"props": {
+				"id": 996,
 				"name": "lblNumber",
 				"text": "2",
 				"usePageVariable": true,
@@ -2781,10 +2791,12 @@
 			},
 			"userProps": {
 				"usePageVariable": true,
-				"image": "downtriangle.png"
+				"image": "downtriangle.png",
+				"id": 998
 			},
 			"className": ".imageView #stepper-flButtons-imgButton",
 			"props": {
+				"id": 998,
 				"name": "down",
 				"usePageVariable": true,
 				"children": [],
@@ -2799,10 +2811,12 @@
 			},
 			"userProps": {
 				"usePageVariable": true,
-				"image": "uptriangle.png"
+				"image": "uptriangle.png",
+				"id": 997
 			},
 			"className": ".imageView #stepper-flButtons-imgButton",
 			"props": {
+				"id": 997,
 				"name": "up",
 				"usePageVariable": true,
 				"children": [],
@@ -2828,7 +2842,7 @@
 				"marginTop": null,
 				"borderWidth": 1,
 				"borderColor": "rgba( 151, 151, 151, 1 )",
-				"id": 211,
+				"id": 60,
 				"maxWidth": 63,
 				"paddingBottom": null,
 				"paddingTop": null,
@@ -2850,7 +2864,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
 			"props": {
-				"id": 211,
+				"id": 60,
 				"name": "stepper",
 				"usePageVariable": true,
 				"children": [],
@@ -2872,6 +2886,7 @@
 				"left": 0,
 				"minHeight": null,
 				"maxHeight": 35,
+				"id": 2,
 				"flexProps": {
 					"flexGrow": null,
 					"justifyContent": "FLEX_END",
@@ -2882,7 +2897,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 200,
+				"id": 2,
 				"name": "flPart2",
 				"children": [
 					"1247-131b-d667-72c0",
@@ -2901,6 +2916,7 @@
 			"userProps": {
 				"width": null,
 				"height": 35,
+				"id": 20,
 				"flexProps": {
 					"flexGrow": 1,
 					"justifyContent": "FLEX_START"
@@ -2908,7 +2924,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 301,
+				"id": 20,
 				"name": "flEdit",
 				"children": [
 					"77dd-9966-1e45-3e9c",
@@ -2928,6 +2944,7 @@
 				"textAlignment": "MIDCENTER",
 				"width": null,
 				"height": null,
+				"id": 22,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "AUTO"
@@ -2938,7 +2955,7 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 403,
+				"id": 22,
 				"name": "lblEdit",
 				"text": "EDIT",
 				"children": [],
@@ -2955,6 +2972,7 @@
 				"width": 30,
 				"marginLeft": null,
 				"bottom": 10,
+				"id": 21,
 				"flexProps": {
 					"flexGrow": null,
 					"alignSelf": "CENTER"
@@ -2962,7 +2980,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"id": 402,
+				"id": 21,
 				"name": "flLine",
 				"children": [],
 				"parent": "1872-0632-f672-8921"
@@ -2977,13 +2995,14 @@
 			"userProps": {
 				"width": null,
 				"height": 35,
+				"id": 10,
 				"flexProps": {
 					"flexGrow": 1
 				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 300,
+				"id": 10,
 				"name": "flSaveForLater",
 				"children": [
 					"a676-531e-46e8-e37c",
@@ -3003,6 +3022,7 @@
 				"textAlignment": "MIDCENTER",
 				"width": null,
 				"height": null,
+				"id": 12,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -3012,7 +3032,7 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 401,
+				"id": 12,
 				"name": "lblRemove",
 				"text": "SAVE FOR LATER",
 				"children": [],
@@ -3031,6 +3051,7 @@
 				"alpha": 1,
 				"backgroundColor": "rgba( 29, 29, 38, 0.1 )",
 				"bottom": 10,
+				"id": 11,
 				"flexProps": {
 					"flexGrow": null,
 					"alignSelf": "CENTER"
@@ -3038,7 +3059,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"id": 400,
+				"id": 11,
 				"name": "flLine",
 				"children": [],
 				"parent": "e069-d2ae-6cfe-ba73"
@@ -3148,6 +3169,7 @@
 				"marginRight": null,
 				"alpha": 1,
 				"backgroundColor": "rgba( 0, 0, 0, 0.1 )",
+				"id": 1,
 				"flexProps": {
 					"flexGrow": null,
 					"alignSelf": "STRETCH",
@@ -3156,6 +3178,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
+				"id": 1,
 				"name": "line",
 				"children": [],
 				"parent": "5be9-8547-09ac-6568"
@@ -3242,6 +3265,7 @@
 				"width": null,
 				"height": 35,
 				"maxHeight": 35,
+				"id": 30,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignItems": "STRETCH",
@@ -3252,7 +3276,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"id": 204,
+				"id": 30,
 				"name": "flPart2",
 				"children": [
 					"0d76-4334-141f-21da",
@@ -3275,6 +3299,7 @@
 				"textColor": "rgba( 208, 2, 27, 1 )",
 				"marginBottom": null,
 				"bottom": null,
+				"id": 32,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "AUTO"
@@ -3285,7 +3310,7 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 305,
+				"id": 32,
 				"name": "lblRemove",
 				"text": "REMOVE",
 				"children": [],
@@ -3307,6 +3332,7 @@
 				"alpha": 1,
 				"backgroundColor": "rgba( 208, 2, 27, 0.2 )",
 				"borderColor": "rgba( 29, 29, 38, 0.1 )",
+				"id": 31,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "CENTER"
@@ -3314,7 +3340,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"id": 304,
+				"id": 31,
 				"name": "flLine",
 				"children": [],
 				"parent": "1247-131b-d667-72c0"
@@ -3337,6 +3363,7 @@
 				"marginRight": null,
 				"alpha": 1,
 				"backgroundColor": "rgba( 0, 0, 0, 0.1 )",
+				"id": 3,
 				"flexProps": {
 					"flexGrow": null,
 					"alignSelf": "STRETCH",
@@ -3345,6 +3372,7 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
+				"id": 3,
 				"name": "line_1",
 				"children": [],
 				"parent": "5be9-8547-09ac-6568"
