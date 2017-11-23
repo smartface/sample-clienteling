@@ -1,1 +1,25 @@
-{}
+{
+	"#pgDashboard.svMain": {},
+	".headerBar": {
+		"backgroundColor": "rgba( 189, 16, 224, 1 )"
+	},
+	".button": {
+		"backgroundColor": "rgba( 126, 211, 33, 1 )"
+	},
+	".asdfsd": {
+		"flexProps": {
+			"alignSelf": "AUTO"
+		}
+	},
+	".listViewItem": {},
+	".scrollView": {
+		"height": 200
+	},
+	".flexLayout-default": {
+		"height": 200
+	},
+	".statusBar": {
+		"color": "rgba( 255, 255, 255, 1 )",
+		"style": "LIGHTCONTENT"
+	}
+}

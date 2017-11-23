@@ -2752,7 +2752,7 @@
 				"height": 150,
 				"width": null,
 				"usePageVariable": true,
-				"backgroundColor": "rgba( 126, 211, 33, 1 )",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"layoutHeight": 150,
 				"align": "HORIZONTAL",
 				"layoutWidth": 500,

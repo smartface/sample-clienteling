@@ -14,8 +14,7 @@ function getCutomerProfile(profileId) {
         request(reqOps, (err, result) => {
             if (err) {
                 reject(err);
-            }
-            else {
+            } else {
                 resolve(result);
             }
         });
@@ -28,8 +27,7 @@ function getLookBook(profileId) {
         request(reqOps, (err, result) => {
             if (err) {
                 reject(err);
-            }
-            else {
+            } else {
                 resolve(result);
             }
         });

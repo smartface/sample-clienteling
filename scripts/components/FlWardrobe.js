@@ -3,10 +3,11 @@ const FlWardrobeDesign = require('library/FlWardrobe');
 
 const FlWardrobe = extend(FlWardrobeDesign)(
   //constructor
-  function(_super, props, opt) {
+  function(_super, opt) {
     opt = opt || {};
     // initalizes super class for this scope
-    _super(this, Object.assign({}, FlWardrobeDesign.defaults, props));
+    _super(this, {});
+
     this.name.text = opt.name;
     this.price.text = opt.price;
     this.image.loadFromUrl(opt.image);

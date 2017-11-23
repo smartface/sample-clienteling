@@ -45,7 +45,7 @@ Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
 Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
 
 // Router.go("pgSignup" + (isTablet ? "Tablet" : "Phone"), {
-Router.go("pgShoppingBag", {
+Router.go("pgCustomerProfile", {
   appStart: true
 });
 

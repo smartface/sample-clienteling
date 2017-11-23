@@ -82,7 +82,7 @@ function addReservations(items) {
     // TODO: Date
     // page.flReservationItems.dispatch(addPageContextChild("reservations_"+index, flDashboardItem1));
     // flDashboardItem1.dispatch(pushClassNames(".dashboardDataElement"));
-    page.flReservationItems.addChild(flDashboardItem1, "reservations_"+index, ".dashboardDataElement");
+    page.flReservationItems.addChild(flDashboardItem1, "reservations_"+index, ".dashboardDataElement", {});
     page.flReservationItems.height += flDashboardItem1.height;
 
   });
@@ -108,7 +108,7 @@ function addTodos(items) {
     }
 
     // TODO: Date
-    page.flTodoItems.addChild(flDashboardItem2, "flDashboardItem2_" + index, ".dashboardDataElement");
+    page.flTodoItems.addChild(flDashboardItem2, "flDashboardItem2_" + index, ".dashboardDataElement", {});
     // page.flTodoItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem2));
     // flDashboardItem2.dispatch(pushClassNames(".dashboardDataElement"));
     
@@ -135,7 +135,7 @@ function addOpenIncidents(items) {
       flDashboardItem3.lblItemTitle.textColor = Color.create.apply(null, RGB_BLUE);
     }
     // TODO: Date
-    page.flOpenIncidentItems.addChild(flDashboardItem3, "flDashboardItem3_" + index, ".dashboardDataElement");
+    page.flOpenIncidentItems.addChild(flDashboardItem3, "flDashboardItem3_" + index, ".dashboardDataElement", {});
     // page.flOpenIncidentItems.children["flDashboardItem3_" + index] = flDashboardItem3;
     // page.flOpenIncidentItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem3));
     // flDashboardItem3.dispatch(pushClassNames(".dashboardDataElement"));
@@ -158,7 +158,7 @@ function addStoreAndCorporateNews(items) {
       flDashboardItem4.flLine.visible = false;
     }
 
-    page.flNewsItems.addChild(flDashboardItem4, "flDashboardItem4_" + index,".dashboardDataElement");
+    page.flNewsItems.addChild(flDashboardItem4, "flDashboardItem4_" + index,".dashboardDataElement", {});
     page.flNewsItems.height += flDashboardItem4.height;
   });
 }
@@ -178,7 +178,7 @@ function addIncomingShipments(items) {
       flDashboardItem5.flLine.visible = false;
     }
 
-    page.flShipmentsItems.addChild(flDashboardItem5, "flDashboardItem5_" + index,".dashboardDataElement");
+    page.flShipmentsItems.addChild(flDashboardItem5, "flDashboardItem5_" + index,".dashboardDataElement", {});
     page.flShipmentsItems.height += flDashboardItem5.height;
   });
 }
@@ -198,7 +198,7 @@ function addSocialActivities(items) {
       flDashboardItem3.flLine.visible = false;
     }
 
-    page.flSocialActivityItems.addChild(flDashboardItem3, "flDashboardItem3_" + index, ".dashboardDataElement");
+    page.flSocialActivityItems.addChild(flDashboardItem3, "flDashboardItem3_" + index, ".dashboardDataElement", {});
     // page.flSocialActivityItems.children["flDashboardItem3_" + index] = flDashboardItem3;
     page.flSocialActivityItems.height += flDashboardItem3.height;
   });

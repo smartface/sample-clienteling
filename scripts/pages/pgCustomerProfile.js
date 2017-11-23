@@ -33,8 +33,6 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.imgShoppingBag.onTouchEnded = function() {
 			Router.go("pgShoppingBag");
 		};
-
-		loadUI.call(this);
 	});
 
 /**
@@ -56,6 +54,8 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
 	const page = this;
 	superOnLoad();
+	
+	loadUI.call(this);
 	adjustHeaderBar(page);
 }
 
@@ -96,22 +96,25 @@ function addInfo(json) {
 
 function addWardrobe(items) {
 	this.swWardrobe.layout.removeAll();
-	this.swWardrobe.children = {};
 
 	items.forEach((item, index) => {
 		var fl = new FlWardrobe({
-			marginRight: 20,
-			width: 300,
-			height: 150
-		}, {
 			image: item.image,
 			price: item.price.currency + " " + item.price.amount,
 			name: item.name,
 			model: item.productId
 		});
 
-		this.swWardrobe.layout.addChild(fl);
-		this.swWardrobe.children[item.name + index] = fl;
+		this.swWardrobe.layout.addChild(fl, "wardrobeItem_" + index);
+		
+		fl.dispatch({
+			type: "updateUserStyle",
+			userStyle: {
+				marginRight: 20,
+				width: 300,
+				height: 150
+			}
+		})
 	});
 }
 
@@ -122,51 +125,65 @@ function addWardrobe(items) {
  */
 function addReservations(items) {
 	this.scFlReservations.layout.removeAll();
-	this.scFlReservations.children = {};
 	
 	items.forEach((item, index) => {
-		var fl = new FlCustomerProfileReservationItem({
-			width: 140,
-			height: 50,
-			marginRight: 20
-		}, item);
+		var fl = new FlCustomerProfileReservationItem({}, item);
 		
-		this.scFlReservations.layout.addChild(fl);
-		this.scFlReservations.children["reservations_" + index] = fl;
+		this.scFlReservations.layout.addChild(fl, 
+			"reservations_" + index, 
+			"", 
+			{
+				width: 140,
+				height: 50,
+				marginRight: 20
+			});
 	});
+	
 	this.scFlReservations.layout.width = 170 * items.length;
 }
 
 function addOpenIncidents(items) {
 	this.scwIndicates.layout.removeAll();
-	this.scwIndicates.children = {};
+	
 	items.forEach((item, index) => {
-		var fl = new FlCustomerProfileReservationItem({
-			width: 140,
-			height: 50,
-			marginRight: 20
-		}, item);
-		this.scwIndicates.layout.addChild(fl);
-		this.scwIndicates.children["incitends" + index] = fl;
+		var fl = new FlCustomerProfileReservationItem({}, item);
+		
+		this.scwIndicates.layout.addChild(
+			fl, 
+			"incitends_" + index, 
+			"", 
+			{
+				width: 140,
+				height: 50,
+				marginRight: 20
+			});
 	});
+	
 	this.scwIndicates.layout.width = 170 * items.length;
 }
 
 function addWishlistItems(items) {
 	this.wishlistScw.layout.removeAll();
-	items.forEach(item => {
-		var fl = new LvCustomerProfileWishlistItem({
-			width: 130,
-			height: 240,
-			marginRight: 20
-		}, {
+	
+	items.forEach((item, index) => {
+		var fl = new LvCustomerProfileWishlistItem({}, {
 			image: item.image,
 			price: item.price.currency + " " + item.price.amount,
 			name: item.name,
 			model: item.productId
 		});
-		this.wishlistScw.layout.addChild(fl);
+		
+		this.wishlistScw.layout.addChild(
+			fl, 
+			"wishlistItem_" + index, 
+			"", 
+			{
+				width: 130,
+				height: 240,
+				marginRight: 20
+			});
 	});
+	
 	this.wishlistScw.layout.width = 150 * items.length;
 }
 

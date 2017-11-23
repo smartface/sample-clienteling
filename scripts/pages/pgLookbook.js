@@ -29,10 +29,6 @@ const PgLookbook = extend(PgLookbookDesign)(
     
     this.itemsPool = [];
     
-    // for(var i=0; i < 1000; i++){
-    //   this.itemsPool.push();
-    // }
-    
     loadUI.call(this);
   });
 
@@ -108,7 +104,7 @@ function redesignListviewItem() {
     this.lvMain.dispatch(addContextChild("listItems_"+itemid, listItem));
     
     for (var i = 0; i < itemCountPerRow; ++i) {
-      listItem.addChild(new LookbookItem({id: i + 200}), "listItem_"+i, ".pgLookBook_lookbookItem");
+      listItem.addChild(new LookbookItem({id: i + 200}), "listItem_"+i, ".pgLookBook_lookbookItem", {});
     }
 
     return listItem;

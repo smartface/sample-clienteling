@@ -31,8 +31,6 @@
 					"6e4d-ec19-d1be-e8f5",
 					"c835-c323-179b-387a",
 					"6015-add5-c15e-d9f3",
-					"1757-127d-acfb-f5e1",
-					"ddfa-0686-69f0-77af",
 					"cd3b-2912-1a7f-7558"
 				],
 				"parent": null,
@@ -696,7 +694,7 @@
 		{
 			"type": "ListViewItem",
 			"id": "1041-55d5-cb0c-fd5f",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -835,7 +833,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "f3c9-f72b-84ed-36d3",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -1835,13 +1833,13 @@
 		{
 			"type": "FlexLayout",
 			"id": "3725-3a21-8599-f43a",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
 			"userProps": {
-				"left": 37,
-				"top": 137,
+				"left": 15.517241379310345,
+				"top": 143.1034482758621,
 				"width": 326.3157894736842,
 				"height": 92.98245614035089,
 				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
@@ -2044,13 +2042,13 @@
 		{
 			"type": "FlexLayout",
 			"id": "cd86-49b6-b456-0d16",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
 			"userProps": {
-				"left": 5.172413793103448,
-				"top": 118.96551724137932,
+				"left": 12.06896551724138,
+				"top": 27.586206896551726,
 				"width": 341.6666666666667,
 				"height": 101.66666666666667,
 				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
@@ -2549,15 +2547,16 @@
 		{
 			"type": "FlexLayout",
 			"id": "c835-c323-179b-387a",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
 			"userProps": {
-				"width": 314.1304347826087,
-				"height": 163.04347826086956,
-				"left": 22.033898305084747,
-				"top": 259.3220338983051,
+				"width": 312.0689655172414,
+				"height": 163.79310344827587,
+				"left": 15.517241379310345,
+				"top": 370.68965517241384,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -2640,6 +2639,7 @@
 				"maxHeight": 20,
 				"id": 2,
 				"usePageVariable": true,
+				"textColor": "rgba( 0, 0, 0, 1 )",
 				"font": {
 					"size": 14
 				},
@@ -3114,42 +3114,6 @@
 				"usePageVariable": true,
 				"children": [],
 				"parent": "6e4d-ec19-d1be-e8f5"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "1757-127d-acfb-f5e1",
-			"hiddenComponent": true,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"left": 259,
-				"top": 285
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flexLayout1",
-				"children": [],
-				"parent": "fb96-1dcf-3bb9-cd95"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "ddfa-0686-69f0-77af",
-			"hiddenComponent": true,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"left": 21.311475409836067,
-				"top": 260.655737704918
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flexLayout2",
-				"children": [],
-				"parent": "fb96-1dcf-3bb9-cd95"
 			}
 		},
 		{

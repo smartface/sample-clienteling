@@ -259,7 +259,9 @@
 				"children": [
 					"9d40-1ab2-afbd-812a"
 				],
-				"parent": "d125-d864-c390-0484"
+				"parent": "d125-d864-c390-0484",
+				"itemCount": null,
+				"rowHeight": 250
 			}
 		},
 		{
