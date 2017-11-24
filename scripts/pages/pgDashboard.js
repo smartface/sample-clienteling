@@ -232,9 +232,6 @@ function loadUI() {
   addStoreAndCorporateNews.call(this, json.storeAndCorporateNews);
   addIncomingShipments.call(this, json.incomingShipments);
   addSocialActivities.call(this, json.socialActivityMonitor);
-
-  //    });
-  //});
 }
 
 module && (module.exports = PgDashboard);
