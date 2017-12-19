@@ -1,11 +1,12 @@
 {
-  ".statusBar": {
-    "color": "#424242",
-    "visible": true,
-    "font": {},
-    "flexProps": {},
-    "ios": {
-      "style": "LIGHTCONTENT"
-    }
-  }
+	".statusBar": {
+		"font": {},
+		"flexProps": {},
+		"android":{
+			"color": "#202020"
+		},
+		"ios": {
+			"style": "LIGHTCONTENT"
+		}
+	}
 }
