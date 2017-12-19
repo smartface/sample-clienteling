@@ -1,3 +1,5 @@
+require("./theme");
+
 /* globals lang */
 require("i18n/i18n.js");
 
@@ -44,10 +46,10 @@ Router.add("pgWomen", require("./pages/pgWomen"), true);
 Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
 Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
 
-// Router.go("pgSignup" + (isTablet ? "Tablet" : "Phone"), {
-Router.go("pgCustomerProfile", {
+Router.go("pgSignup" + (isTablet ? "Tablet" : "Phone"), {
+/* Router.go("pgCustomerProfile", { */
   appStart: true
-});
+}); 
 
 if (System.OS === "Android") {
   sliderDrawer = require("./sliderDrawer");

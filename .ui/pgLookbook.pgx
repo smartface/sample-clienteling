@@ -8,7 +8,7 @@
 				"orientation": "AUTO"
 			},
 			"className": ".page",
-			"version": "6.5.3",
+			"version": "6.5.4",
 			"props": {
 				"name": "pgLookbook",
 				"children": [
