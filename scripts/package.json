@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@smartface/contx": "*",
+    "@smartface/contx": "^1.0.0-rc.19",
     "@smartface/styler": "^1.3.12",
     "js-base": "^1.0.4",
     "mixin-deep": "^1.2.0",
