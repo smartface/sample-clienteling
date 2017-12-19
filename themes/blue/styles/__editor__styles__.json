@@ -17,9 +17,5 @@
 	},
 	".flexLayout-default": {
 		"height": 200
-	},
-	".statusBar": {
-		"color": "rgba( 255, 255, 255, 1 )",
-		"style": "LIGHTCONTENT"
 	}
 }

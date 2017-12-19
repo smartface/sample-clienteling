@@ -4,9 +4,11 @@
 			"type": "Page",
 			"id": "96f5-dfac-ba99-0fbc",
 			"initialized": true,
-			"userProps": {},
+			"userProps": {
+				"orientation": "AUTO"
+			},
 			"className": ".page .womenPageMain",
-			"version": "6.5.2",
+			"version": "6.5.4",
 			"props": {
 				"name": "pgWomen",
 				"children": [
@@ -48,187 +50,6 @@
 				"children": [],
 				"parent": "96f5-dfac-ba99-0fbc",
 				"isRemovable": false
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "4000-d5de-475a-af1e",
-			"userProps": {
-				"width": null,
-				"paddingLeft": null,
-				"paddingRight": null,
-				"marginLeft": 20,
-				"marginRight": 20
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
-			"props": {
-				"name": "flLine",
-				"children": [],
-				"parent": "3bb1-5f09-94e6-0ecf"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "edfd-4e6d-3dc5-875a",
-			"userProps": {
-				"text": "100% Cotton",
-				"width": null,
-				"height": 20,
-				"marginLeft": 20,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".label",
-			"props": {
-				"name": "lblMaterial",
-				"text": "100% Cotton",
-				"children": [],
-				"parent": "3bb1-5f09-94e6-0ecf"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "6400-1af4-b962-e0fd",
-			"userProps": {
-				"text": "Size: M",
-				"width": null,
-				"height": 20,
-				"marginLeft": 20,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".label",
-			"props": {
-				"name": "lblSize",
-				"text": "Size: M",
-				"children": [],
-				"parent": "3bb1-5f09-94e6-0ecf"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "bc69-ba69-b423-9f9e",
-			"userProps": {
-				"text": "Color: Light Blue",
-				"width": null,
-				"height": 20,
-				"marginLeft": 20,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".label",
-			"props": {
-				"name": "lblColor",
-				"text": "Color: Light Blue",
-				"children": [],
-				"parent": "3bb1-5f09-94e6-0ecf"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "00ae-5fb0-95e0-095b",
-			"userProps": {
-				"width": null,
-				"paddingLeft": null,
-				"paddingRight": null,
-				"marginLeft": 20,
-				"marginRight": 20
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
-			"props": {
-				"name": "flLine",
-				"children": [],
-				"parent": "3bb1-5f09-94e6-0ecf"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "9ff7-7f33-e556-5c8d",
-			"userProps": {
-				"text": "100% Cotton",
-				"width": null,
-				"height": 20,
-				"marginLeft": 20,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".label",
-			"props": {
-				"name": "lblMaterial",
-				"text": "100% Cotton",
-				"children": [],
-				"parent": "3bb1-5f09-94e6-0ecf"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "aa50-f268-8b0f-ce01",
-			"userProps": {
-				"text": "Size: M",
-				"width": null,
-				"height": 20,
-				"marginLeft": 20,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".label",
-			"props": {
-				"name": "lblSize",
-				"text": "Size: M",
-				"children": [],
-				"parent": "3bb1-5f09-94e6-0ecf"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "0a83-932a-3431-8e6c",
-			"userProps": {
-				"text": "Color: Light Blue",
-				"width": null,
-				"height": 20,
-				"marginLeft": 20,
-				"left": 0,
-				"top": 0
-			},
-			"className": ".label",
-			"props": {
-				"name": "lblColor",
-				"text": "Color: Light Blue",
-				"children": [],
-				"parent": "3bb1-5f09-94e6-0ecf"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "5a0f-1dc0-0e7f-532a",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "dotIndicator",
-				"id": "cd3b-2912-1a7f-7558"
-			},
-			"userProps": {
-				"width": null,
-				"height": 10,
-				"left": 0,
-				"top": null,
-				"bottom": 8,
-				"right": 0,
-				"usePageVariable": true,
-				"flexProps": {
-					"positionType": "ABSOLUTE",
-					"justifyContent": "CENTER"
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-main",
-			"props": {
-				"name": "dotIndicator",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "ea77-2fe7-11f8-e93a"
 			}
 		},
 		{
@@ -340,11 +161,11 @@
 				"text": "WOMEN",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 255, 255, 255, 1 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 15
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
@@ -380,11 +201,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "830a-dd25-540d-36c7",
-			"userProps": {
-				"flexProps": {
-					"flexDirection": "COLUMN"
-				}
-			},
+			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone-flMain",
 			"props": {
 				"name": "flMain",

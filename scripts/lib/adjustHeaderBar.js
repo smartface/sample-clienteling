@@ -7,7 +7,6 @@ module.exports = exports = function(page) {
     }
     else {
         page.headerBar.visible = false;
-        page.statusBar.android.color = Color.TRANSPARENT;
         page.flStatusBarBg && page.layout.removeChild(page.flStatusBarBg);
     }
 };
