@@ -79,17 +79,18 @@ function onPressAnonymous() {}
 function onPressFacebook() {}
 
 function loginWithUserNameAndPassword(username, password, callback) {
-  authService.login().then(() => {
-    callback();
-  }).catch((err) => {
-    if (err) {
-      err = JSON.stringify(err);
-    }
-    else
-      err = "unknown";
-    console.log(`login error! Reason: ${err}`);
-    callback(err);
-  });
+  //authService.login().then(() => {
+  //  callback();
+  //}).catch((err) => {
+  //  if (err) {
+  //    err = JSON.stringify(err);
+  //  }
+  //  else
+  //    err = "unknown";
+  //  console.log(`login error! Reason: ${err}`);
+  //  callback(err);
+  //});
+  callback();
 }
 
 module && (module.exports = PgSignupTablet);
