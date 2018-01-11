@@ -8,8 +8,9 @@
 				"orientation": "AUTO"
 			},
 			"className": ".page .womenPageMain",
-			"version": "6.5.4",
+			"version": "6.6.0",
 			"props": {
+				"orientation": "AUTO",
 				"name": "pgWomen",
 				"children": [
 					"a001-0712-b987-7a09",
@@ -18,16 +19,13 @@
 					"9425-0c93-396b-b7b0",
 					"830a-dd25-540d-36c7"
 				],
-				"parent": null,
-				"orientation": "AUTO"
+				"parent": null
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "a001-0712-b987-7a09",
-			"userProps": {
-				"style": "LIGHTCONTENT"
-			},
+			"userProps": {},
 			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
@@ -45,8 +43,8 @@
 			},
 			"className": ".headerBar",
 			"props": {
-				"name": "headerBar",
 				"title": "WOMEN",
+				"name": "headerBar",
 				"children": [],
 				"parent": "96f5-dfac-ba99-0fbc",
 				"isRemovable": false
@@ -65,8 +63,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flStatusBarBg",
 				"usePageVariable": true,
+				"name": "flStatusBarBg",
 				"children": [],
 				"parent": "96f5-dfac-ba99-0fbc"
 			}
@@ -112,8 +110,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flHeaderLeft",
 				"usePageVariable": true,
+				"name": "flHeaderLeft",
 				"children": [
 					"dcd5-3c07-675b-14de"
 				],
@@ -170,8 +168,8 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "WOMEN",
+				"name": "lblTitle",
 				"children": [],
 				"parent": "075d-f723-5e93-7b83"
 			}
@@ -260,9 +258,9 @@
 			},
 			"className": ".label #pgWomenPhone.flInfo-flPart1-lblProductName",
 			"props": {
-				"name": "lblProductName",
 				"text": "JAQEX ESTEREL",
 				"usePageVariable": true,
+				"name": "lblProductName",
 				"children": [],
 				"parent": "e7c9-c194-3efc-d500"
 			}
@@ -295,9 +293,9 @@
 			},
 			"className": ".label #pgWomenPhone.flInfo-flPart1-flDetail-lblProductDetail",
 			"props": {
-				"name": "lblProductDetail",
 				"text": "Farlap Dress Sleve Top",
 				"usePageVariable": true,
+				"name": "lblProductDetail",
 				"children": [],
 				"parent": "d48b-e391-efa9-816a"
 			}
@@ -316,9 +314,9 @@
 			},
 			"className": ".label #pgWomenPhone.flInfo-flPart1-flDetail-lblProductPrice",
 			"props": {
-				"name": "lblProductPrice",
 				"text": "$ 400",
 				"usePageVariable": true,
+				"name": "lblProductPrice",
 				"children": [],
 				"parent": "d48b-e391-efa9-816a"
 			}
@@ -364,8 +362,8 @@
 			},
 			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"props": {
-				"name": "lblAbout",
 				"text": "ABOUT ITEM",
+				"name": "lblAbout",
 				"children": [],
 				"parent": "6cc0-1c81-4a7e-1235"
 			}
@@ -400,9 +398,9 @@
 			},
 			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"props": {
-				"name": "lblMaterial",
 				"text": "100% Cotton",
 				"usePageVariable": true,
+				"name": "lblMaterial",
 				"children": [],
 				"parent": "6cc0-1c81-4a7e-1235"
 			}
@@ -416,9 +414,9 @@
 			},
 			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"props": {
-				"name": "lblSize",
 				"text": "Size: M",
 				"usePageVariable": true,
+				"name": "lblSize",
 				"children": [],
 				"parent": "6cc0-1c81-4a7e-1235"
 			}
@@ -432,9 +430,9 @@
 			},
 			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"props": {
-				"name": "lblColor",
 				"text": "Color: Light Blue",
 				"usePageVariable": true,
+				"name": "lblColor",
 				"children": [],
 				"parent": "6cc0-1c81-4a7e-1235"
 			}
@@ -460,8 +458,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flColorButtons",
 				"usePageVariable": true,
+				"name": "flColorButtons",
 				"children": [
 					"8c7e-bb21-6c57-e3df",
 					"64e4-47d2-7b4a-343d",
@@ -483,8 +481,8 @@
 			},
 			"className": ".button #pgWomenPhone.btnColor",
 			"props": {
-				"name": "btnBlue",
 				"text": null,
+				"name": "btnBlue",
 				"children": [],
 				"parent": "dbe0-19c3-826c-fa21"
 			}
@@ -498,8 +496,8 @@
 			},
 			"className": ".button #pgWomenPhone.btnColor",
 			"props": {
-				"name": "btnPink",
 				"text": null,
+				"name": "btnPink",
 				"children": [],
 				"parent": "dbe0-19c3-826c-fa21"
 			}
@@ -513,8 +511,8 @@
 			},
 			"className": ".button #pgWomenPhone.btnColor",
 			"props": {
-				"name": "btnYellow",
 				"text": null,
+				"name": "btnYellow",
 				"children": [],
 				"parent": "dbe0-19c3-826c-fa21"
 			}
@@ -553,8 +551,8 @@
 			},
 			"className": ".button #pgWomenPhone-btnAddToCard",
 			"props": {
-				"name": "btnAddToCard",
 				"text": "ADD TO CART",
+				"name": "btnAddToCard",
 				"children": [],
 				"parent": "839f-1c74-3380-99b5"
 			}
@@ -567,8 +565,8 @@
 			},
 			"className": ".button #pgWomenPhone-btnQuickOrder",
 			"props": {
-				"name": "btnQuickOrder",
 				"text": "QUICK ORDER",
+				"name": "btnQuickOrder",
 				"children": [],
 				"parent": "839f-1c74-3380-99b5"
 			}
@@ -583,8 +581,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flSwipe",
 			"props": {
-				"name": "flSwipe",
 				"usePageVariable": true,
+				"name": "flSwipe",
 				"children": [
 					"8521-2d57-5232-5d31"
 				],

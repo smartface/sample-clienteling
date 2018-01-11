@@ -1,5 +1,7 @@
 require("./theme");
 
+require("./theme");
+
 /* globals lang */
 require("i18n/i18n.js");
 
@@ -26,7 +28,7 @@ require("./theme");
 // Deprecated
 // var stylerBuilder = require("library/styler-builder");
 
-// stylerBuilder.registerThemes(themeSettings.themes || "Defaults");
+// stylerBuilder.registerThemes(themeSettings.themes || "defaultTheme");
 // stylerBuilder.setActiveTheme(themeSettings.currentTheme);
 // ------------
 

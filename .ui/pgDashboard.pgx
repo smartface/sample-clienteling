@@ -8,8 +8,9 @@
 				"orientation": "AUTO"
 			},
 			"className": ".page",
-			"version": "6.5.4",
+			"version": "6.6.0",
 			"props": {
+				"orientation": "AUTO",
 				"name": "pgDashboard",
 				"children": [
 					"c7b1-37c2-7e09-33aa",
@@ -18,17 +19,13 @@
 					"14c7-05e3-2ddc-6adc",
 					"0d22-a22f-27a9-8b58"
 				],
-				"parent": null,
-				"orientation": "AUTO"
+				"parent": null
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "c7b1-37c2-7e09-33aa",
-			"userProps": {
-				"style": "LIGHTCONTENT",
-				"color": "rgba( 66, 66, 66, 1 )"
-			},
+			"userProps": {},
 			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
@@ -46,8 +43,8 @@
 			},
 			"className": ".headerBar",
 			"props": {
-				"name": "headerBar",
 				"title": "Dashboard",
+				"name": "headerBar",
 				"children": [],
 				"parent": "cf18-afa3-65ee-c058",
 				"isRemovable": false
@@ -62,8 +59,8 @@
 			},
 			"className": ".scrollView #pgDashboard.svMain",
 			"props": {
-				"name": "svMain",
 				"usePageVariable": true,
+				"name": "svMain",
 				"children": [
 					"f12f-7811-631b-6b87",
 					"33c3-95b9-18c3-7d3f",
@@ -106,8 +103,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flStatusBarBg",
 				"usePageVariable": true,
+				"name": "flStatusBarBg",
 				"children": [],
 				"parent": "cf18-afa3-65ee-c058"
 			}
@@ -167,17 +164,17 @@
 				"text": "DASHBOARD",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 255, 255, 255, 1 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 15
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "DASHBOARD",
+				"name": "lblTitle",
 				"children": [],
 				"parent": "bb0f-b908-3424-b47e"
 			}
@@ -195,8 +192,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "imgSignOut",
 				"usePageVariable": true,
+				"name": "imgSignOut",
 				"children": [],
 				"parent": "4573-b010-1cb3-d136"
 			}
@@ -214,8 +211,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "imgNotification",
 				"usePageVariable": true,
+				"name": "imgNotification",
 				"children": [],
 				"parent": "4573-b010-1cb3-d136"
 			}
@@ -235,8 +232,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flHeaderLeft",
 				"usePageVariable": true,
+				"name": "flHeaderLeft",
 				"children": [
 					"9626-2b4b-bac8-387e"
 				],
@@ -293,8 +290,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flItems",
 				"usePageVariable": true,
+				"name": "flItems",
 				"children": [
 					"ab32-0a30-a588-fe5e",
 					"450e-bfdb-83b1-43da",
@@ -320,9 +317,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblNearbyCustomers",
 				"text": "NEARBY CUSTOMERS",
 				"usePageVariable": true,
+				"name": "lblNearbyCustomers",
 				"children": [],
 				"parent": "33c3-95b9-18c3-7d3f"
 			}
@@ -338,8 +335,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem",
 			"props": {
-				"name": "flReservations",
 				"usePageVariable": true,
+				"name": "flReservations",
 				"children": [
 					"4652-11da-c001-7ac7",
 					"7edb-aacb-c9ef-19d9"
@@ -391,9 +388,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "RESERVATIONS",
 				"usePageVariable": true,
+				"name": "lblTitle",
 				"children": [],
 				"parent": "4652-11da-c001-7ac7"
 			}
@@ -416,8 +413,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flReservationItems",
 				"usePageVariable": true,
+				"name": "flReservationItems",
 				"children": [],
 				"parent": "ab32-0a30-a588-fe5e"
 			}
@@ -483,9 +480,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "TO DO FOR 01.01.2017",
 				"usePageVariable": true,
+				"name": "lblTitle",
 				"children": [],
 				"parent": "47e9-f191-7cfd-668e"
 			}
@@ -508,8 +505,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flTodoItems",
 				"usePageVariable": true,
+				"name": "flTodoItems",
 				"children": [],
 				"parent": "450e-bfdb-83b1-43da"
 			}
@@ -575,9 +572,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "OPEN INCIDENTS",
 				"usePageVariable": true,
+				"name": "lblTitle",
 				"children": [],
 				"parent": "913e-88e1-4b90-5572"
 			}
@@ -600,8 +597,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flOpenIncidentItems",
 				"usePageVariable": true,
+				"name": "flOpenIncidentItems",
 				"children": [],
 				"parent": "40f9-7db7-7417-a704"
 			}
@@ -667,9 +664,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "STORE AND CORPORATE NEWS",
 				"usePageVariable": true,
+				"name": "lblTitle",
 				"children": [],
 				"parent": "023c-e6d6-34a5-99a7"
 			}
@@ -692,8 +689,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flNewsItems",
 				"usePageVariable": true,
+				"name": "flNewsItems",
 				"children": [],
 				"parent": "5f64-267c-bc46-fa3b"
 			}
@@ -759,9 +756,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "INCOMING SHIPMENTS",
 				"usePageVariable": true,
+				"name": "lblTitle",
 				"children": [],
 				"parent": "a438-6060-10f1-4e50"
 			}
@@ -784,8 +781,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flShipmentsItems",
 				"usePageVariable": true,
+				"name": "flShipmentsItems",
 				"children": [],
 				"parent": "acae-69b2-29c4-d5e9"
 			}
@@ -800,8 +797,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default #pgDashboard.flItem.small",
 			"props": {
-				"name": "flSocialActivity",
 				"usePageVariable": false,
+				"name": "flSocialActivity",
 				"children": [
 					"0979-6354-1dd4-7a8b",
 					"bca6-08a9-02dc-e7c7"
@@ -853,9 +850,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "SOCIAL ACTIVITY MONITOR",
 				"usePageVariable": true,
+				"name": "lblTitle",
 				"children": [],
 				"parent": "0979-6354-1dd4-7a8b"
 			}
@@ -878,8 +875,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flSocialActivityItems",
 				"usePageVariable": true,
+				"name": "flSocialActivityItems",
 				"children": [],
 				"parent": "fb82-7d44-e023-b112"
 			}
@@ -890,9 +887,9 @@
 			"userProps": {
 				"image": "hamburger.png",
 				"imageFillType": "ASPECTFIT",
-				"flexProps": {},
 				"width": 20,
-				"height": 25
+				"height": 25,
+				"flexProps": {}
 			},
 			"className": ".pageBackIconButton",
 			"props": {
@@ -964,8 +961,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "imgUser",
 				"usePageVariable": true,
+				"name": "imgUser",
 				"children": [],
 				"parent": "d2cc-973c-4896-6905"
 			}
@@ -1019,9 +1016,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblUserName",
-				"text": "LISA TOWN",
 				"usePageVariable": true,
+				"text": "LISA TOWN",
+				"name": "lblUserName",
 				"children": [],
 				"parent": "331e-9f4c-fddd-62db"
 			}
@@ -1043,9 +1040,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblEmployeeId",
 				"text": "EMPLOYEE ID: 1121",
 				"usePageVariable": true,
+				"name": "lblEmployeeId",
 				"children": [],
 				"parent": "331e-9f4c-fddd-62db"
 			}
@@ -1067,9 +1064,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblPosition",
 				"text": "SilverStar",
 				"usePageVariable": true,
+				"name": "lblPosition",
 				"children": [],
 				"parent": "331e-9f4c-fddd-62db"
 			}
@@ -1097,9 +1094,9 @@
 			},
 			"className": ".label #pgDashboard.lblTaskNumber",
 			"props": {
-				"name": "lblTaskNumber",
 				"text": "3",
 				"usePageVariable": true,
+				"name": "lblTaskNumber",
 				"children": [],
 				"parent": "d489-15fe-e01b-2ef3"
 			}
@@ -1113,9 +1110,9 @@
 			},
 			"className": ".label #pgDashboard.lblTaskText",
 			"props": {
-				"name": "lblPendingTasks",
 				"text": "Task Pending",
 				"usePageVariable": true,
+				"name": "lblPendingTasks",
 				"children": [],
 				"parent": "d489-15fe-e01b-2ef3"
 			}
@@ -1157,9 +1154,9 @@
 			},
 			"className": ".label #pgDashboard.lblConversionNumber",
 			"props": {
-				"name": "lblConversionPercentage",
 				"text": "76%",
 				"usePageVariable": true,
+				"name": "lblConversionPercentage",
 				"children": [],
 				"parent": "5ae2-0be1-d75e-a36a"
 			}
@@ -1173,9 +1170,9 @@
 			},
 			"className": ".label #pgDashboard.lblConversionText",
 			"props": {
-				"name": "lblConversion",
 				"text": "Last Month Sales Conversion",
 				"usePageVariable": true,
+				"name": "lblConversion",
 				"children": [],
 				"parent": "5ae2-0be1-d75e-a36a"
 			}
@@ -1203,9 +1200,9 @@
 			},
 			"className": ".label #pgDashboard.lblTargetNumber",
 			"props": {
-				"name": "lblTargetPercentage",
 				"text": "80%",
 				"usePageVariable": true,
+				"name": "lblTargetPercentage",
 				"children": [],
 				"parent": "482b-fb52-7ba2-3cbe"
 			}
@@ -1250,18 +1247,18 @@
 				"left": 0,
 				"top": 0,
 				"textAlignment": "BOTTOMCENTER",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 12
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTarget",
 				"text": "This week Target",
 				"usePageVariable": true,
+				"name": "lblTarget",
 				"children": [],
 				"parent": "4d06-7248-ce13-f804"
 			}
@@ -1377,8 +1374,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flGauageEmpty",
 				"usePageVariable": true,
+				"name": "flGauageEmpty",
 				"children": [],
 				"parent": "78fd-9114-a1bc-6fe3"
 			}
@@ -1398,8 +1395,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flGauageFill",
 				"usePageVariable": true,
+				"name": "flGauageFill",
 				"children": [],
 				"parent": "78fd-9114-a1bc-6fe3"
 			}

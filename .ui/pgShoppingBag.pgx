@@ -12,8 +12,9 @@
 				"paddingLeft": null
 			},
 			"className": ".page",
-			"version": "6.5.4",
+			"version": "6.6.0",
 			"props": {
+				"orientation": "AUTO",
 				"name": "pgShoppingBag",
 				"children": [
 					"0524-a91c-96f8-2719",
@@ -25,8 +26,7 @@
 					"0956-1b61-5add-487e",
 					"e6e8-5b33-9017-7609"
 				],
-				"parent": null,
-				"orientation": "AUTO"
+				"parent": null
 			}
 		},
 		{
@@ -50,8 +50,8 @@
 			},
 			"className": ".headerBar",
 			"props": {
-				"name": "headerBar",
 				"title": "SHOPPING BAG",
+				"name": "headerBar",
 				"children": [],
 				"parent": "d125-d864-c390-0484",
 				"isRemovable": false
@@ -168,8 +168,8 @@
 			},
 			"className": ".label .label-header.shopping",
 			"props": {
-				"name": "lblProductDetail",
 				"text": "PRODUCT DETAIL",
+				"name": "lblProductDetail",
 				"children": [],
 				"parent": "228c-536e-e843-34f5"
 			}
@@ -198,8 +198,8 @@
 			},
 			"className": ".label .label-header.shopping",
 			"props": {
-				"name": "lblQuantity",
 				"text": "QUANTITY",
+				"name": "lblQuantity",
 				"children": [],
 				"parent": "e053-51f8-1928-9cd2"
 			}
@@ -214,8 +214,8 @@
 			},
 			"className": ".label .label-header.shopping",
 			"props": {
-				"name": "lblPrice",
 				"text": "PRICE",
+				"name": "lblPrice",
 				"children": [],
 				"parent": "48a5-31f9-7829-a7d4"
 			}
@@ -230,8 +230,8 @@
 			},
 			"className": ".label .label-header.shopping",
 			"props": {
-				"name": "lblTotal",
 				"text": "TOTAL",
+				"name": "lblTotal",
 				"children": [],
 				"parent": "775d-2230-7c2f-6324"
 			}
@@ -254,14 +254,14 @@
 			},
 			"className": ".listView",
 			"props": {
-				"name": "lvShoppingBag",
+				"rowHeight": 250,
+				"itemCount": null,
 				"usePageVariable": true,
+				"name": "lvShoppingBag",
 				"children": [
 					"9d40-1ab2-afbd-812a"
 				],
-				"parent": "d125-d864-c390-0484",
-				"itemCount": null,
-				"rowHeight": 250
+				"parent": "d125-d864-c390-0484"
 			}
 		},
 		{
@@ -302,8 +302,8 @@
 			},
 			"className": ".button",
 			"props": {
-				"name": "btnContinueShopping",
 				"text": "CONTINUE SHOPPING",
+				"name": "btnContinueShopping",
 				"children": [],
 				"parent": "e6e8-5b33-9017-7609"
 			}
@@ -325,10 +325,6 @@
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"flexDirection": 2,
-					"positionType": 0
 				}
 			},
 			"className": ".listViewItem",
@@ -345,12 +341,12 @@
 				"width": null,
 				"height": 50,
 				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"left": 0,
+				"top": 0,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "SPACE_BETWEEN"
-				},
-				"left": 0,
-				"top": 0
+				}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -378,8 +374,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flHeaderLeft",
 				"usePageVariable": true,
+				"name": "flHeaderLeft",
 				"children": [
 					"aaa9-a1a1-bc5e-a26a"
 				],
@@ -428,17 +424,17 @@
 				"text": "SHOPPING BAG",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 255, 255, 255, 1 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 15
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "SHOPPING BAG",
+				"name": "lblTitle",
 				"children": [],
 				"parent": "0ed9-8da4-ad4b-53bd"
 			}
@@ -467,8 +463,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flStatusBarBg",
 				"usePageVariable": true,
+				"name": "flStatusBarBg",
 				"children": [],
 				"parent": "d125-d864-c390-0484"
 			}

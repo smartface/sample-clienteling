@@ -6,7 +6,7 @@
 			"initialized": true,
 			"userProps": {},
 			"className": ".page",
-			"version": "6.5.4",
+			"version": "6.6.0",
 			"props": {
 				"name": "__library__",
 				"children": [
@@ -57,8 +57,8 @@
 			},
 			"className": ".headerBar",
 			"props": {
-				"name": "headerBar",
 				"title": "__library__",
+				"name": "headerBar",
 				"children": [],
 				"parent": "fb96-1dcf-3bb9-cd95",
 				"isRemovable": false
@@ -240,9 +240,9 @@
 			},
 			"className": ".label",
 			"props": {
+				"text": "NAME",
 				"id": 106,
 				"name": "lblName",
-				"text": "NAME",
 				"usePageVariable": true,
 				"children": [],
 				"parent": "550f-3e5a-5bf7-19f8"
@@ -281,18 +281,18 @@
 				"text": "$10.00",
 				"id": 104,
 				"maxHeight": 20,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"bold": true
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
+				"text": "$10.00",
 				"id": 104,
 				"name": "lblPrice",
-				"text": "$10.00",
 				"usePageVariable": true,
 				"children": [],
 				"parent": "0fc5-59b6-389a-1f19"
@@ -509,9 +509,9 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"usePageVariable": true,
 				"id": 81,
 				"name": "productImage",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "dc3e-edb9-e2e4-8e2a"
 			}
@@ -537,9 +537,9 @@
 			},
 			"className": ".label",
 			"props": {
+				"text": "Farlap Dress Sleve Top",
 				"id": 73,
 				"name": "lblDetail",
-				"text": "Farlap Dress Sleve Top",
 				"usePageVariable": true,
 				"children": [],
 				"parent": "3551-acc4-3adb-ddb1"
@@ -566,9 +566,9 @@
 			},
 			"className": ".label",
 			"props": {
+				"text": "Size: M",
 				"id": 72,
 				"name": "lblSize",
-				"text": "Size: M",
 				"usePageVariable": true,
 				"children": [],
 				"parent": "3551-acc4-3adb-ddb1"
@@ -595,9 +595,9 @@
 			},
 			"className": ".label",
 			"props": {
+				"text": "Color: Light Blue",
 				"id": 71,
 				"name": "lblColor",
-				"text": "Color: Light Blue",
 				"usePageVariable": true,
 				"children": [],
 				"parent": "3551-acc4-3adb-ddb1"
@@ -617,19 +617,19 @@
 				"maxHeight": 60,
 				"height": null,
 				"id": 50,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"bold": true,
 					"size": 15
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
+				"text": "$ 100",
 				"id": 50,
 				"name": "label1",
-				"text": "$ 100",
 				"children": [],
 				"parent": "b1ab-98b8-a397-600b"
 			}
@@ -684,9 +684,9 @@
 			},
 			"className": ".label",
 			"props": {
+				"text": "$ 100",
 				"id": 41,
 				"name": "lblTotal",
-				"text": "$ 100",
 				"children": [],
 				"parent": "2a8b-d8dc-6c10-5255"
 			}
@@ -699,11 +699,11 @@
 				"page": "__library__"
 			},
 			"userProps": {
-				"flexProps": {},
 				"left": 201.66666666666669,
 				"top": 285,
 				"width": 155,
-				"height": 345
+				"height": 345,
+				"flexProps": {}
 			},
 			"className": ".listViewItem",
 			"props": {
@@ -733,8 +733,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "image",
 				"usePageVariable": true,
+				"name": "image",
 				"children": [],
 				"parent": "1041-55d5-cb0c-fd5f"
 			}
@@ -778,9 +778,9 @@
 			},
 			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"props": {
-				"name": "name",
 				"text": "Lavender Hat",
 				"usePageVariable": true,
+				"name": "name",
 				"children": [],
 				"parent": "1f67-2d48-76c0-c7af"
 			}
@@ -801,9 +801,9 @@
 			},
 			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"props": {
-				"name": "model",
 				"text": "D56362",
 				"usePageVariable": true,
+				"name": "model",
 				"children": [],
 				"parent": "1f67-2d48-76c0-c7af"
 			}
@@ -823,9 +823,9 @@
 			},
 			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"props": {
-				"name": "price",
 				"text": "$65",
 				"usePageVariable": true,
+				"name": "price",
 				"children": [],
 				"parent": "1f67-2d48-76c0-c7af"
 			}
@@ -838,11 +838,11 @@
 				"page": "__library__"
 			},
 			"userProps": {
-				"flexProps": {},
 				"left": 14.130434782608695,
 				"top": 590.2173913043478,
 				"width": 221,
-				"height": 62
+				"height": 62,
+				"flexProps": {}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -866,8 +866,8 @@
 			},
 			"className": ".label #pgCustomerProfile.lblReservationStatus",
 			"props": {
-				"name": "lblStatus",
 				"text": "In Transit",
+				"name": "lblStatus",
 				"children": [],
 				"parent": "f3c9-f72b-84ed-36d3"
 			}
@@ -883,8 +883,8 @@
 			},
 			"className": ".label #pgCustomerProfile.lblReservationInfo",
 			"props": {
-				"name": "lblInfo",
 				"text": "Online Order",
+				"name": "lblInfo",
 				"children": [],
 				"parent": "f3c9-f72b-84ed-36d3"
 			}
@@ -900,8 +900,8 @@
 			},
 			"className": ".label #pgCustomerProfile.lblReservationDate",
 			"props": {
-				"name": "lblDate",
 				"text": "03.12.2007",
+				"name": "lblDate",
 				"children": [],
 				"parent": "f3c9-f72b-84ed-36d3"
 			}
@@ -922,18 +922,18 @@
 				"text": "TITLE",
 				"textColor": "rgba( 238, 238, 238, 1 )",
 				"textAlignment": "MIDCENTER",
-				"flexProps": {
-					"positionType": "ABSOLUTE"
-				},
 				"font": {
 					"family": "Lato",
 					"size": 14
+				},
+				"flexProps": {
+					"positionType": "ABSOLUTE"
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "tbCustomerProfileText",
 				"text": "TITLE",
+				"name": "tbCustomerProfileText",
 				"children": [],
 				"parent": "fb96-1dcf-3bb9-cd95"
 			}
@@ -976,9 +976,9 @@
 			},
 			"className": ".label #scoreItem-title",
 			"props": {
-				"name": "number",
 				"text": "50",
 				"usePageVariable": true,
+				"name": "number",
 				"children": [],
 				"parent": "c861-5a96-8f5a-c5ab"
 			}
@@ -992,9 +992,9 @@
 			},
 			"className": ".label #scoreItem-text",
 			"props": {
-				"name": "text",
 				"text": "ENGAGEMENT \nSCORE",
 				"usePageVariable": true,
+				"name": "text",
 				"children": [],
 				"parent": "c861-5a96-8f5a-c5ab"
 			}
@@ -1047,8 +1047,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "icon",
 				"usePageVariable": true,
+				"name": "icon",
 				"children": [],
 				"parent": "c4c5-2c0a-4dd1-7152"
 			}
@@ -1090,20 +1090,20 @@
 				"top": 0,
 				"height": null,
 				"textAlignment": "TOPLEFT",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 15,
 					"family": "Lato",
 					"bold": false
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "name",
 				"text": "ANNA",
 				"usePageVariable": true,
+				"name": "name",
 				"children": [],
 				"parent": "9335-b874-bd11-7b0c"
 			}
@@ -1120,19 +1120,19 @@
 				"top": 0,
 				"height": null,
 				"textAlignment": "BOTTOMLEFT",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14,
 					"family": "Lato"
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "code",
 				"text": "0102-40BC",
 				"usePageVariable": true,
+				"name": "code",
 				"children": [],
 				"parent": "9335-b874-bd11-7b0c"
 			}
@@ -1149,19 +1149,19 @@
 				"top": 0,
 				"height": null,
 				"textAlignment": "BOTTOMLEFT",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14,
 					"family": "Lato"
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "date",
 				"text": "Joined January 10th 2017",
 				"usePageVariable": true,
+				"name": "date",
 				"children": [],
 				"parent": "9335-b874-bd11-7b0c"
 			}
@@ -1206,21 +1206,21 @@
 				"height": null,
 				"textAlignment": "MIDLEFT",
 				"textColor": "rgba( 166, 166, 166, 1 )",
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				},
 				"font": {
 					"size": 14,
 					"family": "Lato",
 					"bold": false
+				},
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "title",
 				"text": "Spend per visit",
 				"usePageVariable": true,
+				"name": "title",
 				"children": [],
 				"parent": "42b7-ee79-11cc-15e7"
 			}
@@ -1234,9 +1234,9 @@
 			},
 			"className": ".label #pgCustomerProfile-flSecond-infoPart-itemText",
 			"props": {
-				"name": "text",
 				"text": "$250",
 				"usePageVariable": true,
+				"name": "text",
 				"children": [],
 				"parent": "42b7-ee79-11cc-15e7"
 			}
@@ -1289,8 +1289,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flButtons",
 				"usePageVariable": true,
+				"name": "flButtons",
 				"children": [],
 				"parent": "e02d-b805-d189-cc15"
 			}
@@ -1310,8 +1310,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flIcons",
 				"usePageVariable": true,
+				"name": "flIcons",
 				"children": [],
 				"parent": "e02d-b805-d189-cc15"
 			}
@@ -1393,8 +1393,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "icon",
 				"usePageVariable": true,
+				"name": "icon",
 				"children": [
 					"ecc0-6257-d97e-7faa"
 				],
@@ -1419,8 +1419,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "image",
 				"usePageVariable": true,
+				"name": "image",
 				"children": [],
 				"parent": "cdee-436a-2eb5-b887"
 			}
@@ -1494,8 +1494,8 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "option",
 				"text": "Profile",
+				"name": "option",
 				"children": [],
 				"parent": "fb96-1dcf-3bb9-cd95"
 			}
@@ -1540,20 +1540,20 @@
 				"height": null,
 				"textAlignment": "MIDLEFT",
 				"textColor": "rgba( 166, 166, 166, 1 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14,
 					"family": "Lato",
 					"bold": false
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "title",
 				"text": "Spend per visit",
 				"usePageVariable": true,
+				"name": "title",
 				"children": [],
 				"parent": "cae6-e684-ae6f-aaa5"
 			}
@@ -1650,12 +1650,12 @@
 				"page": "__library__"
 			},
 			"userProps": {
-				"flexProps": {},
 				"left": 11.666666666666668,
 				"top": 15,
 				"width": 340,
 				"height": 86.66666666666667,
-				"backgroundColor": "rgba( 216, 216, 216, 0.25 )"
+				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
+				"flexProps": {}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -1710,9 +1710,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemTitle",
 				"text": "In Store",
 				"usePageVariable": true,
+				"name": "lblItemTitle",
 				"children": [],
 				"parent": "6470-719e-0ce9-b0ab"
 			}
@@ -1731,9 +1731,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemName",
 				"text": "Anna",
 				"usePageVariable": true,
+				"name": "lblItemName",
 				"children": [],
 				"parent": "6470-719e-0ce9-b0ab"
 			}
@@ -1773,19 +1773,19 @@
 				"text": "Online Order",
 				"textColor": "rgba( 125, 125, 125, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"bold": true,
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemType",
 				"text": "Online Order",
 				"usePageVariable": true,
+				"name": "lblItemType",
 				"children": [],
 				"parent": "20f8-7f53-2e80-cef9"
 			}
@@ -1800,18 +1800,18 @@
 				"text": "02.01. 2017",
 				"textColor": "rgba( 106, 106, 106, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemDate",
 				"text": "02.01. 2017",
 				"usePageVariable": true,
+				"name": "lblItemDate",
 				"children": [],
 				"parent": "20f8-7f53-2e80-cef9"
 			}
@@ -1824,8 +1824,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"name": "flLine",
 				"usePageVariable": true,
+				"name": "flLine",
 				"children": [],
 				"parent": "f8b6-a9fc-13a6-9efc"
 			}
@@ -1899,9 +1899,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemTitle",
 				"text": "Evelyn Johansson",
 				"usePageVariable": true,
+				"name": "lblItemTitle",
 				"children": [],
 				"parent": "c008-5a4e-2dec-9d45"
 			}
@@ -1920,9 +1920,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemName",
 				"text": "Birthday Call",
 				"usePageVariable": true,
+				"name": "lblItemName",
 				"children": [],
 				"parent": "c008-5a4e-2dec-9d45"
 			}
@@ -1957,19 +1957,19 @@
 				"text": "Overdue",
 				"textColor": "rgba( 106, 106, 106, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"bold": true,
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemType",
 				"text": "Overdue",
 				"usePageVariable": true,
+				"name": "lblItemType",
 				"children": [],
 				"parent": "c081-9cc7-e107-3a69"
 			}
@@ -1985,18 +1985,18 @@
 				"textColor": "rgba( 106, 106, 106, 1 )",
 				"visible": false,
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemDate",
 				"text": "02.01. 2017",
 				"usePageVariable": true,
+				"name": "lblItemDate",
 				"children": [],
 				"parent": "c081-9cc7-e107-3a69"
 			}
@@ -2019,8 +2019,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "imgExclamation",
 				"usePageVariable": true,
+				"name": "imgExclamation",
 				"children": [],
 				"parent": "c008-5a4e-2dec-9d45"
 			}
@@ -2033,8 +2033,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"name": "flLine",
 				"usePageVariable": true,
+				"name": "flLine",
 				"children": [],
 				"parent": "3725-3a21-8599-f43a"
 			}
@@ -2106,9 +2106,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemTitle",
 				"text": "Open",
 				"usePageVariable": true,
+				"name": "lblItemTitle",
 				"children": [],
 				"parent": "4ee7-5878-2005-6123"
 			}
@@ -2127,9 +2127,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemName",
 				"text": "Anna",
 				"usePageVariable": true,
+				"name": "lblItemName",
 				"children": [],
 				"parent": "4ee7-5878-2005-6123"
 			}
@@ -2164,19 +2164,19 @@
 				"text": "Hotels in the shirt",
 				"textColor": "rgba( 32, 32, 32, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"bold": true,
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemType",
 				"text": "Hotels in the shirt",
 				"usePageVariable": true,
+				"name": "lblItemType",
 				"children": [],
 				"parent": "628a-2454-d631-afc6"
 			}
@@ -2191,18 +2191,18 @@
 				"text": "02.01. 2017",
 				"textColor": "rgba( 106, 106, 106, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemDate",
 				"text": "02.01. 2017",
 				"usePageVariable": true,
+				"name": "lblItemDate",
 				"children": [],
 				"parent": "628a-2454-d631-afc6"
 			}
@@ -2219,8 +2219,8 @@
 				"top": 180,
 				"width": 328.0701754385965,
 				"height": 103.50877192982458,
-				"flexProps": {},
-				"backgroundColor": "rgba( 216, 216, 216, 0.25 )"
+				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
+				"flexProps": {}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -2274,9 +2274,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemTitle",
 				"text": "In Store",
 				"usePageVariable": true,
+				"name": "lblItemTitle",
 				"children": [],
 				"parent": "f6be-b7e9-1894-80d2"
 			}
@@ -2295,9 +2295,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemName",
 				"text": "Anna",
 				"usePageVariable": true,
+				"name": "lblItemName",
 				"children": [],
 				"parent": "f6be-b7e9-1894-80d2"
 			}
@@ -2332,19 +2332,19 @@
 				"text": "Online Order",
 				"textColor": "rgba( 125, 125, 125, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"bold": true,
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemType",
 				"text": "Online Order",
 				"usePageVariable": true,
+				"name": "lblItemType",
 				"children": [],
 				"parent": "bfad-4d3e-2bcf-bcbe"
 			}
@@ -2359,18 +2359,18 @@
 				"text": "02.01. 2017",
 				"textColor": "rgba( 106, 106, 106, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemDate",
 				"text": "02.01. 2017",
 				"usePageVariable": true,
+				"name": "lblItemDate",
 				"children": [],
 				"parent": "bfad-4d3e-2bcf-bcbe"
 			}
@@ -2383,12 +2383,12 @@
 				"page": "__library__"
 			},
 			"userProps": {
-				"flexProps": {},
 				"left": 37.80487804878049,
 				"top": 348.7804878048781,
 				"width": 314.03508771929825,
 				"height": 82.4561403508772,
-				"backgroundColor": "rgba( 216, 216, 216, 0.25 )"
+				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
+				"flexProps": {}
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
@@ -2442,9 +2442,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemTitle",
 				"text": "Evelyn Johansson",
 				"usePageVariable": true,
+				"name": "lblItemTitle",
 				"children": [],
 				"parent": "da93-1c47-3d11-a6ff"
 			}
@@ -2463,9 +2463,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemName",
 				"text": "Birthday Call",
 				"usePageVariable": true,
+				"name": "lblItemName",
 				"children": [],
 				"parent": "da93-1c47-3d11-a6ff"
 			}
@@ -2500,19 +2500,19 @@
 				"text": "Overdue",
 				"textColor": "rgba( 106, 106, 106, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"bold": true,
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemType",
 				"text": "Overdue",
 				"usePageVariable": true,
+				"name": "lblItemType",
 				"children": [],
 				"parent": "fc35-9752-6b7c-8d80"
 			}
@@ -2528,18 +2528,18 @@
 				"textColor": "rgba( 106, 106, 106, 1 )",
 				"visible": false,
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblItemDate",
 				"text": "02.01. 2017",
 				"usePageVariable": true,
+				"name": "lblItemDate",
 				"children": [],
 				"parent": "fc35-9752-6b7c-8d80"
 			}
@@ -2592,8 +2592,8 @@
 			"className": ".imageView",
 			"props": {
 				"id": 1,
-				"name": "image",
 				"usePageVariable": true,
+				"name": "image",
 				"children": [],
 				"parent": "c835-c323-179b-387a"
 			}
@@ -2649,10 +2649,10 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 2,
-				"name": "name",
 				"text": "Lavender Handbag",
+				"id": 2,
 				"usePageVariable": true,
+				"name": "name",
 				"children": [],
 				"parent": "3f75-f335-7142-cf9a"
 			}
@@ -2677,10 +2677,10 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 3,
-				"name": "model",
 				"text": "D56362",
+				"id": 3,
 				"usePageVariable": true,
+				"name": "model",
 				"children": [],
 				"parent": "3f75-f335-7142-cf9a"
 			}
@@ -2706,10 +2706,10 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 4,
-				"name": "price",
 				"text": "$125",
+				"id": 4,
 				"usePageVariable": true,
+				"name": "price",
 				"children": [],
 				"parent": "3f75-f335-7142-cf9a"
 			}
@@ -2775,10 +2775,10 @@
 			},
 			"className": ".label #stepper-label",
 			"props": {
-				"id": 996,
-				"name": "lblNumber",
 				"text": "2",
 				"usePageVariable": true,
+				"id": 996,
+				"name": "lblNumber",
 				"children": [],
 				"parent": "6015-add5-c15e-d9f3"
 			}
@@ -2796,9 +2796,9 @@
 			},
 			"className": ".imageView #stepper-flButtons-imgButton",
 			"props": {
+				"usePageVariable": true,
 				"id": 998,
 				"name": "down",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "6fd8-cd8c-3fbb-f64d"
 			}
@@ -2816,9 +2816,9 @@
 			},
 			"className": ".imageView #stepper-flButtons-imgButton",
 			"props": {
+				"usePageVariable": true,
 				"id": 997,
 				"name": "up",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "6fd8-cd8c-3fbb-f64d"
 			}
@@ -2854,19 +2854,13 @@
 					"flexGrow": 1,
 					"alignSelf": "CENTER",
 					"alignContent": "CENTER"
-				},
-				"flex": {
-					"flexDirection": 2,
-					"justifyContent": 1,
-					"alignItems": 2,
-					"positionType": 0
 				}
 			},
 			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
 			"props": {
+				"usePageVariable": true,
 				"id": 60,
 				"name": "stepper",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "7fe9-cc6a-23d3-446a"
 			}
@@ -2945,19 +2939,19 @@
 				"width": null,
 				"height": null,
 				"id": 22,
+				"font": {
+					"size": 13
+				},
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "AUTO"
-				},
-				"font": {
-					"size": 13
 				}
 			},
 			"className": ".label",
 			"props": {
+				"text": "EDIT",
 				"id": 22,
 				"name": "lblEdit",
-				"text": "EDIT",
 				"children": [],
 				"parent": "1872-0632-f672-8921"
 			}
@@ -3023,18 +3017,18 @@
 				"width": null,
 				"height": null,
 				"id": 12,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 13
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
+				"text": "SAVE FOR LATER",
 				"id": 12,
 				"name": "lblRemove",
-				"text": "SAVE FOR LATER",
 				"children": [],
 				"parent": "e069-d2ae-6cfe-ba73"
 			}
@@ -3076,8 +3070,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"name": "flLine",
 				"usePageVariable": true,
+				"name": "flLine",
 				"children": [],
 				"parent": "cd86-49b6-b456-0d16"
 			}
@@ -3093,8 +3087,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"name": "flLine",
 				"usePageVariable": true,
+				"name": "flLine",
 				"children": [],
 				"parent": "a082-f3e1-fe37-1c2c"
 			}
@@ -3110,8 +3104,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
-				"name": "flLine",
 				"usePageVariable": true,
+				"name": "flLine",
 				"children": [],
 				"parent": "6e4d-ec19-d1be-e8f5"
 			}
@@ -3264,19 +3258,19 @@
 				"marginBottom": null,
 				"bottom": null,
 				"id": 32,
+				"font": {
+					"size": 13
+				},
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "AUTO"
-				},
-				"font": {
-					"size": 13
 				}
 			},
 			"className": ".label",
 			"props": {
+				"text": "REMOVE",
 				"id": 32,
 				"name": "lblRemove",
-				"text": "REMOVE",
 				"children": [],
 				"parent": "1247-131b-d667-72c0"
 			}

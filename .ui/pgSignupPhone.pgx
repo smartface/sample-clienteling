@@ -8,8 +8,9 @@
 				"orientation": "AUTO"
 			},
 			"className": ".page",
-			"version": "6.5.4",
+			"version": "6.6.0",
 			"props": {
+				"orientation": "AUTO",
 				"name": "pgSignupPhone",
 				"children": [
 					"a431-6426-27d6-3884",
@@ -18,8 +19,7 @@
 					"eed5-adce-b93c-8173",
 					"c868-c144-5c0f-6155"
 				],
-				"parent": null,
-				"orientation": "AUTO"
+				"parent": null
 			}
 		},
 		{
@@ -43,8 +43,8 @@
 			},
 			"className": ".headerBar",
 			"props": {
-				"name": "headerBar",
 				"title": "SIGN IN",
+				"name": "headerBar",
 				"children": [],
 				"parent": "da7d-a011-d4fb-9c5b",
 				"isRemovable": false
@@ -157,8 +157,8 @@
 			},
 			"className": ".label .label-header",
 			"props": {
-				"name": "lblUserID",
 				"text": "User ID",
+				"name": "lblUserID",
 				"children": [],
 				"parent": "076e-47c9-12e8-938b"
 			}
@@ -180,9 +180,9 @@
 			},
 			"className": ".textBox",
 			"props": {
-				"name": "taUserID",
 				"text": "smartface@smartface.io",
 				"usePageVariable": true,
+				"name": "taUserID",
 				"children": [],
 				"parent": "076e-47c9-12e8-938b"
 			}
@@ -234,8 +234,8 @@
 			},
 			"className": ".label .label-header",
 			"props": {
-				"name": "lblPassword",
 				"text": "Password",
+				"name": "lblPassword",
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b"
 			}
@@ -258,10 +258,10 @@
 			},
 			"className": ".textBox",
 			"props": {
-				"isPassword": true,
-				"name": "taPassword",
 				"text": "12345",
+				"isPassword": true,
 				"usePageVariable": true,
+				"name": "taPassword",
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b"
 			}
@@ -291,22 +291,19 @@
 				"text": "Forgot Password",
 				"textColor": "rgba( 153, 153, 153, 1 )",
 				"textAlignment": "TOPLEFT",
-				"layout": {},
-				"flex": {},
-				"defaults": {},
 				"left": 0,
-				"flexProps": {
-					"alignSelf": "FLEX_END"
-				},
 				"font": {
 					"size": 14,
 					"family": "Nunito"
+				},
+				"flexProps": {
+					"alignSelf": "FLEX_END"
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblForgotPassword",
 				"text": "Forgot Password",
+				"name": "lblForgotPassword",
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b"
 			}
@@ -373,9 +370,9 @@
 			},
 			"className": ".button #pgSignupPhone.btn.btnSignup",
 			"props": {
-				"name": "btnSignup",
 				"text": "Sign In",
 				"usePageVariable": true,
+				"name": "btnSignup",
 				"children": [],
 				"parent": "ec72-6d93-7723-3f20"
 			}
@@ -411,9 +408,9 @@
 			},
 			"className": ".button #pgSignupPhone.btn.btnFacebook",
 			"props": {
-				"name": "btnFacebook",
 				"text": "Login with Facebook",
 				"usePageVariable": true,
+				"name": "btnFacebook",
 				"children": [],
 				"parent": "3eca-e67b-d6e2-e8bf"
 			}
@@ -427,9 +424,9 @@
 			},
 			"className": ".button #pgSignupPhone.btn.btnAnonymous",
 			"props": {
-				"name": "btnAnonymous",
 				"text": "Anonymous Login",
 				"usePageVariable": true,
+				"name": "btnAnonymous",
 				"children": [],
 				"parent": "3eca-e67b-d6e2-e8bf"
 			}
@@ -450,8 +447,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "imgBanner",
 				"usePageVariable": true,
+				"name": "imgBanner",
 				"children": [],
 				"parent": "7eb6-9fa4-2799-664c"
 			}
@@ -473,8 +470,8 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "taHeader",
 				"text": "CLIENTELING",
+				"name": "taHeader",
 				"children": [],
 				"parent": "7eb6-9fa4-2799-664c"
 			}
@@ -492,8 +489,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flStatusBarBg",
 				"usePageVariable": true,
+				"name": "flStatusBarBg",
 				"children": [],
 				"parent": "da7d-a011-d4fb-9c5b"
 			}
@@ -505,12 +502,12 @@
 				"width": null,
 				"height": 50,
 				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"left": 0,
+				"top": 0,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "SPACE_BETWEEN"
-				},
-				"left": 0,
-				"top": 0
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -533,17 +530,17 @@
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"left": null,
 				"top": null,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 15
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblTitle",
 				"text": "SIGN IN",
+				"name": "lblTitle",
 				"children": [],
 				"parent": "eed5-adce-b93c-8173"
 			}
@@ -570,8 +567,8 @@
 			},
 			"className": ".activityIndicator",
 			"props": {
-				"name": "indicator",
 				"usePageVariable": true,
+				"name": "indicator",
 				"children": [],
 				"parent": "ec72-6d93-7723-3f20"
 			}
