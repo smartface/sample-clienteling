@@ -12,10 +12,9 @@
 	<!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
 	<!-- Required for Internet access by 3G, GSM and WIFI -->
 	<uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.USE_FINGERPRINT" />
 	<!-- Required for GPS Usage. -->
-	<!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
-	<!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+	 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
+	 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
 	<!-- Required for vibrate function. -->
 	<!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
 	<!-- Required for contact list functions. -->
@@ -26,28 +25,28 @@
 	<!-- <uses-permission android:name="android.permission.CAMERA" /> -->
 	
 	<!-- Required for write external storage. -->
-	<!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
-	<!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
-<!-- 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> 
 
 	<!-- Required for read phone state. -->
 	<!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
 <!-- 	<uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" />
 	<uses-permission android:name="android.permission.RESTART_PACKAGES" /> -->
 	<!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
-<!-- 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
 
 	<!-- Required for receive sms. -->
 	<!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
 	<!-- Required for read sms. -->
 	<!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
 	<!-- <uses-permission android:name="com.android.vending.BILLING" /> -->
-	<!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
-	<!-- <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> -->
+      <uses-permission android:name="android.permission.WAKE_LOCK" />
+	 <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> 
 	<!-- Required for cloud messaging. -->
 	<!-- <permission
 		android:name="${PackageName}.permission.C2D_MESSAGE"
@@ -56,17 +55,17 @@
 		android:name="${PackageName}.permission.C2D_MESSAGE" /> -->
 
 	<!-- This app has permission to register and receive data message. -->
-	<!-- <uses-permission
-		android:name="com.google.android.c2dm.permission.RECEIVE" /> -->
+	 <uses-permission
+		android:name="com.google.android.c2dm.permission.RECEIVE" /> 
 	
 	<!-- GCM requires a Google account. -->
 	<!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
-	<!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+	 <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-	<!-- <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/> -->
+	 <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/> 
 	<!-- Required for accessing location. -->
-	<!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> -->
+	 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> 
 
 	<!-- GCM requires access location. -->
 	<!-- <uses-feature
@@ -157,7 +156,7 @@
 			
 			<meta-data
 				android:name="com.google.android.geo.API_KEY"
-				android:value="${GoogleMapsKey}"/>
+				android:value="AIzaSyC05XuQf-XLj4BJikCIszLcZ5ZSny4hRiE"/>
 
 			<activity android:name="com.google.android.gms.ads.AdActivity"
 					 android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>

@@ -31,6 +31,7 @@ SMF.i18n.defineLanguage('tr', {
 	"isReadyToInstall": "yüklemeye hazır",
 	"updateMandatory": "Bu güncelleme mecburidir!",
 	"updateOptional": "Güncellemek istiyor musun?",
+	"newVersionAvailable": "A new update is ready!",
 	"updateNow": "Şimdi güncelle",
 	"later": "Sonra",
 	"updateFail": "Güncelleme başarısız oldu",

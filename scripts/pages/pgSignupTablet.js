@@ -5,6 +5,7 @@ const fingerprint = require("sf-extension-utils").fingerprint;
 const authService = require("../service/AuthService");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const System = require('sf-core/device/system');
+const rau = require("sf-extension-utils").rau;
 
 const PgSignupTablet = extend(PgSignupTabletDesign)(
   // Constructor
@@ -53,6 +54,7 @@ function onShow(superOnShow, data) {
       });
     }
   });
+  rau.checkUpdate();
 }
 
 function onLoad(superOnLoad) {
@@ -90,7 +92,7 @@ function loginWithUserNameAndPassword(username, password, callback) {
   //  console.log(`login error! Reason: ${err}`);
   //  callback(err);
   //});
-  callback();
+ // callback();
 }
 
 module && (module.exports = PgSignupTablet);
