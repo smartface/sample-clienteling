@@ -11,8 +11,7 @@ function login(user, pass) {
 
     var username = user;
     var password = pass;
-    console.log(user +" === " + pass +" ?")
-    var url = "https://commonsmartface.blob.core.windows.net/assetmanagement/authentication.json";
+    var url = "https://commonsmartface.blob.core.windows.net/clienteling/clienteling.json";
     var sessionManager = new Http();
 
     var request = sessionManager.requestJSON({
@@ -21,7 +20,6 @@ function login(user, pass) {
         var responseBody = e.body.toString();
 
         var parseJSON = JSON.parse(responseBody);
-        console.log(username === parseJSON[0].username + "   "+ password === parseJSON[0].password)
         if (username === parseJSON[0].username && password === parseJSON[0].password) {
           return resolve(null, responseBody);
         }

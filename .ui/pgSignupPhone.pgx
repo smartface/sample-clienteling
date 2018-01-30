@@ -10,7 +10,6 @@
 			"className": ".page",
 			"version": "6.6.0",
 			"props": {
-				"orientation": "AUTO",
 				"name": "pgSignupPhone",
 				"children": [
 					"a431-6426-27d6-3884",
@@ -19,7 +18,8 @@
 					"eed5-adce-b93c-8173",
 					"c868-c144-5c0f-6155"
 				],
-				"parent": null
+				"parent": null,
+				"orientation": "AUTO"
 			}
 		},
 		{
@@ -43,8 +43,8 @@
 			},
 			"className": ".headerBar",
 			"props": {
-				"title": "SIGN IN",
 				"name": "headerBar",
+				"title": "SIGN IN",
 				"children": [],
 				"parent": "da7d-a011-d4fb-9c5b",
 				"isRemovable": false
@@ -53,10 +53,13 @@
 		{
 			"type": "FlexLayout",
 			"id": "c868-c144-5c0f-6155",
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true
+			},
 			"className": ".flexLayout .flexLayout-default #pgSignupPhone.flMain",
 			"props": {
 				"name": "flMain",
+				"usePageVariable": true,
 				"children": [
 					"7eb6-9fa4-2799-664c",
 					"8fe2-7f47-5fa4-e965"
@@ -76,6 +79,7 @@
 				"top": null,
 				"paddingLeft": 20,
 				"backgroundColor": "rgba( 0, 1, 6, 0 )",
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 0.7,
 					"alignItems": "FLEX_START",
@@ -87,6 +91,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"name": "flBanner",
+				"usePageVariable": true,
 				"children": [
 					"4ab9-00e3-fa9f-6b2a",
 					"19b9-1778-8525-9d40"
@@ -108,6 +113,7 @@
 				"visible": true,
 				"paddingLeft": 20,
 				"paddingRight": 20,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -115,6 +121,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"name": "flInfo",
+				"usePageVariable": true,
 				"children": [
 					"076e-47c9-12e8-938b",
 					"61b2-a1c6-cad7-187b",
@@ -157,8 +164,8 @@
 			},
 			"className": ".label .label-header",
 			"props": {
-				"text": "User ID",
 				"name": "lblUserID",
+				"text": "User ID",
 				"children": [],
 				"parent": "076e-47c9-12e8-938b"
 			}
@@ -180,9 +187,9 @@
 			},
 			"className": ".textBox",
 			"props": {
+				"name": "taUserID",
 				"text": "smartface@smartface.io",
 				"usePageVariable": true,
-				"name": "taUserID",
 				"children": [],
 				"parent": "076e-47c9-12e8-938b"
 			}
@@ -234,8 +241,8 @@
 			},
 			"className": ".label .label-header",
 			"props": {
-				"text": "Password",
 				"name": "lblPassword",
+				"text": "Password",
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b"
 			}
@@ -258,10 +265,10 @@
 			},
 			"className": ".textBox",
 			"props": {
-				"text": "12345",
 				"isPassword": true,
-				"usePageVariable": true,
 				"name": "taPassword",
+				"text": "12345",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b"
 			}
@@ -302,8 +309,8 @@
 			},
 			"className": ".label",
 			"props": {
-				"text": "Forgot Password",
 				"name": "lblForgotPassword",
+				"text": "Forgot Password",
 				"children": [],
 				"parent": "61b2-a1c6-cad7-187b"
 			}
@@ -318,6 +325,7 @@
 				"marginBottom": null,
 				"paddingBottom": 10,
 				"paddingTop": 10,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 2,
 					"flexDirection": "COLUMN",
@@ -330,6 +338,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"name": "flButtons",
+				"usePageVariable": true,
 				"children": [
 					"ec72-6d93-7723-3f20",
 					"3eca-e67b-d6e2-e8bf"
@@ -346,6 +355,8 @@
 				"height": null,
 				"paddingBottom": null,
 				"marginBottom": 10,
+				"usePageVariable": true,
+				"backgroundColor": "rgba( 210, 49, 132, 1 )",
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -354,6 +365,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"name": "flSignup",
+				"usePageVariable": true,
 				"children": [
 					"31a0-dfc1-b0fb-8936",
 					"f7b6-6f73-6779-bcdc"
@@ -366,13 +378,14 @@
 			"id": "31a0-dfc1-b0fb-8936",
 			"userProps": {
 				"text": "Sign In",
-				"usePageVariable": true
+				"usePageVariable": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )"
 			},
 			"className": ".button #pgSignupPhone.btn.btnSignup",
 			"props": {
+				"name": "btnSignup",
 				"text": "Sign In",
 				"usePageVariable": true,
-				"name": "btnSignup",
 				"children": [],
 				"parent": "ec72-6d93-7723-3f20"
 			}
@@ -408,9 +421,9 @@
 			},
 			"className": ".button #pgSignupPhone.btn.btnFacebook",
 			"props": {
+				"name": "btnFacebook",
 				"text": "Login with Facebook",
 				"usePageVariable": true,
-				"name": "btnFacebook",
 				"children": [],
 				"parent": "3eca-e67b-d6e2-e8bf"
 			}
@@ -424,9 +437,9 @@
 			},
 			"className": ".button #pgSignupPhone.btn.btnAnonymous",
 			"props": {
+				"name": "btnAnonymous",
 				"text": "Anonymous Login",
 				"usePageVariable": true,
-				"name": "btnAnonymous",
 				"children": [],
 				"parent": "3eca-e67b-d6e2-e8bf"
 			}
@@ -447,8 +460,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"usePageVariable": true,
 				"name": "imgBanner",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "7eb6-9fa4-2799-664c"
 			}
@@ -470,8 +483,8 @@
 			},
 			"className": ".label",
 			"props": {
-				"text": "CLIENTELING",
 				"name": "taHeader",
+				"text": "CLIENTELING",
 				"children": [],
 				"parent": "7eb6-9fa4-2799-664c"
 			}
@@ -489,8 +502,8 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"usePageVariable": true,
 				"name": "flStatusBarBg",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "da7d-a011-d4fb-9c5b"
 			}
@@ -539,8 +552,8 @@
 			},
 			"className": ".label",
 			"props": {
-				"text": "SIGN IN",
 				"name": "lblTitle",
+				"text": "SIGN IN",
 				"children": [],
 				"parent": "eed5-adce-b93c-8173"
 			}
@@ -567,8 +580,8 @@
 			},
 			"className": ".activityIndicator",
 			"props": {
-				"usePageVariable": true,
 				"name": "indicator",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "ec72-6d93-7723-3f20"
 			}

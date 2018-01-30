@@ -4,8 +4,8 @@ const Router = require("sf-core/ui/router");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const authService = require("../service/AuthService");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
-const System = require('sf-core/device/system');
 const rau = require("sf-extension-utils").rau;
+const System = require('sf-core/device/system');
 
 const PgSignupTablet = extend(PgSignupTabletDesign)(
   // Constructor
@@ -16,8 +16,8 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
     this.btnSignup.onPress = onPressSignup.bind(this);
     this.btnAnonymous.onPress = onPressAnonymous;
     this.btnFacebook.onPress = onPressFacebook;
-    this.taUserID.ios &&  (this.taUserID.ios.clearButtonEnabled = true);
-    this.taPassword.ios &&  (this.taPassword.ios.clearButtonEnabled = true);
+    this.taUserID.ios && (this.taUserID.ios.clearButtonEnabled = true);
+    this.taPassword.ios && (this.taPassword.ios.clearButtonEnabled = true);
   });
 
 /**
@@ -38,19 +38,18 @@ function onShow(superOnShow, data) {
     callback: function(err, fingerprintResult) {
       var password;
       if (err)
-        password = page.taUserID.text;
+        password = page.taPassword.text;
       else
         password = fingerprintResult.password;
       if (!password)
         return alert("password is required");
-      loginWithUserNameAndPassword(page.taUserID.text, password, function(err) {
-        if (err)
-          return alert("Cannot login. Check user name and password. Or system is down");
+      authService.login(page.taUserID.text, password).then((succeed) => {
         fingerprintResult && fingerprintResult.success(); //Important!
         page.indicator.visible = false;
-        Router.go('pgDashboard', {
-          //some data
-        });
+        Router.go('pgDashboard');
+      }).catch(function(error) {
+        page.indicator.visible = false;
+        return alert("Cannot login. Check user name and password. Or system is down");
       });
     }
   });
@@ -61,16 +60,19 @@ function onLoad(superOnLoad) {
   const page = this;
   superOnLoad();
   adjustHeaderBar(page);
+  //sets login information when press
+  onTouch_image.call(this);
+
+  // if (System.OS === "Android") {
+  //   console.log("in system condition");
+  //   page.indicator.android.zIndex = page.btnSignup.android.zIndex + 1
+  // }
 }
 
 function onPressSignup() {
   const page = this;
   if (!page.taUserID.text) {
     return alert("Username should not be empty");
-  }
-  // TODO: Remove workaround
-  if (System.OS === "Android") {
-    return Router.go("pgDashboard");
   }
   page.indicator.visible = true;
   fingerprint.loginWithFingerprint();
@@ -80,19 +82,11 @@ function onPressAnonymous() {}
 
 function onPressFacebook() {}
 
-function loginWithUserNameAndPassword(username, password, callback) {
-  //authService.login().then(() => {
-  //  callback();
-  //}).catch((err) => {
-  //  if (err) {
-  //    err = JSON.stringify(err);
-  //  }
-  //  else
-  //    err = "unknown";
-  //  console.log(`login error! Reason: ${err}`);
-  //  callback(err);
-  //});
- // callback();
+function onTouch_image() {
+  this.flBanner.onTouch = () => {
+    this.taUserID.text = "selfservice"
+    this.taPassword.text = "123qweASD"
+  }
 }
 
 module && (module.exports = PgSignupTablet);

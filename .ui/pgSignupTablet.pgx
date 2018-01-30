@@ -10,16 +10,16 @@
 			"className": ".page",
 			"version": "6.6.0",
 			"props": {
-				"orientation": "AUTO",
 				"name": "pgSignupTablet",
-				"parent": null,
 				"children": [
 					"5607-d230-75de-9a8c",
 					"3aac-ed2b-6f28-f93e",
 					"3431-db49-9ff4-da66",
 					"8668-e576-bebf-2bb0",
 					"85f3-4d55-de4a-fe98"
-				]
+				],
+				"parent": null,
+				"orientation": "AUTO"
 			}
 		},
 		{
@@ -29,8 +29,8 @@
 			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
-				"parent": "eddf-f4fa-fca3-67f4",
 				"children": [],
+				"parent": "eddf-f4fa-fca3-67f4",
 				"isRemovable": false
 			}
 		},
@@ -43,10 +43,10 @@
 			},
 			"className": ".headerBar",
 			"props": {
-				"title": "SIGN IN",
 				"name": "headerBar",
-				"parent": "eddf-f4fa-fca3-67f4",
+				"title": "SIGN IN",
 				"children": [],
+				"parent": "eddf-f4fa-fca3-67f4",
 				"isRemovable": false
 			}
 		},
@@ -57,11 +57,11 @@
 			"className": ".flexLayout .flexLayout-default #pgSignupTablet.flMain",
 			"props": {
 				"name": "flMain",
-				"parent": "eddf-f4fa-fca3-67f4",
 				"children": [
 					"25f8-b6c1-967d-a7e3",
 					"1b2d-3bcc-ca93-6e3c"
-				]
+				],
+				"parent": "eddf-f4fa-fca3-67f4"
 			}
 		},
 		{
@@ -73,6 +73,7 @@
 				"marginLeft": null,
 				"left": 0,
 				"top": 0,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -80,10 +81,11 @@
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"name": "flBanner",
-				"parent": "85f3-4d55-de4a-fe98",
+				"usePageVariable": true,
 				"children": [
 					"05fc-7207-7282-48a6"
-				]
+				],
+				"parent": "85f3-4d55-de4a-fe98"
 			}
 		},
 		{
@@ -105,10 +107,10 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"usePageVariable": true,
 				"name": "imgBanner",
-				"parent": "25f8-b6c1-967d-a7e3",
-				"children": []
+				"usePageVariable": true,
+				"children": [],
+				"parent": "25f8-b6c1-967d-a7e3"
 			}
 		},
 		{
@@ -118,12 +120,12 @@
 			"className": ".flexLayout .flexLayout-default #pgSignupTablet.flInfo",
 			"props": {
 				"name": "flInfo",
-				"parent": "85f3-4d55-de4a-fe98",
 				"children": [
 					"b980-8891-42c7-67ca",
 					"8fe8-6348-112c-7fea",
 					"a560-fcae-9e93-0a16"
-				]
+				],
+				"parent": "85f3-4d55-de4a-fe98"
 			}
 		},
 		{
@@ -140,13 +142,13 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-margin",
 			"props": {
+				"name": "flUserID",
 				"children": [
 					"07e6-9c6b-a5d4-5847",
 					"3488-de72-281e-0f84",
 					"98e0-64ae-6ce0-31a1"
 				],
-				"parent": "1b2d-3bcc-ca93-6e3c",
-				"name": "flUserID"
+				"parent": "1b2d-3bcc-ca93-6e3c"
 			}
 		},
 		{
@@ -163,11 +165,11 @@
 			},
 			"className": ".label .label-header",
 			"props": {
+				"name": "lblUserID",
 				"text": "User ID",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "b980-8891-42c7-67ca",
-				"name": "lblUserID"
+				"parent": "b980-8891-42c7-67ca"
 			}
 		},
 		{
@@ -188,11 +190,11 @@
 			},
 			"className": ".textBox",
 			"props": {
+				"name": "taUserID",
 				"text": "smartface@smartface.io",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "b980-8891-42c7-67ca",
-				"name": "taUserID"
+				"parent": "b980-8891-42c7-67ca"
 			}
 		},
 		{
@@ -203,9 +205,9 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
+				"name": "flLine",
 				"children": [],
-				"parent": "b980-8891-42c7-67ca",
-				"name": "flLine"
+				"parent": "b980-8891-42c7-67ca"
 			}
 		},
 		{
@@ -220,14 +222,14 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-margin",
 			"props": {
+				"name": "flPassword",
 				"children": [
 					"d28c-0fe9-21f7-bb46",
 					"80e1-e2f5-878f-5953",
 					"62b4-20d0-5c32-9c4e",
 					"c47e-11be-3ba0-4d78"
 				],
-				"parent": "1b2d-3bcc-ca93-6e3c",
-				"name": "flPassword"
+				"parent": "1b2d-3bcc-ca93-6e3c"
 			}
 		},
 		{
@@ -244,11 +246,11 @@
 			},
 			"className": ".label .label-header",
 			"props": {
+				"name": "lblPassword",
 				"text": "Password",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "8fe8-6348-112c-7fea",
-				"name": "lblPassword"
+				"parent": "8fe8-6348-112c-7fea"
 			}
 		},
 		{
@@ -270,12 +272,12 @@
 			},
 			"className": ".textBox",
 			"props": {
-				"text": "",
 				"isPassword": true,
+				"name": "taPassword",
+				"text": "",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "8fe8-6348-112c-7fea",
-				"name": "taPassword"
+				"parent": "8fe8-6348-112c-7fea"
 			}
 		},
 		{
@@ -286,9 +288,9 @@
 			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"props": {
+				"name": "flLine",
 				"children": [],
-				"parent": "8fe8-6348-112c-7fea",
-				"name": "flLine"
+				"parent": "8fe8-6348-112c-7fea"
 			}
 		},
 		{
@@ -316,10 +318,10 @@
 			},
 			"className": ".label",
 			"props": {
+				"name": "lblForgotPassword",
 				"text": "Forgot Password",
 				"children": [],
-				"parent": "8fe8-6348-112c-7fea",
-				"name": "lblForgotPassword"
+				"parent": "8fe8-6348-112c-7fea"
 			}
 		},
 		{
@@ -342,25 +344,32 @@
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"name": "flButtons",
-				"parent": "1b2d-3bcc-ca93-6e3c",
 				"children": [
 					"4309-0f0c-2018-4d90",
 					"b2a4-af8f-ab1e-15e6"
-				]
+				],
+				"parent": "1b2d-3bcc-ca93-6e3c"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "4309-0f0c-2018-4d90",
-			"userProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"flexWrap": "NOWRAP",
+					"alignItems": "CENTER"
+				}
+			},
 			"className": ".flexLayout .flexLayout-default #pgSignupTablet.flSignup",
 			"props": {
 				"name": "flSignup",
-				"parent": "a560-fcae-9e93-0a16",
 				"children": [
 					"3fe7-ad5f-0e4a-b97e",
 					"515c-b90b-3b02-7dd9"
-				]
+				],
+				"parent": "a560-fcae-9e93-0a16"
 			}
 		},
 		{
@@ -368,15 +377,18 @@
 			"id": "3fe7-ad5f-0e4a-b97e",
 			"userProps": {
 				"text": "Sign In",
-				"usePageVariable": true
+				"usePageVariable": true,
+				"flexProps": {
+					"alignSelf": "AUTO"
+				}
 			},
 			"className": ".button #pgSignupTablet.btnSignup",
 			"props": {
+				"name": "btnSignup",
 				"text": "Sign In",
 				"usePageVariable": true,
-				"name": "btnSignup",
-				"parent": "4309-0f0c-2018-4d90",
-				"children": []
+				"children": [],
+				"parent": "4309-0f0c-2018-4d90"
 			}
 		},
 		{
@@ -386,11 +398,11 @@
 			"className": ".flexLayout .flexLayout-default #pgSignupTablet.flOther",
 			"props": {
 				"name": "flOther",
-				"parent": "a560-fcae-9e93-0a16",
 				"children": [
 					"37f2-4394-1f8a-f6f5",
 					"b41b-3358-81ce-c247"
-				]
+				],
+				"parent": "a560-fcae-9e93-0a16"
 			}
 		},
 		{
@@ -402,11 +414,11 @@
 			},
 			"className": ".button #pgSignupTablet.btnFacebook",
 			"props": {
+				"name": "btnFacebook",
 				"text": "Login with Facebook",
 				"usePageVariable": true,
-				"name": "btnFacebook",
-				"parent": "b2a4-af8f-ab1e-15e6",
-				"children": []
+				"children": [],
+				"parent": "b2a4-af8f-ab1e-15e6"
 			}
 		},
 		{
@@ -418,11 +430,11 @@
 			},
 			"className": ".button #pgSignupTablet.btnAnonymous",
 			"props": {
+				"name": "btnAnonymous",
 				"text": "Anonymous Login",
 				"usePageVariable": true,
-				"name": "btnAnonymous",
-				"parent": "b2a4-af8f-ab1e-15e6",
-				"children": []
+				"children": [],
+				"parent": "b2a4-af8f-ab1e-15e6"
 			}
 		},
 		{
@@ -438,10 +450,10 @@
 			},
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"usePageVariable": true,
 				"name": "flStatusBarBg",
-				"parent": "eddf-f4fa-fca3-67f4",
-				"children": []
+				"usePageVariable": true,
+				"children": [],
+				"parent": "eddf-f4fa-fca3-67f4"
 			}
 		},
 		{
@@ -461,10 +473,10 @@
 			"className": ".flexLayout .flexLayout-default",
 			"props": {
 				"name": "flHeaderBar",
-				"parent": "eddf-f4fa-fca3-67f4",
 				"children": [
 					"d912-7dbb-83d0-d1ec"
-				]
+				],
+				"parent": "eddf-f4fa-fca3-67f4"
 			}
 		},
 		{
@@ -488,10 +500,10 @@
 			},
 			"className": ".label",
 			"props": {
-				"text": "SIGN IN",
 				"name": "lblTitle",
-				"parent": "8668-e576-bebf-2bb0",
-				"children": []
+				"text": "SIGN IN",
+				"children": [],
+				"parent": "8668-e576-bebf-2bb0"
 			}
 		},
 		{
@@ -508,19 +520,20 @@
 				"bottom": 0,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"color": "rgba( 255, 255, 255, 1 )",
-				"visible": false,
+				"visible": true,
 				"usePageVariable": true,
 				"marginRight": null,
 				"flexProps": {
-					"positionType": "ABSOLUTE"
+					"positionType": "ABSOLUTE",
+					"alignSelf": "STRETCH"
 				}
 			},
 			"className": ".activityIndicator",
 			"props": {
-				"usePageVariable": true,
 				"name": "indicator",
-				"parent": "4309-0f0c-2018-4d90",
-				"children": []
+				"usePageVariable": true,
+				"children": [],
+				"parent": "4309-0f0c-2018-4d90"
 			}
 		}
 	]

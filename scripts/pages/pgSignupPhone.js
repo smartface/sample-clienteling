@@ -81,7 +81,7 @@ function onPressFacebook() {}
 
 function onTouch_image() {
   this.flBanner.onTouch = () =>{
-     this.taUserID.text = "selfservice"
+     this.taUserID.text = "clienteling"
      this.taPassword.text = "123qweASD"
   }
 }
