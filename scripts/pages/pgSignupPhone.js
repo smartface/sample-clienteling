@@ -60,6 +60,9 @@ function onShow(superOnShow, data) {
 
 function onLoad(superOnLoad) {
   const page = this;
+  
+  page.safeAreaLayoutMode = true;
+  
   superOnLoad();
   adjustHeaderBar(page);
   

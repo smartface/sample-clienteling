@@ -52,6 +52,9 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+  
+  this.safeAreaLayoutMode = true;
+  
   adjustHeaderBar(this);
 
   this.imgSignOut.onTouchEnded = function() {

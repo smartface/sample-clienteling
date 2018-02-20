@@ -35,6 +35,9 @@ function onShow() {
 	this.statusBar.visible = false;
 }
 
-function onLoad() {}
+function onLoad() {
+	
+	this.safeAreaLayoutMode = true;
+}
 
 module && (module.exports = contructorFactory);

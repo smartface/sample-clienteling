@@ -50,6 +50,9 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+  
+  this.safeAreaLayoutMode = true;
+  
   adjustHeaderBar(this);
   redesignListviewItem.call(this);
 }

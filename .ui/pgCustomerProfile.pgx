@@ -1,2373 +1,2378 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "c92e-4a8f-06cb-26ff",
 			"initialized": true,
-			"userProps": {
-				"orientation": "AUTO"
-			},
-			"className": ".page",
-			"version": "6.6.0",
 			"props": {
-				"orientation": "AUTO",
-				"name": "pgCustomerProfile",
 				"children": [
 					"246b-87f5-e17a-8fa6",
 					"8ec9-e22c-12c6-b8f3",
-					"4df7-e5f9-ff40-9fd6",
 					"77f9-afe4-e992-e58b",
-					"3166-df70-5cd8-82e8",
-					"36a5-0dc7-ccb7-576d"
+					"0119-45d4-c6a6-8b59"
 				],
+				"name": "pgCustomerProfile",
+				"orientation": "AUTO",
 				"parent": null
-			}
-		},
-		{
-			"type": "StatusBar",
-			"id": "246b-87f5-e17a-8fa6",
-			"userProps": {},
-			"className": ".statusBar",
-			"props": {
-				"name": "statusBar",
-				"children": [],
-				"parent": "c92e-4a8f-06cb-26ff",
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "8ec9-e22c-12c6-b8f3",
-			"hiddenComponent": true,
+			},
+			"type": "Page",
 			"userProps": {
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
+				"orientation": "AUTO"
+			},
+			"version": "6.6.1"
+		},
+		{
+			"className": ".statusBar",
+			"id": "246b-87f5-e17a-8fa6",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "c92e-4a8f-06cb-26ff"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"hiddenComponent": true,
+			"id": "8ec9-e22c-12c6-b8f3",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "c92e-4a8f-06cb-26ff",
+				"title": "ANNA'S PROFILE"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"backgroundColor": "rgba( 31, 31, 31, 1 )",
 				"title": "ANNA'S PROFILE",
 				"titleColor": "rgba( 255, 255, 255, 1 )",
-				"backgroundColor": "rgba( 31, 31, 31, 1 )",
 				"visible": false
-			},
-			"className": ".headerBar",
-			"props": {
-				"title": "ANNA'S PROFILE",
-				"name": "headerBar",
-				"children": [],
-				"parent": "c92e-4a8f-06cb-26ff",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "3166-df70-5cd8-82e8",
-			"userProps": {
-				"marginLeft": 5,
-				"marginRight": 5,
-				"marginTop": 5
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst",
-			"props": {
-				"name": "flFirst",
-				"children": [
-					"3640-7aea-3077-187c",
-					"9d82-b6ff-2177-1b4b",
-					"85f3-967e-a550-d173"
-				],
-				"parent": "c92e-4a8f-06cb-26ff"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "3640-7aea-3077-187c",
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flInfo",
-			"props": {
-				"name": "flInfo",
-				"children": [
-					"351b-0ec8-4364-c3e2"
-				],
-				"parent": "3166-df70-5cd8-82e8"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "9d82-b6ff-2177-1b4b",
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores",
-			"props": {
-				"name": "flScores",
-				"children": [
-					"fa1b-4584-b58e-a9d2",
-					"5cc6-d566-e360-47cc",
-					"fc8f-b7a1-5541-54ce"
-				],
-				"parent": "3166-df70-5cd8-82e8"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "351b-0ec8-4364-c3e2",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileProfileHeader",
-				"id": "c4c5-2c0a-4dd1-7152"
-			},
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flInfo_profile",
-			"props": {
-				"usePageVariable": true,
-				"name": "profileHeader",
-				"children": [],
-				"parent": "3640-7aea-3077-187c"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "5cc6-d566-e360-47cc",
-			"userProps": {
-				"width": 1,
-				"height": null,
-				"left": null,
-				"top": null,
-				"maxHeight": null,
-				"maxWidth": null,
-				"backgroundColor": "rgba( 151, 151, 151, 1 )",
-				"marginTop": 10,
-				"marginBottom": 10,
-				"flexProps": {
-					"flexGrow": null,
-					"alignSelf": "STRETCH"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
-			"props": {
-				"name": "divider",
-				"children": [],
-				"parent": "9d82-b6ff-2177-1b4b"
-			}
-		},
-		{
-			"type": "ScrollView",
-			"id": "36a5-0dc7-ccb7-576d",
-			"hiddenComponent": false,
-			"userProps": {
-				"layoutHeight": 1000,
-				"usePageVariable": true,
-				"marginLeft": 5,
-				"marginRight": 5,
-				"marginBottom": 5
-			},
-			"className": ".scrollView #pgCustomerProfile_scw",
-			"props": {
-				"usePageVariable": true,
-				"name": "scw",
-				"children": [
-					"b9d8-3483-810d-b40b",
-					"aff8-f57b-2780-9681"
-				],
-				"parent": "c92e-4a8f-06cb-26ff"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "aff8-f57b-2780-9681",
-			"hiddenComponent": false,
-			"userProps": {
-				"width": null,
-				"height": null,
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flThird",
-				"children": [
-					"6481-a692-7607-884a",
-					"93cc-815a-beb6-40ac",
-					"7dd3-a673-d522-5983"
-				],
-				"parent": "36a5-0dc7-ccb7-576d"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "b9d8-3483-810d-b40b",
-			"hiddenComponent": false,
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond",
-			"props": {
-				"name": "flSecond",
-				"children": [
-					"6910-2b24-1834-5cc4",
-					"2b83-73cf-84c1-e360",
-					"0d20-beab-712a-5aaa"
-				],
-				"parent": "36a5-0dc7-ccb7-576d"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "0d20-beab-712a-5aaa",
-			"hiddenComponent": false,
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart",
-			"props": {
-				"usePageVariable": true,
-				"name": "infoPart2",
-				"children": [
-					"af1a-471b-d0cd-b8d4",
-					"286c-6bc5-c03e-0e86",
-					"0192-fc3b-ba00-9899",
-					"9c97-125d-ca0e-15a0",
-					"538e-9533-b27b-9c3a",
-					"e6e7-5d20-5da1-9572",
-					"05af-3d49-2819-db7c"
-				],
-				"parent": "b9d8-3483-810d-b40b"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "05af-3d49-2819-db7c",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileMostLikedColors",
-				"id": "cae6-e684-ae6f-aaa5"
-			},
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
-			"props": {
-				"usePageVariable": true,
-				"name": "mostLikedColors",
-				"children": [],
-				"parent": "0d20-beab-712a-5aaa"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "538e-9533-b27b-9c3a",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileTitleText",
-				"id": "42b7-ee79-11cc-15e7"
-			},
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
-			"props": {
-				"usePageVariable": true,
-				"name": "interest",
-				"children": [],
-				"parent": "0d20-beab-712a-5aaa"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "e6e7-5d20-5da1-9572",
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
-			"props": {
-				"name": "divider_4_1_1",
-				"children": [],
-				"parent": "0d20-beab-712a-5aaa"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "0192-fc3b-ba00-9899",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileTitleText",
-				"id": "42b7-ee79-11cc-15e7"
-			},
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
-			"props": {
-				"usePageVariable": true,
-				"name": "brands",
-				"children": [],
-				"parent": "0d20-beab-712a-5aaa"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "af1a-471b-d0cd-b8d4",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileTitleText",
-				"id": "42b7-ee79-11cc-15e7"
-			},
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
-			"props": {
-				"usePageVariable": true,
-				"name": "job",
-				"children": [],
-				"parent": "0d20-beab-712a-5aaa"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "9c97-125d-ca0e-15a0",
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
-			"props": {
-				"name": "divider_4_1_1_1",
-				"children": [],
-				"parent": "0d20-beab-712a-5aaa"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "286c-6bc5-c03e-0e86",
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
-			"props": {
-				"name": "divider_4_1_1_2",
-				"children": [],
-				"parent": "0d20-beab-712a-5aaa"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "6910-2b24-1834-5cc4",
-			"hiddenComponent": false,
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart",
-			"props": {
-				"usePageVariable": true,
-				"name": "infoPart1",
-				"children": [
-					"b0c2-c7f4-f011-05f4",
-					"cdbb-95a0-e66f-b63a",
-					"d953-606c-ac11-67ed",
-					"ec87-1f70-1bcd-ce56",
-					"ac12-8fa2-b38d-64a4",
-					"ed0b-fc5b-6aa3-9d8d",
-					"18cc-93a5-ce19-2fe1",
-					"6ff3-5916-9c61-c4a3"
-				],
-				"parent": "b9d8-3483-810d-b40b"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "ed0b-fc5b-6aa3-9d8d",
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
-			"props": {
-				"name": "divider_4_1_1_2",
-				"children": [],
-				"parent": "6910-2b24-1834-5cc4"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "cdbb-95a0-e66f-b63a",
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
-			"props": {
-				"name": "divider_4_1_1_1",
-				"children": [],
-				"parent": "6910-2b24-1834-5cc4"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "ec87-1f70-1bcd-ce56",
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
-			"props": {
-				"name": "divider_4_1_1",
-				"children": [],
-				"parent": "6910-2b24-1834-5cc4"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "18cc-93a5-ce19-2fe1",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileTitleText",
-				"id": "42b7-ee79-11cc-15e7"
-			},
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
-			"props": {
-				"usePageVariable": true,
-				"name": "store",
-				"children": [],
-				"parent": "6910-2b24-1834-5cc4"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "b0c2-c7f4-f011-05f4",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileTitleText",
-				"id": "42b7-ee79-11cc-15e7"
-			},
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
-			"props": {
-				"usePageVariable": true,
-				"name": "joined",
-				"children": [],
-				"parent": "6910-2b24-1834-5cc4"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "d953-606c-ac11-67ed",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileTitleText",
-				"id": "42b7-ee79-11cc-15e7"
-			},
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
-			"props": {
-				"usePageVariable": true,
-				"name": "perVisit",
-				"children": [],
-				"parent": "6910-2b24-1834-5cc4"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "ac12-8fa2-b38d-64a4",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__",
-				"type": "flCustomerProfileTitleText",
-				"id": "42b7-ee79-11cc-15e7"
-			},
-			"userProps": {
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
-			"props": {
-				"usePageVariable": true,
-				"name": "lastPurchase",
-				"children": [],
-				"parent": "6910-2b24-1834-5cc4"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "6ff3-5916-9c61-c4a3",
-			"hiddenComponent": false,
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
-			"props": {
-				"name": "divider_4_1_1_3",
-				"children": [],
-				"parent": "6910-2b24-1834-5cc4"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "85f3-967e-a550-d173",
-			"hiddenComponent": false,
-			"userProps": {
-				"flexProps": {
-					"alignItems": "CENTER"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flButtons",
-			"props": {
-				"name": "flButtons",
-				"children": [
-					"4b6c-7e4a-e60c-4a77",
-					"80e1-f8d0-3e0d-3ea2"
-				],
-				"parent": "3166-df70-5cd8-82e8"
-			}
-		},
-		{
-			"type": "Button",
-			"id": "4b6c-7e4a-e60c-4a77",
-			"userProps": {
-				"text": "Shopping Bag",
-				"backgroundColor": "rgba( 213, 38, 130, 1 )",
-				"usePageVariable": true
-			},
-			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
-			"props": {
-				"text": "Shopping Bag",
-				"usePageVariable": true,
-				"name": "shoppingBag",
-				"children": [],
-				"parent": "85f3-967e-a550-d173"
-			}
-		},
-		{
-			"type": "Button",
-			"id": "80e1-f8d0-3e0d-3ea2",
-			"userProps": {
-				"text": "Look Book",
-				"backgroundColor": "rgba( 74, 163, 240, 1 )",
-				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "STRETCH"
-				}
-			},
-			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
-			"props": {
-				"text": "Look Book",
-				"usePageVariable": true,
-				"name": "lookBook",
-				"children": [],
-				"parent": "85f3-967e-a550-d173"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "fc8f-b7a1-5541-54ce",
-			"hiddenComponent": false,
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
-			"props": {
-				"name": "loyality",
-				"children": [
-					"411c-5d91-93ca-2d4f",
-					"dee0-1208-6717-f8b9"
-				],
-				"parent": "9d82-b6ff-2177-1b4b"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "411c-5d91-93ca-2d4f",
-			"userProps": {
-				"text": "350",
-				"usePageVariable": true,
-				"textColor": "rgba( 74, 163, 241, 1 )"
-			},
-			"className": ".label #scoreItem-title",
-			"props": {
-				"text": "350",
-				"usePageVariable": true,
-				"name": "lblLoyaltyPoints",
-				"children": [],
-				"parent": "fc8f-b7a1-5541-54ce"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "dee0-1208-6717-f8b9",
-			"userProps": {
-				"text": "LOYALTY POINTS",
-				"usePageVariable": true
-			},
-			"className": ".label #scoreItem-text",
-			"props": {
-				"text": "LOYALTY POINTS",
-				"usePageVariable": true,
-				"name": "text",
-				"children": [],
-				"parent": "fc8f-b7a1-5541-54ce"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "fa1b-4584-b58e-a9d2",
-			"hiddenComponent": false,
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
-			"props": {
-				"name": "engament",
-				"children": [
-					"7712-bfea-f194-cb6b",
-					"ce77-1b55-069b-d96b"
-				],
-				"parent": "9d82-b6ff-2177-1b4b"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "7712-bfea-f194-cb6b",
-			"userProps": {
-				"text": "50",
-				"usePageVariable": true
-			},
-			"className": ".label #scoreItem-title",
-			"props": {
-				"text": "50",
-				"usePageVariable": true,
-				"name": "lblEngagementScore",
-				"children": [],
-				"parent": "fa1b-4584-b58e-a9d2"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "ce77-1b55-069b-d96b",
-			"userProps": {
-				"text": "ENGAGEMENT SCORE",
-				"usePageVariable": true
-			},
-			"className": ".label #scoreItem-text",
-			"props": {
-				"text": "ENGAGEMENT SCORE",
-				"usePageVariable": true,
-				"name": "text",
-				"children": [],
-				"parent": "fa1b-4584-b58e-a9d2"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "2b83-73cf-84c1-e360",
-			"hiddenComponent": false,
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_scw_flSecond_divider",
-			"props": {
-				"name": "divider",
-				"children": [],
-				"parent": "b9d8-3483-810d-b40b"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "6481-a692-7607-884a",
-			"userProps": {
-				"width": null,
-				"height": 190
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flWardrobe",
-				"children": [
-					"b9ad-724b-59c1-5aee",
-					"4ec6-0e7a-b460-bd6e"
-				],
-				"parent": "aff8-f57b-2780-9681"
-			}
-		},
-		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "b90b-6e6d-6b67-6e61",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "5311-040a-bb52-998e",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "5311-040a-bb52-998e"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "a776-ac95-52ba-4f95",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "5311-040a-bb52-998e",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "5311-040a-bb52-998e"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "9ece-d2a0-ad26-fee8",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "5311-040a-bb52-998e",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "5311-040a-bb52-998e"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "1299-65f5-2db4-5961",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "45a2-570a-3bfb-f07a",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "45a2-570a-3bfb-f07a"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "8f54-c6e8-b78d-5695",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "45a2-570a-3bfb-f07a",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "45a2-570a-3bfb-f07a"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "ebf0-17e4-8d4a-bc35",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "45a2-570a-3bfb-f07a",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "45a2-570a-3bfb-f07a"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "fa56-3711-29f1-526b",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "c614-7840-8fce-42cb",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "c614-7840-8fce-42cb"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "f677-94a8-0e06-52f2",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "c614-7840-8fce-42cb",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "c614-7840-8fce-42cb"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "a6f4-ee53-ca69-90fa",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "c614-7840-8fce-42cb",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "c614-7840-8fce-42cb"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "b4b1-4da9-a43b-5a10",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "f9dd-9c5f-5497-078a",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "f9dd-9c5f-5497-078a"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "bf59-1723-a3c2-ca9f",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "f9dd-9c5f-5497-078a",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "f9dd-9c5f-5497-078a"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "c33d-6559-220d-2f2f",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "f9dd-9c5f-5497-078a",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "f9dd-9c5f-5497-078a"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "91ff-1a32-c7d7-4dbd",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "606d-8f38-c4d4-2fcb",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "606d-8f38-c4d4-2fcb"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "5219-5d2f-fc60-478f",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "606d-8f38-c4d4-2fcb",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "606d-8f38-c4d4-2fcb"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "fc26-0cc2-75a9-d5ae",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "606d-8f38-c4d4-2fcb",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "606d-8f38-c4d4-2fcb"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "d91c-c348-e334-63cf",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "1328-bbb7-c37d-4d22",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "1328-bbb7-c37d-4d22"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "593f-9ffd-7c3b-571b",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "1328-bbb7-c37d-4d22",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "1328-bbb7-c37d-4d22"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "3105-9e29-2378-0a2e",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "1328-bbb7-c37d-4d22",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "1328-bbb7-c37d-4d22"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "c92f-1892-df37-2202",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "c5b6-8cf7-8dd7-cf3c",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "c5b6-8cf7-8dd7-cf3c"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "34de-ff9d-62de-c694",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "c5b6-8cf7-8dd7-cf3c",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "c5b6-8cf7-8dd7-cf3c"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "0498-c109-2c02-13c6",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "c5b6-8cf7-8dd7-cf3c",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "c5b6-8cf7-8dd7-cf3c"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "3143-715f-8c42-42f6",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "fa86-c0c8-dc64-cf20",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "fa86-c0c8-dc64-cf20"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "0fe6-36ad-e52c-fe2a",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "fa86-c0c8-dc64-cf20",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "fa86-c0c8-dc64-cf20"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "624a-16f4-91ba-e7c0",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "fa86-c0c8-dc64-cf20",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "fa86-c0c8-dc64-cf20"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "509b-6abe-1aa2-58e2",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "a228-3265-2bf8-a714",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "a228-3265-2bf8-a714"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "f17d-8fe9-f8a0-e3d8",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "a228-3265-2bf8-a714",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "a228-3265-2bf8-a714"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "3267-aaec-4cd0-ad28",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "a228-3265-2bf8-a714",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "a228-3265-2bf8-a714"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "5b95-f6fb-c361-627d",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "10af-fada-cf8c-effb",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "10af-fada-cf8c-effb"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "7749-66c3-b12f-01f3",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "10af-fada-cf8c-effb",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "10af-fada-cf8c-effb"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "b95e-da14-09fa-de94",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "10af-fada-cf8c-effb",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "10af-fada-cf8c-effb"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "4bc7-2f6b-588d-fdc8",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "03ff-51c1-2695-8bb7",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "03ff-51c1-2695-8bb7"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "6c64-06d4-8eb7-cc6d",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "03ff-51c1-2695-8bb7",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "03ff-51c1-2695-8bb7"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "b5c0-29ed-f2ed-2cbf",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "03ff-51c1-2695-8bb7",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "03ff-51c1-2695-8bb7"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "0a89-7ad1-35a2-dcb5",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "ec4d-daf1-6f43-a17d",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "ec4d-daf1-6f43-a17d"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "ac51-1cbf-9eaf-4348",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "ec4d-daf1-6f43-a17d",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "ec4d-daf1-6f43-a17d"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "f6df-d806-2131-c7c6",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "ec4d-daf1-6f43-a17d",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "ec4d-daf1-6f43-a17d"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "d79b-d9c0-e6f4-4934",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "4826-a0bf-d4a4-e2f7",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "4826-a0bf-d4a4-e2f7"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "7f9b-26dd-a69f-8f33",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "4826-a0bf-d4a4-e2f7",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "4826-a0bf-d4a4-e2f7"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "5d3e-9fff-5e43-3272",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "4826-a0bf-d4a4-e2f7",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "4826-a0bf-d4a4-e2f7"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "0758-25bb-91a4-1ec5",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "67ed-caa8-078f-7689",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "67ed-caa8-078f-7689"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "a364-4a57-5e70-d9e3",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "67ed-caa8-078f-7689",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "67ed-caa8-078f-7689"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "df2a-ef3c-88da-1b94",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "67ed-caa8-078f-7689",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "67ed-caa8-078f-7689"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "0e65-50a1-4616-dc20",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "55dc-0af5-0eb7-04e3",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "55dc-0af5-0eb7-04e3"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "812e-8c5b-eeb1-05b2",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "55dc-0af5-0eb7-04e3",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "55dc-0af5-0eb7-04e3"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "a4a6-b675-e550-ad95",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "55dc-0af5-0eb7-04e3",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "55dc-0af5-0eb7-04e3"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "bd06-e2d7-95e6-cc7d",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "a996-74c4-a00a-00d8",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "a996-74c4-a00a-00d8"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "2df9-53f1-b299-ffb6",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "a996-74c4-a00a-00d8",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "a996-74c4-a00a-00d8"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "c64b-3056-ca7a-d1c8",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "a996-74c4-a00a-00d8",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "a996-74c4-a00a-00d8"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "28c0-6019-3470-4ed8",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "c08f-0cde-43a1-38d9",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "c08f-0cde-43a1-38d9"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "5b00-14dc-c083-f530",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "c08f-0cde-43a1-38d9",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "c08f-0cde-43a1-38d9"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "a9cf-ea98-fc46-3e7c",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "c08f-0cde-43a1-38d9",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "c08f-0cde-43a1-38d9"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "60d9-6549-7e7f-68d1",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "3ed5-5214-160a-c130",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "3ed5-5214-160a-c130"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "d09b-fcd4-5010-bed2",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "3ed5-5214-160a-c130",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "3ed5-5214-160a-c130"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "dea3-ebda-8f5f-33c2",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "3ed5-5214-160a-c130",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "3ed5-5214-160a-c130"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "7ac3-2584-9a6b-9943",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "b78a-eff7-39af-4c3e",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "b78a-eff7-39af-4c3e"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "7ed8-fddf-ea15-2ae5",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "b78a-eff7-39af-4c3e",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "b78a-eff7-39af-4c3e"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "0f35-68ad-2c69-8e52",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "b78a-eff7-39af-4c3e",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "b78a-eff7-39af-4c3e"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "dba0-392c-76a3-50bb",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "6884-7ae7-6f7c-7027",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "6884-7ae7-6f7c-7027"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "ccb3-729c-83aa-6ca4",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "6884-7ae7-6f7c-7027",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "6884-7ae7-6f7c-7027"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "fb78-c57a-8c51-166f",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "6884-7ae7-6f7c-7027",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "6884-7ae7-6f7c-7027"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "e23c-26a3-6ed0-683e",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "923a-0eb1-d529-ea69",
+				"text": "Lavender Hat"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "Lavender Hat",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemName",
-			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
-				"children": [],
-				"parent": "923a-0eb1-d529-ea69"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
 			"id": "e609-2f38-62c8-db88",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "923a-0eb1-d529-ea69",
+				"text": "D56362"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "923a-0eb1-d529-ea69"
+				},
+				"text": "D56362"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "93c6-2acf-0bd9-2ad3",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "923a-0eb1-d529-ea69",
+				"text": "$65"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "$65",
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "923a-0eb1-d529-ea69"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "Label",
-			"id": "6006-82fd-f230-6046",
-			"userProps": {
-				"text": "Lavender Hat",
-				"font": {
-					"size": 14
-				}
-			},
 			"className": ".label #pgCustomerProfile.lblWishlistItemName",
+			"id": "6006-82fd-f230-6046",
 			"props": {
-				"text": "Lavender Hat",
-				"name": "label1",
 				"children": [],
-				"parent": "5064-140f-0033-f6ca"
-			}
-		},
-		{
+				"name": "label1",
+				"parent": "5064-140f-0033-f6ca",
+				"text": "Lavender Hat"
+			},
 			"type": "Label",
-			"id": "be5a-e8a7-dcd7-515f",
 			"userProps": {
-				"text": "D56362",
 				"font": {
 					"size": 14
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemID",
-			"props": {
-				"text": "D56362",
-				"name": "label2",
-				"children": [],
-				"parent": "5064-140f-0033-f6ca"
+				},
+				"text": "Lavender Hat"
 			}
 		},
 		{
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
+			"id": "be5a-e8a7-dcd7-515f",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "5064-140f-0033-f6ca",
+				"text": "D56362"
+			},
 			"type": "Label",
-			"id": "fef8-2ab6-48a6-7d02",
 			"userProps": {
-				"text": "$65",
+				"font": {
+					"size": 14
+				},
+				"text": "D56362"
+			}
+		},
+		{
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
+			"id": "fef8-2ab6-48a6-7d02",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "5064-140f-0033-f6ca",
+				"text": "$65"
+			},
+			"type": "Label",
+			"userProps": {
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
-			"props": {
-				"text": "$65",
-				"name": "label3",
-				"children": [],
-				"parent": "5064-140f-0033-f6ca"
+				},
+				"text": "$65"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "93cc-815a-beb6-40ac",
-			"userProps": {
-				"height": 200
-			},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flThird-ReserveIndicates",
-			"props": {
-				"name": "flReserveIndicates",
-				"children": [
-					"e67e-de48-a448-9086",
-					"018c-45ef-4fd5-20d6",
-					"06f6-ca60-5dac-c0f5"
-				],
-				"parent": "aff8-f57b-2780-9681"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "06f6-ca60-5dac-c0f5",
-			"userProps": {
-				"width": null,
-				"height": 90,
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flIndicates",
-				"children": [
-					"8fc6-fca8-c81c-f042",
-					"019f-240c-046f-b4de"
-				],
-				"parent": "93cc-815a-beb6-40ac"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "e67e-de48-a448-9086",
-			"userProps": {
-				"width": null,
-				"height": 90,
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flReservations",
-				"children": [
-					"6468-8240-fcb8-7f09",
-					"199b-fbf2-bf34-4bcb"
-				],
-				"parent": "93cc-815a-beb6-40ac"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "7dd3-a673-d522-5983",
-			"hiddenComponent": false,
-			"userProps": {
-				"width": null,
-				"height": 300,
-				"usePageVariable": true
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"usePageVariable": true,
-				"name": "flWishlist",
-				"children": [
-					"ce89-a7e5-f73b-f0a7",
-					"3961-769e-0072-cd55"
-				],
-				"parent": "aff8-f57b-2780-9681"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "018c-45ef-4fd5-20d6",
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flThird-ReserveIndicates-divider",
-			"props": {
-				"name": "divider",
-				"children": [],
-				"parent": "93cc-815a-beb6-40ac"
-			}
-		},
-		{
-			"type": "ScrollView",
-			"id": "4ec6-0e7a-b460-bd6e",
-			"userProps": {
-				"height": 150,
-				"width": null,
-				"usePageVariable": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"layoutHeight": 150,
-				"align": "HORIZONTAL",
-				"layoutWidth": 500,
-				"minHeight": 150,
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH",
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".scrollView",
-			"props": {
-				"usePageVariable": true,
-				"name": "swWardrobe",
-				"children": [],
-				"parent": "6481-a692-7607-884a"
-			}
-		},
-		{
-			"type": "ScrollView",
-			"id": "199b-fbf2-bf34-4bcb",
-			"hiddenComponent": false,
-			"userProps": {
-				"height": 300,
-				"width": null,
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true,
-				"layoutHeight": 500,
-				"layoutWidth": null,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"align": "HORIZONTAL",
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH",
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".scrollView",
-			"props": {
-				"usePageVariable": true,
-				"name": "scFlReservations",
-				"children": [],
-				"parent": "e67e-de48-a448-9086"
-			}
-		},
-		{
-			"type": "ScrollView",
-			"id": "019f-240c-046f-b4de",
-			"userProps": {
-				"height": 150,
-				"width": null,
-				"left": 0,
-				"top": 0,
-				"layoutWidth": 500,
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".scrollView",
-			"props": {
-				"usePageVariable": true,
-				"name": "scwIndicates",
-				"children": [],
-				"parent": "06f6-ca60-5dac-c0f5"
-			}
-		},
-		{
-			"type": "ScrollView",
-			"id": "3961-769e-0072-cd55",
-			"userProps": {
-				"usePageVariable": true,
-				"height": null,
-				"width": null,
-				"align": "HORIZONTAL",
-				"layoutWidth": 800,
-				"marginTop": 10,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".scrollView",
-			"props": {
-				"usePageVariable": true,
-				"name": "wishlistScw",
-				"children": [],
-				"parent": "7dd3-a673-d522-5983"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "b9ad-724b-59c1-5aee",
-			"userProps": {
-				"width": null,
-				"height": 33,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"paddingRight": 7.5,
-				"paddingLeft": 14,
-				"marginLeft": null,
-				"marginRight": null,
-				"marginBottom": 2,
-				"left": 0,
-				"top": 0,
-				"borderColor": "rgba( 151, 151, 151, 1 )",
-				"borderWidth": 0.5,
-				"flexProps": {
-					"justifyContent": "SPACE_BETWEEN",
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flTitle",
-				"children": [
-					"2dce-95f1-1258-be55"
-				],
-				"parent": "6481-a692-7607-884a"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "2dce-95f1-1258-be55",
-			"userProps": {
-				"height": null,
-				"text": "ANNA'S WARDROBE",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"usePageVariable": true,
-				"font": {
-					"size": 16
-				}
-			},
-			"className": ".label",
-			"props": {
-				"text": "ANNA'S WARDROBE",
-				"usePageVariable": true,
-				"name": "lblTitle",
-				"children": [],
-				"parent": "b9ad-724b-59c1-5aee"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "6468-8240-fcb8-7f09",
-			"userProps": {
-				"width": null,
-				"height": 33,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"paddingRight": 7.5,
-				"paddingLeft": 14,
-				"marginLeft": null,
-				"marginRight": null,
-				"marginBottom": 2,
-				"left": 0,
-				"top": 0,
-				"borderColor": "rgba( 151, 151, 151, 1 )",
-				"borderWidth": 0.5,
-				"flexProps": {
-					"justifyContent": "SPACE_BETWEEN",
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flTitle",
-				"children": [
-					"ee81-b154-b1e8-3465"
-				],
-				"parent": "e67e-de48-a448-9086"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "ee81-b154-b1e8-3465",
-			"userProps": {
-				"height": null,
-				"text": "RESERVATIONS",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"usePageVariable": true,
-				"font": {
-					"size": 16
-				}
-			},
-			"className": ".label",
-			"props": {
-				"text": "RESERVATIONS",
-				"usePageVariable": true,
-				"name": "lblTitle",
-				"children": [],
-				"parent": "6468-8240-fcb8-7f09"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "8fc6-fca8-c81c-f042",
-			"userProps": {
-				"width": null,
-				"height": 33,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"paddingRight": 7.5,
-				"paddingLeft": 14,
-				"marginLeft": null,
-				"marginRight": null,
-				"marginBottom": 2,
-				"left": 0,
-				"top": 0,
-				"borderColor": "rgba( 151, 151, 151, 1 )",
-				"borderWidth": 0.5,
-				"flexProps": {
-					"justifyContent": "SPACE_BETWEEN",
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flTitle",
-				"children": [
-					"ebef-41d6-7efa-2d03"
-				],
-				"parent": "06f6-ca60-5dac-c0f5"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "ebef-41d6-7efa-2d03",
-			"userProps": {
-				"height": null,
-				"text": "OPEN INCIDENTS",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"usePageVariable": true,
-				"font": {
-					"size": 16
-				}
-			},
-			"className": ".label",
-			"props": {
-				"text": "OPEN INCIDENTS",
-				"usePageVariable": true,
-				"name": "lblTitle",
-				"children": [],
-				"parent": "8fc6-fca8-c81c-f042"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "ce89-a7e5-f73b-f0a7",
-			"userProps": {
-				"width": null,
-				"height": 33,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"paddingRight": 7.5,
-				"paddingLeft": 14,
-				"marginLeft": null,
-				"marginRight": null,
-				"marginBottom": 2,
-				"left": 0,
-				"top": 0,
-				"borderColor": "rgba( 151, 151, 151, 1 )",
-				"borderWidth": 0.5,
-				"flexProps": {
-					"justifyContent": "SPACE_BETWEEN",
-					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flTitle",
-				"children": [
-					"b911-8f25-376b-054b"
-				],
-				"parent": "7dd3-a673-d522-5983"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "b911-8f25-376b-054b",
-			"userProps": {
-				"height": null,
-				"text": "ANNA'S WISHLIST",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"usePageVariable": true,
-				"font": {
-					"size": 16
-				}
-			},
-			"className": ".label",
-			"props": {
-				"text": "ANNA'S WISHLIST",
-				"usePageVariable": true,
-				"name": "lblTitle",
-				"children": [],
-				"parent": "ce89-a7e5-f73b-f0a7"
-			}
-		},
-		{
-			"type": "FlexLayout",
 			"id": "77f9-afe4-e992-e58b",
-			"userProps": {
-				"width": null,
-				"height": 50,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"top": 0,
-				"flexProps": {
-					"flexDirection": "ROW",
-					"justifyContent": "SPACE_BETWEEN"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flHeaderBar",
 				"children": [
 					"f9f9-25be-751b-892c",
 					"d369-bb1c-5538-cfdc",
 					"9409-7385-94c8-c698"
 				],
+				"name": "flHeaderBar",
 				"parent": "c92e-4a8f-06cb-26ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"height": 50,
+				"top": 0,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "f9f9-25be-751b-892c",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"minWidth": null,
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "f9f9-25be-751b-892c",
 			"props": {
-				"usePageVariable": true,
-				"name": "flHeaderLeft",
 				"children": [
 					"a014-fdf8-07db-8cd6"
 				],
-				"parent": "77f9-afe4-e992-e58b"
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "a014-fdf8-07db-8cd6",
-			"userProps": {},
-			"className": ".pageBackIconButton",
-			"props": {
-				"name": "imgLeft",
-				"usePageVariable": false,
-				"children": [],
-				"parent": "f9f9-25be-751b-892c"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "d369-bb1c-5538-cfdc",
-			"userProps": {
-				"height": null,
-				"width": null,
-				"minWidth": null,
-				"flexProps": {
-					"flexDirection": "ROW",
-					"flexGrow": 2
-				}
+				"name": "flHeaderLeft",
+				"parent": "77f9-afe4-e992-e58b",
+				"usePageVariable": true
 			},
-			"className": ".flexLayout .flexLayout-default",
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				},
+				"height": null,
+				"minWidth": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".pageBackIconButton",
+			"id": "a014-fdf8-07db-8cd6",
 			"props": {
-				"name": "flHeaderMiddle",
+				"children": [],
+				"name": "imgLeft",
+				"parent": "f9f9-25be-751b-892c",
+				"usePageVariable": false
+			},
+			"type": "ImageView",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "d369-bb1c-5538-cfdc",
+			"props": {
 				"children": [
 					"2d17-9585-e7de-c4f3"
 				],
+				"name": "flHeaderMiddle",
 				"parent": "77f9-afe4-e992-e58b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"flexGrow": 2
+				},
+				"height": null,
+				"minWidth": null,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label",
 			"id": "2d17-9585-e7de-c4f3",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "d369-bb1c-5538-cfdc",
+				"text": "ANNA'S PROFILE"
+			},
+			"type": "Label",
 			"userProps": {
-				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 15
+				},
 				"height": null,
 				"text": "ANNA'S PROFILE",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 255, 255, 255, 1 )",
-				"font": {
-					"size": 15
-				},
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".label",
-			"props": {
-				"text": "ANNA'S PROFILE",
-				"name": "lblTitle",
-				"children": [],
-				"parent": "d369-bb1c-5538-cfdc"
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "4df7-e5f9-ff40-9fd6",
-			"userProps": {
-				"usePageVariable": true,
-				"width": null,
-				"height": 20,
-				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"left": 0,
-				"top": 0
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"usePageVariable": true,
-				"name": "flStatusBarBg",
-				"children": [],
-				"parent": "c92e-4a8f-06cb-26ff"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "9409-7385-94c8-c698",
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile.rightItem",
+			"id": "9409-7385-94c8-c698",
 			"props": {
-				"name": "flHeaderRight",
 				"children": [
 					"94de-b2fb-bdc7-bbb9",
 					"74b5-df1d-d54a-3190"
 				],
+				"name": "flHeaderRight",
 				"parent": "77f9-afe4-e992-e58b"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "ImageView",
+			"className": ".imageView",
 			"id": "94de-b2fb-bdc7-bbb9",
+			"props": {
+				"children": [],
+				"name": "imgShoppingBag",
+				"parent": "9409-7385-94c8-c698",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
 			"userProps": {
-				"usePageVariable": true,
-				"width": 20,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"height": 20,
 				"image": "shoppingbag.png",
-				"marginRight": null,
 				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba( 32, 32, 32, 1 )"
-			},
-			"className": ".imageView",
-			"props": {
+				"marginRight": null,
 				"usePageVariable": true,
-				"name": "imgShoppingBag",
-				"children": [],
-				"parent": "9409-7385-94c8-c698"
+				"width": 20
 			}
 		},
 		{
-			"type": "ImageView",
+			"className": ".imageView",
 			"id": "74b5-df1d-d54a-3190",
+			"props": {
+				"children": [],
+				"name": "imgLookbook",
+				"parent": "9409-7385-94c8-c698",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
 			"userProps": {
-				"usePageVariable": true,
-				"width": 20,
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"height": 20,
 				"image": "lookbook.png",
-				"marginLeft": 20,
 				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"marginLeft": 20,
 				"minHeight": 20,
-				"minWidth": 20
-			},
-			"className": ".imageView",
-			"props": {
+				"minWidth": 20,
 				"usePageVariable": true,
-				"name": "imgLookbook",
+				"width": 20
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "0119-45d4-c6a6-8b59",
+			"props": {
+				"children": [
+					"87f0-007d-52c4-18ff",
+					"b0de-a090-c1c7-15cc"
+				],
+				"name": "profilefl",
+				"parent": "c92e-4a8f-06cb-26ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst",
+			"id": "87f0-007d-52c4-18ff",
+			"props": {
+				"children": [
+					"7d4b-01c2-8ed0-d305",
+					"2eb4-c2a8-14a5-5bdd",
+					"fd52-f336-52dc-05d5"
+				],
+				"name": "flFirst",
+				"parent": "0119-45d4-c6a6-8b59"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"left": 0,
+				"marginLeft": 5,
+				"marginRight": 5,
+				"marginTop": 5,
+				"top": 0
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flInfo",
+			"id": "7d4b-01c2-8ed0-d305",
+			"props": {
+				"children": [
+					"e5e8-d930-13e9-cf95"
+				],
+				"name": "flInfo",
+				"parent": "87f0-007d-52c4-18ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flInfo_profile",
+			"hiddenComponent": false,
+			"id": "e5e8-d930-13e9-cf95",
+			"props": {
 				"children": [],
-				"parent": "9409-7385-94c8-c698"
+				"name": "profileHeader",
+				"parent": "7d4b-01c2-8ed0-d305",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flCustomerProfileProfileHeader",
+				"id": "c4c5-2c0a-4dd1-7152"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores",
+			"id": "2eb4-c2a8-14a5-5bdd",
+			"props": {
+				"children": [
+					"ef17-c888-f5d5-abca",
+					"e84c-ae6a-9216-edb6",
+					"73b4-ee32-ea4b-f48a"
+				],
+				"name": "flScores",
+				"parent": "87f0-007d-52c4-18ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
+			"hiddenComponent": false,
+			"id": "ef17-c888-f5d5-abca",
+			"props": {
+				"children": [
+					"1198-045a-6269-5390",
+					"1222-6018-0db2-d76b"
+				],
+				"name": "engament",
+				"parent": "2eb4-c2a8-14a5-5bdd"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".label #scoreItem-title",
+			"id": "1198-045a-6269-5390",
+			"props": {
+				"children": [],
+				"name": "lblEngagementScore",
+				"parent": "ef17-c888-f5d5-abca",
+				"text": "50",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "50",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label #scoreItem-text",
+			"id": "1222-6018-0db2-d76b",
+			"props": {
+				"children": [],
+				"name": "text",
+				"parent": "ef17-c888-f5d5-abca",
+				"text": "ENGAGEMENT SCORE",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "ENGAGEMENT SCORE",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"id": "e84c-ae6a-9216-edb6",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "2eb4-c2a8-14a5-5bdd"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"flexGrow": null,
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"left": null,
+				"marginBottom": 10,
+				"marginTop": 10,
+				"maxHeight": null,
+				"maxWidth": null,
+				"top": null,
+				"width": 1
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
+			"hiddenComponent": false,
+			"id": "73b4-ee32-ea4b-f48a",
+			"props": {
+				"children": [
+					"3d4a-e8ce-f2e6-270b",
+					"21af-c6cd-8d32-64c1"
+				],
+				"name": "loyality",
+				"parent": "2eb4-c2a8-14a5-5bdd"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".label #scoreItem-title",
+			"id": "3d4a-e8ce-f2e6-270b",
+			"props": {
+				"children": [],
+				"name": "lblLoyaltyPoints",
+				"parent": "73b4-ee32-ea4b-f48a",
+				"text": "350",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "350",
+				"textColor": "rgba( 74, 163, 241, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label #scoreItem-text",
+			"id": "21af-c6cd-8d32-64c1",
+			"props": {
+				"children": [],
+				"name": "text",
+				"parent": "73b4-ee32-ea4b-f48a",
+				"text": "LOYALTY POINTS",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "LOYALTY POINTS",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flButtons",
+			"hiddenComponent": false,
+			"id": "fd52-f336-52dc-05d5",
+			"props": {
+				"children": [
+					"55d6-a003-70a7-75f7",
+					"4439-565e-8b6d-b09e"
+				],
+				"name": "flButtons",
+				"parent": "87f0-007d-52c4-18ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "CENTER"
+				}
+			}
+		},
+		{
+			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
+			"id": "55d6-a003-70a7-75f7",
+			"props": {
+				"children": [],
+				"name": "shoppingBag",
+				"parent": "fd52-f336-52dc-05d5",
+				"text": "Shopping Bag",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"backgroundColor": "rgba( 213, 38, 130, 1 )",
+				"text": "Shopping Bag",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
+			"id": "4439-565e-8b6d-b09e",
+			"props": {
+				"children": [],
+				"name": "lookBook",
+				"parent": "fd52-f336-52dc-05d5",
+				"text": "Look Book",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"backgroundColor": "rgba( 74, 163, 240, 1 )",
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				},
+				"text": "Look Book",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".scrollView #pgCustomerProfile_scw",
+			"hiddenComponent": false,
+			"id": "b0de-a090-c1c7-15cc",
+			"props": {
+				"children": [
+					"4c53-ca04-1611-87f9",
+					"b452-e575-8281-2872"
+				],
+				"name": "scw",
+				"parent": "0119-45d4-c6a6-8b59",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"layoutHeight": 1000,
+				"left": 0,
+				"marginBottom": 5,
+				"marginLeft": 5,
+				"marginRight": 5,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond",
+			"hiddenComponent": false,
+			"id": "4c53-ca04-1611-87f9",
+			"props": {
+				"children": [
+					"8549-bab7-a2ec-3e69",
+					"5101-6aed-8e51-fb19",
+					"f0a2-8827-de75-8353"
+				],
+				"name": "flSecond",
+				"parent": "b0de-a090-c1c7-15cc"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart",
+			"hiddenComponent": false,
+			"id": "8549-bab7-a2ec-3e69",
+			"props": {
+				"children": [
+					"8961-ba8d-2fd6-0cfd",
+					"619f-79a1-9390-12ca",
+					"b311-35d2-30f0-22cf",
+					"53dd-7882-c9f6-5916",
+					"1fec-e4f9-bed1-033f",
+					"1b26-2c76-eeb0-9592",
+					"1ea3-b874-97fe-a5b4",
+					"8452-a723-5b41-98cd"
+				],
+				"name": "infoPart1",
+				"parent": "4c53-ca04-1611-87f9",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
+			"hiddenComponent": false,
+			"id": "8961-ba8d-2fd6-0cfd",
+			"props": {
+				"children": [],
+				"name": "joined",
+				"parent": "8549-bab7-a2ec-3e69",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flCustomerProfileTitleText",
+				"id": "42b7-ee79-11cc-15e7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
+			"id": "619f-79a1-9390-12ca",
+			"props": {
+				"children": [],
+				"name": "divider_4_1_1_1",
+				"parent": "8549-bab7-a2ec-3e69"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
+			"hiddenComponent": false,
+			"id": "b311-35d2-30f0-22cf",
+			"props": {
+				"children": [],
+				"name": "perVisit",
+				"parent": "8549-bab7-a2ec-3e69",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flCustomerProfileTitleText",
+				"id": "42b7-ee79-11cc-15e7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
+			"id": "53dd-7882-c9f6-5916",
+			"props": {
+				"children": [],
+				"name": "divider_4_1_1",
+				"parent": "8549-bab7-a2ec-3e69"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
+			"hiddenComponent": false,
+			"id": "1fec-e4f9-bed1-033f",
+			"props": {
+				"children": [],
+				"name": "lastPurchase",
+				"parent": "8549-bab7-a2ec-3e69",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flCustomerProfileTitleText",
+				"id": "42b7-ee79-11cc-15e7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
+			"id": "1b26-2c76-eeb0-9592",
+			"props": {
+				"children": [],
+				"name": "divider_4_1_1_2",
+				"parent": "8549-bab7-a2ec-3e69"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
+			"hiddenComponent": false,
+			"id": "1ea3-b874-97fe-a5b4",
+			"props": {
+				"children": [],
+				"name": "store",
+				"parent": "8549-bab7-a2ec-3e69",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flCustomerProfileTitleText",
+				"id": "42b7-ee79-11cc-15e7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
+			"hiddenComponent": false,
+			"id": "8452-a723-5b41-98cd",
+			"props": {
+				"children": [],
+				"name": "divider_4_1_1_3",
+				"parent": "8549-bab7-a2ec-3e69"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_scw_flSecond_divider",
+			"hiddenComponent": false,
+			"id": "5101-6aed-8e51-fb19",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "4c53-ca04-1611-87f9"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoPart",
+			"hiddenComponent": false,
+			"id": "f0a2-8827-de75-8353",
+			"props": {
+				"children": [
+					"fffc-9f7b-9536-45dd",
+					"d835-41af-e373-b170",
+					"5775-36ee-b4fa-1086",
+					"e73b-ff63-62ec-c2a4",
+					"ae5d-a944-c3df-9dff",
+					"4d40-be02-b21a-3d3a",
+					"b5e9-8eb4-1845-6d9b"
+				],
+				"name": "infoPart2",
+				"parent": "4c53-ca04-1611-87f9",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
+			"hiddenComponent": false,
+			"id": "fffc-9f7b-9536-45dd",
+			"props": {
+				"children": [],
+				"name": "job",
+				"parent": "f0a2-8827-de75-8353",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flCustomerProfileTitleText",
+				"id": "42b7-ee79-11cc-15e7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
+			"id": "d835-41af-e373-b170",
+			"props": {
+				"children": [],
+				"name": "divider_4_1_1_2",
+				"parent": "f0a2-8827-de75-8353"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
+			"hiddenComponent": false,
+			"id": "5775-36ee-b4fa-1086",
+			"props": {
+				"children": [],
+				"name": "brands",
+				"parent": "f0a2-8827-de75-8353",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flCustomerProfileTitleText",
+				"id": "42b7-ee79-11cc-15e7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
+			"id": "e73b-ff63-62ec-c2a4",
+			"props": {
+				"children": [],
+				"name": "divider_4_1_1_1",
+				"parent": "f0a2-8827-de75-8353"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
+			"hiddenComponent": false,
+			"id": "ae5d-a944-c3df-9dff",
+			"props": {
+				"children": [],
+				"name": "interest",
+				"parent": "f0a2-8827-de75-8353",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flCustomerProfileTitleText",
+				"id": "42b7-ee79-11cc-15e7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-divider",
+			"id": "4d40-be02-b21a-3d3a",
+			"props": {
+				"children": [],
+				"name": "divider_4_1_1",
+				"parent": "f0a2-8827-de75-8353"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flSecond-infoItem",
+			"hiddenComponent": false,
+			"id": "b5e9-8eb4-1845-6d9b",
+			"props": {
+				"children": [],
+				"name": "mostLikedColors",
+				"parent": "f0a2-8827-de75-8353",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flCustomerProfileMostLikedColors",
+				"id": "cae6-e684-ae6f-aaa5"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "b452-e575-8281-2872",
+			"props": {
+				"children": [
+					"03c6-d9c6-ad46-8db4",
+					"3ace-5ed1-dbcd-b80c",
+					"4569-c0d9-e81e-cb74"
+				],
+				"name": "flThird",
+				"parent": "b0de-a090-c1c7-15cc"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "03c6-d9c6-ad46-8db4",
+			"props": {
+				"children": [
+					"1245-577a-9f71-9e2c",
+					"87ec-f337-4f07-b12b"
+				],
+				"name": "flWardrobe",
+				"parent": "b452-e575-8281-2872"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 190,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "1245-577a-9f71-9e2c",
+			"props": {
+				"children": [
+					"dcfe-6325-f501-c7b5"
+				],
+				"name": "flTitle",
+				"parent": "03c6-d9c6-ad46-8db4"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderWidth": 0.5,
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN",
+					"flexDirection": "ROW"
+				},
+				"height": 33,
+				"left": 0,
+				"marginBottom": 2,
+				"marginLeft": null,
+				"marginRight": null,
+				"paddingLeft": 14,
+				"paddingRight": 7.5,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "dcfe-6325-f501-c7b5",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "1245-577a-9f71-9e2c",
+				"text": "ANNA'S WARDROBE",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16
+				},
+				"height": null,
+				"text": "ANNA'S WARDROBE",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".scrollView",
+			"id": "87ec-f337-4f07-b12b",
+			"props": {
+				"children": [],
+				"name": "swWardrobe",
+				"parent": "03c6-d9c6-ad46-8db4",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"align": "HORIZONTAL",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH",
+					"flexDirection": "ROW"
+				},
+				"height": 150,
+				"layoutHeight": 150,
+				"layoutWidth": 500,
+				"minHeight": 150,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flThird-ReserveIndicates",
+			"id": "3ace-5ed1-dbcd-b80c",
+			"props": {
+				"children": [
+					"1f48-da91-8f87-988f",
+					"ebee-82ce-a20a-b267",
+					"606d-e273-c9f3-9fd6"
+				],
+				"name": "flReserveIndicates",
+				"parent": "b452-e575-8281-2872"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 200
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "1f48-da91-8f87-988f",
+			"props": {
+				"children": [
+					"c176-76db-f72a-588a",
+					"b37d-0cc4-24e2-babe"
+				],
+				"name": "flReservations",
+				"parent": "3ace-5ed1-dbcd-b80c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 90,
+				"left": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "c176-76db-f72a-588a",
+			"props": {
+				"children": [
+					"5aea-815d-7511-5837"
+				],
+				"name": "flTitle",
+				"parent": "1f48-da91-8f87-988f"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderWidth": 0.5,
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN",
+					"flexDirection": "ROW"
+				},
+				"height": 33,
+				"left": 0,
+				"marginBottom": 2,
+				"marginLeft": null,
+				"marginRight": null,
+				"paddingLeft": 14,
+				"paddingRight": 7.5,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "5aea-815d-7511-5837",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "c176-76db-f72a-588a",
+				"text": "RESERVATIONS",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16
+				},
+				"height": null,
+				"text": "RESERVATIONS",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".scrollView",
+			"hiddenComponent": false,
+			"id": "b37d-0cc4-24e2-babe",
+			"props": {
+				"children": [],
+				"name": "scFlReservations",
+				"parent": "1f48-da91-8f87-988f",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"align": "HORIZONTAL",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH",
+					"flexDirection": "ROW"
+				},
+				"height": 300,
+				"layoutHeight": 500,
+				"layoutWidth": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile-flThird-ReserveIndicates-divider",
+			"id": "ebee-82ce-a20a-b267",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "3ace-5ed1-dbcd-b80c"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "606d-e273-c9f3-9fd6",
+			"props": {
+				"children": [
+					"8663-1128-e20e-1533",
+					"117d-1cf2-26fe-556d"
+				],
+				"name": "flIndicates",
+				"parent": "3ace-5ed1-dbcd-b80c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 90,
+				"left": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "8663-1128-e20e-1533",
+			"props": {
+				"children": [
+					"13c5-3c0d-8d72-275d"
+				],
+				"name": "flTitle",
+				"parent": "606d-e273-c9f3-9fd6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderWidth": 0.5,
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN",
+					"flexDirection": "ROW"
+				},
+				"height": 33,
+				"left": 0,
+				"marginBottom": 2,
+				"marginLeft": null,
+				"marginRight": null,
+				"paddingLeft": 14,
+				"paddingRight": 7.5,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "13c5-3c0d-8d72-275d",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "8663-1128-e20e-1533",
+				"text": "OPEN INCIDENTS",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16
+				},
+				"height": null,
+				"text": "OPEN INCIDENTS",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".scrollView",
+			"id": "117d-1cf2-26fe-556d",
+			"props": {
+				"children": [],
+				"name": "scwIndicates",
+				"parent": "606d-e273-c9f3-9fd6",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				},
+				"height": 150,
+				"layoutWidth": 500,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "4569-c0d9-e81e-cb74",
+			"props": {
+				"children": [
+					"80c1-ad97-85ba-5c91",
+					"5e39-f559-e5ab-857f"
+				],
+				"name": "flWishlist",
+				"parent": "b452-e575-8281-2872",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 300,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "80c1-ad97-85ba-5c91",
+			"props": {
+				"children": [
+					"9b8b-50ca-b020-9e19"
+				],
+				"name": "flTitle",
+				"parent": "4569-c0d9-e81e-cb74"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderWidth": 0.5,
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN",
+					"flexDirection": "ROW"
+				},
+				"height": 33,
+				"left": 0,
+				"marginBottom": 2,
+				"marginLeft": null,
+				"marginRight": null,
+				"paddingLeft": 14,
+				"paddingRight": 7.5,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "9b8b-50ca-b020-9e19",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "80c1-ad97-85ba-5c91",
+				"text": "ANNA'S WISHLIST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16
+				},
+				"height": null,
+				"text": "ANNA'S WISHLIST",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".scrollView",
+			"id": "5e39-f559-e5ab-857f",
+			"props": {
+				"children": [],
+				"name": "wishlistScw",
+				"parent": "4569-c0d9-e81e-cb74",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"align": "HORIZONTAL",
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				},
+				"height": null,
+				"layoutWidth": 800,
+				"marginTop": 10,
+				"usePageVariable": true,
+				"width": null
 			}
 		}
 	]

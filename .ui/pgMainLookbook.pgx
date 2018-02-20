@@ -1,789 +1,774 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "06bb-a00e-c029-0539",
 			"initialized": true,
-			"userProps": {
-				"orientation": "AUTO"
-			},
-			"className": ".page",
-			"version": "6.6.0",
 			"props": {
-				"name": "pgMainLookbook",
 				"children": [
 					"22e9-9aff-a352-2d48",
 					"f353-58ae-caed-d8ef",
-					"7845-8531-3de0-1b0a",
 					"8098-e199-bb17-6980",
 					"c457-e6cb-6b46-b023",
 					"b740-f675-4f52-5243",
 					"6051-46a5-778b-d772"
 				],
-				"parent": null,
+				"name": "pgMainLookbook",
+				"orientation": "AUTO",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
 				"orientation": "AUTO"
-			}
+			},
+			"version": "6.6.1"
 		},
 		{
-			"type": "StatusBar",
-			"id": "22e9-9aff-a352-2d48",
-			"userProps": {},
 			"className": ".statusBar",
+			"id": "22e9-9aff-a352-2d48",
 			"props": {
-				"name": "statusBar",
 				"children": [],
-				"parent": "06bb-a00e-c029-0539",
-				"isRemovable": false
-			}
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "06bb-a00e-c029-0539"
+			},
+			"type": "StatusBar",
+			"userProps": {}
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".headerBar",
 			"id": "f353-58ae-caed-d8ef",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "06bb-a00e-c029-0539",
+				"title": "LOOKBOOK"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "LOOKBOOK",
 				"visible": false
-			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "LOOKBOOK",
-				"children": [],
-				"parent": "06bb-a00e-c029-0539",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "c457-e6cb-6b46-b023",
-			"hiddenComponent": false,
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flFirstLine",
+			"hiddenComponent": false,
+			"id": "c457-e6cb-6b46-b023",
 			"props": {
-				"name": "flFirstLine",
 				"children": [
 					"2a84-1b42-a1a7-b7c8",
 					"842d-3186-5326-4b81"
 				],
+				"name": "flFirstLine",
 				"parent": "06bb-a00e-c029-0539"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "6051-46a5-778b-d772",
-			"hiddenComponent": false,
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flThirdLine",
+			"hiddenComponent": false,
+			"id": "6051-46a5-778b-d772",
 			"props": {
-				"name": "flThirdLine",
 				"children": [
 					"47f2-f138-9dd8-617a",
 					"5bae-54e6-f533-71cd",
 					"a1cd-4b9b-acad-6cf7"
 				],
+				"name": "flThirdLine",
 				"parent": "06bb-a00e-c029-0539"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "2a84-1b42-a1a7-b7c8",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 105, 166, 236, 1 )",
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "2a84-1b42-a1a7-b7c8",
 			"props": {
-				"name": "flBagTrends",
 				"children": [
 					"3379-1c53-ba61-9775",
 					"171a-9f20-120a-7188"
 				],
+				"name": "flBagTrends",
 				"parent": "c457-e6cb-6b46-b023"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 105, 166, 236, 1 )",
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				},
+				"height": null,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "842d-3186-5326-4b81",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 253, 208, 224, 1 )",
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "COLUMN"
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "842d-3186-5326-4b81",
 			"props": {
-				"name": "flSunGlasses",
 				"children": [
 					"2afe-6844-a421-00c5",
 					"5726-cbb7-f702-4812"
 				],
+				"name": "flSunGlasses",
 				"parent": "c457-e6cb-6b46-b023"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 253, 208, 224, 1 )",
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "COLUMN"
+				},
+				"height": null,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "47f2-f138-9dd8-617a",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 203, 203, 203, 1 )",
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 3
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "47f2-f138-9dd8-617a",
 			"props": {
-				"name": "flWomen",
-				"usePageVariable": true,
 				"children": [
 					"5114-d220-b1ed-6b58",
 					"6f1c-1a10-c120-fe7d"
 				],
-				"parent": "6051-46a5-778b-d772"
+				"name": "flWomen",
+				"parent": "6051-46a5-778b-d772",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 203, 203, 203, 1 )",
+				"flexProps": {
+					"flexGrow": 3
+				},
+				"height": null,
+				"usePageVariable": true,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "5bae-54e6-f533-71cd",
-			"hiddenComponent": false,
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 2.8
-				}
-			},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flSale",
+			"hiddenComponent": false,
+			"id": "5bae-54e6-f533-71cd",
 			"props": {
-				"name": "flSale",
 				"children": [
 					"5a00-2ed6-3339-989c",
 					"8a07-cd8f-ffa8-e75b",
 					"5e01-19ee-774a-e883",
 					"3f4c-786e-3168-cf95"
 				],
+				"name": "flSale",
 				"parent": "6051-46a5-778b-d772"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 2.8
+				}
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "a1cd-4b9b-acad-6cf7",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 203, 203, 203, 1 )",
-				"flexProps": {
-					"flexGrow": 3
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "a1cd-4b9b-acad-6cf7",
 			"props": {
-				"name": "flMen",
 				"children": [
 					"3d2b-ea2c-6528-3f6e",
 					"be6f-d58b-d42a-e94c"
 				],
+				"name": "flMen",
 				"parent": "6051-46a5-778b-d772"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 203, 203, 203, 1 )",
+				"flexProps": {
+					"flexGrow": 3
+				},
+				"height": null,
+				"width": null
 			}
 		},
 		{
-			"type": "ImageView",
+			"className": ".imageView",
 			"id": "3379-1c53-ba61-9775",
+			"props": {
+				"children": [],
+				"name": "imgBagTrends",
+				"parent": "2a84-1b42-a1a7-b7c8"
+			},
+			"type": "ImageView",
 			"userProps": {
-				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"height": null,
 				"image": "bag.png",
 				"imageFillType": "ASPECTFIT",
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".imageView",
-			"props": {
-				"name": "imgBagTrends",
-				"children": [],
-				"parent": "2a84-1b42-a1a7-b7c8"
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout .flexLayout-default",
 			"id": "171a-9f20-120a-7188",
+			"props": {
+				"children": [
+					"7610-00e5-d374-b174",
+					"8dba-703a-ea9b-e04b"
+				],
+				"name": "flInfo",
+				"parent": "2a84-1b42-a1a7-b7c8"
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"width": null,
-				"height": null,
-				"right": 5,
 				"flexProps": {
 					"flexGrow": 1,
 					"justifyContent": "CENTER",
 					"alignItems": "STRETCH",
 					"alignContent": "FLEX_START"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flInfo",
-				"children": [
-					"7610-00e5-d374-b174",
-					"8dba-703a-ea9b-e04b"
-				],
-				"parent": "2a84-1b42-a1a7-b7c8"
+				},
+				"height": null,
+				"right": 5,
+				"width": null
 			}
 		},
 		{
-			"type": "ImageView",
+			"className": ".imageView",
 			"id": "2afe-6844-a421-00c5",
+			"props": {
+				"children": [],
+				"name": "imgSunGlasses",
+				"parent": "842d-3186-5326-4b81"
+			},
+			"type": "ImageView",
 			"userProps": {
-				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"height": null,
-				"left": 0,
-				"top": 0,
 				"image": "sunglasses.png",
 				"imageFillType": "ASPECTFIT",
+				"left": 0,
 				"marginLeft": 40,
 				"marginRight": 40,
 				"marginTop": null,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".imageView",
-			"props": {
-				"name": "imgSunGlasses",
-				"children": [],
-				"parent": "842d-3186-5326-4b81"
+				"top": 0,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "5726-cbb7-f702-4812",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "5726-cbb7-f702-4812",
 			"props": {
-				"name": "flInfo",
 				"children": [
 					"f0dd-30e9-ff1a-b192",
 					"a103-df65-e44a-9b9f"
 				],
+				"name": "flInfo",
 				"parent": "842d-3186-5326-4b81"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgMainLookbook.lblSale",
 			"id": "5a00-2ed6-3339-989c",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblSale",
+				"parent": "5bae-54e6-f533-71cd",
 				"text": "SALE"
 			},
-			"className": ".label #pgMainLookbook.lblSale",
-			"props": {
-				"name": "lblSale",
-				"text": "SALE",
-				"children": [],
-				"parent": "5bae-54e6-f533-71cd"
+			"type": "Label",
+			"userProps": {
+				"text": "SALE"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgMainLookbook.lbl50Off",
 			"id": "8a07-cd8f-ffa8-e75b",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lbl50Off",
+				"parent": "5bae-54e6-f533-71cd",
 				"text": "50% OFF"
 			},
-			"className": ".label #pgMainLookbook.lbl50Off",
-			"props": {
-				"name": "lbl50Off",
-				"text": "50% OFF",
-				"children": [],
-				"parent": "5bae-54e6-f533-71cd"
+			"type": "Label",
+			"userProps": {
+				"text": "50% OFF"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "5e01-19ee-774a-e883",
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flShopNow",
+			"id": "5e01-19ee-774a-e883",
 			"props": {
-				"name": "flShopNow",
 				"children": [
 					"c68f-b762-2a68-82b8"
 				],
+				"name": "flShopNow",
 				"parent": "5bae-54e6-f533-71cd"
-			}
-		},
-		{
-			"type": "Button",
-			"id": "c68f-b762-2a68-82b8",
-			"userProps": {
-				"text": "SHOP NOW",
-				"left": 0,
-				"top": 0
 			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
 			"className": ".button #pgMainLookbook.btnShopNow",
+			"id": "c68f-b762-2a68-82b8",
 			"props": {
-				"name": "btnShopNow",
-				"text": "SHOP NOW",
 				"children": [],
-				"parent": "5e01-19ee-774a-e883"
+				"name": "btnShopNow",
+				"parent": "5e01-19ee-774a-e883",
+				"text": "SHOP NOW"
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "SHOP NOW",
+				"top": 0
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "b740-f675-4f52-5243",
-			"hiddenComponent": false,
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flSecondLine",
+			"hiddenComponent": false,
+			"id": "b740-f675-4f52-5243",
 			"props": {
-				"name": "flSecondLine",
 				"children": [
 					"4637-e165-3e1c-b798",
 					"6768-9cf0-f298-8760",
 					"9dec-745a-6b4b-d034",
 					"0b77-0e2d-97eb-edd1"
 				],
+				"name": "flSecondLine",
 				"parent": "06bb-a00e-c029-0539"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgMainLookbook.lblSale",
 			"id": "6768-9cf0-f298-8760",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblSale",
+				"parent": "b740-f675-4f52-5243",
 				"text": "SALE"
 			},
-			"className": ".label #pgMainLookbook.lblSale",
-			"props": {
-				"name": "lblSale",
-				"text": "SALE",
-				"children": [],
-				"parent": "b740-f675-4f52-5243"
+			"type": "Label",
+			"userProps": {
+				"text": "SALE"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgMainLookbook.lbl50Off",
 			"id": "9dec-745a-6b4b-d034",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lbl50Off",
+				"parent": "b740-f675-4f52-5243",
 				"text": "50% OFF"
 			},
-			"className": ".label #pgMainLookbook.lbl50Off",
-			"props": {
-				"name": "lbl50Off",
-				"text": "50% OFF",
-				"children": [],
-				"parent": "b740-f675-4f52-5243"
+			"type": "Label",
+			"userProps": {
+				"text": "50% OFF"
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flShopNow",
 			"id": "0b77-0e2d-97eb-edd1",
+			"props": {
+				"children": [
+					"04f7-f1f0-5102-44e4"
+				],
+				"name": "flShopNow",
+				"parent": "b740-f675-4f52-5243"
+			},
+			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1
 				}
-			},
-			"className": ".flexLayout .flexLayout-default #pgMainLookbook.flShopNow",
-			"props": {
-				"name": "flShopNow",
-				"children": [
-					"04f7-f1f0-5102-44e4"
-				],
-				"parent": "b740-f675-4f52-5243"
 			}
 		},
 		{
-			"type": "Button",
-			"id": "04f7-f1f0-5102-44e4",
-			"userProps": {
-				"text": "SHOP NOW",
-				"left": 0,
-				"top": 0
-			},
 			"className": ".button #pgMainLookbook.btnShopNow",
+			"id": "04f7-f1f0-5102-44e4",
 			"props": {
-				"name": "btnShopNow",
-				"text": "SHOP NOW",
 				"children": [],
-				"parent": "0b77-0e2d-97eb-edd1"
+				"name": "btnShopNow",
+				"parent": "0b77-0e2d-97eb-edd1",
+				"text": "SHOP NOW"
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "SHOP NOW",
+				"top": 0
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgMainLookbook.lblSaleBackground",
 			"id": "3f4c-786e-3168-cf95",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblSaleBackground",
+				"parent": "5bae-54e6-f533-71cd",
 				"text": "SALE"
 			},
-			"className": ".label #pgMainLookbook.lblSaleBackground",
-			"props": {
-				"name": "lblSaleBackground",
-				"text": "SALE",
-				"children": [],
-				"parent": "5bae-54e6-f533-71cd"
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "5114-d220-b1ed-6b58",
-			"userProps": {},
-			"className": ".imageView #pgMainLookbook.imgWomen",
-			"props": {
-				"name": "imgWomen",
-				"children": [],
-				"parent": "47f2-f138-9dd8-617a"
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "3d2b-ea2c-6528-3f6e",
-			"userProps": {},
-			"className": ".imageView #pgMainLookbook.imgMen",
-			"props": {
-				"name": "imgMen",
-				"children": [],
-				"parent": "a1cd-4b9b-acad-6cf7"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "6f1c-1a10-c120-fe7d",
+			"type": "Label",
 			"userProps": {
-				"width": null,
-				"height": null,
-				"left": -1.0869565217391304,
-				"right": 0,
+				"text": "SALE"
+			}
+		},
+		{
+			"className": ".imageView #pgMainLookbook.imgWomen",
+			"id": "5114-d220-b1ed-6b58",
+			"props": {
+				"children": [],
+				"name": "imgWomen",
+				"parent": "47f2-f138-9dd8-617a"
+			},
+			"type": "ImageView",
+			"userProps": {}
+		},
+		{
+			"className": ".imageView #pgMainLookbook.imgMen",
+			"id": "3d2b-ea2c-6528-3f6e",
+			"props": {
+				"children": [],
+				"name": "imgMen",
+				"parent": "a1cd-4b9b-acad-6cf7"
+			},
+			"type": "ImageView",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "6f1c-1a10-c120-fe7d",
+			"props": {
+				"children": [
+					"be82-fc79-093a-0646",
+					"4554-9d90-5938-8d03"
+				],
+				"name": "flWrapper",
+				"parent": "47f2-f138-9dd8-617a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
 				"bottom": 0,
-				"top": 0,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"justifyContent": "CENTER",
 					"alignItems": "STRETCH",
 					"alignContent": "STRETCH",
 					"alignSelf": "FLEX_START"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flWrapper",
-				"children": [
-					"be82-fc79-093a-0646",
-					"4554-9d90-5938-8d03"
-				],
-				"parent": "47f2-f138-9dd8-617a"
+				},
+				"height": null,
+				"left": -1.0869565217391304,
+				"right": 0,
+				"top": 0,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgMainLookbook.lblShop",
 			"id": "be82-fc79-093a-0646",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblShop",
+				"parent": "6f1c-1a10-c120-fe7d",
 				"text": "SHOP"
 			},
-			"className": ".label #pgMainLookbook.lblShop",
-			"props": {
-				"name": "lblShop",
-				"text": "SHOP",
-				"children": [],
-				"parent": "6f1c-1a10-c120-fe7d"
+			"type": "Label",
+			"userProps": {
+				"text": "SHOP"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgMainLookbook.lblGender",
 			"id": "4554-9d90-5938-8d03",
+			"props": {
+				"children": [],
+				"name": "lblGender",
+				"parent": "6f1c-1a10-c120-fe7d",
+				"text": "WOMEN"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "WOMEN",
 				"flexProps": {
 					"alignSelf": "STRETCH"
-				}
-			},
-			"className": ".label #pgMainLookbook.lblGender",
-			"props": {
-				"name": "lblGender",
-				"text": "WOMEN",
-				"children": [],
-				"parent": "6f1c-1a10-c120-fe7d"
+				},
+				"text": "WOMEN"
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout .flexLayout-default",
 			"id": "be6f-d58b-d42a-e94c",
+			"props": {
+				"children": [
+					"5a9d-4538-850b-6205",
+					"b18a-2e34-0672-886c"
+				],
+				"name": "flWrapper",
+				"parent": "a1cd-4b9b-acad-6cf7"
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"width": null,
-				"height": null,
-				"left": 0,
-				"right": 0,
 				"bottom": 0,
-				"top": 1.6666666666666667,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"justifyContent": "CENTER",
 					"alignItems": "STRETCH",
 					"alignContent": "STRETCH"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flWrapper",
-				"children": [
-					"5a9d-4538-850b-6205",
-					"b18a-2e34-0672-886c"
-				],
-				"parent": "a1cd-4b9b-acad-6cf7"
+				},
+				"height": null,
+				"left": 0,
+				"right": 0,
+				"top": 1.6666666666666667,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgMainLookbook.lblShop.men",
 			"id": "5a9d-4538-850b-6205",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblShop",
+				"parent": "be6f-d58b-d42a-e94c",
 				"text": "SHOP"
 			},
-			"className": ".label #pgMainLookbook.lblShop.men",
-			"props": {
-				"name": "lblShop",
-				"text": "SHOP",
-				"children": [],
-				"parent": "be6f-d58b-d42a-e94c"
+			"type": "Label",
+			"userProps": {
+				"text": "SHOP"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgMainLookbook.lblGender.men",
 			"id": "b18a-2e34-0672-886c",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblGender",
+				"parent": "be6f-d58b-d42a-e94c",
 				"text": "MEN"
 			},
-			"className": ".label #pgMainLookbook.lblGender.men",
-			"props": {
-				"name": "lblGender",
-				"text": "MEN",
-				"children": [],
-				"parent": "be6f-d58b-d42a-e94c"
+			"type": "Label",
+			"userProps": {
+				"text": "MEN"
 			}
 		},
 		{
-			"type": "Label",
-			"id": "7610-00e5-d374-b174",
-			"userProps": {
-				"text": "SUMMER 2017",
-				"width": null,
-				"height": 20,
-				"flexProps": {
-					"alignSelf": "AUTO"
-				}
-			},
 			"className": ".label #pgMainLookbook.lblSummer",
+			"id": "7610-00e5-d374-b174",
 			"props": {
+				"children": [],
 				"name": "lblBag",
+				"parent": "171a-9f20-120a-7188",
+				"text": "SUMMER 2017"
+			},
+			"type": "Label",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"height": 20,
 				"text": "SUMMER 2017",
-				"children": [],
-				"parent": "171a-9f20-120a-7188"
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
-			"id": "8dba-703a-ea9b-e04b",
-			"hiddenComponent": false,
-			"userProps": {
-				"text": "BAG\nTRENDS",
-				"flexProps": {
-					"alignSelf": "AUTO"
-				}
-			},
 			"className": ".label #pgMainLookbook.lblBag",
+			"hiddenComponent": false,
+			"id": "8dba-703a-ea9b-e04b",
 			"props": {
-				"name": "lblSummer",
-				"text": "BAG\nTRENDS",
 				"children": [],
-				"parent": "171a-9f20-120a-7188"
-			}
-		},
-		{
+				"name": "lblSummer",
+				"parent": "171a-9f20-120a-7188",
+				"text": "BAG\nTRENDS"
+			},
 			"type": "Label",
-			"id": "f0dd-30e9-ff1a-b192",
 			"userProps": {
-				"text": "ACCESSORIES",
 				"flexProps": {
 					"alignSelf": "AUTO"
-				}
-			},
-			"className": ".label #pgMainLookbook.lblAccessories",
-			"props": {
-				"name": "lblAccessories",
-				"text": "ACCESSORIES",
-				"children": [],
-				"parent": "5726-cbb7-f702-4812"
+				},
+				"text": "BAG\nTRENDS"
 			}
 		},
 		{
+			"className": ".label #pgMainLookbook.lblAccessories",
+			"id": "f0dd-30e9-ff1a-b192",
+			"props": {
+				"children": [],
+				"name": "lblAccessories",
+				"parent": "5726-cbb7-f702-4812",
+				"text": "ACCESSORIES"
+			},
 			"type": "Label",
-			"id": "a103-df65-e44a-9b9f",
 			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"text": "ACCESSORIES"
+			}
+		},
+		{
+			"className": ".label #pgMainLookbook.lblGlasses",
+			"id": "a103-df65-e44a-9b9f",
+			"props": {
+				"children": [],
+				"name": "lblGlasses",
+				"parent": "5726-cbb7-f702-4812",
 				"text": "SUN GLASSES"
 			},
-			"className": ".label #pgMainLookbook.lblGlasses",
-			"props": {
-				"name": "lblGlasses",
-				"text": "SUN GLASSES",
-				"children": [],
-				"parent": "5726-cbb7-f702-4812"
+			"type": "Label",
+			"userProps": {
+				"text": "SUN GLASSES"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "8098-e199-bb17-6980",
-			"userProps": {
-				"width": null,
-				"height": 50,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"flexProps": {
-					"flexDirection": "ROW",
-					"justifyContent": "SPACE_BETWEEN"
-				},
-				"left": 0,
-				"top": 0
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "8098-e199-bb17-6980",
 			"props": {
-				"name": "flHeaderBar",
 				"children": [
 					"8dc6-cc2f-5f10-d1a6",
 					"af98-6ef5-a4f8-4f9a",
 					"f453-82cf-28b5-9444"
 				],
+				"name": "flHeaderBar",
 				"parent": "06bb-a00e-c029-0539"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "8dc6-cc2f-5f10-d1a6",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"minWidth": null,
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "8dc6-cc2f-5f10-d1a6",
 			"props": {
-				"name": "flHeaderLeft",
-				"usePageVariable": true,
 				"children": [
 					"45b5-83c9-2e27-0af8"
 				],
-				"parent": "8098-e199-bb17-6980"
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "45b5-83c9-2e27-0af8",
-			"userProps": {},
-			"className": ".pageBackIconButton",
-			"props": {
-				"name": "imgLeft",
-				"usePageVariable": false,
-				"children": [],
-				"parent": "8dc6-cc2f-5f10-d1a6"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "af98-6ef5-a4f8-4f9a",
-			"userProps": {
-				"height": null,
-				"width": null,
-				"minWidth": null,
-				"flexProps": {
-					"flexDirection": "ROW",
-					"flexGrow": 2
-				}
+				"name": "flHeaderLeft",
+				"parent": "8098-e199-bb17-6980",
+				"usePageVariable": true
 			},
-			"className": ".flexLayout .flexLayout-default",
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				},
+				"height": null,
+				"minWidth": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".pageBackIconButton",
+			"id": "45b5-83c9-2e27-0af8",
 			"props": {
-				"name": "flHeaderMiddle",
+				"children": [],
+				"name": "imgLeft",
+				"parent": "8dc6-cc2f-5f10-d1a6",
+				"usePageVariable": false
+			},
+			"type": "ImageView",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "af98-6ef5-a4f8-4f9a",
+			"props": {
 				"children": [
 					"a83f-575b-22be-4d12"
 				],
+				"name": "flHeaderMiddle",
 				"parent": "8098-e199-bb17-6980"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"flexGrow": 2
+				},
+				"height": null,
+				"minWidth": null,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label",
 			"id": "a83f-575b-22be-4d12",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "af98-6ef5-a4f8-4f9a",
+				"text": "LOOKBOOK"
+			},
+			"type": "Label",
 			"userProps": {
-				"width": null,
-				"height": null,
-				"text": "LOOKBOOK",
-				"textAlignment": "MIDCENTER",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"flexProps": {
 					"flexGrow": 1
 				},
 				"font": {
 					"size": 15
-				}
-			},
-			"className": ".label",
-			"props": {
-				"name": "lblTitle",
+				},
+				"height": null,
 				"text": "LOOKBOOK",
-				"children": [],
-				"parent": "af98-6ef5-a4f8-4f9a"
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "f453-82cf-28b5-9444",
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile.rightItem",
+			"id": "f453-82cf-28b5-9444",
 			"props": {
+				"children": [],
 				"name": "flHeaderRight",
-				"children": [],
 				"parent": "8098-e199-bb17-6980"
-			}
-		},
-		{
+			},
 			"type": "FlexLayout",
-			"id": "7845-8531-3de0-1b0a",
-			"userProps": {
-				"usePageVariable": true,
-				"width": null,
-				"height": 20,
-				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"left": 0,
-				"top": 0
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flStatusBarBg",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "06bb-a00e-c029-0539"
-			}
+			"userProps": {}
 		},
 		{
-			"type": "Label",
-			"id": "4637-e165-3e1c-b798",
-			"hiddenComponent": false,
-			"userProps": {
-				"text": "S A L E",
-				"left": 0,
-				"top": 0
-			},
 			"className": ".label #pgMainLookbook.lblSaleBackground",
+			"hiddenComponent": false,
+			"id": "4637-e165-3e1c-b798",
 			"props": {
-				"name": "lblSaleBackground_1",
-				"text": "S A L E",
 				"children": [],
-				"parent": "b740-f675-4f52-5243"
+				"name": "lblSaleBackground_1",
+				"parent": "b740-f675-4f52-5243",
+				"text": "S A L E"
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "S A L E",
+				"top": 0
 			}
 		}
 	]

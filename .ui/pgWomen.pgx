@@ -1,347 +1,327 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page .womenPageMain",
 			"id": "96f5-dfac-ba99-0fbc",
 			"initialized": true,
-			"userProps": {
-				"orientation": "AUTO"
-			},
-			"className": ".page .womenPageMain",
-			"version": "6.6.0",
 			"props": {
-				"orientation": "AUTO",
-				"name": "pgWomen",
 				"children": [
 					"a001-0712-b987-7a09",
 					"cc61-eef4-6cd0-8cd4",
-					"6239-6693-c042-0e80",
 					"9425-0c93-396b-b7b0",
 					"830a-dd25-540d-36c7"
 				],
+				"name": "pgWomen",
+				"orientation": "AUTO",
 				"parent": null
-			}
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
+				"orientation": "AUTO"
+			},
+			"version": "6.6.1"
 		},
 		{
-			"type": "StatusBar",
-			"id": "a001-0712-b987-7a09",
-			"userProps": {},
 			"className": ".statusBar",
+			"id": "a001-0712-b987-7a09",
 			"props": {
-				"name": "statusBar",
 				"children": [],
-				"parent": "96f5-dfac-ba99-0fbc",
-				"isRemovable": false
-			}
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "96f5-dfac-ba99-0fbc"
+			},
+			"type": "StatusBar",
+			"userProps": {}
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".headerBar",
 			"id": "cc61-eef4-6cd0-8cd4",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "96f5-dfac-ba99-0fbc",
+				"title": "WOMEN"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "WOMEN",
 				"visible": false
-			},
-			"className": ".headerBar",
-			"props": {
-				"title": "WOMEN",
-				"name": "headerBar",
-				"children": [],
-				"parent": "96f5-dfac-ba99-0fbc",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "6239-6693-c042-0e80",
-			"userProps": {
-				"usePageVariable": true,
-				"width": null,
-				"height": 20,
-				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"left": 0,
-				"top": 0
-			},
 			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"usePageVariable": true,
-				"name": "flStatusBarBg",
-				"children": [],
-				"parent": "96f5-dfac-ba99-0fbc"
-			}
-		},
-		{
-			"type": "FlexLayout",
 			"id": "9425-0c93-396b-b7b0",
-			"userProps": {
-				"width": null,
-				"height": 50,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"flexDirection": "ROW",
-					"justifyContent": "SPACE_BETWEEN",
-					"alignSelf": "STRETCH"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
 			"props": {
-				"name": "flHeaderBar",
 				"children": [
 					"d932-8dc8-d410-d306",
 					"075d-f723-5e93-7b83",
 					"85ab-4f27-d709-5be6"
 				],
+				"name": "flHeaderBar",
 				"parent": "96f5-dfac-ba99-0fbc"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN",
+					"alignSelf": "STRETCH"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "d932-8dc8-d410-d306",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"minWidth": null,
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "d932-8dc8-d410-d306",
 			"props": {
-				"usePageVariable": true,
-				"name": "flHeaderLeft",
 				"children": [
 					"dcd5-3c07-675b-14de"
 				],
-				"parent": "9425-0c93-396b-b7b0"
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "dcd5-3c07-675b-14de",
-			"userProps": {},
-			"className": ".pageBackIconButton",
-			"props": {
-				"name": "imgHamburger",
-				"children": [],
-				"parent": "d932-8dc8-d410-d306"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "075d-f723-5e93-7b83",
-			"userProps": {
-				"height": null,
-				"width": null,
-				"minWidth": null,
-				"flexProps": {
-					"flexDirection": "ROW",
-					"flexGrow": 1
-				}
+				"name": "flHeaderLeft",
+				"parent": "9425-0c93-396b-b7b0",
+				"usePageVariable": true
 			},
-			"className": ".flexLayout .flexLayout-default",
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				},
+				"height": null,
+				"minWidth": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".pageBackIconButton",
+			"id": "dcd5-3c07-675b-14de",
 			"props": {
-				"name": "flHeaderMiddle",
+				"children": [],
+				"name": "imgHamburger",
+				"parent": "d932-8dc8-d410-d306"
+			},
+			"type": "ImageView",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "075d-f723-5e93-7b83",
+			"props": {
 				"children": [
 					"8ed5-5382-2631-f09b"
 				],
+				"name": "flHeaderMiddle",
 				"parent": "9425-0c93-396b-b7b0"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"flexGrow": 1
+				},
+				"height": null,
+				"minWidth": null,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label",
 			"id": "8ed5-5382-2631-f09b",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "075d-f723-5e93-7b83",
+				"text": "WOMEN"
+			},
+			"type": "Label",
 			"userProps": {
-				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 15
+				},
 				"height": null,
 				"text": "WOMEN",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 255, 255, 255, 1 )",
-				"font": {
-					"size": 15
-				},
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".label",
-			"props": {
-				"text": "WOMEN",
-				"name": "lblTitle",
-				"children": [],
-				"parent": "075d-f723-5e93-7b83"
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout .flexLayout-default",
 			"id": "85ab-4f27-d709-5be6",
+			"props": {
+				"children": [],
+				"name": "flHeaderRight",
+				"parent": "9425-0c93-396b-b7b0"
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"height": null,
-				"width": null,
-				"paddingRight": 17.5,
-				"minWidth": null,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"alignItems": "CENTER",
 					"flexGrow": 1,
 					"justifyContent": "FLEX_END"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flHeaderRight",
-				"children": [],
-				"parent": "9425-0c93-396b-b7b0"
+				},
+				"height": null,
+				"minWidth": null,
+				"paddingRight": 17.5,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "830a-dd25-540d-36c7",
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone-flMain",
+			"id": "830a-dd25-540d-36c7",
 			"props": {
-				"name": "flMain",
 				"children": [
 					"7c43-1049-4f35-3fa8",
 					"6782-7c41-a811-2c72"
 				],
+				"name": "flMain",
 				"parent": "96f5-dfac-ba99-0fbc"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "6782-7c41-a811-2c72",
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flInfoOuter",
+			"id": "6782-7c41-a811-2c72",
 			"props": {
-				"name": "flInfo",
 				"children": [
 					"e7c9-c194-3efc-d500",
 					"47f8-6678-f299-571d"
 				],
+				"name": "flInfo",
 				"parent": "830a-dd25-540d-36c7"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "e7c9-c194-3efc-d500",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "COLUMN"
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"id": "e7c9-c194-3efc-d500",
 			"props": {
-				"name": "flPart1",
 				"children": [
 					"499e-dd8b-a67b-140d",
 					"d48b-e391-efa9-816a"
 				],
+				"name": "flPart1",
 				"parent": "6782-7c41-a811-2c72"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "COLUMN"
+				},
+				"height": null,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgWomenPhone.flInfo-flPart1-lblProductName",
 			"id": "499e-dd8b-a67b-140d",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblProductName",
+				"parent": "e7c9-c194-3efc-d500",
 				"text": "JAQEX ESTEREL",
-				"usePageVariable": true,
-				"height": null,
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
 				"flexProps": {
 					"flexGrow": 0.6
-				}
-			},
-			"className": ".label #pgWomenPhone.flInfo-flPart1-lblProductName",
-			"props": {
+				},
+				"height": null,
 				"text": "JAQEX ESTEREL",
-				"usePageVariable": true,
-				"name": "lblProductName",
-				"children": [],
-				"parent": "e7c9-c194-3efc-d500"
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "d48b-e391-efa9-816a",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 0.7
-				}
-			},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flInfo-flPart1-flDetail",
+			"id": "d48b-e391-efa9-816a",
 			"props": {
-				"name": "flDetail",
 				"children": [
 					"6ca4-3afb-0033-f2ff",
 					"83bc-c9ef-7d44-e23d"
 				],
+				"name": "flDetail",
 				"parent": "e7c9-c194-3efc-d500"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "6ca4-3afb-0033-f2ff",
-			"userProps": {
-				"text": "Farlap Dress Sleve Top",
-				"usePageVariable": true,
-				"height": null
 			},
-			"className": ".label #pgWomenPhone.flInfo-flPart1-flDetail-lblProductDetail",
-			"props": {
-				"text": "Farlap Dress Sleve Top",
-				"usePageVariable": true,
-				"name": "lblProductDetail",
-				"children": [],
-				"parent": "d48b-e391-efa9-816a"
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 0.7
+				}
 			}
 		},
 		{
+			"className": ".label #pgWomenPhone.flInfo-flPart1-flDetail-lblProductDetail",
+			"id": "6ca4-3afb-0033-f2ff",
+			"props": {
+				"children": [],
+				"name": "lblProductDetail",
+				"parent": "d48b-e391-efa9-816a",
+				"text": "Farlap Dress Sleve Top",
+				"usePageVariable": true
+			},
 			"type": "Label",
-			"id": "83bc-c9ef-7d44-e23d",
 			"userProps": {
-				"text": "$ 400",
-				"usePageVariable": true,
 				"height": null,
+				"text": "Farlap Dress Sleve Top",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label #pgWomenPhone.flInfo-flPart1-flDetail-lblProductPrice",
+			"id": "83bc-c9ef-7d44-e23d",
+			"props": {
+				"children": [],
+				"name": "lblProductPrice",
+				"parent": "d48b-e391-efa9-816a",
+				"text": "$ 400",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"flexGrow": 1
-				}
-			},
-			"className": ".label #pgWomenPhone.flInfo-flPart1-flDetail-lblProductPrice",
-			"props": {
+				},
+				"height": null,
 				"text": "$ 400",
-				"usePageVariable": true,
-				"name": "lblProductPrice",
-				"children": [],
-				"parent": "d48b-e391-efa9-816a"
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "47f8-6678-f299-571d",
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flInfo-flPart2",
+			"id": "47f8-6678-f299-571d",
 			"props": {
-				"name": "flPart2",
 				"children": [
 					"6cc0-1c81-4a7e-1235",
 					"839f-1c74-3380-99b5"
 				],
+				"name": "flPart2",
 				"parent": "6782-7c41-a811-2c72"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "6cc0-1c81-4a7e-1235",
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flInfo",
+			"id": "6cc0-1c81-4a7e-1235",
 			"props": {
-				"name": "flInfo",
 				"children": [
 					"ed04-3847-4f85-7623",
 					"11a7-71b1-43f8-6d96",
@@ -351,261 +331,264 @@
 					"dbe0-19c3-826c-fa21",
 					"030f-685a-2518-772f"
 				],
+				"name": "flInfo",
 				"parent": "47f8-6678-f299-571d"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"id": "ed04-3847-4f85-7623",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblAbout",
+				"parent": "6cc0-1c81-4a7e-1235",
 				"text": "ABOUT ITEM"
 			},
-			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
-			"props": {
-				"text": "ABOUT ITEM",
-				"name": "lblAbout",
-				"children": [],
-				"parent": "6cc0-1c81-4a7e-1235"
+			"type": "Label",
+			"userProps": {
+				"text": "ABOUT ITEM"
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"id": "11a7-71b1-43f8-6d96",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "6cc0-1c81-4a7e-1235"
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"width": null,
-				"paddingLeft": null,
-				"paddingRight": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"marginLeft": null,
 				"marginRight": 20,
 				"maxHeight": 1,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
-			"props": {
-				"name": "flLine",
-				"children": [],
-				"parent": "6cc0-1c81-4a7e-1235"
+				"paddingLeft": null,
+				"paddingRight": null,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"id": "cc35-b2c5-6398-8f32",
-			"userProps": {
-				"text": "100% Cotton",
-				"usePageVariable": true
-			},
-			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"props": {
-				"text": "100% Cotton",
-				"usePageVariable": true,
+				"children": [],
 				"name": "lblMaterial",
-				"children": [],
-				"parent": "6cc0-1c81-4a7e-1235"
+				"parent": "6cc0-1c81-4a7e-1235",
+				"text": "100% Cotton",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "100% Cotton",
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"id": "5c8e-5a08-ab25-4525",
-			"userProps": {
-				"text": "Size: M",
-				"usePageVariable": true
-			},
-			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"props": {
-				"text": "Size: M",
-				"usePageVariable": true,
+				"children": [],
 				"name": "lblSize",
-				"children": [],
-				"parent": "6cc0-1c81-4a7e-1235"
+				"parent": "6cc0-1c81-4a7e-1235",
+				"text": "Size: M",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Size: M",
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"id": "fc2a-0ce4-c1d4-5206",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblColor",
+				"parent": "6cc0-1c81-4a7e-1235",
 				"text": "Color: Light Blue",
 				"usePageVariable": true
 			},
-			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
-			"props": {
+			"type": "Label",
+			"userProps": {
 				"text": "Color: Light Blue",
-				"usePageVariable": true,
-				"name": "lblColor",
-				"children": [],
-				"parent": "6cc0-1c81-4a7e-1235"
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout .flexLayout-default",
 			"id": "dbe0-19c3-826c-fa21",
+			"props": {
+				"children": [
+					"8c7e-bb21-6c57-e3df",
+					"64e4-47d2-7b4a-343d",
+					"56fa-1ef6-9861-bf95"
+				],
+				"name": "flColorButtons",
+				"parent": "6cc0-1c81-4a7e-1235",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"width": null,
-				"height": null,
-				"marginLeft": null,
-				"usePageVariable": true,
-				"paddingTop": null,
-				"paddingBottom": null,
-				"maxHeight": 35,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW",
 					"alignContent": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"alignItems": "CENTER"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
+				},
+				"height": null,
+				"marginLeft": null,
+				"maxHeight": 35,
+				"paddingBottom": null,
+				"paddingTop": null,
 				"usePageVariable": true,
-				"name": "flColorButtons",
-				"children": [
-					"8c7e-bb21-6c57-e3df",
-					"64e4-47d2-7b4a-343d",
-					"56fa-1ef6-9861-bf95"
-				],
-				"parent": "6cc0-1c81-4a7e-1235"
+				"width": null
 			}
 		},
 		{
-			"type": "Button",
+			"className": ".button #pgWomenPhone.btnColor",
 			"id": "8c7e-bb21-6c57-e3df",
+			"props": {
+				"children": [],
+				"name": "btnBlue",
+				"parent": "dbe0-19c3-826c-fa21",
+				"text": null
+			},
+			"type": "Button",
 			"userProps": {
 				"backgroundColor": "rgba( 173, 251, 253, 1 )",
-				"text": null,
-				"marginLeft": null,
 				"flexProps": {
 					"flexGrow": null
-				}
-			},
-			"className": ".button #pgWomenPhone.btnColor",
-			"props": {
-				"text": null,
-				"name": "btnBlue",
-				"children": [],
-				"parent": "dbe0-19c3-826c-fa21"
+				},
+				"marginLeft": null,
+				"text": null
 			}
 		},
 		{
-			"type": "Button",
+			"className": ".button #pgWomenPhone.btnColor",
 			"id": "64e4-47d2-7b4a-343d",
-			"userProps": {
-				"text": null,
-				"backgroundColor": "rgba( 254, 188, 247, 1 )"
-			},
-			"className": ".button #pgWomenPhone.btnColor",
 			"props": {
-				"text": null,
-				"name": "btnPink",
 				"children": [],
-				"parent": "dbe0-19c3-826c-fa21"
+				"name": "btnPink",
+				"parent": "dbe0-19c3-826c-fa21",
+				"text": null
+			},
+			"type": "Button",
+			"userProps": {
+				"backgroundColor": "rgba( 254, 188, 247, 1 )",
+				"text": null
 			}
 		},
 		{
-			"type": "Button",
+			"className": ".button #pgWomenPhone.btnColor",
 			"id": "56fa-1ef6-9861-bf95",
+			"props": {
+				"children": [],
+				"name": "btnYellow",
+				"parent": "dbe0-19c3-826c-fa21",
+				"text": null
+			},
+			"type": "Button",
 			"userProps": {
 				"backgroundColor": "rgba( 248, 247, 226, 1 )",
 				"text": null
-			},
-			"className": ".button #pgWomenPhone.btnColor",
-			"props": {
-				"text": null,
-				"name": "btnYellow",
-				"children": [],
-				"parent": "dbe0-19c3-826c-fa21"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "030f-685a-2518-772f",
-			"hiddenComponent": false,
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone_lineUnderColor",
+			"hiddenComponent": false,
+			"id": "030f-685a-2518-772f",
 			"props": {
-				"name": "flLine2",
 				"children": [],
+				"name": "flLine2",
 				"parent": "6cc0-1c81-4a7e-1235"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "839f-1c74-3380-99b5",
-			"userProps": {},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone-flButtons",
+			"id": "839f-1c74-3380-99b5",
 			"props": {
-				"name": "flButtons",
 				"children": [
 					"2c1c-ec4a-17d6-169c",
 					"597b-f5c0-75ce-2c96"
 				],
+				"name": "flButtons",
 				"parent": "47f8-6678-f299-571d"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "Button",
+			"className": ".button #pgWomenPhone-btnAddToCard",
 			"id": "2c1c-ec4a-17d6-169c",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "btnAddToCard",
+				"parent": "839f-1c74-3380-99b5",
 				"text": "ADD TO CART"
 			},
-			"className": ".button #pgWomenPhone-btnAddToCard",
-			"props": {
-				"text": "ADD TO CART",
-				"name": "btnAddToCard",
-				"children": [],
-				"parent": "839f-1c74-3380-99b5"
+			"type": "Button",
+			"userProps": {
+				"text": "ADD TO CART"
 			}
 		},
 		{
-			"type": "Button",
+			"className": ".button #pgWomenPhone-btnQuickOrder",
 			"id": "597b-f5c0-75ce-2c96",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "btnQuickOrder",
+				"parent": "839f-1c74-3380-99b5",
 				"text": "QUICK ORDER"
 			},
-			"className": ".button #pgWomenPhone-btnQuickOrder",
-			"props": {
-				"text": "QUICK ORDER",
-				"name": "btnQuickOrder",
-				"children": [],
-				"parent": "839f-1c74-3380-99b5"
+			"type": "Button",
+			"userProps": {
+				"text": "QUICK ORDER"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "7c43-1049-4f35-3fa8",
-			"hiddenComponent": false,
-			"userProps": {
-				"usePageVariable": true,
-				"maxWidth": null
-			},
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flSwipe",
+			"hiddenComponent": false,
+			"id": "7c43-1049-4f35-3fa8",
 			"props": {
-				"usePageVariable": true,
-				"name": "flSwipe",
 				"children": [
 					"8521-2d57-5232-5d31"
 				],
-				"parent": "830a-dd25-540d-36c7"
+				"name": "flSwipe",
+				"parent": "830a-dd25-540d-36c7",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"maxWidth": null,
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "8521-2d57-5232-5d31",
+			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flSwipe-dotIndicator",
 			"hiddenComponent": false,
+			"id": "8521-2d57-5232-5d31",
+			"props": {
+				"children": [],
+				"name": "dotIndicator",
+				"parent": "7c43-1049-4f35-3fa8",
+				"usePageVariable": true
+			},
 			"source": {
 				"page": "__library__",
 				"type": "dotIndicator",
 				"id": "cd3b-2912-1a7f-7558"
 			},
-			"userProps": {},
-			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flSwipe-dotIndicator",
-			"props": {
-				"name": "dotIndicator",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "7c43-1049-4f35-3fa8"
-			}
+			"type": "FlexLayout",
+			"userProps": {}
 		}
 	]
 }

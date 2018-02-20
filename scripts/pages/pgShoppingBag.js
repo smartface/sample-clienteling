@@ -56,6 +56,8 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   const page = this;
+  
+  page.safeAreaLayoutMode = true;
   superOnLoad();
   adjustHeaderBar(page);
   this.lvShoppingBag.itemCount = 5;

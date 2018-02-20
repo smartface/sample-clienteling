@@ -55,6 +55,8 @@ function onLoad(superOnLoad) {
 	const page = this;
 	superOnLoad();
 	
+	page.safeAreaLayoutMode = true;
+	
 	loadUI.call(this);
 	adjustHeaderBar(page);
 }

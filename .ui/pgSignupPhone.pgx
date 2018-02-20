@@ -1,331 +1,345 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "da7d-a011-d4fb-9c5b",
 			"initialized": true,
-			"userProps": {
-				"orientation": "AUTO"
-			},
-			"className": ".page",
-			"version": "6.6.0",
 			"props": {
-				"name": "pgSignupPhone",
 				"children": [
 					"a431-6426-27d6-3884",
 					"49a6-bd3e-b201-a73b",
-					"7fc3-32b9-6f31-0ced",
 					"eed5-adce-b93c-8173",
 					"c868-c144-5c0f-6155"
 				],
-				"parent": null,
+				"name": "pgSignupPhone",
+				"orientation": "AUTO",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 66, 66, 66, 1 )",
 				"orientation": "AUTO"
-			}
+			},
+			"version": "6.6.1"
 		},
 		{
-			"type": "StatusBar",
-			"id": "a431-6426-27d6-3884",
-			"userProps": {},
 			"className": ".statusBar",
+			"id": "a431-6426-27d6-3884",
 			"props": {
-				"name": "statusBar",
 				"children": [],
-				"parent": "da7d-a011-d4fb-9c5b",
-				"isRemovable": false
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "da7d-a011-d4fb-9c5b"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"android": {
+					"color": "rgba( 32, 32, 32, 1 )"
+				},
+				"flex": {},
+				"ios": {
+					"style": "DEFAULT"
+				},
+				"visible": false
 			}
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".headerBar",
 			"id": "49a6-bd3e-b201-a73b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "da7d-a011-d4fb-9c5b",
+				"title": "SIGN IN"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "SIGN IN",
 				"visible": false
-			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "SIGN IN",
-				"children": [],
-				"parent": "da7d-a011-d4fb-9c5b",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "c868-c144-5c0f-6155",
-			"userProps": {
-				"usePageVariable": true
-			},
 			"className": ".flexLayout .flexLayout-default #pgSignupPhone.flMain",
+			"id": "c868-c144-5c0f-6155",
 			"props": {
-				"name": "flMain",
-				"usePageVariable": true,
 				"children": [
 					"7eb6-9fa4-2799-664c",
 					"8fe2-7f47-5fa4-e965"
 				],
-				"parent": "da7d-a011-d4fb-9c5b"
+				"name": "flMain",
+				"parent": "da7d-a011-d4fb-9c5b",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "7eb6-9fa4-2799-664c",
+			"className": ".flexLayout .flexLayout-default",
 			"hiddenComponent": false,
+			"id": "7eb6-9fa4-2799-664c",
+			"props": {
+				"children": [
+					"4ab9-00e3-fa9f-6b2a",
+					"19b9-1778-8525-9d40"
+				],
+				"name": "flBanner",
+				"parent": "c868-c144-5c0f-6155",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"width": null,
-				"height": null,
-				"marginLeft": null,
-				"left": null,
-				"top": null,
-				"paddingLeft": 20,
 				"backgroundColor": "rgba( 0, 1, 6, 0 )",
-				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 0.7,
 					"alignItems": "FLEX_START",
 					"justifyContent": "CENTER",
 					"alignContent": "FLEX_START",
 					"flexWrap": "NOWRAP"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flBanner",
+				},
+				"height": null,
+				"left": null,
+				"marginLeft": null,
+				"paddingLeft": 20,
+				"top": null,
 				"usePageVariable": true,
-				"children": [
-					"4ab9-00e3-fa9f-6b2a",
-					"19b9-1778-8525-9d40"
-				],
-				"parent": "c868-c144-5c0f-6155"
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "8fe2-7f47-5fa4-e965",
-			"hiddenComponent": false,
-			"userProps": {
-				"width": null,
-				"height": null,
-				"left": null,
-				"top": null,
-				"paddingTop": 20,
-				"paddingBottom": 20,
-				"visible": true,
-				"paddingLeft": 20,
-				"paddingRight": 20,
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "8fe2-7f47-5fa4-e965",
 			"props": {
-				"name": "flInfo",
-				"usePageVariable": true,
 				"children": [
 					"076e-47c9-12e8-938b",
 					"61b2-a1c6-cad7-187b",
 					"85cb-ef9b-d868-698e"
 				],
-				"parent": "c868-c144-5c0f-6155"
+				"name": "flInfo",
+				"parent": "c868-c144-5c0f-6155",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": null,
+				"paddingBottom": 20,
+				"paddingLeft": 20,
+				"paddingRight": 20,
+				"paddingTop": 20,
+				"top": null,
+				"usePageVariable": true,
+				"visible": true,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "076e-47c9-12e8-938b",
-			"hiddenComponent": false,
-			"userProps": {
-				"width": null,
-				"height": null,
-				"marginLeft": null,
-				"marginRight": null,
-				"flexProps": {
-					"flexGrow": 1,
-					"flexShrink": 6
-				}
-			},
 			"className": ".flexLayout .flexLayout-default .flexLayout-margin",
+			"hiddenComponent": false,
+			"id": "076e-47c9-12e8-938b",
 			"props": {
-				"name": "flUserID",
 				"children": [
 					"4f3d-ad25-4038-df02",
 					"2185-8946-c794-1016",
 					"9deb-8881-ee65-4607"
 				],
+				"name": "flUserID",
 				"parent": "8fe2-7f47-5fa4-e965"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "4f3d-ad25-4038-df02",
-			"userProps": {
-				"text": "User ID",
-				"width": null
 			},
-			"className": ".label .label-header",
-			"props": {
-				"name": "lblUserID",
-				"text": "User ID",
-				"children": [],
-				"parent": "076e-47c9-12e8-938b"
-			}
-		},
-		{
-			"type": "TextBox",
-			"id": "2185-8946-c794-1016",
-			"userProps": {
-				"width": null,
-				"height": 30,
-				"text": "smartface@smartface.io",
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"borderColor": "rgba( 197, 197, 197, 1 )",
-				"textColor": "rgba( 63, 63, 63, 1 )",
-				"usePageVariable": true,
-				"font": {
-					"family": "Nunito"
-				}
-			},
-			"className": ".textBox",
-			"props": {
-				"name": "taUserID",
-				"text": "smartface@smartface.io",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "076e-47c9-12e8-938b"
-			}
-		},
-		{
 			"type": "FlexLayout",
-			"id": "9deb-8881-ee65-4607",
 			"userProps": {
-				"width": null
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
-			"props": {
-				"name": "flLine",
-				"children": [],
-				"parent": "076e-47c9-12e8-938b"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "61b2-a1c6-cad7-187b",
-			"hiddenComponent": false,
-			"userProps": {
-				"width": null,
+				"flexProps": {
+					"flexGrow": 1,
+					"flexShrink": 6
+				},
 				"height": null,
 				"marginLeft": null,
 				"marginRight": null,
-				"flexProps": {
-					"flexGrow": 1.5
-				}
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-margin",
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-header",
+			"id": "4f3d-ad25-4038-df02",
 			"props": {
-				"name": "flPassword",
+				"children": [],
+				"name": "lblUserID",
+				"parent": "076e-47c9-12e8-938b",
+				"text": "User ID"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "User ID",
+				"width": null
+			}
+		},
+		{
+			"className": ".textBox",
+			"id": "2185-8946-c794-1016",
+			"props": {
+				"children": [],
+				"name": "taUserID",
+				"parent": "076e-47c9-12e8-938b",
+				"text": "smartface@smartface.io",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"borderColor": "rgba( 197, 197, 197, 1 )",
+				"font": {
+					"family": "Nunito"
+				},
+				"height": 30,
+				"text": "smartface@smartface.io",
+				"textColor": "rgba( 63, 63, 63, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"id": "9deb-8881-ee65-4607",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "076e-47c9-12e8-938b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-margin",
+			"hiddenComponent": false,
+			"id": "61b2-a1c6-cad7-187b",
+			"props": {
 				"children": [
 					"ba73-c9e3-0ca8-89c3",
 					"8163-860a-eac9-6254",
 					"16f3-ca35-b0f5-1aee",
 					"5843-909f-4399-32a2"
 				],
+				"name": "flPassword",
 				"parent": "8fe2-7f47-5fa4-e965"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1.5
+				},
+				"height": null,
+				"marginLeft": null,
+				"marginRight": null,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label .label-header",
 			"id": "ba73-c9e3-0ca8-89c3",
+			"props": {
+				"children": [],
+				"name": "lblPassword",
+				"parent": "61b2-a1c6-cad7-187b",
+				"text": "Password"
+			},
+			"type": "Label",
 			"userProps": {
 				"text": "Password",
 				"width": null
-			},
-			"className": ".label .label-header",
-			"props": {
-				"name": "lblPassword",
-				"text": "Password",
-				"children": [],
-				"parent": "61b2-a1c6-cad7-187b"
 			}
 		},
 		{
-			"type": "TextBox",
-			"id": "8163-860a-eac9-6254",
-			"userProps": {
-				"width": null,
-				"height": 30,
-				"text": "12345",
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"borderColor": "rgba( 197, 197, 197, 1 )",
-				"textColor": "rgba( 63, 63, 63, 1 )",
-				"isPassword": true,
-				"usePageVariable": true,
-				"font": {
-					"family": "Nunito"
-				}
-			},
 			"className": ".textBox",
+			"id": "8163-860a-eac9-6254",
 			"props": {
+				"children": [],
 				"isPassword": true,
 				"name": "taPassword",
+				"parent": "61b2-a1c6-cad7-187b",
 				"text": "12345",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"borderColor": "rgba( 197, 197, 197, 1 )",
+				"font": {
+					"family": "Nunito"
+				},
+				"height": 30,
+				"isPassword": true,
+				"text": "12345",
+				"textColor": "rgba( 63, 63, 63, 1 )",
 				"usePageVariable": true,
-				"children": [],
-				"parent": "61b2-a1c6-cad7-187b"
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
 			"id": "16f3-ca35-b0f5-1aee",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "61b2-a1c6-cad7-187b"
+			},
+			"type": "FlexLayout",
 			"userProps": {
 				"width": null
-			},
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
-			"props": {
-				"name": "flLine",
-				"children": [],
-				"parent": "61b2-a1c6-cad7-187b"
 			}
 		},
 		{
-			"type": "Label",
-			"id": "5843-909f-4399-32a2",
+			"className": ".label",
 			"hiddenComponent": false,
+			"id": "5843-909f-4399-32a2",
+			"props": {
+				"children": [],
+				"name": "lblForgotPassword",
+				"parent": "61b2-a1c6-cad7-187b",
+				"text": "Forgot Password"
+			},
+			"type": "Label",
 			"userProps": {
-				"top": 0,
-				"width": 110,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"height": 30,
-				"text": "Forgot Password",
-				"textColor": "rgba( 153, 153, 153, 1 )",
-				"textAlignment": "TOPLEFT",
-				"left": 0,
+				"flexProps": {
+					"alignSelf": "FLEX_END"
+				},
 				"font": {
 					"size": 14,
 					"family": "Nunito"
 				},
-				"flexProps": {
-					"alignSelf": "FLEX_END"
-				}
-			},
-			"className": ".label",
-			"props": {
-				"name": "lblForgotPassword",
+				"height": 30,
+				"left": 0,
 				"text": "Forgot Password",
-				"children": [],
-				"parent": "61b2-a1c6-cad7-187b"
+				"textAlignment": "TOPLEFT",
+				"textColor": "rgba( 153, 153, 153, 1 )",
+				"top": 0,
+				"width": 110
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "85cb-ef9b-d868-698e",
+			"className": ".flexLayout .flexLayout-default",
 			"hiddenComponent": false,
+			"id": "85cb-ef9b-d868-698e",
+			"props": {
+				"children": [
+					"ec72-6d93-7723-3f20",
+					"3eca-e67b-d6e2-e8bf"
+				],
+				"name": "flButtons",
+				"parent": "8fe2-7f47-5fa4-e965",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"width": null,
-				"height": null,
-				"marginBottom": null,
-				"paddingBottom": 10,
-				"paddingTop": 10,
-				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 2,
 					"flexDirection": "COLUMN",
@@ -333,257 +347,234 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"alignContent": "STRETCH"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flButtons",
+				},
+				"height": null,
+				"marginBottom": null,
+				"paddingBottom": 10,
+				"paddingTop": 10,
 				"usePageVariable": true,
-				"children": [
-					"ec72-6d93-7723-3f20",
-					"3eca-e67b-d6e2-e8bf"
-				],
-				"parent": "8fe2-7f47-5fa4-e965"
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "ec72-6d93-7723-3f20",
-			"hiddenComponent": false,
-			"userProps": {
-				"width": null,
-				"height": null,
-				"paddingBottom": null,
-				"marginBottom": 10,
-				"usePageVariable": true,
-				"backgroundColor": "rgba( 210, 49, 132, 1 )",
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				}
-			},
 			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "ec72-6d93-7723-3f20",
 			"props": {
-				"name": "flSignup",
-				"usePageVariable": true,
 				"children": [
 					"31a0-dfc1-b0fb-8936",
 					"f7b6-6f73-6779-bcdc"
 				],
-				"parent": "85cb-ef9b-d868-698e"
-			}
-		},
-		{
-			"type": "Button",
-			"id": "31a0-dfc1-b0fb-8936",
-			"userProps": {
-				"text": "Sign In",
-				"usePageVariable": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				"name": "flSignup",
+				"parent": "85cb-ef9b-d868-698e",
+				"usePageVariable": true
 			},
-			"className": ".button #pgSignupPhone.btn.btnSignup",
-			"props": {
-				"name": "btnSignup",
-				"text": "Sign In",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "ec72-6d93-7723-3f20"
-			}
-		},
-		{
 			"type": "FlexLayout",
-			"id": "3eca-e67b-d6e2-e8bf",
-			"hiddenComponent": false,
 			"userProps": {
-				"width": null,
-				"height": null,
+				"backgroundColor": "rgba( 210, 49, 132, 1 )",
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
-				}
-			},
-			"className": ".flexLayout .flexLayout-default",
+				},
+				"height": null,
+				"marginBottom": 10,
+				"paddingBottom": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".button #pgSignupPhone.btn.btnSignup",
+			"id": "31a0-dfc1-b0fb-8936",
 			"props": {
-				"name": "flOther",
+				"children": [],
+				"name": "btnSignup",
+				"parent": "ec72-6d93-7723-3f20",
+				"text": "Sign In",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"text": "Sign In",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "3eca-e67b-d6e2-e8bf",
+			"props": {
 				"children": [
 					"f3d1-0a0c-4b88-7512",
 					"e66b-af0a-acf8-766e"
 				],
+				"name": "flOther",
 				"parent": "85cb-ef9b-d868-698e"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				},
+				"height": null,
+				"width": null
 			}
 		},
 		{
-			"type": "Button",
-			"id": "f3d1-0a0c-4b88-7512",
-			"userProps": {
-				"text": "Login with Facebook",
-				"usePageVariable": true
-			},
 			"className": ".button #pgSignupPhone.btn.btnFacebook",
+			"id": "f3d1-0a0c-4b88-7512",
 			"props": {
-				"name": "btnFacebook",
-				"text": "Login with Facebook",
-				"usePageVariable": true,
 				"children": [],
-				"parent": "3eca-e67b-d6e2-e8bf"
+				"name": "btnFacebook",
+				"parent": "3eca-e67b-d6e2-e8bf",
+				"text": "Login with Facebook",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Login with Facebook",
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "Button",
+			"className": ".button #pgSignupPhone.btn.btnAnonymous",
 			"id": "e66b-af0a-acf8-766e",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "btnAnonymous",
+				"parent": "3eca-e67b-d6e2-e8bf",
 				"text": "Anonymous Login",
 				"usePageVariable": true
 			},
-			"className": ".button #pgSignupPhone.btn.btnAnonymous",
-			"props": {
-				"name": "btnAnonymous",
+			"type": "Button",
+			"userProps": {
 				"text": "Anonymous Login",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "3eca-e67b-d6e2-e8bf"
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "ImageView",
+			"className": ".imageView",
 			"id": "4ab9-00e3-fa9f-6b2a",
+			"props": {
+				"children": [],
+				"name": "imgBanner",
+				"parent": "7eb6-9fa4-2799-664c",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
 			"userProps": {
+				"height": 50,
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
-				"height": 50,
-				"width": 150,
-				"minHeight": 50,
-				"minWidth": null,
 				"maxHeight": 50,
 				"maxWidth": null,
-				"usePageVariable": true
-			},
-			"className": ".imageView",
-			"props": {
-				"name": "imgBanner",
+				"minHeight": 50,
+				"minWidth": null,
 				"usePageVariable": true,
-				"children": [],
-				"parent": "7eb6-9fa4-2799-664c"
+				"width": 150
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label",
 			"id": "19b9-1778-8525-9d40",
+			"props": {
+				"children": [],
+				"name": "taHeader",
+				"parent": "7eb6-9fa4-2799-664c",
+				"text": "CLIENTELING"
+			},
+			"type": "Label",
 			"userProps": {
-				"text": "CLIENTELING",
-				"height": 50,
 				"backgroundColor": "rgba( 0, 255, 50, 0 )",
-				"minHeight": 50,
-				"width": null,
-				"minWidth": 250,
-				"maxHeight": 50,
 				"font": {
 					"size": 30
-				}
-			},
-			"className": ".label",
-			"props": {
-				"name": "taHeader",
-				"text": "CLIENTELING",
-				"children": [],
-				"parent": "7eb6-9fa4-2799-664c"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "7fc3-32b9-6f31-0ced",
-			"userProps": {
-				"usePageVariable": true,
-				"width": null,
-				"height": 20,
-				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"left": 0,
-				"top": 0
-			},
-			"className": ".flexLayout .flexLayout-default",
-			"props": {
-				"name": "flStatusBarBg",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "da7d-a011-d4fb-9c5b"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "eed5-adce-b93c-8173",
-			"userProps": {
-				"width": null,
+				},
 				"height": 50,
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"flexDirection": "ROW",
-					"justifyContent": "SPACE_BETWEEN"
-				}
-			},
+				"maxHeight": 50,
+				"minHeight": 50,
+				"minWidth": 250,
+				"text": "CLIENTELING",
+				"width": null
+			}
+		},
+		{
 			"className": ".flexLayout",
+			"id": "eed5-adce-b93c-8173",
 			"props": {
-				"name": "flHeaderBar",
 				"children": [
 					"a00f-6621-283e-eca6"
 				],
+				"name": "flHeaderBar",
 				"parent": "da7d-a011-d4fb-9c5b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0,
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
-			"id": "a00f-6621-283e-eca6",
+			"className": ".label",
 			"hiddenComponent": false,
+			"id": "a00f-6621-283e-eca6",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "eed5-adce-b93c-8173",
+				"text": "SIGN IN"
+			},
+			"type": "Label",
 			"userProps": {
-				"width": null,
-				"height": null,
-				"text": "SIGN IN",
-				"textAlignment": "MIDCENTER",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"left": null,
-				"top": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"font": {
 					"size": 15
 				},
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".label",
-			"props": {
-				"name": "lblTitle",
+				"height": null,
+				"left": null,
 				"text": "SIGN IN",
-				"children": [],
-				"parent": "eed5-adce-b93c-8173"
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"top": null,
+				"width": null
 			}
 		},
 		{
-			"type": "ActivityIndicator",
+			"className": ".activityIndicator",
 			"id": "f7b6-6f73-6779-bcdc",
+			"props": {
+				"children": [],
+				"name": "indicator",
+				"parent": "ec72-6d93-7723-3f20",
+				"usePageVariable": true
+			},
+			"type": "ActivityIndicator",
 			"userProps": {
-				"width": 50,
-				"height": null,
-				"minWidth": null,
-				"minHeight": null,
-				"left": null,
-				"right": 0,
-				"top": 0,
-				"bottom": 0,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"bottom": 0,
 				"color": "rgba( 255, 255, 255, 1 )",
-				"visible": false,
-				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				}
-			},
-			"className": ".activityIndicator",
-			"props": {
-				"name": "indicator",
+				},
+				"height": null,
+				"left": null,
+				"minHeight": null,
+				"minWidth": null,
+				"right": 0,
+				"top": 0,
 				"usePageVariable": true,
-				"children": [],
-				"parent": "ec72-6d93-7723-3f20"
+				"visible": false,
+				"width": 50
 			}
 		}
 	]
