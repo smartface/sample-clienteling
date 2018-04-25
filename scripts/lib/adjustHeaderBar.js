@@ -1,5 +1,4 @@
 const System = require('sf-core/device/system');
-const Color = require("sf-core/ui/color");
 
 module.exports = exports = function(page) {
     if (System.OS === "iOS") {

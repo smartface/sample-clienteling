@@ -15,7 +15,6 @@ Application.onUnhandledError = function(e) {
 
 require("sf-extension-utils");
 
-const mcs = require("./lib/mcs");
 const Router = require("sf-core/ui/router");
 const System = require("sf-core/device/system");
 const isTablet = require("./lib/isTablet");
@@ -58,9 +57,9 @@ if (System.OS === "Android") {
   Router.sliderDrawer = sliderDrawer;
 }
 
-mcs.launch().then(() => {
-  console.log("mcs launch sucess");
-}).catch((err) => {
-  err = err ? JSON.stringify(err) : "unknown";
-  console.log(`mcs launch error! Reason: ${err}`);
-});
+// mcs.launch().then(() => {
+//   console.log("mcs launch sucess");
+// }).catch((err) => {
+//   err = err ? JSON.stringify(err) : "unknown";
+//   console.log(`mcs launch error! Reason: ${err}`);
+// });

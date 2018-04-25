@@ -1,9 +1,5 @@
-const mcs = require("../lib/mcs");
-const serviceCall = require("./ServiceCall");
 const Http = require("sf-core/net/http");
-const request = serviceCall.request;
 exports.login = login;
-exports.logout = logout;
 
 function login(user, pass) {
 
@@ -62,10 +58,10 @@ function login(user, pass) {
   // });
 }
 
-function logout() {
-  return new Promise((resolve, reject) => {
-    mcs.sessionId = "0";
-    serviceCall.registerUserToken(null);
-    resolve();
-  });
-}
+// function logout() {
+//   return new Promise((resolve, reject) => {
+//     mcs.sessionId = "0";
+//     serviceCall.registerUserToken(null);
+//     resolve();
+//   });
+// }
