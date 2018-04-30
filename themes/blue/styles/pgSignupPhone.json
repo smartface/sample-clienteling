@@ -1,41 +1,62 @@
 {
-  "#pgSignupPhone": {
-    ".btn": {
-      "@extend": ".button",
-      "height": null,
-      "width": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "font": {
-        "size": 14,
-        "family": "Lato"
-      },
-      ".btnSignup": {
-        "backgroundColor": "rgba(210,49,132,1)"
-      },
-      ".btnFacebook": {
-        "backgroundColor": "rgba(71,94,174,1)",
-        "marginRight": 5
-      },
-      ".btnAnonymous": {
-        "backgroundColor": "rgba(103,164,231,1)",
-        "marginLeft": 5
-      }
-    },
-    ".flMain": {
-      "@extend": ".flexLayout",
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1,
-        "flexDirection": "COLUMN"
-      },
-      "+page:Screen.width > 450": {
-        "flexProps": {
-          "flexDirection": "ROW"
-        }
-      }
-    }
-  }
+	"#pgSignupPhone": {
+		".btn": {
+			"@extend": ".button",
+			"height": null,
+			"width": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"font": {
+				"size": 14,
+				"family": "Lato"
+			},
+			".btnSignup": {
+				"backgroundColor": "rgba(210,49,132,1)",
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato",
+					"style": "n"
+				}
+			},
+			".btnFacebook": {
+				"backgroundColor": "rgba(71,94,174,1)",
+				"marginRight": 5,
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato",
+					"style": "n"
+				}
+			},
+			".btnAnonymous": {
+				"backgroundColor": "rgba(103,164,231,1)",
+				"marginLeft": 5,
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato",
+					"style": "n"
+				}
+			}
+		},
+		".flMain": {
+			"@extend": ".flexLayout",
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1,
+				"flexDirection": "COLUMN"
+			},
+			"+page:Screen.width > 450": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				}
+			}
+		}
+	}
 }

@@ -7,7 +7,6 @@ const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const rau = require("sf-extension-utils").rau;
 
 const PgSignupPhone = extend(PgSignupPhoneDesign)(
-  // Constructor
   function(_super) {
     _super(this);
 
@@ -21,12 +20,6 @@ const PgSignupPhone = extend(PgSignupPhoneDesign)(
     this.taPassword.ios && (this.taPassword.ios.clearButtonEnabled = true);
   });
 
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} parameters passed from Router.go function
- */
 function onShow(superOnShow, data) {
   const page = this;
   superOnShow();
@@ -36,21 +29,19 @@ function onShow(superOnShow, data) {
   data.appStart && fingerprint.init({
     userNameTextBox: page.taUserID,
     passwordTextBox: page.taPassword,
-    autoLogin: false, //TODO: set true after clearing static login values from textboxes
+    autoLogin: false, // TODO: set true after clearing static login values from textboxes
     callback: function(err, fingerprintResult) {
-      var password;
-      if (err)
-        password = page.taPassword.text;
-      else
-        password = fingerprintResult.password;
+      var password = err ? page.taPassword.text : fingerprintResult.password;
       if (!password)
         return alert("password is required");
       authService.login(page.taUserID.text, password).then((succeed) => {
         fingerprintResult && fingerprintResult.success(); //Important!
-        page.indicator.visible = false;
         Router.go('pgDashboard');
+        page.indicator.visible = false;
+        page.flBlock.visible = false;
       }).catch(function(error) {
         page.indicator.visible = false;
+        page.flBlock.visible = false;
         return alert("Cannot login. Check user name and password. Or system is down");
       });
     }
@@ -71,6 +62,7 @@ function onPressSignup() {
     return alert("Username should not be empty");
   }
   page.indicator.visible = true;
+  page.flBlock.visible = true;
   fingerprint.loginWithFingerprint();
 }
 
@@ -80,9 +72,9 @@ function onPressFacebook() {}
 
 function onTouch_image() {
   this.flBanner.onTouch = () => {
-    this.taUserID.text = "clienteling"
-    this.taPassword.text = "123qweASD"
-  }
+    this.taUserID.text = "clienteling";
+    this.taPassword.text = "123qweASD";
+  };
 }
 
 module && (module.exports = PgSignupPhone);

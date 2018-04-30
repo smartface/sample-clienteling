@@ -28,4 +28,4 @@ function onLoad(superOnLoad) {
   adjustHeaderBar(page);
 }
 
-module && (module.exports = PgMainLookbook);
+module.exports = PgMainLookbook;
