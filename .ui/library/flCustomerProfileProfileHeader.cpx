@@ -1,0 +1,171 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": true,
+			"id": "c4c5-2c0a-4dd1-7152",
+			"props": {
+				"children": [
+					"c868-4646-6cf3-1874",
+					"9335-b874-bd11-7b0c"
+				],
+				"name": "flCustomerProfileProfileHeader",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"flexDirection": "ROW"
+				},
+				"height": 88.04347826086956,
+				"left": 8.695652173913043,
+				"top": 65.21739130434783,
+				"width": 273.9130434782609
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "c868-4646-6cf3-1874",
+			"props": {
+				"children": [],
+				"name": "icon",
+				"parent": "c4c5-2c0a-4dd1-7152",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "CENTER"
+				},
+				"height": null,
+				"image": "anna_profile.png",
+				"imageFillType": "ASPECTFIT",
+				"marginLeft": 5,
+				"maxHeight": 50,
+				"maxWidth": 62,
+				"minHeight": 62,
+				"minWidth": 62,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "9335-b874-bd11-7b0c",
+			"props": {
+				"children": [
+					"226f-1861-790c-adbe",
+					"dae6-1275-1250-2115",
+					"b32e-ba03-46b6-52b8"
+				],
+				"name": "flTexts",
+				"parent": "c4c5-2c0a-4dd1-7152"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 3,
+					"alignSelf": "CENTER",
+					"flexWrap": "WRAP"
+				},
+				"height": 62,
+				"maxHeight": 62,
+				"paddingLeft": 15,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "226f-1861-790c-adbe",
+			"props": {
+				"children": [],
+				"name": "name",
+				"parent": "9335-b874-bd11-7b0c",
+				"text": "ANNA",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 15,
+					"family": "Lato",
+					"bold": false
+				},
+				"height": null,
+				"left": 0,
+				"multiline": true,
+				"text": "ANNA",
+				"textAlignment": "TOPLEFT",
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "dae6-1275-1250-2115",
+			"props": {
+				"children": [],
+				"name": "code",
+				"parent": "9335-b874-bd11-7b0c",
+				"text": "0102-40BC",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14,
+					"family": "Lato"
+				},
+				"height": null,
+				"left": 0,
+				"multiline": true,
+				"text": "0102-40BC",
+				"textAlignment": "BOTTOMLEFT",
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "b32e-ba03-46b6-52b8",
+			"props": {
+				"children": [],
+				"name": "date",
+				"parent": "9335-b874-bd11-7b0c",
+				"text": "Joined January 10th 2017",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14,
+					"family": "Lato"
+				},
+				"height": null,
+				"left": 0,
+				"multiline": true,
+				"text": "Joined January 10th 2017",
+				"textAlignment": "BOTTOMLEFT",
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

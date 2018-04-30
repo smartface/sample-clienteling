@@ -1,0 +1,80 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "f3c9-f72b-84ed-36d3",
+			"props": {
+				"children": [
+					"acf1-feed-f48b-5077",
+					"fef0-bc00-5e67-072f",
+					"6009-4bc2-698a-1632"
+				],
+				"name": "flCustomerProfileReservationItem",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"height": 62,
+				"left": 14.130434782608695,
+				"top": 590.2173913043478,
+				"width": 221
+			}
+		},
+		{
+			"className": ".label #pgCustomerProfile.lblReservationStatus",
+			"id": "acf1-feed-f48b-5077",
+			"props": {
+				"children": [],
+				"name": "lblStatus",
+				"parent": "f3c9-f72b-84ed-36d3",
+				"text": "In Transit"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"text": "In Transit"
+			}
+		},
+		{
+			"className": ".label #pgCustomerProfile.lblReservationInfo",
+			"id": "fef0-bc00-5e67-072f",
+			"props": {
+				"children": [],
+				"name": "lblInfo",
+				"parent": "f3c9-f72b-84ed-36d3",
+				"text": "Online Order"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"text": "Online Order"
+			}
+		},
+		{
+			"className": ".label #pgCustomerProfile.lblReservationDate",
+			"id": "6009-4bc2-698a-1632",
+			"props": {
+				"children": [],
+				"name": "lblDate",
+				"parent": "f3c9-f72b-84ed-36d3",
+				"text": "03.12.2007"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"text": "03.12.2007"
+			}
+		}
+	]
+}

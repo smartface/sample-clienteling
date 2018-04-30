@@ -1,0 +1,301 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": true,
+			"id": "4a13-68fd-e0c7-dcfd",
+			"props": {
+				"children": [
+					"6f29-5ea0-6987-8dab",
+					"fc33-df7a-68a8-cf3c"
+				],
+				"name": "LookbookItem",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": 326.6666666666667,
+				"left": 16.666666666666668,
+				"top": 303.33333333333337,
+				"width": 178.33333333333334
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "6f29-5ea0-6987-8dab",
+			"props": {
+				"children": [
+					"4f8a-4873-1ad2-5f52",
+					"dd63-e633-58e3-5ef1"
+				],
+				"id": 101,
+				"name": "flPreview",
+				"parent": "4a13-68fd-e0c7-dcfd"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 5,
+					"alignSelf": "STRETCH"
+				},
+				"height": 198.5,
+				"id": 101,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "4f8a-4873-1ad2-5f52",
+			"props": {
+				"children": [
+					"e2bb-a6d3-9083-3bb9"
+				],
+				"id": 501,
+				"name": "flBusy",
+				"parent": "6f29-5ea0-6987-8dab"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"bottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignItems": "STRETCH",
+					"alignContent": "CENTER",
+					"justifyContent": "CENTER"
+				},
+				"height": null,
+				"id": 501,
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".activityIndicator",
+			"id": "e2bb-a6d3-9083-3bb9",
+			"props": {
+				"children": [],
+				"id": 500,
+				"name": "indicator",
+				"parent": "4f8a-4873-1ad2-5f52"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ActivityIndicator",
+			"userProps": {
+				"bottom": 0,
+				"color": "rgba( 155, 155, 155, 1 )",
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "CENTER"
+				},
+				"height": 50,
+				"id": 500,
+				"left": -1.1764705882352942,
+				"maxHeight": null,
+				"maxWidth": null,
+				"minHeight": null,
+				"minWidth": null,
+				"right": 0,
+				"top": 1.1764705882352942,
+				"width": 50
+			}
+		},
+		{
+			"className": ".imageView",
+			"hiddenComponent": false,
+			"id": "dd63-e633-58e3-5ef1",
+			"props": {
+				"children": [],
+				"id": 110,
+				"name": "imgPreview",
+				"parent": "6f29-5ea0-6987-8dab",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 110,
+				"imageFillType": "ASPECTFIT",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "fc33-df7a-68a8-cf3c",
+			"props": {
+				"children": [
+					"550f-3e5a-5bf7-19f8",
+					"0fc5-59b6-389a-1f19"
+				],
+				"id": 100,
+				"name": "flInfo",
+				"parent": "4a13-68fd-e0c7-dcfd"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 2
+				},
+				"height": 45,
+				"id": 100,
+				"width": 138
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "550f-3e5a-5bf7-19f8",
+			"props": {
+				"children": [
+					"ad64-9553-69b0-73ce",
+					"b486-5810-c212-1f9c"
+				],
+				"id": 103,
+				"name": "flName",
+				"parent": "fc33-df7a-68a8-cf3c"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"bottom": null,
+				"flexProps": {
+					"flexGrow": 2
+				},
+				"height": null,
+				"id": 103,
+				"maxHeight": 30,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "ad64-9553-69b0-73ce",
+			"props": {
+				"children": [],
+				"id": 106,
+				"name": "lblName",
+				"parent": "550f-3e5a-5bf7-19f8",
+				"text": "NAME",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 106,
+				"marginBottom": 5,
+				"maxHeight": 40,
+				"multiline": true,
+				"text": "NAME",
+				"textAlignment": "BOTTOMCENTER",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"id": "b486-5810-c212-1f9c",
+			"props": {
+				"children": [],
+				"id": 105,
+				"name": "flLine",
+				"parent": "550f-3e5a-5bf7-19f8"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"id": 105
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "0fc5-59b6-389a-1f19",
+			"props": {
+				"children": [
+					"8f50-f1d1-86f1-acdb"
+				],
+				"id": 102,
+				"name": "flPrice",
+				"parent": "fc33-df7a-68a8-cf3c"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 102,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "8f50-f1d1-86f1-acdb",
+			"props": {
+				"children": [],
+				"id": 104,
+				"name": "lblPrice",
+				"parent": "0fc5-59b6-389a-1f19",
+				"text": "$10.00",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"bold": true
+				},
+				"height": null,
+				"id": 104,
+				"maxHeight": 20,
+				"text": "$10.00",
+				"textAlignment": "MIDCENTER",
+				"width": null
+			}
+		}
+	]
+}

@@ -1,0 +1,189 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": true,
+			"id": "a082-f3e1-fe37-1c2c",
+			"props": {
+				"children": [
+					"f6be-b7e9-1894-80d2",
+					"ec9c-2097-fc45-55f6"
+				],
+				"name": "flDashboardItem4",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
+				"flexProps": {},
+				"height": 103.50877192982458,
+				"left": 18.666666666666668,
+				"top": 180,
+				"width": 328.0701754385965
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "f6be-b7e9-1894-80d2",
+			"props": {
+				"children": [
+					"e3cb-4bb7-b969-6b56",
+					"0256-84b2-192f-4e88",
+					"bfad-4d3e-2bcf-bcbe"
+				],
+				"name": "flRoot",
+				"parent": "a082-f3e1-fe37-1c2c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": null,
+				"paddingLeft": 8.5,
+				"paddingRight": 8.5,
+				"paddingTop": 7,
+				"top": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "e3cb-4bb7-b969-6b56",
+			"props": {
+				"children": [],
+				"name": "lblItemTitle",
+				"parent": "f6be-b7e9-1894-80d2",
+				"text": "In Store",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": 20,
+				"text": "In Store",
+				"textColor": "rgba( 0, 162, 90, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label",
+			"id": "0256-84b2-192f-4e88",
+			"props": {
+				"children": [],
+				"name": "lblItemName",
+				"parent": "f6be-b7e9-1894-80d2",
+				"text": "Anna",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 14
+				},
+				"height": 20,
+				"text": "Anna",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "bfad-4d3e-2bcf-bcbe",
+			"props": {
+				"children": [
+					"faef-582e-43c9-c27d",
+					"65c2-1129-072d-46e8"
+				],
+				"name": "flItemDetail",
+				"parent": "f6be-b7e9-1894-80d2"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 20,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "faef-582e-43c9-c27d",
+			"props": {
+				"children": [],
+				"name": "lblItemType",
+				"parent": "bfad-4d3e-2bcf-bcbe",
+				"text": "Online Order",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": null,
+				"text": "Online Order",
+				"textAlignment": "MIDLEFT",
+				"textColor": "rgba( 125, 125, 125, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "65c2-1129-072d-46e8",
+			"props": {
+				"children": [],
+				"name": "lblItemDate",
+				"parent": "bfad-4d3e-2bcf-bcbe",
+				"text": "02.01. 2017",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"text": "02.01. 2017",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"id": "ec9c-2097-fc45-55f6",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "a082-f3e1-fe37-1c2c",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

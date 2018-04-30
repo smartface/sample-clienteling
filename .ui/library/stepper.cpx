@@ -1,0 +1,113 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": true,
+			"id": "6015-add5-c15e-d9f3",
+			"props": {
+				"children": [
+					"7d1d-2bb2-8a0a-443d",
+					"6fd8-cd8c-3fbb-f64d"
+				],
+				"name": "stepper",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER",
+					"alignItems": "STRETCH"
+				},
+				"height": 93.24324324324324,
+				"left": 79.71014492753623,
+				"top": 244.9275362318841,
+				"width": 74.32432432432432
+			}
+		},
+		{
+			"className": ".label #stepper-label",
+			"id": "7d1d-2bb2-8a0a-443d",
+			"props": {
+				"children": [],
+				"id": 996,
+				"name": "lblNumber",
+				"parent": "6015-add5-c15e-d9f3",
+				"text": "2",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"id": 996,
+				"text": "2",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #stepper-flButtons",
+			"id": "6fd8-cd8c-3fbb-f64d",
+			"props": {
+				"children": [
+					"8629-390f-2cc6-386e",
+					"bf4a-13b3-43aa-9e23"
+				],
+				"id": 999,
+				"name": "flButtons",
+				"parent": "6015-add5-c15e-d9f3"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"id": 999
+			}
+		},
+		{
+			"className": ".imageView #stepper-flButtons-imgButton",
+			"id": "8629-390f-2cc6-386e",
+			"props": {
+				"children": [],
+				"id": 997,
+				"name": "up",
+				"parent": "6fd8-cd8c-3fbb-f64d",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"id": 997,
+				"image": "uptriangle.png",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".imageView #stepper-flButtons-imgButton",
+			"id": "bf4a-13b3-43aa-9e23",
+			"props": {
+				"children": [],
+				"id": 998,
+				"name": "down",
+				"parent": "6fd8-cd8c-3fbb-f64d",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"id": 998,
+				"image": "downtriangle.png",
+				"usePageVariable": true
+			}
+		}
+	]
+}

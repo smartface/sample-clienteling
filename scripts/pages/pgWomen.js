@@ -39,7 +39,7 @@ const PgWomen = extend(PgWomenDesign)(
 function onShow(superOnShow) {
   superOnShow();
   Router.sliderDrawer.enabled = false;
-  
+
   initDotIndicator(this);
   adjustHeaderBar(this);
 
@@ -52,9 +52,6 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
-  
-  this.safeAreaLayoutMode = true;
-  
   loadUI.call(this);
 }
 
@@ -74,7 +71,7 @@ function loadUI() {
     marginBottom: 18,
     backgroundColor: Color.TRANSPARENT
   });
-  
+
   this.flSwipe.addChild(swipeView);
 }
 

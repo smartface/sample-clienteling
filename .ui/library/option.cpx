@@ -1,0 +1,31 @@
+{
+	"components": [
+		{
+			"className": ".label",
+			"hiddenComponent": true,
+			"id": "cef6-e901-fdef-32f2",
+			"props": {
+				"children": [],
+				"name": "option",
+				"parent": "fb96-1dcf-3bb9-cd95",
+				"text": "Profile"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 37, 37, 37, 0 )",
+				"font": {
+					"family": "Lato",
+					"size": 18
+				},
+				"height": 50,
+				"marginLeft": null,
+				"text": "Profile",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"width": null
+			}
+		}
+	]
+}

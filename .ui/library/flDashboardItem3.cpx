@@ -1,0 +1,189 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "cd86-49b6-b456-0d16",
+			"props": {
+				"children": [
+					"4ee7-5878-2005-6123",
+					"6b1f-b771-be76-96a9"
+				],
+				"name": "flDashboardItem3",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
+				"flexProps": {},
+				"height": 101.66666666666667,
+				"left": 12.06896551724138,
+				"top": 27.586206896551726,
+				"width": 341.6666666666667
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "4ee7-5878-2005-6123",
+			"props": {
+				"children": [
+					"0baf-339a-2288-d6aa",
+					"2f8b-b104-b4ff-fa15",
+					"628a-2454-d631-afc6"
+				],
+				"name": "flRoot",
+				"parent": "cd86-49b6-b456-0d16"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": null,
+				"paddingLeft": 8.5,
+				"paddingRight": 8.5,
+				"paddingTop": 7,
+				"top": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "0baf-339a-2288-d6aa",
+			"props": {
+				"children": [],
+				"name": "lblItemTitle",
+				"parent": "4ee7-5878-2005-6123",
+				"text": "Open",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": 20,
+				"text": "Open",
+				"textColor": "rgba( 209, 17, 118, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label",
+			"id": "2f8b-b104-b4ff-fa15",
+			"props": {
+				"children": [],
+				"name": "lblItemName",
+				"parent": "4ee7-5878-2005-6123",
+				"text": "Anna",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 14
+				},
+				"height": 20,
+				"text": "Anna",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "628a-2454-d631-afc6",
+			"props": {
+				"children": [
+					"8826-b7a0-e267-41d4",
+					"5c9a-3e25-724a-28d1"
+				],
+				"name": "flItemDetail",
+				"parent": "4ee7-5878-2005-6123"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 20,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "8826-b7a0-e267-41d4",
+			"props": {
+				"children": [],
+				"name": "lblItemType",
+				"parent": "628a-2454-d631-afc6",
+				"text": "Hotels in the shirt",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": null,
+				"text": "Hotels in the shirt",
+				"textAlignment": "MIDLEFT",
+				"textColor": "rgba( 32, 32, 32, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "5c9a-3e25-724a-28d1",
+			"props": {
+				"children": [],
+				"name": "lblItemDate",
+				"parent": "628a-2454-d631-afc6",
+				"text": "02.01. 2017",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"text": "02.01. 2017",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"id": "6b1f-b771-be76-96a9",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "cd86-49b6-b456-0d16",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

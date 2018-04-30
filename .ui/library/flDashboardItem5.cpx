@@ -1,0 +1,190 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": true,
+			"id": "6e4d-ec19-d1be-e8f5",
+			"props": {
+				"children": [
+					"da93-1c47-3d11-a6ff",
+					"4de4-7fd1-f85f-917f"
+				],
+				"name": "flDashboardItem5",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
+				"flexProps": {},
+				"height": 82.4561403508772,
+				"left": 37.80487804878049,
+				"top": 348.7804878048781,
+				"width": 314.03508771929825
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "da93-1c47-3d11-a6ff",
+			"props": {
+				"children": [
+					"a489-b7e3-400b-bb22",
+					"f0ab-0c19-0671-4fc1",
+					"fc35-9752-6b7c-8d80"
+				],
+				"name": "flRoot",
+				"parent": "6e4d-ec19-d1be-e8f5"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": null,
+				"paddingLeft": 8.5,
+				"paddingRight": 29.21,
+				"paddingTop": 7,
+				"top": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "a489-b7e3-400b-bb22",
+			"props": {
+				"children": [],
+				"name": "lblItemTitle",
+				"parent": "da93-1c47-3d11-a6ff",
+				"text": "Evelyn Johansson",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": 20,
+				"text": "Evelyn Johansson",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label",
+			"id": "f0ab-0c19-0671-4fc1",
+			"props": {
+				"children": [],
+				"name": "lblItemName",
+				"parent": "da93-1c47-3d11-a6ff",
+				"text": "Birthday Call",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 14
+				},
+				"height": 20,
+				"text": "Birthday Call",
+				"textColor": "rgba( 32, 32, 32, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "fc35-9752-6b7c-8d80",
+			"props": {
+				"children": [
+					"efe9-f03d-5fce-9d6d",
+					"b7fb-ed30-a734-cc26"
+				],
+				"name": "flItemDetail",
+				"parent": "da93-1c47-3d11-a6ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 20,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "efe9-f03d-5fce-9d6d",
+			"props": {
+				"children": [],
+				"name": "lblItemType",
+				"parent": "fc35-9752-6b7c-8d80",
+				"text": "Overdue",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": null,
+				"text": "Overdue",
+				"textAlignment": "MIDLEFT",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "b7fb-ed30-a734-cc26",
+			"props": {
+				"children": [],
+				"name": "lblItemDate",
+				"parent": "fc35-9752-6b7c-8d80",
+				"text": "02.01. 2017",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"text": "02.01. 2017",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true,
+				"visible": false,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"id": "4de4-7fd1-f85f-917f",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "6e4d-ec19-d1be-e8f5",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

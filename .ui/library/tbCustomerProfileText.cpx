@@ -1,0 +1,36 @@
+{
+	"components": [
+		{
+			"className": ".label",
+			"hiddenComponent": true,
+			"id": "cb00-7eb0-f7e1-5b4e",
+			"props": {
+				"children": [],
+				"name": "tbCustomerProfileText",
+				"parent": "fb96-1dcf-3bb9-cd95",
+				"text": "TITLE"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 32, 32, 32, 1 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"font": {
+					"family": "Lato",
+					"size": 14
+				},
+				"height": 25,
+				"left": 72.82608695652173,
+				"text": "TITLE",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 238, 238, 238, 1 )",
+				"top": 9.782608695652174,
+				"width": 156.52173913043478
+			}
+		}
+	]
+}

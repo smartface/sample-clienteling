@@ -24,8 +24,6 @@ function onShow(superOnShow) {
 
 function onLoad(superOnLoad) {
   const page = this;
-  
-  page.safeAreaLayoutMode = true;
   superOnLoad();
   adjustHeaderBar(page);
 }

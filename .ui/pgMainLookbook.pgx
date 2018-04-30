@@ -15,14 +15,16 @@
 				],
 				"name": "pgMainLookbook",
 				"orientation": "AUTO",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"orientation": "AUTO"
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
 			},
-			"version": "6.6.1"
+			"version": "6.7.0"
 		},
 		{
 			"className": ".statusBar",
@@ -294,7 +296,7 @@
 				"parent": "5bae-54e6-f533-71cd",
 				"text": "SALE"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "SALE"
 			}
@@ -308,7 +310,7 @@
 				"parent": "5bae-54e6-f533-71cd",
 				"text": "50% OFF"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "50% OFF"
 			}
@@ -368,7 +370,7 @@
 				"parent": "b740-f675-4f52-5243",
 				"text": "SALE"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "SALE"
 			}
@@ -382,7 +384,7 @@
 				"parent": "b740-f675-4f52-5243",
 				"text": "50% OFF"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "50% OFF"
 			}
@@ -429,7 +431,7 @@
 				"parent": "5bae-54e6-f533-71cd",
 				"text": "SALE"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "SALE"
 			}
@@ -493,7 +495,7 @@
 				"parent": "6f1c-1a10-c120-fe7d",
 				"text": "SHOP"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "SHOP"
 			}
@@ -507,7 +509,7 @@
 				"parent": "6f1c-1a10-c120-fe7d",
 				"text": "WOMEN"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"alignSelf": "STRETCH"
@@ -551,7 +553,7 @@
 				"parent": "be6f-d58b-d42a-e94c",
 				"text": "SHOP"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "SHOP"
 			}
@@ -565,7 +567,7 @@
 				"parent": "be6f-d58b-d42a-e94c",
 				"text": "MEN"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "MEN"
 			}
@@ -579,7 +581,7 @@
 				"parent": "171a-9f20-120a-7188",
 				"text": "SUMMER 2017"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"alignSelf": "AUTO"
@@ -599,7 +601,7 @@
 				"parent": "171a-9f20-120a-7188",
 				"text": "BAG\nTRENDS"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"alignSelf": "AUTO"
@@ -616,7 +618,7 @@
 				"parent": "5726-cbb7-f702-4812",
 				"text": "ACCESSORIES"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"alignSelf": "AUTO"
@@ -633,7 +635,7 @@
 				"parent": "5726-cbb7-f702-4812",
 				"text": "SUN GLASSES"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "SUN GLASSES"
 			}
@@ -728,7 +730,7 @@
 				"parent": "af98-6ef5-a4f8-4f9a",
 				"text": "LOOKBOOK"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1
@@ -764,7 +766,7 @@
 				"parent": "b740-f675-4f52-5243",
 				"text": "S A L E"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"left": 0,
 				"text": "S A L E",

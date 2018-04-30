@@ -13,14 +13,16 @@
 				],
 				"name": "pgWomen",
 				"orientation": "AUTO",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"orientation": "AUTO"
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
 			},
-			"version": "6.6.1"
+			"version": "6.7.0"
 		},
 		{
 			"className": ".statusBar",
@@ -140,7 +142,7 @@
 				"parent": "075d-f723-5e93-7b83",
 				"text": "WOMEN"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1
@@ -238,7 +240,7 @@
 				"text": "JAQEX ESTEREL",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 0.6
@@ -276,7 +278,7 @@
 				"text": "Farlap Dress Sleve Top",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"height": null,
 				"text": "Farlap Dress Sleve Top",
@@ -293,7 +295,7 @@
 				"text": "$ 400",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"alignSelf": "STRETCH",
@@ -346,7 +348,7 @@
 				"parent": "6cc0-1c81-4a7e-1235",
 				"text": "ABOUT ITEM"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "ABOUT ITEM"
 			}
@@ -382,7 +384,7 @@
 				"text": "100% Cotton",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "100% Cotton",
 				"usePageVariable": true
@@ -398,7 +400,7 @@
 				"text": "Size: M",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "Size: M",
 				"usePageVariable": true
@@ -414,7 +416,7 @@
 				"text": "Color: Light Blue",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "Color: Light Blue",
 				"usePageVariable": true

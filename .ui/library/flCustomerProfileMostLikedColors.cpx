@@ -1,0 +1,146 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": true,
+			"id": "cae6-e684-ae6f-aaa5",
+			"props": {
+				"children": [
+					"e40c-2e66-3203-1bd6",
+					"cf1b-dab0-1ecb-0afa"
+				],
+				"name": "flCustomerProfileMostLikedColors",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"flexDirection": "ROW"
+				},
+				"height": 46.66666666666667,
+				"left": 15,
+				"top": 226.66666666666669,
+				"width": 335
+			}
+		},
+		{
+			"className": ".label",
+			"id": "e40c-2e66-3203-1bd6",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "cae6-e684-ae6f-aaa5",
+				"text": "Spend per visit",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14,
+					"family": "Lato",
+					"bold": false
+				},
+				"height": null,
+				"left": null,
+				"multiline": true,
+				"text": "Spend per visit",
+				"textAlignment": "MIDLEFT",
+				"textColor": "rgba( 166, 166, 166, 1 )",
+				"top": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_scw_flSecond_infoPart2_mostLikedColors_flColor",
+			"id": "cf1b-dab0-1ecb-0afa",
+			"props": {
+				"children": [
+					"d6b0-4c6f-89cb-fede",
+					"f3f7-f00b-30ba-57b9",
+					"75e8-6ca2-f430-dc4b"
+				],
+				"name": "flColor",
+				"parent": "cae6-e684-ae6f-aaa5"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "d6b0-4c6f-89cb-fede",
+			"props": {
+				"children": [],
+				"name": "color3",
+				"parent": "cf1b-dab0-1ecb-0afa"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
+				"borderRadius": 3,
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 13,
+				"width": 13
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "f3f7-f00b-30ba-57b9",
+			"props": {
+				"children": [],
+				"name": "color2",
+				"parent": "cf1b-dab0-1ecb-0afa"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 223, 9, 9, 1 )",
+				"borderRadius": 3,
+				"flexProps": {
+					"justifyContent": "CENTER"
+				},
+				"height": 13,
+				"marginLeft": 10,
+				"width": 13
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "75e8-6ca2-f430-dc4b",
+			"props": {
+				"children": [],
+				"name": "color1",
+				"parent": "cf1b-dab0-1ecb-0afa"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 182, 138, 247, 1 )",
+				"borderRadius": 3,
+				"height": 13,
+				"marginLeft": 10,
+				"marginRight": null,
+				"width": 13
+			}
+		}
+	]
+}

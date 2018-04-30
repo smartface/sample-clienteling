@@ -1,0 +1,74 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-main",
+			"hiddenComponent": false,
+			"id": "cd3b-2912-1a7f-7558",
+			"props": {
+				"children": [
+					"1a3f-b617-dfa5-9576",
+					"9db2-9989-1122-0ec1",
+					"e7f4-d7f7-4f19-92b6"
+				],
+				"name": "dotIndicator",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "AUTO",
+					"justifyContent": "CENTER"
+				},
+				"height": 10,
+				"left": 16.666666666666668,
+				"top": 286.6666666666667,
+				"width": 163.33333333333334
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.inactive",
+			"id": "1a3f-b617-dfa5-9576",
+			"props": {
+				"children": [],
+				"name": "dot0",
+				"parent": "cd3b-2912-1a7f-7558"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.inactive",
+			"id": "9db2-9989-1122-0ec1",
+			"props": {
+				"children": [],
+				"name": "dot1",
+				"parent": "cd3b-2912-1a7f-7558"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.active",
+			"id": "e7f4-d7f7-4f19-92b6",
+			"props": {
+				"children": [],
+				"name": "dot2",
+				"parent": "cd3b-2912-1a7f-7558"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		}
+	]
+}

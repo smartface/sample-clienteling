@@ -1,0 +1,174 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "c835-c323-179b-387a",
+			"props": {
+				"children": [
+					"446f-6fb8-474a-7830",
+					"3f75-f335-7142-cf9a"
+				],
+				"name": "flWardrobe",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				},
+				"height": 163.79310344827587,
+				"left": 15.517241379310345,
+				"top": 370.68965517241384,
+				"width": 312.0689655172414
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "446f-6fb8-474a-7830",
+			"props": {
+				"children": [],
+				"id": 1,
+				"name": "image",
+				"parent": "c835-c323-179b-387a",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 1,
+				"imageFillType": "ASPECTFIT",
+				"marginBottom": 10,
+				"marginLeft": 5,
+				"marginTop": 10,
+				"maxWidth": 120,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "3f75-f335-7142-cf9a",
+			"props": {
+				"children": [
+					"6dcb-8e3d-62a6-e128",
+					"e762-3bda-37d4-8357",
+					"549c-581a-e603-7779"
+				],
+				"id": 5,
+				"name": "flDetail",
+				"parent": "c835-c323-179b-387a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 2,
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START"
+				},
+				"height": null,
+				"id": 5,
+				"left": 0,
+				"paddingLeft": 20,
+				"paddingTop": 10,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "6dcb-8e3d-62a6-e128",
+			"props": {
+				"children": [],
+				"id": 2,
+				"name": "name",
+				"parent": "3f75-f335-7142-cf9a",
+				"text": "Lavender Handbag",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"id": 2,
+				"marginTop": 2,
+				"maxHeight": 20,
+				"text": "Lavender Handbag",
+				"textAlignment": "BOTTOMLEFT",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "e762-3bda-37d4-8357",
+			"props": {
+				"children": [],
+				"id": 3,
+				"name": "model",
+				"parent": "3f75-f335-7142-cf9a",
+				"text": "D56362",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"id": 3,
+				"marginTop": 2,
+				"maxHeight": 20,
+				"text": "D56362",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "549c-581a-e603-7779",
+			"props": {
+				"children": [],
+				"id": 4,
+				"name": "price",
+				"parent": "3f75-f335-7142-cf9a",
+				"text": "$125",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 5
+				},
+				"font": {
+					"size": 18,
+					"bold": true
+				},
+				"height": 30,
+				"id": 4,
+				"marginTop": 2,
+				"maxHeight": 70,
+				"text": "$125",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

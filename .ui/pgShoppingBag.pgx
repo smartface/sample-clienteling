@@ -12,18 +12,16 @@
 				],
 				"name": "pgShoppingBag",
 				"orientation": "AUTO",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 66, 66, 66, 1 )",
 				"orientation": "AUTO",
-				"paddingBottom": 10,
-				"paddingLeft": null,
-				"paddingRight": null,
-				"paddingTop": null
+				"safeAreaEnabled": true
 			},
-			"version": "6.6.1"
+			"version": "6.7.0"
 		},
 		{
 			"className": ".statusBar",
@@ -96,8 +94,8 @@
 				},
 				"left": 0,
 				"marginBottom": null,
-				"maxHeight": 42,
-				"minHeight": 42,
+				"maxHeight": 50,
+				"minHeight": 50,
 				"top": 0
 			}
 		},
@@ -257,7 +255,7 @@
 				"parent": "c971-5586-3f66-5a50",
 				"text": "PRODUCT DETAIL"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "PRODUCT DETAIL"
 			}
@@ -290,7 +288,7 @@
 				"parent": "1187-11c5-3dd2-d9a5",
 				"text": "QUANTITY"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "QUANTITY"
 			}
@@ -323,7 +321,7 @@
 				"parent": "2b34-96ae-1d80-bae8",
 				"text": "PRICE"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"left": 0,
 				"text": "PRICE",
@@ -358,7 +356,7 @@
 				"parent": "6095-846a-6de8-8c7f",
 				"text": "TOTAL"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"left": 0,
 				"text": "TOTAL",
@@ -455,7 +453,7 @@
 				"parent": "b765-35cd-c45c-e24f",
 				"text": "SHOPPING BAG"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1

@@ -13,14 +13,16 @@
 				],
 				"name": "pgSignupPhone",
 				"orientation": "AUTO",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"orientation": "AUTO"
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
 			},
-			"version": "6.6.1"
+			"version": "6.7.0"
 		},
 		{
 			"className": ".statusBar",
@@ -174,7 +176,7 @@
 				"parent": "076e-47c9-12e8-938b",
 				"text": "User ID"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "User ID",
 				"width": null
@@ -251,7 +253,7 @@
 				"parent": "61b2-a1c6-cad7-187b",
 				"text": "Password"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "Password",
 				"width": null
@@ -306,7 +308,7 @@
 				"parent": "61b2-a1c6-cad7-187b",
 				"text": "Forgot Password"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
@@ -485,7 +487,7 @@
 				"parent": "7eb6-9fa4-2799-664c",
 				"text": "CLIENTELING"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"backgroundColor": "rgba( 0, 255, 50, 0 )",
 				"font": {
@@ -532,7 +534,7 @@
 				"parent": "eed5-adce-b93c-8173",
 				"text": "SIGN IN"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1

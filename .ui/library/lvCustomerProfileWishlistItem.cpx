@@ -1,0 +1,206 @@
+{
+	"components": [
+		{
+			"className": ".listViewItem",
+			"hiddenComponent": false,
+			"id": "1041-55d5-cb0c-fd5f",
+			"props": {
+				"children": [
+					"e63b-bd24-0844-c19b",
+					"5d33-ec42-15f9-c94b",
+					"1f67-2d48-76c0-c7af"
+				],
+				"name": "lvCustomerProfileWishlistItem",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flexProps": {},
+				"height": 345,
+				"left": 201.66666666666669,
+				"top": 285,
+				"width": 155
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "e63b-bd24-0844-c19b",
+			"props": {
+				"children": [
+					"5233-4790-d00f-8546"
+				],
+				"id": null,
+				"name": "flBusy",
+				"parent": "1041-55d5-cb0c-fd5f"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"bottom": 70,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignItems": "STRETCH",
+					"alignContent": "CENTER",
+					"justifyContent": "CENTER"
+				},
+				"height": null,
+				"id": null,
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".activityIndicator",
+			"id": "5233-4790-d00f-8546",
+			"props": {
+				"children": [],
+				"id": null,
+				"name": "indicator",
+				"parent": "e63b-bd24-0844-c19b"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ActivityIndicator",
+			"userProps": {
+				"bottom": 0,
+				"color": "rgba( 155, 155, 155, 1 )",
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "CENTER"
+				},
+				"height": 50,
+				"id": null,
+				"left": -1.1764705882352942,
+				"maxHeight": null,
+				"maxWidth": null,
+				"minHeight": null,
+				"minWidth": null,
+				"right": 0,
+				"top": 1.1764705882352942,
+				"width": 50
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "5d33-ec42-15f9-c94b",
+			"props": {
+				"children": [],
+				"name": "image",
+				"parent": "1041-55d5-cb0c-fd5f",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 3
+				},
+				"height": null,
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "1f67-2d48-76c0-c7af",
+			"props": {
+				"children": [
+					"89fc-4433-049e-8b0d",
+					"feaf-d42b-c758-6e50",
+					"ad0e-3b5f-2337-8122"
+				],
+				"name": "flInfo",
+				"parent": "1041-55d5-cb0c-fd5f"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label #pgCustomerProfile.lblWishlistItemName",
+			"id": "89fc-4433-049e-8b0d",
+			"props": {
+				"children": [],
+				"name": "name",
+				"parent": "1f67-2d48-76c0-c7af",
+				"text": "Lavender Hat",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 14
+				},
+				"text": "Lavender Hat",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label #pgCustomerProfile.lblWishlistItemID",
+			"hiddenComponent": false,
+			"id": "feaf-d42b-c758-6e50",
+			"props": {
+				"children": [],
+				"name": "model",
+				"parent": "1f67-2d48-76c0-c7af",
+				"text": "D56362",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 14
+				},
+				"text": "D56362",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
+			"id": "ad0e-3b5f-2337-8122",
+			"props": {
+				"children": [],
+				"name": "price",
+				"parent": "1f67-2d48-76c0-c7af",
+				"text": "$65",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 15
+				},
+				"text": "$65",
+				"usePageVariable": true
+			}
+		}
+	]
+}

@@ -10,7 +10,7 @@ const PgShoppingBag = extend(PgShoppingBagDesign)(
   // Constructor
   function(_super) {
     _super(this);
-    
+
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     this.onOrientationChange = onOrientationChange.bind(this, this.onOrientationChange.bind(this));
@@ -18,22 +18,22 @@ const PgShoppingBag = extend(PgShoppingBagDesign)(
     this.flHeaderLeft.onTouchEnded = function() {
       Router.goBack();
     };
-    
+
     this.invalidateListView = invalidateListView.bind(this, this.lvShoppingBag.onRowCreate);
   });
-  
-  
-function invalidateListView(originalOnRowCreate){
+
+
+function invalidateListView(originalOnRowCreate) {
   this.lvShoppingBag.dispatch({
     type: "removeChildren"
   });
-  
+
   var id = 0;
-  
-  this.lvShoppingBag.onRowCreate = function lvShoppingBag_onRowCreate(superOnRowCreate){
+
+  this.lvShoppingBag.onRowCreate = function lvShoppingBag_onRowCreate(superOnRowCreate) {
     const row = originalOnRowCreate.call(this);
-    this.dispatch(addContextChild("row_"+(++id), row));
-    
+    this.dispatch(addContextChild("row_" + (++id), row));
+
     return row;
   };
 }
@@ -56,13 +56,11 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   const page = this;
-  
-  page.safeAreaLayoutMode = true;
   superOnLoad();
   adjustHeaderBar(page);
   this.lvShoppingBag.itemCount = 5;
   this.lvShoppingBag.refreshEnabled = false;
-  
+
   this.lvShoppingBag.onRowBind = function(shoppingBagItem, index) {
     (shoppingBagItem.backgroundColor = (index % 2 === 0) ? TRANSPARENT_GRAY : Color.TRANSPARENT);
     shoppingBagItem.productImage.loadFromUrl("https://smartfacecdn.blob.core.windows.net/apps/ecommerce/images/product/D56363.png");

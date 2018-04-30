@@ -13,14 +13,16 @@
 				],
 				"name": "pgDashboard",
 				"orientation": "AUTO",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"orientation": "AUTO"
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
 			},
-			"version": "6.6.1"
+			"version": "6.7.0"
 		},
 		{
 			"className": ".statusBar",
@@ -154,7 +156,7 @@
 				"parent": "bb0f-b908-3424-b47e",
 				"text": "DASHBOARD"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1
@@ -303,7 +305,7 @@
 				"text": "NEARBY CUSTOMERS",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 16
@@ -374,7 +376,7 @@
 				"text": "RESERVATIONS",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 16
@@ -466,7 +468,7 @@
 				"text": "TO DO FOR 01.01.2017",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 16
@@ -558,7 +560,7 @@
 				"text": "OPEN INCIDENTS",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 16
@@ -650,7 +652,7 @@
 				"text": "STORE AND CORPORATE NEWS",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 16
@@ -742,7 +744,7 @@
 				"text": "INCOMING SHIPMENTS",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 16
@@ -836,7 +838,7 @@
 				"text": "SOCIAL ACTIVITY MONITOR",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 16
@@ -995,7 +997,7 @@
 				"text": "LISA TOWN",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": null
@@ -1023,7 +1025,7 @@
 				"text": "EMPLOYEE ID: 1121",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 12
@@ -1047,7 +1049,7 @@
 				"text": "SilverStar",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 12
@@ -1085,7 +1087,7 @@
 				"text": "3",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "3",
 				"usePageVariable": true
@@ -1101,7 +1103,7 @@
 				"text": "Task Pending",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "Task Pending",
 				"usePageVariable": true
@@ -1145,7 +1147,7 @@
 				"text": "76%",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "76%",
 				"usePageVariable": true
@@ -1161,7 +1163,7 @@
 				"text": "Last Month Sales Conversion",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "Last Month Sales Conversion",
 				"usePageVariable": true
@@ -1191,7 +1193,7 @@
 				"text": "80%",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"text": "80%",
 				"usePageVariable": true
@@ -1234,7 +1236,7 @@
 				"text": "This week Target",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1

@@ -1,0 +1,79 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": true,
+			"id": "42b7-ee79-11cc-15e7",
+			"props": {
+				"children": [
+					"b3a6-2a42-5370-29e5",
+					"c4e7-7a7d-9d74-bdcd"
+				],
+				"name": "flCustomerProfileTitleText",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"flexDirection": "COLUMN"
+				},
+				"height": 70.66666666666667,
+				"left": 38.04347826086956,
+				"top": 447.8260869565217,
+				"width": 282.6666666666667
+			}
+		},
+		{
+			"className": ".label",
+			"id": "b3a6-2a42-5370-29e5",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "42b7-ee79-11cc-15e7",
+				"text": "Spend per visit",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				},
+				"font": {
+					"size": 14,
+					"family": "Lato",
+					"bold": false
+				},
+				"height": null,
+				"left": 0,
+				"multiline": true,
+				"text": "Spend per visit",
+				"textAlignment": "MIDLEFT",
+				"textColor": "rgba( 166, 166, 166, 1 )",
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label #pgCustomerProfile-flSecond-infoPart-itemText",
+			"id": "c4e7-7a7d-9d74-bdcd",
+			"props": {
+				"children": [],
+				"name": "text",
+				"parent": "42b7-ee79-11cc-15e7",
+				"text": "$250",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"text": "$250",
+				"usePageVariable": true
+			}
+		}
+	]
+}

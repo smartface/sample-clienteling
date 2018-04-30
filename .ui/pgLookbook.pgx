@@ -13,14 +13,16 @@
 				],
 				"name": "pgLookbook",
 				"orientation": "AUTO",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 66, 66, 66, 1 )",
-				"orientation": "AUTO"
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
 			},
-			"version": "6.6.1"
+			"version": "6.7.0"
 		},
 		{
 			"className": ".statusBar",
@@ -164,7 +166,7 @@
 				"parent": "c2f1-4bd5-7823-1685",
 				"text": "LOOKBOOK"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1

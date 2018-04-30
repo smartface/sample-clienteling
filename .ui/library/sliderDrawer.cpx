@@ -1,0 +1,103 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default .sliderDrawer",
+			"hiddenComponent": true,
+			"id": "e02d-b805-d189-cc15",
+			"props": {
+				"children": [
+					"1167-8aad-4408-0eb9",
+					"6b9d-554a-79dc-dcc0",
+					"fc35-0810-4140-336f"
+				],
+				"name": "sliderDrawer",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 37, 37, 37, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 500,
+				"left": 8.620689655172415,
+				"paddingTop": 25,
+				"top": 91.37931034482759,
+				"width": 300
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "1167-8aad-4408-0eb9",
+			"props": {
+				"children": [],
+				"name": "flIcons",
+				"parent": "e02d-b805-d189-cc15",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 37, 37, 37, 1 )",
+				"height": null,
+				"minWidth": 50,
+				"usePageVariable": true,
+				"width": 50
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "6b9d-554a-79dc-dcc0",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "e02d-b805-d189-cc15"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 29, 29, 29, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"maxHeight": null,
+				"maxWidth": 1,
+				"width": 1
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "fc35-0810-4140-336f",
+			"props": {
+				"children": [],
+				"name": "flButtons",
+				"parent": "e02d-b805-d189-cc15",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"paddingLeft": null,
+				"paddingTop": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

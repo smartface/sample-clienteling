@@ -1,0 +1,213 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": false,
+			"id": "3725-3a21-8599-f43a",
+			"props": {
+				"children": [
+					"c008-5a4e-2dec-9d45",
+					"362c-cb03-1fc7-0fad"
+				],
+				"name": "flDashboardItem2",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 1,
+				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
+				"flexProps": {},
+				"height": 92.98245614035089,
+				"left": 15.517241379310345,
+				"top": 143.1034482758621,
+				"width": 326.3157894736842
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "c008-5a4e-2dec-9d45",
+			"props": {
+				"children": [
+					"63c4-dbd4-33b4-94f4",
+					"2f23-fb49-98f5-bf90",
+					"c081-9cc7-e107-3a69",
+					"179b-8e8f-677b-a1b6"
+				],
+				"name": "flRoot",
+				"parent": "3725-3a21-8599-f43a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": null,
+				"paddingLeft": 8.5,
+				"paddingRight": 29.21,
+				"paddingTop": 7,
+				"top": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "63c4-dbd4-33b4-94f4",
+			"props": {
+				"children": [],
+				"name": "lblItemTitle",
+				"parent": "c008-5a4e-2dec-9d45",
+				"text": "Evelyn Johansson",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": 20,
+				"text": "Evelyn Johansson",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label",
+			"id": "2f23-fb49-98f5-bf90",
+			"props": {
+				"children": [],
+				"name": "lblItemName",
+				"parent": "c008-5a4e-2dec-9d45",
+				"text": "Birthday Call",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 14
+				},
+				"height": 20,
+				"text": "Birthday Call",
+				"textColor": "rgba( 32, 32, 32, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "c081-9cc7-e107-3a69",
+			"props": {
+				"children": [
+					"b692-e95d-4522-2ce7",
+					"f519-a334-6d3f-e904"
+				],
+				"name": "flItemDetail",
+				"parent": "c008-5a4e-2dec-9d45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 20,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "b692-e95d-4522-2ce7",
+			"props": {
+				"children": [],
+				"name": "lblItemType",
+				"parent": "c081-9cc7-e107-3a69",
+				"text": "Overdue",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": null,
+				"text": "Overdue",
+				"textAlignment": "MIDLEFT",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "f519-a334-6d3f-e904",
+			"props": {
+				"children": [],
+				"name": "lblItemDate",
+				"parent": "c081-9cc7-e107-3a69",
+				"text": "02.01. 2017",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"text": "02.01. 2017",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true,
+				"visible": false,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "179b-8e8f-677b-a1b6",
+			"props": {
+				"children": [],
+				"name": "imgExclamation",
+				"parent": "c008-5a4e-2dec-9d45",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"bottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": null,
+				"image": "blue_exclamation.png",
+				"right": 22,
+				"top": 0,
+				"usePageVariable": true,
+				"visible": false,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"id": "362c-cb03-1fc7-0fad",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "3725-3a21-8599-f43a",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

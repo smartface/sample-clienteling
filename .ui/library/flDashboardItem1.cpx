@@ -1,0 +1,192 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"hiddenComponent": true,
+			"id": "f8b6-a9fc-13a6-9efc",
+			"props": {
+				"children": [
+					"6470-719e-0ce9-b0ab",
+					"ee75-2204-211e-c75a"
+				],
+				"name": "flDashboardItem1",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 0.25 )",
+				"flexProps": {},
+				"height": 86.66666666666667,
+				"left": 11.666666666666668,
+				"top": 15,
+				"width": 340
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "6470-719e-0ce9-b0ab",
+			"props": {
+				"children": [
+					"8bd3-9e59-412c-e3a2",
+					"fae9-28f2-cc54-fefd",
+					"20f8-7f53-2e80-cef9"
+				],
+				"name": "flRoot",
+				"parent": "f8b6-a9fc-13a6-9efc"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 1,
+				"backgroundColor": "rgba( 245, 166, 35, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": null,
+				"paddingLeft": 8.5,
+				"paddingRight": 8.5,
+				"paddingTop": 7,
+				"top": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "8bd3-9e59-412c-e3a2",
+			"props": {
+				"children": [],
+				"name": "lblItemTitle",
+				"parent": "6470-719e-0ce9-b0ab",
+				"text": "In Store",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": 20,
+				"text": "In Store",
+				"textColor": "rgba( 74, 144, 226, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label",
+			"id": "fae9-28f2-cc54-fefd",
+			"props": {
+				"children": [],
+				"name": "lblItemName",
+				"parent": "6470-719e-0ce9-b0ab",
+				"text": "Anna",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 14
+				},
+				"height": 20,
+				"text": "Anna",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default",
+			"id": "20f8-7f53-2e80-cef9",
+			"props": {
+				"children": [
+					"fde7-b99c-1d0a-b8bb",
+					"b9d1-3c28-e44a-bacc"
+				],
+				"name": "flItemDetail",
+				"parent": "6470-719e-0ce9-b0ab"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 245, 166, 35, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"flexGrow": 1,
+					"alignSelf": "AUTO"
+				},
+				"height": 20,
+				"maxHeight": null,
+				"minHeight": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "fde7-b99c-1d0a-b8bb",
+			"props": {
+				"children": [],
+				"name": "lblItemType",
+				"parent": "20f8-7f53-2e80-cef9",
+				"text": "Online Order",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"bold": true,
+					"size": 14
+				},
+				"height": null,
+				"text": "Online Order",
+				"textAlignment": "MIDLEFT",
+				"textColor": "rgba( 125, 125, 125, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "b9d1-3c28-e44a-bacc",
+			"props": {
+				"children": [],
+				"name": "lblItemDate",
+				"parent": "20f8-7f53-2e80-cef9",
+				"text": "02.01. 2017",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"text": "02.01. 2017",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 106, 106, 106, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"id": "ee75-2204-211e-c75a",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "f8b6-a9fc-13a6-9efc",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

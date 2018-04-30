@@ -60,12 +60,8 @@ function onShow(superOnShow, data) {
 
 function onLoad(superOnLoad) {
   const page = this;
-  
-  page.safeAreaLayoutMode = true;
-  
   superOnLoad();
   adjustHeaderBar(page);
-  
   onTouch_image.call(this);
 }
 
@@ -83,9 +79,9 @@ function onPressAnonymous() {}
 function onPressFacebook() {}
 
 function onTouch_image() {
-  this.flBanner.onTouch = () =>{
-     this.taUserID.text = "clienteling"
-     this.taPassword.text = "123qweASD"
+  this.flBanner.onTouch = () => {
+    this.taUserID.text = "clienteling"
+    this.taPassword.text = "123qweASD"
   }
 }
 

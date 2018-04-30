@@ -13,13 +13,15 @@
 				],
 				"name": "pgSignupTablet",
 				"orientation": "AUTO",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"orientation": "AUTO"
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
 			},
-			"version": "6.6.1"
+			"version": "6.7.0"
 		},
 		{
 			"className": ".statusBar",
@@ -160,7 +162,7 @@
 				"text": "User ID",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 28
@@ -241,7 +243,7 @@
 				"text": "Password",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"font": {
 					"size": 28
@@ -302,7 +304,7 @@
 				"parent": "8fe8-6348-112c-7fea",
 				"text": "Forgot Password"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
@@ -469,7 +471,7 @@
 				"parent": "8668-e576-bebf-2bb0",
 				"text": "SIGN IN"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1
