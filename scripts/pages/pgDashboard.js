@@ -25,13 +25,6 @@ const PgDashboard = extend(PgDashboardDesign)(
 
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    this.flBadge.onTouchEnded = function() {
-      Router.go("pgCustomerProfile");
-    };
-
-    this.flHeaderLeft.onTouchEnded = function() {
-      Router.sliderDrawer.show();
-    };
   });
 
 /**
@@ -59,9 +52,17 @@ function onLoad(superOnLoad) {
     Router.goBack(isTablet ? "pgSignupTablet" : "pgSignupPhone");
   };
 
-  setTimeout(() => {
-    animateBell.call(this);
-  }, 2000);
+  page.flBadge.onTouchEnded = function() {
+    Router.go("pgCustomerProfile");
+    page.imgCount.visible = false; // Hide notification count
+  };
+
+  page.flHeaderLeft.onTouchEnded = function() {
+    Router.sliderDrawer.show();
+  };
+
+  // Simulate incoming notification
+  setTimeout(() => animateBell.call(page), 2000);
 
   loadUI.call(page);
 }

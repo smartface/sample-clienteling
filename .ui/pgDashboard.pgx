@@ -1419,9 +1419,9 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"bottom": 20,
+				"bottom": 15,
 				"image": "ellipse1.png",
-				"left": 20,
+				"left": 15,
 				"usePageVariable": true,
 				"visible": false
 			}
