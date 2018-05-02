@@ -24,7 +24,7 @@ const PgDashboard = extend(PgDashboardDesign)(
 
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    this.imgNotification.onTouchEnded = function() {
+    this.flBadge.onTouchEnded = function() {
       Router.go("pgCustomerProfile");
     };
 
@@ -240,6 +240,8 @@ function loadUI() {
 
 function animateBell() {
   const page = this;
+  
+  page.imgCount.visible = true;
 
   Animator.animate(page.layout, 50, () => setLeft(-10))
     .then(50, () => setLeft(10))
@@ -248,7 +250,7 @@ function animateBell() {
     .then(50, () => setLeft(0));
 
   function setLeft(left) {
-    page.imgNotification.dispatch({
+    page.flBadge.dispatch({
       type: "updateUserStyle",
       userStyle: {
         left: left

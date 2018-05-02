@@ -127,7 +127,7 @@
 			"id": "4573-b010-1cb3-d136",
 			"props": {
 				"children": [
-					"3411-6b25-ada2-65ae",
+					"43ab-902c-8996-90c0",
 					"8347-952d-df9d-1ae2"
 				],
 				"name": "flHeaderRight",
@@ -186,24 +186,6 @@
 				"height": 40,
 				"image": "logout.png",
 				"marginLeft": 10,
-				"usePageVariable": true,
-				"width": 40
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "3411-6b25-ada2-65ae",
-			"props": {
-				"children": [],
-				"name": "imgNotification",
-				"parent": "4573-b010-1cb3-d136",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"backgroundColor": "rgba( 32, 32, 32, 1 )",
-				"height": 40,
-				"image": "notification.png",
 				"usePageVariable": true,
 				"width": 40
 			}
@@ -1390,6 +1372,58 @@
 				"height": 6,
 				"usePageVariable": true,
 				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "43ab-902c-8996-90c0",
+			"props": {
+				"children": [
+					"c98e-8ecd-2c93-1c63",
+					"2079-0f42-c4c4-07d1"
+				],
+				"name": "flBadge",
+				"parent": "4573-b010-1cb3-d136",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 40,
+				"usePageVariable": true,
+				"width": 40
+			}
+		},
+		{
+			"className": ".imageView .absoluteGrow",
+			"id": "c98e-8ecd-2c93-1c63",
+			"props": {
+				"children": [],
+				"name": "imgBadge",
+				"parent": "43ab-902c-8996-90c0",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"image": "notification.png",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".imageView .absoluteGrow",
+			"id": "2079-0f42-c4c4-07d1",
+			"props": {
+				"children": [],
+				"name": "imgCount",
+				"parent": "43ab-902c-8996-90c0",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"bottom": 20,
+				"image": "ellipse1.png",
+				"left": 20,
+				"usePageVariable": true,
+				"visible": false
 			}
 		}
 	]

@@ -1,17 +1,28 @@
 {
-  ".grow": {
-    "width": null,
-    "height": null,
-    "flexProps": {
-      "flexGrow": 1
-    }
-  },
-  ".pageBackIconButton": {
-    "@extend": ".imageView",
-    "width" : 20,
-    "height": 20,
-    "top": 14,
-    "left": 14,
-    "image": "back.png"
-  }
+	".grow": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		}
+	},
+	".pageBackIconButton": {
+		"@extend": ".imageView",
+		"width": 20,
+		"height": 20,
+		"top": 14,
+		"left": 14,
+		"image": "back.png"
+	},
+	".absoluteGrow": {
+		"width": null,
+		"height": null,
+		"left": 0,
+		"right": 0,
+		"top": 0,
+		"bottom": 0,
+		"flexProps": {
+			"positionType": "ABSOLUTE"
+		}
+	}
 }
