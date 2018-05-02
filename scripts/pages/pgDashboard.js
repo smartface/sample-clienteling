@@ -243,10 +243,10 @@ function animateBell() {
   
   page.imgCount.visible = true;
 
-  Animator.animate(page.layout, 50, () => setLeft(-10))
-    .then(50, () => setLeft(10))
-    .then(50, () => setLeft(-5))
-    .then(50, () => setLeft(5))
+  Animator.animate(page.layout, 50, () => setLeft(-3))
+    .then(50, () => setLeft(3))
+    .then(50, () => setLeft(-3))
+    .then(50, () => setLeft(3))
     .then(50, () => setLeft(0));
 
   function setLeft(left) {
