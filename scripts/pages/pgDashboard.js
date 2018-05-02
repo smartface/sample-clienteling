@@ -2,6 +2,7 @@ const extend = require('js-base/core/extend');
 const PgDashboardDesign = require('ui/ui_pgDashboard');
 const Router = require("sf-core/ui/router");
 const Color = require('sf-core/ui/color');
+const System = require('sf-core/device/system');
 const FlDashboardItem1 = require('components/FlDashboardItem1');
 const FlDashboardItem2 = require('components/FlDashboardItem2');
 const FlDashboardItem3 = require('components/FlDashboardItem3');
@@ -239,8 +240,11 @@ function loadUI() {
 }
 
 function animateBell() {
+  if (System.OS !== "iOS")
+    return;
+
   const page = this;
-  
+
   page.imgCount.visible = true;
 
   Animator.animate(page.layout, 50, () => setLeft(-3))
