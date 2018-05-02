@@ -204,7 +204,6 @@
 				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"height": 40,
 				"image": "notification.png",
-				"marginRight": null,
 				"usePageVariable": true,
 				"width": 40
 			}

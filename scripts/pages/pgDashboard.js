@@ -7,6 +7,7 @@ const FlDashboardItem2 = require('components/FlDashboardItem2');
 const FlDashboardItem3 = require('components/FlDashboardItem3');
 const FlDashboardItem4 = require('components/FlDashboardItem4');
 const FlDashboardItem5 = require('components/FlDashboardItem5');
+const Animator = require('sf-core/ui/animator');
 const isTablet = require("../lib/isTablet");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 // const addPageContextChild = require("@smartface/contx/lib/smartface/action/addPageContextChild");
@@ -49,14 +50,19 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
+  const page = this;
   superOnLoad();
-  adjustHeaderBar(this);
+  adjustHeaderBar(page);
 
-  this.imgSignOut.onTouchEnded = function() {
+  page.imgSignOut.onTouchEnded = function() {
     Router.goBack(isTablet ? "pgSignupTablet" : "pgSignupPhone");
   };
 
-  loadUI.call(this);
+  setTimeout(() => {
+    animateBell.call(this);
+  }, 2000);
+
+  loadUI.call(page);
 }
 
 function addReservations(items) {
@@ -80,7 +86,7 @@ function addReservations(items) {
     // TODO: Date
     // page.flReservationItems.dispatch(addPageContextChild("reservations_"+index, flDashboardItem1));
     // flDashboardItem1.dispatch(pushClassNames(".dashboardDataElement"));
-    page.flReservationItems.addChild(flDashboardItem1, "reservations_"+index, ".dashboardDataElement", {});
+    page.flReservationItems.addChild(flDashboardItem1, "reservations_" + index, ".dashboardDataElement", {});
     page.flReservationItems.height += flDashboardItem1.height;
 
   });
@@ -109,7 +115,7 @@ function addTodos(items) {
     page.flTodoItems.addChild(flDashboardItem2, "flDashboardItem2_" + index, ".dashboardDataElement", {});
     // page.flTodoItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem2));
     // flDashboardItem2.dispatch(pushClassNames(".dashboardDataElement"));
-    
+
     // page.flTodoItems.children["flDashboardItem2_" + index] = flDashboardItem2;
     page.flTodoItems.height += flDashboardItem2.height;
   });
@@ -137,7 +143,7 @@ function addOpenIncidents(items) {
     // page.flOpenIncidentItems.children["flDashboardItem3_" + index] = flDashboardItem3;
     // page.flOpenIncidentItems.dispatch(addPageContextChild("todoItem_"+index, flDashboardItem3));
     // flDashboardItem3.dispatch(pushClassNames(".dashboardDataElement"));
-    
+
     page.flOpenIncidentItems.height += flDashboardItem3.height;
   });
 }
@@ -148,15 +154,15 @@ function addStoreAndCorporateNews(items) {
   items.forEach(function(item, index) {
     var flDashboardItem4 = new FlDashboardItem4();
     flDashboardItem4.lblItemTitle.text = item.location;
-    flDashboardItem4.lblItemName.text  = item.employee;
-    flDashboardItem4.lblItemType.text  = item.type;
+    flDashboardItem4.lblItemName.text = item.employee;
+    flDashboardItem4.lblItemType.text = item.type;
 
     // TODO: Date
     if (index === items.length - 1) {
       flDashboardItem4.flLine.visible = false;
     }
 
-    page.flNewsItems.addChild(flDashboardItem4, "flDashboardItem4_" + index,".dashboardDataElement", {});
+    page.flNewsItems.addChild(flDashboardItem4, "flDashboardItem4_" + index, ".dashboardDataElement", {});
     page.flNewsItems.height += flDashboardItem4.height;
   });
 }
@@ -176,7 +182,7 @@ function addIncomingShipments(items) {
       flDashboardItem5.flLine.visible = false;
     }
 
-    page.flShipmentsItems.addChild(flDashboardItem5, "flDashboardItem5_" + index,".dashboardDataElement", {});
+    page.flShipmentsItems.addChild(flDashboardItem5, "flDashboardItem5_" + index, ".dashboardDataElement", {});
     page.flShipmentsItems.height += flDashboardItem5.height;
   });
 }
@@ -232,4 +238,23 @@ function loadUI() {
   addSocialActivities.call(this, json.socialActivityMonitor);
 }
 
-module && (module.exports = PgDashboard);
+function animateBell() {
+  const page = this;
+
+  Animator.animate(page.layout, 50, () => setLeft(-10))
+    .then(50, () => setLeft(10))
+    .then(50, () => setLeft(-5))
+    .then(50, () => setLeft(5))
+    .then(50, () => setLeft(0));
+
+  function setLeft(left) {
+    page.imgNotification.dispatch({
+      type: "updateUserStyle",
+      userStyle: {
+        left: left
+      }
+    });
+  }
+}
+
+module.exports = PgDashboard;
