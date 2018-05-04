@@ -313,7 +313,7 @@
 				"height": 30,
 				"left": 0,
 				"text": "Forgot Password",
-				"textAlignment": "TOPLEFT",
+				"textAlignment": "BOTTOMLEFT",
 				"textColor": "rgba( 153, 153, 153, 1 )",
 				"top": 0,
 				"width": 110
@@ -371,7 +371,7 @@
 					"flexDirection": "ROW"
 				},
 				"height": null,
-				"marginBottom": 10,
+				"marginBottom": 20,
 				"paddingBottom": null,
 				"usePageVariable": true,
 				"width": null
@@ -482,9 +482,14 @@
 			"userProps": {
 				"backgroundColor": "rgba( 0, 255, 50, 0 )",
 				"font": {
-					"size": 30
+					"size": 30,
+					"bold": false,
+					"italic": false,
+					"family": "Lato",
+					"style": "Light"
 				},
 				"height": 50,
+				"html": "CLIENTELING",
 				"maxHeight": 50,
 				"minHeight": 50,
 				"minWidth": 250,

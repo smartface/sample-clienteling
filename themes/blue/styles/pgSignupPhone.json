@@ -18,12 +18,12 @@
 					"bold": false,
 					"italic": false,
 					"family": "Lato",
-					"style": "n"
+					"style": "Regular"
 				}
 			},
 			".btnFacebook": {
 				"backgroundColor": "rgba(71,94,174,1)",
-				"marginRight": 5,
+				"marginRight": 10,
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -34,7 +34,7 @@
 			},
 			".btnAnonymous": {
 				"backgroundColor": "rgba(103,164,231,1)",
-				"marginLeft": 5,
+				"marginLeft": 10,
 				"font": {
 					"size": 14,
 					"bold": false,
