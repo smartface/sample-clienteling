@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"className": ".label",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"id": "cef6-e901-fdef-32f2",
 			"props": {
 				"children": [],
@@ -18,12 +18,15 @@
 				"backgroundColor": "rgba( 37, 37, 37, 0 )",
 				"font": {
 					"family": "Lato",
-					"size": 18
+					"size": 16,
+					"style": "Regular",
+					"bold": false,
+					"italic": false
 				},
 				"height": 50,
 				"marginLeft": null,
 				"text": "Profile",
-				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textColor": "rgba( 240, 240, 240, 1 )",
 				"width": null
 			}
 		}

@@ -64,14 +64,14 @@ const SliderDrawer = extend(SliderDrawerDesign)(
     }, {
       divider: false
     }));
-
-    addChild.call(this.flButtons, "button1", new Option({ id: 1, name: "    Profile", backgroundColor: activeOptionColor, onTouch: onTouchOption.bind(this, 1) }));
-    addChild.call(this.flButtons, "button2", new Option({ id: 2, name: "    Overview", onTouch: onTouchOption.bind(this, 2) }));
-    addChild.call(this.flButtons, "button3", new Option({ id: 3, name: "    Salary", onTouch: onTouchOption.bind(this, 3) }));
-    addChild.call(this.flButtons, "button4", new Option({ id: 4, name: "    Employment History", onTouch: onTouchOption.bind(this, 4) }));
-    addChild.call(this.flButtons, "button5", new Option({ id: 5, name: "    Performance", onTouch: onTouchOption.bind(this, 5) }));
+    this.header.text = "    Profile";
+    addChild.call(this.flButtons, "button1", new Option({ id: 1, name: "     Overview", onTouch: onTouchOption.bind(this, 1) }));
+    addChild.call(this.flButtons, "button2", new Option({ id: 2, name: "     Salary", onTouch: onTouchOption.bind(this, 2) }));
+    addChild.call(this.flButtons, "button3", new Option({ id: 3, name: "     Employment History", onTouch: onTouchOption.bind(this, 3) }));
+    addChild.call(this.flButtons, "button4", new Option({ id: 4, name: "     Performance", onTouch: onTouchOption.bind(this, 4) }));
     
     componentContextPatch(this, "sliderDrawer");
+    onTouchCategory.call(this,1);
   }
 );
 
