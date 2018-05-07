@@ -74,7 +74,7 @@
 			"type": "ScrollView",
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
-				"layoutHeight": 1300,
+				"flexProps": {},
 				"usePageVariable": true
 			}
 		},
@@ -165,6 +165,7 @@
 					"size": 15
 				},
 				"height": null,
+				"html": "DASHBOARD",
 				"text": "DASHBOARD",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 255, 255, 255, 1 )",
@@ -232,10 +233,7 @@
 				},
 				"height": 37.5,
 				"marginBottom": 25,
-				"marginLeft": 14,
-				"marginRight": 12,
 				"paddingLeft": 14,
-				"paddingRight": 7.5,
 				"width": null
 			}
 		},
@@ -268,16 +266,14 @@
 					"alignContent": "FLEX_START",
 					"justifyContent": "FLEX_START"
 				},
-				"height": null,
-				"marginLeft": 14,
-				"marginRight": -3.68,
+				"height": 604.7413793103449,
 				"minHeight": null,
 				"usePageVariable": true,
 				"width": null
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "971c-b2ca-f1a0-ff19",
 			"props": {
 				"children": [],
@@ -288,12 +284,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "NEARBY CUSTOMERS",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -348,7 +339,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "193c-7a77-a948-79b8",
 			"props": {
 				"children": [],
@@ -359,12 +350,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "RESERVATIONS",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -440,7 +426,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "4424-b4e9-6cb4-2023",
 			"props": {
 				"children": [],
@@ -451,12 +437,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "TO DO FOR 01.01.2017",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -497,6 +478,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"marginRight": 0,
 				"maxWidth": 650,
 				"minWidth": 200
 			}
@@ -532,7 +514,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "02f0-bf39-c76b-43db",
 			"props": {
 				"children": [],
@@ -543,12 +525,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "OPEN INCIDENTS",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -624,7 +601,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "672b-66b8-8eec-4a9d",
 			"props": {
 				"children": [],
@@ -635,12 +612,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "STORE AND CORPORATE NEWS",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -716,7 +688,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "0103-a7f7-dbbc-c1e7",
 			"props": {
 				"children": [],
@@ -727,12 +699,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "INCOMING SHIPMENTS",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -774,6 +741,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"marginRight": 0,
 				"maxWidth": 650,
 				"minWidth": 200,
 				"usePageVariable": false
@@ -810,7 +778,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "e144-8762-49f3-ba62",
 			"props": {
 				"children": [],
@@ -821,12 +789,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "SOCIAL ACTIVITY MONITOR",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
