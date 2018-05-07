@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"className": ".flexLayout .flexLayout-default",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"id": "301e-6dd8-2fc0-fd12",
 			"props": {
 				"children": [
@@ -82,7 +82,7 @@
 				"height": 20,
 				"imageFillType": "ASPECTFIT",
 				"usePageVariable": true,
-				"width": 20
+				"width": 40
 			}
 		},
 		{
