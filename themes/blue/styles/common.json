@@ -25,6 +25,13 @@
 			"positionType": "ABSOLUTE"
 		}
 	},
+	".flGrow": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		}
+	},
 	"#pgDashBoard": {
 		".flPart1": {
 			"&_divider": {

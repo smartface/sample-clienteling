@@ -94,7 +94,7 @@
 			"id": "2a84-1b42-a1a7-b7c8",
 			"props": {
 				"children": [
-					"3379-1c53-ba61-9775",
+					"7da0-e687-06c0-201e",
 					"171a-9f20-120a-7188"
 				],
 				"name": "flBagTrends",
@@ -199,26 +199,7 @@
 			}
 		},
 		{
-			"className": ".imageView",
-			"id": "3379-1c53-ba61-9775",
-			"props": {
-				"children": [],
-				"name": "imgBagTrends",
-				"parent": "2a84-1b42-a1a7-b7c8"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"height": null,
-				"image": "bag.png",
-				"imageFillType": "ASPECTFIT",
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout .flexLayout-default",
+			"className": ".flexLayout .flGrow",
 			"id": "171a-9f20-120a-7188",
 			"props": {
 				"children": [
@@ -231,14 +212,9 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
-					"flexGrow": 1,
 					"justifyContent": "CENTER",
-					"alignItems": "STRETCH",
-					"alignContent": "FLEX_START"
-				},
-				"height": null,
-				"right": 5,
-				"width": null
+					"flexGrow": 3
+				}
 			}
 		},
 		{
@@ -400,11 +376,7 @@
 				"parent": "b740-f675-4f52-5243"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1
-				}
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".button #pgMainLookbook.btnShopNow",
@@ -445,10 +417,12 @@
 				"parent": "47f2-f138-9dd8-617a"
 			},
 			"type": "ImageView",
-			"userProps": {}
+			"userProps": {
+				"image": "pgmainlookbook_women_vertical.png"
+			}
 		},
 		{
-			"className": ".imageView #pgMainLookbook.imgMen",
+			"className": ".imageView #pgMainLookbook.imgWomen",
 			"id": "3d2b-ea2c-6528-3f6e",
 			"props": {
 				"children": [],
@@ -456,7 +430,9 @@
 				"parent": "a1cd-4b9b-acad-6cf7"
 			},
 			"type": "ImageView",
-			"userProps": {}
+			"userProps": {
+				"image": "pgmainlookbook_men_vertical.png"
+			}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default",
@@ -540,7 +516,7 @@
 				"height": null,
 				"left": 0,
 				"right": 0,
-				"top": 1.6666666666666667,
+				"top": 1.6666666269302368,
 				"width": null
 			}
 		},
@@ -583,12 +559,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"flexProps": {
-					"alignSelf": "AUTO"
-				},
-				"height": 20,
-				"text": "SUMMER 2017",
-				"width": null
+				"text": "SUMMER 2017"
 			}
 		},
 		{
@@ -736,7 +707,11 @@
 					"flexGrow": 1
 				},
 				"font": {
-					"size": 15
+					"size": 15,
+					"bold": false,
+					"italic": false,
+					"family": "Lato",
+					"style": "Light"
 				},
 				"height": null,
 				"text": "LOOKBOOK",
@@ -762,16 +737,51 @@
 			"id": "4637-e165-3e1c-b798",
 			"props": {
 				"children": [],
-				"name": "lblSaleBackground_1",
+				"name": "lblSaleBig",
 				"parent": "b740-f675-4f52-5243",
 				"text": "S A L E"
 			},
 			"type": "TextView",
 			"userProps": {
+				"font": {
+					"size": 120,
+					"bold": true,
+					"italic": false,
+					"family": "Lato",
+					"style": "Bold"
+				},
 				"left": 0,
 				"text": "S A L E",
 				"top": 0
 			}
+		},
+		{
+			"className": ".flexLayout .flGrow",
+			"id": "7da0-e687-06c0-201e",
+			"props": {
+				"children": [
+					"4b0f-7678-e7b0-e8bc"
+				],
+				"name": "flImage",
+				"parent": "2a84-1b42-a1a7-b7c8"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 4
+				}
+			}
+		},
+		{
+			"className": ".imageView #pgMainLookbook-imgBagTrends",
+			"id": "4b0f-7678-e7b0-e8bc",
+			"props": {
+				"children": [],
+				"name": "imgBagTrends",
+				"parent": "7da0-e687-06c0-201e"
+			},
+			"type": "ImageView",
+			"userProps": {}
 		}
 	]
 }
