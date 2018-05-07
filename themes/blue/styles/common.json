@@ -24,5 +24,15 @@
 		"flexProps": {
 			"positionType": "ABSOLUTE"
 		}
+	},
+	".flGrow": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		}
+	},
+	".textView": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
 	}
 }

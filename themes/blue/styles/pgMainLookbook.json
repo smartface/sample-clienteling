@@ -1,296 +1,327 @@
 {
-  "#pgMainLookbook": {
-    ".lblSale": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "font": {
-        "size": 22
-      },
-      "textAlignment": "MIDCENTER"
-    },
-    ".lbl50Off": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "textColor": "#D52682",
-      "multiline": true,
-      "textAlignment": "MIDCENTER",
-      "font": {
-        "size": 25
-      },
-      "+page:Screen.width > 450": {
-        "multiline": false
-      }
-    },
-    ".btnShopNow": {
-      "width": 100,
-      "height": 30,
-      "borderColor": "#000000",
-      "borderWidth": 2,
-      "backgroundColor": "rgba(0,0,0,0)",
-      "textColor": "#000000"
-    },
-    ".flShopNow": {
-      "width": null,
-      "height": null,
-      "backgroundColor": "rgba(0,0,0,0)",
-      "flexProps": {
-        "flexGrow": 1,
-        "alignItems": "CENTER",
-        "justifyContent": "CENTER"
-      }
-    },
-    ".flFirstLine": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 36,
-        "flexDirection": "ROW"
-      }
-    },
-    ".flSecondLine": {
-      "backgroundColor": "#FEFEF8",
-      "width": null,
-      "height": null,
-      "maxHeight": null,
-      "maxWidth": null,
-      "visible": true,
-      "flexProps": {
-        "flexGrow": 27
-      },
-      "+page:Screen.width > 450 && Screen.width > Screen.height": {
-        "width": 0,
-        "height": 0,
-        "maxHeight": 0,
-        "maxWidth": 0,
-        "flexProps": {
-          "flexGrow": 0
-        }
-      }
-    },
-    ".flThirdLine": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 43,
-        "flexDirection": "ROW"
-      }
-    },
-    ".flSale": {
-      "width": 0,
-      "height": 0,
-      "maxHeight": 0,
-      "maxWidth": 0,
-      "visible": true,
-      "flexProps": {
-        "flexGrow": 0
-      },
-      "+orientationChange:orientation == 'started' && Screen.width > Screen.height": {
-        "visible": false,
-        "width": 0,
-        "height": 0,
-        "maxHeight": 0,
-        "maxWidth": 0,
-        "flexProps": {
-          "flexGrow": 0
-        }
-      },
-      "+page:Screen.width > 450 && Screen.width > Screen.height": {
-        "visible": true,
-        "width": null,
-        "height": null,
-        "maxHeight": null,
-        "maxWidth": null,
-        "flexProps": {
-          "flexGrow": 2.8,
-          "flexDirection": "COLUMN"
-        }
-      }
-    },
-    ".lblSaleBackground": {
-      "left": 0,
-      "right": 0,
-      "top": 0,
-      "bottom": 0,
-      "width": null,
-      "height": null,
-      "backgroundColor": "rgba(0,0,0,0)",
-      "textAlignment": "MIDCENTER",
-      "textColor": "rgba(29,29,38,0.1)",
-      "flexProps": {
-        "positionType": "ABSOLUTE"
-      },
-      "font": {
-        "size": 100,
-        "bold": true
-      },
-      "+page:Screen.width > 450": {
-        "font": {
-          "size": 70
-        },
-        "textAlignment": "TOPCENTER"
-      }
-    },
-    ".lblGender": {
-      "width": null,
-      "height": 40,
-      "textAlignment": "MIDRIGHT",
-      "backgroundColor": "rgba(0,0,0,0)",
-      "textColor": "#FFFFFF",
-      "font": {
-        "size": 30
-      },
-      "marginRight": 10,
-      "marginLeft": null,
-      ".men": {
-        "textAlignment": "MIDLEFT",
-        "marginLeft": 10,
-        "+page:Screen.width > 1000": {
-          "height": 70,
-          "font": {
-            "size": 42
-          }
-        }
-      },
-      "+page:Screen.width > 1000": {
-        "height": 70,
-        "font": {
-          "size": 42
-        }
-      }
-    },
-    ".lblShop": {
-      "width": null,
-      "height": 20,
-      "textAlignment": "MIDRIGHT",
-      "backgroundColor": "rgba(0,0,0,0)",
-      "marginRight": 10,
-      "marginLeft": null,
-      "font": {
-        "size": 15
-      },
-      ".men": {
-        "textAlignment": "MIDLEFT",
-        "marginLeft": 10,
-        "+page:Screen.width > 1000": {
-          "height": 50,
-          "font": {
-            "size": 26
-          }
-        }
-      },
-      "+page:Screen.width > 1000": {
-        "height": 50,
-        "font": {
-          "size": 26
-        }
-      }
-    },
-    ".lblSummer": {
-      "width": null,
-      "height": 30,
-      "textAlignment": "MIDLEFT",
-      "backgroundColor": "rgba(0,0,0,0)",
-      "multiline": true,
-      "marginRight": null,
-      "+page:Screen.width > 450 ": {
-        "multiline": false,
-        "textAlignment": "MIDRIGHT",
-        "marginRight": 30
-      },
-      "+page:Screen.width > 1000 ": {
-        "multiline": false,
-        "textAlignment": "MIDRIGHT",
-        "marginRight": 30,
-        "height": 50,
-        "font": {
-          "size": 18
-        }
-      }
-    },
-    ".lblBag": {
-      "width": null,
-      "height": 60,
-      "textAlignment": "MIDCENTER",
-      "multiline": true,
-      "textColor": "#FFFFFF",
-      "backgroundColor": "rgba(0,0,0,0)",
-      "font": {
-        "size": 20
-      },
-      "marginRight": null,
-      "+page:Screen.width > 450": {
-        "textAlignment": "MIDRIGHT",
-        "marginRight": 30
-      },
-      "+page:Screen.width > 1000": {
-        "height": 80,
-        "font": {
-          "size": 36
-        }
-      }
-    },
-    ".lblAccessories": {
-      "width": null,
-      "height": 20,
-      "textAlignment": "MIDCENTER",
-      "backgroundColor": "rgba(0,0,0,0)",
-      "multiline": true,
-      "+page:Screen.width > 1000": {
-        "height": 40,
-        "font": {
-          "size": 18
-        }
-      }
-    },
-    ".lblGlasses": {
-      "width": null,
-      "textAlignment": "MIDCENTER",
-      "height": 30,
-      "textColor": "#FFFFFF",
-      "backgroundColor": "rgba(0,0,0,0)",
-      "font": {
-        "size": 20
-      },
-      "+page:Screen.width > 450": {
-        "height": 20
-      },
-      "+page:Screen.width > 1000": {
-        "height": 70,
-        "font": {
-          "size": 36
-        }
-      }
-    },
-    ".imgWomen": {
-      "width": null,
-      "height": null,
-      "backgroundColor": "rgba(0,0,0,0)",
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "imageFillType": "STRETCH",
-      "image": "pgmainlookbook_women_vertical.png",
-      "+page:Screen.width > 450": {
-        "image": "pgmainlookbook_women_horizontal.png"
-      }
-    },
-    ".imgMen": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "imageFillType": "STRETCH",
-      "image": "pgmainlookbook_men_vertical.png",
-      "+page:Screen.width > 450": {
-        "image": "pgmainlookbook_men_horizontal.png"
-      }
-    }
-  }
+	"#pgMainLookbook": {
+		".lblSale": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"font": {
+				"size": 22,
+				"style": "Bold",
+				"bold": true
+			},
+			"textAlignment": "BOTTOMCENTER"
+		},
+		".lbl50Off": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"textColor": "#D52682",
+			"multiline": true,
+			"textAlignment": "MIDCENTER",
+			"font": {
+				"size": 30,
+				"style": "Bold",
+				"bold": true
+			},
+			"+page:Screen.width > 450": {
+				"multiline": false
+			}
+		},
+		".btnShopNow": {
+			"width": 100,
+			"height": 30,
+			"borderColor": "#000000",
+			"borderWidth": 2,
+			"backgroundColor": "rgba(0,0,0,0)",
+			"textColor": "#000000"
+		},
+		".flShopNow": {
+			"width": null,
+			"height": null,
+			"backgroundColor": "rgba(0,0,0,0)",
+			"flexProps": {
+				"flexGrow": 1,
+				"alignItems": "CENTER",
+				"justifyContent": "FLEX_START"
+			}
+		},
+		".flFirstLine": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 36,
+				"flexDirection": "ROW"
+			}
+		},
+		".flSecondLine": {
+			"backgroundColor": "#FEFEF8",
+			"width": null,
+			"height": null,
+			"maxHeight": null,
+			"maxWidth": null,
+			"visible": true,
+			"flexProps": {
+				"flexGrow": 27
+			},
+			"+page:Screen.width > 450 && Screen.width > Screen.height": {
+				"width": 0,
+				"height": 0,
+				"maxHeight": 0,
+				"maxWidth": 0,
+				"flexProps": {
+					"flexGrow": 0
+				}
+			}
+		},
+		".flThirdLine": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 43,
+				"flexDirection": "ROW"
+			}
+		},
+		".flSale": {
+			"width": 0,
+			"height": 0,
+			"maxHeight": 0,
+			"maxWidth": 0,
+			"visible": true,
+			"flexProps": {
+				"flexGrow": 0
+			},
+			"+orientationChange:orientation == 'started' && Screen.width > Screen.height": {
+				"visible": false,
+				"width": 0,
+				"height": 0,
+				"maxHeight": 0,
+				"maxWidth": 0,
+				"flexProps": {
+					"flexGrow": 0
+				}
+			},
+			"+page:Screen.width > 450 && Screen.width > Screen.height": {
+				"visible": true,
+				"width": null,
+				"height": null,
+				"maxHeight": null,
+				"maxWidth": null,
+				"flexProps": {
+					"flexGrow": 2.8,
+					"flexDirection": "COLUMN"
+				}
+			}
+		},
+		".lblSaleBackground": {
+			"left": 0,
+			"right": 0,
+			"top": 0,
+			"bottom": 0,
+			"width": null,
+			"height": null,
+			"backgroundColor": "rgba(0,0,0,0)",
+			"textAlignment": "MIDCENTER",
+			"textColor": "rgba(29,29,38,0.1)",
+			"flexProps": {
+				"positionType": "ABSOLUTE"
+			},
+			"font": {
+				"size": 100,
+				"bold": true
+			},
+			"+page:Screen.width > 450": {
+				"font": {
+					"size": 70
+				},
+				"textAlignment": "TOPCENTER"
+			}
+		},
+		".lblGender": {
+			"width": null,
+			"height": 40,
+			"textAlignment": "MIDRIGHT",
+			"backgroundColor": "rgba(0,0,0,0)",
+			"textColor": "#FFFFFF",
+			"font": {
+				"size": 30
+			},
+			"marginRight": 10,
+			"marginLeft": null,
+			".men": {
+				"textAlignment": "MIDLEFT",
+				"marginLeft": 10,
+				"+page:Screen.width > 1000": {
+					"height": 70,
+					"font": {
+						"size": 42
+					}
+				}
+			},
+			"+page:Screen.width > 1000": {
+				"height": 70,
+				"font": {
+					"size": 42
+				}
+			}
+		},
+		".lblShop": {
+			"width": null,
+			"height": 20,
+			"textAlignment": "MIDRIGHT",
+			"backgroundColor": "rgba(0,0,0,0)",
+			"marginRight": 10,
+			"marginLeft": null,
+			"font": {
+				"size": 15
+			},
+			".men": {
+				"textAlignment": "MIDLEFT",
+				"marginLeft": 10,
+				"+page:Screen.width > 1000": {
+					"height": 50,
+					"font": {
+						"size": 26
+					}
+				}
+			},
+			"+page:Screen.width > 1000": {
+				"height": 50,
+				"font": {
+					"size": 26
+				}
+			}
+		},
+		".lblSummer": {
+			"width": null,
+			"height": 30,
+			"textAlignment": "MIDCENTER",
+			"backgroundColor": "rgba(0,0,0,0)",
+			"multiline": true,
+			"marginRight": null,
+			"+page:Screen.width > 450 ": {
+				"multiline": false,
+				"textAlignment": "MIDRIGHT",
+				"marginRight": 30
+			},
+			"+page:Screen.width > 1000 ": {
+				"multiline": false,
+				"textAlignment": "MIDRIGHT",
+				"marginRight": 30,
+				"height": 50,
+				"font": {
+					"size": 18
+				}
+			}
+		},
+		".lblBag": {
+			"width": null,
+			"height": 60,
+			"textAlignment": "MIDCENTER",
+			"multiline": true,
+			"textColor": "#FFFFFF",
+			"backgroundColor": "rgba(0,0,0,0)",
+			"font": {
+				"size": 20
+			},
+			"marginRight": null,
+			"+page:Screen.width > 450": {
+				"textAlignment": "MIDRIGHT",
+				"marginRight": 30
+			},
+			"+page:Screen.width > 1000": {
+				"height": 80,
+				"font": {
+					"size": 36
+				}
+			}
+		},
+		".lblAccessories": {
+			"width": null,
+			"height": 20,
+			"textAlignment": "MIDCENTER",
+			"backgroundColor": "rgba(0,0,0,0)",
+			"multiline": true,
+			"+page:Screen.width > 1000": {
+				"height": 40,
+				"font": {
+					"size": 18
+				}
+			}
+		},
+		".lblGlasses": {
+			"width": null,
+			"textAlignment": "MIDCENTER",
+			"height": 30,
+			"textColor": "#FFFFFF",
+			"backgroundColor": "rgba(0,0,0,0)",
+			"font": {
+				"size": 20
+			},
+			"+page:Screen.width > 450": {
+				"height": 20
+			},
+			"+page:Screen.width > 1000": {
+				"height": 70,
+				"font": {
+					"size": 36
+				}
+			}
+		},
+		".imgWomen": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"positionType": "ABSOLUTE"
+			},
+			"imageFillType": "STRETCH",
+			"+page:Screen.width > 450": {
+				"bottom": -100
+			},
+			"top": 0,
+			"left": 0,
+			"bottom": 0,
+			"right": 0
+		},
+		".imgMen": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"imageFillType": "STRETCH",
+			"image": "pgmainlookbook_men_vertical.png",
+			"+page:Screen.width > 450": {
+				"image": "pgmainlookbook_men_horizontal.png"
+			}
+		},
+		"&-imgBagTrends": {
+			"flexProps": {
+				"flexGrow": 1,
+				"positionType": "RELATIVE"
+			},
+			"height": null,
+			"image": "bag.png",
+			"imageFillType": "ASPECTFIT",
+			"marginLeft": -50,
+			"width": null,
+			"+Device:Device.orientation === \"landscape\"": {
+				"marginLeft": null,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"top": -30,
+				"left": -70,
+				"right": 0,
+				"bottom": 0
+			},
+			"top": null,
+			"left": null,
+			"right": null,
+			"bottom": null
+		}
+	}
 }
