@@ -187,7 +187,8 @@
 				"flexDirection": "COLUMN",
 				"positionType": "RELATIVE",
 				"flexGrow": 1
-			}
+			},
+			"marginBottom": 10
 		},
 		".flInfoPart21": {
 			"height": null,
@@ -214,7 +215,8 @@
 				"flexProps": {
 					"flexDirection": "COLUMN"
 				}
-			}
+			},
+			"marginBottom": 10
 		},
 		".flInfoPart22": {
 			"height": null,
@@ -240,6 +242,22 @@
 			"+page:Screen.width > 450": {
 				"flexProps": {
 					"flexDirection": "COLUMN"
+				}
+			},
+			"marginBottom": 10,
+			"&_slider": {
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
+				},
+				"marginLeft": null,
+				"marginRight": null,
+				"+Device:Device.orientation === \"landscape\"": {
+					"marginLeft": 30,
+					"marginRight": 30
 				}
 			}
 		},
@@ -298,8 +316,10 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"flexProps": {
-					"flexGrow": 2
-				}
+					"flexGrow": 2,
+					"alignSelf": "CENTER"
+				},
+				"width": 50
 			}
 		},
 		".lblConversionNumber": {

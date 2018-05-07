@@ -24,5 +24,27 @@
 		"flexProps": {
 			"positionType": "ABSOLUTE"
 		}
+	},
+	"#pgDashBoard": {
+		".flPart1": {
+			"&_divider": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": null,
+				"left": 0,
+				"marginBottom": 20,
+				"marginTop": 20,
+				"maxHeight": null,
+				"maxWidth": null,
+				"top": 0,
+				"width": 1,
+				"flexProps": {
+					"flexGrow": null,
+					"alignSelf": "STRETCH"
+				},
+				"+Device:Device.orientation === \"portrait\"": {
+					"visible": false
+				}
+			}
+		}
 	}
 }

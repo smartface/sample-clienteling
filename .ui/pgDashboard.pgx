@@ -854,7 +854,8 @@
 			"props": {
 				"children": [
 					"d2cc-973c-4896-6905",
-					"d489-15fe-e01b-2ef3"
+					"d489-15fe-e01b-2ef3",
+					"21ee-091e-28da-0adb"
 				],
 				"name": "flPart1",
 				"parent": "f12f-7811-631b-6b87"
@@ -1049,6 +1050,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"html": "Task Pending",
 				"text": "Task Pending",
 				"usePageVariable": true
 			}
@@ -1059,6 +1061,7 @@
 			"props": {
 				"children": [
 					"5ae2-0be1-d75e-a36a",
+					"83aa-c5b6-82f8-cf57",
 					"482b-fb52-7ba2-3cbe"
 				],
 				"name": "flPart2",
@@ -1200,7 +1203,7 @@
 			}
 		},
 		{
-			"className": ".flexLayout .flexLayout-default",
+			"className": ".flexLayout .flexLayout-default #pgDashboard.flInfoPart22_slider",
 			"id": "c439-c828-6c58-f3b8",
 			"props": {
 				"children": [
@@ -1211,15 +1214,7 @@
 				"parent": "4d06-7248-ce13-f804"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"alignItems": "STRETCH",
-					"alignContent": "STRETCH"
-				},
-				"height": null,
-				"width": null
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default",
@@ -1309,7 +1304,7 @@
 				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"borderRadius": 3,
 				"flexProps": {
-					"flexGrow": 80
+					"flexGrow": 30
 				},
 				"height": 6,
 				"usePageVariable": true,
@@ -1388,6 +1383,42 @@
 				"usePageVariable": true,
 				"visible": false
 			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"id": "83aa-c5b6-82f8-cf57",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "9bf4-5a83-9363-c248"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"flexGrow": null,
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"left": 0,
+				"marginBottom": 20,
+				"marginTop": 20,
+				"maxHeight": null,
+				"maxWidth": null,
+				"top": 0,
+				"width": 1
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line #pgDashBoard.flPart1_divider",
+			"id": "21ee-091e-28da-0adb",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "e687-6633-72c8-3320"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		}
 	]
 }
