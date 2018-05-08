@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"className": ".label",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"id": "cef6-e901-fdef-32f2",
 			"props": {
 				"children": [],

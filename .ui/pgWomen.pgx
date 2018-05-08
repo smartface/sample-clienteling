@@ -562,6 +562,7 @@
 			"id": "7c43-1049-4f35-3fa8",
 			"props": {
 				"children": [
+					"1f80-3c5c-334f-813d",
 					"8521-2d57-5232-5d31"
 				],
 				"name": "flSwipe",
@@ -591,6 +592,40 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "1f80-3c5c-334f-813d",
+			"props": {
+				"children": [],
+				"name": "flBusy",
+				"parent": "7c43-1049-4f35-3fa8"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flBusy",
+				"id": "1a4d-cc59-d653-ee32"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"bottom": 20,
+				"flex": {
+					"justifyContent": 1,
+					"alignItems": 2,
+					"positionType": 0
+				},
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "CENTER",
+					"positionType": "ABSOLUTE"
+				},
+				"height": null,
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"width": null
+			}
 		}
 	]
 }

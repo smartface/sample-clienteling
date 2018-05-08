@@ -1,0 +1,46 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"id": "1a4d-cc59-d653-ee32",
+			"props": {
+				"children": [
+					"8baa-1556-2c00-8698"
+				],
+				"name": "flBusy",
+				"parent": "fb96-1dcf-3bb9-cd95"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"bottom": 0,
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "CENTER",
+					"positionType": "ABSOLUTE"
+				},
+				"height": null,
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".activityIndicator",
+			"id": "8baa-1556-2c00-8698",
+			"props": {
+				"children": [],
+				"name": "activityIndicator1",
+				"parent": "1a4d-cc59-d653-ee32"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ActivityIndicator",
+			"userProps": {}
+		}
+	]
+}

@@ -53,5 +53,33 @@
 				}
 			}
 		}
+	},
+	"#pgCustomerProile": {
+		"&_flScores": {
+			"&_divider": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"flexGrow": null,
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"left": 0,
+				"marginBottom": 10,
+				"marginTop": 10,
+				"maxHeight": null,
+				"maxWidth": null,
+				"top": null,
+				"width": 1,
+				"+Device:Device.orientation === \"portrait\"": {
+					"left": -9
+				},
+				"&_1": {
+					"+Device:Device.orientation === \"portrait\"": {
+						"visible": false
+					},
+					"visible": true
+				}
+			}
+		}
 	}
 }

@@ -1,35 +1,35 @@
 {
-  ".activityIndicator": {
-    "touchEnabled": true,
-    "width": 42,
-    "height": 42,
-    "color": "#4990E2",
-    "visible": true,
-    "backgroundColor": "rgba(255,255,255,0)",
-    "alpha": 1,
-    "borderColor": "rgba(0,0,0,1)",
-    "borderWidth": 0,
-    "font": {},
-    "flexProps": {
-      "positionType": "RELATIVE",
-      "alignSelf": "AUTO"
-    },
-    "minHeight": 21,
-    "minWidth": 21,
-    "&-small": {
-      "height": 100,
-      "width": 100
-    },
-    "&-medium": {
-      "height": 250,
-      "width": 250
-    },
-    "&-large": {
-      "height": 350,
-      "width": 350
-    },
-    "&-white": {
-      "color": "#FFFFFF"
-    }
-  }
+	".activityIndicator": {
+		"touchEnabled": true,
+		"width": 42,
+		"height": 42,
+		"color": "rgba( 230, 230, 230, 1 )",
+		"visible": true,
+		"backgroundColor": "rgba(255,255,255,0)",
+		"alpha": 1,
+		"borderColor": "rgba(0,0,0,1)",
+		"borderWidth": 0,
+		"font": {},
+		"flexProps": {
+			"positionType": "RELATIVE",
+			"alignSelf": "AUTO"
+		},
+		"minHeight": 21,
+		"minWidth": 21,
+		"&-small": {
+			"height": 100,
+			"width": 100
+		},
+		"&-medium": {
+			"height": 250,
+			"width": 250
+		},
+		"&-large": {
+			"height": 350,
+			"width": 350
+		},
+		"&-white": {
+			"color": "#FFFFFF"
+		}
+	}
 }

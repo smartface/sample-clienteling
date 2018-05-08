@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"className": ".flexLayout .flexLayout-default .sliderDrawer",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"id": "e02d-b805-d189-cc15",
 			"props": {
 				"children": [

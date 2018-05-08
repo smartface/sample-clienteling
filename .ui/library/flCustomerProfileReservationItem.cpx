@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"className": ".flexLayout .flexLayout-default",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"id": "f3c9-f72b-84ed-36d3",
 			"props": {
 				"children": [

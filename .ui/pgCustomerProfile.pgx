@@ -233,6 +233,10 @@
 					"flexGrow": 1
 				},
 				"height": null,
+				"paddingBottom": 5,
+				"paddingLeft": 5,
+				"paddingRight": 5,
+				"paddingTop": 5,
 				"width": null
 			}
 		},
@@ -249,13 +253,7 @@
 				"parent": "0119-45d4-c6a6-8b59"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"left": 0,
-				"marginLeft": 5,
-				"marginRight": 5,
-				"marginTop": 5,
-				"top": 0
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flInfo",
@@ -295,6 +293,7 @@
 			"id": "2eb4-c2a8-14a5-5bdd",
 			"props": {
 				"children": [
+					"f642-8d8d-6b52-cd04",
 					"ef17-c888-f5d5-abca",
 					"e84c-ae6a-9216-edb6",
 					"73b4-ee32-ea4b-f48a"
@@ -353,7 +352,7 @@
 			}
 		},
 		{
-			"className": ".flexLayout .flexLayout-default .flexLayout-line",
+			"className": ".flexLayout .flexLayout-default .flexLayout-line #pgCustomerProile_flScores_divider",
 			"id": "e84c-ae6a-9216-edb6",
 			"props": {
 				"children": [],
@@ -361,21 +360,7 @@
 				"parent": "2eb4-c2a8-14a5-5bdd"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"backgroundColor": "rgba( 151, 151, 151, 1 )",
-				"flexProps": {
-					"flexGrow": null,
-					"alignSelf": "STRETCH"
-				},
-				"height": null,
-				"left": null,
-				"marginBottom": 10,
-				"marginTop": 10,
-				"maxHeight": null,
-				"maxWidth": null,
-				"top": null,
-				"width": 1
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
@@ -477,6 +462,7 @@
 				"flexProps": {
 					"alignSelf": "STRETCH"
 				},
+				"marginTop": 10,
 				"text": "Look Book",
 				"usePageVariable": true
 			}
@@ -496,12 +482,6 @@
 			},
 			"type": "ScrollView",
 			"userProps": {
-				"layoutHeight": 1000,
-				"left": 0,
-				"marginBottom": 5,
-				"marginLeft": 5,
-				"marginRight": 5,
-				"top": 0,
 				"usePageVariable": true
 			}
 		},
@@ -890,7 +870,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "dcfe-6325-f501-c7b5",
 			"props": {
 				"children": [],
@@ -901,12 +881,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "ANNA'S WARDROBE",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -1006,7 +981,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "5aea-815d-7511-5837",
 			"props": {
 				"children": [],
@@ -1017,12 +992,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "RESERVATIONS",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -1118,7 +1088,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "13c5-3c0d-8d72-275d",
 			"props": {
 				"children": [],
@@ -1129,12 +1099,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "OPEN INCIDENTS",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -1212,7 +1177,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".label #pgDashboard_title",
 			"id": "9b8b-50ca-b020-9e19",
 			"props": {
 				"children": [],
@@ -1223,12 +1188,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"font": {
-					"size": 16
-				},
-				"height": null,
 				"text": "ANNA'S WISHLIST",
-				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true
 			}
 		},
@@ -1254,6 +1214,17 @@
 				"usePageVariable": true,
 				"width": null
 			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line #pgCustomerProile_flScores_divider #pgCustomerProile_flScores_divider_1",
+			"id": "f642-8d8d-6b52-cd04",
+			"props": {
+				"children": [],
+				"name": "divider_1",
+				"parent": "2eb4-c2a8-14a5-5bdd"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		}
 	]
 }

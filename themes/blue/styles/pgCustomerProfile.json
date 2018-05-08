@@ -1,515 +1,539 @@
 {
-  "#pgCustomerProfile": {
-    ".rightItem": {
-      "height": null,
-      "width": null,
-      "backgroundColor": "rgba(0,0,0,0)",
-      "visible": true,
-      "touchEnabled": true,
-      "flexProps": {
-        "alignSelf": "AUTO",
-        "direction": "INHERIT",
-        "alignContent": "STRETCH",
-        "alignItems": "CENTER",
-        "justifyContent": "FLEX_END",
-        "flexWrap": "NOWRAP",
-        "flexDirection": "ROW",
-        "positionType": "RELATIVE",
-        "flexGrow": 1
-      },
-      "paddingRight": 17.5,
-      "+page:Screen.width > 450": {
-        "visible": false,
-        "touchEnabled": false
-      }
-    },
-    "&_scw": {
-      "layoutHeight": 1000,
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1,
-        "alignItems": "STRETCH",
-        "alignContent": "STRETCH"
-      },
-      "+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
-        "layoutHeight": 750
-      },
-      "&_flSecond": {
-        "&_divider": {
-          "@extend": ".flexLayout-line",
-          "width": 0,
-          "maxWidth": 0,
-          "maxHeight": 0,
-          "height": 0,
-          "marginBottom": 0,
-          "marginTop": 0,
-          "+page:Screen.width > 450": {
-            "width": null,
-            "maxWidth": null,
-            "maxHeight": 1,
-            "height": 1,
-            "marginBottom": 3,
-            "marginTop": 3
-          }
-        }
-      },
-      "&_flThird": {
-        "&_flReserveIndicates": {
-          "&_flReservations": {
-            "&_flReservations": {
-              "&_scFlReservations": {
-              }
-            }
-          }
-        }
-      }
-    },
-    ".lblWishlistItemName": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "textColor": "#868686",
-      "textAlignment": "MIDCENTER",
-      "font": {
-        "family": "Lato",
-        "size": 20
-      }
-    },
-    ".lblWishlistItemID": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "textColor": "#868686",
-      "textAlignment": "MIDCENTER",
-      "font": {
-        "family": "Lato",
-        "size": 20
-      }
-    },
-    ".lblWishlistItemPrice": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "textColor": "#2D2D2D",
-      "textAlignment": "MIDCENTER",
-      "font": {
-        "family": "Lato",
-        "size": 20,
-        "bold": true
-      }
-    },
-    ".lblReservationStatus": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "font": {
-        "family": "Lato",
-        "size": 12
-      },
-      "textAlignment": "MIDLEFT",
-      "marginLeft": 10,
-      "textColor": "#B9367B"
-    },
-    ".lblReservationInfo": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "font": {
-        "family": "Lato",
-        "size": 12
-      },
-      "textAlignment": "MIDLEFT",
-      "marginLeft": 10,
-      "textColor": "#2A2A2A"
-    },
-    ".lblReservationDate": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "font": {
-        "family": "Lato",
-        "size": 12
-      },
-      "textAlignment": "MIDLEFT",
-      "marginLeft": 10,
-      "textColor": "#6A6A6A"
-    },
-    ".lblRecent": {
-      "width": null,
-      "height": null,
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "font": {
-        "family": "Lato",
-        "size": 12
-      },
-      "textAlignment": "MIDLEFT",
-      "marginLeft": 10,
-      "textColor": "#6A6A6A"
-    },
-    "&_flFirst": {
-      "width": null,
-      "height": null,
-      "maxHeight": 132,
-      "marginBottom": 0,
-      "flexProps": {
-        "flexGrow": 1,
-        "flexDirection": "COLUMN",
-        "alignItems": "STRETCH"
-      },
-      "+page:Screen.width > 450": {
-        "marginBottom": 10,
-        "flexProps": {
-          "flexDirection": "ROW",
-          "flexGrow": 0.4
-        },
-        "maxHeight": 110
-      },
-      "&_flInfo": {
-        "width": null,
-        "height": null,
-        "backgroundColor": "rgba( 216, 216, 216, 0.55 )",
-        "flexProps": {
-          "flexGrow": 1.5
-        },
-        "+page:Screen.width > 450": {
-          "backgroundColor": "rgba( 216, 216, 216, 0 )"
-        },
-        "&_profile": {
-          "width": null,
-          "height": null,
-          "marginLeft": null,
-          "flexProps": {
-            "positionType": "RELATIVE",
-            "flexDirection": "ROW",
-            "flexGrow": 1
-          }
-        }
-      },
-      "&_flScores": {
-        "width": null,
-        "height": null,
-        "left": null,
-        "top": null,
-        "marginTop": null,
-        "marginBottom": null,
-        "marginLeft": 5,
-        "marginRight": 5,
-        "maxHeight": 55,
-        "marginTop": null,
-        "flexProps": {
-          "flexGrow": 1,
-          "flexDirection": "ROW",
-          "justifyContent": "SPACE_BETWEEN"
-        },
-        "+page:Screen.width > 450": {
-          "maxHeight": null,
-          "minHieght": 55,
-          "flexProps": {
-            "flexGrow": 1.5
-          },
-          "marginTop": 0
-        },
-        "&_scoreItem": {
-          "left": null,
-          "top": null,
-          "width": null,
-          "height": null,
-          "flexProps": {
-            "positionType": "RELATIVE",
-            "flexDirection": "ROW",
-            "alignItems": "CENTER",
-            "justifyContent": "FLEX_START",
-            "flexGrow": 1,
-            "alignSelf": "STRETCH"
-          },
-          "+page:Screen.width > 450": {
-            "flexProps": {
-              "flexDirection": "COLUMN",
-              "flexGrow": 2,
-              "maxWidth": null
-            }
-          }
-        }
-      },
-      "&_flButtons": {
-        "width": null,
-        "height": 0,
-        "marginTop": null,
-        "maxWidth": null,
-        "flexProps": {
-          "positionType": "RELATIVE",
-          "flexDirection": "ROW",
-          "alignItems": "CENTER",
-          "alignContent": "STRETCH",
-          "alignSelf": "STRETCH",
-          "justifyContent": "SPACE_BETWEEN",
-          "flexGrow": 0
-        },
-        "+page:Screen.width > 450": {
-          "height": null,
-          "flexProps": {
-            "flexDirection": "COLUMN",
-            "flexGrow": 1
-          },
-          "marginTop": 2
-        },
-        "&_btn": {
-          "width": null,
-          "height": null,
-          "maxHeight": 41,
-          "maxWidth": 150,
-          "font": {
-            "family": "Lato",
-            "size": 15
-          },
-          "flexProps": {
-            "flexGrow": 1,
-            "alignSelf": "STRETCH"
-          },
-          "+page:Screen.width > 450": {
-            "maxWidth": null
-          }
-        }
-      }
-
-    },
-    "&-flSecond": {
-      "width": null,
-      "height": null,
-      "maxHeight": 310,
-      "marginBottom": null,
-      "flexProps": {
-        "flexGrow": 1,
-        "flexDirection": "COLUMN"
-      },
-      "+page:Screen.width > 448": {
-        "maxHeight": 150,
-        "marginBottom": 10
-      },
-      "&-infoPart": {
-        "width": null,
-        "maxHeight": 159,
-        "marginLeft": 10,
-        "marginRight": 10,
-        "marginTop": null,
-        "marginBottom": null,
-        "flexProps": {
-          "flexDirection": "COLUMN",
-          "alignItems": "STRETCH",
-          "alignContent": "STRETCH",
-          "flexGrow": 1
-        },
-        "+page: Screen.width > 449": {
-          "flexProps": {
-            "flexDirection": "ROW"
-          },
-          "marginTop": 8,
-          "marginBottom": 5,
-          "maxHeight": 70
-        },
-        "&-itemText": {
-          "width": null,
-          "height": null,
-          "font": {
-            "size": 14,
-            "family": "Lato"
-          },
-          "flexProps": {
-            "flexGrow": 1,
-            "alignSelf": "STRETCH"
-          },
-          "textAlignment": "MIDRIGHT",
-          "+page:Screen.width > 448  ": {
-            "textAlignment": "BOTTOMLEFT"
-          }
-        },
-        "&-flColor": {
-          "width": 100,
-          "height": 13
-        }
-      },
-      "&-divider": {
-        "@extend": ".flexLayout-line",
-        "width": null,
-        "maxWidth": null,
-        "maxHeight": 1,
-        "+page:Screen.width > 450": {
-          "width": 1,
-          "maxWidth": 1,
-          "maxHeight": null
-        }
-      },
-      "&-infoItem": {
-        "width": null,
-        "height": null,
-        "minWidth": 10,
-        "maxHeight": 38,
-        "flexProps": {
-          "alignItems": "STRETCH",
-          "justifyContent": "CENTER",
-          "flexDirection": "ROW",
-          "flexGrow": 1,
-          "alignSelf": "STRETCH"
-        },
-        "+page:Screen.width > 450": {
-          "maxHeight": 70,
-          "flexProps": {
-            "flexDirection": "COLUMN"
-          }
-        }
-      }
-    },
-    "&-flThird": {
-      "&-ReserveIndicates": {
-        "width": null,
-        "height": 200,
-        "flexProps": {
-          "positionType": "RELATIVE",
-          "flexDirection": "COLUMN",
-          "alignItems": "STRETCH",
-          "alignContent": "STRETCH",
-          "alignSelf": "STRETCH",
-          "justifyContent": "SPACE_BETWEEN"
-        },
-        "+page:Screen.width > 450": {
-          "flexProps": {
-            "flexDirection": "ROW"
-          },
-          "height": 100
-        },
-        "&-divider": {
-          "@extend": ".flexLayout-line",
-          "height": 0,
-          "maxHeight": 0,
-          "width": 0,
-          "+page:Screen.width > 450": {
-            "width": 20,
-            "maxWidth": 20,
-            "height": null
-          }
-        }
-      }
-    }
-  },
-  ".infoPartTextBlocks": {
-    "&_title": {},
-    "&_text": {
-      "textAlignment": "MIDRIGHT",
-      "flexProps": {
-        "flexGrow": 1
-      },
-      "+page:Screen.width > 450": {
-        "textAlignment": "MIDLEFT"
-      }
-    }
-  },
-  "#pgCustomerProfile_scw_flSecond_infoPart2": {
-    "&_job": {
-      "@extend": ".infoPartTextBlocks",
-      "&_text": {
-        "@extend": ".infoPartTextBlocks_text"
-      },
-      "&_title": {
-        "@extend": ".infoPartTextBlocks_title"
-      }
-    },
-    "&_brands": {
-      "@extend": ".infoPartTextBlocks",
-      "&_text": {
-        "@extend": ".infoPartTextBlocks_text"
-      },
-      "&_title": {
-        "@extend": ".infoPartTextBlocks_title"
-      }
-    },
-    "&_interest": {
-      "@extend": ".infoPartTextBlocks",
-      "&_text": {
-        "@extend": ".infoPartTextBlocks_text"
-      },
-      "&_title": {
-        "@extend": ".infoPartTextBlocks_title"
-      }
-    },
-    "&_mostLikedColors": {
-      "@extend": ".infoPartTextBlocks",
-      "&_title": {
-        "@extend": ".infoPartTextBlocks_title"
-      },
-      "&_flColor": {
-        "@extend": ".infoPartTextBlocks_text",
-        "width": null,
-        "height": 13,
-        "flexProps": {
-          "flexGrow": 1,
-          "alignItems": "STRETCH",
-          "justifyContent": "FLEX_END",
-          "alignContent": "STRETCH",
-          "flexDirection": "ROW",
-          "alignSelf": "CENTER"
-        },
-        "+page:Screen.width > 449 ": {
-          "flexProps": {
-            "justifyContent": "FLEX_START",
-            "alignSelf": "STRETCH",
-            "alignItems": "FLEX_END"
-          },
-          "maxHeight": 13
-        }
-      }
-    }
-  },
-  "#pgCustomerProfile_scw_flSecond_infoPart1": {
-    "&_store": {
-      "@extend": ".infoPartTextBlocks",
-      "&_text": {
-        "@extend": ".infoPartTextBlocks_text"
-      },
-      "&_title": {
-        "@extend": ".infoPartTextBlocks_title"
-      }
-    },
-    "&_lastPurchase": {
-      "@extend": ".infoPartTextBlocks",
-      "&_text": {
-        "@extend": ".infoPartTextBlocks_text"
-      },
-      "&_title": {
-        "@extend": ".infoPartTextBlocks_title"
-      }
-    },
-    "&_perVisit": {
-      "@extend": ".infoPartTextBlocks",
-      "&_text": {
-        "@extend": ".infoPartTextBlocks_text"
-      },
-      "&_title": {
-        "@extend": ".infoPartTextBlocks_title"
-      }
-    },
-    "&_joined": {
-      "@extend": ".infoPartTextBlocks",
-      "&_text": {
-        "@extend": ".infoPartTextBlocks_text"
-      },
-      "&_title": {
-        "@extend": ".infoPartTextBlocks_title"
-      }
-    }
-  }
+	"#pgCustomerProfile": {
+		".rightItem": {
+			"height": null,
+			"width": null,
+			"backgroundColor": "rgba(0,0,0,0)",
+			"visible": true,
+			"touchEnabled": true,
+			"flexProps": {
+				"alignSelf": "AUTO",
+				"direction": "INHERIT",
+				"alignContent": "STRETCH",
+				"alignItems": "CENTER",
+				"justifyContent": "FLEX_END",
+				"flexWrap": "NOWRAP",
+				"flexDirection": "ROW",
+				"positionType": "RELATIVE",
+				"flexGrow": 1
+			},
+			"paddingRight": 17.5,
+			"+page:Screen.width > 450": {
+				"visible": false,
+				"touchEnabled": false
+			}
+		},
+		"&_scw": {
+			"layoutHeight": 1050,
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1,
+				"alignItems": "STRETCH",
+				"alignContent": "STRETCH"
+			},
+			"+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
+				"layoutHeight": 750
+			},
+			"&_flSecond": {
+				"&_divider": {
+					"@extend": ".flexLayout-line",
+					"width": 0,
+					"maxWidth": 0,
+					"maxHeight": 0,
+					"height": 0,
+					"marginBottom": 0,
+					"marginTop": 0,
+					"+page:Screen.width > 450": {
+						"width": null,
+						"maxWidth": null,
+						"maxHeight": 1,
+						"height": 1,
+						"marginBottom": 3,
+						"marginTop": 3
+					}
+				}
+			},
+			"&_flThird": {
+				"&_flReserveIndicates": {
+					"&_flReservations": {
+						"&_flReservations": {
+							"&_scFlReservations": {}
+						}
+					}
+				}
+			}
+		},
+		".lblWishlistItemName": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"textColor": "#868686",
+			"textAlignment": "MIDCENTER",
+			"font": {
+				"family": "Lato",
+				"size": 20
+			}
+		},
+		".lblWishlistItemID": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"textColor": "#868686",
+			"textAlignment": "MIDCENTER",
+			"font": {
+				"family": "Lato",
+				"size": 20
+			}
+		},
+		".lblWishlistItemPrice": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"textColor": "#2D2D2D",
+			"textAlignment": "MIDCENTER",
+			"font": {
+				"family": "Lato",
+				"size": 20,
+				"bold": true
+			}
+		},
+		".lblReservationStatus": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"font": {
+				"family": "Lato",
+				"size": 12
+			},
+			"textAlignment": "MIDLEFT",
+			"marginLeft": 10,
+			"textColor": "#B9367B"
+		},
+		".lblReservationInfo": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"font": {
+				"family": "Lato",
+				"size": 12
+			},
+			"textAlignment": "MIDLEFT",
+			"marginLeft": 10,
+			"textColor": "#2A2A2A"
+		},
+		".lblReservationDate": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"font": {
+				"family": "Lato",
+				"size": 12
+			},
+			"textAlignment": "MIDLEFT",
+			"marginLeft": 10,
+			"textColor": "#6A6A6A"
+		},
+		".lblRecent": {
+			"width": null,
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"font": {
+				"family": "Lato",
+				"size": 12
+			},
+			"textAlignment": "MIDLEFT",
+			"marginLeft": 10,
+			"textColor": "#6A6A6A"
+		},
+		"&_flFirst": {
+			"width": null,
+			"height": null,
+			"maxHeight": 132,
+			"marginBottom": 0,
+			"flexProps": {
+				"flexGrow": 1,
+				"flexDirection": "COLUMN",
+				"alignItems": "STRETCH"
+			},
+			"+page:Screen.width > 450": {
+				"marginBottom": 10,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"flexGrow": 0.4
+				},
+				"maxHeight": 110
+			},
+			"&_flInfo": {
+				"width": null,
+				"height": null,
+				"backgroundColor": "rgba( 216, 216, 216, 0.55 )",
+				"flexProps": {
+					"flexGrow": 1.5
+				},
+				"+page:Screen.width > 450": {
+					"backgroundColor": "rgba( 216, 216, 216, 0 )"
+				},
+				"&_profile": {
+					"width": null,
+					"height": null,
+					"marginLeft": null,
+					"flexProps": {
+						"positionType": "RELATIVE",
+						"flexDirection": "ROW",
+						"flexGrow": 1
+					}
+				}
+			},
+			"&_flScores": {
+				"width": null,
+				"height": null,
+				"left": null,
+				"top": null,
+				"marginTop": null,
+				"marginBottom": null,
+				"marginLeft": 5,
+				"marginRight": 5,
+				"maxHeight": 55,
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"+page:Screen.width > 450": {
+					"maxHeight": null,
+					"minHieght": 55,
+					"flexProps": {
+						"flexGrow": 1.5
+					},
+					"marginTop": 0
+				},
+				"&_scoreItem": {
+					"left": null,
+					"top": null,
+					"width": null,
+					"height": null,
+					"flexProps": {
+						"positionType": "RELATIVE",
+						"flexDirection": "ROW",
+						"alignItems": "CENTER",
+						"justifyContent": "FLEX_START",
+						"flexGrow": 1,
+						"alignSelf": "STRETCH"
+					},
+					"+page:Screen.width > 450": {
+						"flexProps": {
+							"flexDirection": "COLUMN",
+							"flexGrow": 2,
+							"maxWidth": null
+						}
+					}
+				}
+			},
+			"&_flButtons": {
+				"width": null,
+				"height": 0,
+				"marginTop": null,
+				"maxWidth": null,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"flexDirection": "ROW",
+					"alignItems": "CENTER",
+					"alignContent": "STRETCH",
+					"alignSelf": "STRETCH",
+					"justifyContent": "SPACE_BETWEEN",
+					"flexGrow": 0
+				},
+				"+page:Screen.width > 450": {
+					"height": null,
+					"flexProps": {
+						"flexDirection": "COLUMN",
+						"flexGrow": 1
+					},
+					"marginTop": 2
+				},
+				"&_btn": {
+					"width": null,
+					"height": null,
+					"maxWidth": 150,
+					"font": {
+						"family": "Lato",
+						"size": 15
+					},
+					"flexProps": {
+						"flexGrow": 1,
+						"alignSelf": "STRETCH"
+					},
+					"+page:Screen.width > 450": {
+						"maxWidth": null
+					}
+				}
+			}
+		},
+		"&-flSecond": {
+			"width": null,
+			"height": null,
+			"maxHeight": 334,
+			"marginBottom": null,
+			"flexProps": {
+				"flexGrow": 1,
+				"flexDirection": "COLUMN"
+			},
+			"+page:Screen.width > 448": {
+				"maxHeight": 150,
+				"marginBottom": 10
+			},
+			"&-infoPart": {
+				"width": null,
+				"maxHeight": 167,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"marginTop": null,
+				"marginBottom": null,
+				"flexProps": {
+					"flexDirection": "COLUMN",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"flexGrow": 1
+				},
+				"+page: Screen.width > 449": {
+					"flexProps": {
+						"flexDirection": "ROW"
+					},
+					"marginTop": 8,
+					"marginBottom": 5,
+					"maxHeight": 70
+				},
+				"&-itemText": {
+					"width": null,
+					"height": null,
+					"font": {
+						"size": 14,
+						"family": "Lato"
+					},
+					"flexProps": {
+						"flexGrow": 1,
+						"alignSelf": "STRETCH"
+					},
+					"textAlignment": "MIDRIGHT",
+					"+page:Screen.width > 448  ": {
+						"textAlignment": "BOTTOMLEFT"
+					}
+				},
+				"&-flColor": {
+					"width": 100,
+					"height": 13
+				}
+			},
+			"&-divider": {
+				"@extend": ".flexLayout-line",
+				"width": null,
+				"maxWidth": null,
+				"maxHeight": 1,
+				"+page:Screen.width > 450": {
+					"width": 1,
+					"maxWidth": 1,
+					"maxHeight": null
+				}
+			},
+			"&-infoItem": {
+				"width": null,
+				"height": null,
+				"minWidth": 10,
+				"maxHeight": 40,
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"justifyContent": "CENTER",
+					"flexDirection": "ROW",
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				},
+				"+page:Screen.width > 450": {
+					"maxHeight": 70,
+					"flexProps": {
+						"flexDirection": "COLUMN"
+					}
+				}
+			}
+		},
+		"&-flThird": {
+			"&-ReserveIndicates": {
+				"width": null,
+				"height": 200,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"flexDirection": "COLUMN",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"alignSelf": "STRETCH",
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"+page:Screen.width > 450": {
+					"flexProps": {
+						"flexDirection": "ROW"
+					},
+					"height": 100
+				},
+				"&-divider": {
+					"@extend": ".flexLayout-line",
+					"height": 0,
+					"maxHeight": 0,
+					"width": 0,
+					"+page:Screen.width > 450": {
+						"width": 20,
+						"maxWidth": 20,
+						"height": null
+					}
+				}
+			}
+		},
+		"&_wishlistITem": {
+			"&_imageLayout": {
+				"bottom": 80,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignItems": "STRETCH",
+					"alignContent": "CENTER",
+					"justifyContent": "CENTER",
+					"flexGrow": 3
+				},
+				"height": null,
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"width": null,
+				"backgroundColor": "rgba( 247, 248, 250, 1 )"
+			}
+		},
+		".wishlistItem": {
+			"&_image": {
+				"width": null,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"imageFillType": "ASPECTFIT"
+			}
+		}
+	},
+	".infoPartTextBlocks": {
+		"&_title": {},
+		"&_text": {
+			"textAlignment": "MIDRIGHT",
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"+page:Screen.width > 450": {
+				"textAlignment": "MIDLEFT"
+			}
+		}
+	},
+	"#pgCustomerProfile_scw_flSecond_infoPart2": {
+		"&_job": {
+			"@extend": ".infoPartTextBlocks",
+			"&_text": {
+				"@extend": ".infoPartTextBlocks_text"
+			},
+			"&_title": {
+				"@extend": ".infoPartTextBlocks_title"
+			}
+		},
+		"&_brands": {
+			"@extend": ".infoPartTextBlocks",
+			"&_text": {
+				"@extend": ".infoPartTextBlocks_text"
+			},
+			"&_title": {
+				"@extend": ".infoPartTextBlocks_title"
+			}
+		},
+		"&_interest": {
+			"@extend": ".infoPartTextBlocks",
+			"&_text": {
+				"@extend": ".infoPartTextBlocks_text"
+			},
+			"&_title": {
+				"@extend": ".infoPartTextBlocks_title"
+			}
+		},
+		"&_mostLikedColors": {
+			"@extend": ".infoPartTextBlocks",
+			"&_title": {
+				"@extend": ".infoPartTextBlocks_title"
+			},
+			"&_flColor": {
+				"@extend": ".infoPartTextBlocks_text",
+				"width": null,
+				"height": 13,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_END",
+					"alignContent": "STRETCH",
+					"flexDirection": "ROW",
+					"alignSelf": "CENTER"
+				},
+				"+page:Screen.width > 449 ": {
+					"flexProps": {
+						"justifyContent": "FLEX_START",
+						"alignSelf": "STRETCH",
+						"alignItems": "FLEX_END"
+					},
+					"maxHeight": 13
+				}
+			}
+		}
+	},
+	"#pgCustomerProfile_scw_flSecond_infoPart1": {
+		"&_store": {
+			"@extend": ".infoPartTextBlocks",
+			"&_text": {
+				"@extend": ".infoPartTextBlocks_text"
+			},
+			"&_title": {
+				"@extend": ".infoPartTextBlocks_title"
+			}
+		},
+		"&_lastPurchase": {
+			"@extend": ".infoPartTextBlocks",
+			"&_text": {
+				"@extend": ".infoPartTextBlocks_text"
+			},
+			"&_title": {
+				"@extend": ".infoPartTextBlocks_title"
+			}
+		},
+		"&_perVisit": {
+			"@extend": ".infoPartTextBlocks",
+			"&_text": {
+				"@extend": ".infoPartTextBlocks_text"
+			},
+			"&_title": {
+				"@extend": ".infoPartTextBlocks_title"
+			}
+		},
+		"&_joined": {
+			"@extend": ".infoPartTextBlocks",
+			"&_text": {
+				"@extend": ".infoPartTextBlocks_text"
+			},
+			"&_title": {
+				"@extend": ".infoPartTextBlocks_title"
+			}
+		}
+	}
 }
