@@ -33,7 +33,7 @@
 				"alignContent": "STRETCH"
 			},
 			"+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
-				"layoutHeight": 750
+				"layoutHeight": 850
 			},
 			"&_flSecond": {
 				"&_divider": {
