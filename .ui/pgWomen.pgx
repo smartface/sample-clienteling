@@ -56,6 +56,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"id": "9425-0c93-396b-b7b0",
 			"props": {
+				"autoHeight": 49.230769230769226,
 				"children": [
 					"d932-8dc8-d410-d306",
 					"075d-f723-5e93-7b83",
@@ -66,6 +67,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"autoHeight": 49.230769230769226,
 				"backgroundColor": "rgba( 32, 32, 32, 1 )",
 				"flexProps": {
 					"flexDirection": "ROW",
@@ -82,6 +84,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"id": "d932-8dc8-d410-d306",
 			"props": {
+				"autoWidth": 18.46153846153846,
 				"children": [
 					"dcd5-3c07-675b-14de"
 				],
@@ -91,6 +94,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"autoWidth": 18.46153846153846,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
@@ -116,6 +120,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"id": "075d-f723-5e93-7b83",
 			"props": {
+				"autoWidth": 124.61538461538461,
 				"children": [
 					"8ed5-5382-2631-f09b"
 				],
@@ -124,6 +129,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"autoWidth": 124.61538461538461,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"flexGrow": 1
@@ -137,6 +143,7 @@
 			"className": ".label",
 			"id": "8ed5-5382-2631-f09b",
 			"props": {
+				"autoWidth": 63.07692307692307,
 				"children": [],
 				"name": "lblTitle",
 				"parent": "075d-f723-5e93-7b83",
@@ -144,6 +151,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 63.07692307692307,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -183,6 +191,7 @@
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone-flMain",
 			"id": "830a-dd25-540d-36c7",
 			"props": {
+				"autoHeight": 596.9230769230769,
 				"children": [
 					"7c43-1049-4f35-3fa8",
 					"6782-7c41-a811-2c72"
@@ -192,13 +201,16 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 1 )"
+				"autoHeight": 596.9230769230769,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {}
 			}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flInfoOuter",
 			"id": "6782-7c41-a811-2c72",
 			"props": {
+				"autoHeight": 298.46153846153845,
 				"children": [
 					"e7c9-c194-3efc-d500",
 					"47f8-6678-f299-571d"
@@ -207,12 +219,16 @@
 				"parent": "830a-dd25-540d-36c7"
 			},
 			"type": "FlexLayout",
-			"userProps": {}
+			"userProps": {
+				"autoHeight": 298.46153846153845,
+				"flexProps": {}
+			}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default",
 			"id": "e7c9-c194-3efc-d500",
 			"props": {
+				"autoHeight": 98.46153846153845,
 				"children": [
 					"499e-dd8b-a67b-140d",
 					"d48b-e391-efa9-816a"
@@ -222,6 +238,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"autoHeight": 98.46153846153845,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "COLUMN"
@@ -234,6 +251,7 @@
 			"className": ".label #pgWomenPhone.flInfo-flPart1-lblProductName",
 			"id": "499e-dd8b-a67b-140d",
 			"props": {
+				"autoHeight": 23.916083115797775,
 				"children": [],
 				"name": "lblProductName",
 				"parent": "e7c9-c194-3efc-d500",
@@ -242,6 +260,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 23.916083115797775,
 				"flexProps": {
 					"flexGrow": 0.6
 				},
@@ -254,6 +273,7 @@
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flInfo-flPart1-flDetail",
 			"id": "d48b-e391-efa9-816a",
 			"props": {
+				"autoHeight": 52.30769230769231,
 				"children": [
 					"6ca4-3afb-0033-f2ff",
 					"83bc-c9ef-7d44-e23d"
@@ -263,6 +283,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"autoHeight": 52.30769230769231,
 				"flexProps": {
 					"flexGrow": 0.7
 				}
@@ -272,6 +293,7 @@
 			"className": ".label #pgWomenPhone.flInfo-flPart1-flDetail-lblProductDetail",
 			"id": "6ca4-3afb-0033-f2ff",
 			"props": {
+				"autoHeight": 15.524475391094501,
 				"children": [],
 				"name": "lblProductDetail",
 				"parent": "d48b-e391-efa9-816a",
@@ -280,6 +302,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 15.524475391094501,
+				"flexProps": {},
 				"height": null,
 				"text": "Farlap Dress Sleve Top",
 				"usePageVariable": true
@@ -289,6 +313,7 @@
 			"className": ".label #pgWomenPhone.flInfo-flPart1-flDetail-lblProductPrice",
 			"id": "83bc-c9ef-7d44-e23d",
 			"props": {
+				"autoHeight": 23.916083115797775,
 				"children": [],
 				"name": "lblProductPrice",
 				"parent": "d48b-e391-efa9-816a",
@@ -297,6 +322,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 23.916083115797775,
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"flexGrow": 1
@@ -310,6 +336,7 @@
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flInfo-flPart2",
 			"id": "47f8-6678-f299-571d",
 			"props": {
+				"autoHeight": 189.23076923076923,
 				"children": [
 					"6cc0-1c81-4a7e-1235",
 					"839f-1c74-3380-99b5"
@@ -318,12 +345,16 @@
 				"parent": "6782-7c41-a811-2c72"
 			},
 			"type": "FlexLayout",
-			"userProps": {}
+			"userProps": {
+				"autoHeight": 189.23076923076923,
+				"flexProps": {}
+			}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone.flInfo",
 			"id": "6cc0-1c81-4a7e-1235",
 			"props": {
+				"autoHeight": 129.23076923076923,
 				"children": [
 					"ed04-3847-4f85-7623",
 					"11a7-71b1-43f8-6d96",
@@ -337,12 +368,16 @@
 				"parent": "47f8-6678-f299-571d"
 			},
 			"type": "FlexLayout",
-			"userProps": {}
+			"userProps": {
+				"autoHeight": 129.23076923076923,
+				"flexProps": {}
+			}
 		},
 		{
 			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"id": "ed04-3847-4f85-7623",
 			"props": {
+				"autoHeight": 15.524475391094501,
 				"children": [],
 				"name": "lblAbout",
 				"parent": "6cc0-1c81-4a7e-1235",
@@ -350,6 +385,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 15.524475391094501,
+				"flexProps": {},
 				"text": "ABOUT ITEM"
 			}
 		},
@@ -378,6 +415,7 @@
 			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"id": "cc35-b2c5-6398-8f32",
 			"props": {
+				"autoHeight": 15.524475391094501,
 				"children": [],
 				"name": "lblMaterial",
 				"parent": "6cc0-1c81-4a7e-1235",
@@ -386,6 +424,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 15.524475391094501,
+				"flexProps": {},
 				"text": "100% Cotton",
 				"usePageVariable": true
 			}
@@ -394,6 +434,7 @@
 			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"id": "5c8e-5a08-ab25-4525",
 			"props": {
+				"autoHeight": 15.524475391094501,
 				"children": [],
 				"name": "lblSize",
 				"parent": "6cc0-1c81-4a7e-1235",
@@ -402,6 +443,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 15.524475391094501,
+				"flexProps": {},
 				"text": "Size: M",
 				"usePageVariable": true
 			}
@@ -410,6 +453,7 @@
 			"className": ".label #pgWomenPhone.flInfo-flPart2-flInfo-lbl",
 			"id": "fc2a-0ce4-c1d4-5206",
 			"props": {
+				"autoHeight": 15.524475391094501,
 				"children": [],
 				"name": "lblColor",
 				"parent": "6cc0-1c81-4a7e-1235",
@@ -418,6 +462,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 15.524475391094501,
+				"flexProps": {},
 				"text": "Color: Light Blue",
 				"usePageVariable": true
 			}
@@ -426,6 +472,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"id": "dbe0-19c3-826c-fa21",
 			"props": {
+				"autoHeight": 13.846153846153845,
 				"children": [
 					"8c7e-bb21-6c57-e3df",
 					"64e4-47d2-7b4a-343d",
@@ -437,6 +484,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"autoHeight": 13.846153846153845,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW",
@@ -518,6 +566,7 @@
 			"className": ".flexLayout .flexLayout-default #pgWomenPhone-flButtons",
 			"id": "839f-1c74-3380-99b5",
 			"props": {
+				"autoHeight": 49.230769230769226,
 				"children": [
 					"2c1c-ec4a-17d6-169c",
 					"597b-f5c0-75ce-2c96"
@@ -526,12 +575,16 @@
 				"parent": "47f8-6678-f299-571d"
 			},
 			"type": "FlexLayout",
-			"userProps": {}
+			"userProps": {
+				"autoHeight": 49.230769230769226,
+				"flexProps": {}
+			}
 		},
 		{
 			"className": ".button #pgWomenPhone-btnAddToCard",
 			"id": "2c1c-ec4a-17d6-169c",
 			"props": {
+				"autoWidth": 100.62062190129207,
 				"children": [],
 				"name": "btnAddToCard",
 				"parent": "839f-1c74-3380-99b5",
@@ -539,6 +592,8 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"autoWidth": 100.62062190129207,
+				"flexProps": {},
 				"text": "ADD TO CART"
 			}
 		},
@@ -546,6 +601,7 @@
 			"className": ".button #pgWomenPhone-btnQuickOrder",
 			"id": "597b-f5c0-75ce-2c96",
 			"props": {
+				"autoWidth": 103.41782789963942,
 				"children": [],
 				"name": "btnQuickOrder",
 				"parent": "839f-1c74-3380-99b5",
@@ -553,6 +609,8 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"autoWidth": 103.41782789963942,
+				"flexProps": {},
 				"text": "QUICK ORDER"
 			}
 		},
@@ -561,6 +619,7 @@
 			"hiddenComponent": false,
 			"id": "7c43-1049-4f35-3fa8",
 			"props": {
+				"autoHeight": 289.2307692307692,
 				"children": [
 					"1f80-3c5c-334f-813d",
 					"8521-2d57-5232-5d31"
@@ -571,6 +630,8 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"autoHeight": 289.2307692307692,
+				"flexProps": {},
 				"maxWidth": null,
 				"usePageVariable": true
 			}
@@ -580,6 +641,7 @@
 			"hiddenComponent": false,
 			"id": "8521-2d57-5232-5d31",
 			"props": {
+				"autoHeight": 9.23076923076923,
 				"children": [],
 				"name": "dotIndicator",
 				"parent": "7c43-1049-4f35-3fa8",
@@ -591,13 +653,16 @@
 				"id": "cd3b-2912-1a7f-7558"
 			},
 			"type": "FlexLayout",
-			"userProps": {}
+			"userProps": {
+				"autoHeight": 9.23076923076923
+			}
 		},
 		{
 			"className": ".flexLayout",
 			"hiddenComponent": false,
 			"id": "1f80-3c5c-334f-813d",
 			"props": {
+				"autoHeight": 41.53846153846154,
 				"children": [],
 				"name": "flBusy",
 				"parent": "7c43-1049-4f35-3fa8"
@@ -609,6 +674,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"autoHeight": 41.53846153846154,
 				"bottom": 20,
 				"flex": {
 					"justifyContent": 1,

@@ -3,7 +3,6 @@ const PgWomenDesign = require('ui/ui_pgWomen');
 const pgWomenSwipePageFactory = require("pages/pgWomenSwipePageFactory");
 const SwipeView = require("sf-core/ui/swipeview");
 const Router = require("sf-core/ui/router");
-const flexProps = ["flexGrow", "flexDirection", "alignItems", "justifyContent"];
 const Color = require("sf-core/ui/color");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 
@@ -16,18 +15,6 @@ const PgWomen = extend(PgWomenDesign)(
     this.flHeaderLeft.onTouchEnded = function() {
       Router.goBack();
     };
-
-    /*this.subscribeContext = function(e) {
-      if (e.type == "new-styles") {
-        Object.keys(e.data).forEach(function(key) {
-          if (flexProps.some(function(prop) { return prop == key })) {
-            this.layout[key] = e.data[key];
-          } else {
-            this[key] = e.data[key];
-          }
-        }.bind(this));
-      }
-    };*/
   });
 
 /**
@@ -42,6 +29,7 @@ function onShow(superOnShow) {
 
   initDotIndicator(this);
   adjustHeaderBar(this);
+    console.log("onShow");
 
 }
 
@@ -52,10 +40,12 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+  console.log("onLoad");
   loadUI.call(this);
 }
 
 function loadUI() {
+  console.log("loadUI");
   const json = require("../sample-data/lookbook.json");
   var list = json.products;
   var swipeView = new SwipeView({
@@ -77,6 +67,7 @@ function loadUI() {
 
 function initDotIndicator(page) {
   page.dotIndicator.size = 4;
+  page.layout.applyLayout();
 }
 
 function onChildPageChanged(index) {
