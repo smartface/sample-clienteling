@@ -15,7 +15,7 @@ var sliderDrawer = new SliderDrawer({
             height: NaN,
             flexGrow: 1
         });
-        
+
         this.moveHighlight = uiSliderDrawer.moveHighlight;
         sliderDrawer.layout.addChild(uiSliderDrawer);
         sliderDrawer.onHide = function sliderDrawer_onHide() {
@@ -25,6 +25,17 @@ var sliderDrawer = new SliderDrawer({
             sliderDrawer.shown = true;
         };
         sliderDrawer.shown = false;
+        if (this.ios) {
+            this.ios.onSafeAreaPaddingChange = safeArea => {
+                console.log("SafeARea:", JSON.stringify(safeArea));
+                uiSliderDrawer.dispatch({
+                    type: "updateUserStyle",
+                    userStyle: {
+                        paddingTop: safeArea.top
+                    }
+                });
+            };
+        }
     },
     onShow: function() {
         console.log("sliderDrawer is shown");
