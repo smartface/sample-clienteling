@@ -71,13 +71,22 @@
 				"top": null,
 				"width": 1,
 				"+Device:Device.orientation === \"portrait\"": {
-					"left": -9
+					"visible": true
 				},
 				"&_1": {
+					"visible": true,
+					"left": 0,
+					"height": null,
 					"+Device:Device.orientation === \"portrait\"": {
-						"visible": false
-					},
-					"visible": true
+						"visible": false,
+						"height": 0,
+						"flexProps": {},
+						"marginTop": 0,
+						"marginBottom": 0
+					}
+				},
+				"+Device:Device.orientation === \"landscape\"": {
+					"left": 8
 				}
 			}
 		}

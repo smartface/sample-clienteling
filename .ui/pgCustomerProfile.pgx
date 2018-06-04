@@ -139,6 +139,7 @@
 			"className": ".label",
 			"id": "2d17-9585-e7de-c4f3",
 			"props": {
+				"autoWidth": 119.18181610107422,
 				"children": [],
 				"name": "lblTitle",
 				"parent": "d369-bb1c-5538-cfdc",
@@ -146,6 +147,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 119.18181610107422,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -246,6 +248,7 @@
 			"props": {
 				"children": [
 					"7d4b-01c2-8ed0-d305",
+					"10a8-bce3-3d5f-2158",
 					"2eb4-c2a8-14a5-5bdd",
 					"fd52-f336-52dc-05d5"
 				],
@@ -293,7 +296,6 @@
 			"id": "2eb4-c2a8-14a5-5bdd",
 			"props": {
 				"children": [
-					"f642-8d8d-6b52-cd04",
 					"ef17-c888-f5d5-abca",
 					"e84c-ae6a-9216-edb6",
 					"73b4-ee32-ea4b-f48a"
@@ -305,7 +307,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem",
+			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores_scoreItem #pgCustomerProfile_flFirst_flScores_scoreItem_1",
 			"hiddenComponent": false,
 			"id": "ef17-c888-f5d5-abca",
 			"props": {
@@ -323,6 +325,7 @@
 			"className": ".label #scoreItem-title",
 			"id": "1198-045a-6269-5390",
 			"props": {
+				"autoWidth": 40.09090805053711,
 				"children": [],
 				"name": "lblEngagementScore",
 				"parent": "ef17-c888-f5d5-abca",
@@ -331,6 +334,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 40.09090805053711,
+				"flexProps": {},
 				"text": "50",
 				"usePageVariable": true
 			}
@@ -339,6 +344,7 @@
 			"className": ".label #scoreItem-text",
 			"id": "1222-6018-0db2-d76b",
 			"props": {
+				"autoWidth": 125.41761016845703,
 				"children": [],
 				"name": "text",
 				"parent": "ef17-c888-f5d5-abca",
@@ -347,6 +353,9 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 125.41761016845703,
+				"flexProps": {},
+				"html": "ENGAGEMENT SCORE",
 				"text": "ENGAGEMENT SCORE",
 				"usePageVariable": true
 			}
@@ -381,6 +390,7 @@
 			"className": ".label #scoreItem-title",
 			"id": "3d4a-e8ce-f2e6-270b",
 			"props": {
+				"autoWidth": 59.18181610107422,
 				"children": [],
 				"name": "lblLoyaltyPoints",
 				"parent": "73b4-ee32-ea4b-f48a",
@@ -389,6 +399,9 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 59.18181610107422,
+				"flexProps": {},
+				"html": "350",
 				"text": "350",
 				"textColor": "rgba( 74, 163, 241, 1 )",
 				"usePageVariable": true
@@ -398,6 +411,7 @@
 			"className": ".label #scoreItem-text",
 			"id": "21af-c6cd-8d32-64c1",
 			"props": {
+				"autoWidth": 96.26988220214844,
 				"children": [],
 				"name": "text",
 				"parent": "73b4-ee32-ea4b-f48a",
@@ -406,6 +420,9 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 96.26988220214844,
+				"flexProps": {},
+				"html": "LOYALTY POINTS",
 				"text": "LOYALTY POINTS",
 				"usePageVariable": true
 			}
@@ -433,6 +450,7 @@
 			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
 			"id": "55d6-a003-70a7-75f7",
 			"props": {
+				"autoWidth": 91.15625,
 				"children": [],
 				"name": "shoppingBag",
 				"parent": "fd52-f336-52dc-05d5",
@@ -441,7 +459,9 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"autoWidth": 91.15625,
 				"backgroundColor": "rgba( 213, 38, 130, 1 )",
+				"flexProps": {},
 				"text": "Shopping Bag",
 				"usePageVariable": true
 			}
@@ -450,6 +470,7 @@
 			"className": ".button #pgCustomerProfile_flFirst_flButtons_btn",
 			"id": "4439-565e-8b6d-b09e",
 			"props": {
+				"autoWidth": 70.84375,
 				"children": [],
 				"name": "lookBook",
 				"parent": "fd52-f336-52dc-05d5",
@@ -458,6 +479,7 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"autoWidth": 70.84375,
 				"backgroundColor": "rgba( 74, 163, 240, 1 )",
 				"flexProps": {
 					"alignSelf": "STRETCH"
@@ -873,6 +895,7 @@
 			"className": ".label #pgDashboard_title",
 			"id": "dcfe-6325-f501-c7b5",
 			"props": {
+				"autoWidth": 135.5454559326172,
 				"children": [],
 				"name": "lblTitle",
 				"parent": "1245-577a-9f71-9e2c",
@@ -881,6 +904,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 135.5454559326172,
+				"flexProps": {},
 				"text": "ANNA'S WARDROBE",
 				"usePageVariable": true
 			}
@@ -984,6 +1009,7 @@
 			"className": ".label #pgDashboard_title",
 			"id": "5aea-815d-7511-5837",
 			"props": {
+				"autoWidth": 102.81817626953125,
 				"children": [],
 				"name": "lblTitle",
 				"parent": "c176-76db-f72a-588a",
@@ -992,6 +1018,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 102.81817626953125,
+				"flexProps": {},
 				"text": "RESERVATIONS",
 				"usePageVariable": true
 			}
@@ -1091,6 +1119,7 @@
 			"className": ".label #pgDashboard_title",
 			"id": "13c5-3c0d-8d72-275d",
 			"props": {
+				"autoWidth": 116.45454406738281,
 				"children": [],
 				"name": "lblTitle",
 				"parent": "8663-1128-e20e-1533",
@@ -1099,6 +1128,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 116.45454406738281,
+				"flexProps": {},
 				"text": "OPEN INCIDENTS",
 				"usePageVariable": true
 			}
@@ -1180,6 +1211,7 @@
 			"className": ".label #pgDashboard_title",
 			"id": "9b8b-50ca-b020-9e19",
 			"props": {
+				"autoWidth": 119.18181610107422,
 				"children": [],
 				"name": "lblTitle",
 				"parent": "80c1-ad97-85ba-5c91",
@@ -1188,6 +1220,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 119.18181610107422,
+				"flexProps": {},
 				"text": "ANNA'S WISHLIST",
 				"usePageVariable": true
 			}
@@ -1217,11 +1251,11 @@
 		},
 		{
 			"className": ".flexLayout .flexLayout-default .flexLayout-line #pgCustomerProile_flScores_divider #pgCustomerProile_flScores_divider_1",
-			"id": "f642-8d8d-6b52-cd04",
+			"id": "10a8-bce3-3d5f-2158",
 			"props": {
 				"children": [],
 				"name": "divider_1",
-				"parent": "2eb4-c2a8-14a5-5bdd"
+				"parent": "87f0-007d-52c4-18ff"
 			},
 			"type": "FlexLayout",
 			"userProps": {}

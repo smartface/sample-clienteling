@@ -183,7 +183,7 @@
 				"height": null,
 				"backgroundColor": "rgba( 216, 216, 216, 0.55 )",
 				"flexProps": {
-					"flexGrow": 1.5
+					"flexGrow": 1.3
 				},
 				"+page:Screen.width > 450": {
 					"backgroundColor": "rgba( 216, 216, 216, 0 )"
@@ -239,7 +239,24 @@
 						"flexProps": {
 							"flexDirection": "COLUMN",
 							"flexGrow": 2,
-							"maxWidth": null
+							"maxWidth": null,
+							"justifyContent": "FLEX_END"
+						}
+					},
+					"+Device:Device.orientation === \"portrait\"": {
+						"flexProps": {
+							"flexDirection": "ROW",
+							"justifyContent": "FLEX_END"
+						}
+					},
+					"&_1": {
+						"flexProps": {
+							"alignItems": "STRETCH"
+						},
+						"+Device:Device.orientation === \"portrait\"": {
+							"flexProps": {
+								"justifyContent": "FLEX_START"
+							}
 						}
 					}
 				}
