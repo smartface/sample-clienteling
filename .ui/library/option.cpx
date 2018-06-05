@@ -5,6 +5,7 @@
 			"hiddenComponent": true,
 			"id": "cef6-e901-fdef-32f2",
 			"props": {
+				"autoHeight": 19.858156028368796,
 				"children": [],
 				"name": "option",
 				"parent": "fb96-1dcf-3bb9-cd95",
@@ -15,7 +16,9 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 19.858156028368796,
 				"backgroundColor": "rgba( 37, 37, 37, 0 )",
+				"flexProps": {},
 				"font": {
 					"family": "Lato",
 					"size": 16,
