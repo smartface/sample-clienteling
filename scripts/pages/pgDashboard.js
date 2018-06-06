@@ -47,7 +47,7 @@ function onLoad(superOnLoad) {
   const page = this;
   superOnLoad();
   adjustHeaderBar(page);
-
+ page.svMain.backgroundColor = Color.WHITE;
   page.imgSignOut.onTouchEnded = function() {
     Router.goBack(isTablet ? "pgSignupTablet" : "pgSignupPhone");
   };
