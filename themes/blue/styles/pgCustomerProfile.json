@@ -24,7 +24,7 @@
 			}
 		},
 		"&_scw": {
-			"layoutHeight": 1050,
+			"layoutHeight": 1290,
 			"width": null,
 			"height": null,
 			"flexProps": {
@@ -33,7 +33,7 @@
 				"alignContent": "STRETCH"
 			},
 			"+Device:Device.orientation === \"landscape\"": {
-				"layoutHeight": 850
+				"layoutHeight": 890
 			},
 			"&_flSecond": {
 				"&_divider": {
@@ -311,19 +311,19 @@
 		"&-flSecond": {
 			"width": null,
 			"height": null,
-			"maxHeight": 334,
+			"maxHeight": 574,
 			"marginBottom": null,
 			"flexProps": {
 				"flexGrow": 1,
 				"flexDirection": "COLUMN"
 			},
 			"+Device:Device.orientation === \"landscape\"": {
-				"maxHeight": 150,
+				"maxHeight": 190,
 				"marginBottom": 10
 			},
 			"&-infoPart": {
 				"width": null,
-				"maxHeight": 167,
+				"maxHeight": 287,
 				"marginLeft": 10,
 				"marginRight": 10,
 				"marginTop": null,
@@ -340,7 +340,7 @@
 					},
 					"marginTop": 8,
 					"marginBottom": 5,
-					"maxHeight": 70
+					"maxHeight": 90
 				},
 				"&-itemText": {
 					"width": null,
@@ -378,7 +378,7 @@
 				"width": null,
 				"height": null,
 				"minWidth": 10,
-				"maxHeight": 40,
+				"maxHeight": 70,
 				"flexProps": {
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
@@ -387,7 +387,7 @@
 					"alignSelf": "STRETCH"
 				},
 				"+Device:Device.orientation === \"landscape\"": {
-					"maxHeight": 70,
+					"maxHeight": 90,
 					"flexProps": {
 						"flexDirection": "COLUMN"
 					}
