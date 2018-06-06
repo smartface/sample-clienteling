@@ -26,7 +26,7 @@
 				"positionType": "RELATIVE",
 				"flexGrow": 1
 			},
-			"+page: Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"layoutHeight": 550
 			},
 			"paddingLeft": 10,
@@ -57,13 +57,13 @@
 			"marginBottom": 20.5,
 			"minWidth": 240,
 			"maxWidth": 650,
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"minWidth": 300,
 				"marginRight": 15
 			},
 			".small": {
 				"height": 119.25,
-				"+page:Screen.width > 450": {
+				"+Device:Device.orientation === \"landscape\"": {
 					"minWidth": 300,
 					"marginRight": 15
 				}
@@ -91,7 +91,7 @@
 			},
 			"left": null,
 			"top": null,
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
@@ -211,7 +211,7 @@
 				"positionType": "RELATIVE",
 				"flexGrow": 1
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"flexProps": {
 					"flexDirection": "COLUMN"
 				}
@@ -239,7 +239,7 @@
 				"positionType": "RELATIVE",
 				"flexGrow": 1
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"flexProps": {
 					"flexDirection": "COLUMN"
 				}
@@ -284,7 +284,7 @@
 				"positionType": "RELATIVE",
 				"flexGrow": 2
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"textAlignment": "BOTTOMCENTER"
 			}
 		},
@@ -311,7 +311,7 @@
 				"positionType": "RELATIVE",
 				"flexGrow": 1
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"textAlignment": "MIDCENTER",
 				"marginLeft": 10,
 				"marginRight": 10,
@@ -345,7 +345,7 @@
 				"positionType": "RELATIVE",
 				"flexGrow": 2
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"textAlignment": "BOTTOMCENTER",
 				"flexProps": {
 					"flexGrow": 3
@@ -377,7 +377,7 @@
 				"positionType": "RELATIVE",
 				"flexGrow": 3
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"textAlignment": "MIDCENTER",
 				"marginLeft": 10,
 				"marginRight": 10
@@ -406,7 +406,7 @@
 				"positionType": "RELATIVE",
 				"flexGrow": 2
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"flexProps": {
 					"flexGrow": 3
 				},

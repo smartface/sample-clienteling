@@ -18,7 +18,7 @@
 				"flexGrow": 1
 			},
 			"paddingRight": 17.5,
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"visible": false,
 				"touchEnabled": false
 			}
@@ -32,7 +32,7 @@
 				"alignItems": "STRETCH",
 				"alignContent": "STRETCH"
 			},
-			"+page:(Screen.width > 450  && Screen.width < 800) || (Screen.width > 800 && Screen.width > Screen.height)": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"layoutHeight": 850
 			},
 			"&_flSecond": {
@@ -44,7 +44,7 @@
 					"height": 0,
 					"marginBottom": 0,
 					"marginTop": 0,
-					"+page:Screen.width > 450": {
+					"+Device:Device.orientation === \"landscape\"": {
 						"width": null,
 						"maxWidth": null,
 						"maxHeight": 1,
@@ -163,14 +163,14 @@
 		"&_flFirst": {
 			"width": null,
 			"height": null,
-			"maxHeight": 132,
+			"maxHeight": 157,
 			"marginBottom": 0,
 			"flexProps": {
 				"flexGrow": 1,
 				"flexDirection": "COLUMN",
 				"alignItems": "STRETCH"
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"marginBottom": 10,
 				"flexProps": {
 					"flexDirection": "ROW",
@@ -185,7 +185,7 @@
 				"flexProps": {
 					"flexGrow": 1.3
 				},
-				"+page:Screen.width > 450": {
+				"+Device:Device.orientation === \"landscape\"": {
 					"backgroundColor": "rgba( 216, 216, 216, 0 )"
 				},
 				"&_profile": {
@@ -208,13 +208,13 @@
 				"marginBottom": null,
 				"marginLeft": 5,
 				"marginRight": 5,
-				"maxHeight": 55,
+				"maxHeight": 80,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW",
 					"justifyContent": "SPACE_BETWEEN"
 				},
-				"+page:Screen.width > 450": {
+				"+Device:Device.orientation === \"landscape\"": {
 					"maxHeight": null,
 					"minHieght": 55,
 					"flexProps": {
@@ -230,32 +230,39 @@
 					"flexProps": {
 						"positionType": "RELATIVE",
 						"flexDirection": "ROW",
-						"alignItems": "CENTER",
+						"alignItems": "STRETCH",
 						"justifyContent": "FLEX_START",
 						"flexGrow": 1,
 						"alignSelf": "STRETCH"
 					},
-					"+page:Screen.width > 450": {
+					"+Device:Device.orientation === \"landscape\"": {
 						"flexProps": {
 							"flexDirection": "COLUMN",
 							"flexGrow": 2,
 							"maxWidth": null,
-							"justifyContent": "FLEX_END"
+							"justifyContent": "FLEX_START",
+							"alignItems": "CENTER"
 						}
 					},
 					"+Device:Device.orientation === \"portrait\"": {
 						"flexProps": {
 							"flexDirection": "ROW",
-							"justifyContent": "FLEX_END"
+							"justifyContent": "CENTER"
 						}
 					},
 					"&_1": {
 						"flexProps": {
-							"alignItems": "STRETCH"
+							"alignItems": "STRETCH",
+							"justifyContent": "CENTER"
 						},
 						"+Device:Device.orientation === \"portrait\"": {
 							"flexProps": {
-								"justifyContent": "FLEX_START"
+								"justifyContent": "CENTER"
+							}
+						},
+						"+Device:Device.orientation === \"landscape\"": {
+							"flexProps": {
+								"alignItems": "CENTER"
 							}
 						}
 					}
@@ -275,7 +282,7 @@
 					"justifyContent": "SPACE_BETWEEN",
 					"flexGrow": 0
 				},
-				"+page:Screen.width > 450": {
+				"+Device:Device.orientation === \"landscape\"": {
 					"height": null,
 					"flexProps": {
 						"flexDirection": "COLUMN",
@@ -295,7 +302,7 @@
 						"flexGrow": 1,
 						"alignSelf": "STRETCH"
 					},
-					"+page:Screen.width > 450": {
+					"+Device:Device.orientation === \"landscape\"": {
 						"maxWidth": null
 					}
 				}
@@ -310,7 +317,7 @@
 				"flexGrow": 1,
 				"flexDirection": "COLUMN"
 			},
-			"+page:Screen.width > 448": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"maxHeight": 150,
 				"marginBottom": 10
 			},
@@ -327,7 +334,7 @@
 					"alignContent": "STRETCH",
 					"flexGrow": 1
 				},
-				"+page: Screen.width > 449": {
+				"+Device:Device.orientation === \"landscape\"": {
 					"flexProps": {
 						"flexDirection": "ROW"
 					},
@@ -347,7 +354,7 @@
 						"alignSelf": "STRETCH"
 					},
 					"textAlignment": "MIDRIGHT",
-					"+page:Screen.width > 448  ": {
+					"+Device:Device.orientation === \"landscape\"": {
 						"textAlignment": "BOTTOMLEFT"
 					}
 				},
@@ -361,7 +368,7 @@
 				"width": null,
 				"maxWidth": null,
 				"maxHeight": 1,
-				"+page:Screen.width > 450": {
+				"+Device:Device.orientation === \"landscape\"": {
 					"width": 1,
 					"maxWidth": 1,
 					"maxHeight": null
@@ -379,7 +386,7 @@
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
 				},
-				"+page:Screen.width > 450": {
+				"+Device:Device.orientation === \"landscape\"": {
 					"maxHeight": 70,
 					"flexProps": {
 						"flexDirection": "COLUMN"
@@ -399,7 +406,7 @@
 					"alignSelf": "STRETCH",
 					"justifyContent": "SPACE_BETWEEN"
 				},
-				"+page:Screen.width > 450": {
+				"+Device:Device.orientation === \"landscape\"": {
 					"flexProps": {
 						"flexDirection": "ROW"
 					},
@@ -410,7 +417,7 @@
 					"height": 0,
 					"maxHeight": 0,
 					"width": 0,
-					"+page:Screen.width > 450": {
+					"+Device:Device.orientation === \"landscape\"": {
 						"width": 20,
 						"maxWidth": 20,
 						"height": null
@@ -454,7 +461,7 @@
 			"flexProps": {
 				"flexGrow": 1
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"textAlignment": "MIDLEFT"
 			}
 		}
@@ -504,7 +511,7 @@
 					"flexDirection": "ROW",
 					"alignSelf": "CENTER"
 				},
-				"+page:Screen.width > 449 ": {
+				"+Device:Device.orientation === \"landscape\"": {
 					"flexProps": {
 						"justifyContent": "FLEX_START",
 						"alignSelf": "STRETCH",
