@@ -11,7 +11,15 @@
 				"style": "Bold",
 				"bold": true
 			},
-			"textAlignment": "BOTTOMCENTER"
+			"textAlignment": "BOTTOMCENTER",
+			".big": {
+				"font": {}
+			},
+			"&_big": {
+				"font": {
+					"size": 120
+				}
+			}
 		},
 		".lbl50Off": {
 			"width": null,
@@ -27,17 +35,17 @@
 				"style": "Bold",
 				"bold": true
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"multiline": false
 			}
 		},
 		".btnShopNow": {
-			"width": 100,
-			"height": 30,
 			"borderColor": "#000000",
 			"borderWidth": 2,
 			"backgroundColor": "rgba(0,0,0,0)",
-			"textColor": "#000000"
+			"textColor": "#000000",
+			"height": null,
+			"width": null
 		},
 		".flShopNow": {
 			"width": null,
@@ -67,7 +75,7 @@
 			"flexProps": {
 				"flexGrow": 27
 			},
-			"+page:Screen.width > 450 && Screen.width > Screen.height": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"width": 0,
 				"height": 0,
 				"maxHeight": 0,
@@ -94,7 +102,7 @@
 			"flexProps": {
 				"flexGrow": 0
 			},
-			"+orientationChange:orientation == 'started' && Screen.width > Screen.height": {
+			"+Device:Device.orientation === \"portrait\"": {
 				"visible": false,
 				"width": 0,
 				"height": 0,
@@ -104,7 +112,7 @@
 					"flexGrow": 0
 				}
 			},
-			"+page:Screen.width > 450 && Screen.width > Screen.height": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"visible": true,
 				"width": null,
 				"height": null,
@@ -133,7 +141,7 @@
 				"size": 100,
 				"bold": true
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"font": {
 					"size": 70
 				},
@@ -154,14 +162,14 @@
 			".men": {
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
-				"+page:Screen.width > 1000": {
+				"+Device:Device.type === \"tablet\"": {
 					"height": 70,
 					"font": {
 						"size": 42
 					}
 				}
 			},
-			"+page:Screen.width > 1000": {
+			"+Device:Device.type === \"tablet\"": {
 				"height": 70,
 				"font": {
 					"size": 42
@@ -181,14 +189,14 @@
 			".men": {
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
-				"+page:Screen.width > 1000": {
+				"+Device:Device.type === \"tablet\"": {
 					"height": 50,
 					"font": {
 						"size": 26
 					}
 				}
 			},
-			"+page:Screen.width > 1000": {
+			"+Device:Device.type === \"tablet\"": {
 				"height": 50,
 				"font": {
 					"size": 26
@@ -202,12 +210,12 @@
 			"backgroundColor": "rgba(0,0,0,0)",
 			"multiline": true,
 			"marginRight": null,
-			"+page:Screen.width > 450 ": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"multiline": false,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 30
 			},
-			"+page:Screen.width > 1000 ": {
+			"+Device:Device.type === \"tablet\" ": {
 				"multiline": false,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 30,
@@ -228,11 +236,11 @@
 				"size": 20
 			},
 			"marginRight": null,
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 30
 			},
-			"+page:Screen.width > 1000": {
+			"+Device:Device.type === \"tablet\"": {
 				"height": 80,
 				"font": {
 					"size": 36
@@ -245,7 +253,7 @@
 			"textAlignment": "MIDCENTER",
 			"backgroundColor": "rgba(0,0,0,0)",
 			"multiline": true,
-			"+page:Screen.width > 1000": {
+			"+Device:Device.type === \"tablet\"": {
 				"height": 40,
 				"font": {
 					"size": 18
@@ -261,10 +269,10 @@
 			"font": {
 				"size": 20
 			},
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"height": 20
 			},
-			"+page:Screen.width > 1000": {
+			"+Device:Device.type === \"tablet\"": {
 				"height": 70,
 				"font": {
 					"size": 36
@@ -278,7 +286,7 @@
 				"positionType": "ABSOLUTE"
 			},
 			"imageFillType": "STRETCH",
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"bottom": -100
 			},
 			"top": 0,
@@ -294,7 +302,7 @@
 			},
 			"imageFillType": "STRETCH",
 			"image": "pgmainlookbook_men_vertical.png",
-			"+page:Screen.width > 450": {
+			"+Device:Device.orientation === \"landscape\"": {
 				"image": "pgmainlookbook_men_horizontal.png"
 			}
 		},
@@ -322,6 +330,33 @@
 			"left": null,
 			"right": null,
 			"bottom": null
+		},
+		"&_tablet": {
+			".small": {
+				"+Device:Device.type === \"tablet\"": {
+					"font": {
+						"size": 32
+					}
+				},
+				"top": null
+			},
+			".large": {
+				"+Device:Device.type === \"tablet\"": {
+					"font": {
+						"size": 42
+					},
+					"backgroundColor": "rgba( 126, 211, 33, 1 )"
+				},
+				"alpha": 1
+			},
+			".xlarge": {
+				"+Device:Device.type === \"tablet\"": {
+					"font": {
+						"size": 190
+					}
+				},
+				"top": null
+			}
 		}
 	}
 }
