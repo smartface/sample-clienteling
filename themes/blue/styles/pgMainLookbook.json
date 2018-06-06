@@ -27,8 +27,8 @@
 			"flexProps": {
 				"flexGrow": 1
 			},
-			"textColor": "#D52682",
-			"multiline": true,
+			"textColor": "rgba( 213, 38, 130, 1 )",
+			"multiline": false,
 			"textAlignment": "MIDCENTER",
 			"font": {
 				"size": 30,
@@ -343,19 +343,45 @@
 			".large": {
 				"+Device:Device.type === \"tablet\"": {
 					"font": {
-						"size": 42
-					},
-					"backgroundColor": "rgba( 126, 211, 33, 1 )"
+						"size": 50
+					}
 				},
 				"alpha": 1
 			},
 			".xlarge": {
 				"+Device:Device.type === \"tablet\"": {
 					"font": {
-						"size": 190
+						"size": 150
 					}
 				},
 				"top": null
+			},
+			".mlarge": {
+				"alpha": 1,
+				"+Device:Device.type === \"tablet\"": {
+					"font": {
+						"size": 42
+					}
+				}
+			},
+			".msmall": {
+				"alpha": 1,
+				"+Device:Device.type === \"tablet\"": {
+					"font": {
+						"size": 35
+					}
+				}
+			},
+			".mxlarge": {
+				"alpha": 1,
+				"+Device:Device.type === \"tablet\"": {
+					"font": {
+						"size": 120
+					}
+				},
+				"font": {
+					"size": 120
+				}
 			}
 		}
 	}

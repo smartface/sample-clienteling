@@ -264,7 +264,7 @@
 			}
 		},
 		{
-			"className": ".label #pgMainLookbook.lblSale",
+			"className": ".label #pgMainLookbook.lblSale #pgMainLookbook_tablet.msmall",
 			"id": "5a00-2ed6-3339-989c",
 			"props": {
 				"children": [],
@@ -278,7 +278,7 @@
 			}
 		},
 		{
-			"className": ".label #pgMainLookbook.lbl50Off",
+			"className": ".label #pgMainLookbook.lbl50Off #pgMainLookbook_tablet.mlarge",
 			"id": "8a07-cd8f-ffa8-e75b",
 			"props": {
 				"children": [],
@@ -305,7 +305,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".button #pgMainLookbook.btnShopNow",
+			"className": ".button #pgMainLookbook.btnShopNow #pgMainLookbook_tablet.msmall",
 			"id": "c68f-b762-2a68-82b8",
 			"props": {
 				"children": [],
@@ -364,6 +364,7 @@
 			"type": "TextView",
 			"userProps": {
 				"html": "50% OFF",
+				"multiline": false,
 				"text": "50% OFF"
 			}
 		},
@@ -395,7 +396,7 @@
 			}
 		},
 		{
-			"className": ".label #pgMainLookbook.lblSaleBackground",
+			"className": ".label #pgMainLookbook.lblSaleBackground #pgMainLookbook_tablet.mxlarge",
 			"id": "3f4c-786e-3168-cf95",
 			"props": {
 				"children": [],
@@ -405,6 +406,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"html": "SALE",
 				"text": "SALE"
 			}
 		},
