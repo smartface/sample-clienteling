@@ -59,5 +59,7 @@
 		<true/>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<true/>
+		<key>NSFaceIDUsageDescription</key>
+		<string>Use Face ID</string>
 	</dict>
 </plist>
