@@ -5,7 +5,7 @@
     "chai": "^4.1.2",
     "js-base": "^1.0.4",
     "mixin-deep": "^1.2.0",
-    "sf-core": "^3.0.1",
+    "sf-core": "^3.0.2-beta.1",
     "sf-extension-mcs": "*",
     "sf-extension-utils": "^3.9.1"
   }
