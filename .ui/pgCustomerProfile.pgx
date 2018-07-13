@@ -292,6 +292,17 @@
 			}
 		},
 		{
+			"className": ".flexLayout .flexLayout-default .flexLayout-line #pgCustomerProile_flScores_divider #pgCustomerProile_flScores_divider_1",
+			"id": "10a8-bce3-3d5f-2158",
+			"props": {
+				"children": [],
+				"name": "divider_1",
+				"parent": "87f0-007d-52c4-18ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_flFirst_flScores",
 			"id": "2eb4-c2a8-14a5-5bdd",
 			"props": {
@@ -354,8 +365,11 @@
 			"type": "TextView",
 			"userProps": {
 				"autoWidth": 125.41761016845703,
-				"flexProps": {},
+				"flexProps": {
+					"flexGrow": 3.15
+				},
 				"html": "ENGAGEMENT SCORE",
+				"maxWidth": 90,
 				"text": "ENGAGEMENT SCORE",
 				"usePageVariable": true
 			}
@@ -421,7 +435,9 @@
 			"type": "TextView",
 			"userProps": {
 				"autoWidth": 96.26988220214844,
-				"flexProps": {},
+				"flexProps": {
+					"flexGrow": 3.15
+				},
 				"html": "LOYALTY POINTS",
 				"text": "LOYALTY POINTS",
 				"usePageVariable": true
@@ -1248,17 +1264,6 @@
 				"usePageVariable": true,
 				"width": null
 			}
-		},
-		{
-			"className": ".flexLayout .flexLayout-default .flexLayout-line #pgCustomerProile_flScores_divider #pgCustomerProile_flScores_divider_1",
-			"id": "10a8-bce3-3d5f-2158",
-			"props": {
-				"children": [],
-				"name": "divider_1",
-				"parent": "87f0-007d-52c4-18ff"
-			},
-			"type": "FlexLayout",
-			"userProps": {}
 		}
 	]
 }
