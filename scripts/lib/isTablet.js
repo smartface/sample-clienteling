@@ -1,5 +1,5 @@
 /* globals Android*/
-const orientationLib = require("sf-extension-utils").orientation;
+const orientationLib = require("sf-extension-utils/lib/orientation");
 const System = require('sf-core/device/system');
 
 var isTablet = false;

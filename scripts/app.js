@@ -20,14 +20,14 @@ if (System.OS === "iOS") {
   Router.sliderDrawer = require("./sliderDrawer");
 }
 
-Router.add("pgDashboard", require("./pages/pgDashboard"), true);
-Router.add("pgSignupPhone", require("./pages/pgSignupPhone"), true);
-Router.add("pgSignupTablet", require("./pages/pgSignupTablet"), true);
-Router.add("pgMainLookbook", require("./pages/pgMainLookbook"), true);
-Router.add("pgLookbook", require("./pages/pgLookbook"), true);
-Router.add("pgWomen", require("./pages/pgWomen"), true);
-Router.add("pgCustomerProfile", require("./pages/pgCustomerProfile"), true);
-Router.add("pgShoppingBag", require("./pages/pgShoppingBag"), true);
+Router.add("pgDashboard", "pages/pgDashboard", true);
+Router.add("pgSignupPhone", "pages/pgSignupPhone", true);
+Router.add("pgSignupTablet", "pages/pgSignupTablet", true);
+Router.add("pgMainLookbook", "pages/pgMainLookbook", true);
+Router.add("pgLookbook", "pages/pgLookbook", true);
+Router.add("pgWomen", "pages/pgWomen", true);
+Router.add("pgCustomerProfile", "pages/pgCustomerProfile", true);
+Router.add("pgShoppingBag", "pages/pgShoppingBag", true);
 Router.go("pgSignup" + (isTablet ? "Tablet" : "Phone"), {
   appStart: true
 });

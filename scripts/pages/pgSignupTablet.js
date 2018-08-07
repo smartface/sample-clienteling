@@ -1,11 +1,10 @@
 const extend = require('js-base/core/extend');
 const PgSignupTabletDesign = require('ui/ui_pgSignupTablet');
 const Router = require("sf-core/ui/router");
-const fingerprint = require("sf-extension-utils").fingerprint;
+const fingerprint = require("sf-extension-utils/lib/fingerprint");
 const authService = require("../service/AuthService");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
-const rau = require("sf-extension-utils").rau;
-const System = require('sf-core/device/system');
+const rau = require("sf-extension-utils/lib/rau");
 
 const PgSignupTablet = extend(PgSignupTabletDesign)(
   // Constructor
