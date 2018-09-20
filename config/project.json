@@ -63,7 +63,7 @@
 						"active": false
 					}
 				},
-				"playerPath": null
+				"playerPath": "players/iOS/facebookplayer.zip"
 			},
 			"android": {
 				"scripts": "scripts",
@@ -84,7 +84,7 @@
 						"active": false
 					}
 				},
-				"playerPath": null
+				"playerPath": "players/Android/Player.zip"
 			},
 			"keys": {
 				"project3DesKey": "MQ8HGSY4gG/baBHy1DGNMMyP7xdHtmix",
