@@ -12,9 +12,9 @@ Sample Customer Targeting Project
   <img src="temp/ct1.jpeg" width="250">
   <img src="temp/ct2.jpeg" width="250" hspace="30">
   <img src="temp/ct3.jpeg" width="250">
-  <img src="temp/ct4.jpeg" width="250" hspace="30">
-  <img src="temp/ct5.jpeg" width="250">
-  <img src="temp/ct6.jpeg" width="250" hspace="30">
+  <img src="temp/ct4.jpeg" width="250">
+  <img src="temp/ct5.jpeg" width="250" hspace="30">
+  <img src="temp/ct6.jpeg" width="250">
 </div>
 
 ## Getting the Project
