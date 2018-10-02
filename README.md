@@ -2,11 +2,11 @@
   <img height=75 src="https://github.com/smartface/sample-clienteling/blob/master/temp/smartface_logo.png" alt="smartface Logo" />
 </h3>
 
-# Clienteling from Smartface
+# Sample Customer Targeting Application from Smartface
 [![Twitter: @Smartface_io](https://img.shields.io/badge/contact-@Smartface_io-blue.svg?style=flat)](https://twitter.com/smartface_io)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/smartface/sample-clienteling/blob/master/LICENSE.md)
 
-A sample app to demonstrate Clienteling Application that can be developed by Smartface.
+Sample Customer Targeting Project
 
 ## See Also
 - [Smartface E-Commerce App](https://github.com/smartface/sample-sparrow)
