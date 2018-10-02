@@ -9,12 +9,8 @@
 Sample Customer Targeting Project
 
 <div style="display:flex;">
-<img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct1.jpeg">
-<img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct2.jpeg" hspace="30">
-  <img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct3.jpeg">
-  <img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct4.jpeg">
-  <img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct5.jpeg" hspace="30">
-  <img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct6.jpeg">
+  ![](temp/ct1.jpeg)
+
 </div>
 
 ## Getting the Project
