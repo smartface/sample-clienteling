@@ -17,7 +17,8 @@
 </div>
 
 ## Getting the Project
-- Click on the button "New App Project" on the Smartface Cloud IDE
+- Click on the following url https://developer.smartface.io/docs/create-new-project
+- After signing in successfully click on the button "New App Project" on the Smartface Cloud IDE
 - Name the project as you wish
 - Fill "Clone from Git or Mercurial URL" as:
 ```javascript
