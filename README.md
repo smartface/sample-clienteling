@@ -8,6 +8,26 @@
 
 Sample Customer Targeting Project
 
+<div style="display:flex;">
+<img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct1.jpeg">
+<img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct2.jpeg">
+  <img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct3.jpeg">
+  <img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct4.jpeg">
+  <img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct5.jpeg">
+  <img width=250 src="https://github.com/omerbulgak/sample-clienteling/blob/master/temp/ct6.jpeg">
+</div>
+
+## Getting the Project
+- Click on the button "New App Project" on the Smartface Cloud IDE
+- Name the project as you wish
+- Fill "Clone from Git or Mercurial URL" as:
+```javascript
+https://github.com/omerbulgak/sample-clienteling.git
+```
+- Open the terminal inside the project created and <strong>cd</strong> to scripts under the workspace.
+- Then type 'npm install'
+- You have the project and you can now configure the Application.
+
 ## See Also
 - [Smartface E-Commerce App](https://github.com/smartface/sample-sparrow)
 - [Smartface Field Service App](https://github.com/smartface/sample-field-service)
@@ -19,9 +39,8 @@ Please [submit an issue](https://github.com/smartface/sample-clienteling/issues)
 
 ## Support & Documentation & Useful Links
 - [Guides](https://developer.smartface.io)
-- [API Docs](http://docs.smartface.io)
+- [API Docs](http://ref.smartface.io)
 - [Smartface Cloud Dashboard](https://cloud.smartface.io)
-- [Download Smartface App](https://smf.to/app) (Works only from your device)
 
 ## Code of Conduct
 We are committed to making participation in this project a harassment-free experience for everyone, regardless of the level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, religion, or nationality.
