@@ -24,7 +24,7 @@ Sample Customer Targeting Project
 ```javascript
 https://github.com/omerbulgak/sample-clienteling.git
 ```
-- Open the created project then type<strong>cd scripts && npm install</strong> in the terminal.
+- Open the created project then type <strong>cd scripts && npm install</strong> in the terminal.
 - You have the project and you can now configure the Application.
 
 ## See Also
