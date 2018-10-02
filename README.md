@@ -8,6 +8,17 @@
 
 A sample app to demonstrate Clienteling Application that can be developed by Smartface.
 
+## Installation
+This repository depends on [smartface.io](https://smartface.io) runtime.
+You need to clone this repository inside a [**Smartface Cloud IDE Workspace**](https://cloud.smartface.io/Home/Index)
+After you clone the repository:
+* Open your terminal
+* Go to scripts folder (cd scripts)
+* Run "npm i" command to get latest sf-core
+
+## Styling
+You can change application theme with editing style files under [`themes`](https://github.com/smartface/sample-self-service/tree/master/themes) folder.
+
 ## See Also
 - [Smartface E-Commerce App](https://github.com/smartface/sample-sparrow)
 - [Smartface Field Service App](https://github.com/smartface/sample-field-service)
