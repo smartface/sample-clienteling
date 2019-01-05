@@ -16,17 +16,6 @@
   <img src="temp/ct6.jpeg" width="250">
 </div>
 
-## Getting the Project
-- Click on the following url https://developer.smartface.io/docs/create-new-project
-- After signing in successfully click on the button "New App Project" on the Smartface Cloud IDE
-- Name the project as you wish
-- Fill "Clone from Git or Mercurial URL" as:
-```javascript
-https://github.com/omerbulgak/sample-clienteling.git
-```
-- Open the created project then type `cd scripts && npm install` in the terminal.
-- You have the project and you can now configure the Application.
-
 ## See Also
 - [Smartface E-Commerce App](https://github.com/smartface/sample-sparrow)
 - [Smartface Field Service App](https://github.com/smartface/sample-field-service)
