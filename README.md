@@ -3,10 +3,29 @@
 </h3>
 
 # Clienteling from Smartface
+
 [![Twitter: @Smartface_io](https://img.shields.io/badge/contact-@Smartface_io-blue.svg?style=flat)](https://twitter.com/smartface_io)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/smartface/sample-clienteling/blob/master/LICENSE.md)
 
-A sample app to demonstrate Clienteling Application that can be developed by Smartface.
+<div style="display:flex;">
+  <img src="temp/ct1.jpeg" width="250">
+  <img src="temp/ct2.jpeg" width="250" hspace="30">
+  <img src="temp/ct3.jpeg" width="250">
+  <img src="temp/ct4.jpeg" width="250">
+  <img src="temp/ct5.jpeg" width="250" hspace="30">
+  <img src="temp/ct6.jpeg" width="250">
+</div>
+
+## Getting the Project
+- Click on the following url https://developer.smartface.io/docs/create-new-project
+- After signing in successfully click on the button "New App Project" on the Smartface Cloud IDE
+- Name the project as you wish
+- Fill "Clone from Git or Mercurial URL" as:
+```javascript
+https://github.com/omerbulgak/sample-clienteling.git
+```
+- Open the created project then type `cd scripts && npm install` in the terminal.
+- You have the project and you can now configure the Application.
 
 ## See Also
 - [Smartface E-Commerce App](https://github.com/smartface/sample-sparrow)
@@ -19,9 +38,8 @@ Please [submit an issue](https://github.com/smartface/sample-clienteling/issues)
 
 ## Support & Documentation & Useful Links
 - [Guides](https://developer.smartface.io)
-- [API Docs](http://docs.smartface.io)
+- [API Docs](http://ref.smartface.io)
 - [Smartface Cloud Dashboard](https://cloud.smartface.io)
-- [Download Smartface App](https://smf.to/app) (Works only from your device)
 
 ## Code of Conduct
 We are committed to making participation in this project a harassment-free experience for everyone, regardless of the level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, religion, or nationality.
