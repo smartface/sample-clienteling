@@ -14,7 +14,7 @@ function login(user, pass) {
       url: url,
       onLoad: function(e) {
         var responseBody = e.body.toString();
-
+        //console.log("responseBody:"+responseBody);
         var parseJSON = JSON.parse(responseBody);
         if (username === parseJSON[0].username && password === parseJSON[0].password) {
           return resolve(null, responseBody);

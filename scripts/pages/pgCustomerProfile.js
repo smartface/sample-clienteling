@@ -3,36 +3,18 @@ const PgCustomerProfileDesign = require('ui/ui_pgCustomerProfile');
 const FlWardrobe = require("components/FlWardrobe");
 const FlCustomerProfileReservationItem = require("components/FlCustomerProfileReservationItem");
 const LvCustomerProfileWishlistItem = require("components/LvCustomerProfileWishlistItem");
-const Router = require("sf-core/ui/router");
+//const Router = require("sf-core/ui/router");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const customerService = require("../service/Customer");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 	// Constructor
-	function(_super) {
+	function(_super, routeData, router) {
 		_super(this);
+		this._router = router;
+		this._routeData = routeData;
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-
-		this.shoppingBag.onPress = function() {
-			Router.go("pgShoppingBag");
-		};
-		
-		this.lookBook.onPress = function() {
-			Router.go("pgMainLookbook");
-		};
-		
-		this.flHeaderLeft.onTouchEnded = function() {
-			Router.goBack();
-		};
-		
-		this.imgLookbook.onTouchEnded = function() {
-			Router.go("pgMainLookbook");
-		};
-		
-		this.imgShoppingBag.onTouchEnded = function() {
-			Router.go("pgShoppingBag");
-		};
 	});
 
 /**
@@ -43,7 +25,7 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
  */
 function onShow(superOnShow) {
 	superOnShow();
-	Router.sliderDrawer.enabled = false;
+	//Router.sliderDrawer.enabled = false;
 }
 
 /**
@@ -56,6 +38,23 @@ function onLoad(superOnLoad) {
 	superOnLoad();
 	loadUI.call(this);
 	adjustHeaderBar(page);
+	page.flHeaderLeft.onTouchEnded = function() {
+		page._router.goBack();
+	};
+	page.shoppingBag.onPress = function() {
+		page._router.push("/pages/pgShoppingBag");
+	};
+
+	page.lookBook.onPress = function() {
+		page._router.push("/pages/pgMainLookbook");
+	};
+	page.imgLookbook.onTouchEnded = function() {
+		page._router.push("/pages/pgMainLookbook");
+	};
+
+	page.imgShoppingBag.onTouchEnded = function() {
+		page._router.push("/pages/pgShoppingBag");
+	};
 }
 
 function addInfo(json) {
@@ -105,7 +104,7 @@ function addWardrobe(items) {
 		});
 
 		this.swWardrobe.layout.addChild(fl, "wardrobeItem_" + index);
-		
+
 		fl.dispatch({
 			type: "updateUserStyle",
 			userStyle: {
@@ -124,46 +123,44 @@ function addWardrobe(items) {
  */
 function addReservations(items) {
 	this.scFlReservations.layout.removeAll();
-	
+
 	items.forEach((item, index) => {
 		var fl = new FlCustomerProfileReservationItem({}, item);
-		
-		this.scFlReservations.layout.addChild(fl, 
-			"reservations_" + index, 
-			"", 
-			{
+
+		this.scFlReservations.layout.addChild(fl,
+			"reservations_" + index,
+			"", {
 				width: 140,
 				height: 50,
 				marginRight: 20
 			});
 	});
-	
+
 	this.scFlReservations.layout.width = 170 * items.length;
 }
 
 function addOpenIncidents(items) {
 	this.scwIndicates.layout.removeAll();
-	
+
 	items.forEach((item, index) => {
 		var fl = new FlCustomerProfileReservationItem({}, item);
-		
+
 		this.scwIndicates.layout.addChild(
-			fl, 
-			"incitends_" + index, 
-			"", 
-			{
+			fl,
+			"incitends_" + index,
+			"", {
 				width: 140,
 				height: 50,
 				marginRight: 20
 			});
 	});
-	
+
 	this.scwIndicates.layout.width = 170 * items.length;
 }
 
 function addWishlistItems(items) {
 	this.wishlistScw.layout.removeAll();
-	
+
 	items.forEach((item, index) => {
 		var fl = new LvCustomerProfileWishlistItem({}, {
 			image: item.image,
@@ -171,18 +168,17 @@ function addWishlistItems(items) {
 			name: item.name,
 			model: item.productId
 		});
-		
+
 		this.wishlistScw.layout.addChild(
-			fl, 
-			"wishlistItem_" + index, 
-			"", 
-			{
+			fl,
+			"wishlistItem_" + index,
+			"", {
 				width: 130,
 				height: 240,
 				marginRight: 20
 			});
 	});
-	
+
 	this.wishlistScw.layout.width = 150 * items.length;
 }
 

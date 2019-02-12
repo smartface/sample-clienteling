@@ -37,5 +37,7 @@ SMF.i18n.defineLanguage('tr', {
 	"updateFail": "Güncelleme başarısız oldu",
 	"updateIsInProgress": "Güncelleme sürüyor",
 	"noInternetMessage": "İnternet Bağlantısı yok",
-	"noInternetTitle": "Bağlanamıyor"
+	"noInternetTitle": "Bağlanamıyor",
+	
+	"titleText":"Tercih edilen magaza"
 });

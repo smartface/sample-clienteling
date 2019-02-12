@@ -36,6 +36,7 @@ function contructorFactory(url) {
 			this.orientation = Page.Orientation.AUTO;
 			this.image = img;
 			url && setTimeout(() => img.loadFromUrl(url), 1000);
+		
 			componentContextPatch(this, "svipeviewLayout");
 			this.layout.addChild(busy, "busy");
 			this.layout.addChild(img, "image");
@@ -43,8 +44,8 @@ function contructorFactory(url) {
 }
 // Page.onShow -> This event is called when a page appears on the screen (everytime).
 function onShow() {
-	this.headerBar.visible = false;
-	this.statusBar.visible = false;
+	//this.headerBar.visible = false;
+	//this.statusBar.visible = false;
 }
 
 function onLoad() {}

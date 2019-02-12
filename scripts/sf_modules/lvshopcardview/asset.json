@@ -1,0 +1,44 @@
+{
+	"name": "lvshopcardview",
+	"type": "library",
+	"title": "List ShopCard View",
+	"author": "ali.pinar@smartface.io",
+	"description": "Listview component with example shopcard view",
+	"themePath": "themes/lvshopcardview_style.json",
+	"resources": {
+		"images": [
+			"star_icon_mp"
+		],
+		"fonts": [
+			"SFProText"
+		],
+		"classNames": [
+			".listView",
+			".shoppingCard_lvi",
+			".listViewItem",
+			".shoppingCard_lvi_item",
+			".flexLayout",
+			".shoppingCard_lvi_item_main",
+			".imageView",
+			".shoppingCard_lvi_item_main_imgLogo",
+			".shoppingCard_lvi_item_main_fldetail",
+			".label",
+			".shoppingCard_lvi_item_main_fldetail_lbltitle",
+			".shoppingCard_lvi_item_main_fldetail_lblsubtitle",
+			".shoppingCard_lvi_item_main_fldetail_flStarRank",
+			".shoppingCard_lvi_item_main_fldetail_flStarRank_flStars",
+			".shoppingCard_starIcon",
+			".sf-imageView",
+			".shoppingCard_lvi_item_main_fldetail_flStarRank_lblRank",
+			".shoppingCard_lvi_item_main_lblCost",
+			".shoppingCard_lvi_item_main_flLine"
+		]
+	},
+	"dependencies": [],
+	"imagePaths": [
+		"preview/listviewshopcard.png",
+		"preview/lvitableShopCard.png"
+	],
+	"version": "1.0.8",
+	"readMePath": "README.md"
+}

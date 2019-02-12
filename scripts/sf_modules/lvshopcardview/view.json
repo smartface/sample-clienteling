@@ -1,0 +1,359 @@
+{
+	"components": [
+		{
+			"className": ".listView .shoppingCard_lvi",
+			"hiddenComponent": false,
+			"id": "ec6d-1681-856a-2c4f",
+			"initialized": true,
+			"props": {
+				"children": [
+					"59a1-df91-81ef-4d75"
+				],
+				"itemCount": 5,
+				"name": "lvshopcardview",
+				"parent": "57f4-201f-4bfc-5fc6",
+				"rowHeight": 111,
+				"usePageVariable": false
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Lvshopcardview",
+				"modulePath": "lvshopcardview"
+			},
+			"type": "ListView",
+			"userProps": {
+				"itemCount": 5,
+				"rowHeight": 111,
+				"usePageVariable": false
+			}
+		},
+		{
+			"className": ".listViewItem .shoppingCard_lvi_item",
+			"id": "59a1-df91-81ef-4d75",
+			"props": {
+				"children": [
+					"a193-3fc2-7735-782b"
+				],
+				"name": "lviItemShopCard",
+				"parent": "ec6d-1681-856a-2c4f",
+				"usePageVariable": false
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 96,
+				"left": null,
+				"right": 0,
+				"usePageVariable": false,
+				"width": 360
+			}
+		},
+		{
+			"className": ".flexLayout .shoppingCard_lvi_item_main",
+			"id": "a193-3fc2-7735-782b",
+			"initialized": true,
+			"props": {
+				"children": [
+					"cdd1-454b-983b-6ba2",
+					"3e42-9193-7ba6-b28e",
+					"680b-c61a-16e8-fa24",
+					"5456-daf6-6592-0330"
+				],
+				"name": "flShopCard",
+				"parent": "59a1-df91-81ef-4d75",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 111.00000234750601,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".imageView .shoppingCard_lvi_item_main_imgLogo",
+			"id": "cdd1-454b-983b-6ba2",
+			"props": {
+				"autoHeight": 0,
+				"autoWidth": 0,
+				"children": [],
+				"name": "imgLogo",
+				"parent": "a193-3fc2-7735-782b",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 0,
+				"autoWidth": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .shoppingCard_lvi_item_main_fldetail",
+			"id": "3e42-9193-7ba6-b28e",
+			"props": {
+				"children": [
+					"96f0-8782-a1b4-87a7",
+					"3ea7-2625-8cbd-a3aa",
+					"5569-b82d-ec29-d81d"
+				],
+				"name": "flDetail",
+				"parent": "a193-3fc2-7735-782b",
+				"usePageVariable": false
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": false
+			}
+		},
+		{
+			"className": ".label .shoppingCard_lvi_item_main_fldetail_lbltitle",
+			"id": "96f0-8782-a1b4-87a7",
+			"props": {
+				"autoHeight": 18.5,
+				"children": [],
+				"name": "lblTitle",
+				"parent": "3e42-9193-7ba6-b28e",
+				"text": "John Doe",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 18.5,
+				"text": "John Doe",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label .shoppingCard_lvi_item_main_fldetail_lblsubtitle",
+			"id": "3ea7-2625-8cbd-a3aa",
+			"props": {
+				"autoHeight": 20.5,
+				"children": [],
+				"name": "lblSubtitle",
+				"parent": "3e42-9193-7ba6-b28e",
+				"text": "New York Travel Guide",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 20.5,
+				"text": "New York Travel Guide",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .shoppingCard_lvi_item_main_fldetail_flStarRank",
+			"id": "5569-b82d-ec29-d81d",
+			"props": {
+				"children": [
+					"d68f-de52-df6b-98e1",
+					"6504-de42-d104-e758"
+				],
+				"name": "flStarRank",
+				"parent": "3e42-9193-7ba6-b28e",
+				"usePageVariable": false
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": false
+			}
+		},
+		{
+			"className": ".flexLayout .shoppingCard_lvi_item_main_fldetail_flStarRank_flStars",
+			"id": "d68f-de52-df6b-98e1",
+			"props": {
+				"children": [
+					"fa9e-4ce7-40a2-1e3c",
+					"9877-5cd7-b329-780a",
+					"aa0a-9b7e-4e7a-a908",
+					"e956-5778-aa47-db46",
+					"0459-824c-5aac-ae19"
+				],
+				"name": "flStars",
+				"parent": "5569-b82d-ec29-d81d",
+				"usePageVariable": false
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": false
+			}
+		},
+		{
+			"className": ".imageView .shoppingCard_starIcon",
+			"id": "fa9e-4ce7-40a2-1e3c",
+			"props": {
+				"children": [],
+				"name": "imgStar1",
+				"parent": "d68f-de52-df6b-98e1",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".imageView .shoppingCard_starIcon",
+			"id": "9877-5cd7-b329-780a",
+			"props": {
+				"children": [],
+				"name": "imgStar2",
+				"parent": "d68f-de52-df6b-98e1",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".imageView .shoppingCard_starIcon",
+			"id": "aa0a-9b7e-4e7a-a908",
+			"props": {
+				"children": [],
+				"name": "imgStar3",
+				"parent": "d68f-de52-df6b-98e1",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".imageView .shoppingCard_starIcon",
+			"id": "e956-5778-aa47-db46",
+			"props": {
+				"children": [],
+				"name": "imgStar4",
+				"parent": "d68f-de52-df6b-98e1",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".imageView .shoppingCard_starIcon",
+			"id": "0459-824c-5aac-ae19",
+			"props": {
+				"children": [],
+				"name": "imgStar5",
+				"parent": "d68f-de52-df6b-98e1",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label .shoppingCard_lvi_item_main_fldetail_flStarRank_lblRank",
+			"id": "6504-de42-d104-e758",
+			"props": {
+				"autoWidth": 22.90625,
+				"children": [],
+				"name": "lblRank",
+				"parent": "5569-b82d-ec29-d81d",
+				"text": "(61)",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"autoWidth": 22.90625,
+				"text": "(61)",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label .shoppingCard_lvi_item_main_lblCost",
+			"id": "680b-c61a-16e8-fa24",
+			"props": {
+				"children": [],
+				"name": "lblCost",
+				"parent": "a193-3fc2-7735-782b",
+				"text": "$10.99",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "$10.99",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .shoppingCard_lvi_item_main_flLine",
+			"id": "5456-daf6-6592-0330",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "a193-3fc2-7735-782b",
+				"usePageVariable": false
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": false
+			}
+		}
+	]
+}

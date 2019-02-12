@@ -47,4 +47,6 @@ SMF.i18n.defineLanguage('en', {
 	"scanFingerprintMessage": "Scan your finger",
 	"noInternetMessage": "No Internet Connection",
 	"noInternetTitle": "Connection Failed",
+	
+	"titleText":"Preferred store"
 });

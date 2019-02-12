@@ -17,5 +17,12 @@
 	},
 	".flexLayout-default": {
 		"height": 200
+	},
+	".flexLayout": {
+		"&-default": {
+			"height": 190,
+			"width": null
+		},
+		"height": 343
 	}
 }
