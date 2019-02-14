@@ -26,7 +26,8 @@
 				"right": 0,
 				"top": 0,
 				"width": null
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".activityIndicator",

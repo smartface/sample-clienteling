@@ -1,6 +1,5 @@
 const extend = require('js-base/core/extend');
 const PgSignupPhoneDesign = require('ui/ui_pgSignupPhone');
-// const Router = require("sf-core/ui/router");
 const fingerprint = require("sf-extension-utils/lib/fingerprint");
 const authService = require("../service/AuthService");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
@@ -9,8 +8,7 @@ const rau = require("sf-extension-utils/lib/rau");
 const PgSignupPhone = extend(PgSignupPhoneDesign)(
     function(_super, routeData, router) {
         _super(this);
-        // console.log("routeData: "+routeData);
-        
+
         this._router = router;
         this._routeData = routeData;
 
@@ -28,11 +26,7 @@ function onShow(superOnShow) {
     const page = this;
     superOnShow();
     var data = page._routeData || {};
-    console.log("data: "+data);
-    console.log(data);
-    // Router.sliderDrawer.enabled = false;
     data.appStart && fingerprint.init({
-        //fingerprint.init({
         userNameTextBox: page.taUserID,
         passwordTextBox: page.taPassword,
         autoLogin: false, // TODO: set true after clearing static login values from textboxes

@@ -16,60 +16,32 @@ require("sf-extension-utils");
 require("./context/pageContext");
 require("./theme");
 
-//const Router = require("sf-core/ui/router");
-const System = require("sf-core/device/system");
 const isTablet = require("./lib/isTablet");
-
-// const {
-//     NativeRouter: Router,
-//     Router: RouterBase,
-//     NativeStackRouter: StackRouter,
-//     BottomTabBarRouter,
-//     Route
-// } = require("@smartface/router");
-
 const Router = require("@smartface/router/src/native/NativeRouter");
 const StackRouter = require("@smartface/router/src/native/NativeStackRouter");
-const BottomTabBarRouter = require("@smartface/router/src/native/BottomTabBarRouter");
 const Route = require("@smartface/router/src/router/Route");
+const sliderDrawerWrapper = require('./sliderdrawerwrapper');
 
-
-/*if (System.OS === "iOS") {
-  Router.sliderDrawer = require("./sliderDrawer");
-}
-
-Router.add("pgDashboard", "pages/pgDashboard", true);
-Router.add("pgSignupPhone", "pages/pgSignupPhone", true);
-Router.add("pgSignupTablet", "pages/pgSignupTablet", true);
-Router.add("pgMainLookbook", "pages/pgMainLookbook", true);
-Router.add("pgLookbook", "pages/pgLookbook", true);
-Router.add("pgWomen", "pages/pgWomen", true);
-Router.add("pgCustomerProfile", "pages/pgCustomerProfile", true);
-Router.add("pgShoppingBag", "pages/pgShoppingBag", true);
-Router.go("pgSignup" + (isTablet ? "Tablet" : "Phone"), {
-  appStart: true
-});
-
-if (System.OS === "Android") {
-  Router.sliderDrawer = require("./sliderDrawer");
-}*/
 
 const router = Router.of({
     path: "/",
-    //to: "/pages/pgDashboard",
     isRoot: true,
     routes: [
         StackRouter.of({
             path: "/pages",
-            //to: "/pages/pgDashboard",
             headerBarParams: () => { ios: { translucent: false } },
             routes: [
                 Route.of({
                     path: "/pages/pgDashboard",
+                    routeDidEnter: (router, route) => {
+                        sliderDrawerWrapper.enabled = true;
+                        sliderDrawerWrapper.hide();
+                    },
+                    routeDidExit: (router, route) => {},
                     build: (router, route) => {
                         const { routeData, view } = route.getState();
                         let pgDashboard = require("./pages/pgDashboard");
-                        return new pgDashboard(routeData, router);
+                        return new pgDashboard(routeData, router, sliderDrawerWrapper);
                     }
                 }),
                 Route.of({
@@ -133,12 +105,10 @@ const router = Router.of({
     ]
 });
 
+const routerSuffix = isTablet ? 'pgSignupTablet' : 'pgSignupPhone';
+router.push(`/pages/${routerSuffix}`, { appStart: true });
 
-
-isTablet ? router.push("/pages/pgSignupTablet", {appStart: true}) : router.push("/pages/pgSignupPhone", {appStart: true});
-//const routerSuffix = isTablet ? 'pgSignupTablet' : 'pgSignupPhone';
-//router.push(`/pages/${routerSuffix}`, { appStart: true });
-
+//isTablet ? router.push("/pages/pgSignupTablet", {appStart: true}) : router.push("/pages/pgSignupPhone", {appStart: true});
 // mcs.launch().then(() => {
 //   console.log("mcs launch sucess");
 // }).catch((err) => {

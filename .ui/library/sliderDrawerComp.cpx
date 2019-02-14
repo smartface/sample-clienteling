@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"className": ".flexLayout .flexLayout-default .sliderDrawer",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"id": "e02d-b805-d189-cc15",
 			"props": {
 				"children": [
@@ -10,7 +10,7 @@
 					"6b9d-554a-79dc-dcc0",
 					"fc35-0810-4140-336f"
 				],
-				"name": "sliderDrawer",
+				"name": "sliderDrawerComp",
 				"parent": "fb96-1dcf-3bb9-cd95"
 			},
 			"source": {
@@ -27,7 +27,8 @@
 				"paddingTop": 25,
 				"top": 91.37931097121466,
 				"width": 300
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".flexLayout .flexLayout-default",

@@ -26,7 +26,8 @@
 				"left": 15.517241379310345,
 				"top": 370.68965517241384,
 				"width": 312.0689655172414
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".imageView",

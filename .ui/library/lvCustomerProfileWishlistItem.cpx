@@ -22,7 +22,8 @@
 				"left": 201.66666666666669,
 				"top": 285,
 				"width": 155
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_wishlistITem_imageLayout",
@@ -124,6 +125,7 @@
 			"className": ".label #pgCustomerProfile.lblWishlistItemName",
 			"id": "89fc-4433-049e-8b0d",
 			"props": {
+				"autoHeight": 19.148936170212767,
 				"children": [],
 				"name": "name",
 				"parent": "1f67-2d48-76c0-c7af",
@@ -135,6 +137,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 19.148936170212767,
 				"font": {
 					"size": 14
 				},
@@ -147,6 +150,7 @@
 			"hiddenComponent": false,
 			"id": "feaf-d42b-c758-6e50",
 			"props": {
+				"autoHeight": 19.148936170212767,
 				"children": [],
 				"name": "model",
 				"parent": "1f67-2d48-76c0-c7af",
@@ -158,6 +162,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 19.148936170212767,
 				"font": {
 					"size": 14
 				},
@@ -169,6 +174,7 @@
 			"className": ".label #pgCustomerProfile.lblWishlistItemPrice",
 			"id": "ad0e-3b5f-2337-8122",
 			"props": {
+				"autoHeight": 20.851064235606092,
 				"children": [],
 				"name": "price",
 				"parent": "1f67-2d48-76c0-c7af",
@@ -180,6 +186,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 20.851064235606092,
 				"font": {
 					"size": 15
 				},

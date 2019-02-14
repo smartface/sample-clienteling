@@ -27,7 +27,8 @@
 				"left": 79.36507936507937,
 				"top": 258.73015873015873,
 				"width": 186.95652173913044
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".label #scoreItem-title",

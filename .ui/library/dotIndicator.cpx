@@ -26,7 +26,8 @@
 				"left": 16.666666666666668,
 				"top": 286.6666666666667,
 				"width": 163.33333333333334
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.inactive",

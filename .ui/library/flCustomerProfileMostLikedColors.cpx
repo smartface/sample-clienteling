@@ -25,12 +25,14 @@
 				"left": 15,
 				"top": 226.66666666666669,
 				"width": 335
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".label",
 			"id": "e40c-2e66-3203-1bd6",
 			"props": {
+				"autoWidth": 93.61702127659575,
 				"children": [],
 				"name": "title",
 				"parent": "cae6-e684-ae6f-aaa5",
@@ -39,6 +41,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 93.61702127659575,
 				"flexProps": {
 					"flexGrow": 1
 				},

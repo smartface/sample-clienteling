@@ -1,13 +1,11 @@
 const extend = require('js-base/core/extend');
 const PgSignupTabletDesign = require('ui/ui_pgSignupTablet');
-// const Router = require("sf-core/ui/router");
 const fingerprint = require("sf-extension-utils/lib/fingerprint");
 const authService = require("../service/AuthService");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const rau = require("sf-extension-utils/lib/rau");
 
 const PgSignupTablet = extend(PgSignupTabletDesign)(
-    // Constructor
     function(_super) {
         _super(this);
         this.onShow = onShow.bind(this, this.onShow.bind(this));
@@ -20,17 +18,10 @@ const PgSignupTablet = extend(PgSignupTabletDesign)(
     }
 );
 
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} parameters passed from Router.go function
- */
 function onShow(superOnShow, data) {
     const page = this;
     superOnShow();
     data = data || {};
-    // Router.sliderDrawer.enabled = false;
     data.appStart && fingerprint.init({
         userNameTextBox: page.taUserID,
         passwordTextBox: page.taPassword,
@@ -43,8 +34,9 @@ function onShow(superOnShow, data) {
                 return alert("password is required");
             authService.login(page.taUserID.text, password).then((succeed) => {
                 fingerprintResult && fingerprintResult.success(); //Important!
+                page._router.push('/pages/pgDashboard');
                 page.indicator.visible = false;
-                // Router.go('pgDashboard');
+                page.flBlock.visible = false;
             }).catch(function(error) {
                 page.indicator.visible = false;
                 return alert("Cannot login. Check user name and password. Or system is down");
@@ -58,7 +50,6 @@ function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
     adjustHeaderBar(page);
-    //sets login information when press
     onTouch_image.call(this);
 
     // if (System.OS === "Android") {

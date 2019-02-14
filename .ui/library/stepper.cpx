@@ -26,7 +26,8 @@
 				"left": 79.71014492753623,
 				"top": 244.9275362318841,
 				"width": 74.32432432432432
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".label #stepper-label",

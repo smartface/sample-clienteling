@@ -25,7 +25,8 @@
 				"left": 8.695652173913043,
 				"top": 65.21739130434783,
 				"width": 273.9130434782609
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".imageView",
@@ -143,6 +144,7 @@
 			"id": "b32e-ba03-46b6-52b8",
 			"props": {
 				"children": [],
+				"html": "Joined January 10th 2017",
 				"name": "date",
 				"parent": "9335-b874-bd11-7b0c",
 				"text": "Joined January 10th 2017",

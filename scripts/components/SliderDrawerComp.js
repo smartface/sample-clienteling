@@ -5,24 +5,24 @@ const extend = require('js-base/core/extend');
 
 const Color = require('sf-core/ui/color');
 
-const SliderDrawerDesign = require('library/SliderDrawer');
+const SliderDrawerCompDesign = require('library/SliderDrawerComp');
 const FlIcon = require('components/FlIcon');
 const Option = require('components/Option');
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 
 var activeCategoryColor = Color.create("#5193E2"),
-  activeOptionColor = Color.create("#1d1d1d");
+    activeOptionColor = Color.create("#1d1d1d");
   
 function addChild(childName, child) {
-  this.children = this.children || {};
-  this.children[childName] = child;
-  if (this.layout)
-    this.layout.addChild(this.children[childName]);
-  else
-    this.addChild(this.children[childName]);
+    this.children = this.children || {};
+    this.children[childName] = child;
+    if (this.layout)
+        this.layout.addChild(this.children[childName]);
+    else
+        this.addChild(this.children[childName]);
 }
 
-const SliderDrawer = extend(SliderDrawerDesign)(
+const SliderDrawerComp = extend(SliderDrawerCompDesign)(
   //constructor
   function(_super, props, pageName) {
     // initalizes super class for this scope
@@ -87,4 +87,4 @@ function onTouchCategory(id) {
   this._activeCategory = id;
 }
 
-module && (module.exports = SliderDrawer);
+module && (module.exports = SliderDrawerComp);

@@ -31,7 +31,8 @@
 				"text": "Profile",
 				"textColor": "rgba( 240, 240, 240, 1 )",
 				"width": null
-			}
+			},
+			"initialized": true
 		}
 	]
 }

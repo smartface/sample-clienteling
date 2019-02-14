@@ -3,12 +3,10 @@ const PgCustomerProfileDesign = require('ui/ui_pgCustomerProfile');
 const FlWardrobe = require("components/FlWardrobe");
 const FlCustomerProfileReservationItem = require("components/FlCustomerProfileReservationItem");
 const LvCustomerProfileWishlistItem = require("components/LvCustomerProfileWishlistItem");
-//const Router = require("sf-core/ui/router");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 const customerService = require("../service/Customer");
 
 const PgCustomerProfile = extend(PgCustomerProfileDesign)(
-	// Constructor
 	function(_super, routeData, router) {
 		_super(this);
 		this._router = router;
@@ -17,22 +15,10 @@ const PgCustomerProfile = extend(PgCustomerProfileDesign)(
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 	});
 
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} parameters passed from Router.go function
- */
 function onShow(superOnShow) {
 	superOnShow();
-	//Router.sliderDrawer.enabled = false;
 }
 
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
 function onLoad(superOnLoad) {
 	const page = this;
 	superOnLoad();
@@ -183,14 +169,12 @@ function addWishlistItems(items) {
 }
 
 function loadUI() {
-	//customerService.getCutomerProfile(1445).then((json) => {
 	const json = require("../sample-data/customerProfile.json");
 	addInfo.call(this, json);
 	addWardrobe.call(this, json.wardrobe);
 	addReservations.call(this, json.reservations);
 	addOpenIncidents.call(this, json.openIncidents);
 	addWishlistItems.call(this, json.whishlist);
-	//});
 }
 
 module && (module.exports = PgCustomerProfile);

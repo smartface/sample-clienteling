@@ -23,7 +23,8 @@
 				"left": 12.06896551724138,
 				"top": 27.586206896551726,
 				"width": 341.6666666666667
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".flexLayout .flexLayout-default",

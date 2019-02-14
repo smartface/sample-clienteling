@@ -1,10 +1,8 @@
 const extend = require('js-base/core/extend');
 const PgMainLookbookDesign = require('ui/ui_pgMainLookbook');
-//const Router = require("sf-core/ui/router");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
 
 const PgMainLookbook = extend(PgMainLookbookDesign)(
-  // Constructor
   function(_super, routeData, router) {
     _super(this);
     this._router = router;
@@ -15,7 +13,6 @@ const PgMainLookbook = extend(PgMainLookbookDesign)(
 
 function onShow(superOnShow) {
   superOnShow();
-  //Router.sliderDrawer.enabled = false;
 }
 
 function onLoad(superOnLoad) {

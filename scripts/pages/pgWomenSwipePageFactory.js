@@ -8,7 +8,6 @@ const componentContextPatch = require("@smartface/contx/lib/smartface/componentC
 
 function contructorFactory(url) {
 	return extend(Page)(
-		// Constructor
 		function(_super, props) {
 			_super(this, {
 				onShow: onShow.bind(this),
@@ -42,7 +41,7 @@ function contructorFactory(url) {
 			this.layout.addChild(img, "image");
 		});
 }
-// Page.onShow -> This event is called when a page appears on the screen (everytime).
+
 function onShow() {
 	//this.headerBar.visible = false;
 	//this.statusBar.visible = false;

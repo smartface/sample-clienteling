@@ -23,7 +23,8 @@
 				"left": 14.130434782608695,
 				"top": 590.2173913043478,
 				"width": 221
-			}
+			},
+			"initialized": true
 		},
 		{
 			"className": ".label #pgCustomerProfile.lblReservationStatus",

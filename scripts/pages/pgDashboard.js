@@ -1,6 +1,5 @@
 const extend = require('js-base/core/extend');
 const PgDashboardDesign = require('ui/ui_pgDashboard');
-//const Router = require("sf-core/ui/router");
 const Color = require('sf-core/ui/color');
 const System = require('sf-core/device/system');
 const FlDashboardItem1 = require('components/FlDashboardItem1');
@@ -9,42 +8,27 @@ const FlDashboardItem3 = require('components/FlDashboardItem3');
 const FlDashboardItem4 = require('components/FlDashboardItem4');
 const FlDashboardItem5 = require('components/FlDashboardItem5');
 const Animator = require('sf-core/ui/animator');
-const isTablet = require("../lib/isTablet");
 const adjustHeaderBar = require("../lib/adjustHeaderBar");
-// const addPageContextChild = require("@smartface/contx/lib/smartface/action/addPageContextChild");
-// const pushClassNames = require("@smartface/contx/lib/styling/action/pushClassNames");
-const overScrollMode = require('sf-core/ui/android/overscrollmode');
 
 const RGB_BLUE = [74, 144, 226];
 const RGB_RED = [185, 54, 123];
 const ARGB_BLUE = [63, 74, 144, 226];
 
 const PgDashboard = extend(PgDashboardDesign)(
-    // Constructor
-    function(_super, routeData, router) {
+    function(_super, routeData, router, sliderDrawer) {
         _super(this);
         this._router = router;
         this._routeData = routeData;
+        this._sliderDrawer = sliderDrawer;
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     });
 
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} parameters passed from Router.go function
- */
 function onShow(superOnShow) {
     superOnShow();
-    //Router.sliderDrawer.enabled = true;
+    this._sliderDrawer.enabled = true;
 }
 
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
 function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
@@ -52,7 +36,6 @@ function onLoad(superOnLoad) {
     page.svMain.backgroundColor = Color.WHITE;
     //page.svMain.android.overScrollMode = overScrollMode.NEVER;
     page.imgSignOut.onTouchEnded = function() {
-        //Router.goBack(isTablet ? "pgSignupTablet" : "pgSignupPhone");
         page._router.goBack();
     };
 
@@ -62,7 +45,7 @@ function onLoad(superOnLoad) {
     };
 
     page.flHeaderLeft.onTouchEnded = function() {
-        //Router.sliderDrawer.show();
+        page._sliderDrawer.toggleShow();
     };
 
     // Simulate incoming notification
@@ -88,13 +71,11 @@ function addReservations(items) {
             //move to style
             flDashboardItem1.lblItemTitle.textColor = Color.create.apply(null, RGB_RED);
         }
-
         // TODO: Date
         // page.flReservationItems.dispatch(addPageContextChild("reservations_"+index, flDashboardItem1));
         // flDashboardItem1.dispatch(pushClassNames(".dashboardDataElement"));
         page.flReservationItems.addChild(flDashboardItem1, "reservations_" + index, ".dashboardDataElement", {});
         page.flReservationItems.height += flDashboardItem1.height;
-
     });
 }
 
@@ -234,7 +215,7 @@ function loadUI() {
     var json = require("../sample-data/dashboardData.json");
     //userService.getUserData().then((userJson) => {
     addUserInfo.call(this, userJson);
-    //    dashboardService.getDashboardData().then((json) => {
+    //dashboardService.getDashboardData().then((json) => {
     addInformation.call(this, json.information);
     addReservations.call(this, json.reservations);
     addTodos.call(this, json.todo.items);
