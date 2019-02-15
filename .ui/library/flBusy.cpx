@@ -3,6 +3,7 @@
 		{
 			"className": ".flexLayout",
 			"id": "1a4d-cc59-d653-ee32",
+			"initialized": true,
 			"props": {
 				"children": [
 					"8baa-1556-2c00-8698"
@@ -26,8 +27,7 @@
 				"right": 0,
 				"top": 0,
 				"width": null
-			},
-			"initialized": true
+			}
 		},
 		{
 			"className": ".activityIndicator",

@@ -4,6 +4,7 @@
 			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-main",
 			"hiddenComponent": false,
 			"id": "cd3b-2912-1a7f-7558",
+			"initialized": true,
 			"props": {
 				"children": [
 					"1a3f-b617-dfa5-9576",
@@ -26,8 +27,7 @@
 				"left": 16.666666666666668,
 				"top": 286.6666666666667,
 				"width": 163.33333333333334
-			},
-			"initialized": true
+			}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default .flexLayout-dotIndicator-item.inactive",

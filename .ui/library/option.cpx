@@ -4,6 +4,7 @@
 			"className": ".label",
 			"hiddenComponent": true,
 			"id": "cef6-e901-fdef-32f2",
+			"initialized": true,
 			"props": {
 				"autoHeight": 19.858156028368796,
 				"children": [],
@@ -31,8 +32,7 @@
 				"text": "Profile",
 				"textColor": "rgba( 240, 240, 240, 1 )",
 				"width": null
-			},
-			"initialized": true
+			}
 		}
 	]
 }

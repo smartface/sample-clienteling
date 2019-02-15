@@ -4,6 +4,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"hiddenComponent": true,
 			"id": "f3c9-f72b-84ed-36d3",
+			"initialized": true,
 			"props": {
 				"children": [
 					"acf1-feed-f48b-5077",
@@ -23,8 +24,7 @@
 				"left": 14.130434782608695,
 				"top": 590.2173913043478,
 				"width": 221
-			},
-			"initialized": true
+			}
 		},
 		{
 			"className": ".label #pgCustomerProfile.lblReservationStatus",

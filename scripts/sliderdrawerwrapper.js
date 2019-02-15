@@ -1,3 +1,4 @@
+const FlexLayout = require("sf-core/ui/flexlayout");
 const SliderDrawer = require('sf-core/ui/sliderdrawer');
 const SliderDrawerComp = require("./components/SliderDrawerComp");
 const Application = require("sf-core/application");
@@ -12,8 +13,6 @@ class SliderDrawerWrapper {
         this.sliderDrawer = new SliderDrawer({
             width: WIDTH,
             enabled: false,
-            height: NaN,
-            flexGrow: 1
         });
         this.sliderDrawer.onLoad = this.onLoad.bind(this);
         this.sliderDrawer.onShow = this.onShow.bind(this);

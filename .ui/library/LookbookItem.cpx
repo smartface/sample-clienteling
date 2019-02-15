@@ -4,6 +4,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"hiddenComponent": true,
 			"id": "4a13-68fd-e0c7-dcfd",
+			"initialized": true,
 			"props": {
 				"children": [
 					"6f29-5ea0-6987-8dab",
@@ -25,8 +26,7 @@
 				"left": 16.666666666666668,
 				"top": 303.33333333333337,
 				"width": 178.33333333333334
-			},
-			"initialized": true
+			}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default",

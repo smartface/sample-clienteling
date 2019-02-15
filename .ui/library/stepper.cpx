@@ -4,6 +4,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"hiddenComponent": true,
 			"id": "6015-add5-c15e-d9f3",
+			"initialized": true,
 			"props": {
 				"children": [
 					"7d1d-2bb2-8a0a-443d",
@@ -26,8 +27,7 @@
 				"left": 79.71014492753623,
 				"top": 244.9275362318841,
 				"width": 74.32432432432432
-			},
-			"initialized": true
+			}
 		},
 		{
 			"className": ".label #stepper-label",

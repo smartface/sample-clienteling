@@ -127,5 +127,18 @@
 		"left": 0,
 		"top": 0,
 		"width": null
+	},
+	".slidedrawer": {
+		"backgroundColor": "rgba( 37, 37, 37, 1 )",
+		"flexProps": {
+			"flexDirection": "ROW",
+			"positionType": "ABSOLUTE"
+		},
+		"height": null,
+		"paddingTop": 25,
+		"width": 300,
+		"left": 0,
+		"top": 0,
+		"bottom": 0
 	}
 }

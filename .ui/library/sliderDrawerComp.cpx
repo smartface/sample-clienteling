@@ -1,9 +1,10 @@
 {
 	"components": [
 		{
-			"className": ".flexLayout .flexLayout-default .sliderDrawer",
+			"className": ".flexLayout .slidedrawer",
 			"hiddenComponent": false,
 			"id": "e02d-b805-d189-cc15",
+			"initialized": true,
 			"props": {
 				"children": [
 					"1167-8aad-4408-0eb9",
@@ -17,18 +18,7 @@
 				"page": "__library__"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"backgroundColor": "rgba( 37, 37, 37, 1 )",
-				"flexProps": {
-					"flexDirection": "ROW"
-				},
-				"height": 500,
-				"left": 8.620689596448626,
-				"paddingTop": 25,
-				"top": 91.37931097121466,
-				"width": 300
-			},
-			"initialized": true
+			"userProps": {}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default",

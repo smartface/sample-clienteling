@@ -4,6 +4,7 @@
 			"className": ".label",
 			"hiddenComponent": true,
 			"id": "cb00-7eb0-f7e1-5b4e",
+			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "tbCustomerProfileText",
@@ -30,8 +31,7 @@
 				"textColor": "rgba( 238, 238, 238, 1 )",
 				"top": 9.782608695652174,
 				"width": 156.52173913043478
-			},
-			"initialized": true
+			}
 		}
 	]
 }

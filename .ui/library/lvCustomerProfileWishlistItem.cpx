@@ -4,6 +4,7 @@
 			"className": ".flexLayout",
 			"hiddenComponent": false,
 			"id": "1041-55d5-cb0c-fd5f",
+			"initialized": true,
 			"props": {
 				"children": [
 					"e63b-bd24-0844-c19b",
@@ -22,8 +23,7 @@
 				"left": 201.66666666666669,
 				"top": 285,
 				"width": 155
-			},
-			"initialized": true
+			}
 		},
 		{
 			"className": ".flexLayout .flexLayout-default #pgCustomerProfile_wishlistITem_imageLayout",
