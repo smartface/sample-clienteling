@@ -4,6 +4,7 @@
 			"className": ".listViewItem",
 			"hiddenComponent": true,
 			"id": "5be9-8547-09ac-6568",
+			"initialized": true,
 			"props": {
 				"children": [
 					"ca15-df69-0936-4de4",

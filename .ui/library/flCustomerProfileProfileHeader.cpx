@@ -4,6 +4,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"hiddenComponent": true,
 			"id": "c4c5-2c0a-4dd1-7152",
+			"initialized": true,
 			"props": {
 				"children": [
 					"c868-4646-6cf3-1874",
@@ -143,6 +144,7 @@
 			"id": "b32e-ba03-46b6-52b8",
 			"props": {
 				"children": [],
+				"html": "Joined January 10th 2017",
 				"name": "date",
 				"parent": "9335-b874-bd11-7b0c",
 				"text": "Joined January 10th 2017",

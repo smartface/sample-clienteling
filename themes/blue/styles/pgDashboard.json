@@ -11,26 +11,16 @@
 		".svMain": {
 			"height": null,
 			"width": null,
-			"visible": true,
-			"align": "VERTICAL",
-			"scrollBarEnabled": true,
 			"layoutHeight": 1400,
 			"flexProps": {
 				"alignSelf": "STRETCH",
-				"direction": "INHERIT",
-				"alignContent": "STRETCH",
-				"alignItems": "STRETCH",
-				"justifyContent": "FLEX_START",
-				"flexWrap": "NOWRAP",
-				"flexDirection": "COLUMN",
-				"positionType": "RELATIVE",
 				"flexGrow": 1
 			},
 			"+Device:Device.orientation === \"landscape\"": {
 				"layoutHeight": 550
 			},
-			"paddingLeft": 10,
-			"paddingRight": 10
+			"scrollBarEnabled": false,
+			"backgroundColor": "rgba(255,255,255,1)"
 		},
 		".flItem": {
 			"height": 200,
@@ -70,7 +60,7 @@
 			}
 		},
 		".flInfo": {
-			"height": 160,
+			"height": 200,
 			"width": null,
 			"touchEnabled": true,
 			"visible": true,
@@ -143,7 +133,9 @@
 			},
 			"+Device:Device.orientation === \"landscape\"": {
 				"backgroundColor": "rgba( 230, 230, 230, 1 )"
-			}
+			},
+			"paddingLeft": 5,
+			"paddingRight": 5
 		},
 		".flInfoPart11": {
 			"height": null,

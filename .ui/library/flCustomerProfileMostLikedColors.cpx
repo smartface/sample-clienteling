@@ -4,6 +4,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"hiddenComponent": false,
 			"id": "cae6-e684-ae6f-aaa5",
+			"initialized": true,
 			"props": {
 				"children": [
 					"e40c-2e66-3203-1bd6",
@@ -31,6 +32,7 @@
 			"className": ".label",
 			"id": "e40c-2e66-3203-1bd6",
 			"props": {
+				"autoWidth": 93.61702127659575,
 				"children": [],
 				"name": "title",
 				"parent": "cae6-e684-ae6f-aaa5",
@@ -39,6 +41,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 93.61702127659575,
 				"flexProps": {
 					"flexGrow": 1
 				},

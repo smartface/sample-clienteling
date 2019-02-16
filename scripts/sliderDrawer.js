@@ -24,6 +24,11 @@ var sliderDrawer = new SliderDrawer({
         sliderDrawer.onShow = function sliderDrawer_onShow() {
             sliderDrawer.shown = true;
         };
+        sliderDrawer.toggleShow = function() {
+            this.sliderDrawer.state === SliderDrawer.State.CLOSED ?
+            this.sliderDrawer.show() :
+            this.sliderDrawer.hide();
+        }
         sliderDrawer.shown = false;
         if (this.ios) {
             this.ios.onSafeAreaPaddingChange = safeArea => {

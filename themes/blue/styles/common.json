@@ -90,5 +90,55 @@
 				}
 			}
 		}
+	},
+	".flexLayouDefault": {
+		"backgroundColor": "rgba( 248, 231, 28, 0 )",
+		"height": 600,
+		"minHeight": null,
+		"width": null,
+		"flexProps": {
+			"flexDirection": "ROW",
+			"flexWrap": "WRAP",
+			"alignSelf": "STRETCH",
+			"alignItems": "FLEX_START",
+			"alignContent": "FLEX_START"
+		}
+	},
+	".flexlayoutdefault": {
+		"backgroundColor": "rgba( 32, 32, 32, 1 )",
+		"borderColor": "rgba( 151, 151, 151, 1 )",
+		"borderWidth": 0.5,
+		"flexProps": {
+			"justifyContent": "SPACE_BETWEEN",
+			"flexDirection": "ROW"
+		},
+		"height": 33,
+		"left": 0,
+		"marginBottom": 2,
+		"marginLeft": null,
+		"marginRight": null,
+		"paddingLeft": 14,
+		"paddingRight": 7.5,
+		"top": 0,
+		"width": null
+	},
+	".flexlayoutdefaul": {
+		"height": 690,
+		"left": 0,
+		"top": 0,
+		"width": null
+	},
+	".slidedrawer": {
+		"backgroundColor": "rgba( 37, 37, 37, 1 )",
+		"flexProps": {
+			"flexDirection": "ROW",
+			"positionType": "ABSOLUTE"
+		},
+		"height": null,
+		"paddingTop": 25,
+		"width": 300,
+		"left": 0,
+		"top": 0,
+		"bottom": 0
 	}
 }

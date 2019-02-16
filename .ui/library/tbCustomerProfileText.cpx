@@ -4,6 +4,7 @@
 			"className": ".label",
 			"hiddenComponent": true,
 			"id": "cb00-7eb0-f7e1-5b4e",
+			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "tbCustomerProfileText",

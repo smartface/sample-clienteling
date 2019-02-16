@@ -4,6 +4,7 @@
 			"className": ".flexLayout .flexLayout-default",
 			"hiddenComponent": true,
 			"id": "f8b6-a9fc-13a6-9efc",
+			"initialized": true,
 			"props": {
 				"children": [
 					"6470-719e-0ce9-b0ab",

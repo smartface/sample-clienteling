@@ -28,9 +28,9 @@
 			"width": null,
 			"height": null,
 			"flexProps": {
-				"flexGrow": 1,
-				"alignItems": "STRETCH",
-				"alignContent": "STRETCH"
+				"alignContent": "STRETCH",
+				"flexWrap": "WRAP",
+				"flexGrow": 1
 			},
 			"+Device:Device.orientation === \"landscape\"": {
 				"layoutHeight": 890
@@ -62,7 +62,8 @@
 						}
 					}
 				}
-			}
+			},
+			"scrollBarEnabled": false
 		},
 		".lblWishlistItemName": {
 			"width": null,
@@ -162,11 +163,9 @@
 		},
 		"&_flFirst": {
 			"width": null,
-			"height": null,
 			"maxHeight": 157,
 			"marginBottom": 0,
 			"flexProps": {
-				"flexGrow": 1,
 				"flexDirection": "COLUMN",
 				"alignItems": "STRETCH"
 			},
@@ -183,7 +182,7 @@
 				"height": null,
 				"backgroundColor": "rgba( 216, 216, 216, 0.55 )",
 				"flexProps": {
-					"flexGrow": 1.3
+					"flexGrow": 1.5
 				},
 				"+Device:Device.orientation === \"landscape\"": {
 					"backgroundColor": "rgba( 216, 216, 216, 0 )"
